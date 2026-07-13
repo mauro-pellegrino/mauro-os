@@ -1,0 +1,38 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json; content=open('/Users/mauro/mauro-os/brand/voice.md').read(); print(json.dumps({'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext': 'WRITING STYLE RULES — Apply to ALL content output in this session. Read these before producing any writing:\\n' + content}}))\"",
+            "statusMessage": "Loading writing style rules..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; echo \"$f\" | grep -q '/skills/' && cd /Users/mauro/mauro-os && git add \"$f\" && git commit -m \"auto-save skill update: $(basename \"$f\")\" && git push; } 2>/dev/null || true",
+            "statusMessage": "Auto-saving skill to GitHub..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"Session ending — worth capturing notes for content-pipeline? Tell me what we worked on and I will save the raw notes.\"}'",
+            "statusMessage": "Session ending..."
+          }
+        ]
+      }
+    ]
+  }
+}
