@@ -1,7 +1,8 @@
 # Long-Form Subtype: Infographic / HTML Long-Form
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** 2026-05-26
+**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
 **Loaded with:** `_master.md` (always load both together)
 **CTA mechanic:** Depends on pattern variant (no CTA / soft consultative / thread funnel)
 **Funnel:** Cross-stage (TOF through MOF)
@@ -23,11 +24,11 @@ Same format, same skill output, different scheduling.
 
 ## Production Workflow (Critical Context)
 
-Different from other long-form subtypes because the asset is **HTML-generated and rendered to PDF + PNGs via the Growthub visual system**.
+Different from other long-form subtypes because the asset is **HTML-generated and rendered to PDF + PNGs**.
 
-**Canonical visual production guide:** `skills/content/long-form/linkedin-html-doc-guide.md`. That file is the source of truth for: page dimensions (1080×1080 square, 1080×1350 portrait, 1080×1620 long), Growthub palette (Space Indigo / Jasmine / Shocking Pink / Aquamarine), typography (Inter + JetBrains Mono), recurring visual blocks (table-3, insight-box, math-bar, timeline, formats-grid, hook-pattern-grid, cta-block), and the per-doc workflow.
+**Canonical visual production guide:** `skills/content/long-form/linkedin-html-doc-guide.md`. That file is the source of truth for: page dimensions (1080×1080 square, 1080×1350 portrait, 1080×1620 long), the doc palette, typography (Inter + JetBrains Mono), recurring visual blocks (table-3, insight-box, math-bar, timeline, formats-grid, hook-pattern-grid, cta-block), and the per-doc workflow.
 
-**Render utility:** `scripts/render_one.py`. Takes an HTML file path + dimension flag, outputs PDF + per-page PNGs at exact canvas dimensions. Requires `playwright`, `pypdfium2`, `Pillow`.
+**Render utility:** create `scripts/render_one.py` from the Playwright snippet at the bottom of `linkedin-html-doc-guide.md` (the folder doesn't exist in this repo yet). Takes an HTML file path + dimension flag, outputs PDF + per-page PNGs at exact canvas dimensions. Requires `playwright`, `pypdfium2`, `Pillow`.
 
 ```
 python3 scripts/render_one.py path/to/deck.html portrait    # 1080x1350 default
@@ -39,12 +40,12 @@ python3 scripts/render_one.py path/to/deck.html long        # 1080x1620
 
 Workflow per post:
 1. Build the HTML doc following `linkedin-html-doc-guide.md`
-2. Render to PDF + PNGs via `scripts/render_one.py`
+2. Render to PDF + PNGs via the render script
 3. Write the post caption per this file's variant + length targets
 4. Attach 2-3 PNG pages to the X / LinkedIn post
 5. Optionally use PDF for LinkedIn document carousel post
 
-**Scope:** Lorenzo / Growthub form only as of 2026-05-27. Mauro-personal variant, additional palette options, and any per-account customization are deferred until a new brand or account onboarding triggers them. When that happens, revisit `linkedin-html-doc-guide.md` for palette / handle / voice deltas.
+**Scope:** all output is for @maurojpelle. [CALIBRATE: Mauro's own visual palette is not locked yet. The doc-guide palette is the current default; revisit when he defines his brand look.]
 
 ---
 
@@ -54,38 +55,37 @@ The infographic format hosts multiple content patterns. Pick one per post.
 
 ### Variant A: Framework Breakdown
 - **Anchor:** a teaching framework worth showing visually
-- **Infographic content:** 2-3 panels showing the framework's components (e.g., "The 3-Layer Creative Engine: Ideation → Production → Testing")
-- **Caption hook:** "Here's how we [outcome] for our [tier-specific clients]" or "The [N-step] system that [outcome]"
+- **Infographic content:** 2-3 panels showing the framework's components (e.g., "The Content Engine: Capture → Produce → Measure")
+- **Caption hook:** "Here's how I [outcome] for [tier-specific audience]" or "The [N-step] system that [outcome]"
 - **CTA:** No CTA. Framework infographic is the deliverable.
 
 ### Variant B: Before / After (single rendered image)
 - **Anchor:** a visual transformation
-- **Infographic content:** 2 panels side-by-side OR stacked top/bottom, "BEFORE" and "AFTER" labeled, with anonymized creative or workflow comparison
-- **Caption hook:** "[Time period] of testing & $[Y] later: we [verb]ed this for one of our clients"
+- **Infographic content:** 2 panels side-by-side OR stacked top/bottom, "BEFORE" and "AFTER" labeled, with an anonymized workflow or output comparison
+- **Caption hook:** "[Time period] of testing & [real invested effort/number] later: here's what changed"
 - **CTA:** No CTA OR thread funnel if there's step-by-step underneath
 
 ### Variant C: Process Flow
 - **Anchor:** a workflow that benefits from being visualized step-by-step
 - **Infographic content:** 2-3 panels showing the flow (e.g., "Step 1: [action] → Step 2: [action] → Step 3: [result]")
-- **Caption hook:** "Here's the exact [N-step] process we use for [outcome]"
+- **Caption hook:** "Here's the exact [N-step] process I use for [outcome]"
 - **CTA:** Soft consultative OR tier-gated DM
 
 ### Variant D: Data Visualization
-- **Anchor:** a striking number or pattern from real client work
+- **Anchor:** a striking number or pattern from real work
 - **Infographic content:** 2-3 panels with charts, comparison tables, or KPI breakdowns
-- **Caption hook:** number-led, e.g. "After $107M+ in managed Meta spend, here's the pattern across our top accounts"
+- **Caption hook:** number-led, e.g. "After [N] months of tracking every post against booked calls, here's the pattern" (real numbers only, signed off)
 - **CTA:** Soft consultative
 
 ### Variant E: Tactical Step-by-Step
 - **Anchor:** a workflow with exact prompts / settings / tool calls worth visualizing
 - **Infographic content:** 2-3 panels with code blocks, prompt text, tool screenshots embedded
-- **Caption hook:** "The exact prompts we use to [outcome]"
+- **Caption hook:** "The exact prompts I use to [outcome]"
 - **CTA:** Tier-gated DM OR thread funnel
-- **Source pattern:** post-010 article structure compressed into infographic + caption
 
 ### Variant F: Quote / Manifesto Card
-- **Anchor:** a sharp operator stance worth memorializing visually
-- **Infographic content:** 1-2 panels with the quote / stance in large type, sourced or attributed
+- **Anchor:** a sharp operator stance worth memorializing visually (pull from the 15 beliefs in `brand/business-context-answers.md`)
+- **Infographic content:** 1-2 panels with the quote / stance in large type
 - **Caption hook:** pattern-interrupt counter-claim
 - **CTA:** Soft consultative OR no CTA
 - **Use when:** the stance benefits from being shareable as an image
@@ -100,8 +100,8 @@ Before drafting, get these from Mauro:
 2. **Pattern variant** — A through F from above
 3. **Deployment mode** — standalone OR quote-tweet companion
    - If quote-tweet companion: which parent post (article URL or video post URL) + scheduled time gap (default 6 hours)
-4. **Content source** — wins-log entry, research/post-studies pattern, transcript, or fresh thinking
-5. **Visual style preferences** — Growthub brand colors (yellow accent on dark body) is the default per `best-performing-posts.md` cover image spec
+4. **Content source** — a logged win, a transcript from `research/transcripts/maurojpelle/`, a session note from `brand/sessions/`, or fresh thinking
+5. **Visual style preferences** — default to the `linkedin-html-doc-guide.md` system until Mauro locks his own palette
 6. **Anonymization scope** — what's visible vs blurred in any data panels
 7. **CTA decision** matched to variant default
 
@@ -120,13 +120,13 @@ Before drafting, get these from Mauro:
 
 ```html
 <!-- Panel 1 -->
-<div class="panel" style="background: #FFC83D; padding: 60px; color: black;">
+<div class="panel" style="background: #F5D679; padding: 60px; color: #24243C;">
   <h1>[Title]</h1>
   <p>[Subtitle]</p>
 </div>
 
 <!-- Panel 2 -->
-<div class="panel" style="background: #1A1A1A; padding: 60px; color: white;">
+<div class="panel" style="background: #24243C; padding: 60px; color: white;">
   <h2>[Section header]</h2>
   <ul>
     <li>[Point 1]</li>
@@ -136,10 +136,10 @@ Before drafting, get these from Mauro:
 </div>
 
 <!-- Panel 3 -->
-<div class="panel" style="background: #1A1A1A; padding: 60px; color: white;">
+<div class="panel" style="background: #24243C; padding: 60px; color: white;">
   <h2>[Conclusion / Result]</h2>
   <p>[Closing line]</p>
-  <small>Created by Growthub.Agency</small>
+  <small>@maurojpelle</small>
 </div>
 ```
 
@@ -163,20 +163,17 @@ Aspect ratio per panel: 1080x1080 square OR 1080x1350 portrait. Generates clean 
 ### Format
 - 2-3 images per post (X allows up to 4, LinkedIn similar)
 - Square 1080x1080 or portrait 1080x1350 per panel
-- High contrast (Growthub yellow header + dark body is the default style)
-- Legible at thumbnail scale (test on mobile)
+- High contrast, legible at thumbnail scale (test on mobile)
 
-### Style anchors (matching `best-performing-posts.md` cover image spec)
-- Yellow band header (Growthub brand yellow)
-- Dark body (near-black background, white text)
-- Title in large white sans-serif
-- "Created by Growthub.Agency" line on the last panel
-- Optional: small emoji or icon prefix for bulleted items
+### Style anchors
+- Follow the `linkedin-html-doc-guide.md` palette and type system
+- Title in large type on the first panel; the first panel is the thumbnail
+- `@maurojpelle` credit line on the last panel
 
 ### Anonymization
 - No identifiable client data in any panel
-- Real numbers from wins-log are OK if aggregated or tier-anonymized ("$107M+ managed spend" vs "Brand X spent $200K/mo")
-- Public competitor brand names: OK to use per the wins-log "safe references" list
+- Real numbers are OK if aggregated or tier-anonymized, and signed off by Mauro
+- Public (non-client) names: OK to use when they're positioning examples, not client work
 
 ### Quote-tweet companion specifics
 - Same image format as standalone
@@ -193,8 +190,8 @@ Aspect ratio per panel: 1080x1080 square OR 1080x1350 portrait. Generates clean 
 | A (framework breakdown) | No CTA. The framework IS the value. |
 | B (before / after) | No CTA OR thread funnel if step-by-step thread underneath |
 | C (process flow) | Soft consultative OR tier-gated DM (if the process is differentiated enough) |
-| D (data viz) | Soft consultative ("If you want this run for your brand, link in bio.") |
-| E (tactical step-by-step) | Tier-gated DM ("If you're spending $50K+/mo on Meta, DM me 'X' for the playbook") OR thread funnel |
+| D (data viz) | Soft consultative ("If you want this running for your agency, link in bio.") |
+| E (tactical step-by-step) | Tier-gated DM ("If you're running an agency at $[X]k+/mo, DM me '[keyword]' for the playbook") OR thread funnel |
 | F (quote / manifesto card) | Soft consultative OR no CTA |
 
 **Never use on this subtype:**
@@ -206,16 +203,16 @@ Aspect ratio per panel: 1080x1080 square OR 1080x1350 portrait. Generates clean 
 
 ## Post Hook Formulas
 
-Inherits universal long-form hooks from `_master.md`. Variant-specific hooks:
+Inherits universal long-form hooks from `_master.md`. Variant-specific hooks (fill with real numbers or bracketed placeholders only):
 
-| Hook formula | Variant | Example |
+| Hook formula | Variant | Example shape |
 |---|---|---|
-| "Here's how we [outcome] for our [tier] clients" | A | "Here's how we structure creative testing for our $100K+/mo Meta clients" |
-| "[Time] of testing & $[Y] later: we [verb]ed [thing]" | B | "3 months of testing & $25K later: we rebuilt this brand's creative engine" |
-| "Here's the exact [N-step] process we use" | C | "Here's the exact 5-step process we use to ship 20+ creative concepts per week" |
-| "After $[X] in spend, here's the pattern" | D | "After $107M+ in managed Meta spend, here's the only metric that predicts scale" |
-| "The exact prompts we use to [outcome]" | E | "The exact 3-prompt sequence we use to write hooks for cold traffic" |
-| "[Sharp stance line]" (stance becomes the image headline) | F | "Hooks are the 80/20 of any ad" (rendered in large type) |
+| "Here's how I [outcome] for [tier audience]" | A | "Here's how I structure the weekly content loop for an agency doing $[X]k/mo" |
+| "[Time] of testing & [effort] later: [what changed]" | B | "[N] months of testing later: I rebuilt the whole posting system" |
+| "Here's the exact [N-step] process I use" | C | "Here's the exact 5-step process I use to turn one call into a week of content" |
+| "After [X], here's the pattern" | D | "After [N] months tracking posts against booked calls, here's the only metric that mattered" |
+| "The exact prompts I use to [outcome]" | E | "The exact 3-prompt sequence I use to write hooks from client transcripts" |
+| "[Sharp stance line]" (stance becomes the image headline) | F | "The best content doesn't look like content" (rendered in large type) |
 
 ### Quote-tweet companion variant on hooks
 
@@ -236,23 +233,22 @@ Before scheduling, confirm:
 - [ ] Deployment mode confirmed (standalone OR quote-tweet companion)
 - [ ] If quote-tweet companion: parent post URL captured + 6hr scheduling note
 - [ ] HTML for the infographic produced (2-3 panels)
-- [ ] Style matches `best-performing-posts.md` cover image spec (yellow header, dark body, Growthub.Agency credit)
+- [ ] Style matches `linkedin-html-doc-guide.md` (palette, type, credit line)
 - [ ] Each panel legible at thumbnail scale
 - [ ] No identifiable client data in any panel
 - [ ] X caption follows `_master.md` X post structure + variant length target
 - [ ] LinkedIn caption (if cross-posting) adapts per `_master.md` LinkedIn template
 - [ ] CTA matches variant default (or explicit override)
-- [ ] All `{{tokens}}` resolved from `accounts/[active]/account-config.md`
-- [ ] Numbers verified against wins-log
+- [ ] Numbers verified (real and signed off, or bracketed placeholders)
 - [ ] No em dashes, no "It's not X, it's Y", no "Most brands" openers
-- [ ] Voice.md 60-second pre-publish checklist passed
-- [ ] If standalone, original post is on the weekly calendar; if quote-tweet companion, parent post is shipped first
+- [ ] Voice.md pre-publish checklist passed
+- [ ] If standalone, post is on the calendar; if quote-tweet companion, parent post is shipped first
 
 ---
 
 ## Anti-Patterns (Specific to This Subtype)
 
-- Marketing-designed infographic that doesn't look like a real artifact. Per `research/post-studies/post-002`, doc-screenshot mechanics work because the doc reads as real work product. Infographics that read as agency-marketing-collateral underperform.
+- Marketing-designed infographic that doesn't look like a real artifact. Doc-screenshot mechanics work because the doc reads as real work product. Infographics that read as agency-marketing-collateral underperform.
 - Too many panels (4+). 2-3 is the sweet spot. Past 3, attention drops in-feed.
 - Panel 1 with no contrast or hook. Panel 1 is the thumbnail. If it doesn't stop the scroll, the rest doesn't get seen.
 - Identical visual style as the lead magnet cover images. Lead magnet covers are about ASKING (autodm CTA). Infographics are about GIVING (asset in-feed). Different visual rhythm.
@@ -264,8 +260,8 @@ Before scheduling, confirm:
 
 ## Cross-Reference
 
-- **Visual style anchor**: `brands/growthub/best-performing-posts.md` cover image spec (yellow header, dark body, Growthub.Agency credit)
-- **Source pattern for Variant B (before / after)**: `research/post-studies/post-005-visual-before-after-portfolio.md` — Karalić $25K e-com website redesign. Originally carousel-format, now renders as single combined HTML before/after image.
-- **Source pattern for Variant E (tactical step-by-step)**: `research/post-studies/post-010-lorenzo-mar12-ai-broll-tutorial.md` — article-form. Infographic version is the compressed visual of the same content.
-- **Source pattern for Variant F (quote / manifesto)**: `research/post-studies/post-009-lorenzo-feb11-operator-manifesto.md` — article-form. Quote-card version pulls the strongest single line from the manifesto into a shareable image.
+- **Visual system**: `skills/content/long-form/linkedin-html-doc-guide.md` (palette, typography, blocks, render workflow)
+- **Variant B (before / after)**: renders as a single combined HTML before/after image (carousels are killed per `_master.md`)
+- **Variant E (tactical step-by-step)**: the compressed visual version of a playbook article; pair with `skills/content/x-article-creator.md` when the same content ships as an article
+- **Variant F (quote / manifesto)**: pull the strongest single line from a stance piece or the 15 beliefs into a shareable image
 - **HTML build constraint**: Claude Chrome extension generates HTML, Mauro screenshots / exports to images, attaches to post. See `skills/lead-gen/lead-magnet/_master.md` Asset Build Constraints section for the build environment notes.

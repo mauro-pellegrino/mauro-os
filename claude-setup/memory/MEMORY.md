@@ -13,7 +13,7 @@
 - [feedback_article_openers.md](feedback_article_openers.md) — Openers must be input-driven (strongest hook for that piece), not a default spend-number badge
 - [feedback_andromeda_visual_difference.md](feedback_andromeda_visual_difference.md) — Andromeda/entity-ID pieces must stress creatives have to be VISUALLY different, not just re-scripted
 - [feedback_natural_voice_not_ai.md](feedback_natural_voice_not_ai.md) — Normal posts must sound human/natural, not AI-punchy staccato (auto-DMs stay punchy)
-- [feedback_expert_not_beginner_positioning.md](feedback_expert_not_beginner_positioning.md) — Speak to the sophisticated brand owner, not a beginner; reframe yes/no questions into expert stances
+- [feedback_expert_not_beginner_positioning.md](feedback_expert_not_beginner_positioning.md) — Speak to the sophisticated, established operator, not a beginner; reframe yes/no questions into expert stances
 - [feedback_response_clarity.md](feedback_response_clarity.md) — Keep chat responses short and easy to follow, not dense walls
 - [feedback_lead_magnet_no_repo_save.md](feedback_lead_magnet_no_repo_save.md) — Don't save lead magnets to repo; they go to Notion + X analytics
 

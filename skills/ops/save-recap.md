@@ -13,7 +13,7 @@ When Mauro asks to save a recap (of work done in a session, of decisions made, o
 
 1. Generates a per-day recap from the conversation + git log
 2. Saves the recap to `recaps/YYYY-MM-DD.md` in the repo
-3. Creates a Google Calendar event titled `Growthub OS work — [date]` with the recap pasted into the event description
+3. Creates a Google Calendar event titled `mauro-os work — [date]` with the recap pasted into the event description
 4. Commits + pushes the recap file
 5. Reports back with the saved paths + the calendar event URL
 
@@ -37,7 +37,7 @@ Pull from two sources:
 
 **1. Git log for the day:**
 ```bash
-cd /Users/mauro/growthub-os
+cd /Users/mauro/mauro-os
 git log --since="YYYY-MM-DD 00:00" --until="YYYY-MM-DD 23:59" --pretty=format:"%ad|%s" --date=format:"%H:%M"
 ```
 
@@ -103,7 +103,7 @@ Keep it to ~150-250 lines max per day. Skim-readable in 2 minutes.
 
 When the Google Calendar MCP is authenticated and the `mcp__claude_ai_Google_Calendar__*` tools are available:
 
-- **Event title:** `Growthub OS work — [Day] YYYY-MM-DD`
+- **Event title:** `mauro-os work — [Day] YYYY-MM-DD`
 - **Event date:** the date the recap covers (NOT today's date if recapping a previous day)
 - **Event time:** all-day event (no specific time block needed)
 - **Event description:** the full recap content (the same markdown, formatted as plain text where needed)

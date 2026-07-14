@@ -22,4 +22,4 @@ Names for the pattern: reframe, objection reversal, feature-not-a-bug framing, p
 - State the observation directly. Stop the sentence after the observation. The reader connects the dots.
 - If the reframe instinct shows up, cut the line entirely. The paragraph almost always reads better without it.
 - Applies to all content: articles, autodm copy, case studies, lead magnets, posts.
-- Project-level enforcement also lives in `growthub-os/brands/growthub/voice.md` Pattern #9 + the 60-second pre-publish checklist.
+- Project-level enforcement also lives in `mauro-os/brand/voice.md` Pattern #9 + the 60-second pre-publish checklist.

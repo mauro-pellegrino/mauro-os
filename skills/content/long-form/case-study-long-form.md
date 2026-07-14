@@ -1,59 +1,58 @@
 # Long-Form Subtype: Case Study Long-Form
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** 2026-05-26 (consolidated from earlier pattern-based files)
+**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
 **Loaded with:** `_master.md` (always load both together)
-**CTA mechanic:** No hard CTA (confidence positioning) — optional soft positioning link
+**CTA mechanic:** No hard CTA (confidence positioning), optional soft positioning link
 **Funnel:** BOF (engineered for 1-3 high-ticket DMs, not virality)
 
 ---
 
 ## What This Subtype Is
 
-A long-form post that flexes **a single client transformation** (named or anonymized), paired with a real DM screenshot, dashboard screenshot, or proof image. Reverse-engineered narrative: outcome first, walk backward to the work. Closes with a branded effect name (e.g., "Stealth Creatives shipped by the team").
+A long-form post that flexes **a single transformation** (a named or anonymized client, or Mauro's own engine), paired with a real DM screenshot, dashboard screenshot, or proof image. Reverse-engineered narrative: outcome first, walk backward to the work. Closes with a branded effect name. [CALIBRATE: Mauro's branded effect name is not defined yet; propose options with him before first use.]
 
 Subtype identity: high-ticket inbound mechanic, post-form (not article, not lead magnet). The video version of this subtype lives in `video-long-form.md` Variants A and B. This file is for the **non-video** case-study long-forms (DM screenshot, dashboard, narrative-only with image proof).
 
+Mauro's proof today is mostly operational (the engine he runs, its measured outputs). Client-transformation variants below activate as his own client results come in. Until then, prefer variants that flex the system itself, and use [CLIENT RESULT — fill from social-proof/ when available] placeholders rather than inventing anything.
+
 Different from:
-- `skills/lead-gen/lead-magnet/case-study.md` (lead-magnet version: gated behind autodm keyword, ships as Notion doc deliverable)
-- `video-long-form.md` Variants A/B (video-led, this is image / screenshot led)
+- `skills/lead-gen/lead-magnet/case-study.md` (lead-magnet version: gated behind autodm keyword, ships as a doc deliverable)
+- `video-long-form.md` Variants A/B (video-led; this is image / screenshot led)
 - `skills/content/x-article-creator.md` (article-form, longer than long-form post)
 
-**Critical engagement note:** BOF posts hit far lower engagement than MOF / TOF. **By design.** Do not grade by views or likes. Grade by inbound DM quality from qualified buyers. 60K views with 1 founder DM = win.
+**Critical engagement note:** BOF posts hit far lower engagement than MOF / TOF. **By design.** Do not grade by views or likes. Grade by inbound DM quality from qualified buyers. 60K views with 1 agency-owner DM = win.
 
 ---
 
 ## Pattern Variants (4 Inside This Format)
 
-### Variant A: Testimonial-led arc (named, recognizable client)
-- **Anchor:** a client recognizable enough to carry weight on the X / LinkedIn feed
-- **Caption hook formula:** "[Quote from client]" + "[Client first name] hired us when [low starting point]. Today [aspirational outcome]."
-- **Closer:** "It's safe to say we helped them become [identity-tier descriptor]. This is the Stealth Creatives Effect."
-- **Media:** DM screenshot from the named client showing authentic reaction / result
-- **Source pattern:** post-004 Variant A (Marin / Mogul Media)
-- **Use when:** client is named publicly (only with consent + when recognizable)
+### Variant A: Testimonial-led arc (named, recognizable person)
+- **Anchor:** a client or collaborator recognizable enough to carry weight on the X / LinkedIn feed
+- **Caption hook formula:** "[Quote from client]" + "[First name] started when [low starting point]. Today [aspirational outcome]."
+- **Closer:** "It's safe to say the system helped them become [identity-tier descriptor]." + branded effect line
+- **Media:** DM screenshot from the named person showing authentic reaction / result
+- **Use when:** the person is named publicly (only with consent + when recognizable)
 
 ### Variant B: Manifesto-led positioning
-- **Anchor:** a niche philosophy or operating principle, not a specific transformation
-- **Caption hook formula:** "[Niche philosophy] is all we care about at Growthub. [Sub-claim that subverts an obvious counter-version.] This is why [aspirational tier of clients] want to work with us. We turn them into [outcome]."
+- **Anchor:** a lane philosophy or operating principle, not a specific transformation (e.g., "the best content doesn't look like content", "systems beat random effort")
+- **Caption hook formula:** "[Lane philosophy] is all I care about. [Sub-claim that subverts an obvious counter-version.] This is why [aspirational tier of clients] want the machine installed. It turns them into [outcome]."
 - **Media:** proof image (anonymized impressions, aggregate stat, dashboard summary)
-- **Source pattern:** post-004 Variant B
 - **Use when:** the operating principle is the differentiator, not a single transformation
 
 ### Variant C: Comeback narrative
-- **Anchor:** a client that came back after going elsewhere, OR a client that broke through after a long plateau
-- **Caption hook formula:** "[Client framing] paused service because nothing was working. They cycled through [N] agencies. We shipped [specific test]. That became [breakthrough result]. Restarting service this month."
+- **Anchor:** someone who came back after trying everything else, OR a breakthrough after a long plateau (including Mauro's own)
+- **Caption hook formula:** "[Framing] had stalled because nothing was working. They cycled through [N] fixes. We shipped [specific change]. That became [breakthrough result]. [Current status]."
 - **Closer:** branded effect line
 - **Media:** dashboard screenshot showing the breakthrough
-- **Source draft example:** `accounts/lorenzo-x/drafts/post-008-comeback-7-agencies.md` (Win 002B Sintra)
 - **Use when:** the win is about competitive proof + persistence
 
 ### Variant D: Aggregate-proof flex
-- **Anchor:** the team's aggregate across many clients, not one
-- **Caption hook formula:** "I've scaled over [N] [vertical] brands and generated $[Y] for them" OR "$[X]M+ in [vertical] managed spend across our client base last year"
+- **Anchor:** the aggregate across many results, not one
+- **Caption hook formula:** "I've built [N] [systems/engines] and they've produced [X] for [audience]" OR "[X] across everything the engine shipped last [period]"
 - **Media:** anonymized stacked screenshots (multiple dashboards, multiple result cards)
-- **Source draft example:** `accounts/lorenzo-x/drafts/post-007-saas-60pct-dominance.md` (Win 002A Trainual, anonymized)
-- **Use when:** no single client transformation is named-recognizable, but the aggregate is strong
+- **Use when:** no single transformation is named-recognizable, but the aggregate is strong. Every number verified or bracketed.
 
 ---
 
@@ -61,16 +60,16 @@ Different from:
 
 Before drafting, get these from Mauro:
 
-1. **The win** — which one (cross-reference `accounts/lorenzo-x/wins-log.md`)
+1. **The win** — which one (cross-reference `brand/social-proof/`, create as results come in)
 2. **Variant** — A / B / C / D from above
 3. **Asset on hand** — the actual proof image:
-   - Variant A: DM screenshot from a named client
+   - Variant A: DM screenshot from a named person
    - Variant B: proof image (impressions, dashboard, aggregate stat)
    - Variant C: dashboard screenshot showing the breakthrough
    - Variant D: stacked dashboards or aggregate results card
-4. **Branded effect name** — Growthub default is "Stealth Creatives" or "Stealth Creative". Confirm this is the right closer.
-5. **Anonymization scope** — what can / cannot be public per `feedback_client_naming` and the specific wins-log entry rules. Cross-check the win entry before drafting.
-6. **Optional positioning link** — soft URL to a positioning page (NOT Calendly). Only used in some Variant A versions.
+4. **Branded effect name** — [CALIBRATE: not defined for Mauro's brand yet. Confirm with him before use.]
+5. **Anonymization scope** — what can / cannot be public per `feedback_client_naming` and the specific win's rules. Cross-check before drafting.
+6. **Optional positioning link** — soft URL to a positioning page (NOT a booking link). Only used in some Variant A versions.
 
 ---
 
@@ -81,31 +80,31 @@ Post-form, not article. Caption + image. Short copy, image carries the proof.
 ### Variant A caption template
 
 ```
-"[Quote from named client]" - @[client-handle if on X / LinkedIn]
+"[Quote from named person]" - @[their handle if on X / LinkedIn]
 
-[Client first name] hired us when [low starting point].
+[First name] started when [low starting point].
 
 Today [aspirational outcome].
 
-It's safe to say we helped them become [identity-tier descriptor].
+It's safe to say the system helped them become [identity-tier descriptor].
 
-This is the Stealth Creatives Effect.
+[Branded effect line]
 
 [Optional positioning URL]
 
-[MEDIA: DM screenshot from the named client]
+[MEDIA: DM screenshot from the named person]
 ```
 
 ### Variant B caption template
 
 ```
-[Niche philosophy] is all we care about at Growthub.
+[Lane philosophy] is all I care about.
 
 [Sub-claim that subverts an obvious counter-version of the philosophy.]
 
-This is why [aspirational tier of clients] want to work with us.
+This is why [aspirational tier of clients] want the machine installed.
 
-We turn them into [outcome / identity].
+It turns them into [outcome / identity].
 
 [MEDIA: proof image showing the philosophy in action]
 ```
@@ -113,15 +112,15 @@ We turn them into [outcome / identity].
 ### Variant C caption template
 
 ```
-[Client framing — anonymized vertical] paused service because nothing was working with the previous setup.
+[Framing — anonymized] had stalled because nothing was working with the previous setup.
 
-They had cycled through [N] agencies trying to crack their account.
+They had cycled through [N] fixes trying to crack it.
 
-We shipped a last-minute [specific creative test] before service ended.
+We shipped [specific change].
 
-That test became [breakthrough metric — specific number].
+That became [breakthrough metric — specific real number].
 
-Restarting service this month.
+[Current status].
 
 [Branded effect closer]
 
@@ -131,9 +130,9 @@ Restarting service this month.
 ### Variant D caption template
 
 ```
-I've scaled over [N] [vertical] brands and generated $[Y] for them.
+I've built [N] [systems] and they've produced [X] for [audience].
 
-All by understanding the same concept I've used for every [vertical] brand I work with.
+All on the same concept I use for every one of them.
 
 [1-2 lines on what the concept is at a high level, not the specifics]
 
@@ -158,27 +157,27 @@ All by understanding the same concept I've used for every [vertical] brand I wor
 ### Variant A media (DM screenshot)
 - Native to the platform (LinkedIn DM, X DM, iMessage if applicable)
 - Show authentic message, no overlays, no "for show" framing
-- Client profile pic visible only if client is being named publicly with consent
+- Profile pic visible only if the person is being named publicly with consent
 - Crop to keep timestamp visible (signals recency)
 
 ### Variant B media (proof image)
-- Stacked proof shots: impression counts, niche-aware engagement, hand-picked replies from named ICP-tier names
+- Stacked proof shots: impression counts, engagement from ICP-tier names, hand-picked replies
 - Crop tight, platform UI visible to keep it real
-- Anonymize sender names of replies if not on the safe-references list
+- Anonymize sender names of replies unless they've consented or are public figures engaging publicly
 
 ### Variant C media (dashboard screenshot)
-- Ads Manager or analytics dashboard showing the breakthrough metric
-- Blur client name selector, keep numbers + date range visible
+- Analytics dashboard showing the breakthrough metric
+- Blur any client-identifying selector, keep numbers + date range visible
 - Add annotation arrow + line on the breakthrough metric if delta isn't obvious
 
 ### Variant D media (aggregate stacked)
-- Multiple anonymized dashboards stacked or carouseled (up to 4 images)
-- Each blurred for client identity
-- Add a single anchor line / annotation overlaying the stack ("$20M across these accounts")
+- Multiple anonymized dashboards stacked (up to 4 images)
+- Each blurred for identity
+- Add a single anchor line / annotation overlaying the stack ("[X] across these accounts", real number only)
 
 ### Anonymization (universal)
 - Per `feedback_client_naming`: never publicly name clients except for explicit Variant A (with consent)
-- Cross-check `accounts/lorenzo-x/wins-log.md` per-client anonymization rules. Some wins (e.g., Win 006 pet brand) have hard "do not store anywhere" client names — honor strictly.
+- Cross-check the specific win's anonymization rules in `brand/social-proof/`. If a win is marked "do not store the name anywhere", honor that strictly.
 
 ---
 
@@ -188,27 +187,27 @@ Per `_master.md` CTA Patterns section. This subtype defaults to **No hard CTA** 
 
 Acceptable closers:
 - Just the branded effect name on the last line, nothing after
-- Branded effect + a single line positioning URL (NOT Calendly)
+- Branded effect + a single line positioning URL (NOT a booking link)
 - Nothing at all after the branded closer
 
 **Never use on this subtype:**
 - "DM me" anything
 - "Book a call" anything
-- Calendly link
+- Booking/calendar link
 - Comment keyword for autodm
 
-The reader DMs you because of the confidence absence of ask. Adding an ask kills the mechanic.
+The reader DMs you because of the confident absence of ask. Adding an ask kills the mechanic.
 
 ---
 
 ## Post Hook Formulas Summary
 
-| Hook formula | Variant | Source |
-|---|---|---|
-| "[Quote]" + "[Client first name] hired us when [low]. Today [high]." | A | post-004 var A |
-| "[Niche philosophy] is all we care about at [brand]." | B | post-004 var B |
-| "[Client framing] paused service because nothing was working." | C | post-008 draft (Win 002B) |
-| "I've scaled over [N] [vertical] brands and generated $[Y]" | D | LinkedIn pet $20M post |
+| Hook formula | Variant |
+|---|---|
+| "[Quote]" + "[First name] started when [low]. Today [high]." | A |
+| "[Lane philosophy] is all I care about." | B |
+| "[Framing] had stalled because nothing was working." | C |
+| "I've built [N] [systems] and they've produced [X]" | D |
 
 ---
 
@@ -216,44 +215,39 @@ The reader DMs you because of the confidence absence of ask. Adding an ask kills
 
 Before scheduling, confirm:
 
-- [ ] Win is logged in `accounts/lorenzo-x/wins-log.md`
-- [ ] Anonymization policy for this specific win followed (cross-check wins-log entry, including any hard "do not store" rules)
+- [ ] Win is logged in `brand/social-proof/`
+- [ ] Anonymization policy for this specific win followed (including any hard "do not store" rules)
 - [ ] Variant (A / B / C / D) consistent across hook + asset + closer
-- [ ] Branded effect closer present (Variants A, C: "Stealth Creatives Effect" or "Stealth Creatives shipped by the team")
-- [ ] No hard CTA (no "DM me", no Calendly, no "book a call")
+- [ ] Branded effect closer confirmed with Mauro (Variants A, C)
+- [ ] No hard CTA (no "DM me", no booking link, no "book a call")
 - [ ] Optional soft positioning link is just a URL, not a sales page with a form
 - [ ] Media is anonymized per the variant's specific rules
 - [ ] X caption follows the variant template + word count target
 - [ ] LinkedIn caption (if cross-posting) adapts per `_master.md` LinkedIn template (1.4-1.6x longer)
-- [ ] All `{{tokens}}` resolved from `accounts/[active]/account-config.md`
-- [ ] Numbers verified against the wins-log entry (no fabricated specifics per `feedback_no_fabricated_performance_numbers`)
+- [ ] Numbers verified against the social-proof entry (no fabricated specifics per `feedback_no_fabricated_performance_numbers`)
 - [ ] No em dashes, no "It's not X, it's Y", no "Most brands" openers
-- [ ] Voice.md 60-second pre-publish checklist passed
-- [ ] Wins-log "Drafted posts using this win" section updated once shipped
+- [ ] Voice.md pre-publish checklist passed
+- [ ] Social-proof entry updated with the post reference once shipped
 
 ---
 
 ## Anti-Patterns (Specific to This Subtype)
 
 - Adding a CTA at the bottom. Kills the confidence positioning. The absence of ask IS the mechanic.
-- Generic "we helped a client" framing. Without named-client, time-compression, or aggregate-tier specificity, the post reads as a brag.
+- Generic "I helped someone" framing. Without named-person, time-compression, or aggregate-tier specificity, the post reads as a brag.
 - Grading the post by views or likes. BOF posts hit low engagement on purpose. Grade by inbound DM quality.
-- Branded effect name that's not actually branded. "Stealth Creatives" works because Growthub owns it. Inventing one-off effect names per post doesn't compound brand equity.
+- Branded effect name that's not actually branded. It only works if it's owned and repeated. Inventing one-off effect names per post doesn't compound brand equity.
 - Stacking multiple variants in one post. Pick one (A / B / C / D). Hybrid variants dilute the mechanic.
-- Variant A without the client being recognizable. A named client who isn't recognizable adds nothing over an anonymized one. Variant A needs *recognition*, not just a name.
-- Using this format when the win is video-led (ad creative + caption). Use `video-long-form.md` Variants A/B instead. This file is for screenshot / image-led case studies, not video-led.
+- Variant A without the person being recognizable. A named person who isn't recognizable adds nothing over an anonymized one. Variant A needs *recognition*, not just a name.
+- Using this format when the win is video-led. Use `video-long-form.md` Variants A/B instead. This file is for screenshot / image-led case studies, not video-led.
 - Using this format when the deliverable is gated behind an autodm keyword. That's a lead magnet — use `skills/lead-gen/lead-magnet/case-study.md` instead.
 
 ---
 
 ## Cross-Reference
 
-- **Source pattern study**: `research/post-studies/post-004-midas-transformation-flex.md` (all 4 variants)
-- **Existing drafts using this subtype**:
-  - `accounts/lorenzo-x/drafts/post-007-saas-60pct-dominance.md` (Variant D adapted to single anonymized SaaS client)
-  - `accounts/lorenzo-x/drafts/post-008-comeback-7-agencies.md` (Variant C)
-- **Wins source**: `accounts/lorenzo-x/wins-log.md` — Wins 001-008. Most are eligible for this subtype after picking the right variant.
+- **Wins source**: `brand/social-proof/` (create as results come in; the only source for named wins and numbers)
 - **Adjacent subtypes**:
   - Video-led version: `video-long-form.md` Variants A and B
   - Lead-magnet version: `skills/lead-gen/lead-magnet/case-study.md`
-  - Article-form version: would live in `skills/content/x-article-creator.md` (article subtypes pending)
+  - Article-form version: `skills/content/x-article-creator.md`

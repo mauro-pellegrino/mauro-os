@@ -1,12 +1,12 @@
 ---
 name: Mauro's Profile
-description: Mauro's role at Growthub, working style, and preferences
+description: Mauro's role, working style, and preferences
 type: user
 ---
 
-Mauro is a co-founder at Growthub Agency (capital G, lowercase h — never "GrowthHub"), a performance ad creative agency scaling ecom brands and SaaS companies through Meta. Works closely with Lorenzo Pravata (the other co-founder and public face of the brand).
+Mauro (@maurojpelle on X, mauro@ghostedcalls.com) is the founder of his own brand, ghostedcalls. He shows established agency owners how to install AI content and client-acquisition systems, and he also runs an agency where those systems get built and proven daily.
 
-Mauro manages the AI/operations side of the business — building and maintaining the Growthub OS (skills, research, scripts) in the repo at `/Users/mauro/growthub-os`.
+Mauro handles the AI/operations side of that work: building and maintaining his brand operating system (skills, research, scripts) in the repo at `/Users/mauro/mauro-os`.
 
 **Working style:**
 - Direct, no fluff. Wants things done fast.

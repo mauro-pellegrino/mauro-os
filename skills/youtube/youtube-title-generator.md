@@ -1,25 +1,25 @@
 # YouTube Title Generator
-**Version 2.2 | Updated 30 March 2026**
+**Version 3.0 | Updated 14 July 2026 | Retargeted to Mauro's channel (AI systems for agency owners)**
 
-Generates YouTube titles for Lorenzo's channel in 3 steps: extract the mechanism from outlier titles, map it to the video topic, rebuild it with Growthub's unique angle. Every title serves two permanent goals (see below) — reach and conversion.
+Generates YouTube titles for Mauro's channel in 3 steps: extract the mechanism from outlier titles, map it to the video topic, rebuild it with the angle only Mauro can credibly claim. Every title serves two permanent goals (see below): reach and conversion.
 
 ---
 
 ## Required Reading
 
-Before producing any written output, read `brands/growthub/voice.md` and `brands/growthub/audience.md` in full. All copy must pass the 60-second pre-publish checklist at the bottom of voice.md. Ground every audience-facing decision (tier, stated pain, language) in the v2.1 ICP in audience.md.
+Before producing any written output, read `brand/voice.md` and `brand/audience.md` in full. All copy must pass the 60-Second Pre-Publish Checklist at the bottom of voice.md. Ground every audience-facing decision (segment, stated pain, language) in the ICP in audience.md.
 
 ---
 
-## Step 0 — Surface What's Already Known
+## Step 0: Surface What's Already Known
 
 Before generating any titles, surface all existing title references, competitor examples, and approved directions already on file for this topic. Output first, then ask for additional context.
 
 ### 1. Search existing research and skill files
 
 ```bash
-grep -rli "[topic keyword]" /Users/mauro/growthub-os/research/
-grep -ni "[topic keyword]" /Users/mauro/growthub-os/skills/youtube-title-generator.md
+grep -rli "[topic keyword]" /Users/mauro/mauro-os/research/
+grep -ni "[topic keyword]" /Users/mauro/mauro-os/skills/youtube/youtube-title-generator.md
 ```
 
 Extract from matches:
@@ -33,23 +33,23 @@ Extract from matches:
 WHAT'S ALREADY ON FILE: [TOPIC] TITLES
 ----------------------------------------
 Competitor titles found:
-- "[title]" — Mechanism: [mechanism name]
+- "[title]" | Mechanism: [mechanism name]
 
 Approved directions already listed:
-- "[title]" — Why it works: [note]
+- "[title]" | Why it works: [note]
 
 Outlier titles from weekly brief:
-- "[title]" — Channel: [channel name]
+- "[title]" | Channel: [channel name]
 
 Mechanisms most applicable to this topic:
-- [Mechanism name] — because [reason]
+- [Mechanism name], because [reason]
 ```
 
 ### 3. Request additional context
 
 After the summary, ask:
 
-> "That's what's already on file for this topic. Anything to add before I generate titles? For example: a specific client result to anchor on, a number to use, or a title direction Lorenzo already has in mind."
+> "That's what's already on file for this topic. Anything to add before I generate titles? For example: a specific result to anchor on, a number to use, or a title direction you already have in mind."
 
 Wait for the response before generating titles.
 
@@ -59,7 +59,7 @@ Wait for the response before generating titles.
 
 - A video idea has been chosen and needs a title
 - Someone asks "give me titles for this video"
-- Running the weekly research brief and need to convert outlier titles into Lorenzo versions
+- Running the weekly research brief and converting outlier titles into versions for Mauro's channel
 
 ---
 
@@ -67,168 +67,159 @@ Wait for the response before generating titles.
 
 Every title must serve both of these simultaneously. They are not optional and do not change video to video.
 
-**Goal 1 — Qualified views**
-Attract founders spending £30k–£100k/month on Meta who are hitting a ceiling. These are people who already run ads, already have a brand, and are stuck at a level they cannot break past. A title that pulls in beginners but not this group is a failure. A title that pulls in this group at scale is a win.
+**Goal 1: Qualified views**
+Attract established agency owners (mid six figures a month and up) whose pipeline is referral- and outreach-dependent and who want AI content and acquisition systems installed. A title that pulls in beginners or prompt-hunters but not this group is a failure. A title that pulls in this group at scale is a win.
 
-**Goal 2 — Audience conversion**
-Move the existing audience toward booking a call. Every video Lorenzo makes is also a sales asset. Titles that signal depth, proof, and in-house experience build the trust that eventually turns viewers into booked calls.
+**Goal 2: Audience conversion**
+Move the existing audience toward Mauro's offer. Every video is also a sales asset. Titles that signal depth, proof, and a real running system build the trust that eventually turns viewers into inbound leads.
 
-When evaluating any title, ask: does this make a £50k/month Meta spender stop scrolling? If yes, it passes. If it reads as beginner content or generic advice, it fails.
+When evaluating any title, ask: does this make the owner of a real, established agency stop scrolling? If yes, it passes. If it reads as beginner content or generic AI-tips advice, it fails.
 
 ---
 
-## Title Philosophy (from Lorenzo)
+## Title Philosophy
 
 These four principles override any other instinct when writing titles.
 
 **1. Reach over voice**
-Titles should aim for maximum audience reach, not necessarily reflect Lorenzo's personal speaking style. If a format (lowercase, casual, list-style) reaches more of the right people, use it — even if it doesn't feel 100% like Lorenzo's voice in conversation. The video earns the voice. The title earns the click.
+Titles should aim for maximum reach among the right people, not necessarily reflect Mauro's conversational voice. If a format (lowercase, casual, list-style) reaches more of the right audience, use it. The video earns the voice. The title earns the click.
 
 **2. Validate against a competitor outlier**
 Before finalising a title, find the closest competitor title that outperformed its channel average on the same topic. Extract the mechanism. Adapt it. Do not write in a vacuum.
 
-**3. Add the Growthub sauce**
-The mechanism is borrowed. What makes it Growthub's is the angle that only Growthub can credibly claim:
-- In-house data: "$106M in managed spend", "$1M+ on street interview ads"
-- Formats nobody else teaches: podcast-style ads, street interviews, documentary creative
-- Real client results (with placeholders where unconfirmed — see below)
-- The stealth creative principle: ads that don't look like ads
+**3. Add the angle only Mauro can claim**
+The mechanism is borrowed. What makes it Mauro's is the angle only he can credibly back:
+- He runs the AI content and acquisition engine for a real B2B agency, daily, and measures it against booked calls
+- He builds the actual systems (skills library, agents, lead magnets, weekly analysis loop), and hands over the real goods
+- He's honest about the messy middle, which the audience is starving for
+- His belief: the best content doesn't look like content
 
-A competitor can use "How to write hooks." Lorenzo's version is "How to write hooks with a 45% hook rate" — the specific number is the sauce.
+A competitor can use "How to post more on LinkedIn." Mauro's version is "The AI system that turns one client call into a week of content." The running system is the sauce.
 
-**4. Use placeholders when client numbers aren't confirmed**
-Never invent a specific number. If the case study result hasn't been confirmed, use a placeholder:
-- `$XM/year` or `£Xk/month` (not `$1.2M/year`)
-- `£Xk/day to £Xk/day` for before/after contrast
-- `The 3 ads that generated $[X] for our client`
+**4. Use placeholders when numbers aren't confirmed**
+Never invent a specific number. If the result hasn't been confirmed, use a placeholder:
+- `$[X]k deal` or `[X] booked calls` (not an invented figure)
+- `[X] posts in [X] minutes` for time-compression contrast
 
-Placeholders should be swapped for real numbers before the video goes live. If no real number is available, switch to a mechanism that doesn't require one.
+Placeholders are swapped for real numbers, with Mauro's sign-off, before the video goes live. If no real number is available, switch to a mechanism that doesn't require one.
 
 ---
 
 ## Inputs Required
 
-1. **The video topic / angle** — one sentence describing what the video covers
-2. **The weekly research brief** — the outlier titles to analyse (from `skills/weekly-research.md` output)
-3. **Growthub credentials** — specific numbers available to use (see below)
+1. **The video topic / angle**: one sentence describing what the video covers
+2. **The weekly research brief**: the outlier titles to analyse (from `skills/research/weekly-research.md` output)
+3. **Credential numbers**: specific numbers available to use (see below)
 
 ---
 
-## Growthub Credential Numbers
+## Credential Numbers
 
-Use these in titles whenever a number claim is made. Never invent numbers.
+Use these in titles whenever a number claim is made. Never invent numbers, and get Mauro's sign-off before any of them goes public.
 
-| Credential | Number |
+| Credential | Detail |
 |---|---|
-| Total managed Meta spend (last 12 months) | $106M |
-| Mid-range anchor (last 6 months) | $63M |
-| Brands worked with | 100+ |
-| Studio | Own studio (in-house production) |
-| Street interview ads spend | +$1M |
-| Specific client results | pull from `brands/growthub/learnings.md` or brief what the video covers |
+| The agency he runs | About $300k/mo |
+| Organic contribution | At least a third of that revenue comes from the organic accounts he manages |
+| Deal closed off X | $28k |
+| The engine | Runs daily for a real B2B agency, measured weekly against booked calls |
+| Systems built | Full skills library, lead magnets, articles, long-forms, moving toward agents |
+| Specific results | Pull from `brand/social-proof/` (create as results come in) or the video brief |
 
-Use `$106M` as the primary credential. Use `$63M` as the recency anchor when framing current results. Never use the old $106M or $46M figures — those are outdated.
-
-If the video is a client case study, the client's actual result is the number. Use it exactly — odd specificity ($1.81M) outperforms round numbers ($2M).
+If the video is a case study of a specific result, that result is the number. Use it exactly: odd specificity ($28k) outperforms round numbers ($30k).
 
 ---
 
-## Step 1 — Extract the Mechanism from Outlier Titles
+## Step 1: Extract the Mechanism from Outlier Titles
 
-Before writing any title, analyse the outlier titles from the weekly brief. For each one, identify which tension mechanism makes it work. There are 8 mechanisms.
+Before writing any title, analyse the outlier titles from the weekly brief. For each one, identify which tension mechanism makes it work. There are 8 mechanisms. The examples below are illustrative patterns for Mauro's lane; replace them with real outliers from the research as the reference table fills in.
 
 ### The 8 Mechanisms
 
 **1. Number Contrast**
 Two numbers set against each other. The gap between them is the entire hook. No explanation needed.
-- *$3k/day VS $87k/day | The Creative Gap Exposed*
-- *From $2k/Day to $160k/Day in 30 Days*
-- Works for: before/after case studies, creative testing results, scaling breakdowns
+- *[X] hours of content work a week to [X] minutes a day*
+- *0 inbound leads to [X] booked calls in 90 days*
+- Works for: before/after system stories, time-saved breakdowns, pipeline turnarounds
 
 **2. Oddly Specific Proof**
 A non-round number signals real data, not a made-up claim. Specificity does the credibility work.
-- *$264,590 per day on Shopify | Full Creative Strategy*
-- *$827,869 in 4 days on Shopify*
-- Works for: case studies, spend breakdowns, results videos. Fails for: conceptual/educational videos with no hard number.
+- *The $28k deal that came from one X post*
+- Works for: case studies, real results videos. Fails for: conceptual videos with no hard number.
 
 **3. Credential Anchor**
-Total scale or spend leads the title. The number establishes who Lorenzo is before the viewer reads the rest.
-- *My $106M Meta Ads Strategy (step by step)*
-- *My $100M Meta Ads Creative Strategy*
-- Works for: strategy overviews, methodology videos, anything where Lorenzo's experience is the draw. Fails for: client-specific case studies (use their number, not the credential).
+The scale of what you run leads the title. The number establishes who Mauro is before the viewer reads the rest.
+- *The AI content engine behind a $300k/mo agency (step by step)*
+- Works for: strategy overviews, methodology videos, anything where the running system is the draw. Fails for: narrow tactical videos where the tactic is the draw.
 
 **4. Belief-Breaker**
-The title contradicts something the viewer currently believes. Creates mild friction — they either agree and click, or disagree and click.
-- *Why Your "Bad" Ads Get Spend on Facebook*
-- *No One Will Buy Your Brand*
-- *Why you aren't scaling*
-- Works for: ICP belief-breaking videos, contrarian takes, mechanism explainers. Fails for: tutorials or case studies where the mechanism is the draw.
+The title contradicts something the viewer currently believes. Creates mild friction: they either agree and click, or disagree and click.
+- *AI content isn't cheapening your brand. Your process is.*
+- *Referrals are not a pipeline*
+- Works for: ICP belief-breaking videos, contrarian takes. Fails for: tutorials where the mechanism is the draw.
 
 **5. Named Format or Mechanism**
-The specific technique or format is the subject. Viewer clicks to learn the named thing before competitors do.
-- *Unaware Ads: How to Legally Print Money in eCom*
-- *8 Figure B Roll Creative Strategy*
-- *Street Interview Ads*
-- Works for: format tutorials, creative strategy explainers, named frameworks. Fails for: general "how to run ads" content where there's no named concept.
+The specific system or format is the subject. Viewer clicks to learn the named thing before their competitors do.
+- *The transcript-to-content pipeline*
+- *AI lead magnets: the asset that books calls while you deliver*
+- Works for: system tutorials, named frameworks. Fails for: general "use AI" content with no named concept.
 
 **6. Platform / Technical Problem**
 Names the specific technical problem the viewer is experiencing. Viewer recognises their situation.
-- *Why Your Ads Are Invisible For Meta (Andromeda Update)*
-- *How to fix Meta Ads roller coaster performance*
-- Works for: timely algorithm/platform content, troubleshooting videos. Fails for: evergreen strategy content.
+- *Why your LinkedIn posts get 12 impressions*
+- *Why Claude writes generic content for you (and the fix)*
+- Works for: timely platform/tooling content, troubleshooting videos. Fails for: evergreen strategy content.
 
 **7. Speed Compression**
 A time frame that makes the result feel achievable. Compresses the timeline to create urgency.
-- *$827,869 in 4 days*
-- *From $2k/Day to $160k/Day in 30 Days*
-- *How to Find a Facebook Ads Post ID In 90 Seconds*
-- Works for: case studies with a clear timeline, quick tactical videos. Fails for: slow-burn strategy content where speed isn't the point.
+- *A week of agency content in [X] minutes*
+- *How to set this up in one afternoon*
+- Works for: system builds with a clear timeline, quick tactical videos. Fails for: slow-burn strategy content where speed isn't the point.
 
 **8. Process Transparency**
-Shows the work rather than claiming expertise. "Full strategy", "step by step", "our exact process" — positions Lorenzo as a practitioner, not a teacher.
-- *$34,592 per day on Shopify | Full Creative Strategy*
-- *My $106M Meta Ads Strategy (step by step)*
-- *How I Make BANGER Street Interview Ads (+$1M Spent)*
-- Works for: deep-dive tutorials, full walkthroughs, anything where the behind-the-scenes access is the value. Fails for: short punchy belief-breaker content.
+Shows the work rather than claiming expertise. "Full system", "step by step", "my exact setup": positions Mauro as a practitioner, not a teacher.
+- *My exact Claude setup for agency content (full walkthrough)*
+- *I run this every Monday. Here's the whole system.*
+- Works for: deep-dive tutorials, full walkthroughs, anything where behind-the-scenes access is the value. Fails for: short punchy belief-breaker content.
 
 ---
 
-## Step 2 — Map the Mechanism to the Video Topic
+## Step 2: Map the Mechanism to the Video Topic
 
-Not every mechanism is equally strong for every topic. Use this table as a starting point — not a constraint. Any mechanism can work for any topic if executed correctly.
+Not every mechanism is equally strong for every topic. Use this table as a starting point, not a constraint. Any mechanism can work for any topic if executed correctly.
 
 | Video type | Strongest mechanisms |
 |---|---|
-| Client case study | Number Contrast, Oddly Specific Proof, Speed Compression |
-| Strategy overview / methodology | Credential Anchor, Process Transparency, Named Mechanism |
-| Format tutorial (street interview, podcast ad, VSL) | Named Mechanism, Process Transparency, Credential Anchor |
+| Result case study (a deal, a booked-call run) | Number Contrast, Oddly Specific Proof, Speed Compression |
+| System overview / methodology | Credential Anchor, Process Transparency, Named Mechanism |
+| Tool or workflow tutorial (Claude setup, transcript pipeline, lead magnets) | Named Mechanism, Process Transparency, Speed Compression |
 | Belief-breaking / contrarian | Belief-Breaker, Number Contrast |
-| Algorithm / platform update | Platform/Technical Problem, Belief-Breaker |
-| Creative volume / ad fatigue | Belief-Breaker, Number Contrast, Oddly Specific Proof |
+| Platform or tooling change | Platform/Technical Problem, Belief-Breaker |
+| Consistency / time problem | Belief-Breaker, Speed Compression, Number Contrast |
 | Tactical how-to | Process Transparency, Named Mechanism, Speed Compression |
 
-Pick the top 2 mechanisms that fit the topic. Write at least 3 title variations per mechanism. Then validate each against the reference table — if no competitor has outperformed on this mechanism for this topic, reconsider.
+Pick the top 2 mechanisms that fit the topic. Write at least 3 title variations per mechanism. Then validate each against the reference table. If no competitor has outperformed on this mechanism for this topic, reconsider.
 
 ---
 
-## Step 3 — Rebuild in Lorenzo's Voice
+## Step 3: Rebuild for Mauro's Channel
 
 ### Voice Rules
 
 **Do:**
-- Lead with the result or number. If the video has a number, it goes in position 1 or 2.
-- Use "My" or "We" — personal ownership of the strategy or result.
+- Lead with the result or the system. If the video has a confirmed number, it goes in position 1 or 2.
+- Use "My" or "I": personal ownership of the system or result.
 - Keep it under 10 words before any parenthetical. Count them.
-- Use the parenthetical for specificity: a number, a format name, a time frame, a platform name.
+- Use the parenthetical for specificity: a number, a system name, a time frame, a tool name.
 - Use lowercase when the tone is conversational. Not every title needs title case.
-- Name the platform. "Meta", not "social media" or "paid ads".
-- Let the gap do the work in contrast titles. "$2k/day to $38k/day" needs no explanation.
+- Name the tool. "Claude", not "AI". "X" and "LinkedIn", not "social media".
+- Let the gap do the work in contrast titles.
 
 **Don't:**
-- No "dark truth", "hidden", "exposed", "secret", "glitch", "illegal" — theatrical language.
-- No "Here's why / Here's what / Here's how" — YouTube filler.
-- No round numbers when you have a real one. $1.81M beats $2M every time.
-- No invented numbers. Use a placeholder (`$XM`, `£Xk/day`) until the real figure is confirmed.
+- No "dark truth", "hidden", "exposed", "secret", "glitch": theatrical language.
+- No "Here's why / Here's what / Here's how": YouTube filler.
+- No round numbers when you have a real one. $28k beats $30k every time.
+- No invented numbers. Use a placeholder (`$[X]k`, `[X] calls`) until the real figure is confirmed and signed off.
 - No adjectives that don't add information: "ultimate", "complete", "powerful", "game-changing".
 - No explaining the insight in the title. The title creates curiosity. The video delivers the answer.
 - No questions. Statements outperform questions for this audience.
@@ -238,57 +229,42 @@ Pick the top 2 mechanisms that fit the topic. Write at least 3 title variations 
 The parenthetical is for specificity, not punchlines.
 
 Good parentheticals:
-- `(step by step)` — process signal
-- `(Andromeda update)` — timeliness signal
-- `(+$1M spent)` — credential signal
-- `($106M in Meta spend)` — credential signal
-- `(full breakdown)` — depth signal
-- `(2026)` — timeliness signal
+- `(step by step)`: process signal
+- `(full walkthrough)`: depth signal
+- `(with the actual prompts)`: hand-over-the-goods signal
+- `(2026)`: timeliness signal
+- `($28k deal)`: proof signal, once signed off
 
 Bad parentheticals:
-- `(you need to see this)` — theatrical
-- `(everyone's missing this)` — theatrical
-- `(this changes everything)` — theatrical
-- `(it's not what you think)` — theatrical
+- `(you need to see this)`: theatrical
+- `(everyone's missing this)`: theatrical
+- `(this changes everything)`: theatrical
+- `(it's not what you think)`: theatrical
 
 ---
 
-## Reference Table — Competitor Title → Mechanism → Lorenzo Version
+## Reference Table: Competitor Title → Mechanism → Mauro Version
 
-| Competitor title | Mechanism | Lorenzo version |
+[TO BE REBUILT: this table is populated from outlier titles collected by `skills/research/weekly-research.md` for Mauro's lane (AI systems for agency owners). Log each validated outlier here as research accumulates.]
+
+| Competitor title | Mechanism | Mauro version |
 |---|---|---|
-| *$3k/day VS $87k/day \| The Creative Gap Exposed* | Number Contrast | *£Xk/day to £Xk/day \| What changed (one creative format)* |
-| *$827,869 in 4 days on Shopify \| Offer + Landing Page Strategy* | Oddly Specific Proof + Speed Compression | *$[X]M in 5 days for a supplement brand (full breakdown)* |
-| *Why Your "Bad" Ads Get Spend on Facebook* | Belief-Breaker | *Why your worst ads get the most spend* |
-| *My $106M Meta Ads Strategy (step by step)* | Credential Anchor + Process Transparency | *(already Lorenzo's — use as written)* |
-| *No One Will Buy Your Brand* | Belief-Breaker | *Nobody is clicking your ad. Here's why.* |
-| *Unaware Ads: How to Legally Print Money in eCom* | Named Mechanism | *Unaware ads: my $106M Meta strategy starts here* |
-| *Scale to $2.3M/Month on Shopify with Unaware Ads* | Oddly Specific Proof + Named Mechanism | *$2.3M/month with one creative type (unaware ads)* |
-| *From $2k/Day to $160k/Day in 30 Days* | Number Contrast + Speed Compression | *£Xk/day to £Xk/day in 90 days (what we changed)* |
-| *How I Make BANGER Street Interview Ads (+$1M Spent)* | Named Mechanism + Credential Anchor | *(already Lorenzo's — use as written)* |
-| *The Real Reason Your Business Stopped Growing* | Belief-Breaker | *Why brands plateau at $30k/month (it's not your ads)* |
-| *$100M e-commerce playbook for 2026* | Credential Anchor | *My $106M Meta ads strategy for 2026* |
-| *He scaled an eCom brand to $800k/day…* | Oddly Specific Proof + Curiosity gap | *He was at £Xk/day. Now £Xk/day. One thing changed.* |
-| *8 Figure B Roll Creative Strategy* | Named Mechanism | *The b-roll ad format scaling 8-figure brands on Meta* |
+| *(log outliers here as the weekly research finds them)* | | |
 
 ---
 
-## Approved Direction Examples (from Mauro and Lorenzo)
+## Approved Direction Examples
 
-These are titles from Mauro and Lorenzo's shortlist that represent the right direction. Use them as calibration for tone, mechanism, and Growthub's angle. They are not a fixed list to repeat — they show what good looks like.
+[TO BE REBUILT: this list holds titles from Mauro's shortlist once he approves directions for the new lane. Use them as calibration for tone, mechanism, and angle. Starter directions consistent with the positioning, pending Mauro's approval:]
 
-| Title | Why it works |
+| Title direction | Why it could work |
 |---|---|
-| *Ranking every ad format in 2026* | Opinionated, list-based, searchable. Growthub is one of few with enough real data to credibly rank formats. |
-| *How to write hooks with a 45% hook rate* | Specific benchmark makes it credible and searchable. Add format impact angle — the same hook lands differently in a street interview vs a VSL. Validate against recent hook videos before publishing. |
-| *How to pick winning angles every single time (2026)* | "Every single time" removes the guesswork frustration the ICP feels. Year marker keeps it current. |
-| *How to run humor ads on Meta in 2026* | Niche format that almost nobody teaches. High-intent, low-competition. Growthub has in-house data on this. |
-| *The 3 ads that generated $[X] for our client* | Case study format. Placeholder until client number confirmed — swap `$[X]` for real figure before publishing. |
-| *What unaware ads are (and why they scale brands past $1M/month)* | Named mechanism + outcome proof. Definitional title — owns the term "unaware ads" in search. |
-| *How $100k/day brands source creators* | Targets exactly the ICP ceiling (£30k–£100k/month). Operational detail most channels skip. |
-| *How to script organic ads on Meta ($100M+ generated)* | Credential in parenthetical. Organic ads framing is differentiated from standard paid creative advice. |
-| *I tested over 5000 ads. Here are the scripts ACTUALLY making money* | Volume proof + implied insider access. "ACTUALLY" signals contrast from noise — resonates with an audience sick of generic advice. |
-| *How I use viral TikToks to create winning Facebook Ads (to scale to $1M/month on Meta)* | Cross-platform angle nobody else connects. Outcome anchor in parenthetical. |
+| *The AI content engine behind a $300k/mo agency (step by step)* | Credential anchor plus process transparency. Only someone actually running the engine can make this video. Number needs sign-off. |
+| *You build inbound for clients. Here's how to build yours.* | The cobbler's children pillar stated as a direct challenge. Speaks only to real agency owners. |
+| *How I turn one client call into a week of content with Claude* | Named mechanism plus speed compression. Concrete, operational, low-competition. |
+| *AI lead magnets that book calls (with the actual prompts)* | Named mechanism plus hand-over-the-goods parenthetical. |
+| *Personal branding without the cringe (a system, no face required)* | Hits the ICP's stated fear directly (cringe, being on camera). |
+| *The $28k deal that came from one X post* | Oddly specific proof. His own result. Needs sign-off before use. |
 
 ---
 
@@ -296,7 +272,7 @@ These are titles from Mauro and Lorenzo's shortlist that represent the right dir
 
 ### Generate titles
 
-For each mechanism selected in Step 2, write 3–5 title variations. Label each clearly.
+For each mechanism selected in Step 2, write 3-5 title variations. Label each clearly.
 
 ```
 MECHANISM: [Mechanism name]
@@ -327,7 +303,7 @@ State the single recommended title with a one-sentence reason.
 
 ```
 RECOMMENDED: [Title]
-Why: [one sentence — specific to the video topic and Lorenzo's channel]
+Why: [one sentence, specific to the video topic and Mauro's channel]
 ```
 
 ---
@@ -338,8 +314,8 @@ Why: [one sentence — specific to the video topic and Lorenzo's channel]
 - Never use theatrical language ("dark truth", "hidden", "exposed", "secret").
 - Never write more than 10 words before the parenthetical. Count them.
 - Never use the parenthetical for a punchline. Use it for a fact.
-- Never recommend a title that any generic Meta ads channel could have written. The Growthub sauce must be visible — a specific number, a specific format, or a perspective only Lorenzo can credibly claim.
+- Never recommend a title that any generic AI-tips channel could have written. The angle must be visible: a real system, a confirmed number, or a perspective only someone running the engine can claim.
 - Never write a question title.
 - Never explain the insight in the title. If the title gives away the answer, rewrite it.
 - Never produce fewer than 6 title variations across at least 2 mechanisms.
-- Never use an invented specific number. Use a placeholder (`$[X]`, `£Xk/day`) and note that it needs confirming before the video goes live.
+- Never use an invented specific number. Use a placeholder (`$[X]`, `[X] calls`) and note that it needs Mauro's confirmation before the video goes live.

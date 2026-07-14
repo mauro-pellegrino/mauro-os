@@ -10,7 +10,7 @@
 
 ## Required reading
 
-Before any audience-facing output, read `brands/growthub/voice.md` (hard bans + 60-second checklist) and `brands/growthub/audience.md` (ICP). Ground persona and pain calls in the ICP, never invent.
+Before any audience-facing output, read `brand/voice.md` (hard bans + pre-publish checklist) and `brand/audience.md` (Mauro's ICP, for framing the write-up). Ground persona and pain calls for the torn-down ad in the transcript and metrics provided, never invent.
 
 ---
 
@@ -23,7 +23,7 @@ Every teardown exists to answer these, in order:
 3. **What awareness level is it speaking to?** (unaware / problem aware / solution aware / product aware / most aware)
 4. **What creative elements are actually driving performance?**
 
-Once these are answered, the team can build winning creative instead of guessing.
+Once these are answered, you can build winning creative instead of guessing.
 
 ---
 
@@ -72,7 +72,7 @@ Write down **every keyword, hook format, and framing device** that appears in th
 2. Identify the core angle.
 3. Rewrite it in a **different format with a different creative treatment** (different actor, setting, format).
 
-It should not feel like the same ad to the viewer, but it carries the same ingredients that drove performance. Use Growthub's stealth formats (podcast ads, skit conversations, street interviews, Pixar/native) to grab quick wins that are **visually different** from everything else in the account. Visual difference is the #1 proven lever to scale on Meta in 2026 (entity-ID / Andromeda groups near-identical creatives and caps their reach).
+It should not feel like the same ad to the viewer, but it carries the same ingredients that drove performance. Use formats that don't look like ads (podcast ads, skit conversations, street interviews, native formats) to grab quick wins that are **visually different** from everything else in the account. Visual difference is the #1 proven lever to scale on Meta in 2026 (entity-ID / Andromeda groups near-identical creatives and caps their reach).
 
 ---
 

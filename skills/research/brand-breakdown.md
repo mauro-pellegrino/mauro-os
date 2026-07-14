@@ -6,7 +6,7 @@
 
 ## Required Reading
 
-Before producing any written output, read `brands/growthub/voice.md` and `brands/growthub/audience.md` in full. All copy must pass the 60-second pre-publish checklist at the bottom of voice.md. Ground every audience-facing decision (tier, stated pain, language) in the v2.1 ICP in audience.md.
+Before producing any written output, read `brand/voice.md` and `brand/audience.md` in full. All copy must pass the pre-publish checklist in voice.md. Ground every audience-facing decision (stated pain, language, framing) in the ICP in audience.md.
 
 ---
 
@@ -169,6 +169,6 @@ Keep this section analytical. Explain the mechanics, not just what happens.
 
 ## Integration with other skills
 
-- To turn this breakdown into a YouTube script: use `skills/youtube-hook-script.md`
-- To turn this breakdown into a Miro board: use `skills/miro-design-system.md`
-- To generate titles for the video: use `skills/youtube-title-generator.md`
+- To turn this breakdown into a YouTube script: use `skills/youtube/youtube-hook-script.md`
+- To turn this breakdown into a Miro board: use `skills/youtube/miro-design-system.md`
+- To generate titles for the video: use `skills/youtube/youtube-title-generator.md`

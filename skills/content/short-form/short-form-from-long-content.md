@@ -1,15 +1,16 @@
 # Skill: Short-Form from Long Content
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** 2026-05-27
-**Input:** Long content source (article, video transcript, long-form post, internal doc) + which account is active
-**Output:** 3-5 short-form post options in Lorenzo's voice, picked by Mauro, finalized as a single post
+**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
+**Input:** Long content source (article, video transcript, long-form post, internal doc)
+**Output:** 3-5 short-form post options in Mauro's voice, picked by Mauro, finalized as a single post
 
 ---
 
 ## What This Skill Does
 
-Takes existing long content (an article, a Lorenzo case study video transcript, a 22-page mini-guide, a long-form post that already shipped, an internal SOP) and produces short-form X / LinkedIn posts that can be deployed independently to:
+Takes existing long content (an article, one of Mauro's video transcripts, a mini-guide, a long-form post that already shipped, an internal SOP or skill file) and produces short-form X / LinkedIn posts that can be deployed independently to:
 
 - Tease the long content
 - Surface a sharp insight from it
@@ -17,16 +18,16 @@ Takes existing long content (an article, a Lorenzo case study video transcript, 
 - Plant a provocative claim from it
 - Highlight a specific number from it
 
-Short forms feed the top of the funnel between bigger drops. The team produces 5-10 short forms per week by repurposing existing long content.
+Short forms feed the top of the funnel between bigger drops. [CALIBRATE: set the weekly short-form cadence with Mauro; it has to fit his roughly one hour a day.]
 
 ---
 
 ## Required Reading
 
-- **Active account config** (e.g., `accounts/lorenzo-x/account-config.md`). Substitute every `{{token}}` in skill output with values from the active account config.
-- `brands/growthub/voice.md` — voice rules + 60-second pre-publish checklist
-- `brands/growthub/audience.md` — ICP v2.2 (verbatim pain phrases that work as short-form hooks)
-- `research/x-analytics-exports/short-forms-2026-top-performers.md` — the data layer this skill was extracted from. Refer to this for actual examples per template.
+- `brand/voice.md` — voice rules + pre-publish checklist
+- `brand/positioning.md` — identity, proof, pillars
+- `brand/audience.md` — ICP (established agency owners) + verbatim pain phrases that work as short-form hooks
+- Mauro's own shipped posts (`brand/posts/`) — the live style anchors to mimic
 
 ---
 
@@ -36,16 +37,16 @@ Short forms feed the top of the funnel between bigger drops. The team produces 5
 
 Read the source content. Pull out the 3-5 strongest single insights. An insight is strong if:
 
-- It's specific to operator-grade work (real client, real spend, real artifact)
-- It's defensible — Lorenzo or the team can back it under scrutiny
+- It's specific to operator-grade work (real system, real output, real artifact)
+- It's defensible — Mauro can back it under scrutiny
 - It's compressible — fits in under 30 words without losing meaning
-- It's surprising to someone in the ICP (brand operators $100K-$1M+/mo)
+- It's surprising to someone in the ICP (established agency owners at mid six figures/month and up)
 
 Write each insight in shorthand before drafting the actual posts. The skill is built around these insights, not around the source content itself.
 
 ### Step 2: Match each insight to a template
 
-The 6 templates (full examples in `research/x-analytics-exports/short-forms-2026-top-performers.md`):
+The 6 templates:
 
 | # | Template | When to use | Word target |
 |---|---|---|---|
@@ -57,6 +58,8 @@ The 6 templates (full examples in `research/x-analytics-exports/short-forms-2026
 | **F** | Follow tease | Momentum / upcoming-content signal. Used sparingly. | 10-20 |
 
 Match each insight to whichever template fits best. One insight = one template. Don't force.
+
+Note: for standalone posts (no media, no link), Mauro's preferred shape is beefier than these word targets suggest. See the 4-part standalone shape in `bulk-short-form-generator.md` (hook / transition / body / closer, ~4-6 lines). The word targets above fit teases and one-liners, not standalone teaching posts.
 
 ### Step 3: Draft 3-5 short-form options + pick one
 
@@ -84,32 +87,30 @@ Wait for Mauro to pick before finalizing. The pick gets a voice.md compliance pa
 
 ## Voice Rules (Critical Reminders)
 
-Full rules in `brands/growthub/voice.md`. Non-negotiables for short-form copy:
+Full rules in `brand/voice.md`. Non-negotiables for short-form copy:
 
 1. **No em dashes.** Never.
 2. **No "It's not X, it's Y"** structures.
-3. **No "Most brands" openers** unless followed by a sharp Growthub-specific counter-claim.
+3. **No "Most brands / most agencies" openers.**
 4. **No problem-to-purpose reversals.**
-5. **Numbers must be real.** Cross-check `accounts/lorenzo-x/wins-log.md` for any dollar/result claim.
-6. **Possessive operator credit** ("our", "we", "I broke down") when the insight comes from team work.
+5. **Numbers must be real.** Cross-check `brand/social-proof/` (create as results come in) or the source content for any dollar/result claim.
+6. **Possessive operator credit** ("my", "I built", "I broke down") when the insight comes from Mauro's work.
 7. **No filler openers.** No "Quick reminder:", "Friendly reminder:", "Real talk:", "Here's the thing:".
+8. **Expert-to-expert framing.** Speak to the sophisticated agency owner, never the beginner (per `feedback_expert_not_beginner_positioning`).
 
 ---
 
 ## Template Details
 
+[CALIBRATE: anchor examples for each template should be refilled with Mauro's own top-performing posts as @maurojpelle accumulates analytics. Until then, use the pattern formulas below; do not reuse any older reference account's copy.]
+
 ### Template A: Caption tease
 
 Short framing line that points to attached media. The media is the deliverable; the caption is a curiosity hook.
 
-**Anchor examples:**
-- "For all those wondering how we build winning ads..." (9w, 26.2K impressions)
-- "This is how you create winning ads" (7w, 16.4K impressions)
-- "Want to scale in a crowded market? Read this" (9w, 5.3K impressions)
-- "Reminder on what creative diversity REALLY means." (7w, 9.9K impressions)
-
 **Pattern formula:**
 - `[Curiosity gap question OR reminder OR statement] [attached media]`
+- Example shapes: "For everyone asking how the content engine actually runs..." / "Want inbound without posting 3x a day? Read this."
 
 **Required input:** the attached media (video file, article URL, image, screenshot). Without the media, this template doesn't work.
 
@@ -117,59 +118,45 @@ Short framing line that points to attached media. The media is the deliverable; 
 
 Direct standalone claim. The insight IS the post.
 
-**Anchor examples:**
-- "This is literally why reviews are so important in your research" (11w, 23.2K imp)
-- "you can literally see this in every single TOF ad that's an ACTUAL winner" (14w, 5.9K imp)
-- "The example I show in this article is literally worth $1M" (11w, 10.4K imp)
-
 **Pattern formula:**
-- `[Direct claim about a tactical truth Lorenzo learned from real work]`
+- `[Direct claim about a tactical truth Mauro learned from real work]`
+- Example shape: "This is exactly why your best content is already sitting in your client calls."
 
 ### Template C: Mini-framework
 
 3-item numbered list. Compress a process / category / decision-tree from the long content.
 
-**Anchor examples:**
-- "Our 3 highest spending formats this year: 1. Podcast style ads 2. Street interviews 3. Skit conversations" (17w, 15.3K imp)
-- "How to create banger hooks: 1. Make your first 3s organic 2. Use facial expressions 3. Give context right away" (20w, 7.2K imp)
-
 **Pattern formula:**
 - `[Setup line ending with colon]: 1. [Item] 2. [Item] 3. [Item]`
 - 3 items is the sweet spot. 2 feels thin. 4+ runs long.
+- Example shape: "The 3 formats that book calls for agencies right now: 1. [format] 2. [format] 3. [format]" (only from real observed work)
 
 ### Template D: Provocative one-liner
 
 Challenge claim. Stops the scroll without context.
 
-**Anchor examples:**
-- "Your ads suck. With this maybe a bit less." (9w, 11.1K imp)
-
 **Pattern formula:**
-- `[Strong direct statement that challenges a default assumption]`
+- `[Strong direct statement that challenges a default assumption the ICP holds]`
+- Example shape: "Your agency doesn't have a leads problem. It has a visibility problem."
 
-**Caution:** the line has to be defensible. Don't ship provocations without backing. If a commenter pushes back, Lorenzo / Mauro should have a 30-second answer ready.
+**Caution:** the line has to be defensible. Don't ship provocations without backing. If a commenter pushes back, Mauro should have a 30-second answer ready.
 
 ### Template E: Specific number flex
 
 Curiosity hook anchored on a concrete dollar / time / volume number from real work.
 
-**Anchor examples:**
-- "The example I show in this article is literally worth $1M" (11w, 10.4K imp)
-
 **Pattern formula:**
 - `[Number + specific context] + [pointer to deeper content if applicable]`
 
-**Critical:** number must be real. Cross-check against `accounts/lorenzo-x/wins-log.md` or the source content. No fabricated specifics per `feedback_no_fabricated_performance_numbers`.
+**Critical:** number must be real and signed off. Cross-check against `brand/social-proof/` or the source content. No fabricated specifics per `feedback_no_fabricated_performance_numbers`.
 
 ### Template F: Follow tease
 
 Forward-looking signal. Sets up future content.
 
-**Anchor examples:**
-- "Got a lot of sauce coming regarding AI... Follow me so you don't miss it:" (15w, 7.3K imp)
-
 **Pattern formula:**
 - `[Tease about upcoming content theme] [follow CTA] [optional: pointer to teaser asset]`
+- Example shape: "Got a lot coming on [theme]. Follow me so you don't miss it."
 
 **Use sparingly.** Over-use looks needy. Max once per week.
 
@@ -177,27 +164,25 @@ Forward-looking signal. Sets up future content.
 
 ## Output Checklist
 
-Before handing off (to Joao for scheduling or Mauro for final review):
+Before handing off for scheduling:
 
 - [ ] Source long-content path captured (so the lineage is clear)
 - [ ] 3-5 options drafted across at least 2 different templates
 - [ ] Each option includes its template letter + name
-- [ ] All numbers verified against source or wins-log
+- [ ] All numbers verified against source or social-proof log
 - [ ] No em dashes, no "It's not X, it's Y", no "Most brands" openers
 - [ ] No filler openers ("Quick reminder", "Real talk", etc.)
-- [ ] All `{{tokens}}` resolved from `accounts/[active]/account-config.md`
 - [ ] If Template A (caption tease): attached media specified
-- [ ] Voice.md 60-second pre-publish checklist passed
+- [ ] Voice.md pre-publish checklist passed
 
 ---
 
-## Hand-Off (Joao)
+## Hand-Off
 
 Once Mauro picks the final post:
 
-1. Save the final short form + any attached media to Notion in the Joao handoff page
-2. Slack / DM Joao that the post is ready
-3. Joao schedules via Hypefury
+1. Save the final short form + any attached media note
+2. Mauro schedules it himself (TweetHunter drafts, or directly on platform)
 
 Short forms ship throughout the week to keep the algorithm fed between bigger drops.
 
@@ -218,8 +203,8 @@ Short forms ship throughout the week to keep the algorithm fed between bigger dr
 
 ## Cross-Reference
 
-- **Data source**: `research/x-analytics-exports/lorenzo-x-2025-12-08-to-2026-04-28.csv` (1,701 posts, 195 truly-short after filtering)
-- **Extracted patterns**: `research/x-analytics-exports/short-forms-2026-top-performers.md`
+- **Bulk version**: `skills/content/short-form/bulk-short-form-generator.md` (many posts per source, TweetHunter CSV, machine QA)
 - **Adjacent skills**: `skills/content/x-article-creator.md` (the article is one of the most common source inputs for this skill), `skills/content/long-form/_master.md` (long-form posts are another common source)
-- **Voice rules**: `brands/growthub/voice.md`
-- **Wins data**: `accounts/lorenzo-x/wins-log.md` (for fact-checking dollar / result claims in Template E)
+- **Voice rules**: `brand/voice.md`
+- **Wins data**: `brand/social-proof/` (create as results come in; for fact-checking dollar / result claims in Template E)
+- **Analytics calibration**: [CALIBRATE: rebuild template performance anchors from @maurojpelle's own X analytics exports when the account has volume.]

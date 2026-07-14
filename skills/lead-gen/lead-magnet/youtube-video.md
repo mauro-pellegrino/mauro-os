@@ -1,8 +1,6 @@
 # Lead Magnet Subtype: YouTube Video
 
-**Version:** 2.0
-**Created:** 2026-05-26
-**Migrated from:** `skills/content/yt-to-autodm.md` (v1.2, dated 2026-04-15)
+**Version:** 2.1 (retargeted to Mauro's brand, 2026-07-14)
 **Loaded with:** `_master.md` (always load both together)
 **DM noun:** "breakdown" (never "video" — the post copy and image never reveal it's a video)
 
@@ -23,8 +21,8 @@ This subtype crosses with `case-study.md` and `industry-specific.md`. The decisi
 | Source asset | Use this file |
 |---|---|
 | Existing YouTube video, regardless of content type | `youtube-video.md` |
-| Written deep-dive on one client transformation | `case-study.md` |
-| Vertical-packaged kit (multiple assets themed to one industry), even if it includes a video link | `industry-specific.md` |
+| Written deep-dive on one transformation | `case-study.md` |
+| Niche-packaged kit (multiple assets themed to one agency niche), even if it includes a video link | `industry-specific.md` |
 
 If the link in the autodm goes to a YouTube URL, this is the right file.
 
@@ -34,9 +32,9 @@ If the link in the autodm goes to a YouTube URL, this is the right file.
 
 Before drafting, get these from Mauro:
 
-1. **YouTube video URL** (Claude fetches transcript and description automatically, then checks `research/transcripts/lorenzopravata/` for an existing saved copy before fetching again per CLAUDE.md Research Protocol)
+1. **YouTube video URL** (Claude fetches transcript and description automatically, then checks `research/transcripts/maurojpelle/` for an existing saved copy before fetching again per CLAUDE.md research protocol)
 2. **OR video idea / topic summary** if the video doesn't exist yet
-3. **Client context if applicable** (which case study, which vertical, which framework the video covers)
+3. **Context if applicable** (which system, which case study, which framework the video covers)
 4. **Trigger keyword** (3-7 chars, ALL CAPS, topic-related)
 5. **Adjacent resource for the BTW upsell** (optional, see DM section below)
 6. **The 3-5 core insights from the video** (Claude extracts these from the transcript)
@@ -49,8 +47,8 @@ Before drafting, get these from Mauro:
 
 Before drafting:
 
-1. Check `research/transcripts/lorenzopravata/[video-id].md` first per CLAUDE.md Section 9. Don't re-fetch what's already saved.
-2. If not saved, fetch the YouTube page, extract title + description + chapter headings, save to `research/transcripts/lorenzopravata/[video-id].md` in the canonical format
+1. Check `research/transcripts/maurojpelle/[video-id].md` first per the CLAUDE.md research protocol. Don't re-fetch what's already saved.
+2. If not saved, fetch the YouTube page, extract title + description + chapter headings, save to `research/transcripts/maurojpelle/[video-id].md` in the canonical format
 3. Summarize 3-5 core insights from the transcript
 4. Identify the strongest single claim — this becomes the post hook
 5. Note the content format (breakdown / tutorial / framework / case study). This determines whether the post copy calls it a "breakdown", "framework", or "guide". **Never "video".**
@@ -71,8 +69,8 @@ The reader should feel they're being sent a written deep-dive. The video then ov
 
 ### When the video doesn't exist yet
 
-Mauro can draft the post + autodm BEFORE recording, then the video is recorded against the brief that was already published. This is the workflow Lorenzo has used for the case study videos. In this mode:
-- The "3-5 core insights" become the brief Lorenzo records against
+Mauro can draft the post + autodm BEFORE recording, then record the video against the brief that was already published. In this mode:
+- The "3-5 core insights" become the brief the video is recorded against
 - The cover image is designed first, the video matches it later
 - Risk: if the recorded video doesn't match the published claims, the DM under-delivers. Verify before launching the autodm.
 
@@ -96,7 +94,7 @@ Inherits the base cover spec from `_master.md`.
 - Best when the video presents a memorable framework that visualizes well
 
 **Option C: Side-by-side before/after**
-- Process-based videos (e.g., "before our system" vs "after our system" with anonymized creative grids)
+- Process-based videos (e.g., "before the system" vs "after the system" with anonymized content grids)
 - Best when the video is transformation-focused
 
 **Option D: Canva mock-up of thumbnail with overlaid text**
@@ -118,33 +116,33 @@ The cover image brief is mandatory output for this subtype. Skipping it = the po
 
 ## Post Hook Formulas (Subtype-Specific)
 
-`_master.md` has the universal hook formulas. For YouTube video magnets specifically, the patterns that have worked:
+`_master.md` has the universal hook formulas. For YouTube video magnets specifically:
 
-### LinkedIn (primary channel for video magnets per past performance)
+### LinkedIn (primary channel for video magnets)
 
-- **"I took [client framing] from [number] to [bigger number]"** (pet brand $29K → $750K, 21K impressions)
+- **"I [outcome with specifics]"** (outcome-led, verified numbers only)
 - **"[Topic] is the 80/20 of [thing]"** (works when the video is about a tactical lever)
 - **"You need to [contrarian action]"** (works when the video challenges a default)
 
 ### X (less common for YouTube videos, but works)
 
 - **"[Tool] is INSANE for [task]"** when the video is a tool walkthrough
-- **"[Problem statement], and that's killing your performance"** for pain-led video topics
+- **"[Problem statement], and that's killing your [outcome]"** for pain-led video topics
 
 ### Post body opening
 
 For YouTube subtype, the post body usually includes a "So I've put together..." or "I broke down..." bridge that hides the format:
-- "So I've just put together a 14 min vid breaking it down so you can do the same." (the pet brand $29K → $750K post — note "14 min vid" can be revealed in the body even though "video" isn't used in the hook. This is the one place where the format leaks.)
-- "I broke this down in a new resource based on what's working for our clients right now."
+- "So I've just put together a 14 min breakdown so you can do the same."
+- "I broke this down in a new resource based on what's working in the engine right now."
 
-The "14 min vid" reveal is an exception, not a rule. It works because the post is on LinkedIn where the audience is more tolerant of "vid" framing. On X, the format reveal should be even more hidden.
+A "14 min vid" phrasing can appear in a LinkedIn body if the post needs it (LinkedIn audiences tolerate the "vid" framing), but never in the hook and never on X. Default to hiding the format entirely.
 
 ### Bullet structure (the "I break down:" list)
 
 ```
-✓ How we're planning to [specific next outcome]
+✓ How I'm planning to [specific next outcome]
 ✓ Insights that are applicable to [broader audience cut]
-✓ The exact way we [specific tactical move]
+✓ The exact way I [specific tactical move]
 ```
 
 The bullet list always promises: next steps + broader applicability + specific tactics. The promise is more concrete than the video itself can deliver in 14 minutes, which is fine — the cover image and the bullet list set expectations, the video over-delivers on at least one of them.
@@ -162,7 +160,7 @@ Hey (name), here's the breakdown:
 
 LINK
 
-P.S. Would you like a free audit for your brand? Reply "yes" and we can chat about how it works.
+P.S. Want a free teardown of your agency's content and inbound setup? Reply "yes" and we can chat about how it works.
 ```
 
 ### Optional variant (with BTW upsell)
@@ -174,9 +172,9 @@ Hey (name), here's the breakdown:
 
 LINK
 
-BTW, want me to send over [adjacent resource, e.g. "our 5-format static ads prompt file"] as well? Let me know.
+BTW, want me to send over [adjacent resource, e.g. "my call-to-content prompt file"] as well? Let me know.
 
-P.S. Would you like a free audit for your brand? Reply "yes" and we can chat about how it works.
+P.S. Want a free teardown of your agency's content and inbound setup? Reply "yes" and we can chat about how it works.
 ```
 
 Rules for the BTW line:
@@ -198,25 +196,23 @@ Per `_master.md` (no subtype override):
 | Partially Engage | ON |
 | Follow-up DM | OFF |
 
-The v1.2 yt-to-autodm.md skill listed Auto-connect ON and Follow-up DM enabled. Both are wrong per current production. OFF on both.
-
 ---
 
 ## Output Checklist
 
-Before handing off to Joao for scheduling, confirm:
+Before scheduling, confirm:
 
 - [ ] YouTube video URL is verified and the video is live (or scheduled to go live before the autodm fires)
-- [ ] If video doesn't exist yet, the recording is on the calendar and Lorenzo has the brief
-- [ ] Transcript is saved to `research/transcripts/lorenzopravata/[video-id].md` per CLAUDE.md research protocol
-- [ ] Post copy never says "video", "watch", or anything that reveals the format (except optional "14 min vid" body line on LinkedIn)
+- [ ] If video doesn't exist yet, the recording is on the calendar and the brief exists
+- [ ] Transcript is saved to `research/transcripts/maurojpelle/[video-id].md` per the CLAUDE.md research protocol
+- [ ] Post copy never says "video", "watch", or anything that reveals the format (except the optional "14 min vid" body line on LinkedIn)
 - [ ] Cover image brief output exists (Option A / B / C / D selected)
 - [ ] Cover image will not include play button, YouTube branding, or video thumbnail elements
 - [ ] DM copy is the `_master.md` default (or BTW variant if adjacent resource exists)
 - [ ] DM noun is "breakdown" (not "video")
 - [ ] Keyword is ALL CAPS, 3-7 chars, topic-related
 - [ ] LeadShark config: Auto-connect OFF, Partially Engage ON, Follow-up DM OFF
-- [ ] Voice.md 60-second pre-publish checklist passed
+- [ ] Voice.md pre-publish checklist passed
 
 ---
 
@@ -229,17 +225,3 @@ Before handing off to Joao for scheduling, confirm:
 - Re-using a video from 6+ months ago without re-checking that the claims still hold up
 - Launching the autodm before the video is actually live (the link goes to a 404 — instant trust kill)
 - Drafting from the video title alone, without reading the transcript (the strongest hook is almost never the title)
-
----
-
-## Migration Notes
-
-This file replaces `skills/content/yt-to-autodm.md` (v1.2). Key changes:
-
-- Email section removed (per Mauro 2026-05-26: emails are reserved for articles, not lead magnets)
-- Follow-up DM section removed (LeadShark Follow-up DM setting is OFF in current production)
-- LeadShark config corrected (Auto-connect OFF, Follow-up DM OFF — both were wrong in v1.2)
-- DM aligned to `_master.md` canonical with BTW upsell as optional variant
-- Research phase explicitly references CLAUDE.md Section 9 (fetch once, save always)
-- Old file at `skills/content/yt-to-autodm.md` to be deleted in the v1 retirement commit (task #7)
-- CLAUDE.md routing table to be updated in the same commit

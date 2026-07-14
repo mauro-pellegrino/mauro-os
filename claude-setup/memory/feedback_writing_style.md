@@ -5,7 +5,7 @@ type: feedback
 originSessionId: b48e2a49-9ee2-4a8f-bf0b-317ee222168f
 ---
 **Rule 1: No em dashes, ever.**
-Em dashes (—) are completely banned in all Growthub content. Replace with a comma, period, or rewrite.
+Em dashes (—) are completely banned in all content. Replace with a comma, period, or rewrite.
 
 **Why:** Explicitly in the voice guide as a hard ban. Mauro has corrected this multiple times and is frustrated by it recurring.
 

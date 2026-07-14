@@ -20,7 +20,7 @@ Agency owners (marketing/creative/ad/social/SEO) whose pipeline is referral- and
 
 ## Who it's NOT for
 
-Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT Lorenzo's lane (selling Meta creative to ecom brand operators) — different audience, different promise.
+Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT the lane of the agency Mauro runs (selling Meta creative to ecom brand operators). Different audience, different promise.
 
 ## The belief Mauro breaks
 
@@ -31,7 +31,7 @@ Beginners with no agency, people chasing follower counts for vanity, anyone want
 - He architected and runs the **AI content + acquisition engine** for a real B2B agency: skills library, content across X/LinkedIn/YouTube, lead magnets/articles/long-forms, the weekly measurement loop.
 - He ties **content to booked calls** and runs the Monday acquisition analysis. The engine recently hit its qualified-call target and diversified channels.
 - He's moving from skills toward **agents** (ahead of most operators).
-- NOTE: any specific public number (calls/week, reach, revenue) needs Mauro's sign-off before use. Never borrow Growthub's/Lorenzo's anchors (e.g. $107M) as Mauro's personal proof — keep his proof operational and his own.
+- NOTE: any specific public number (calls/week, reach, revenue) needs Mauro's sign-off before use. Never borrow the agency's or its founders' anchors as Mauro's personal proof. Keep his proof operational and his own.
 
 ## The edge (why him over the gurus)
 

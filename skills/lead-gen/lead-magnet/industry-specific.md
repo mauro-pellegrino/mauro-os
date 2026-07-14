@@ -1,7 +1,6 @@
 # Lead Magnet Subtype: Industry-Specific
 
-**Version:** 1.0
-**Created:** 2026-05-26
+**Version:** 1.1 (retargeted to Mauro's brand, 2026-07-14)
 **Loaded with:** `_master.md` (always load both together)
 **DM noun:** "guide"
 
@@ -9,11 +8,13 @@
 
 ## What This Subtype Is
 
-A lead magnet packaged for one vertical. The magnet contains multiple components (case study summaries + a vertical-specific framework + replicable lessons + sometimes prompts) all themed to operators in a single industry.
+A lead magnet packaged for one agency niche. The magnet contains multiple components (case study summaries + a niche-specific framework + replicable lessons + sometimes prompts) all themed to owners of a single agency type.
 
-Subtype identity: vertical-narrowed targeting, kit-format asset, multi-proof structure. The reader self-selects ("I run a pet brand, this is for me"), which is what makes the autodm conversion rate high on this subtype.
+The overall ICP is always established agency owners (per `brand/audience.md`). This subtype narrows one level further: the agency's discipline (paid media, SEO, creative/branding, social, web/dev) or its vertical focus.
 
-This subtype is the most complex because it wraps elements from other subtypes (case studies, frameworks, sometimes prompts) under a vertical theme.
+Subtype identity: niche-narrowed targeting, kit-format asset, multi-proof structure. The reader self-selects ("I run a paid-media agency, this is for me"), which is what makes the autodm conversion rate high on this subtype.
+
+This subtype is the most complex because it wraps elements from other subtypes (case studies, frameworks, sometimes prompts) under a niche theme.
 
 ---
 
@@ -21,42 +22,36 @@ This subtype is the most complex because it wraps elements from other subtypes (
 
 | Source magnet | Use this file |
 |---|---|
-| Single client transformation, written deep-dive | `case-study.md` |
-| Single client transformation, video | `youtube-video.md` |
-| Framework for an ad / content format (not vertical-themed) | `framework.md` |
+| Single transformation, written deep-dive | `case-study.md` |
+| Single transformation, video | `youtube-video.md` |
+| Framework for a content / acquisition system (not niche-themed) | `framework.md` |
 | Prompt pack or swipe file | `prompt-swipe-file.md` |
-| Vertical-themed kit with multiple proof points, framework, and lessons | `industry-specific.md` |
+| Niche-themed kit with multiple proof points, framework, and lessons | `industry-specific.md` |
 
-If the magnet is structured "for [vertical] brand operators specifically" and contains multiple assets stitched together, this is the right file.
-
----
-
-## Active Verticals (2026-05-26)
-
-Per `accounts/lorenzo-x/wins-log.md` and strategic positioning:
-
-| Vertical | Status | Anchor wins |
-|---|---|---|
-| **Pet ecom** | Active | Win 006 ($29K → $750K), aggregate $20M+ across 10+ brands |
-| **Supplement** | Active | Win 003 ($1M/month single brand, $17M+ aggregate) |
-| **Skincare** | Active | Win 007 ($12M in 10 months) |
-| App / mobile | Borderline | Win 004 ($50M in 10 months) — usable, but not the primary lane |
-| B2B SaaS | **DEFERRED** | Win 005, Win 008 — strategically deferred by Lorenzo to protect ecom positioning. Do not draft B2B SaaS industry magnets without explicit approval. |
-| Other ecom verticals | Open question | Ask Mauro before drafting |
-
-Always check the wins-log for the latest vertical state before drafting.
+If the magnet is structured "for [niche] agency owners specifically" and contains multiple assets stitched together, this is the right file.
 
 ---
 
-## Cross-Reference: Nathan's DM Setting
+## Active Niches
 
-Per `project_nathan_dm_setting` memory, Nathan's industry-specific outbound DM templates use the same Lorenzo case study videos that anchor this subtype:
+**None yet.** This brand's proof is currently the engine Mauro runs, which is niche-agnostic. This subtype needs at least one niche with real, signed-off proof before drafting.
 
-- Supplement: `research/transcripts/lorenzopravata/supplement-1m-month-case-study.md`
-- Skincare: `research/transcripts/lorenzopravata/skincare-12m-10months-case-study.md` (plus pending `spr5hUx9Z7I`)
-- Pet: `research/transcripts/lorenzopravata/pet-ecom-29k-to-750k-case-study.md` (plus pending `hOEu33GDYUc`)
+| Niche | Status |
+|---|---|
+| Paid-media / performance agencies | Candidate — do not draft until proof exists |
+| SEO agencies | Candidate — do not draft until proof exists |
+| Creative / branding studios | Candidate — do not draft until proof exists |
+| Social agencies | Candidate — do not draft until proof exists |
 
-When drafting an industry-specific lead magnet, use the same case study transcripts Nathan anchors his DMs to. The proof points should stay consistent across both surfaces (lead magnet content + outbound DM language). Mismatched anchors confuse prospects who see both.
+Update this table as client results accrue (log them in `brand/wins-log.md`, create as results come in). Ask Mauro before drafting any niche magnet.
+
+---
+
+## Cross-Reference: Outbound DM Setting
+
+The outbound DM playbook at `skills/dm-setting/industries/agency-owners/` anchors its first messages and deck to the same proof this subtype uses.
+
+When drafting an industry-specific lead magnet, use the same source material the outbound DMs anchor to. The proof points should stay consistent across both surfaces (lead magnet content + outbound DM language). Mismatched anchors confuse prospects who see both.
 
 ---
 
@@ -64,94 +59,85 @@ When drafting an industry-specific lead magnet, use the same case study transcri
 
 Before drafting, get these from Mauro:
 
-1. **Vertical** (pet, supplement, skincare, app — check Active Verticals table above before assuming)
-2. **Primary case study** the magnet is anchored to (which Lorenzo transcript or wins-log entry)
-3. **Secondary proof points** (aggregate spend / revenue / brands managed in this vertical)
-4. **Vertical-specific tactical elements** (pet has dog-size pricing structure; skincare has male vs female sophistication; supplement has high CPM landscape — each vertical has its own tactical specifics that need to surface in the magnet)
-5. **Public competitor references** that are safe to name (per wins-log: PetLabCo for pet, MiamiMD / Norse Organics / Cure Skinkare / Mainstrong for skincare)
-6. **Format** of the magnet (Notion 5-pager + subpages is most common, see Win 006 → "22-page mini-guide")
-7. **Trigger keyword** (3-7 chars, ALL CAPS, vertical-themed: PET, SUPPLEMENT (or SUPP), SKIN)
-8. **Cover image elements** (results dashboard? anonymized creative grid? table of contents preview?)
+1. **Niche** (check the Active Niches table above before assuming; do not draft off-list without approval)
+2. **Primary case study** the magnet is anchored to (transcript in `research/transcripts/maurojpelle/` or wins-log entry)
+3. **Secondary proof points** (aggregate results in this niche, signed off)
+4. **Niche-specific tactical elements** (each agency type has its own dynamics that need to surface in the magnet, see below)
+5. **Public references** that are safe to name (non-clients, publicly visible examples; confirm with Mauro per reference)
+6. **Format** of the magnet (Notion 5-pager + subpages is the default kit format)
+7. **Trigger keyword** (3-7 chars, ALL CAPS, niche-themed: PPC, SEO, STUDIO)
+8. **Cover image elements** (results dashboard? anonymized content grid? table of contents preview?)
 
 ---
 
 ## Asset Structure
 
-The magnet ships as a Notion 5-pager with subpages (per the pet $20M magnet which was 22 pages).
+The magnet ships as a Notion 5-pager with subpages.
 
 ### Title format
 
-Patterns that have shipped:
+Patterns to work from:
 
-- **"Scaling a [Vertical] Brand past $1M/month with Ad Creatives (Year)"** (the pet $20M magnet)
-- **"The [Vertical] Brand Playbook for Scaling on Meta"** (generic variant)
-- **"How we scaled $[X]M+ in [vertical] brands on Meta"** (aggregate-led)
+- **"The Inbound Engine for [Niche] Agencies (Year)"**
+- **"The [Niche] Agency Playbook for Winning Clients with AI Content"**
+- **"How [niche] agencies are turning their delivery work into inbound clients"**
 
-Always propose 3 title options for Mauro to pick. Vertical name in the title is non-negotiable (it's what makes the magnet self-selecting).
+Always propose 3 title options for Mauro to pick. Niche name in the title is non-negotiable (it's what makes the magnet self-selecting).
 
 ### Subtitle format
 
-Always include the vertical aggregate anchor and a number:
+Always include a proof anchor and a number, real and signed-off only:
 
-- "We've generated $20M+ for pet brands using this exact playbook."
-- "$17M+ in managed supplement Meta spend last year. Here's what's actually working."
-- "How we took multiple skincare brands past $1M/month using the same creative system."
+- "[PROOF ANCHOR — fill from wins-log when available]. Here's what's actually working."
+- "The same engine I run daily, adapted to how [niche] agencies actually win clients."
 
 ### Body structure (the 5-pager pattern)
 
 ```
-PAGE 1 — Why this guide exists / Why listen to us
-  - 1-line opener (vertical-specific pain or opportunity)
-  - Authority anchor for this vertical ($X+ managed across N brands)
-  - What the operator will get from reading
+PAGE 1 — Why this guide exists / Why listen to me
+  - 1-line opener (niche-specific pain or opportunity)
+  - Authority anchor for this niche ([signed-off proof])
+  - What the reader will get from reading
 
-PAGE 2 — The vertical landscape
-  - What's different about [vertical] right now (CPMs, competition, audience sophistication)
-  - Verbatim pain quotes from operators in this vertical (mined from discovery call transcripts)
-  - The bottleneck most brands hit in this vertical
+PAGE 2 — The niche landscape
+  - What's different about [niche] agencies right now (pipeline dynamics, how their buyers buy, what content converts for them)
+  - Verbatim pain quotes from owners in this niche (mined from calls, DMs, or the audience research in brand/audience.md)
+  - The bottleneck this kind of agency hits when selling itself
 
 PAGE 3 — Case study breakdown
-  - Anchored on the primary case study (from wins-log)
-  - 3-phase arc preferred (where they started, the strategic shift, where they are now)
-  - Specific tactical moves applied (anonymized creative examples with [VISUAL: ...] markers)
-  - Numbers verified from source transcript
+  - Anchored on the primary case study
+  - 3-phase arc preferred (where it started, the strategic shift, where it is now)
+  - Specific tactical moves applied (anonymized examples with [VISUAL: ...] markers)
+  - Numbers verified from source and signed off
 
-PAGE 4 — The vertical-specific framework
-  - The tactical moves the operator can apply to their own brand
-  - Format-to-persona mapping if relevant (per Win 004: young men → identity-led, 45+ → mechanism-led, 50-60+ → long-form VSL)
-  - Pricing structure / awareness levels / hook angles specific to this vertical
+PAGE 4 — The niche-specific framework
+  - The tactical moves the reader can apply to their own agency
+  - Format-to-buyer mapping if relevant (what their prospects respond to)
+  - Content angles / proof formats specific to this niche
 
-PAGE 5 — How to apply it on Monday + how Growthub can help
-  - 3-5 specific moves the operator can run this week
-  - Soft CTA: "If you want this run for your [vertical] brand, here's how to book a call"
-  - Calendly link
+PAGE 5 — How to apply it on Monday + how to get help
+  - 3-5 specific moves the reader can run this week
+  - Soft CTA: "If you want this installed in your [niche] agency, here's how to book a call"
+  - [BOOKING LINK]
 ```
 
-### Vertical-specific tactical content
+### Niche-specific tactical content
 
-The magnet must include 2-3 things that are genuinely specific to the vertical. Generic "here's how to scale on Meta" wrapped in a pet-themed cover underperforms. Examples that have worked:
+The magnet must include 2-3 things that are genuinely specific to the niche. Generic "here's how to do content" wrapped in a niche-themed cover underperforms. Illustrative angles per candidate niche (validate against real work before shipping):
 
-**Pet:**
-- Dog-size pricing structure (per Win 006 source)
-- Awareness shift from problem-aware to unaware as the brand scales
-- Format spread (multiple creative formats per buyer persona)
+**Paid-media / performance agencies:**
+- Their proof is numeric by nature; teardown and results-log content formats fit them best
+- Clients churn on performance dips, so authority content stabilizes retention as well as pipeline
 
-**Supplement:**
-- High-CPM landscape (per Win 003 source — "hardest DTC niche to scale right now")
-- VC-funded competitor pressure ($200 CPA benchmarks)
-- Niche difficulty as a competitive moat for serious operators
+**SEO agencies:**
+- Long sales cycles; nurture-heavy content and email fit better than pure viral posts
+- Case-study-led content matches how their buyers evaluate
 
-**Skincare:**
-- Male vs female market sophistication split
-- $78+ AOV minimum / $100+ LTV minimum (per Win 007 source)
-- 5-10 unique concepts per week test cadence
+**Creative / branding studios:**
+- Portfolio culture; the shift is from "look at our work" to "look at our thinking"
+- Process breakdowns and build-in-public formats fit their strengths
 
-**App / mobile:**
-- Quiz funnel as the highest-AOV/LTV format (per Win 004 source)
-- Treat each buyer persona as its own business
-- Identity-led vs mechanism-led vs long-form VSL by age cohort
-
-When drafting, surface the vertical-specific tactical content explicitly. This is what separates the magnet from a generic ecom playbook.
+When drafting, surface the niche-specific tactical content explicitly. This is what separates the magnet from a generic playbook.
 
 ---
 
@@ -160,54 +146,42 @@ When drafting, surface the vertical-specific tactical content explicitly. This i
 Inherits the base cover spec from `_master.md`.
 
 Subtype-specific elements:
-- Title prominently features the vertical name
-- Subtitle anchors on the vertical aggregate ($20M+ for pet brands, $17M+ supplement, etc.)
-- Table-of-contents preview is highly recommended (it signals depth and shows the multi-section structure — used effectively in the pet $20M magnet)
-- "Created by Growthub.Agency" line
-- Avoid: any visual that identifies a specific client (use anonymized creative grids only)
+- Title prominently features the niche name
+- Subtitle anchors on the niche proof point (signed off)
+- Table-of-contents preview is highly recommended (it signals depth and shows the multi-section structure)
+- "Created by @maurojpelle" credit line
+- Avoid: any visual that identifies a specific client (use anonymized grids only)
 
 ---
 
 ## Post Hook Formulas (Subtype-Specific)
 
-`_master.md` has the universal hook formulas. For industry-specific magnets, the patterns that have worked:
+`_master.md` has the universal hook formulas. For industry-specific magnets:
 
 ### LinkedIn (primary channel)
 
-- **"I've scaled over [N] [vertical] brands and generated $[Y] for them"** (the pet $20M post, 16K impressions)
-- **"I took [vertical] brand client from [number] to [bigger number]"** (when a single case study is strong enough to lead)
-- **"[Vertical] brands are leaving $[X] on the table by [missing X]"** (pain-led variant)
+- **"I've [result] for [niche] agencies"** (aggregate-led, verified numbers only)
+- **"I took a [niche] agency from [number] to [bigger number]"** (when a single case study is strong enough to lead)
+- **"[Niche] agencies are leaving clients on the table by [missing X]"** (pain-led variant)
 
-### X (less common but works for vertical-themed magnets)
+### X (less common but works for niche-themed magnets)
 
-- **"Scaling a [vertical] brand on Meta isn't about [common assumption]. Here's what is."** (challenger framing)
+- **"Winning clients as a [niche] agency isn't about [common assumption]. Here's what is."** (challenger framing; note: this is a contrast structure, rewrite it into a direct stance before shipping per voice.md)
 
 ### Post body opening
 
-The opening usually establishes the vertical-specific authority first:
+The opening usually establishes the niche-specific authority first (signed-off proof only), then bridges into the magnet promise:
 
-- "I've scaled over 10 pet brands and generated $20M for them."
-- "After managing $17M+ in supplement Meta spend last year..."
-- "We've taken multiple skincare brands past $1M/month using the same system..."
-
-Then bridges into the magnet promise:
-
-- "All by understanding the same concept I've used for all [vertical] brands I work with."
-- "So I've just put together a [N]-page mini-guide breaking down how you can do the same."
+- "So I've put together a [N]-page mini-guide breaking down how you can do the same."
 
 ### Bullet structure (the "I break down:" list)
 
 For industry-specific magnets, the bullet promise is:
-- **One winning examples / formula bullet** (anchored to a public competitor or anonymized client)
-- **One insight bullet** that's vertical-specific
+- **One winning examples / formula bullet** (anchored to a public example or anonymized result)
+- **One insight bullet** that's niche-specific
 - **One replicable roadmap bullet**
 
-The pet $20M post used:
-- ✓ Winning Examples
-- ✓ The PetLabCo script formula
-- ✓ A roadmap you can follow to scale
-
-Pattern: examples + a specific named formula (often anchored to a public non-client competitor) + a replicable roadmap.
+Pattern: examples + a specific named formula + a replicable roadmap.
 
 ---
 
@@ -220,7 +194,7 @@ Hey (name), here's the guide:
 
 LINK
 
-P.S. Would you like a free audit for your brand? Reply "yes" and we can chat about how it works.
+P.S. Want a free teardown of your agency's content and inbound setup? Reply "yes" and we can chat about how it works.
 ```
 
 Noun: `guide` (confirmed). Do not swap.
@@ -229,32 +203,32 @@ Noun: `guide` (confirmed). Do not swap.
 
 ## Output Checklist
 
-Before handing off to Joao for scheduling, confirm:
+Before scheduling, confirm:
 
-- [ ] Vertical is on the Active Verticals list (or explicitly approved for off-list verticals)
-- [ ] Primary case study source material is real (transcript exists, wins-log entry exists)
+- [ ] Niche is on the Active Niches list with real proof (or explicitly approved by Mauro)
+- [ ] Primary case study source material is real (transcript or wins-log entry exists)
 - [ ] Notion 5-pager exists with all 5 sections of the body structure
-- [ ] 2-3 vertical-specific tactical elements are explicitly surfaced (not generic ecom advice)
-- [ ] Anonymization rules followed per `feedback_client_naming` (vertical named, client not named)
-- [ ] Public competitor references match the wins-log "safe to name" list per vertical
-- [ ] Cover image features the vertical name and aggregate anchor
+- [ ] 2-3 niche-specific tactical elements are explicitly surfaced (not generic advice)
+- [ ] Anonymization rules followed per `feedback_client_naming` (niche named, client not named)
+- [ ] Public references are confirmed safe to name by Mauro
+- [ ] Cover image features the niche name and proof anchor
 - [ ] Cover image includes table-of-contents preview if possible
-- [ ] LinkedIn post copy follows the LinkedIn structure in `_master.md` plus vertical-specific opening
+- [ ] LinkedIn post copy follows the LinkedIn structure in `_master.md` plus niche-specific opening
 - [ ] X post copy (if shipping X) follows the X structure in `_master.md`
 - [ ] DM copy is the `_master.md` default with noun = "guide"
-- [ ] Keyword is ALL CAPS, 3-7 chars, vertical-themed
+- [ ] Keyword is ALL CAPS, 3-7 chars, niche-themed
 - [ ] LeadShark config: Auto-connect OFF, Partially Engage ON, Follow-up DM OFF
-- [ ] Cross-checked against Nathan's industry DM templates so anchors stay consistent across surfaces
-- [ ] Voice.md 60-second pre-publish checklist passed
+- [ ] Cross-checked against the outbound DM playbook (`skills/dm-setting/industries/agency-owners/`) so anchors stay consistent across surfaces
+- [ ] Voice.md pre-publish checklist passed
 
 ---
 
 ## Anti-Patterns (Specific to This Subtype)
 
-- Generic ecom playbook wrapped in a vertical-themed cover (the vertical-specific tactical content is what earns the autodm)
-- Vertical magnet that names a real client (anonymization is even more critical here because the vertical narrows the search radius)
-- Using B2B SaaS as a vertical (deferred by Lorenzo to protect ecom positioning — do not draft without approval)
-- Public competitor references that aren't on the wins-log "safe" list per vertical (risk of misattribution or scrutiny)
-- Anchors that don't match Nathan's DM language for the same vertical (creates inconsistent messaging across surfaces)
-- Single-case-study framing when the magnet should be aggregate (use `case-study.md` if it's really about one client)
-- Skipping the vertical landscape page (Page 2 in the structure) — this is what makes the magnet feel earned vs generic
+- Generic playbook wrapped in a niche-themed cover (the niche-specific tactical content is what earns the autodm)
+- Niche magnet that names a real client (anonymization is even more critical here because the niche narrows the search radius)
+- Drafting a niche with no real proof behind it (the Active Niches table is empty for a reason; wait for results)
+- Public references that Mauro hasn't confirmed (risk of misattribution or scrutiny)
+- Anchors that don't match the outbound DM language for the same niche (creates inconsistent messaging across surfaces)
+- Single-case-study framing when the magnet should be aggregate (use `case-study.md` if it's really about one transformation)
+- Skipping the niche landscape page (Page 2 in the structure) — this is what makes the magnet feel earned vs generic

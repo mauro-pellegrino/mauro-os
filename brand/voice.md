@@ -1,5 +1,5 @@
 # Writing Style Guide
-Growthub — Marketing
+Mauro (@maurojpelle)
 
 ---
 
@@ -27,9 +27,9 @@ Opening with "most brands do X wrong" is one of the most overused AI and content
 ❌ "Most brands are running ads to the same small group of people."
 ❌ "Most people don't realise unaware ads exist."
 ❌ "Most agencies skip this step."
-✅ Say what you actually observed, specifically. "Every account we've taken over in the last 12 months had the same gap: zero ads for unaware audiences." "After $106M in spend, the pattern is consistent across almost every account."
+✅ Say what you actually observed, specifically. "Every agency owner I've talked to this year had the same gap: a full inbound engine for their clients and nothing for themselves." "Across every account I've run, the pattern is consistent."
 
-The test: could this sentence have been written by someone who has never run a single ad? If yes, rewrite it with something only Growthub's data and experience can back.
+The test: could this sentence have been written by someone who has never run the system? If yes, rewrite it with something only your own data and experience can back.
 
 ---
 
@@ -47,9 +47,9 @@ If a sentence can be cut without losing meaning, cut it. No decoration — only 
 **2. Speak from experience, not theory**
 Always back up claims with data, client results, or specific examples. Numbers create credibility.
 
-✅ "After spending over $60M in the last 6 months..."
-✅ "We are currently using & testing the following 5 formats..."
-❌ "Meta ads can be tricky if you don't know what you're doing"
+✅ "I just closed a $28k deal off X..."
+✅ "I'm currently running & testing the following 5 formats..."
+❌ "Content can be tricky if you don't know what you're doing"
 
 **3. Actionable over inspirational**
 Readers should walk away with something they can use immediately. Frameworks, processes, and systems over motivational fluff.
@@ -85,7 +85,7 @@ Write like you're explaining to a smart peer over coffee — not presenting a ca
 
 **Numbers and specificity:**
 
-- Always use real numbers: "$60M", "5 formats", "first 20 seconds", "40% hook rates"
+- Always use real numbers: "$28k deal", "5 formats", "first 20 seconds", "a third of revenue from organic"
 - Specificity = credibility. Vague claims get ignored.
 - Round numbers are fine when exact isn't known, but always be as specific as possible
 
@@ -107,18 +107,18 @@ Write like you're explaining to a smart peer over coffee — not presenting a ca
 ## Signature Moves
 
 **The operational stat opener:**
-Opens with a production or volume number — not just spend. Sets scale and credibility immediately.
+Opens with a production or volume number, not just revenue. Sets scale and credibility immediately.
 
-> "We create over 500 ads a month. The hook is the #1 thing that makes or breaks the ads we test."
-> "Every week we produce studio hooks across every ad format we run."
+> "I ship [X] posts a week across three platforms without writing any of them from scratch."
+> "Every Monday I run the same analysis: every piece of content, matched against every booked call."
 
-This is different from the spend anchor. Spend anchors ("$63.5M") signal financial authority. Operational stats ("500 ads a month", "thousands of hooks") signal production authority — we live inside this problem daily.
+This is different from the money anchor. Money anchors ("a $28k deal off X") signal financial authority. Operational stats (posts shipped per week, transcripts processed) signal production authority. I live inside this problem daily. Only use numbers that are real; bracket what isn't confirmed.
 
 **The false expectation opener:**
 Set up what the reader assumes, then immediately flip it.
 
-> "You are probably expecting me to tell you to just find 'creative diversity' and hope for the best. But the reality is..."
-> "Let's just create more ads. That's not the way to scale on Meta in 2026."
+> "You are probably expecting me to tell you to just post more and hope for the best. But the reality is..."
+> "Let's just post 3 times a day. That's not the way to get clients from content in 2026."
 
 **The contrast setup:**
 
@@ -127,9 +127,9 @@ Set up what the reader assumes, then immediately flip it.
 
 **The experience anchor:**
 
-> "After spending over $60M in the last 6 months..."
-> "I can officially say we've mastered podcast ads."
-> "We receive this question on a daily basis."
+> "After running this engine daily for over a year..."
+> "I can officially say the system books calls on its own."
+> "I get this question on a daily basis."
 
 **The honest callout:**
 Acknowledge the hard part directly, don't sugarcoat it.
@@ -149,7 +149,7 @@ Use sparingly — one or two per article maximum. Must feel natural, not enginee
 **The fourth-wall break:**
 Acknowledges the reader's awareness of the article itself. Builds trust by being self-aware.
 
-> "I know my article title says 'hook rate'. But a 100% hook rate means nothing if the people stopping would never buy your product."
+> "I know my article title says 'more reach'. But reach means nothing if the people seeing it would never hire your agency."
 > "You probably came here expecting a list of hook formulas. Here's something more useful."
 
 **The named example:**
@@ -173,8 +173,8 @@ After introducing a format or idea, immediately explain the mechanism.
 **The embedded CTA:**
 Soft, conversational, never pushy.
 
-> "Want a free audit for your brand? DM me 'Audit' or click the link in my bio."
-> "Talk soon, Lorenzo."
+> "Want the exact setup? DM me the keyword and I'll send it over."
+> "Talk soon, Mauro."
 
 ---
 
@@ -183,13 +183,13 @@ Soft, conversational, never pushy.
 These sentence patterns appear repeatedly and should be replicated.
 
 **Short, Short, Explanation:**
-> "UGC is everywhere. Your customers know you're selling to them right from the start. And that's terrible."
+> "AI content is everywhere. Your prospects clock it in the first line. And that's terrible."
 
 **Problem, Reframe, Solution:**
 > "That's not the way to scale... The actual challenge is... That's why we focus on..."
 
 **List item, one-line explanation:**
-> "Our studio & editing makes it look like a native podcast clip for the first 20s (enough to capture attention & have +40% hook rates)"
+> "The voice document makes AI write in your own words from the first line (enough that nobody clocks the output as AI)"
 
 **Standalone punchy closer:**
 > "That's the difference between accounts that scale consistently and those that plateau."
@@ -218,7 +218,7 @@ These sentence patterns appear repeatedly and should be replicated.
 **Close / CTA:**
 - Summarize the core insight in 1-2 lines
 - Soft CTA — feels like a natural conversation, not a sales pitch
-- Sign off: "Talk soon, Lorenzo." (for Lorenzo's content)
+- Sign off: "Talk soon, Mauro."
 
 ---
 
@@ -226,28 +226,28 @@ These sentence patterns appear repeatedly and should be replicated.
 
 **✅ Good:**
 
-> "There's no data more reliable than what Meta is telling you. Use it to your advantage."
+> "There's no data more reliable than which posts booked calls. Use it to your advantage."
 
-> "Customers are numb to it. And most of your traffic is going to be cold. They don't know your product. They don't even fully understand their problem yet."
+> "Prospects are numb to it. And most of your audience is cold. They don't know your agency. They don't even fully understand their problem yet."
 
-> "We meticulously tag every ad with its angle, audience, awareness level, and format. Every two weeks, we analyze what worked, what didn't, and why."
+> "I meticulously tag every post with its pillar, angle, and format. Every Monday, I analyze what worked, what didn't, and why."
 
-> "Creative diversity is #1 in priority, our formats make it easy as hell to find it."
+> "Repurposing is #1 in priority, the system makes it easy as hell to do."
 
 **❌ Off-brand:**
 
-> "It's really important to leverage your existing creative assets in a holistic way to maximize your return on ad spend."
+> "It's really important to leverage your existing content assets in a holistic way to maximize your inbound results."
 
-> "There are many factors to consider when thinking about your Meta ads strategy."
+> "There are many factors to consider when thinking about your content strategy."
 
-> "This might help you potentially improve your creative testing process."
+> "This might help you potentially improve your posting process."
 
 ---
 
 ## Platform Adaptations
 
 **X / Twitter Articles:**
-Full long-form. Headers, bullets, embedded media. Hook hard in the first paragraph. Soft CTA at the end. Sign off with "Talk soon, Lorenzo."
+Full long-form. Headers, bullets, embedded media. Hook hard in the first paragraph. Soft CTA at the end. Sign off with "Talk soon, Mauro."
 
 **X / Twitter Threads:**
 1/ style. Each tweet = one punchy idea. Build tension across tweets. Last tweet = CTA or key takeaway summary.

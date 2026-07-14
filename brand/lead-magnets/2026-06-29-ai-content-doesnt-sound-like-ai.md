@@ -92,7 +92,7 @@ P.S. Want the voice-document template I use to make AI write like me? Reply "yes
 
 ## Cover image brief
 
-Built with Mauro's own HTML-to-PNG skill (the exact technique the breakdown teaches), in his personal palette. Not Growthub yellow.
+Built with Mauro's own HTML-to-PNG skill (the exact technique the breakdown teaches), in his personal palette. Not the agency's palette.
 
 ```
 Image type: Custom HTML (Mauro's skill) exported to PNG. Personal palette [HEX TBD].

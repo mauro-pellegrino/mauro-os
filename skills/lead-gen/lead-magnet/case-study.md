@@ -1,7 +1,6 @@
 # Lead Magnet Subtype: Case Study
 
-**Version:** 1.0
-**Created:** 2026-05-26
+**Version:** 1.1 (retargeted to Mauro's brand, 2026-07-14)
 **Loaded with:** `_master.md` (always load both together)
 **DM noun:** "breakdown"
 
@@ -9,27 +8,34 @@
 
 ## What This Subtype Is
 
-A written deep-dive on a single anonymized client transformation. The magnet breaks down the **strategy** the team applied to produce a specific result, plus the replicable layer the operator can take and use in their own brand.
+A written deep-dive on a single anonymized transformation. The magnet breaks down the **system** applied to produce a specific result, plus the replicable layer the agency owner reading it can take and use in their own business.
 
-Subtype identity: one client, one transformation, full strategic breakdown. Different from `industry-specific.md` (which packages multiple case studies under a vertical theme) and from `youtube-video.md` (which uses a recorded video as the magnet instead of a written breakdown).
+For this brand, the transformation source is one of:
+
+1. **The engine Mauro runs.** The AI content and acquisition system he built and runs daily for the agency he runs (content to booked calls, the weekly measurement loop). This is the primary lane until client results exist.
+2. **A client result**, once Mauro has clients of his own. Anonymize per `feedback_client_naming`.
+
+Subtype identity: one transformation, full system breakdown. Different from `industry-specific.md` (which packages multiple proof points under a niche theme) and from `youtube-video.md` (which uses a recorded video as the magnet instead of a written breakdown).
 
 If the case study ships as a video → use `youtube-video.md`.
-If the case study is one of many examples under a vertical packaging → use `industry-specific.md`.
+If the case study is one of many examples under a niche packaging → use `industry-specific.md`.
 If the case study is the magnet itself, in written form → use this file.
 
 ---
 
 ## Critical Input Requirement
 
-**This subtype almost always needs a real case study input from Mauro or the team. The wins-log alone is not enough.**
+**This subtype always needs real source material from Mauro. A one-line win is not enough.**
 
-A single line in `accounts/lorenzo-x/wins-log.md` ("Pet brand scaled from $29K to $750K") gives you the anchor numbers but not the strategy depth. To write a real case study magnet, you need access to:
+A single line ("the engine hit its qualified-call target") gives you the anchor but not the system depth. To write a real case study magnet, you need access to:
 
-- A transcript of how the team actually did it (Lorenzo's case study video transcripts in `research/transcripts/lorenzopravata/` are the primary source)
-- Or an internal deck, Notion page, or write-up explaining the moves
-- Or Mauro / a strategist explaining the play live, captured as notes
+- A transcript of Mauro walking through how it was actually done (`research/transcripts/maurojpelle/` is the primary source)
+- Or an internal doc, Notion page, or write-up explaining the moves
+- Or Mauro explaining the play live, captured as notes
 
-**If only the wins-log is available, do not draft. Ask Mauro for the underlying case study input first.** A case study magnet without strategic depth reads as a result-flex, not a real breakdown, and underperforms.
+**If only a headline result is available, do not draft. Ask Mauro for the underlying source material first.** A case study magnet without system depth reads as a result-flex, not a real breakdown, and underperforms.
+
+Start a wins log at `brand/wins-log.md` as results come in, so anchors and their anonymization rules live in one place.
 
 ---
 
@@ -37,20 +43,19 @@ A single line in `accounts/lorenzo-x/wins-log.md` ("Pet brand scaled from $29K t
 
 Before drafting, get these from Mauro:
 
-1. **The case study source material** (transcript, deck, write-up, video — see Critical Input Requirement above)
-2. **The win** (specific numbers and anchors that are verifiable from the source)
-3. **The strategy applied** (the framework, approach, or specific moves the team used)
-4. **Replicable layer** (what part of the strategy the operator can take and apply themselves)
+1. **The case study source material** (transcript, doc, write-up, video — see Critical Input Requirement above)
+2. **The win** (specific numbers and anchors that are verifiable from the source; every public number needs Mauro's sign-off)
+3. **The system applied** (the framework, approach, or specific moves used)
+4. **Replicable layer** (what part of the system the agency owner can take and apply themselves)
 5. **Anonymization scope** — what can and cannot be public:
-   - Client name (almost always internal-only per [[feedback_client_naming]])
-   - Industry / vertical (usually okay to name)
-   - Specific dollar figures (verify against the source transcript)
+   - Client or agency name (internal-only per [[feedback_client_naming]] unless Mauro explicitly clears it)
+   - Niche / agency type (usually okay to name)
+   - Specific dollar figures (verify against the source, get sign-off)
    - Specific timeframes (verify)
-   - Public references to competitor brands or non-clients (often okay, see wins-log entries for what's named in source vs what's been published)
 6. **Format** the magnet ships in (Notion 5-pager, Gamma deck, Canva carousel, LinkedIn doc)
-7. **Cover image** elements (results dashboard screenshot? anonymized creative grid? clean text-only title?)
-8. **Trigger keyword** (3-7 chars, ALL CAPS — usually maps to the vertical or the strategy name)
-9. **Trend signal** (is this case study hot right now? supplement is a hot vertical, pet is steady, b2b SaaS is deferred per the wins-log)
+7. **Cover image** elements (results dashboard screenshot? anonymized content grid? clean text-only title?)
+8. **Trigger keyword** (3-7 chars, ALL CAPS — usually maps to the system name or the niche)
+9. **Trend signal** (is this topic hot right now? AI content systems are the lane; lean into whatever angle is currently moving)
 
 ---
 
@@ -59,26 +64,22 @@ Before drafting, get these from Mauro:
 Case study posts work in three different framings. Pick based on the source data:
 
 ### Variant A: Numbers-led
-Headline anchored on a single dollar transformation.
-- "I took my pet brand client from $29k to $750k/month."
-- "Scaling a skincare brand to $12M in 10 months."
+Headline anchored on a single transformation number.
+- "I took an agency's inbound from zero to [N] booked calls a month." (fill from real data only)
 
-Best when there's a single hero number and the source transcript supports it cleanly.
+Best when there's a single hero number, signed off, and the source supports it cleanly.
 
 ### Variant B: Arc-led (3-phase)
 Headline anchored on the journey, not the endpoint. The strategic shift is the story.
-- Phase 1: scaled fast to a number
+- Phase 1: built the system, early traction
 - Phase 2: hit a ceiling, plateaued
-- Phase 3: changed strategy, broke through
+- Phase 3: changed the approach, broke through
 
-Best when the source transcript explicitly walks through phases (the pet brand $29K → $750K transcript does this). Operators relate to plateau-and-break-through more than to one-shot rocket-ship arcs.
+Best when the source explicitly walks through phases. Agency owners relate to plateau-and-break-through more than to one-shot rocket-ship arcs.
 
 ### Variant C: Aggregate-proof
-Headline anchored on multiple clients in the same vertical, not one.
-- "I've scaled over 10 pet brands and generated $20M for them."
-- "$17M+ in supplement Meta spend managed across clients last year."
-
-Best when no single client can be named or verified deeply, but the aggregate proof is real. Tends to overlap with `industry-specific.md` — if the magnet is mostly about the vertical, use that file instead.
+Headline anchored on multiple results, not one.
+- Not available yet for this brand. Revisit when multiple client results exist. If the magnet is mostly about a niche, use `industry-specific.md` instead.
 
 ---
 
@@ -88,19 +89,19 @@ The magnet ships as a Notion page (most common), Gamma deck, or LinkedIn doc.
 
 ### Title format
 
-Three patterns that have shipped:
+Patterns to work from:
 
-- **Outcome-led:** "Scaling a Pet Brand past $1M/month with Ad Creatives (2025)"
-- **Strategy-led:** "Scriptwriting $100k Ads (NOT UGC)" (when the case study is really about a strategy applied to a single client)
-- **Arc-led:** "How we took [vertical] from [number] to [bigger number]" (only when client is partially identifiable or fully anonymized in a way that doesn't reveal them)
+- **Outcome-led:** "Building an Agency Inbound Engine That Books Calls (2026)"
+- **System-led:** "The AI Content Engine Behind [RESULT]" (when the case study is really about a system applied to one business)
+- **Arc-led:** "How the engine went from [starting point] to [result]" (fully anonymized where a client is involved)
 
 Propose 3 title options for Mauro to pick. Don't commit to one without alternatives.
 
 ### Subtitle format
 
-Always include a specific number anchor and a scale signal:
-- "How we scaled this brand to $750K/month using a creative system anyone can replicate."
-- "The 3-phase arc that took a pet brand from $29K/month to $750K/month."
+Always include a specific anchor and a scale signal, real numbers only:
+- "How I turned one agency's daily work into [N] booked calls a month, with a system any agency can replicate."
+- "The 3-phase arc from posting into the void to a measured inbound engine."
 
 ### Body structure
 
@@ -108,43 +109,42 @@ Always include a specific number anchor and a scale signal:
 [Opening hook: 1-2 lines naming the result and why it matters]
 
 PART 1: The starting point
-  - Where the client was when they came in
+  - Where the business was at the start
   - What was working / not working at that point
   - The specific bottleneck
 
-PART 2: The strategy we applied
-  - The framework or approach (anchor on Growthub's named systems where they apply: Stealth Creatives, the 4-lever system, etc.)
-  - Why this framework specifically (not generic best practices)
-  - 2-3 specific tactical moves with [VISUAL: anonymized creative grid / dashboard / brief sample]
+PART 2: The system applied
+  - The framework or approach ([SYSTEM NAMES — name your systems as they ship, e.g. the AI content engine, the weekly acquisition loop])
+  - Why this approach specifically (not generic best practices)
+  - 2-3 specific tactical moves with [VISUAL: anonymized content grid / dashboard / brief sample]
 
 PART 3: The arc (only if Variant B / Arc-led)
   - Phase 1 → Phase 2 → Phase 3 with specific numbers per phase
   - What changed between phases
 
 PART 4: The result
-  - Numbers (verified from source transcript)
+  - Numbers (verified from source, signed off)
   - Timeframe (verified)
-  - What's next / where this brand is going
+  - What's next
 
 PART 5: Replicable layer
-  - What the operator reading this can actually take and apply
-  - 3-5 specific lessons in operator language, not agency language
-  - Where it fits in their own creative system
+  - What the agency owner reading this can actually take and apply
+  - 3-5 specific lessons in operator language
+  - Where it fits in their own agency
 
-CLOSING: 1-2 lines on how Growthub can help if they want this for their brand. Soft CTA, never a hard sell.
+CLOSING: 1-2 lines on how to get help installing this. Soft CTA, never a hard sell.
 ```
 
 ### Anonymization rules
 
 Per `feedback_client_naming.md`:
-- Client name: never named publicly. Use "a pet ecom brand we manage", "a supplement brand we manage", etc.
-- Wins-log entries note client names internally only. Cross-reference the wins-log to make sure you're following the established anonymization for each client.
-- Some wins have a hard "do not store anywhere" rule (see Win 006 in wins-log for the pet brand). Honor that.
-- Public references to non-client brands are okay (PetLab Co, MiamiMD, Norse Organics, etc. — see wins-log for the public-reference list per vertical)
+- Client names: never named publicly. Use "a B2B agency I run the engine for", "an agency client", etc.
+- Keep the named version internal only (wins log), publish the anonymized one.
+- Avoid detail combinations that make the business identifiable even without the name.
 
 ### Numbers verification
 
-Every dollar figure, percentage, and timeframe in the magnet must trace back to the source transcript or internal record. If it doesn't, bracket-placeholder it per [[feedback_no_fabricated_performance_numbers]]. Do not invent specifics to make the case study sound better.
+Every dollar figure, percentage, and timeframe in the magnet must trace back to the source material or internal record, and carry Mauro's sign-off for public use. If it doesn't, bracket-placeholder it per [[feedback_no_fabricated_performance_numbers]]. Do not invent specifics to make the case study sound better.
 
 ---
 
@@ -154,33 +154,31 @@ Inherits the base cover spec from `_master.md`.
 
 Subtype-specific elements:
 - Title in large white text at the top of the dark section (often includes the headline number)
-- Subtitle (1 line) with the framing variant signal (outcome / arc / aggregate)
-- "Created by Growthub.Agency" or "Created by @growthub.agency" line
-- Optional: a table-of-contents preview (the $20M pet brand magnet did this) showing the section headers, signals depth without revealing content
-- Optional: an anonymized dashboard screenshot or creative grid teaser at the bottom (only if the visual doesn't reveal the client identity)
+- Subtitle (1 line) with the framing variant signal (outcome / arc)
+- "Created by @maurojpelle" credit line
+- Optional: a table-of-contents preview showing the section headers, signals depth without revealing content
+- Optional: an anonymized dashboard screenshot or content grid teaser at the bottom (only if the visual doesn't reveal any identity)
 
-Avoid: any visual that could identify the client. Blur logos, redact brand names, abstract any URL or product shot.
+Avoid: any visual that could identify a client or the agency. Blur logos, redact names, abstract any URL.
 
 ---
 
 ## Post Hook Formulas (Subtype-Specific)
 
-`_master.md` has the universal hook formulas. For case-study magnets specifically, the patterns that have worked:
+`_master.md` has the universal hook formulas. For case-study magnets specifically:
 
 ### LinkedIn (primary channel for case studies)
-- **"I took [client framing] from [number] to [bigger number]"** (Variant A, pet $29K → $750K example)
-- **"I've scaled over [N] [vertical] brands and generated $[Y] for them"** (Variant C aggregate)
-- **"Scaling [vertical] [thing] requires a NEW playbook"** (when the case study introduces a strategic shift)
+- **"I took [anonymized framing] from [number] to [bigger number]"** (Variant A, verified numbers only)
+- **"[Doing X] requires a NEW playbook"** (when the case study introduces a strategic shift)
+- **"I built the exact inbound engine agencies build for their clients. For the agency itself."** (cobbler's-children angle, the brand's core pillar)
 
 ### X
-- **"After scaling [N] [vertical] brands past $[X]M/month, here's the [specific framework]"** (less common but works)
-- Case studies generally land better on LinkedIn than X. Mauro often leads with LinkedIn for case-study magnets and cross-posts to X only if the angle adapts.
+- **"After running [the system] for [timeframe], here's the [specific framework]"**
+- Case studies generally land better on LinkedIn than X. Lead with LinkedIn for case-study magnets and cross-post to X only if the angle adapts.
 
 ### Authority anchor placement
 
-For case studies, the authority anchor is usually the case study itself ($29K → $750K is its own anchor). When the case study numbers aren't strong enough on their own, add a secondary anchor:
-- "Same playbook we've used across $107M+ in managed Meta spend."
-- "Same approach that's powered $20M+ generated for pet brands we manage."
+For case studies, the authority anchor is usually the case study itself. When the case study numbers aren't strong enough on their own, add a secondary anchor from the `_master.md` list (sign-off required).
 
 ---
 
@@ -193,7 +191,7 @@ Hey (name), here's the breakdown:
 
 LINK
 
-P.S. Would you like a free audit for your brand? Reply "yes" and we can chat about how it works.
+P.S. Want a free teardown of your agency's content and inbound setup? Reply "yes" and we can chat about how it works.
 ```
 
 Noun: `breakdown` (confirmed). Do not swap.
@@ -202,30 +200,30 @@ Noun: `breakdown` (confirmed). Do not swap.
 
 ## Output Checklist
 
-Before handing off to Joao for scheduling, confirm:
+Before scheduling, confirm:
 
-- [ ] Underlying case study input was actually used (not just wins-log scraps)
+- [ ] Underlying case study input was actually used (not just a headline win)
 - [ ] Notion / Gamma / LinkedIn doc exists with all 5 parts of the body structure
-- [ ] Every dollar figure, percentage, and timeframe traces back to source material
-- [ ] Client is anonymized per `feedback_client_naming` (no public name, vertical is okay, follow per-client rules in wins-log)
-- [ ] Framing variant (A / B / C) is consistent across the post, the asset title, and the cover
-- [ ] Replicable layer (Part 5) is operator-facing, not agency-facing — concrete moves the reader can run themselves
-- [ ] Cover image follows the subtype spec (no client-identifying visuals)
+- [ ] Every dollar figure, percentage, and timeframe traces back to source material and has Mauro's sign-off
+- [ ] Any client is anonymized per `feedback_client_naming` (no public name; keep the named version internal)
+- [ ] Framing variant (A / B) is consistent across the post, the asset title, and the cover
+- [ ] Replicable layer (Part 5) is written for the agency owner reading it — concrete moves they can run themselves
+- [ ] Cover image follows the subtype spec (no identifying visuals)
 - [ ] X post copy (if shipping X) follows the X structure in `_master.md`
 - [ ] LinkedIn post copy follows the LinkedIn structure in `_master.md`
 - [ ] DM copy is the `_master.md` default with noun = "breakdown"
-- [ ] Keyword is ALL CAPS, 3-7 chars, topic or vertical-related
+- [ ] Keyword is ALL CAPS, 3-7 chars, topic-related
 - [ ] LeadShark config: Auto-connect OFF, Partially Engage ON, Follow-up DM OFF
-- [ ] Voice.md 60-second pre-publish checklist passed
+- [ ] Voice.md pre-publish checklist passed
 
 ---
 
 ## Anti-Patterns (Specific to This Subtype)
 
-- Drafting from wins-log alone, without underlying case study source material. Wins-log gives anchor numbers, not strategic depth.
-- Result-flex without strategy. "We scaled a brand to $1M/month" without the HOW reads as a brag, not a case study.
-- Replicable layer that's actually agency-facing. "Implement a stealth creative system" is not replicable. "Use the 5-format split with a $5K/format test budget" is.
+- Drafting from a headline win alone, without underlying source material. The headline gives an anchor, not system depth.
+- Result-flex without system. "The engine booked [N] calls" without the HOW reads as a brag, not a case study.
+- Replicable layer that's actually about Mauro's setup instead of the reader's. "Install an AI content engine" is not replicable. "Turn every client call into 3 posts with this exact prompt chain" is.
 - Fabricating specifics to make the case study sound better. Use only what's in the source per [[feedback_no_fabricated_performance_numbers]].
-- Naming the client. Ever. Even when the client is publicly aware of Growthub managing them, the wins-log rule is internal-only for almost all entries.
-- Numbers-led framing (Variant A) when the source transcript doesn't support a clean single-number arc. Use Variant B (arc-led) instead.
+- Naming a client. Ever. The named version stays internal.
+- Numbers-led framing (Variant A) when the source doesn't support a clean single-number arc. Use Variant B (arc-led) instead.
 - Generic "lessons learned" closing. The replicable layer must be specific or it doesn't earn the DM reply.

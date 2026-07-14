@@ -1,6 +1,6 @@
 # @maurojpelle — Operating Baseline
 **Owner:** Mauro
-**Brand:** AI for established agency owners (separate lane from Growthub)
+**Brand:** AI for established agency owners (separate lane from the agency Mauro runs)
 **Date:** 2026-07-01
 **Status:** Greenfield. No offer, no list, no funnel. 200 X followers, 1 YouTube video.
 
@@ -11,10 +11,10 @@ This is the objective starting line, in Mauro's own words, with honest annotatio
 ## The 17
 
 **1. Who do you help?**
-Established agency owners like Lorenzo and Bogdan. Operators already running a real agency who want the AI content and acquisition systems Mauro actually runs. Not the broke DIY crowd, not beginners.
+Established agency owners. Operators already running a real agency who want the AI content and acquisition systems Mauro actually runs. Not the broke DIY crowd, not beginners.
 
 **2. The goal (number + emotional).**
-$5k/mo from @maurojpelle by end of 2026. "Made it" = running Growthub and his own brand at the same time, sharing what works, earning from both, with a solid X and YouTube channel. Wants something long-lasting that's his.
+$5k/mo from @maurojpelle by end of 2026. "Made it" = running the agency and his own brand at the same time, sharing what works, earning from both, with a solid X and YouTube channel. Wants something long-lasting that's his.
 
 **3. Why this brand at all.**
 He has a ton of real, working material to share, so it only makes sense to build something lasting for himself. Wants to help past-Mauro and others like him.
@@ -29,7 +29,7 @@ Started at "$100 workshops" or done-for-you setup of the systems he already runs
 Posting and commenting on X through a VA. Doesn't work for @maurojpelle, the account needs his own voice and real work, not outsourced activity.
 
 **7. The buyer, with proof.**
-Established agency owners. Proof asset: Growthub is at ~$300k/mo revenue, at least a third of it from the organic accounts Mauro runs, and he just closed a $28k deal off X. His organic system added roughly six figures a month to a real agency. That is the entire positioning.
+Established agency owners. Proof asset: the agency he runs is at ~$300k/mo revenue, at least a third of it from the organic accounts Mauro runs, and he just closed a $28k deal off X. His organic system added roughly six figures a month to a real agency. That is the entire positioning.
 
 **8. Stories the buyer tells themselves** (Mauro's additions marked ★):
 1. My work is too custom to systematize.
@@ -81,7 +81,7 @@ Bad content, bland obvious-AI content, lazy cringe LinkedIn posts. Being pleased
 
 The goal makes this easy, and he's overcomplicating it. $5k/mo from agency owners who buy high-ticket is **one to two clients**, not an audience. He's anxious about posting, YouTube, and 200 followers when the real path is an offer plus a handful of direct conversations with agency owners he can already reach.
 
-The offer/buyer mismatch is the core error. He named Lorenzo/Bogdan-tier buyers ($300k/mo agencies) and a $100 workshop in the same breath. Established operators don't buy $100 workshops. His own proof (a $28k deal, ~$100k/mo of Growthub revenue from his organic system) says the offer is a done-for-you install or a retainer worth thousands a month, not a workshop. He is undervaluing his single best asset.
+The offer/buyer mismatch is the core error. He named buyers running $300k/mo agencies and a $100 workshop in the same breath. Established operators don't buy $100 workshops. His own proof (a $28k deal, ~$100k/mo of agency revenue from his organic system) says the offer is a done-for-you install or a retainer worth thousands a month, not a workshop. He is undervaluing his single best asset.
 
 The two bottlenecks compound. Posting with no offer builds vanity followers with nowhere to convert. An offer with no posting has no audience to sell to. Fixing the offer first is what makes the posting worth doing.
 
@@ -93,7 +93,7 @@ The deeper pattern, same one from the H1 analysis: he hides in building. 5-7 hou
 
 **Fix the offer first (week 1).** A high-ticket done-for-you or done-with-you: "I install the organic X acquisition engine that added six figures a month to my own agency." Beta price it, aim for 1-2 agency-owner clients. That alone hits $5k/mo.
 
-**Then post to feed it, on ONE channel.** X, because the buyer lives there, he has a base, and he can repurpose the internal AI docs he already builds for Growthub/Bogdan into agency-owner-angled posts at near-zero marginal cost. One source, two audiences.
+**Then post to feed it, on ONE channel.** X, because the buyer lives there, he has a base, and he can repurpose the internal AI docs he already builds at the agency into agency-owner-angled posts at near-zero marginal cost. One source, two audiences.
 
 **Drop VA commenting** (he already proved it fails for this account). Any commenting he does himself, minimal, only on target agency owners' posts.
 
@@ -105,6 +105,6 @@ The deeper pattern, same one from the H1 analysis: he hides in building. 5-7 hou
 
 ## Open items
 - Define and price the offer (next session).
-- Ground the buyer psychology in real agency-owner language (Lorenzo's own "how I run the agency" content is a better source than the acquisition calls, which show brand-operator psychology, a different ICP).
+- Ground the buyer psychology in real agency-owner language (founders' own "how I run the agency" content is a better source than the agency's acquisition calls, which show brand-operator psychology, a different ICP).
 - Stand up the basics only when the offer exists: a way to take payment, a simple way to capture emails.
 - Set the number he'll hold himself to weekly (posts shipped, outreach conversations).

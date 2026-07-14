@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Doc Template</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e5e5e5;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;padding:30px;gap:30px;font-family:'Inter',sans-serif}
+
+.page{
+  width:1080px;
+  height:1350px;
+  background:#fff;
+  padding:60px 70px;
+  box-shadow:0 8px 32px rgba(0,0,0,.1);
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER (page 1) */
+.h1{
+  font-size:46px;
+  font-weight:800;
+  color:#1a1a1a;
+  line-height:1.1;
+  letter-spacing:-1px;
+  margin-bottom:8px;
+}
+
+.h1-sub{
+  font-size:21px;
+  color:#1a1a1a;
+  line-height:1.4;
+  margin-bottom:8px;
+  font-weight:400;
+}
+
+.handle{
+  font-size:19px;
+  font-weight:400;
+  color:#3b6cdf;
+  margin-bottom:22px;
+}
+
+.bookmark{
+  font-size:18px;
+  color:#666;
+  font-style:italic;
+  background:#f5f5f5;
+  border-left:3px solid #e8572a;
+  padding:10px 16px;
+  margin-bottom:36px;
+}
+
+/* SECTION HEADERS */
+.section-h{
+  font-size:32px;
+  font-weight:700;
+  color:#e8572a;
+  margin-top:32px;
+  margin-bottom:14px;
+  line-height:1.2;
+}
+
+.section-h-first{
+  margin-top:0;
+}
+
+.body-text{
+  font-size:17px;
+  color:#1a1a1a;
+  line-height:1.55;
+  margin-bottom:14px;
+}
+
+.body-emphasis{
+  color:#188d4d;
+  font-weight:600;
+}
+
+.body-italic-blue{
+  font-size:17px;
+  color:#3b6cdf;
+  font-weight:500;
+  font-style:italic;
+  line-height:1.55;
+  margin-top:16px;
+  margin-bottom:16px;
+}
+
+/* TABLES */
+.table-3{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:0;
+  margin-bottom:20px;
+  border:1px solid #d0d0d0;
+}
+
+.cell-label{
+  padding:12px 16px;
+  font-size:16px;
+  font-weight:700;
+  color:#1a1a1a;
+  border-right:1px solid #d0d0d0;
+  border-top:1px solid #d0d0d0;
+  display:flex;
+  align-items:center;
+}
+.cell-label:first-child,.cell-label:nth-child(2){border-top:none}
+
+.cell-body{
+  padding:12px 16px;
+  font-size:16px;
+  color:#1a1a1a;
+  line-height:1.45;
+  background:#fff;
+  border-top:1px solid #d0d0d0;
+}
+.cell-body:nth-child(2){border-top:none}
+
+.lbl-yellow{background:#f5d572}
+.lbl-blue{background:#7ba0e0;color:#fff}
+.lbl-pink{background:#f4c5d0}
+.lbl-orange{background:#f5b86b}
+
+/* TABLE 2-column header */
+.table-compare{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  margin-bottom:16px;
+  border:1px solid #d0d0d0;
+}
+
+.compare-h-red{
+  background:#e87870;
+  color:#fff;
+  padding:12px 16px;
+  font-size:16px;
+  font-weight:700;
+  border-right:1px solid #d0d0d0;
+}
+
+.compare-h-green{
+  background:#5fa861;
+  color:#fff;
+  padding:12px 16px;
+  font-size:16px;
+  font-weight:700;
+}
+
+.compare-cell{
+  padding:11px 14px;
+  font-size:15px;
+  color:#1a1a1a;
+  line-height:1.4;
+  border-top:1px solid #d0d0d0;
+  border-right:1px solid #d0d0d0;
+}
+.compare-cell:nth-child(even){border-right:none}
+
+.cc-red{background:#fadcd9}
+.cc-yellow{background:#faecc4}
+.cc-green-light{background:#d4ecd5}
+.cc-pink{background:#f4d5db}
+.cc-blue-light{background:#d6e4f5}
+.cc-white{background:#fff}
+
+/* PAGE 2 SPECIFIC */
+.closer-bold{
+  font-size:18px;
+  font-weight:700;
+  color:#1a1a1a;
+  line-height:1.5;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+.closer-italic{
+  font-size:17px;
+  color:#3b6cdf;
+  font-style:italic;
+  line-height:1.5;
+  margin-bottom:18px;
+}
+
+.cta-text{
+  font-size:16px;
+  color:#1a1a1a;
+  line-height:1.5;
+  margin-bottom:14px;
+}
+
+.footer-divider{
+  border:none;
+  border-top:1px solid #d0d0d0;
+  margin:18px 0 12px 0;
+}
+
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-top:auto;
+}
+
+.author{
+  font-size:16px;
+  color:#888;
+}
+
+.brand-mark{
+  font-family:'Caveat',cursive;
+  font-size:30px;
+  color:#1a1a1a;
+  text-align:right;
+  line-height:1;
+}
+.brand-mark .second-line{display:block;margin-top:-2px}
+
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- PAGE 1: HEADER + SECTIONS 1 & 2 -->
+<!-- Copy rules: brand/voice.md. Real numbers only, or bracket placeholders. -->
+<!-- ============================================ -->
+<div class="page">
+
+  <h1 class="h1">[TITLE: outcome-first, specific, no hype]</h1>
+  <p class="h1-sub">[SUBTITLE: one credibility anchor from brand/positioning.md, sign-off required before publishing]</p>
+  <p class="handle">@maurojpelle</p>
+  <p class="bookmark">[BOOKMARK LINE: name the exact reader and the exact stuck-point]</p>
+
+  <h2 class="section-h section-h-first">1. [SECTION 1 HEADER]</h2>
+  <p class="body-text">[Opening claim in plain speech. State the problem the reader recognizes from their own agency.]</p>
+  <p class="body-text">[Second paragraph: why the obvious fix fails. Declarative sentences.]</p>
+
+  <div class="table-3">
+    <div class="cell-label lbl-yellow">[Label 1]</div>
+    <div class="cell-body">[One concrete move, written as an instruction the reader could act on today.]</div>
+    <div class="cell-label lbl-blue">[Label 2]</div>
+    <div class="cell-body">[Second move. Keep each cell to 2-3 sentences.]</div>
+    <div class="cell-label lbl-pink">[Label 3]</div>
+    <div class="cell-body">[Third move. Use "[avatar]" / "[mechanism]" style tokens when showing a formula.]</div>
+  </div>
+
+  <p class="body-italic-blue">[Italic blue pull-line: the counterintuitive takeaway of this section, one sentence.]</p>
+
+  <h2 class="section-h">2. [SECTION 2 HEADER]</h2>
+  <p class="body-text">[Body copy. <span class="body-emphasis">Bold-green emphasis for the numbers or the core ratio.</span>]</p>
+  <p class="body-text">[Supporting paragraph.]</p>
+
+  <div class="table-3">
+    <div class="cell-label lbl-yellow">[Label]</div>
+    <div class="cell-body">[Cell body.]</div>
+    <div class="cell-label lbl-blue">[Label]</div>
+    <div class="cell-body">[Cell body.]</div>
+    <div class="cell-label lbl-pink">[Label]</div>
+    <div class="cell-body">[Cell body.]</div>
+  </div>
+
+  <p class="body-italic-blue">[Pull-line from real observation, no invented stats.]</p>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PAGE 2: SECTIONS 3 + 4 + 5 + CLOSER -->
+<!-- ============================================ -->
+<div class="page">
+
+  <h2 class="section-h section-h-first">3. [SECTION 3 HEADER]</h2>
+  <p class="body-text">[Body copy for a compare-table section.]</p>
+
+  <div class="table-compare">
+    <div class="compare-h-red">[Left column header: the failing approach]</div>
+    <div class="compare-h-green">[Right column header: the working approach]</div>
+
+    <div class="compare-cell cc-red">[Failing item 1]</div>
+    <div class="compare-cell cc-green-light">[Working item 1]</div>
+
+    <div class="compare-cell cc-yellow">[Failing item 2]</div>
+    <div class="compare-cell cc-pink">[Working item 2]</div>
+
+    <div class="compare-cell cc-pink">[Failing item 3]</div>
+    <div class="compare-cell cc-blue-light">[Working item 3]</div>
+  </div>
+
+  <p class="body-italic-blue">[Pull-line.]</p>
+
+  <h2 class="section-h">4. [SECTION 4 HEADER]</h2>
+  <p class="body-text">[Body copy.]</p>
+
+  <div class="table-compare">
+    <div class="compare-h-red">[Left header]</div>
+    <div class="compare-h-green">[Right header]</div>
+
+    <div class="compare-cell cc-yellow">[Cell]</div>
+    <div class="compare-cell cc-white">[Cell]</div>
+
+    <div class="compare-cell cc-red">[Cell]</div>
+    <div class="compare-cell cc-pink">[Cell]</div>
+
+    <div class="compare-cell cc-blue-light">[Cell]</div>
+    <div class="compare-cell cc-green-light">[Cell]</div>
+  </div>
+
+  <h2 class="section-h">5. [SECTION 5 HEADER]</h2>
+  <p class="body-text">[Body copy introducing the final 3-row table.]</p>
+
+  <div class="table-3">
+    <div class="cell-label lbl-yellow">[Label]</div>
+    <div class="cell-body">[Cell body. Real numbers only, or bracket placeholders.]</div>
+    <div class="cell-label lbl-blue">[Label]</div>
+    <div class="cell-body">[Cell body.]</div>
+    <div class="cell-label lbl-pink">[Label]</div>
+    <div class="cell-body">[Cell body.]</div>
+  </div>
+
+  <p class="closer-italic">[Closer pull-line: the belief shift, one sentence, no summary of the doc.]</p>
+
+  <p class="cta-text">[CTA: who it's for, what to DM, what they get. Confirm offer wording with Mauro before publishing.]</p>
+
+  <hr class="footer-divider">
+
+  <div class="footer-row">
+    <span class="author">— Mauro</span>
+    <div class="brand-mark">[BRAND MARK<span class="second-line">pending]</span></div>
+  </div>
+
+</div>
+
+</body>
+</html>

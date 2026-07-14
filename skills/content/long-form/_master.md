@@ -1,8 +1,8 @@
 # Long-Form Skill: Master File
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** 2026-05-26
-**Replaces:** None (new skill)
+**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
 **Status:** Shared shell across all long-form subtypes. Always load this file together with the relevant subtype file.
 
 ---
@@ -16,25 +16,25 @@ This is **distinct from**:
 - **Articles** (`skills/content/x-article-creator.md`, `miro-to-article.md`): long-form X articles, deeper than long-form posts
 - **Short forms**: pure text or single-image posts under ~150 words
 
-Volume target on Lorenzo's account: **7-8 long forms per week** (per Mauro 2026-05-25).
+Volume target on @maurojpelle: [CALIBRATE: set a realistic weekly long-form count with Mauro; his available time is roughly an hour a day.]
 
 ---
 
 ## Subtype Index (by media format)
 
-Subtypes are organized by **production format** (the media lift required), not by content pattern. Pattern variants (transformation flex, result+replicable, operator stance, tactical tutorial, etc.) live as sections INSIDE each format file. This matches Growthub's actual production workflow — the team executes against format-based lifts.
+Subtypes are organized by **production format** (the media lift required), not by content pattern. Pattern variants (transformation flex, result+replicable, operator stance, tactical tutorial, etc.) live as sections INSIDE each format file. This matches the actual production workflow: execution happens against format-based media lifts.
 
 Lead generation on long-forms happens through bookmark + profile visit + DM, not autodm.
 
 | Subtype file | Format spec | Production lift |
 |---|---|---|
-| `video-long-form.md` | Single video clip (team ad, screen recording, talking head) + caption | Video editing, anonymization. Hosts: Transformation Flex, Result Showcase, Tactical Walkthrough, Operator Stance (talking head), Visual transformation video. |
-| `infographic-html-long-form.md` | 2-3 HTML infographic images, Claude-generated. Ships standalone OR as quote-tweet companion 6hr after a parent post (same format, different timing). | Claude HTML build via Chrome extension → screenshot. Hosts: Framework breakdown, Before/After (single rendered image), Process flow, Data viz, Tactical step-by-step, Quote / manifesto card. |
-| `doc-screenshot-long-form.md` | Single image of REAL internal work product (Google doc, Notion, Slack, framework chart) | Crop + anonymization. Hosts: 3 hook variants (numbers-anchored, question-led, analogy-led). |
-| `case-study-long-form.md` | Named (rare) or anonymized client transformation, post-form, image-led | Wins-log cross-ref + anonymization. Hosts: Testimonial arc, Manifesto positioning, Comeback narrative, Aggregate-proof. |
+| `video-long-form.md` | Single video clip (screen recording, talking head, system demo) + caption | Video editing, anonymization. Hosts: Transformation Flex, Result Showcase, Tactical Walkthrough, Operator Stance (talking head). |
+| `infographic-html-long-form.md` | 2-3 HTML infographic images, Claude-generated. Ships standalone OR as quote-tweet companion 6hr after a parent post (same format, different timing). | Claude HTML build → render → screenshot. Hosts: Framework breakdown, Before/After (single rendered image), Process flow, Data viz, Tactical step-by-step, Quote / manifesto card. |
+| `doc-screenshot-long-form.md` | Single image of REAL internal work product (Google doc, Notion, Slack, framework chart, skill file) | Crop + anonymization. Hosts: 3 hook variants (numbers-anchored, question-led, analogy-led). |
+| `case-study-long-form.md` | Named (rare) or anonymized client/system transformation, post-form, image-led | Proof cross-ref + anonymization. Hosts: Testimonial arc, Manifesto positioning, Comeback narrative, Aggregate-proof. |
 
 **Killed formats (no longer used):**
-- Carousel (Growthub stopped doing multi-image carousels per Mauro 2026-05-26). Before/After patterns now ship via `infographic-html-long-form.md` as single rendered combined image.
+- Carousel (multi-image carousels killed per Mauro 2026-05-26). Before/After patterns now ship via `infographic-html-long-form.md` as single rendered combined image.
 
 **More format types may be added** as Mauro identifies them. Leave room for: screen recording without voiceover, single image not in any of these buckets, etc.
 
@@ -44,17 +44,17 @@ When building a long-form post, load `_master.md` + the relevant subtype file.
 
 ## BOF post coverage (funnel position cross-reference)
 
-BOF is a funnel position, not a format. BOF posts (named-client wins, dashboard flexes, comeback narratives, aggregate-proof) live across multiple format files. Use this table to route from a BOF win in `accounts/lorenzo-x/wins-log.md` to the right subtype file:
+BOF is a funnel position, not a format. BOF posts (named wins, dashboard flexes, comeback narratives, aggregate-proof) live across multiple format files. Use this table to route from a logged win (`brand/social-proof/` — create as results come in) to the right subtype file:
 
 | BOF post intent | Format file | Variant |
 |---|---|---|
 | Number-led result flex with video | `video-long-form.md` | A (time-compression) |
 | Number-led result flex, dashboard IS the post (no video) | `doc-screenshot-long-form.md` | A (numbers-anchored) |
-| Named-client transformation arc, video-led | `video-long-form.md` | B (named-client arc) |
-| Named-client transformation arc, image-led | `case-study-long-form.md` | A (testimonial arc) |
-| Manifesto / niche-philosophy positioning | `case-study-long-form.md` | B (manifesto) |
+| Named transformation arc, video-led | `video-long-form.md` | B (named arc) |
+| Named transformation arc, image-led | `case-study-long-form.md` | A (testimonial arc) |
+| Manifesto / lane-philosophy positioning | `case-study-long-form.md` | B (manifesto) |
 | Comeback / competitive proof narrative | `case-study-long-form.md` | C (comeback) |
-| Aggregate-proof multi-client ("I've scaled N brands, generated $X") | `case-study-long-form.md` | D (aggregate-proof) |
+| Aggregate-proof multi-result ("I've built N systems, they produced $X") | `case-study-long-form.md` | D (aggregate-proof) |
 | Result Showcase (someone else's viral asset, AI reveal) | `video-long-form.md` | C (result showcase reveal) |
 
 **Rule of thumb when picking:** if there's a video, default to `video-long-form.md`. If the proof is a single image (dashboard, screenshot, testimonial card, anonymized grid), use `doc-screenshot-long-form.md` or `case-study-long-form.md` based on whether the image IS the asset (doc-screenshot) or supports a narrative (case-study).
@@ -63,11 +63,11 @@ BOF is a funnel position, not a format. BOF posts (named-client wins, dashboard 
 
 ## Required Reading
 
-- **Active account config** (e.g., `accounts/lorenzo-x/account-config.md`). Substitute every `{{token}}` in this skill's output with values from the active account config. If no account is specified, ask which one.
-- `brands/growthub/voice.md`: voice rules, hard bans, signature moves, 60-second pre-publish checklist
-- `brands/growthub/audience.md`: ICP v2.2 (qualified buyer profile + verbatim pain phrases)
-- `accounts/lorenzo-x/wins-log.md`: source of named wins for BOF Transformation Flex variants
-- `research/post-studies/README.md`: the running pattern rubric. Reference for any pattern decisions.
+- `brand/voice.md`: voice rules, hard bans, pre-publish checklist
+- `brand/positioning.md`: identity, proof, content pillars
+- `brand/audience.md`: ICP (established agency owners) + verbatim pain phrases
+- `brand/social-proof/` (create as results come in): the only source of named wins for BOF variants
+- All posts are written for @maurojpelle in Mauro's first-person voice.
 
 ---
 
@@ -78,8 +78,8 @@ Each long-form ships with:
 1. The post copy (X version + LinkedIn version if cross-posting)
 2. The media (video, screenshot, before/after image, doc image, infographic — see Media Spec below)
 3. CTA decision: no CTA / soft consultative / tier-gated DM / thread funnel (determined by subtype)
-4. Scheduling notes (which day, which time slot per `accounts/lorenzo-x/weekly-calendar.md`)
-5. Wins-log entry update if the post uses a logged win (mark which post used which win)
+4. Scheduling notes (which day, which time slot)
+5. Social-proof log update if the post uses a logged win (mark which post used which win)
 
 **Not used by default:**
 - Autodm keyword trigger (lead magnet territory, not long form)
@@ -95,13 +95,13 @@ The media does more work on long-forms than the copy does. Subtypes have their o
 ### Format
 - **Video**: 9:16 portrait preferred for X feed performance. 1080p minimum. Under 30 seconds for in-feed autoplay.
 - **Image**: 1200x675 (16:9) or square 1080x1080. PNG for screenshots, JPG for photos.
-- **Carousel / multi-image**: up to 4 images stacked.
+- **Multi-image**: up to 4 images stacked.
 
 ### Anonymization rules (per `feedback_client_naming`)
-- Real client names: never visible publicly. Blur logos, redact brand names, abstract URLs, mask product shots.
-- Dashboard / Ads Manager screenshots: blur dollar amounts if they reveal client tier, OR blur client name selector. Keep one or the other visible, never both unblurred.
-- DM screenshots (for Transformation Flex): blur the sender's profile pic and last name only if the win is from a client who isn't comfortable being named. Default = blur.
-- Public references (non-clients, e.g., PetLabCo, MiamiMD): naming allowed per `accounts/lorenzo-x/wins-log.md` "safe references" list.
+- Real client names: never visible publicly. Blur logos, redact names, abstract URLs.
+- Dashboard / analytics screenshots: blur dollar amounts if they reveal a client's tier, OR blur the client name selector. Keep one or the other visible, never both unblurred.
+- DM screenshots (for Transformation Flex): blur the sender's profile pic and last name unless the person has consented to being named. Default = blur.
+- Public references (non-clients): naming allowed. [CALIBRATE: build a safe-references list in `brand/social-proof/` as it comes up.]
 
 ### Production reality (Claude Chrome extension constraint)
 The Chrome extension output is **text + prompts only** (per the lead magnet `_master.md` Asset Build Constraints section). Media is added manually by Mauro after the build. Skill output should mark media insertion points with `[MEDIA: description of what to insert here]` blocks.
@@ -124,23 +124,24 @@ The Chrome extension output is **text + prompts only** (per the lead magnet `_ma
 [MEDIA: subtype-specific visual]
 ```
 
-### Hook formulas (proven across long-form patterns)
+### Hook formulas (proven long-form shapes)
 
-| Formula | Subtype | Example | Source |
-|---|---|---|---|
-| "[Time period]. $[X] spent. [N] [outcome]." | BOF Transformation Flex (time-compression variant) | "11 days. $20K+ spent. ~300 website purchases." | post-006 |
-| "[Specific number outcome] from this [artifact/system]" | Result + Replicable | "This brand did $170K with our creative" | post-003 var A |
-| "[Big number] [outcome] from this ad" | Result + Replicable | "Quarter million in rev and 3k+ sales from this ad" | post-003 var B |
-| "[X months] of testing & $[Y] later:" | Visual Before/After | "3 months of testing & $25,000 later:" | post-005 |
-| "[Named client] hired us when [low point]. Today [high point]." | BOF Transformation Flex (named-client arc) | "Marin hired us when he had less than 900 followers. Today he is the most powerful name in the paid ads space." | post-004 var A |
-| "[Niche philosophy] is all we care about at [brand]." | BOF Transformation Flex (manifesto variant) | "Niche virality is all we care about at Mogul Media" | post-004 var B |
+These structures were extracted from studied high-performers. Fill them only with real, verified numbers or bracketed placeholders.
+
+| Formula | Subtype | Example shape |
+|---|---|---|
+| "[Time period]. $[X] spent/invested. [N] [outcome]." | BOF Transformation Flex (time-compression variant) | "[N] days. $[X] spent. [Y] booked calls." |
+| "[Specific number outcome] from this [artifact/system]" | Result + Replicable | "[Result] came from this one system" |
+| "[X months] of testing & $[Y] later:" | Visual Before/After | "[N] months of testing & $[Y] later:" |
+| "[Named person] started when [low point]. Today [high point]." | BOF Transformation Flex (named arc) | "[Name] started with [low point]. Today [high point]." |
+| "[Lane philosophy] is all I care about." | BOF Transformation Flex (manifesto variant) | "[Philosophy line] is all I care about." |
 
 ### Rules
-- One specific number anchor in the first 2 lines, always
-- Possessive operator credit ("our", "we") in the setup line
+- One specific number anchor in the first 2 lines, always. Real or bracketed, never invented.
+- Possessive operator credit ("my", "I built") in the setup line
 - No em dashes anywhere (per voice.md hard ban)
 - No "It's not X, it's Y" structures
-- No "Most brands / Most people" openers (unless followed by a sharp Growthub-specific counter-claim, per voice.md signature moves)
+- No "Most brands / Most people" openers
 
 ### Word count target
 60-150 words. Long-forms lean shorter on X than on LinkedIn.
@@ -158,7 +159,7 @@ LinkedIn long-forms run longer and use checkmark bullets instead of dashes. Same
 
 [Setup: 2-3 sentences. Authority anchor + what's happening + operator credit.]
 
-[Optional aside in parens: "(These are the strategies my team & I are currently using)" or similar]
+[Optional aside in parens: "(This is the exact system I run every week)" or similar]
 
 [Body: depends on subtype. Could be a bullet list, a numbered teaching breakdown, or a short paragraph block.]
 
@@ -167,13 +168,9 @@ LinkedIn long-forms run longer and use checkmark bullets instead of dashes. Same
 [CTA: depends on subtype. Could be no CTA, soft consultative, or tier-gated DM trigger.]
 ```
 
-### Authority anchors (from account config)
+### Authority anchors
 
-Use the anchor list in `accounts/lorenzo-x/account-config.md`:
-- "$107M+ in managed Meta ad spend"
-- "$100M+ on Meta ads"
-- "$20M generated for [N] [vertical] brands"
-- "7/8-figure clients"
+Pull from the proof section of `brand/positioning.md` (his own operational proof: the AI content and acquisition engine he runs daily for a real agency, content tied to booked calls). Any specific public number needs Mauro's sign-off before use. Never borrow anyone else's anchors.
 
 Rotate by post topic, gut call.
 
@@ -198,8 +195,8 @@ Unlike lead magnets, long-forms have **multiple CTA mechanics**. The subtype fil
 
 ### 3. Tier-gated DM trigger
 - Used by: Tactical Tutorial (when adapted as long-form short of full article)
-- Pattern: "If you're spending $[X]K+/mo on Meta and want [outcome], DM me '[keyword]'. I'll [free deliverable]."
-- The qualifier IS the filter. Cheap operators self-eject.
+- Pattern: "If you're running an agency at $[X]k+/mo and want [outcome], DM me '[keyword]'. I'll [free deliverable]."
+- The qualifier IS the filter. Beginners self-eject.
 
 ### 4. Thread funnel
 - Used by: BOF Visual Before/After (thread cover post)
@@ -220,27 +217,27 @@ The subtype file picks one. Do not stack multiple CTAs in a single post.
 Same as lead-magnet `_master.md`. The Claude Chrome extension output is text + prompts only. Media is added manually by Mauro after the build.
 
 Mark media insertion points as `[MEDIA: description of what to insert here]`. Examples:
-- `[MEDIA: Spokesperson ad video, 9:16 vertical, 28 seconds]`
-- `[MEDIA: Ads Manager screenshot, blur client name selector, keep spend + purchases visible]`
-- `[MEDIA: Side-by-side before/after product page redesign]`
-- `[MEDIA: 4-up grid of anonymized creative thumbnails, logos blurred]`
-- `[MEDIA: Internal Notion screenshot of the 5-pillar framework page]`
+- `[MEDIA: Screen recording of the weekly content loop running, 9:16 vertical, 28 seconds]`
+- `[MEDIA: Analytics screenshot, blur account selector, keep numbers + date range visible]`
+- `[MEDIA: Side-by-side before/after of the content calendar]`
+- `[MEDIA: 4-up grid of anonymized post thumbnails]`
+- `[MEDIA: Internal Notion screenshot of the weekly loop framework page]`
 
 ---
 
 ## Voice Rules (Critical Reminders)
 
-Full rules in `brands/growthub/voice.md`. Non-negotiables for long-form copy:
+Full rules in `brand/voice.md`. Non-negotiables for long-form copy:
 
 1. **No em dashes.** Never.
 2. **No "It's not X, it's Y" structures** or any variant.
-3. **No "Most brands / Most people" openers** unless followed by a Growthub-specific counter-claim (per voice.md signature moves).
+3. **No "Most brands / Most people" openers.**
 4. **No problem-to-purpose reversals** ("that's the filter doing its job", "that's a feature not a bug").
-5. **Numbers over adjectives.** Always cite a specific dollar, count, or time figure.
-6. **Possessive operator credit** ("our", "we") in the setup. Theory-mode language ("brands should") underperforms operator-mode language ("we shipped").
-7. **Branded effect closers** are allowed when applicable (e.g., "Stealth Creatives shipped by the team" — Growthub's branded effect, equivalent to Mogul Media's "Effect" frame).
+5. **Numbers over adjectives.** Always cite a specific dollar, count, or time figure. Real or bracketed, never invented.
+6. **Possessive operator credit** ("my", "I") in the setup. Theory-mode language ("agencies should") underperforms operator-mode language ("I shipped").
+7. **Branded effect closers** are allowed when applicable. [CALIBRATE: Mauro has not named his branded effect yet. Propose options; don't invent one silently per post.]
 
-Run every long-form through the 60-second pre-publish checklist at the bottom of voice.md.
+Run every long-form through the pre-publish checklist in voice.md.
 
 ---
 
@@ -256,13 +253,7 @@ Long-form CTA is the highest-leverage tactical decision and worth a conscious ch
 
 ## External Inspiration (Pattern Watch List)
 
-Per Mauro 2026-05-26, these accounts are reference patterns to study and adapt:
-
-- **@wizofecom (Mubbu, Mogul Media)** — BOF Transformation Flex archetype (post-004 source). Watch for new named-client transformation posts.
-- **@0xROAS** — anonymous Meta-ads + AI operator account. Tactical AI workflow drops, prompt walkthroughs. Relevant for: Tactical Tutorial, Doc Screenshot Asset Drop, Operator Stance.
-- **@hookrate_** — hook-focused account (examples pending from Mauro). Likely relevant for: Doc Screenshot Asset Drop, Tactical Tutorial when about hooks specifically, Operator Stance.
-
-When patterns from these accounts shift, update the relevant subtype file with new mechanics observed.
+[MONITORED ACCOUNTS — to be defined for Mauro's lane: AI systems for agency owners. When accounts are picked, log what pattern each is a reference for, and update the relevant subtype file when their mechanics shift.]
 
 ---
 
@@ -276,7 +267,7 @@ When this skill produces a long-form post, organize the output as:
 ├── LinkedIn post copy (if cross-posting, with [MEDIA: ...] markers)
 ├── Media production brief (text description of each [MEDIA: ...] block, ready for Mauro to grab the actual asset)
 ├── CTA mechanic chosen + rationale
-└── Scheduling note (day + slot + any post-volume conflicts on the weekly calendar)
+└── Scheduling note (day + slot)
 ```
 
-If the post uses a logged win from `wins-log.md`, append the win number to the wins-log "Drafted posts using this win" section once shipped.
+If the post uses a logged win, append the post reference to that win's entry in `brand/social-proof/` once shipped.

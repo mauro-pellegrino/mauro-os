@@ -1,6 +1,8 @@
 # LinkedIn HTML Doc Skill
 
-How Lorenzo builds branded LinkedIn carousel docs (2-4 page HTML → PDF + per-page PNG) in the Growthub visual system. Every doc follows the same page dimensions, palette, type system, and voice rules so the brand reads consistently across articles, retweets, and DM wedges. Each render produces a PDF for LinkedIn document posts and individual PNGs for Twitter, Instagram, Threads, and screen recording.
+How Mauro builds branded LinkedIn carousel docs (2-4 page HTML → PDF + per-page PNG) in one consistent visual system. Every doc follows the same page dimensions, palette, type system, and voice rules so the brand reads consistently across articles, retweets, and DM wedges. Each render produces a PDF for LinkedIn document posts and individual PNGs for Twitter, Instagram, Threads, and screen recording.
+
+[CALIBRATE: the palette below is the inherited doc system. Swap it once Mauro locks his own brand palette; everything else (dimensions, type, blocks, workflow) carries over unchanged.]
 
 ## When to use this skill
 
@@ -22,7 +24,7 @@ Do NOT use this skill for: short text posts, image-only carousels, or video scri
 - Each page is a self-contained `.page` div in the HTML.
 - The CSS forces a page break after each `.page` div via the print stylesheet, so 1 div = 1 PDF page.
 
-## The Growthub palette
+## The doc palette
 
 | Name | Hex | Use |
 |---|---|---|
@@ -41,7 +43,7 @@ Do NOT use this skill for: short text posts, image-only carousels, or video scri
 - Script (legacy brand mark — see "What's banned"): Caveat
 - Title: 44-46px, weight 800, color Space Indigo, letter-spacing -1px
 - Subtitle: 19-21px, weight 400, Space Indigo
-- Handle (@lorenzo_pravata): 17-19px, weight 400, Shocking Pink
+- Handle (@maurojpelle): 17-19px, weight 400, Shocking Pink
 - Section heading: 24-28px, weight 800, sticker style (Jasmine background, Space Indigo text, padded `4px 12px`, `display: inline-block` + `align-self: flex-start`)
 - Step heading: same as section heading + Shocking Pink circle badge with white step number, 30-34px diameter
 - Body text: 15-17px, weight 400, Space Indigo, line-height 1.5
@@ -79,7 +81,7 @@ These apply to every word inside every deck. Violating them dates the doc as AI-
 
 ### Banned constructions
 
-- **Em dashes** in body content. Replace with commas, periods, or colons. The only allowed em dash is in the footer `— Lorenzo` signature (see "Footer" below).
+- **Em dashes** in body content. Replace with commas, periods, or colons. The only allowed em dash is in the footer `— Mauro` signature (see "Footer" below).
 - **"Not X but Y" patterns.** "It isn't volume, it's structural." Cringe.
 - **Italic one-liners that summarize the section.** The kind of "if your X needs three sentences, it's not sharp enough" punchline-preacher voice. If the section was clear, it doesn't need a moral at the end. Cut them. (Originally rendered as `.body-italic-pink` paragraphs after a section. Class can stay defined in CSS for backwards compat, but don't add new instances.)
 - **"Most brands [bad thing]. Operators [good thing]."** Same energy as the above. Cut.
@@ -90,18 +92,18 @@ These apply to every word inside every deck. Violating them dates the doc as AI-
 ### Allowed and encouraged
 
 - Direct declaratives. "Performance is structural before it's creative."
-- Concrete numbers and specifics. "$107M+", "14 days", "45 ads", "30+ days."
+- Concrete numbers and specifics. "14 days", "45 posts", "30+ days." Only real numbers from Mauro's own work (any public one needs his sign-off) or bracketed placeholders.
 - Worked-example callouts (the Space Indigo `insight-box` shape) when you have a real example. Skip when generalizing.
-- First-person from Lorenzo. "I", "we", "the brands we manage."
+- First-person from Mauro. "I", "the engine I run", "the agency I run."
 
 ## Footer
 
-The footer used to include a Caveat-script "Growthub Brand Breakdowns" mark on the right side. **As of the May 2026 update, the brand mark is removed from all new docs.** Footer is now just `— Lorenzo` on the left, sitting above the horizontal divider, with the right side empty.
+The footer used to include a Caveat-script brand mark on the right side. **As of the May 2026 update, the brand mark is removed from all new docs.** Footer is now just `— Mauro` on the left, sitting above the horizontal divider, with the right side empty.
 
 ```html
 <hr class="footer-divider">
 <div class="footer-row">
-  <span class="author">— Lorenzo</span>
+  <span class="author">— Mauro</span>
 </div>
 ```
 
@@ -109,7 +111,7 @@ The `.brand-mark` CSS class can stay defined in the stylesheet for legacy decks 
 
 ## CTA handling (public vs private)
 
-**Public posts (LinkedIn carousel for retweet/share):** keep the CTA at the end. Use the `cta-block` Jasmine-fill box with "DM me [keyword]" bolded. Soften any spend-tier gates ("$50K+/mo on Meta" reads narrow — prefer "if you're spending real money on Meta" for broader applicability unless the gate is intentional).
+**Public posts (LinkedIn carousel for retweet/share):** keep the CTA at the end. Use the `cta-block` Jasmine-fill box with "DM me [keyword]" bolded. Soften any tier gates (a hard "$500k+/mo agencies" gate reads narrow; prefer "if you're running a real agency" for broader applicability unless the gate is intentional).
 
 **Private DM wedge (personalized deck sent to a single prospect):** strip the CTA entirely. The deck ends on the closer-italic line + footer. The CTA belongs in the DM message wrapper, not in the deck itself. (See `personalization-guide.md` for the private-send personalization workflow.)
 
@@ -135,7 +137,7 @@ Every render produces both a multi-page PDF and individual PNG files (one per pa
 
 1. **Decide the type.** Article/framework/wedge? Public or private send?
 2. **Outline the page split.** Map content to pages before writing. Each step or section should land cleanly on a page boundary or pair with one other section. Avoid orphaning a single paragraph at the top of a page.
-3. **Copy the master CSS** from the most recent matching doc (e.g., `pipeline-deck.html` for article-style, `persona-generator-deck.html` for framework-style).
+3. **Copy the master CSS** from `skills/content/linkedin-docs/industry-decks/linkedin-doc-template.html` (or the most recent matching finished doc in that folder).
 4. **Write the body content** following the voice rules above. No em dashes, no cringe one-liners.
 5. **Render with the dual-output script** at the chosen dimension. Produces both `slug.pdf` and `slug-p1.png`, `slug-p2.png`, etc. Verify page count matches the plan.
 6. **Visual QA each page in PNG form.** PNGs are what most platforms will actually display. Check no overflow, no missing-font fallbacks, no leftover screen-only chrome (gray body background, card shadows).
@@ -143,9 +145,9 @@ Every render produces both a multi-page PDF and individual PNG files (one per pa
 
 ## Quality check before sending
 
-- [ ] No em dashes in body content (footer `— Lorenzo` is the only exception)
+- [ ] No em dashes in body content (footer `— Mauro` is the only exception)
 - [ ] No italic-pink summary one-liners after sections
-- [ ] No "Growthub Brand Breakdowns" mark in any footer
+- [ ] No script-font brand mark in any footer
 - [ ] Page count matches the plan (2-4 pages typical)
 - [ ] All pages render cleanly with no overflow in BOTH the PDF and PNG outputs
 - [ ] Colored table fills, Jasmine section stickers, and Shocking Pink step badges all rendered
@@ -160,10 +162,8 @@ Every render produces both a multi-page PDF and individual PNG files (one per pa
 | File | Purpose |
 |---|---|
 | `linkedin-html-doc-guide.md` | This file. The visual + voice system. |
-| `personalization-guide.md` | How to adapt a generic master deck per prospect (find-and-replace workflow). |
-| `industry-decks/supplement-scaling.html` | Master supplement deck (legacy orange palette, pre-Growthub-rebrand). |
-| `industry-decks/pipeline-deck.html` | Current article template — generic 14-day creative pipeline framework. |
-| `industry-decks/persona-generator-deck.html` | Current framework template — prompt-based persona generation playbook. |
+| `../linkedin-docs/personalization-guide.md` | How to adapt a generic master deck per prospect (find-and-replace workflow). |
+| `../linkedin-docs/industry-decks/linkedin-doc-template.html` | Clean structural template with placeholder copy. Start every new deck from this. |
 
 ## Render snippet (Playwright)
 

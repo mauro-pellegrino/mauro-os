@@ -1,7 +1,8 @@
 # Long-Form Subtype: Doc Screenshot Long-Form
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** 2026-05-26 (consolidated from earlier pattern-based file)
+**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
 **Loaded with:** `_master.md` (always load both together)
 **CTA mechanic:** No CTA (zero-friction consumption, asset is in-feed)
 **Funnel:** TOF / MOF cross-stage
@@ -10,31 +11,33 @@
 
 ## What This Subtype Is
 
-A short framing caption paired with **a single image of an internal work product**: Google doc, Notion page, Slack snippet, framework chart, or workspace screenshot. The image IS the value. The reader gets the entire asset in-feed. No DM ask, no link.
+A short framing caption paired with **a single image of an internal work product**: Google doc, Notion page, Slack snippet, framework chart, skill file, or workspace screenshot. The image IS the value. The reader gets the entire asset in-feed. No DM ask, no link.
 
 Subtype identity: image of REAL work product (not marketing-designed). The "this is the actual doc I use" framing is what makes the mechanic fire. Different from `infographic-html-long-form.md` (which is Claude-generated styled content) because this is an EXISTING internal artifact, not built for the post.
+
+This format fits Mauro's brand unusually well: his repo, skills, prompts, and weekly loop docs ARE the product he talks about. Real screenshots of the machine are the proof layer.
 
 ---
 
 ## Pattern Variants (3 Hook Modes)
 
-Per `research/post-studies/post-002`, the same image-first format hosts 3 proven hook archetypes:
+The same image-first format hosts 3 proven hook archetypes (extracted from studied high-performers):
 
 ### Variant A: Numbers-anchored authority flex (MOF-leaning)
-- **Hook formula:** "Here's the complete [thing] I use to [outcome] with [average specific metric] for clients"
-- **Example:** "Here's the complete checklist that I use to create high-converting sales pages with an average ROI of 15-20% for clients"
-- **Tone:** professional, possessive, social-proof-led
-- **Best for:** Lorenzo's account (operator-tier MOF positioning)
+- **Hook formula:** "Here's the complete [thing] I use to [outcome] with [specific real metric]"
+- **Example shape:** "Here's the complete checklist I use to turn one client call into a week of content across [N] channels"
+- **Tone:** professional, possessive, proof-led
+- **Best for:** operator-tier MOF positioning on @maurojpelle
 
 ### Variant B: Question-led peer offer (TOF-leaning)
 - **Hook formula:** "Need some [topic] inspiration?"
-- **Example:** "Need some new TOF hooks inspiration?"
+- **Example shape:** "Need some hook inspiration for your agency's posts?"
 - **Tone:** casual peer-to-peer, low authority pressure
 - **Best for:** broader audience entry, top-of-funnel pull
 
 ### Variant C: Analogy-led teaching (TOF-leaning)
 - **Hook formula:** "[Vivid memorable analogy]. The same goes for [your topic]."
-- **Example:** "You wouldn't crack the same jokes with your grandmother that you'd share with your buddy over drinks. The same goes for your ads."
+- **Example shape:** "You wouldn't crack the same jokes with your grandmother that you'd share with your buddy over drinks. The same goes for your content."
 - **Tone:** teaching, sticky mental image
 - **Best for:** when the framework benefits from a metaphor before the reader sees it
 
@@ -49,12 +52,12 @@ Before drafting, get these from Mauro:
 1. **The doc / Notion / Slack screenshot itself** — file or URL of the source artifact
 2. **Variant** — A / B / C from above
 3. **Variant-specific data:**
-   - A: specific number / ROI / metric to use as anchor + social proof phrasing
+   - A: specific real number / metric to use as anchor + proof phrasing
    - B: topic for the question
    - C: the analogy + the bridge to the business point
 4. **Doc readability check** — is the doc legible at thumbnail scale? Mobile-readable?
 5. **Anonymization scope** — what in the doc needs to be redacted (client names, internal tool names if sensitive, dollar figures tied to specific clients)
-6. **Confirm artifact is real** — if it's marketing-designed-to-look-like-a-doc, the mechanic breaks. Mauro confirms this is a real artifact used by the team.
+6. **Confirm artifact is real** — if it's marketing-designed-to-look-like-a-doc, the mechanic breaks. Mauro confirms this is a real artifact he actually uses.
 
 ---
 
@@ -65,7 +68,7 @@ Two-component post: short framing caption (3-30 words) + one image.
 ### Variant A caption structure
 
 ```
-[Caption: "Here's the complete [thing] I use to [outcome] with [metric] for clients"]
+[Caption: "Here's the complete [thing] I use to [outcome] with [metric]"]
 
 [Optional 1 line: brief framing or context]
 
@@ -118,8 +121,8 @@ Word count target: under 60 words total across all variants. The image carries t
 ### Anonymization
 
 - Client names, brand names: redacted with black bars or blurred
-- Internal tool names: usually fine unless they reveal client identity
-- Dollar figures: keep aggregate-level ($107M+) visible; redact per-client specifics
+- Internal tool names: usually fine unless they reveal a client's identity
+- Dollar figures: aggregate-level real numbers can stay visible; redact per-client specifics
 
 ### Crop and aspect ratio
 
@@ -132,14 +135,14 @@ Word count target: under 60 words total across all variants. The image carries t
 
 This subtype uses **No CTA** by design. The full asset is in-feed. No DM ask, no link, no "comment X."
 
-The mechanic: you gave first, asked nothing. Reader thinks "if this is what they give away free, what does the paid version look like?" and clicks the profile.
+The mechanic: you gave first, asked nothing. Reader thinks "if this is what he gives away free, what does working with him look like?" and clicks the profile.
 
 **Optionally:** if a soft positioning line earns its place, add one line at the bottom: "More frameworks like this on the profile, follow for more." Used sparingly. Most variants work without it.
 
 **Never use on this subtype:**
 - Autodm keyword (would defeat the zero-friction mechanic)
 - "DM me" or "book a call"
-- Calendly link
+- Booking/calendar link
 
 ---
 
@@ -151,14 +154,13 @@ Before scheduling, confirm:
 - [ ] Doc screenshot is a real artifact, not a designed graphic
 - [ ] Doc is legible at thumbnail scale (mobile test)
 - [ ] Doc has operator-grade depth (10-30 items, not 3 fluffy bullets)
-- [ ] Client / brand names redacted per anonymization rules
-- [ ] Aggregate anchors preserved ($107M+ etc.)
+- [ ] Client / third-party names redacted per anonymization rules
+- [ ] Any number in the caption is real and signed off (no fabricated specifics)
 - [ ] X caption is under 60 words
 - [ ] LinkedIn caption (if cross-posting) adapted per `_master.md` LinkedIn template
-- [ ] All `{{tokens}}` resolved from `accounts/[active]/account-config.md`
 - [ ] No em dashes, no "It's not X, it's Y", no "Most brands" openers
 - [ ] No CTA at the bottom (the mechanic depends on no-ask)
-- [ ] Voice.md 60-second pre-publish checklist passed
+- [ ] Voice.md pre-publish checklist passed
 
 ---
 
@@ -176,8 +178,6 @@ Before scheduling, confirm:
 
 ## Cross-Reference
 
-- **Source pattern study**: `research/post-studies/post-002-doc-screenshot-asset-drop.md`
-- **3 hook variations** documented across 3 screenshots in post-studies: post-002-hook-a-sales-checklist.png, post-002-hook-b-tof-hooks.png, post-002-hook-c-generations.png
-- **Adjacent variant for AI-flavored content** (relevant for `@stealth_ai`): "Here's the exact prompt I use to audit my client's onboarding emails for [X]" + Notion doc screenshot
+- **Strong Mauro-lane adaptation**: "Here's the exact prompt I use to [outcome]" + Notion/repo screenshot of the real prompt. His skills library is a deep well for this variant.
 - **Distinction from `infographic-html-long-form.md`**: this subtype ships REAL extracted work product. Infographics are Claude-generated styled content. Same image-led format, different production source.
 - **Distinction from lead magnets**: this subtype ships the full asset in-feed. Lead magnets gate the asset behind an autodm keyword. Decide which lever you want before drafting.

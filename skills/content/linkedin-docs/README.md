@@ -1,9 +1,9 @@
 # Skill: LinkedIn Document Carousel Generator
-**Version:** 1.0
-**For:** @lorenzo_pravata at Growthub
+**Version:** 2.0
+**For:** @maurojpelle
 **Output:** Multi-page LinkedIn document carousel (1080x1350 per page) as both HTML and PNG images, modeled after the Josh Chin reference style.
 
-> **Repo adaptation note (2026-05-07):** This skill was originally written for a Claude.ai project environment that wrote files to `/mnt/user-data/outputs/`. In this repo, outputs go to `skills/content/linkedin-docs/industry-decks/[name]-linkedin-doc.html` and the corresponding PNGs sit alongside. The Playwright export script needs its paths updated when running locally. Reference HTMLs (`skincare-scaling.html`, `supplement-scaling.html`) serve as the structural template until a clean `linkedin-doc-template.html` is built.
+> **Repo adaptation note (2026-05-07):** This skill was originally written for a Claude.ai project environment that wrote files to `/mnt/user-data/outputs/`. In this repo, outputs go to `skills/content/linkedin-docs/industry-decks/[name]-linkedin-doc.html` and the corresponding PNGs sit alongside. The Playwright export script needs its paths updated when running locally. The clean structural template is `industry-decks/linkedin-doc-template.html`; start every new deck from it.
 
 ---
 
@@ -14,7 +14,7 @@ Use this skill when the user wants to convert any of the following into a Linked
 - A long-form article (X article, blog post, newsletter)
 - A tweet or short post that has enough substance for visual treatment
 - Raw notes or bullets that need to be packaged
-- A specific concept or framework Lorenzo wants to teach
+- A specific concept or framework Mauro wants to teach
 
 The output is always a LinkedIn-ready visual carousel, not a text post or copy. **This skill never produces the LinkedIn post caption that accompanies the images.** The user writes that themselves.
 
@@ -24,8 +24,9 @@ The output is always a LinkedIn-ready visual carousel, not a text post or copy. 
 
 Before generating any HTML or copy:
 
-1. Read `brands/growthub/voice.md` in full. All copy must pass the 60-second pre-publish checklist at the bottom of voice.md.
-2. Confirm the user has provided source content (article, tweet, or notes). If not, ask for it.
+1. Read `brand/voice.md` in full. All copy must pass the pre-publish checklist in voice.md.
+2. Read `brand/positioning.md` and `brand/audience.md` so every deck speaks to established agency owners, not beginners.
+3. Confirm the user has provided source content (article, tweet, or notes). If not, ask for it.
 
 ---
 
@@ -47,13 +48,13 @@ For 2-3 page outputs, ask: "Should each page have roughly equal density, or do y
 Default: equal density across pages. The Josh Chin reference uses equal density.
 
 **Question 3: Title and subtitle**
-"What's the headline you want on page 1? And do you want a one-line subtitle under it (typically the credibility anchor like '$107M+ in managed Meta spend')?"
+"What's the headline you want on page 1? And do you want a one-line subtitle under it (typically a credibility anchor)?" Anchors come from `brand/positioning.md`; any specific public number needs Mauro's sign-off.
 
 **Question 4: CTA trigger**
-"What DM trigger word should the CTA use? Standard options: 'audit', 'stealth', 'unaware'. Or skip the CTA?"
+"What DM trigger word should the CTA use? Or skip the CTA?" [CALIBRATE: standard trigger words for Mauro's offers are not defined yet. Confirm the trigger with him per deck.]
 
 **Question 5: File naming**
-"What should the file be named? I'll use kebab-case based on the topic (e.g., 'fabricated-diversity-linkedin-doc'). Confirm or suggest your own."
+"What should the file be named? I'll use kebab-case based on the topic (e.g., 'inbound-engine-linkedin-doc'). Confirm or suggest your own."
 
 Once these are answered, proceed to build.
 
@@ -118,12 +119,7 @@ The Josh Chin reference shows page 1 and page 2 with similar density (3 sections
 
 ## Step 3: HTML Template
 
-Use the existing industry-deck HTMLs as the structural reference until a clean `linkedin-doc-template.html` is built. Working examples in `industry-decks/`:
-
-- `skincare-scaling.html` (canonical reference, originated by Mauro)
-- `supplement-scaling.html` (mirrors skincare structure)
-
-Do not modify the CSS values. Only swap content.
+Start from `industry-decks/linkedin-doc-template.html` (clean structural template with placeholder copy). Do not modify the CSS values. Only swap content.
 
 ### Key template parameters
 
@@ -131,7 +127,7 @@ Do not modify the CSS values. Only swap content.
 
 **Color palette:**
 - Section headers: `#e8572a` (orange)
-- Handle (@lorenzo_pravata): `#3b6cdf` (blue)
+- Handle (@maurojpelle): `#3b6cdf` (blue)
 - Italic blue lines: `#3b6cdf`
 - Yellow callouts: `#ffe75e` background, `#1a1a1a` text
 - Green inline emphasis: `#188d4d`
@@ -150,15 +146,15 @@ Do not modify the CSS values. Only swap content.
 - Cell colors rotate: red → yellow → pink (left column), white → green-light → blue-light (right column)
 
 **Footer:**
-- Always include "— Lorenzo" on the left
-- Always include "Growthub Brand Breakdowns" handwritten-style on the right (Caveat font)
+- "— Mauro" on the left
+- Right side empty (the legacy script-font brand mark is retired; see `skills/content/long-form/linkedin-html-doc-guide.md`)
 - Footer only on the LAST page
 
 ---
 
 ## Step 4: Voice Rules
 
-All copy must pass `brands/growthub/voice.md`. Run the 60-second checklist before finalizing:
+All copy must pass `brand/voice.md`. Run the checklist before finalizing:
 
 1. Zero em dashes. Use commas, periods, or rewrite.
 2. Zero "it's not X, it's Y" structures (and all variants like "the X isn't Y, it's Z").
@@ -166,18 +162,16 @@ All copy must pass `brands/growthub/voice.md`. Run the 60-second checklist befor
 4. Maximum 2-3 colons across the entire document.
 5. No parallel rhythm triplets (three short stacked sentences).
 6. No "powerful," "game-changing," "transformational," "unlock your potential," etc.
-7. Specific numbers throughout ($107M, $1M/month, $200k threshold, 3,030 ads).
-8. Named external examples where possible (Simple, UltimaPeak, AG1, Reverse Health, Noom, Hims).
+7. Specific numbers throughout, only real ones from Mauro's own work or bracketed placeholders. Never fabricate.
+8. Named external examples where possible (public examples relevant to agency owners, never client names).
 9. Read every body paragraph aloud. If it sounds like a copywriting exercise, rewrite as plain speech.
 
-The handle is always `@lorenzo_pravata`. The footer signature is always:
-- Left: `— Lorenzo`
-- Right: `Growthub Brand Breakdowns` (in Caveat font)
+The handle is always `@maurojpelle`. The footer signature is always `— Mauro` on the left, right side empty.
 
 The CTA pattern is always:
 "If you [qualifier matching audience tier], DM me '[trigger]' and I'll [specific deliverable]."
 
-Standard triggers: `audit`, `stealth`, `unaware`. Use whichever matches the article's topic best.
+[CALIBRATE: confirm the trigger word with Mauro per deck until standard triggers exist.]
 
 ---
 
@@ -223,9 +217,9 @@ def export_pages(html_path, output_dir, base_name):
 
 # Usage:
 # export_pages(
-#     html_path='skills/content/linkedin-docs/industry-decks/supplement-scaling.html',
+#     html_path='skills/content/linkedin-docs/industry-decks/[deck-name].html',
 #     output_dir='skills/content/linkedin-docs/industry-decks',
-#     base_name='supplement-scaling'
+#     base_name='[deck-name]'
 # )
 ```
 
@@ -254,9 +248,8 @@ Never include the LinkedIn post caption. The user writes that themselves.
 ## File Naming Convention
 
 Always use kebab-case based on the topic. Examples:
-- `fabricated-diversity-linkedin-doc.html` + `fabricated-diversity-linkedin-doc-page-1.png` + `fabricated-diversity-linkedin-doc-page-2.png`
-- `skincare-scaling-linkedin-doc.html` + corresponding PNGs
-- `quiz-funnels-2026-linkedin-doc.html` + corresponding PNGs
+- `inbound-engine-linkedin-doc.html` + `inbound-engine-linkedin-doc-page-1.png` + `inbound-engine-linkedin-doc-page-2.png`
+- `ai-content-system-linkedin-doc.html` + corresponding PNGs
 
 Drop the year unless the article is explicitly date-anchored.
 
@@ -269,7 +262,7 @@ Drop the year unless the article is explicitly date-anchored.
 3. **Don't make pages overflow.** If content is too dense, propose more pages instead of cramming.
 4. **Don't deviate from the Josh Chin visual reference.** The whole point of this format is recognition. Stay on-template.
 5. **Don't skip the clarifying questions step.** Page count, page balance, title/subtitle, CTA trigger, and filename should all be confirmed before building.
-6. **Don't forget the footer on the last page only.** The "— Lorenzo" + "Growthub Brand Breakdowns" signature appears once, at the bottom of the final page.
+6. **Don't forget the footer on the last page only.** The "— Mauro" signature appears once, at the bottom of the final page.
 7. **Don't use inline `<br>` for line breaks in body copy.** Use separate `<p>` elements. Cleaner styling.
 8. **Don't put more than 3 sections on a single page.** Layout breaks. Propose adding a page instead.
 
@@ -277,16 +270,12 @@ Drop the year unless the article is explicitly date-anchored.
 
 ## Reference: Existing Outputs
 
-Examples of this skill in action (use these to validate visual consistency):
+- `skills/content/linkedin-docs/industry-decks/linkedin-doc-template.html` (2-page clean structural template, placeholder copy)
 
-- `skills/content/linkedin-docs/industry-decks/skincare-scaling.html` (2-page, the canonical reference Mauro originated)
-- `skills/content/linkedin-docs/industry-decks/supplement-scaling.html` (2-page, mirrors skincare)
-- (More to come: pet-scaling, app-scaling, fabricated-diversity, etc.)
-
-When in doubt about visual treatment, open one of these and copy the structure.
+When in doubt about visual treatment, open the template and copy the structure. As finished Mauro-lane decks accumulate in `industry-decks/`, prefer the most recent one as the visual reference.
 
 ---
 
 ## Related skill: per-prospect personalization
 
-`personalization-guide.md` (in this same folder) describes the workflow Nathan runs to adapt a generic industry deck (e.g., `supplement-scaling.html`) into a per-prospect personalized version with the prospect's brand name embedded. Different workflow, downstream of this generation skill.
+`personalization-guide.md` (in this same folder) describes the workflow for adapting a generic deck into a per-prospect personalized version with the prospect's name embedded. Different workflow, downstream of this generation skill.

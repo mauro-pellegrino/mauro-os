@@ -8,7 +8,7 @@
 
 ## Required Reading
 
-Before producing any output, read `brands/growthub/voice.md` and `brands/growthub/audience.md` in full. All copy must pass the 60-second pre-publish checklist at the bottom of voice.md. Ground every audience-facing decision (tier, stated pain, language) in the v2.1 ICP in audience.md.
+Before producing any output, read `brand/voice.md` and `brand/audience.md` in full. All copy must pass the pre-publish checklist in voice.md. Ground every audience-facing decision (tier, stated pain, language) in the ICP in audience.md, unless a specific brief supplies its own persona and audience research.
 
 ---
 

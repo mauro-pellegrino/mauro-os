@@ -1,5 +1,5 @@
 # Weekly Ideation Briefing
-**Version:** 2.0
+**Version:** 3.0 (retargeted to this brand 2026-07)
 **Run:** Every Monday morning
 **Output:** 4 autodm post ideas + 3 article ideas, each grounded in own-account performance data plus competitor/trend signals.
 
@@ -7,7 +7,7 @@
 
 ## What This Skill Does
 
-Replaces the v1 channel-scan flow with a data-driven ideation pipeline. Takes the previous week's analytics from X, LinkedIn, and Calendly, cross-references with competitor and trend signals (from the trendjack X API or manual scan), and produces a structured Monday brief.
+A data-driven ideation pipeline. Takes the previous week's analytics from X (and LinkedIn / booking data where available), cross-references with competitor and trend signals, and produces a structured Monday brief.
 
 The output is two specific buckets: autodm post ideas (for X distribution this week) and article ideas (for longer-form content this week).
 
@@ -15,9 +15,9 @@ The output is two specific buckets: autodm post ideas (for X distribution this w
 
 ## Required Reading
 
-Before producing any written output, read `brands/growthub/voice.md` and `brands/growthub/audience.md` in full. All copy must pass the 60-second pre-publish checklist at the bottom of voice.md. Ground every audience-facing decision (tier, stated pain, language) in the v2.2 ICP in audience.md.
+Before producing any written output, read `brand/voice.md` and `brand/audience.md` in full. All copy must pass the pre-publish checklist in voice.md. Ground every audience-facing decision (segment, stated pain, language) in the ICP in audience.md: established agency owners whose pipeline runs on referrals and outreach, who want an AI content system installed.
 
-Also load: `accounts/lorenzo-x/wins-log.md` (recent named wins eligible for BOF posts) and the most recent `project_lorenzo_x_account` memory note for the current ICP read.
+Also load: `brand/positioning.md` (the three content pillars) and any recent wins worth a BOF post. [WINS LOG, create `brand/wins-log.md` as results come in; until then, pull wins from `brand/sessions/` and Mauro directly.]
 
 ---
 
@@ -29,9 +29,9 @@ The user pastes file paths or drops files for the previous week's window. Defaul
 |---|---|---|
 | X post-level analytics | `account_analytics_content_{start}_{end}.csv` | X Premium → Analytics → Content → Export |
 | X account overview | `account_overview_analytics.csv` | X Premium → Analytics → Overview → Export |
-| LinkedIn aggregate | `AggregateAnalytics_*.xlsx` | LinkedIn Creator Analytics → Export |
-| Calendly events | `event-data-from-{start}-to-{end}.csv` | Calendly → Reports → Export |
-| Trendjack X API output | inline JSON or CSV | Trendjack system (see Step 4) |
+| LinkedIn aggregate | `AggregateAnalytics_*.xlsx` | LinkedIn Creator Analytics → Export [add when Mauro posts there consistently] |
+| Booking / calls data | export or manual notes | [BOOKING TOOL, no booking flow exists for this brand yet; use DM conversations + call notes in the meantime] |
+| Trend signals | inline JSON, CSV, or pasted posts | [TRENDJACK, no X API monitoring set up for this brand; manual scan fallback, see Step 4] |
 
 If any input is missing, run the analysis on what's available and flag the gap. Never block on a missing input.
 
@@ -41,21 +41,21 @@ If any input is missing, run the analysis on what's available and flag the gap. 
 
 For the post-level CSV, sort by these metrics and produce a top-20 ranking for each:
 
-1. **Impressions** — raw reach
-2. **New follows** — audience growth signal
-3. **Profile visits** — call-booking proxy (highest-intent signal)
-4. **Replies** — autodm keyword redemption proxy (when keyword-comment patterns are used)
+1. **Impressions**: raw reach
+2. **New follows**: audience growth signal
+3. **Profile visits**: intent proxy (highest-intent signal)
+4. **Replies**: autodm keyword redemption proxy (when keyword-comment patterns are used)
 
 For each top-10 post in the New Follows + Profile Visits rankings, capture:
 - The opening hook line (first 12 words)
-- The format (autodm lead magnet / brand breakdown / BOF win / pure link / thread opener / contrarian opener)
+- The format (autodm lead magnet / build-in-public breakdown / BOF win / pure link / thread opener / contrarian opener)
 - The lead-magnet keyword used (if any)
 
 Identify the dominant pattern: which post format converts engagements to follows + PV at the highest rate.
 
 ---
 
-## Step 2: Analyze Own LinkedIn Data
+## Step 2: Analyze Own LinkedIn Data (when available)
 
 From the xlsx export:
 
@@ -63,36 +63,35 @@ From the xlsx export:
 - Read the `FOLLOWERS` sheet for daily follower-add spikes (correlate with post dates)
 - Read the `DEMOGRAPHICS` sheet for audience composition (industry, seniority, company size)
 
-Cross-reference top X posts with top LinkedIn posts. The Claude-prompts format has consistently dominated both platforms in this window. Note when a post performs cross-platform vs. only on one.
+Cross-reference top X posts with top LinkedIn posts. Note when a post performs cross-platform vs only on one.
 
-Flag the **audience composition risk**: if >30% of the LinkedIn audience is in agency/marketing industries (vs the target brand-operator ICP), LinkedIn redemptions are lower-fit on average than X redemptions. Lead-magnet copy on LinkedIn may need a tighter qualifier.
-
----
-
-## Step 3: Analyze Calls Data
-
-From the Calendly CSV (filter out `Canceled = true`):
-
-- **Channel attribution** — count responses to the "platform was this call booked on" question. Flag the Unknown bucket as a data gap.
-- **Revenue tier** — distribution across the audience.md tiers (T1 / T2a / T2b / T3)
-- **Spend tier** — distribution across $25K+, $50K+, $100K+ buckets
-- **Pain phrases** — pull verbatim from the "main problems you're facing" response. Cluster into themes (creative diversity, creative fatigue, scaling ceiling, CPA inflation, restricted category, etc.)
-
-Calculate **qualified-call rate** = (calls at $25K+/month spend OR $200K+/mo rev) / total held calls. Compare to historical baseline from `project_lorenzo_x_account.md`.
+Flag the **audience composition** read: the target ICP is agency owners and founders, so check what share of the LinkedIn audience is actually founder/owner seniority in agency-adjacent industries. If the audience skews junior or off-ICP, lead-magnet copy on LinkedIn needs a tighter qualifier.
 
 ---
 
-## Step 4: Pull Trendjack Signals
+## Step 3: Analyze Calls / Conversations Data
 
-The trendjack X API output gives top-performing posts from the monitored creator list over the last 7 days. Default monitored list lives at the bottom of this skill.
+While no booking tool is live, run this on DM conversations and call notes instead of an export.
+
+- **Channel attribution**: where did each qualified conversation start (X post, DM, referral, LinkedIn). Flag the Unknown bucket as a data gap.
+- **Qualification**: distribution against the ICP floor (established agency owners, mid six figures a month and up, per `brand/audience.md`).
+- **Pain phrases**: pull verbatim from what leads actually said. Cluster into themes (pipeline dried up, can't stay consistent, no time, cringe fear, outbound burnout).
+
+Calculate **qualified-conversation rate** = qualified / total. Compare to the trailing weeks once a baseline exists.
+
+---
+
+## Step 4: Pull Trend Signals
+
+[MONITORED CHANNELS, to be defined for Mauro's lane: AI systems for agency owners. Maintain the list at the bottom of this skill once defined.]
+
+Until an automated pull exists, do a manual scan of the monitored list (WebFetch or pasted from the user) for top-performing posts from the trailing 7 days.
 
 For each trending post, capture:
 - Author + post text + engagement metrics
 - Core claim or take
 - Why it's resonating (contrarian / data-backed / specific result / format play / live anxiety)
-- Whether Growthub has a stronger / different angle on the same topic
-
-**If the trendjack API output is not yet available**, fall back to manual scan of the monitored list (use WebFetch or paste from the user).
+- Whether Mauro has a stronger or different angle on the same topic
 
 ---
 
@@ -103,20 +102,20 @@ Each autodm idea must include:
 ```
 ### IDEA N: [Working title]
 
-**Hook angle:** [The first line of the X post — must pass voice.md]
+**Hook angle:** [The first line of the X post, must pass voice.md]
 **Source signal:** [Specific own-data post + competitor/trend signal that supports this idea]
 **Lead magnet promise:** [What the user gets when they comment the keyword]
 **Keyword:** [Single word, ALL CAPS, no collision with existing autodm keywords]
-**Predicted conversion:** [Why this will outperform — tie to a specific own-data benchmark]
+**Predicted conversion:** [Why this will outperform, tied to a specific own-data benchmark, or [NO BASELINE YET] while the account is young]
 ```
 
 Ideas should be sourced from a mix of:
-- **Own high-performing patterns** — extend or deepen what's already working (e.g., new Claude prompts file in a different vertical)
-- **Competitor moves** — counter-position or build on what a tracked competitor just did
-- **Trend signals** — capitalize on a live anxiety or topic spike
-- **Pain phrases from calls** — translate a verbatim ICP frustration into a lead-magnet hook
+- **Own high-performing patterns**: extend or deepen what's already working
+- **Competitor moves**: counter-position or build on what a tracked creator just did
+- **Trend signals**: capitalize on a live anxiety or topic spike
+- **Pain phrases from conversations**: translate a verbatim ICP frustration into a lead-magnet hook
 
-Aim for diversity across the 4 ideas: not all should be Claude prompt files. Vary format (prompt file / framework / playbook / swipe file / live audit offer).
+Aim for diversity across the 4 ideas: vary format (prompt file / framework / playbook / swipe file / live audit offer). All four should map to one of the three pillars (cobbler's children, anti-cringe authority, low-time system that converts).
 
 ---
 
@@ -129,7 +128,7 @@ Each article idea must include:
 
 **Angle:** [The core thesis, one sentence]
 **Source:** [Own data signal + competitor/transcript reference that supports this]
-**Target reader:** [ICP slice — e.g., "skincare DTC operators at $25K-$100K/mo Meta spend"]
+**Target reader:** [ICP slice, e.g. "SEO agency founders whose referral pipeline just cracked"]
 **Format:** [LinkedIn doc carousel / X long-form / Notion 5-page guide / 10-prompt Claude system]
 **Distribution plan:** [Which autodm idea (if any) it pairs with, and on what channel it launches first]
 ```
@@ -141,7 +140,7 @@ Articles should run deeper than autodms. They cover a teardown, a playbook, or a
 ## Step 7: Output Format
 
 ```
-GROWTHUB WEEKLY IDEATION BRIEF
+WEEKLY IDEATION BRIEF: @maurojpelle
 Week of: [DATE]
 Window analyzed: [START] – [END]
 
@@ -150,13 +149,13 @@ Window analyzed: [START] – [END]
 - Underperformers to retire: [...]
 - Cross-platform consistency: [...]
 
-📞 CALLS QUALITY SIGNAL
+📞 CONVERSATIONS QUALITY SIGNAL
 - Held: [N] | Qualified: [N] ([%])
-- Channel attribution: [X / LinkedIn / Email / Unknown]
+- Channel attribution: [X / LinkedIn / DM / Unknown]
 - Top pain themes: [...]
 
-🔥 TRENDJACK / COMPETITOR SIGNALS
-- [Top 3-5 trending posts from monitored list with the Growthub angle]
+🔥 TREND / COMPETITOR SIGNALS
+- [Top 3-5 trending posts from the monitored list with Mauro's angle on each]
 
 🎯 AUTODM IDEAS (4)
 [Use Step 5 format]
@@ -165,7 +164,7 @@ Window analyzed: [START] – [END]
 [Use Step 6 format]
 
 🗣️ ICP LANGUAGE TO MINE
-[3-5 verbatim phrases from calls worth using in hooks this week]
+[3-5 verbatim phrases from conversations or the audience.md language bank worth using in hooks this week]
 
 🛠️ ACTION ITEMS
 - Memory updates worth pinning: [...]
@@ -175,35 +174,25 @@ Window analyzed: [START] – [END]
 
 ---
 
-## Monitored Trendjack Accounts
+## Monitored Accounts
 
-The trendjack X API should pull top posts from the trailing 7 days for these accounts. Maintain this list as the operator landscape evolves.
+[MONITORED CHANNELS, to be defined for Mauro's lane: AI systems for agency owners. Candidates: creators covering AI-powered content ops, agency growth, and personal-brand-to-pipeline systems. Fill this table once chosen.]
 
 | Creator | X Handle | Coverage |
 |---|---|---|
-| Fraser Cottrell | @sourfraser | Portfolio threads, ad format breakdowns, $300M+ spend authority |
-| Nick Theriot | @nicktheriot_ | Meta ads scaling, frameworks |
-| Spencer Pawliw | @spencerpawliw | Creative strategy, performance |
-| Andrew Faris | @andrewjfaris | Ecom / Meta sharp operator takes |
-| Cody Plofker | @codyplofker | CMO perspective, transparent results |
-| DTC Alchemist | @dtc_alchemist | Creative strategy, operator |
-| DTC Midas | @DTCMidas | Ecom operator, real results |
-| Shaun Eng | @shauneng | Ecom scaling, buyer psychology |
-| Chase Chappell | @chasechappell | Hook formulas, $600M+ managed |
+| [TBD] | [TBD] | [TBD] |
 
 ---
 
 ## Routing Instructions
 
 When this skill is triggered:
-1. Resolve active brand → Growthub
-2. Load: `voice.md`, `positioning.md`, `audience.md`, `learnings.md`, `accounts/lorenzo-x/wins-log.md`
-3. Cross-reference current memory in `project_lorenzo_x_account` for the latest ICP read
-4. Run Steps 1-6 above
-5. Output the brief in the Step 7 format
-6. Save the brief to `research/weekly-briefs/{YYYY-MM-DD}-ideation.md`
-7. Log any standout ICP language to `brands/growthub/learnings.md`
-8. Suggest 1-2 memory updates if a pattern has shifted
+1. Load: `brand/voice.md`, `brand/positioning.md`, `brand/audience.md`, and any wins log / recent sessions.
+2. Run Steps 1-6 above.
+3. Output the brief in the Step 7 format.
+4. Save the brief to `research/weekly-briefs/{YYYY-MM-DD}-ideation.md` (create the folder on first run).
+5. Log any standout ICP language to `brand/audience.md`'s language bank or a learnings note.
+6. Suggest 1-2 memory updates if a pattern has shifted.
 
 ---
 
@@ -221,7 +210,8 @@ Run this skill when you see:
 ## Anti-Patterns
 
 - Don't suggest a Claude prompts file as more than 50% of the autodm ideas. The format works but the well runs dry if every post is the same shape.
-- Don't propose autodm ideas with a keyword that collides with an existing live autodm. Check the wins-log + recent posts before assigning.
+- Don't propose autodm ideas with a keyword that collides with an existing live autodm. Check recent posts before assigning.
 - Don't suggest content angles without a specific own-data or trend signal to ground them.
-- Don't skip the calls section — pain phrases there are the single best source of new hook material.
+- Don't skip the conversations section. Pain phrases there are the single best source of new hook material.
 - Don't recommend retiring an autodm format based on one underperforming post. Look at the rolling 4-week average.
+- Don't pitch to beginners. Every idea speaks to the established agency owner (see `feedback_expert_not_beginner_positioning`).

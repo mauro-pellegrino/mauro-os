@@ -5,7 +5,7 @@
 ---
 
 **Who do you help?**
-Established agency owners, the Lorenzo and Bogdan type. Operators already running a real agency, mid six figures a month and up, who know they should be using AI to produce content and win clients but don't have the systems for it. Not beginners. Not solo freelancers hunting cheap prompts. Operators who want the machine installed.
+Established agency owners. Operators already running a real agency, mid six figures a month and up, who know they should be using AI to produce content and win clients but don't have the systems for it. Not beginners. Not solo freelancers hunting cheap prompts. Operators who want the machine installed.
 
 **What 15 stories do they tell themselves to justify their failures and purchases?**
 1. My work is too custom to systematize or hand to AI.
@@ -25,7 +25,7 @@ Established agency owners, the Lorenzo and Bogdan type. Operators already runnin
 15. Why post at all if I can rely on referrals?
 
 **What's your numerical / emotional goal? What do you want it to feel like?**
-$5k/mo from this brand by the end of 2026. Emotionally, I want to run Growthub and my own brand at the same time, sharing what actually works and getting paid from both. A solid X and YouTube channel that's mine. Something long-lasting that I built for myself, that helps the version of me from a few years ago and others like him.
+$5k/mo from this brand by the end of 2026. Emotionally, I want to run the agency and my own brand at the same time, sharing what actually works and getting paid from both. A solid X and YouTube channel that's mine. Something long-lasting that I built for myself, that helps the version of me from a few years ago and others like him.
 
 **What's the #1 thing keeping me from it?**
 I don't have an offer and I'm not posting consistently. Underneath that, I hide in building systems because it feels productive, instead of shipping my own thing and putting it in front of people. I optimize what I can measure and avoid the uncomfortable work of selling.
@@ -37,7 +37,7 @@ None. Zero. I've floated $100 workshops or done-for-you setup of the systems I r
 Barely anywhere. X with about 200 followers and one YouTube video. No ads, no list, no newsletter. Right now I mostly ride the agency's channels. This brand has almost no discovery of its own.
 
 **What's your monthly revenue and your revenue goal?**
-This brand makes $0 today. Goal is $5k/mo by end of 2026, which for high-ticket buyers is one or two clients, not an audience. Credibility context: the agency I run, Growthub, is at about $300k/mo, at least a third of that comes from the organic accounts I manage, and I just closed a $28k deal off X.
+This brand makes $0 today. Goal is $5k/mo by end of 2026, which for high-ticket buyers is one or two clients, not an audience. Credibility context: the agency I run is at about $300k/mo, at least a third of that comes from the organic accounts I manage, and I just closed a $28k deal off X.
 
 **What's your email list size and what platform do you use?**
 No list and no platform yet. I want one.
@@ -60,7 +60,7 @@ No list and no platform yet. I want one.
 15. Own your lane so it can't be absorbed by a bigger brand next to you.
 
 **What tech stack do you run on?**
-Almost nothing for this brand. No payment processor, no course or community platform, no CRM, no email tool. Just Claude and the systems I've built in my own repo. (The agency runs a full stack, Calendly, Tweet Hunter, Slack, tl;dv, a Next.js dashboard, but that's Growthub, not this.)
+Almost nothing for this brand. No payment processor, no course or community platform, no CRM, no email tool. Just Claude and the systems I've built in my own repo. (The agency I run has a full stack, Calendly, Tweet Hunter, Slack, tl;dv, a Next.js dashboard, but that's the agency, not this brand.)
 
 **What's your biggest bottleneck, leads, conversions, retention, or offer clarity?**
 Offer clarity first, then leads. I have no offer, so nothing downstream can work. It isn't a conversion or retention problem because there's nothing yet to convert or retain.

@@ -11,4 +11,4 @@ The opener "Claude is INSANE for [topic]" (e.g. "Claude is INSANE for podcast ad
 
 **Why:** It's a tested pattern that earns comments and triggers the auto-DM flow; lead with it rather than inventing a new opener when writing these posts.
 
-**How to apply:** When drafting lead-gen posts that give away Claude prompt packs / lead magnets, open with the literal "Claude is INSANE for ..." line. Pair with a comment-keyword CTA (e.g. "Comment PROMPTS"). Used for the "Claude is INSANE for Podcast Ads (5 Prompts)" lead magnet. Honor [[feedback_no_fabricated_performance_numbers]] (only the real $106M figure) and [[feedback_client_naming]] (no named clients in public posts).
+**How to apply:** When drafting lead-gen posts that give away Claude prompt packs / lead magnets, open with the literal "Claude is INSANE for ..." line. Pair with a comment-keyword CTA (e.g. "Comment PROMPTS"). Used for the "Claude is INSANE for Podcast Ads (5 Prompts)" lead magnet. Honor [[feedback_no_fabricated_performance_numbers]] (only real, owned numbers or bracket placeholders) and [[feedback_client_naming]] (no named clients in public posts).

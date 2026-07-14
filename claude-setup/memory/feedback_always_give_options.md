@@ -12,4 +12,4 @@ When delivering creative writing — X posts, hooks, headlines, subheaders, DM c
 - For each option, include a one-line rationale (what angle it leads with and who it filters in)
 - End with my pick + reason — Mauro still wants a recommendation, just with the alternatives visible
 - Skip this only when a single output is genuinely the right call (e.g., a one-line tweak to fix a known violation). Call out why in that case.
-- Applies to all account-facing copy: Lorenzo's X, Mauro personal, client work, lead magnet promos.
+- Applies to all account-facing copy: Mauro's own accounts, client work, lead magnet promos.

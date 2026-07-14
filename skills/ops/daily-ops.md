@@ -44,11 +44,11 @@ The one list. Every task row:
 | task | what it is, concretely (not "do content" — "write Tue LinkedIn post from X article") |
 | due | a real weekday date (`2026-07-08`). Never blank, never "Monday" unless it's genuinely a Monday-only task |
 | rock? | ⭐ if it's a needle-mover (moves acquisition / revenue / a real project), blank if shallow/admin |
-| source | `monday-call` / `ad-hoc` / `rolled-over` / `content` |
+| source | `monday-analysis` / `ad-hoc` / `rolled-over` / `content` |
 | status | `todo` / `doing` / `done` / `dropped` |
 
 Rules:
-- **Spread, don't stack.** When several items land at once (esp. Monday call items), distribute them across the week's days. Cap needle-movers at ~1–2 per day.
+- **Spread, don't stack.** When several items land at once (esp. Monday analysis items), distribute them across the week's days. Cap needle-movers at ~1–2 per day.
 - **Roll-over is explicit.** Unfinished tasks at EOD get a new due-day (default: next working day) and `source: rolled-over`. If a task rolls over 3+ times, flag it at the top of the backlog — it's either too big (break it down) or being avoided (say so out loud).
 - Keep it lean. Done/dropped items older than the current week get moved to the bottom `## Archive` section, not deleted (they feed the weekly hit-rate).
 
@@ -62,7 +62,7 @@ Steps:
 1. **Gather inputs:**
    - Today's due items from `backlog.md`
    - Anything left `todo`/`doing` from yesterday's daily file (roll it in)
-   - New Monday action items if today is Monday (see Component 6)
+   - New Monday-analysis action items if today is Monday (see Component 6)
    - Today's existing Google Calendar events (real meetings — block around them). Use `mcp__claude_ai_Google_Calendar__list_events` for today.
 2. **Pick the big rock.** Exactly one needle-mover for the day. If Mauro didn't name one, propose the highest-leverage ⭐ item and say why.
 3. **Draft a 30-minute-block day.** Mauro likes half-hour granularity. Structure:
@@ -111,7 +111,7 @@ This replaces `save-recap`'s recap. Honest scoreboard, then set tomorrow up.
 Steps:
 1. **Walk the blocks.** For each planned block: `done` / `partial` / `no`. Pull git log for the day as corroboration (`git log --since` — see below) but the plan blocks are the primary scorecard, not commits.
 2. **Compute hit-rate** = done blocks / planned blocks. State it plainly. Big rock done? That's the headline (a day where the big rock got done is a win even if shallow stuff slipped).
-3. **Content shipped.** List what content actually went out / got produced today (posts, articles, auto-DMs, YouTube, scripts). Also append it to the existing dashboard log `future-projects/dashboard/data/content-log.csv` (don't build a second log). Feeds Component 5 + `ops/daily/weekly-inputs.md`.
+3. **Content shipped.** List what content actually went out / got produced today (posts, articles, auto-DMs, YouTube, scripts). Also append it to `ops/daily/content-log.csv` (create on first run; don't build a second log). Feeds Component 5 + `ops/daily/weekly-inputs.md`.
 4. **Ask three quick things:** 1–10 day score, one win, one blocker (what actually stopped you — be specific, this is the data that finds patterns).
 5. **Roll over.** Every unfinished task → new due-day in `backlog.md`, `source: rolled-over`. Flag 3x-rollovers.
 6. **Tee up tomorrow.** Propose tomorrow's big rock candidate so the AM ritual starts warm.
@@ -132,7 +132,7 @@ Steps:
 
 ### Git log for corroboration
 ```bash
-cd /Users/mauro/growthub-os
+cd /Users/mauro/mauro-os
 git log --since="YYYY-MM-DD 00:00" --until="YYYY-MM-DD 23:59" \
   --pretty=format:"%ad|%s" --date=format:"%H:%M"
 ```
@@ -143,7 +143,7 @@ git log --since="YYYY-MM-DD 00:00" --until="YYYY-MM-DD 23:59" \
 
 Mauro wants to track **what content he actually does** and **push it toward automation**, on a constant-improvement loop. Two moving parts:
 
-**a) Content-shipped log** — appended to `future-projects/dashboard/data/content-log.csv` at EOD (Component 4, step 3), and summarized in the daily file. Recurring weekly targets live in `ops/daily/weekly-inputs.md`. Over a week this shows what he's really producing vs. those targets.
+**a) Content-shipped log** — appended to `ops/daily/content-log.csv` at EOD (Component 4, step 3), and summarized in the daily file. Recurring weekly targets live in `ops/daily/weekly-inputs.md`. Over a week this shows what he's really producing vs. those targets.
 
 **b) Automation backlog** (`ops/daily/automation-backlog.md`) — every recurring content task Mauro does by hand is a candidate to automate. Each row:
 
@@ -152,7 +152,7 @@ Mauro wants to track **what content he actually does** and **push it toward auto
 | task | the recurring content job (e.g. "turn YouTube breakdown → X article") |
 | freq | how often he does it (daily / weekly / per-video) |
 | current | `manual` / `semi` (a skill exists but needs babysitting) / `automated` |
-| lever | the skill/tool that could do it — link to an existing `skills/` file or the Agency Tools hub build |
+| lever | the skill/tool that could do it — link to an existing `skills/` file |
 | next step | the single next action to move it one notch toward automated |
 
 **The improvement cycle (runs in the weekly review):**
@@ -161,16 +161,16 @@ Mauro wants to track **what content he actually does** and **push it toward auto
 3. Pick ONE automation to advance that week; its "next step" becomes a ⭐ backlog task with a due-day.
 4. When a task moves `manual → semi → automated`, log it as a win in the weekly review. That's the visible progress.
 
-This ties into the existing content skills and the planned Agency Tools content generators — automating a step usually means wrapping an existing `growthub-os` skill, not building from zero. Prefer reusing skills already in `skills/`.
+Automating a step usually means wrapping a skill that already exists in `skills/` rather than building from zero. Check there first.
 
 ---
 
 ## Component 6 — Monday action-item auto-import
 
-On Mondays (or when a new `acquisition-calls/YYYY-MM-DD.md` appears):
-1. Read the latest acquisition-call note.
-2. Extract every `**Mauro** →` action item.
-3. Add each to `backlog.md` with `source: monday-call` and a **due-day spread across the week** (don't stack them all on Monday — that's the exact failure this fixes). Put needle-movers earlier in the week.
+On Mondays (or when a new `ops/acquisition/YYYY-MM-DD-monday-analysis.md` appears — see `skills/ops/monday-acquisition-analysis.md`):
+1. Read the latest Monday analysis.
+2. Extract the action items from its §9 (top action items for the week).
+3. Add each to `backlog.md` with `source: monday-analysis` and a **due-day spread across the week** (don't stack them all on Monday — that's the exact failure this fixes). Put needle-movers earlier in the week.
 4. Surface the list at the next Start of Day for confirmation.
 
 ---
@@ -180,7 +180,7 @@ On Mondays (or when a new `acquisition-calls/YYYY-MM-DD.md` appears):
 Write `ops/daily/weekly/YYYY-Www.md`:
 - **Hit-rate trend:** each day's X/N + the week's average. Is it climbing?
 - **Big-rock completion:** how many days did the needle-mover get done?
-- **Monday items:** did this week's action items get done *in-week* (not rolled to next Monday)?
+- **Monday analysis items:** did this week's action items get done *in-week* (not rolled to next Monday)?
 - **Blocker patterns:** recurring blockers from the daily EODs — name the pattern.
 - **Automation win:** what moved a notch toward automated (Component 5).
 - **Next week's setup:** carry-over big rocks + import next Monday's items.
@@ -199,14 +199,8 @@ Three scheduled runs per day drive the whole thing (set up via the `schedule` sk
 | Midday | Midday check | One line: is the big rock moving? Re-plans if not |
 | Evening | End of Day | Prompts the review; if no response, still logs the git-based recap + rolls over open tasks |
 
-### Live setup (as built 2026-07-06)
-GitHub cloud-routine access was blocked for Mauro's account, so the automation runs **through Slack, not this repo**. The live single source of truth for the nudges is a **Slack canvas**, not `ops/daily/backlog.md` (the repo files remain the method spec + anything run locally in a Claude session).
-- Channel `#mauro-daily-ops` = `C0BFGEW82VA` · backlog canvas = `F0BF9EJFQ05`
-- Routines (weekdays, Europe/Madrid, claude-sonnet-4-6, Slack + Google-Calendar connectors):
-  - Morning 09:00 → `trig_01UvirY7vLLDmNW9V6WXbwAS`
-  - Midday 13:00 → `trig_014Pd7XeyniHCjQZYEsFaLDG`
-  - EOD 16:45 → `trig_01F5mTtZadEMwbJbEsqATcxm`
-- Manage: https://claude.ai/code/routines. The EOD nudge degrades gracefully — if Mauro goes dark it still updates the canvas and rolls tasks so nothing is lost. If GitHub routine access is ever enabled, migrate state from the canvas back to `ops/daily/`.
+### Live setup
+[SCHEDULED NUDGES — not set up for this repo yet.] When setting them up, use the `schedule` skill to create three weekday routines (Europe/Madrid): Morning 09:00, Midday 13:00, EOD 16:45, with Google Calendar access. Fill in here where the live state lives (this repo's `ops/daily/` if GitHub routine access works, otherwise a channel/canvas in whatever workspace hosts the nudges) plus the routine IDs, and manage them at https://claude.ai/code/routines. The EOD nudge must degrade gracefully: if Mauro goes dark it still logs the git-based recap and rolls tasks so nothing is lost.
 
 ---
 
@@ -219,7 +213,7 @@ GitHub cloud-routine access was blocked for Mauro's account, so the automation r
 | "end my day" / EOD nudge | Component 4 (+ 5b capture) |
 | "weekly review" | Component 7 |
 | "what should I be doing" | Read backlog, name the current block's task + the big rock |
-| new acquisition-call note | Component 6 |
+| new Monday analysis file | Component 6 |
 
 ---
 

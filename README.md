@@ -1,25 +1,21 @@
 # mauro-os
 
-Mauro's operating system for the ghostedcalls / maurojpelle team. Extracted from growthub-os on 2026-07-13 (all extracted content was authored by Mauro).
+Mauro's operating system for the ghostedcalls / maurojpelle brand. Everything here was authored by Mauro and serves his own brand only. Internal agency material (client brands, team accounts, agency ops) lives elsewhere; if something from there is ever needed, extract it deliberately.
 
 ## What's here
 
 | Dir | What it is | Status |
 |---|---|---|
-| `CLAUDE.md` | Session brain — copied from growthub-os | **REWRITE**: sections on agency identity, ICP, clients are Growthub's |
-| `brand/` | Personal brand context (positioning, audience, posts, lead magnets) + `voice.md` writing rules | voice.md needs a pass to strip Growthub-specific references |
-| `skills/` | All skill dirs (content, creative-strategy, dm-setting, lead-gen, ops, research, youtube) | **REWRITE per skill**: prune what doesn't apply, swap Growthub branding/ICP for ghostedcalls |
+| `CLAUDE.md` | Session brain: identity, ICP, beliefs, routing, output rules | ready |
+| `brand/` | Personal brand context (positioning, audience, posts, lead magnets) + `voice.md` writing rules | ready |
+| `skills/` | All skill dirs (content, creative-strategy, dm-setting, lead-gen, ops, research, youtube) | being retargeted to Mauro's ICP where examples still assume a different one |
 | `research/transcripts/` | maurojpelle transcript research | ready |
 | `claude-setup/` | Portable Claude memory files + team setup guide (SETUP.md) | ready |
-| `.claude/` | Hooks (voice injection, skill auto-save, session-notes prompt) + youtube-lead-magnet agent | paths already rewritten to ~/mauro-os |
-
-## Deliberately NOT copied from growthub-os
-
-Growthub client and team material: `accounts/lorenzo-x`, `accounts/bogdan-x`, `accounts/stealth-ai`, `brands/` (client brands), `acquisition-calls/`, `emails/`, `recaps/`, `ops/`, team-facing scripts. If something from there turns out to be needed, extract it deliberately.
+| `.claude/` | Hooks (voice injection, skill auto-save, session-notes prompt) + youtube-lead-magnet agent | ready |
 
 ## GitHub
 
-Lives at `github.com/mauro-pellegrino/mauro-os` (private). On Mauro's Mac the remote uses the `github-ghostedcalls` SSH alias (see `~/.ssh/config`) so the ghostedcalls key is used instead of the Growthub one:
+Lives at `github.com/mauro-pellegrino/mauro-os` (private). On Mauro's Mac the remote uses the `github-ghostedcalls` SSH alias (see `~/.ssh/config`) so the ghostedcalls key is used for this repo:
 
 ```
 origin  git@github-ghostedcalls:mauro-pellegrino/mauro-os.git

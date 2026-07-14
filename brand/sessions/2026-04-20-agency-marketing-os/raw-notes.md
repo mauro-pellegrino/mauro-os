@@ -17,7 +17,7 @@ The goal: build something Mauro can open every Monday and immediately know where
 
 ### 1. Reorganised the AI skill library first
 
-Before touching the dashboard, noticed the skills folder in growthub-os was a flat list of 15 files with no structure. Skills for YouTube, content repurposing, lead gen, research — all mixed together.
+Before touching the dashboard, noticed the skills folder in the repo was a flat list of 15 files with no structure. Skills for YouTube, content repurposing, lead gen, research — all mixed together.
 
 **Problem:** Hard to know what tool to reach for. Hard to explain to someone else what the system does.
 
@@ -82,14 +82,14 @@ The 5 questions (taken from the existing meeting agenda):
 4. TEST: Hypothesis & Metrics for this week
 5. ACTION: What we will do this week
 
-**Weekly Metrics (Joao/VA fills via Form — 32 fields):**
+**Weekly Metrics (VA fills via Form — 32 fields):**
 Every number the agency tracks, organised into sections:
 - Call pipeline (the funnel — most important)
-- Content output by owner (Lorenzo + Bogdan separately)
+- Content output by owner (each founder separately)
 - Reach (impressions combined)
 - Outreach (cold DMs, lead magnet DMs, cold emails, positive conversations)
 
-**Content Log (Joao fills via Form — 9 fields per post):**
+**Content Log (VA fills via Form — 9 fields per post):**
 Notable posts only — top performers and clear flops. Not every post. Per post: owner, platform, type, URL, impressions, engagement rate, performance label, one sentence on why it worked or didn't.
 
 ---
@@ -115,7 +115,7 @@ Dashboard design decision: this number gets the biggest visual treatment on the 
 **Page 2 — Metrics:**
 - Call funnel chart
 - Qualified calls trend over time (with target line)
-- Owner output table: Lorenzo vs Bogdan side by side
+- Owner output table: the two founders side by side
 - Reach chart: X + LI over time
 - Outreach row
 
@@ -162,9 +162,9 @@ No other files change. The CSV column name is the contract — the name in the S
 
 ## What this system assumes
 
-- Joao (VA) fills the form every Monday without being chased
+- The VA fills the form every Monday without being chased
 - Mauro fills the check-in tab during the Monday call
-- Lorenzo and Bogdan track their own content output (Joao pulls from wherever they log it)
+- The founders track their own content output (the VA pulls from wherever they log it)
 - The tracked metrics stay relatively stable week to week (adding is fine, but frequent renaming breaks things)
 
 ---
