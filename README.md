@@ -17,13 +17,12 @@ Mauro's operating system for the ghostedcalls / maurojpelle team. Extracted from
 
 Growthub client and team material: `accounts/lorenzo-x`, `accounts/bogdan-x`, `accounts/stealth-ai`, `brands/` (client brands), `acquisition-calls/`, `emails/`, `recaps/`, `ops/`, team-facing scripts. If something from there turns out to be needed, extract it deliberately.
 
-## Push to GitHub
+## GitHub
 
-```bash
-gh repo create maurojpelle/mauro-os --private --source ~/mauro-os --push
-# or manually:
-git remote add origin git@github.com:maurojpelle/mauro-os.git
-git push -u origin main
+Lives at `github.com/mauro-pellegrino/mauro-os` (private). On Mauro's Mac the remote uses the `github-ghostedcalls` SSH alias (see `~/.ssh/config`) so the ghostedcalls key is used instead of the Growthub one:
+
+```
+origin  git@github-ghostedcalls:mauro-pellegrino/mauro-os.git
 ```
 
-Note: the skill auto-save hook in `.claude/settings.json` runs `git push`, so add the remote before editing skills in Claude Code (it fails silently otherwise).
+Note: the skill auto-save hook in `.claude/settings.json` runs `git push` on every skill edit.

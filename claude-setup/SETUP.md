@@ -1,4 +1,4 @@
-# Claude Setup for the New Team (ghostedcalls / maurojpelle)
+# Claude Setup for the New Team (ghostedcalls / mauro-pellegrino)
 
 How to get a new teammate (or a fresh machine) running with this repo and Claude Code.
 
@@ -24,7 +24,7 @@ Log in with the team member's own Claude account when prompted.
 ## 3. Repo setup
 
 ```bash
-git clone git@github.com:maurojpelle/mauro-os.git ~/mauro-os
+git clone git@github.com:mauro-pellegrino/mauro-os.git ~/mauro-os
 ```
 
 - `CLAUDE.md` loads automatically every session — it's the brain. Keep it current.
