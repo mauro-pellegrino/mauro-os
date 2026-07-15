@@ -12,6 +12,14 @@ Each person doing content/ops work in Claude Code needs their own Claude subscri
 
 Check current pricing and limits at https://claude.com/pricing before buying — don't rely on this doc staying accurate.
 
+## 1b. Two Claude accounts on one Mac (Mauro's setup)
+
+Verified against the official docs (July 2026):
+
+- On macOS you cannot be logged into two Claude accounts at once in Claude Code; credentials live in the system Keychain. Switch accounts with `/login` (quick browser OAuth, a few seconds). Repos, CLAUDE.md, and memory stay on disk regardless of which account is active.
+- If you need both at the same time: run one of them in the browser at claude.ai/code (browser logins are independent of the Keychain) and connect it to the mauro-os GitHub repo.
+- Claude Code inside the Claude desktop app is the same Claude Code as the terminal CLI (same skills, hooks, CLAUDE.md, MCP). Use whichever you prefer; the desktop app is the right choice for VAs.
+
 ## 2. Install Claude Code
 
 ```bash

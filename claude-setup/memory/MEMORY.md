@@ -16,6 +16,7 @@
 - [feedback_expert_not_beginner_positioning.md](feedback_expert_not_beginner_positioning.md) — Speak to the sophisticated, established operator, not a beginner; reframe yes/no questions into expert stances
 - [feedback_response_clarity.md](feedback_response_clarity.md) — Keep chat responses short and easy to follow, not dense walls
 - [feedback_lead_magnet_no_repo_save.md](feedback_lead_magnet_no_repo_save.md) — Don't save lead magnets to repo; they go to Notion + X analytics
+- [feedback_youtube_series_not_oneoffs.md](feedback_youtube_series_not_oneoffs.md) — YouTube ideas must be episodes of repeatable series, never one-off videos
 
 ## Project
 - [project_mauro_personal_brand.md](project_mauro_personal_brand.md) — Mauro's personal brand for agency owners using AI
