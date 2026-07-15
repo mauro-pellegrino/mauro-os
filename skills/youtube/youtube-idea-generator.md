@@ -238,6 +238,8 @@ Claude setups, skills, agents, and workflows applied to agency content and acqui
 **6. Result case studies**
 What produced a specific confirmed outcome (like the $28k deal off X), broken down as a system, not a brag. Numbers need Mauro's sign-off before publishing.
 
+(Cobbler's children was cut as a pillar 2026-07-15 per Mauro; the "agencies starve their own pipeline" callout reads beginner for a qualified ICP. See `brand/positioning.md`.)
+
 ---
 
 ## Anti-Patterns

@@ -42,6 +42,8 @@ He's *in it daily*, building and measuring, not theorizing. And he's honest abou
 1. **Anti-cringe authority** — post as the expert without the guru ick (faceless/AI-friendly, since they fear being on camera).
 2. **Low-time system that proves it converts** — AI as the time-multiplier, with leading indicators so they don't quit at week three.
 
+**Deprecated (Mauro, 2026-07-15):** *Cobbler's children* ("build your own inbound engine, the one you build for clients") was cut as a pillar. Mauro's call: "makes no sense for service based businesses that are qualified." The ICP is established, qualified operators; the "the cobbler has no shoes" framing reads as beginner/self-deprecating for that audience. Do not generate content off this pillar. The underlying idea (your real client work is the raw material for content) survives inside the **low-time system** pillar, framed as system input, not as a "you neglect your own brand" callout.
+
 ## Voice
 
 Per [[voice.md]] (draft): honest builder thinking out loud for a smart peer. Conviction in the claim, humility in the tone, no hedges that undersell, no guru theater. AI-for-content is the mechanism, the documentary honesty is the brand.

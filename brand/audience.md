@@ -74,6 +74,8 @@ Owners/founders of marketing, creative, ad, social, or SEO agencies (and solo op
 1. **Anti-cringe authority:** post as the expert without the guru ick (faceless/AI-friendly).
 2. **Low-time system that proves it converts:** AI as the time-multiplier, with leading indicators so they don't quit at week three.
 
+(Deprecated 2026-07-15: *Cobbler's children* — "build the inbound engine you build for clients, for yourself" — was cut as a content pillar per Mauro: "makes no sense for service based businesses that are qualified." It reads beginner/self-deprecating for this ICP. The related audience *pain* above — great at delivery, bad at selling themselves — stays valid; just don't build content off the "you neglect your own brand" callout. Their real client work still feeds content, framed as system input under the low-time pillar.)
+
 ## How to use
 
 Every @maurojpelle post, video, or article aims at this ICP and one of the 2 pillars. Mirror the language bank. Lead with proof over theory. Never sound like the guru they're afraid of becoming.

@@ -170,7 +170,7 @@ Avoid: any visual that could identify a client or the agency. Blur logos, redact
 ### LinkedIn (primary channel for case studies)
 - **"I took [anonymized framing] from [number] to [bigger number]"** (Variant A, verified numbers only)
 - **"[Doing X] requires a NEW playbook"** (when the case study introduces a strategic shift)
-- **"The exact content system that books calls for a $300k/mo agency (numbers need sign-off)"** (low-time / proof-it-converts angle)
+- **"The exact content system that books calls for a $300k/mo agency (numbers need sign-off)"** (low-time / proof-it-converts angle). Cobbler's-children framing was cut as a pillar 2026-07-15; don't lead with "agencies neglect their own brand." See `brand/positioning.md`.
 
 ### X
 - **"After running [the system] for [timeframe], here's the [specific framework]"**

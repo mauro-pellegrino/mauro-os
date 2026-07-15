@@ -120,6 +120,40 @@ Write like you're explaining to a smart peer over coffee — not presenting a ca
 | Educational | Share the framework, not just the conclusion |
 | Grounded | Real numbers, real clients, real outcomes |
 | Occasionally casual | "like a mad man", "on steroids", "crazy" — used sparingly for emphasis |
+| Occasionally profane | Real, mild profanity for emphasis and humanness (see below) |
+
+---
+
+## Personal edge (from Mauro's 2026-07-15 short-form edit pass)
+
+When Mauro rewrites an AI draft, this is what he consistently ADDS. These are de-AI-ing levers, strongest in short-form and personal posts (lighter in articles, near-zero in a client-facing lead magnet).
+
+**1. Mild profanity, used real (not performed).**
+Mauro swears for emphasis when it's how he'd actually say it. It's one of the clearest human tells. Don't force it into every post; use it where the line already carries heat.
+
+✅ "So when I see them use AI, it's obvious as fuck."
+✅ "I have never used an em dash in my life. Why the fuck would I let AI start now."
+✅ "If your work is ass, your AI content based on it will be too."
+✅ "Keep your own personal shit in the posts."
+Guardrails: never in a client-facing lead magnet or a cold email. Keep it to `fuck / shit / ass`-level, always attached to a real point, never as shock filler. Roughly one profane beat per post, max.
+
+**2. Personal specificity over clean generality.**
+Mauro trades a tidy generic line for a lived, specific one only he could write.
+
+❌ (AI) "The best writing is when you write like you speak."
+✅ (Mauro) "Almost all of my clients are non-native speakers. So when I see them use AI, it's obvious as fuck. I know they don't know the words they write, because they never use them in sentences."
+
+**3. Cut the meta-commentary closer; end on a direct instruction.**
+He deletes "it took a lot of back and forth, that back and forth was the actual work" type reflection and lands on something the reader can do.
+
+❌ (AI) "...It took a lot of back and forth. That back and forth was the actual work."
+✅ (Mauro) "If you see a format you like, understand how you can replicate it for your own content."
+
+**4. Simpler words.** "write like you talk" over "write like you speak". "sounds the same" over "shipping the same posts".
+
+**5. Factual precision on named references.** Get the name right (it was "Wiz of ecom", not "Wiz of VC"). Attribute real people ("Like Charlie Morgan says"). A wrong name burns credibility with an operator audience.
+
+**The non-native-speaker angle** is a recurring, ownable vein for Mauro: most of his clients are non-native English speakers, AI output is "obvious as fuck" on them because they use words they'd never say, and the fix is recording your own voice. Call transcripts are the #1 base document for content because of this. Reach for this angle; it's his, and it lands.
 
 ---
 

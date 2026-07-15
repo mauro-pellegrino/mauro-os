@@ -1,8 +1,8 @@
 # Skill: Bulk Short-Form Generator (transcripts → TweetHunter CSV)
 
-**Version:** 2.0
+**Version:** 2.1
 **Created:** 2026-07-06
-**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
+**Updated:** 2026-07-15 (baked in Mauro's short-form edit pass: personal edge/profanity, gold before→after anchors, cobbler's-children pillar cut)
 **Input:** One or more source transcripts / session notes (`research/transcripts/maurojpelle/`, `brand/sessions/`)
 **Output:** A TweetHunter-ready CSV (large batch of short-form posts) + a skim review sheet
 **Builds on:** `skills/content/short-form/short-form-from-long-content.md` (same 6 templates + voice). This is the *bulk* version: many posts per source, no per-post human pick, machine QA instead.
@@ -40,6 +40,29 @@ Because `media_url` needs a *hosted* link, **skip Template A (caption tease) in 
 - **Closer refinement (2026-07-10, TENTATIVE — confirm after Mauro's full edit pass):** the closer rule stands, but the closer is the last substantive line, not a bolt-on aphorism. Mauro cut "30 seconds per image. There's no excuse for skipping the check." and ended the post on the last real insight. Preachy or clever punchline closers get cut (consistent with voice.md's ban on punchline-preacher one-liners). Do not append a separate closer when the body's final line already lands.
 - **Extract, then mimic.** Almost always build a post by extracting the insight from EXISTING material — Mauro's own past posts FIRST, then his transcripts and session notes — and matching his actual writing style. Pull real example posts and copy the rhythm, vocabulary, and structure. Do not write fresh from a blank page.
 - **Quote-tweet + infographic is a core format.** Many of the best "short text" posts are actually quote tweets paired with a Claude-made infographic. Analytics exports do NOT flag QT / infographic / media, so treat pure-text length stats as directional only. Calibrate mainly by mimicking real posts.
+
+### Mauro's edit pass (2026-07-15) — what he adds when he rewrites an AI draft
+
+This pass is the single richest voice signal we have. Mauro took full AI batches and rewrote them. The deltas, now mandatory:
+
+- **Mild profanity, used real.** Short-form carries Mauro's edge. He swears where the line already has heat ("obvious as fuck", "why the fuck would I let AI start now", "if your work is ass"). ~1 beat per post, never forced, NEVER in a client-facing lead magnet. This is a top de-AI-ing lever.
+- **Personal specificity beats clean generality.** He replaces tidy generic lines with lived detail only he could write (his non-native clients, his own habits).
+- **Kill the meta-commentary closer.** He deletes "it took a lot of back and forth, that was the real work" reflection and ends on a direct instruction the reader can act on.
+- **Simpler words** ("talk" not "speak", "sounds the same" not "shipping the same posts").
+- **Factual precision on named references** ("Wiz of ecom" not "Wiz of VC"; attribute real people like Charlie Morgan). A wrong name burns credibility with operators.
+- **Non-native-speaker angle** is an ownable recurring vein — reach for it.
+- Full detail + guardrails: the "Personal edge" section of `brand/voice.md`.
+
+**Gold before → after (mimic the direction of these edits):**
+
+| AI draft (rejected) | Mauro's rewrite (approved) |
+|---|---|
+| "Your prospect can tell your post was written by AI. Here is what that tells them: • You are lazy • You don't care about your content..." | "An obviously-AI post is the first thing a client judges you on. It says you were too lazy to make it yours. If your content is slop, your service reads as slop too." |
+| "I have never used an em dash in my life. So why would one show up in my posts now. That is the whole test for a hard ban." | "I have never used an em dash in my life. Why the fuck would I let AI start now. Create a skill that bans all the things you've never used." |
+| "I saw an infographic from Wiz of VC... It took a lot of back and forth. That back and forth was the actual work." | "I wanted the clean infographics from Wiz of ecom posts, but in my own style... If you see a format you like, understand how you can replicate it for your own content." |
+| "The best writing is when you write like you speak." | "You write best when you write like you talk." (+ the non-native-clients personal add) |
+
+**Pillars (2026-07-15):** two pillars remain — **anti-cringe authority** and **low-time system**. **Cobbler's children was cut** by Mauro ("makes no sense for service based businesses that are qualified"). Do not generate short-forms off it. Real client work still feeds content, framed as system input under low-time, not as a "you neglect your own brand" callout.
 
 ## Two output types (confirm which per batch)
 

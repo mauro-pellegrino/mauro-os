@@ -115,7 +115,7 @@ Ideas should be sourced from a mix of:
 - **Trend signals**: capitalize on a live anxiety or topic spike
 - **Pain phrases from conversations**: translate a verbatim ICP frustration into a lead-magnet hook
 
-Aim for diversity across the 4 ideas: vary format (prompt file / framework / playbook / swipe file / live audit offer). All four should map to one of the two pillars (anti-cringe authority, low-time system that converts).
+Aim for diversity across the 4 ideas: vary format (prompt file / framework / playbook / swipe file / live audit offer). All four should map to one of the two pillars (anti-cringe authority, low-time system that converts). Cobbler's children was cut as a pillar 2026-07-15; see `brand/positioning.md`.
 
 ---
 

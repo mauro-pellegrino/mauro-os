@@ -33,6 +33,17 @@
           }
         ]
       }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && git add -A && { git diff --cached --quiet || git commit -m \"auto-save: fin de sesion $(date '+%Y-%m-%d %H:%M')\"; } && git push 2>/dev/null || true",
+            "statusMessage": "Guardando y pusheando cambios a GitHub..."
+          }
+        ]
+      }
     ]
   }
 }

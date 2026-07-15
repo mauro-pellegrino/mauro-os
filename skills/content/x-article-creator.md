@@ -105,7 +105,7 @@ Starter list from his brand files. [CALIBRATE: extract the full list from Mauro'
 - "inbound" (the outcome his ICP wants)
 - "operator" (how he addresses the reader, peer to peer)
 - "show the work" / "build in public"
-- the pain, stated plainly (agencies great at delivery, bad at their own pipeline)
+- the underlying pain (agencies great at delivery, bad at their own pipeline). Describe it plainly; avoid the "cobbler's children" label, cut as a framing 2026-07-15 (reads self-deprecating for a qualified ICP)
 - "leftover hours" (the time constraint his ICP lives in)
 - Numbers always written as numerals: $28k, 3 systems, 5 formats
 - Timeframes always specific: "last 6 months", "in mid-2026"

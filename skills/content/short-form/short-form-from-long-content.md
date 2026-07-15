@@ -1,8 +1,8 @@
 # Skill: Short-Form from Long Content
 
-**Version:** 2.0
+**Version:** 2.1
 **Created:** 2026-05-27
-**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
+**Updated:** 2026-07-15 (real Mauro-approved anchors per template, personal-edge voice rule, cobbler's-children pillar cut)
 **Input:** Long content source (article, video transcript, long-form post, internal doc)
 **Output:** 3-5 short-form post options in Mauro's voice, picked by Mauro, finalized as a single post
 
@@ -97,12 +97,15 @@ Full rules in `brand/voice.md`. Non-negotiables for short-form copy:
 6. **Possessive operator credit** ("my", "I built", "I broke down") when the insight comes from Mauro's work.
 7. **No filler openers.** No "Quick reminder:", "Friendly reminder:", "Real talk:", "Here's the thing:".
 8. **Expert-to-expert framing.** Speak to the sophisticated agency owner, never the beginner (per `feedback_expert_not_beginner_positioning`).
+9. **Personal edge (2026-07-15 edit pass).** Short-form carries Mauro's edge: mild real profanity for emphasis (~1 beat/post, never in a lead magnet), personal specificity over clean generality, factual precision on named references, simpler words. End on a direct instruction, not a meta-commentary reflection. Full detail: the "Personal edge" section of `brand/voice.md`.
+
+**Pillars (2026-07-15):** two content pillars remain — **anti-cringe authority** and **low-time system**. **Cobbler's children was cut** (reads beginner/self-deprecating for a qualified ICP). Don't build short-forms off it; real client work still feeds content, framed as system input under low-time, not as a "you neglect your own brand" callout.
 
 ---
 
 ## Template Details
 
-[CALIBRATE: anchor examples for each template should be refilled with Mauro's own top-performing posts as @maurojpelle accumulates analytics. Until then, use the pattern formulas below; do not reuse any older reference account's copy.]
+The example shapes below are now anchored on **Mauro's own approved posts from his 2026-07-15 short-form edit pass** (his rewrites of AI drafts). Mimic the rhythm, edge, and structure of these, not generic copy. Refresh with top performers as @maurojpelle accumulates analytics.
 
 ### Template A: Caption tease
 
@@ -120,7 +123,8 @@ Direct standalone claim. The insight IS the post.
 
 **Pattern formula:**
 - `[Direct claim about a tactical truth Mauro learned from real work]`
-- Example shape: "This is exactly why your best content is already sitting in your client calls."
+- Mauro-approved anchor: "An obviously-AI post is the first thing a client judges you on. It says you were too lazy to make it yours. If your content is slop, your service reads as slop too."
+- Note the shape: claim, one-line consequence, one-line stakes. Three tight lines, no bulleted list of "you're lazy / you don't care" (that was the AI draft; Mauro compressed it to a single line).
 
 ### Template C: Mini-framework
 
@@ -128,8 +132,9 @@ Direct standalone claim. The insight IS the post.
 
 **Pattern formula:**
 - `[Setup line ending with colon]: 1. [Item] 2. [Item] 3. [Item]`
-- 3 items is the sweet spot. 2 feels thin. 4+ runs long.
-- Example shape: "The 3 formats that book calls for agencies right now: 1. [format] 2. [format] 3. [format]" (only from real observed work)
+- 3 items is the sweet spot. 2 feels thin. 4+ runs long. A 2-item "you have two options" fork also works.
+- Mauro-approved anchor (2-option fork): "Everyone runs the same tools now, so everyone sounds the same. Which means you have two options: 1. Make the tools different 2. Use different tools than everyone else. This is even more important in content."
+- Mauro-approved anchor (numbered system): "A beginner opens a new chat every day and re-explains himself to AI. The upgrade: 1. One project or skill per content format 2. Your own voice doc and traits saved inside 3. Corrections to both, in a loop, so it's always improving. Do this and the drafts stop needing a full checklist."
 
 ### Template D: Provocative one-liner
 
@@ -137,7 +142,9 @@ Challenge claim. Stops the scroll without context.
 
 **Pattern formula:**
 - `[Strong direct statement that challenges a default assumption the ICP holds]`
-- Example shape: "Your agency doesn't have a leads problem. It has a visibility problem."
+- Mauro-approved anchor: "I have never used an em dash in my life. Why the fuck would I let AI start now."
+- Mauro-approved anchor: "A screenshot of you and your partner arguing about dinner will beat your best AI post."
+- These carry Mauro's edge (mild profanity, personal detail). See the "Personal edge" section in `brand/voice.md`.
 
 **Caution:** the line has to be defensible. Don't ship provocations without backing. If a commenter pushes back, Mauro should have a 30-second answer ready.
 

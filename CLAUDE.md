@@ -38,6 +38,8 @@ Established agency owners (marketing, creative, ad, social, SEO), operators alre
 1. Anti-cringe authority: post as the expert without the guru ick (faceless and AI-friendly).
 2. Low-time system that proves it converts: AI as the time-multiplier, with leading indicators.
 
+(Deprecated 2026-07-15: "Cobbler's children" was cut as a pillar per Mauro. It reads beginner/self-deprecating for an established, qualified ICP. Real client work still feeds content, but framed as system input under the low-time pillar, never as a "you neglect your own brand" callout. See `brand/positioning.md`.)
+
 Mirror the language bank in `brand/audience.md`. Speak to the sophisticated operator, never the beginner. Reframe yes/no questions into expert stances.
 
 ---
