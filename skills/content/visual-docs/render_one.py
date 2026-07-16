@@ -64,9 +64,21 @@ if DIM in BOARD_ALIASES:
         )
         png_path = INPUT_HTML.parent / f"{slug}.png"
         page.screenshot(path=str(png_path), full_page=True)
+        # Per-section cutaways: each .section exports as its own 2x PNG, so a
+        # 12-beat board becomes 12 record-ready frames (Miro nodes / on-camera cuts).
+        sections = page.query_selector_all(".section")
+        sec_paths = []
+        for i, sec in enumerate(sections, 1):
+            sec_path = INPUT_HTML.parent / f"{slug}-s{i}.png"
+            sec.scroll_into_view_if_needed()
+            sec.screenshot(path=str(sec_path))
+            sec_paths.append(sec_path)
         browser.close()
     print(f"wrote {OUTPUT_PDF}")
     print(f"wrote {png_path}  (full height {height}px @2x)")
+    for sp in sec_paths:
+        print(f"wrote {sp}")
+    print(f"{len(sec_paths)} section cutaway(s). Wrap each beat you want exported in a .section div.")
     sys.exit(0)
 
 # ---------------------------------------------------------------------------
