@@ -47,36 +47,46 @@ Do NOT use for: short text-only posts, video scripts, image-only carousels with 
 
 One owner: **Mauro, @maurojpelle.** No second brand variant.
 
-### Brand foundation (both types)
+### Brand foundation
 
-The whole system is **cream/white background + green + one honey accent.** Green is the brand; cream/white is the ground; honey is the only secondary, used sparingly for emphasis. No other colors.
+Cream/white ground, green as the brand anchor, plus a small disciplined accent set so boards aren't monotone. Green still dominates; the accents color-code sections and components so a long board reads as distinct chapters instead of one green wall.
+
+**Core (both types):**
 
 | Name | Hex | Role |
 |---|---|---|
-| Cream | `#F7F3EA` | Warm background (boards; optional on social) |
-| White | `#FFFFFF` | Clean background (social default) + card fills |
-| Deep Forest | `#1B4332` | Primary text, borders, section-header fills |
-| Sage | `#52B788` | Accents, connectors, badges, handle, links |
+| Cream | `#F7F3EA` | Board background |
+| White | `#FFFFFF` | Social background + card fills |
+| Deep Forest | `#1B4332` | Primary text, borders, dark fills, brand anchor |
+| Sage | `#52B788` | Green accent, connectors, badges, handle, links |
 | Pale Mint | `#B7E4C7` | Section stickers, intro bars, light fills |
-| Mint | `#D8F3DC` | Card fills, sub-surfaces |
+| Mint | `#D8F3DC` | Green-section card fills |
 | Ink | `#1B1B1B` | Body text on light cards |
-| Honey (secondary) | `#E9B949` | Sparing emphasis only: a key tag, a highlight, an underline. Never a whole card, never a background |
+| Muted | `#5F6B62` | Sub-labels, captions |
 
-**Handle:** `@maurojpelle` (Sage) · **Footer:** `— Mauro` (left-aligned, above a thin Deep Forest divider)
+**Board accent families (Type 2 — rotate ONE per section, never two adjacent the same):**
+
+| Family | Header fill (white text) | Card tint (Ink text) | Border / pill / number |
+|---|---|---|---|
+| Forest (brand default — open + close on it) | `#1B4332` | `#D8F3DC` | `#1B4332` |
+| Clay | `#C15F3C` | `#F7DFD3` | `#C15F3C` |
+| Slate | `#3F5E77` | `#DDE7EF` | `#3F5E77` |
+
+**Emphasis pop (both types):** Honey `#E9B949` with Ink text. One or two touches per board, max: a `WINNING`-style tag, one highlighted stat, an underline on a key word. Never a section color, never a background wall.
+
+**Handle:** `@maurojpelle` (Sage) · **Footer:** `— Mauro` (left-aligned, above a thin Deep Forest divider). Optional on boards.
 
 ### How the two types use it
 
-- **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts). Honey only if one thing genuinely needs to pop.
-- **Boards (Type 2):** cream background (faint grid optional). Section headers are Deep Forest bars (white text); item cards are Mint with a Deep Forest border; intro bars are Pale Mint; pills are Deep Forest. Honey marks a standout item (a "WINNING" tag, an underlined word in the flow).
-
-Handle + footer on boards are optional; when present, small, at the very bottom, in brand green.
+- **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts). The accent families are available for section variety, but green is the default. Honey only when one thing must pop.
+- **Boards (Type 2):** cream background (faint grid optional). Each section picks ONE accent family and applies it to that section's header bar, card tint, border, and pill. The next section uses a different family. Open and close on Forest, vary in between. This color-coding is what keeps a long board from reading as a green wall.
 
 ### Critical color rules
 
-- **Never use Pale Mint, Mint, or Honey as text on cream or white.** They are fills, never text on a light background.
-- **Honey is a garnish, not a base.** One or two honey touches per doc, max. If it's carrying a whole card or background, it's wrong.
-- Sage step numbers sit on white or Deep Forest fill, never on Pale Mint (contrast).
-- Dark fills (Deep Forest / Pill Black) use Pale Mint or white for text; mono sub-labels use Sage.
+- **Rotate section accents.** No two adjacent sections share a family. An all-Forest board is the exact mistake this rule exists to prevent.
+- **Never use Pale Mint, Mint, Honey, or any card tint as text on cream/white.** They are fills, never text on a light ground.
+- **Honey is a garnish, not a base.** One or two touches per board. Carrying a whole card or background = wrong.
+- Header fills (Forest / Clay / Slate) always use white text. Card tints always use Ink text.
 
 ---
 
