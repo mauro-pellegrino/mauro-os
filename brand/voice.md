@@ -74,6 +74,7 @@ Write like you're explaining to a smart peer over coffee — not presenting a ca
 ❌ Passive voice where active works
 ❌ Buzzword soup: "synergy", "leverage" (as a verb), "holistic approach"
 ❌ Hedging: "might", "could potentially", "in some cases" — say it directly or don't say it
+❌ "Clock / clocks" as slang for detecting AI ("prospects clock it", "nobody clocks the output") — use "spot", "catch", or "can tell"
 
 **Sentence structure:**
 
@@ -183,13 +184,13 @@ Soft, conversational, never pushy.
 These sentence patterns appear repeatedly and should be replicated.
 
 **Short, Short, Explanation:**
-> "AI content is everywhere. Your prospects clock it in the first line. And that's terrible."
+> "AI content is everywhere. Your prospects spot it in the first line. And that's terrible."
 
 **Problem, Reframe, Solution:**
 > "That's not the way to scale... The actual challenge is... That's why we focus on..."
 
 **List item, one-line explanation:**
-> "The voice document makes AI write in your own words from the first line (enough that nobody clocks the output as AI)"
+> "The voice document makes AI write in your own words from the first line (enough that nobody can tell the output is AI)"
 
 **Standalone punchy closer:**
 > "That's the difference between accounts that scale consistently and those that plateau."
