@@ -13,6 +13,8 @@ Two output types:
     python3 render_one.py deck.html board       # (alias: scroll)
       -> deck.pdf   (single continuous tall page, vector-crisp text)
       -> deck.png   (one tall high-res image, 2x device scale)
+      -> deck-s1.png, deck-s2.png, ...  (one per .section: record-ready cutaways,
+         drop straight into Miro or cut to on camera, no editing)
 
 Boards are built to be edited: swap the text, reorder cards, and paste in your
 own images. Reference images with relative paths, e.g. <img src="images/ad-1.png">,
