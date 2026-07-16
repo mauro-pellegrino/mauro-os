@@ -26,20 +26,21 @@ Same format, same skill output, different scheduling.
 
 Different from other long-form subtypes because the asset is **HTML-generated and rendered to PDF + PNGs**.
 
-**Canonical visual production guide:** `skills/content/long-form/linkedin-html-doc-guide.md`. That file is the source of truth for: page dimensions (1080×1080 square, 1080×1350 portrait, 1080×1620 long), the doc palette, typography (Inter + JetBrains Mono), recurring visual blocks (table-3, insight-box, math-bar, timeline, formats-grid, hook-pattern-grid, cta-block), and the per-doc workflow.
+**Canonical visual production guide:** `skills/content/visual-docs/mauro-visual-doc-system.md`. That file is the source of truth for: page dimensions (1080×1080 square, 1080×1350 portrait, 1080×1620 long), the doc palette, typography (Inter + JetBrains Mono), recurring visual blocks (table-3, insight-box, math-bar, timeline, formats-grid, hook-pattern-grid, cta-block), and the per-doc workflow.
 
-**Render utility:** create `scripts/render_one.py` from the Playwright snippet at the bottom of `linkedin-html-doc-guide.md` (the folder doesn't exist in this repo yet). Takes an HTML file path + dimension flag, outputs PDF + per-page PNGs at exact canvas dimensions. Requires `playwright`, `pypdfium2`, `Pillow`.
+**Render utility:** `skills/content/visual-docs/render_one.py` (lives in the repo). Takes an HTML file path + dimension flag, outputs PDF + per-page PNGs at exact canvas dimensions. Requires `playwright`, `pypdfium2`, `Pillow`.
 
 ```
-python3 scripts/render_one.py path/to/deck.html portrait    # 1080x1350 default
-python3 scripts/render_one.py path/to/deck.html square      # 1080x1080
-python3 scripts/render_one.py path/to/deck.html long        # 1080x1620
+python3 skills/content/visual-docs/render_one.py path/to/deck.html portrait    # 1080x1350 default
+python3 skills/content/visual-docs/render_one.py path/to/deck.html square      # 1080x1080
+python3 skills/content/visual-docs/render_one.py path/to/deck.html long        # 1080x1620
+python3 skills/content/visual-docs/render_one.py path/to/deck.html board       # long scroll breakdown
 ```
 
-**This file** (`infographic-html-long-form.md`) is the **post wrapper guide**: how the HTML doc gets framed in the X / LinkedIn caption, which pattern variant the post is, what CTA mechanic fires. It assumes the doc is built per `linkedin-html-doc-guide.md` standards.
+**This file** (`infographic-html-long-form.md`) is the **post wrapper guide**: how the HTML doc gets framed in the X / LinkedIn caption, which pattern variant the post is, what CTA mechanic fires. It assumes the doc is built per `mauro-visual-doc-system.md` standards.
 
 Workflow per post:
-1. Build the HTML doc following `linkedin-html-doc-guide.md`
+1. Build the HTML doc following `mauro-visual-doc-system.md`
 2. Render to PDF + PNGs via the render script
 3. Write the post caption per this file's variant + length targets
 4. Attach 2-3 PNG pages to the X / LinkedIn post
@@ -101,7 +102,7 @@ Before drafting, get these from Mauro:
 3. **Deployment mode** — standalone OR quote-tweet companion
    - If quote-tweet companion: which parent post (article URL or video post URL) + scheduled time gap (default 6 hours)
 4. **Content source** — a logged win, a transcript from `research/transcripts/maurojpelle/`, a session note from `brand/sessions/`, or fresh thinking
-5. **Visual style preferences** — default to the `linkedin-html-doc-guide.md` system until Mauro locks his own palette
+5. **Visual style preferences** — default to the `mauro-visual-doc-system.md` system until Mauro locks his own palette
 6. **Anonymization scope** — what's visible vs blurred in any data panels
 7. **CTA decision** matched to variant default
 
@@ -166,7 +167,7 @@ Aspect ratio per panel: 1080x1080 square OR 1080x1350 portrait. Generates clean 
 - High contrast, legible at thumbnail scale (test on mobile)
 
 ### Style anchors
-- Follow the `linkedin-html-doc-guide.md` palette and type system
+- Follow the `mauro-visual-doc-system.md` palette and type system
 - Title in large type on the first panel; the first panel is the thumbnail
 - `@maurojpelle` credit line on the last panel
 
@@ -233,7 +234,7 @@ Before scheduling, confirm:
 - [ ] Deployment mode confirmed (standalone OR quote-tweet companion)
 - [ ] If quote-tweet companion: parent post URL captured + 6hr scheduling note
 - [ ] HTML for the infographic produced (2-3 panels)
-- [ ] Style matches `linkedin-html-doc-guide.md` (palette, type, credit line)
+- [ ] Style matches `mauro-visual-doc-system.md` (palette, type, credit line)
 - [ ] Each panel legible at thumbnail scale
 - [ ] No identifiable client data in any panel
 - [ ] X caption follows `_master.md` X post structure + variant length target
@@ -260,7 +261,7 @@ Before scheduling, confirm:
 
 ## Cross-Reference
 
-- **Visual system**: `skills/content/long-form/linkedin-html-doc-guide.md` (palette, typography, blocks, render workflow)
+- **Visual system**: `skills/content/visual-docs/mauro-visual-doc-system.md` (palette, typography, blocks, render workflow)
 - **Variant B (before / after)**: renders as a single combined HTML before/after image (carousels are killed per `_master.md`)
 - **Variant E (tactical step-by-step)**: the compressed visual version of a playbook article; pair with `skills/content/x-article-creator.md` when the same content ships as an article
 - **Variant F (quote / manifesto)**: pull the strongest single line from a stance piece or the 15 beliefs into a shareable image
