@@ -93,7 +93,7 @@ Everything ships to Mauro for review. Nothing publishes directly.
 **Produces:** the master LinkedIn deck the DM system is blocked on.
 1. Open `skills/content/linkedin-docs/industry-decks/linkedin-doc-template.html` as the base.
 2. With Claude, draft `agency-inbound.html` filling the placeholder sections from `brand/positioning.md` and the approved social proof.
-3. Render to PNG per `skills/content/long-form/linkedin-html-doc-guide.md` and send pages to Mauro for copy review. Iterate until approved.
+3. Render to PNG per `skills/content/visual-docs/mauro-visual-doc-system.md` and send pages to Mauro for copy review. Iterate until approved.
 
 **Mauro needed for:** copy approval, final numbers sign-off.
 

@@ -1,0 +1,378 @@
+# Mauro Visual Doc System
+
+How Mauro (@maurojpelle) builds branded visual content as HTML → PDF + PNG. One render engine, **two output types.** Pick which one you're making before anything else.
+
+---
+
+## THE TWO TYPES (read this first)
+
+### Type 1 · SOCIAL HTML — for LinkedIn + X
+
+Fixed-size branded infographic pages. The polished, on-brand assets that go straight into a post: X quote-tweet infographics, LinkedIn document carousels, single punch graphics. Green brand palette. Rendered as fixed dimensions (square / portrait / long) so they fit the feed exactly.
+
+This is the format behind the quote-tweet play: post the article, wait a few hours, quote-tweet it with an HTML infographic that maximizes dwell time.
+
+- Dimensions: `square` 1080×1080, `portrait` 1080×1350, `long` 1080×1620
+- Palette: green brand
+- Output: `deck.pdf` (carousel) + `deck-p1.png`, `deck-p2.png` (per page)
+- Render: `python3 render_one.py deck.html portrait`
+
+### Type 2 · BOARDS — spacious, editable breakdown boards
+
+A long vertical board with plenty of room, built to be **edited and screen-recorded.** This is the "Miro breakdown" look: header cards, item cards, arrow flows, awareness pills, and slots where Mauro pastes his own images (account screenshots, ad thumbnails, product shots). Used for YouTube walkthroughs and analysis breakdowns.
+
+Built to be worked on: swap the text, reorder cards, drop new images in, re-render. One continuous tall page, any height, high quality.
+
+- Dimension: `board` (1080 wide, natural height, single continuous page)
+- Palette: green brand on a cream background, with one honey accent for emphasis
+- Output: `deck.pdf` (one tall page) + `deck.png` (one tall image)
+- Render: `python3 render_one.py deck.html board`
+
+**Both types share** the same render script, typography, and voice rules, so everything reads as one brand across X, LinkedIn, and YouTube.
+
+---
+
+## When to use this skill
+
+- X article or video script → styled social carousel or single infographic (Type 1)
+- Single QT-reaction visual alongside an article (Type 1)
+- Long breakdown board to screen-record in a YouTube video, with your own images dropped in (Type 2)
+- Brand banner for a cover / lead magnet / hero (banner asset class, below)
+
+Do NOT use for: short text-only posts, video scripts, image-only carousels with no layout.
+
+---
+
+## Brand
+
+One owner: **Mauro, @maurojpelle.** No second brand variant.
+
+### Brand foundation (both types)
+
+The whole system is **cream/white background + green + one honey accent.** Green is the brand; cream/white is the ground; honey is the only secondary, used sparingly for emphasis. No other colors.
+
+| Name | Hex | Role |
+|---|---|---|
+| Cream | `#F7F3EA` | Warm background (boards; optional on social) |
+| White | `#FFFFFF` | Clean background (social default) + card fills |
+| Deep Forest | `#1B4332` | Primary text, borders, section-header fills |
+| Sage | `#52B788` | Accents, connectors, badges, handle, links |
+| Pale Mint | `#B7E4C7` | Section stickers, intro bars, light fills |
+| Mint | `#D8F3DC` | Card fills, sub-surfaces |
+| Ink | `#1B1B1B` | Body text on light cards |
+| Honey (secondary) | `#E9B949` | Sparing emphasis only: a key tag, a highlight, an underline. Never a whole card, never a background |
+
+**Handle:** `@maurojpelle` (Sage) · **Footer:** `— Mauro` (left-aligned, above a thin Deep Forest divider)
+
+### How the two types use it
+
+- **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts). Honey only if one thing genuinely needs to pop.
+- **Boards (Type 2):** cream background (faint grid optional). Section headers are Deep Forest bars (white text); item cards are Mint with a Deep Forest border; intro bars are Pale Mint; pills are Deep Forest. Honey marks a standout item (a "WINNING" tag, an underlined word in the flow).
+
+Handle + footer on boards are optional; when present, small, at the very bottom, in brand green.
+
+### Critical color rules
+
+- **Never use Pale Mint, Mint, or Honey as text on cream or white.** They are fills, never text on a light background.
+- **Honey is a garnish, not a base.** One or two honey touches per doc, max. If it's carrying a whole card or background, it's wrong.
+- Sage step numbers sit on white or Deep Forest fill, never on Pale Mint (contrast).
+- Dark fills (Deep Forest / Pill Black) use Pale Mint or white for text; mono sub-labels use Sage.
+
+---
+
+## Typography
+
+**Fonts:** Inter (body + headings), JetBrains Mono (mono pills, labels, header-card subtitles, code-style callouts). Handwriting / display fonts banned. No Caveat.
+
+**Social scale (portrait 1080×1350 default):** H1 42-50px/800 · subtitle 18-21px · handle 16-18px Sage · section sticker 26-30px/800 · body 15-17px/1.55 · card title 18-22px/800 · mono labels 10.5-12px/700 uppercase · stat numbers 26-36px/800 Sage · footer 13-14px.
+
+**Board scale (board, 1080 wide, roomier):** doc title 40-52px/800 · header-card title 26-30px/800 centered · header-card subtitle 14-16px mono Muted · item-card title 20-24px/700 · item body/quote 16-18px/1.5 (quotes italic) · awareness pill 11-13px/700 mono uppercase white · intro-bar 17-19px/500 centered · caption 13-14px Muted.
+
+On boards, height is free: favor generous vertical spacing over cramming.
+
+---
+
+## Recurring blocks — TYPE 1 · SOCIAL (green, paged)
+
+Compose social docs from this library. Pick the block that fits; don't invent unless none fit.
+
+- **SECTION-H** · Pale Mint inline-block section header, Deep Forest text.
+- **INSIGHT-BOX** · Deep Forest fill, Pale Mint text, Sage left bar, mono Sage label. One per page.
+- **TABLE-3** · label + body grid, rotating Pale Mint / Sage / Mint fills.
+- **TABLE-COMPARE** · wrong-vs-right, muted header vs Sage header, light-tint body cells.
+- **MATH-BAR** · Mint fill, Deep Forest border, mono; payoff number in Sage.
+- **STEP-ROW** · Sage number badge + white body cell.
+- **FORMAT-CARD** · 2.5px Deep Forest border, colored header bar, white body.
+- **CTA-BLOCK** · Pale Mint fill, "DM me [keyword]" bolded. Public posts only.
+- **PLAY-CARD / PATTERN-CARD / SIGN-CARD / MATRIX-WRAP / STAT-CARD-ROW / BEAT-ROW** · the structural cards (numbered plays, quoted-example patterns, TEST/DIAGNOSIS/FIX diagnostics, 2×2 matrices, stat rows, sequential beat flows), recolored to green. Use whichever matches the framework's actual shape.
+
+Dimensions: `square` for tight 3-card / QT reactions, `portrait` (default) for article-length and playbooks, `long` for content-dense single pages. Padding `55-65px / 65-75px`.
+
+---
+
+## Recurring blocks — TYPE 2 · BOARDS (Miro grammar)
+
+This reproduces the board layout Mauro already builds by hand in Miro. Everything is centered in a ~880-940px column inside the 1080 canvas, with vertical spacing between blocks so it reads as distinct chapters when recorded.
+
+- **DOC-TITLE** · big Ink title at the top, optional one-line subtitle. No card bg.
+- **FLOW-STACK** · centered nodes joined by down-arrows (the "How to Scale ▼ More Winning Ads ▼ Angles & Formats" chain). Opens a board with the logic before the detail.
+- **HEADER-CARD** · full-width Deep Forest card, centered bold white title + optional Pale Mint mono subtitle ("break the 1-format wall", "3 net-new reframes"). Thin connector line above/below. Opens each major section.
+- **ITEM-CARD** · Mint fill with a 2px Deep Forest border, left-aligned, bold title + a body line or italic quote. Stack 3-6 under a HEADER-CARD. One card per item. Add a Honey `WINNING`-style tag only on a genuine standout.
+- **AWARENESS-PILL** · Deep Forest pill, white mono uppercase (`PROBLEM AWARE`, `MOST AWARE`, or any label), top-left inside an item card.
+- **INTRO-BAR** · full-width Pale Mint bar, Deep Forest centered text; a bridging note between sections.
+- **IMAGE-FULL** · full-width `<img>`, rounded corners, optional caption. The primary paste-in slot.
+- **IMAGE-GRID** · 2-5 images in a row (the ad-thumbnail-row look), optional label card to the left.
+- **IMAGE-INLINE** · text/label block beside an image or image group.
+- **SECTION-DIVIDER** · vertical breathing room + optional thin rule or mono section label.
+
+### Image handling (how paste-in works)
+
+Reference images with **relative paths** and keep them in an `images/` folder next to the HTML:
+
+```html
+<img src="images/account-screenshot.png" alt="">
+```
+
+Drop files into `./images/` before rendering. `render_one.py` loads over `file://`, so relative paths resolve. To swap or reorder, change the `src`, drop the new file in, re-render. No base64. Leave a dashed placeholder box sized to the image anywhere a file isn't ready, so the layout still reads.
+
+---
+
+## Board HTML skeleton
+
+Starting point for a `board`. Copy, fill, drop images in `./images/`, render with `python3 render_one.py deck.html board`.
+
+```html
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif; color:#1B1B1B;
+    background:#F7F3EA;   /* cream */
+    background-image:
+      linear-gradient(#ECE6D8 1px, transparent 1px),
+      linear-gradient(90deg, #ECE6D8 1px, transparent 1px);
+    background-size:54px 54px;   /* faint grid. delete these 3 lines for plain cream */
+  }
+  .doc { width:1080px; margin:0 auto; padding:90px 100px; }
+  .doc-title { font-size:48px; font-weight:800; letter-spacing:-1px; color:#1B4332; margin-bottom:8px; }
+  .doc-sub { font-size:18px; color:#5F6B62; margin-bottom:56px; }
+
+  .flow { text-align:center; margin:40px 0; }
+  .flow .node { font-size:24px; font-weight:800; color:#1B4332; }
+  .flow .hl { border-bottom:3px solid #E9B949; }   /* honey secondary, emphasis only */
+  .flow .arrow { font-size:26px; margin:14px 0; color:#52B788; }
+  .connector { width:2px; height:26px; background:#1B4332; margin:0 auto; }
+
+  /* section header = dark green bar */
+  .header-card {
+    background:#1B4332; border-radius:12px; padding:26px 32px;
+    text-align:center; margin:0 auto; max-width:640px;
+  }
+  .header-card h2 { font-size:28px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#B7E4C7; margin-top:4px; }
+
+  /* item card = mint fill, forest border */
+  .item-card {
+    background:#D8F3DC; border:2px solid #1B4332; border-radius:12px;
+    padding:24px 30px; max-width:680px; margin:16px auto;
+  }
+  .item-card .pill {
+    display:inline-block; background:#1B4332; color:#fff;
+    font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.5px; padding:5px 12px; border-radius:6px; margin-bottom:12px;
+  }
+  .item-card h3 { font-size:22px; font-weight:700; color:#1B1B1B; margin-bottom:8px; }
+  .item-card p  { font-size:17px; line-height:1.5; }
+  .item-card .quote { font-style:italic; color:#33493F; }
+  .item-card .tag-win {   /* honey secondary, sparing: mark a standout item */
+    display:inline-block; background:#E9B949; color:#1B4332;
+    font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px;
+  }
+
+  .intro-bar {
+    background:#B7E4C7; color:#1B4332; border-radius:8px; padding:16px 24px;
+    text-align:center; font-size:18px; font-weight:500; margin:40px auto; max-width:820px;
+  }
+
+  .img-full { margin:32px auto; max-width:900px; text-align:center; }
+  .img-full img { width:100%; border-radius:12px; border:1px solid #D8CFBB; }
+  .img-grid { display:flex; gap:12px; justify-content:center; margin:32px auto; max-width:940px; }
+  .img-grid img { flex:1; border-radius:8px; border:1px solid #D8CFBB; min-width:0; }
+  .caption { font-size:13px; color:#5F6B62; text-align:center; margin-top:8px; }
+  .placeholder {
+    border:2px dashed #B7A98A; border-radius:12px; min-height:220px;
+    display:flex; align-items:center; justify-content:center;
+    color:#9A8E72; font-family:'JetBrains Mono',monospace; font-size:14px; margin:32px auto; max-width:900px;
+  }
+
+  .divider { height:60px; }
+  .footer { text-align:center; margin-top:60px; color:#1B4332; font-size:14px; opacity:.7; }
+</style></head>
+<body>
+  <div class="doc">
+    <div class="doc-title">Breakdown title</div>
+    <div class="doc-sub">one-line frame for the video</div>
+
+    <div class="flow">
+      <div class="node">How to Scale</div>
+      <div class="arrow">▼</div>
+      <div class="node">More <span class="hl">Winning</span> Ads</div>
+      <div class="arrow">▼</div>
+      <div class="node">Angles &amp; Formats</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="connector"></div>
+    <div class="header-card"><h2>New Formats</h2><div class="sub">break the 1-format wall</div></div>
+    <div class="connector"></div>
+
+    <div class="item-card">
+      <span class="pill">PROBLEM AWARE</span>
+      <h3>UGC / real-customer reaction <span class="tag-win">WINNING</span></h3>
+      <p class="quote">"Skeptic-converted arc, adds social proof in-feed."</p>
+    </div>
+    <div class="item-card">
+      <h3>Screen-recording walkthrough</h3>
+      <p>The report and morph reveal. Product as the creative.</p>
+    </div>
+
+    <div class="intro-bar">Here's a list I pulled from a quick analysis:</div>
+
+    <div class="img-full">
+      <img src="images/account-screenshot.png" alt="">
+      <div class="caption">The account, mid-scroll.</div>
+    </div>
+
+    <div class="img-grid">
+      <img src="images/ad-1.png" alt="">
+      <img src="images/ad-2.png" alt="">
+      <img src="images/ad-3.png" alt="">
+    </div>
+
+    <!-- placeholder for an image not dropped in yet -->
+    <div class="placeholder">images/landing-page.png</div>
+
+    <div class="footer">@maurojpelle</div>
+  </div>
+</body></html>
+```
+
+Everything scrolls in one column. The renderer measures total height and outputs one tall PDF + one tall PNG.
+
+---
+
+## Voice rules
+
+Apply to every word in every doc, both types. Mauro's rules, hard constraints. Quoted real ad copy or real customer quotes pass through as-is.
+
+### Hard-banned constructions (grep-sweep before every render)
+
+- **Em dashes (`—`)** in body. Replace with commas, periods, colons, or restructure. Only allowed em dash is the footer `— Mauro`.
+- **"Not X but Y" / "It's not X. It's Y." / "X, not Y." / "X rather than Y." / "X instead of Y." / "X, never Y."** State Y directly.
+- **"Most [group] does X."** Preacher opener. Reframe to the observation or principle. ("the most X" superlative is fine.)
+- **Two-sentence X/Y contrast.** Fold into one statement.
+- **Three-fragment staccato** ("Bigger. Faster. Cheaper."). Fold into a sentence. Bulleted lists are fine.
+- **Hot-take openers**, **hype adjectives** ("insane", "wild", "game-changing"), **generic openers** ("Here's the thing / the truth").
+  - Exception: the proven "Claude is INSANE for [X]" auto-DM opener is a deliberate hook, not body prose.
+- **Trailing summary / moral one-liners.** End on the point.
+- **Stacked questions.** One question per CTA.
+
+### Standard grep sweep
+
+```bash
+grep "—" file.html | grep -v "Mauro\|<title>\|<!--\|/\*"
+grep -nE "[Ii]t's not |[Nn]ot a |[Nn]ot just |, not [a-z]+\.|[Nn]ot [A-Z][a-z]+ but|rather than [a-z]+|, never [a-z]+\.|instead of [a-z]+\." file.html | grep -v "compare-cell\|<!--\|pill\|label"
+grep -nE "[Mm]ost [a-z]+ [a-z]+ [a-z]+" file.html | grep -v "compare-cell\|<!--"
+grep -nE "[A-Z][a-z]+\. [A-Z][a-z]+\. [A-Z][a-z]+\." file.html | grep -v "compare-cell\|<!--"
+```
+
+When a violation hits, **fix every instance of that pattern across the whole doc**, not just the flagged one.
+
+### Numbers rule
+
+Never invent a performance number. Real numbers from source only, or a bracket placeholder like `[X%]`. Only pre-approved public number: Growthub ~$300k/mo. Anything else specific needs Mauro's sign-off before it goes in a doc.
+
+---
+
+## CTA handling
+
+- **X / social public posts:** end with the CTA block, "DM me [keyword]" bolded.
+- **YouTube boards:** the CTA points to X (DM me on X), never "subscribe / stay on YouTube." YouTube is top-of-funnel; conversion happens on X.
+- **QT reactions:** the visual carries the reframe, the article carries the CTA. No separate CTA.
+- **Private / internal:** no CTA, end on the footer or nothing.
+
+---
+
+## Workflow per new doc
+
+1. **Pick the type.** Type 1 SOCIAL (green, paged) or Type 2 BOARD (warm, long-scroll, editable)? Public or private?
+2. **Pick the dimension.** `square` / `portrait` / `long` for social; `board` for breakdowns.
+3. **Outline the structure.** Social: map sections to page boundaries. Board: order flow → header cards → item cards → image slots top to bottom; note which images go where.
+4. **Copy the matching skeleton / closest existing doc.** Boards start from the skeleton above.
+5. **Write body content** to the voice rules (hard constraints).
+6. **Drop images** into `./images/` (boards). Dashed placeholders for any not ready.
+7. **Run the grep sweep.** Fix every hit before rendering.
+8. **Render.** `python3 render_one.py deck.html portrait` (social) or `... board` (board). Banners: inline 1500×600.
+9. **QA the output.** Social: no overflow, PNG dims exact. Board: image paths resolve (or intentional placeholders), no dead gaps, column centered. Fonts loaded, colors right, handle + footer right.
+10. **Ship** HTML + PDF + PNG(s). Nothing publishes without Mauro's sign-off.
+
+---
+
+## Quality check before sending
+
+- [ ] No em dashes in body (footer only)
+- [ ] No contrast cadence ("not X but Y", "X, not Y", "rather than", "instead of")
+- [ ] No "Most [group] does X" openers, no three-fragment staccato, no trailing morals
+- [ ] No invented numbers (real or `[X%]`; specifics signed off)
+- [ ] No handwriting / Caveat fonts
+- [ ] Type 1: page count matches plan, no page >30% bottom whitespace, PNG dims exact
+- [ ] Type 2: all image `src` paths resolve (or intentional dashed placeholders), no dead gaps, column centered
+- [ ] Colors used as fills not text-on-white; Inter body + JetBrains Mono for mono
+- [ ] Handle `@maurojpelle`, footer `— Mauro`
+- [ ] CTA: social ends "DM me [keyword]"; YouTube points to X; private has none
+
+---
+
+## QT reaction pattern
+
+One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
+
+---
+
+## Banner asset class (5:2 = 1500×600)
+
+Separate dimension outside the two types. Covers, lead magnet headers, article heroes.
+
+- Top ~30%: Pale Mint band, mono label left + `@maurojpelle` right, heavy Deep Forest bottom border.
+- Bottom ~70%: Deep Forest with the title (88px Inter 800 white, max-width 1200px) and subtitle (26px Sage).
+- Bottom-right: small Sage accent bar + a mono edition label.
+
+Keep `[TITLE]` / `[SUBTITLE]` as placeholders. Render with a one-off inline `python3 -c '...'` at `W, H = 1500, 600`. Do NOT add a banner mode to `render_one.py`.
+
+---
+
+## Files in this skill family
+
+| File | Purpose |
+|---|---|
+| `mauro-visual-doc-system.md` | This file. The visual + voice system spec (both types). |
+| `render_one.py` | Render pipeline: social (square/portrait/long) + board (long breakdown). |
+| `setup-guide.md` | One-time setup: standing up the claude.ai project. |
+| `juan-tutorial.md` | VA usage tutorial (how Juan produces docs in the project). |
+
+---
+
+## Render reference
+
+```
+python3 render_one.py deck.html square      # 1080x1080 social
+python3 render_one.py deck.html portrait    # 1080x1350 social (default)
+python3 render_one.py deck.html long        # 1080x1620 social
+python3 render_one.py deck.html board       # 1080 x natural height, single tall PDF + PNG
+```
+
+Board mode loads over `file://`, measures `document.documentElement.scrollHeight`, and renders one continuous page at 2× device scale so pasted-in images and text stay crisp. Banners stay a one-off inline render at 1500×600.

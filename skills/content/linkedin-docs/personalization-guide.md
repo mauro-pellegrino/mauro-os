@@ -14,7 +14,7 @@ Goal: the prospect opens a doc with their name in the title and feels like Mauro
 ## The master files
 
 - `skills/content/linkedin-docs/industry-decks/linkedin-doc-template.html` (clean structural template with placeholder copy)
-- Mauro-lane master decks (e.g., "How to Build an Inbound Engine for a [niche] Agency"): pending. Build them with `skills/content/linkedin-docs/README.md` + `skills/content/long-form/linkedin-html-doc-guide.md` before running this workflow at volume.
+- Mauro-lane master decks (e.g., "How to Build an Inbound Engine for a [niche] Agency"): pending. Build them with `skills/content/linkedin-docs/README.md` + `skills/content/visual-docs/mauro-visual-doc-system.md` before running this workflow at volume.
 
 ## The swap checklist (open master HTML in a text editor, do find-and-replace)
 

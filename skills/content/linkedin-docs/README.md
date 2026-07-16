@@ -147,7 +147,7 @@ Start from `industry-decks/linkedin-doc-template.html` (clean structural templat
 
 **Footer:**
 - "— Mauro" on the left
-- Right side empty (the legacy script-font brand mark is retired; see `skills/content/long-form/linkedin-html-doc-guide.md`)
+- Right side empty (the legacy script-font brand mark is retired; see `skills/content/visual-docs/mauro-visual-doc-system.md`)
 - Footer only on the LAST page
 
 ---

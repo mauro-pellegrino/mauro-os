@@ -88,7 +88,8 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | X article from transcript or script | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
 | Long-form post (video, infographic/HTML, doc screenshot, case study) | `skills/content/long-form/_master.md` + the matching subtype file |
-| LinkedIn HTML doc / industry deck | `skills/content/linkedin-docs/` + `skills/content/long-form/linkedin-html-doc-guide.md` |
+| LinkedIn HTML doc / industry deck | `skills/content/linkedin-docs/` + `skills/content/visual-docs/mauro-visual-doc-system.md` |
+| Visual infographic (X quote-tweet / social) or YouTube breakdown board (long scroll, editable, paste-in images) | `skills/content/visual-docs/mauro-visual-doc-system.md` |
 | Short-form posts from long content | `skills/content/short-form/short-form-from-long-content.md` |
 | Bulk short-form generation from transcripts | `skills/content/short-form/bulk-short-form-generator.md` |
 | Lead magnet (prompt swipe file, framework, case study, YouTube video, industry-specific) | `skills/lead-gen/lead-magnet/_master.md` + the matching subtype file |

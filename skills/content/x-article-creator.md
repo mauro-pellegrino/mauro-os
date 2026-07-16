@@ -390,7 +390,7 @@ Every draft marks its image spots with generation-ready prompts, cover first (5:
 
 **Default style (Mauro, 2026-07-10): hand-drawn doodle illustration.** Thin black ink line-art characters and objects on a flat warm yellow background. Playful, imperfect linework. Small sparkle and arrow doodle accents. The scene tells the article's concept as a visual story, it is not a labeled diagram. No gradients, no realistic rendering, minimal text inside the image. Reference: the Jul 8 "the perfect ad creative research for winning ads" cover.
 
-**Secondary style: brand-palette infographic.** [CALIBRATE: Mauro's own brand palette is not defined yet. Until it is, use the doc-system palette in `skills/content/long-form/linkedin-html-doc-guide.md`.] Use only when the content is genuinely a table, comparison, or numeric readout that a doodle scene can't carry. Doodle-first is the default for covers, always.
+**Secondary style: brand-palette infographic.** [CALIBRATE: Mauro's own brand palette is not defined yet. Until it is, use the doc-system palette in `skills/content/visual-docs/mauro-visual-doc-system.md`.] Use only when the content is genuinely a table, comparison, or numeric readout that a doodle scene can't carry. Doodle-first is the default for covers, always.
 
 ---
 
