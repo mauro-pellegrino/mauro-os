@@ -384,6 +384,7 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 
 ## Quality check before sending
 
+- [ ] Ran `brand/voice.md` banned-words check (incl. "clock/clocks")
 - [ ] No em dashes in body (footer only)
 - [ ] No contrast cadence ("not X but Y", "X, not Y", "rather than", "instead of")
 - [ ] No "Most [group] does X" openers, no three-fragment staccato, no trailing morals
@@ -391,6 +392,10 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 - [ ] No handwriting / Caveat fonts
 - [ ] Type 1: page count matches plan, no page >30% bottom whitespace, PNG dims exact
 - [ ] Type 2: all image `src` paths resolve (or intentional dashed placeholders), no dead gaps, column centered
+- [ ] Type 2: reads on screen (every card ≤ a title + one short line, nothing under ~16px, no paragraphs)
+- [ ] Type 2: structure varies section to section (not the same card stack repeated)
+- [ ] Type 2: accent families rotate, no two adjacent sections the same, opens/closes on Forest
+- [ ] Type 2: connectors are clean SVG, not `▼` text glyphs
 - [ ] Colors used as fills not text-on-white; Inter body + JetBrains Mono for mono
 - [ ] Handle `@maurojpelle`, footer `— Mauro`
 - [ ] CTA: social ends "DM me [keyword]"; YouTube points to X; private has none
