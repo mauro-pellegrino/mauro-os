@@ -128,20 +128,35 @@ Dimensions: `square` for tight 3-card / QT reactions, `portrait` (default) for a
 
 ---
 
-## Recurring blocks — TYPE 2 · BOARDS (Miro grammar)
+## Recurring blocks — TYPE 2 · BOARDS
 
-This reproduces the board layout Mauro already builds by hand in Miro. Everything is centered in a ~880-940px column inside the 1080 canvas, with vertical spacing between blocks so it reads as distinct chapters when recorded.
+Compose each section from the block that fits its content. **Vary it:** a comparison is a 2-col or a table, numbers are stat-tiles, a sequence is a timeline, a matrix is a grid, a plain list is item-cards. Consecutive sections should look different AND use different accent families. Everything is centered in an ~880-940px column inside the 1080 canvas.
 
-- **DOC-TITLE** · big Ink title at the top, optional one-line subtitle. No card bg.
-- **FLOW-STACK** · centered nodes joined by down-arrows (the "How to Scale ▼ More Winning Ads ▼ Angles & Formats" chain). Opens a board with the logic before the detail.
-- **HEADER-CARD** · full-width Deep Forest card, centered bold white title + optional Pale Mint mono subtitle ("break the 1-format wall", "3 net-new reframes"). Thin connector line above/below. Opens each major section.
-- **ITEM-CARD** · Mint fill with a 2px Deep Forest border, left-aligned, bold title + a body line or italic quote. Stack 3-6 under a HEADER-CARD. One card per item. Add a Honey `WINNING`-style tag only on a genuine standout.
-- **AWARENESS-PILL** · Deep Forest pill, white mono uppercase (`PROBLEM AWARE`, `MOST AWARE`, or any label), top-left inside an item card.
-- **INTRO-BAR** · full-width Pale Mint bar, Deep Forest centered text; a bridging note between sections.
-- **IMAGE-FULL** · full-width `<img>`, rounded corners, optional caption. The primary paste-in slot.
-- **IMAGE-GRID** · 2-5 images in a row (the ad-thumbnail-row look), optional label card to the left.
-- **IMAGE-INLINE** · text/label block beside an image or image group.
-- **SECTION-DIVIDER** · vertical breathing room + optional thin rule or mono section label.
+**The variety rule (hard):** never build a board as the same header→item-cards stack repeated for every section. That is the failure mode this section exists to prevent. Before drafting, assign each section a component and an accent family, and confirm no two neighbors match on either.
+
+**Structure / flow**
+
+- **DOC-TITLE** · big Ink title at the top + one short subtitle. No card.
+- **HEADER-CARD** · full-width bar in the section's accent (white text) + optional mono subtitle. Opens each section, connected to what follows by a clean connector.
+- **CONNECTOR** · clean SVG, never a text glyph like `▼`. Variants: straight down-arrow, elbow (turns a corner), split (one-to-many branch), labeled (a word riding the line). 2px stroke in the section accent, triangle arrowhead. Snippets in the skeleton.
+- **CALLOUT** · one full-width accent bar holding the single line that matters in a section. Big type. Once per section, max.
+
+**Content components (pick one per section, rotate)**
+
+- **ITEM-CARD** · card-tint fill, 2px accent border, a title + at most one short line. Optional accent PILL top-left. Stack 3-5, no more.
+- **TABLE** · 2-4 columns, accent header row (white text), alternating cream/white body rows, short cells only. For criteria matrices, feature grids, awareness-by-format.
+- **STAT-TILES** · row of 2-4 tiles, each a big accent number + a tiny label. Lead a section with magnitude.
+- **COMPARE-2COL** · two columns with accent headers (Before/After, Old/New, Them/You), 2-4 short bullets each.
+- **GRID** · 2×2 or 3-up cards for a framework or parallel options. Each cell a short label + one line.
+- **TIMELINE / STEP-RAIL** · numbered steps on a connecting rail (vertical or horizontal), accent number badges. For sequences and workflows.
+- **AWARENESS-PILL** · accent pill, white mono uppercase (`PROBLEM AWARE`, a category, a step), top-left inside a card.
+
+**Images (your paste-ins)**
+
+- **IMAGE-FULL** · full-width `<img>`, rounded, optional caption. Primary paste-in slot.
+- **IMAGE-GRID** · 2-5 images in a row (the ad-thumbnail look), optional label to the left.
+- **IMAGE-INLINE** · short label block beside an image.
+- **SECTION-DIVIDER** · vertical breathing room + optional thin rule.
 
 ### Image handling (how paste-in works)
 
