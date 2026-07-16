@@ -98,9 +98,15 @@ Cream/white ground, green as the brand anchor, plus a small disciplined accent s
 
 **Social scale (portrait 1080×1350 default):** H1 42-50px/800 · subtitle 18-21px · handle 16-18px Sage · section sticker 26-30px/800 · body 15-17px/1.55 · card title 18-22px/800 · mono labels 10.5-12px/700 uppercase · stat numbers 26-36px/800 Sage · footer 13-14px.
 
-**Board scale (board, 1080 wide, roomier):** doc title 40-52px/800 · header-card title 26-30px/800 centered · header-card subtitle 14-16px mono Muted · item-card title 20-24px/700 · item body/quote 16-18px/1.5 (quotes italic) · awareness pill 11-13px/700 mono uppercase white · intro-bar 17-19px/500 centered · caption 13-14px Muted.
+**Board scale (board, 1080 wide, big and sparse):** doc title 46-56px/800 · header-card title 28-32px/800 centered · header-card subtitle 15-16px mono · card title 22-26px/700 · card support line 17-19px (one line, optional) · stat-tile number 44-64px/800 accent · table cell 16-18px · pill 11-13px/700 mono uppercase · caption 13-14px Muted.
 
-On boards, height is free: favor generous vertical spacing over cramming.
+**Recordability rule (hard).** Boards are screen-recorded while Mauro talks, so the board carries labels, not sentences. Enforce it:
+
+- Every card = a title plus at most ONE short support line (≤ 10 words). No paragraphs. If it needs a paragraph, that's Mauro's talking point on camera, not board text.
+- One idea per block. One accent family per section.
+- Type stays big (nothing under ~16px). Height is free, so use whitespace; never shrink type to cram more words.
+- More than ~5 short items in a section means it's two sections or a table, not a longer stack.
+- Gut check: from six feet back, can you read every word on screen? If not, cut words, don't shrink type.
 
 ---
 
