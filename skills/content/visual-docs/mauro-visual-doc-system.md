@@ -19,12 +19,14 @@ This is the format behind the quote-tweet play: post the article, wait a few hou
 
 ### Type 2 · BOARDS — spacious, editable breakdown boards
 
-A long vertical board with plenty of room, built to be **edited and screen-recorded.** This is the "Miro breakdown" look: header cards, item cards, arrow flows, awareness pills, and slots where Mauro pastes his own images (account screenshots, ad thumbnails, product shots). Used for YouTube walkthroughs and analysis breakdowns.
+A long vertical board with plenty of room, built to be **edited and screen-recorded.** The "Miro breakdown" look, composed from a real component set (tables, stat tiles, compare columns, grids, timelines, clean SVG connectors, image slots), color-coded section by section, with almost no prose so it reads on screen while Mauro narrates. Used for YouTube walkthroughs and analysis breakdowns.
 
-Built to be worked on: swap the text, reorder cards, drop new images in, re-render. One continuous tall page, any height, high quality.
+Built to be worked on: swap a label, reorder sections, drop new images in, re-render. One continuous tall page, any height, high quality.
 
 - Dimension: `board` (1080 wide, natural height, single continuous page)
-- Palette: green brand on a cream background, with one honey accent for emphasis
+- Palette: cream ground, green as the brand anchor, sections color-coded across a small accent set (green / clay / slate), honey for the one thing that must pop
+- Text: sparse. Labels and anchors, not sentences. Mauro says the detail on camera.
+- Structure: varies section to section. Never the same card stack repeated down the page.
 - Output: `deck.pdf` (one tall page) + `deck.png` (one tall image)
 - Render: `python3 render_one.py deck.html board`
 
