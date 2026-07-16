@@ -27,6 +27,7 @@ Built to be worked on: swap a label, reorder sections, drop new images in, re-re
 - Palette: cream ground, green as the brand anchor, sections color-coded across a small accent set (green / clay / slate), honey for the one thing that must pop
 - Text: sparse. Labels and anchors, not sentences. Mauro says the detail on camera.
 - Structure: varies section to section. Never the same card stack repeated down the page.
+- Length: scales to the source and the video. One beat per point in the source, ~10-16 beats for an 8-minute video. A 7-minute Q&A is a long board, never one compressed page.
 - Output: `deck.pdf` (one tall page) + `deck.png` (one tall image)
 - Render: `python3 render_one.py deck.html board`
 
