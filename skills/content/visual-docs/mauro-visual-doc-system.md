@@ -108,6 +108,15 @@ Cream/white ground, green as the brand anchor, plus a small disciplined accent s
 - More than ~5 short items in a section means it's two sections or a table, not a longer stack.
 - Gut check: from six feet back, can you read every word on screen? If not, cut words, don't shrink type.
 
+**Length + coverage rule (hard).** A board is B-roll for a whole video, so it scales to the source and the target runtime. It does NOT compress the source into a summary. This is the opposite failure from the recordability rule, and both are true at once: few words per beat, many beats.
+
+- **One beat per distinct point in the source.** A 7-minute Q&A holds ~10-12 separate points; each becomes its own section or component. Keep every one. Never merge them into a single page.
+- **Scale to runtime.** Aim for roughly one visual beat per 30-45s of finished video, so there's always a fresh cut to make. An 8-minute video wants ~10-16 beats.
+- **"Sparse" governs words inside a beat, never the number of beats.** Strip the sentence down to a label; never drop the point.
+- A 12-answer Q&A becomes a ~12-section board, and it gets long. That is correct. Height is free; length is the point.
+- **Failure mode this prevents:** 7 minutes of content rendered as one short page. If the board is shorter than the video it feeds, it is wrong. When source is thin for the target length, tell Mauro the board is short rather than padding it with filler.
+- Accent families keep rotating across a long board (Forest → Clay → Slate → repeat); components keep varying. A 12-beat board should never be 12 identical cards.
+
 ---
 
 ## Recurring blocks — TYPE 1 · SOCIAL (green, paged)
