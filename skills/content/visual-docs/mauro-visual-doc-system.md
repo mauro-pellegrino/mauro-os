@@ -450,7 +450,7 @@ Keep `[TITLE]` / `[SUBTITLE]` as placeholders. Render with a one-off inline `pyt
 python3 render_one.py deck.html square      # 1080x1080 social
 python3 render_one.py deck.html portrait    # 1080x1350 social (default)
 python3 render_one.py deck.html long        # 1080x1620 social
-python3 render_one.py deck.html board       # 1080 x natural height, single tall PDF + PNG
+python3 render_one.py deck.html board       # tall PDF + tall PNG + per-section cutaway PNGs
 ```
 
-Board mode loads over `file://`, measures `document.documentElement.scrollHeight`, and renders one continuous page at 2× device scale so pasted-in images and text stay crisp. Banners stay a one-off inline render at 1500×600.
+Board mode loads over `file://`, measures `document.documentElement.scrollHeight`, renders one continuous page at 2× device scale so pasted-in images and text stay crisp, then exports each `.section` as its own PNG (`deck-s1.png`, `deck-s2.png`, …) for record-ready cutaways. Banners stay a one-off inline render at 1500×600.
