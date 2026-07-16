@@ -401,6 +401,8 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 - [ ] No handwriting / Caveat fonts
 - [ ] Type 1: page count matches plan, no page >30% bottom whitespace, PNG dims exact
 - [ ] Type 2: all image `src` paths resolve (or intentional dashed placeholders), no dead gaps, column centered
+- [ ] Type 2: every distinct point in the source is its own beat (source not compressed into one page)
+- [ ] Type 2: beat count fits the target runtime (~1 beat per 30-45s; 8 min → ~10-16 beats)
 - [ ] Type 2: reads on screen (every card ≤ a title + one short line, nothing under ~16px, no paragraphs)
 - [ ] Type 2: structure varies section to section (not the same card stack repeated)
 - [ ] Type 2: accent families rotate, no two adjacent sections the same, opens/closes on Forest
