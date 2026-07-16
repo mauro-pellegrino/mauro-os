@@ -32,13 +32,14 @@ Polished, on-brand infographic images that go into a post. Fixed sizes so they f
 - Sizes: `square` (1080×1080), `portrait` (1080×1350, the default), `long` (1080×1620).
 - You get back: a PDF (for LinkedIn carousels) and PNG images (for X / IG).
 
-### Type 2 · BOARDS (for YouTube)
+### Type 2 · BOARDS (for YouTube, the one Mauro records from)
 
-A long, tall breakdown board with lots of space, the kind Mauro builds in Miro: dark green header bars, mint item cards, green labels, arrows, and slots where Mauro's own screenshots get pasted in. Built to be recorded in a video and easy to edit.
+A long, tall breakdown board built from the script, the kind Mauro builds in Miro: dark green header bars, mint item cards, rotating clay and slate accents, arrows, and slots where Mauro's own screenshots get pasted in. This is the board Mauro goes through on camera, so it must be record-ready.
 
-- Looks: green cards on a cream background (with a touch of honey/gold for anything that needs to stand out).
-- Size: one long vertical page, as tall as the content needs.
-- You get back: one tall PDF and one tall PNG.
+- Looks: green cards on a cream background, sections color-coded (green / clay / slate), a touch of honey/gold for the one thing that must stand out.
+- Text: sparse. One idea per card, a title and maybe one short line. Never paragraphs. Mauro says the detail out loud; the board is just the anchor.
+- Length: one beat per point in the script, so it gets long (roughly 10-16 beats for an 8-minute video). Never compress the script into one page.
+- You get back: one tall PDF, one tall PNG, and one PNG per section (`-s1.png`, `-s2.png`, …) as record-ready cutaways he can drop into Miro or cut to on camera.
 
 If you're unsure which type a job is, ask Mauro before building. Don't guess.
 
