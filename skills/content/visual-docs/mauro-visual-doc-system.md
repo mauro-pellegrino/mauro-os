@@ -347,6 +347,7 @@ grep "—" file.html | grep -v "Mauro\|<title>\|<!--\|/\*"
 grep -nE "[Ii]t's not |[Nn]ot a |[Nn]ot just |, not [a-z]+\.|[Nn]ot [A-Z][a-z]+ but|rather than [a-z]+|, never [a-z]+\.|instead of [a-z]+\." file.html | grep -v "compare-cell\|<!--\|pill\|label"
 grep -nE "[Mm]ost [a-z]+ [a-z]+ [a-z]+" file.html | grep -v "compare-cell\|<!--"
 grep -nE "[A-Z][a-z]+\. [A-Z][a-z]+\. [A-Z][a-z]+\." file.html | grep -v "compare-cell\|<!--"
+grep -niE "\bclock(s|ed|ing)?\b" file.html | grep -viE "o'clock|clockwise"   # off-voice slang for "detect"
 ```
 
 When a violation hits, **fix every instance of that pattern across the whole doc**, not just the flagged one.
