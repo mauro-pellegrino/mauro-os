@@ -174,6 +174,8 @@ Drop files into `./images/` before rendering. `render_one.py` loads over `file:/
 
 Starting point for a `board`. Copy, fill, drop images in `./images/`, render with `python3 render_one.py deck.html board`.
 
+Note how each `.section` sets its own accent family and uses a different component. Copy it, keep the rotation, keep the text sparse.
+
 ```html
 <!doctype html>
 <html><head><meta charset="utf-8">
@@ -189,109 +191,131 @@ Starting point for a `board`. Copy, fill, drop images in `./images/`, render wit
     background-size:54px 54px;   /* faint grid. delete these 3 lines for plain cream */
   }
   .doc { width:1080px; margin:0 auto; padding:90px 100px; }
-  .doc-title { font-size:48px; font-weight:800; letter-spacing:-1px; color:#1B4332; margin-bottom:8px; }
-  .doc-sub { font-size:18px; color:#5F6B62; margin-bottom:56px; }
+  .doc-title { font-size:54px; font-weight:800; letter-spacing:-1px; color:#1B4332; }
+  .doc-sub { font-size:19px; color:#5F6B62; margin-bottom:36px; }
 
-  .flow { text-align:center; margin:40px 0; }
-  .flow .node { font-size:24px; font-weight:800; color:#1B4332; }
-  .flow .hl { border-bottom:3px solid #E9B949; }   /* honey secondary, emphasis only */
-  .flow .arrow { font-size:26px; margin:14px 0; color:#52B788; }
-  .connector { width:2px; height:26px; background:#1B4332; margin:0 auto; }
+  /* ONE accent family per section: set --accent + --tint on .section, then rotate */
+  .section { max-width:760px; margin:26px auto; }
+  .section.forest { --accent:#1B4332; --tint:#D8F3DC; }
+  .section.clay   { --accent:#C15F3C; --tint:#F7DFD3; }
+  .section.slate  { --accent:#3F5E77; --tint:#DDE7EF; }
 
-  /* section header = dark green bar */
-  .header-card {
-    background:#1B4332; border-radius:12px; padding:26px 32px;
-    text-align:center; margin:0 auto; max-width:640px;
-  }
-  .header-card h2 { font-size:28px; font-weight:800; color:#fff; }
-  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#B7E4C7; margin-top:4px; }
+  .header-card { background:var(--accent); border-radius:12px; padding:22px 30px; text-align:center; }
+  .header-card h2 { font-size:30px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#fff; opacity:.8; margin-top:3px; }
 
-  /* item card = mint fill, forest border */
-  .item-card {
-    background:#D8F3DC; border:2px solid #1B4332; border-radius:12px;
-    padding:24px 30px; max-width:680px; margin:16px auto;
-  }
-  .item-card .pill {
-    display:inline-block; background:#1B4332; color:#fff;
-    font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
-    letter-spacing:1.5px; padding:5px 12px; border-radius:6px; margin-bottom:12px;
-  }
-  .item-card h3 { font-size:22px; font-weight:700; color:#1B1B1B; margin-bottom:8px; }
-  .item-card p  { font-size:17px; line-height:1.5; }
-  .item-card .quote { font-style:italic; color:#33493F; }
-  .item-card .tag-win {   /* honey secondary, sparing: mark a standout item */
-    display:inline-block; background:#E9B949; color:#1B4332;
-    font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
-    letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px;
-  }
+  /* clean SVG connectors (inherit the section accent via var) */
+  .conn { display:block; margin:6px auto; }
+  .conn line, .conn path { stroke:var(--accent,#1B4332); stroke-width:2; fill:none; }
+  .conn polygon { fill:var(--accent,#1B4332); }
 
-  .intro-bar {
-    background:#B7E4C7; color:#1B4332; border-radius:8px; padding:16px 24px;
-    text-align:center; font-size:18px; font-weight:500; margin:40px auto; max-width:820px;
-  }
+  .item { background:var(--tint); border:2px solid var(--accent); border-radius:12px; padding:20px 26px; margin:12px 0; }
+  .item .pill { display:inline-block; background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace;
+    font-size:12px; font-weight:700; letter-spacing:1.5px; padding:4px 11px; border-radius:6px; margin-bottom:10px; }
+  .item h3 { font-size:24px; font-weight:700; color:#1B1B1B; }
+  .item p  { font-size:18px; color:#33413B; margin-top:4px; }
 
-  .img-full { margin:32px auto; max-width:900px; text-align:center; }
+  .tiles { display:flex; gap:14px; }
+  .tile { flex:1; background:#fff; border:2px solid var(--accent); border-radius:12px; padding:20px; text-align:center; }
+  .tile .n { font-size:56px; font-weight:800; color:var(--accent); line-height:1; }
+  .tile .l { font-size:14px; color:#5F6B62; margin-top:6px; }
+
+  table { width:100%; border-collapse:collapse; border-radius:12px; overflow:hidden; }
+  th { background:var(--accent); color:#fff; font-size:15px; text-align:left; padding:12px 16px; }
+  td { background:#fff; font-size:17px; padding:12px 16px; border-top:1px solid #EAE3D4; }
+  tr:nth-child(even) td { background:#FBF8F1; }
+
+  .compare { display:flex; gap:14px; }
+  .col { flex:1; border:2px solid var(--accent); border-radius:12px; overflow:hidden; }
+  .col .h { background:var(--accent); color:#fff; font-weight:700; padding:12px 16px; font-size:16px; }
+  .col ul { list-style:none; padding:12px 16px; }
+  .col li { font-size:17px; padding:5px 0; }
+
+  .callout { background:var(--accent); color:#fff; border-radius:12px; padding:24px 30px;
+    font-size:25px; font-weight:700; text-align:center; }
+
+  /* honey emphasis, sparing */
+  .tag-win { display:inline-block; background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace;
+    font-size:11px; font-weight:700; letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px; }
+  .hl { border-bottom:3px solid #E9B949; }
+
+  .img-full { max-width:760px; margin:26px auto; text-align:center; }
   .img-full img { width:100%; border-radius:12px; border:1px solid #D8CFBB; }
-  .img-grid { display:flex; gap:12px; justify-content:center; margin:32px auto; max-width:940px; }
+  .img-grid { display:flex; gap:12px; max-width:760px; margin:26px auto; }
   .img-grid img { flex:1; border-radius:8px; border:1px solid #D8CFBB; min-width:0; }
   .caption { font-size:13px; color:#5F6B62; text-align:center; margin-top:8px; }
-  .placeholder {
-    border:2px dashed #B7A98A; border-radius:12px; min-height:220px;
-    display:flex; align-items:center; justify-content:center;
-    color:#9A8E72; font-family:'JetBrains Mono',monospace; font-size:14px; margin:32px auto; max-width:900px;
-  }
+  .placeholder { border:2px dashed #B7A98A; border-radius:12px; min-height:200px; max-width:760px; margin:26px auto;
+    display:flex; align-items:center; justify-content:center; color:#9A8E72; font-family:'JetBrains Mono',monospace; font-size:14px; }
 
-  .divider { height:60px; }
-  .footer { text-align:center; margin-top:60px; color:#1B4332; font-size:14px; opacity:.7; }
+  .footer { text-align:center; margin-top:56px; color:#1B4332; font-size:14px; opacity:.7; }
 </style></head>
 <body>
   <div class="doc">
-    <div class="doc-title">Breakdown title</div>
-    <div class="doc-sub">one-line frame for the video</div>
+    <div class="doc-title">How to scale winning ads</div>
+    <div class="doc-sub">the loop, start to finish</div>
 
-    <div class="flow">
-      <div class="node">How to Scale</div>
-      <div class="arrow">▼</div>
-      <div class="node">More <span class="hl">Winning</span> Ads</div>
-      <div class="arrow">▼</div>
-      <div class="node">Angles &amp; Formats</div>
+    <!-- SECTION 1 · Forest · item cards (short list) -->
+    <div class="section forest">
+      <div class="header-card"><h2>New Formats</h2><div class="sub">break the 1-format wall</div></div>
+      <svg class="conn" width="26" height="38" viewBox="0 0 26 38">
+        <line x1="13" y1="0" x2="13" y2="26"/><polygon points="6,25 20,25 13,38"/>
+      </svg>
+      <div class="item"><span class="pill">UGC</span><h3>Real-customer reaction <span class="tag-win">WINNING</span></h3><p>Skeptic-to-convert arc.</p></div>
+      <div class="item"><span class="pill">SCREEN REC</span><h3>Walkthrough</h3><p>Product as the creative.</p></div>
+      <div class="item"><span class="pill">FOUNDER</span><h3>Direct to camera</h3><p>Raw, ties to the CEO angle.</p></div>
     </div>
 
-    <div class="divider"></div>
-
-    <div class="connector"></div>
-    <div class="header-card"><h2>New Formats</h2><div class="sub">break the 1-format wall</div></div>
-    <div class="connector"></div>
-
-    <div class="item-card">
-      <span class="pill">PROBLEM AWARE</span>
-      <h3>UGC / real-customer reaction <span class="tag-win">WINNING</span></h3>
-      <p class="quote">"Skeptic-converted arc, adds social proof in-feed."</p>
-    </div>
-    <div class="item-card">
-      <h3>Screen-recording walkthrough</h3>
-      <p>The report and morph reveal. Product as the creative.</p>
+    <!-- SECTION 2 · Clay · stat tiles (lead with numbers) -->
+    <div class="section clay">
+      <div class="header-card"><h2>The gap today</h2></div>
+      <div class="tiles">
+        <div class="tile"><div class="n">1</div><div class="l">format running</div></div>
+        <div class="tile"><div class="n">0</div><div class="l">female-targeted</div></div>
+        <div class="tile"><div class="n">3</div><div class="l">angles untested</div></div>
+      </div>
     </div>
 
-    <div class="intro-bar">Here's a list I pulled from a quick analysis:</div>
-
-    <div class="img-full">
-      <img src="images/account-screenshot.png" alt="">
-      <div class="caption">The account, mid-scroll.</div>
+    <!-- SECTION 3 · Slate · table -->
+    <div class="section slate">
+      <div class="header-card"><h2>New angles</h2><div class="sub">by awareness</div></div>
+      <table>
+        <tr><th>Angle</th><th>Awareness</th></tr>
+        <tr><td>Second opinion</td><td>Problem</td></tr>
+        <tr><td>Founder reads every report</td><td>Product</td></tr>
+        <tr><td>Progress tracker</td><td>Most</td></tr>
+      </table>
     </div>
 
-    <div class="img-grid">
-      <img src="images/ad-1.png" alt="">
-      <img src="images/ad-2.png" alt="">
-      <img src="images/ad-3.png" alt="">
+    <!-- SECTION 4 · Forest · 2-col compare -->
+    <div class="section forest">
+      <div class="header-card"><h2>Old vs new</h2></div>
+      <div class="compare">
+        <div class="col"><div class="h">Old</div><ul><li>1 format</li><li>1 persona</li><li>Guessing</li></ul></div>
+        <div class="col"><div class="h">New</div><ul><li>5 formats</li><li>3 personas</li><li>Tested</li></ul></div>
+      </div>
     </div>
 
-    <!-- placeholder for an image not dropped in yet -->
+    <!-- paste-in image + a not-ready placeholder -->
+    <div class="img-full"><img src="images/account.png" alt=""><div class="caption">The account, mid-scroll.</div></div>
     <div class="placeholder">images/landing-page.png</div>
+
+    <!-- SECTION 5 · Clay · callout (the one line that matters) -->
+    <div class="section clay">
+      <div class="callout">Volume without a map is guessing with a bigger budget.</div>
+    </div>
 
     <div class="footer">@maurojpelle</div>
   </div>
 </body></html>
+```
+
+Five sections, three accent families rotated (forest → clay → slate → forest → clay), five different components (item-cards, stat-tiles, table, compare, callout), clean SVG connector, sparse text throughout. That is the target, not a repeated card stack. Other connector variants (swap the `<svg>` innards):
+
+```
+<!-- elbow: down, across, down -->
+<svg class="conn" width="200" height="60" viewBox="0 0 200 60"><path d="M20 0 V30 H180 V52"/><polygon points="173,50 187,50 180,60"/></svg>
+<!-- split: one to three -->
+<svg class="conn" width="360" height="60" viewBox="0 0 360 60"><path d="M180 0 V20 M40 40 V20 H320 V40 M180 20 V40"/><polygon points="33,38 47,38 40,50"/><polygon points="173,38 187,38 180,50"/><polygon points="313,38 327,38 320,50"/></svg>
 ```
 
 Everything scrolls in one column. The renderer measures total height and outputs one tall PDF + one tall PNG.
