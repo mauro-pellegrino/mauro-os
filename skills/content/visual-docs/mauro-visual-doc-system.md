@@ -28,7 +28,8 @@ Built to be worked on: swap a label, reorder sections, drop new images in, re-re
 - Text: sparse. Labels and anchors, not sentences. Mauro says the detail on camera.
 - Structure: varies section to section. Never the same card stack repeated down the page.
 - Length: scales to the source and the video. One beat per point in the source, ~10-16 beats for an 8-minute video. A 7-minute Q&A is a long board, never one compressed page.
-- Output: `deck.pdf` (one tall page) + `deck.png` (one tall image)
+- Source: built from the script (Juan writes questions, Mauro answers in voice notes, those transcribe to the script). The board is the thing Mauro records from, so it stays record-ready. No editor, raw video.
+- Output: `deck.pdf` (one tall page) + `deck.png` (one tall image) + `deck-s1.png…` (one per `.section`: record-ready cutaways for Miro or on-camera cuts)
 - Render: `python3 render_one.py deck.html board`
 
 **Both types share** the same render script, typography, and voice rules, so everything reads as one brand across X, LinkedIn, and YouTube.
