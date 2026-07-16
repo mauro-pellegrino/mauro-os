@@ -6,6 +6,20 @@ How to make Mauro's visual content inside the "Mauro Visual Docs" project on cla
 
 ---
 
+## The content engine (how a YouTube video gets made)
+
+This is Mauro's system, the one he wants to sell to clients, so learn it:
+
+1. **You write the questions.** Good B2B / agency questions worth a video answer.
+2. **Mauro answers them in voice notes.** The voice notes transcribe to text.
+3. **That text becomes the script.** Tighten it (the questions and the answers both get better over time).
+4. **You build the board from the script** (Type 2 below). It's the thing Mauro records from, so it has to be **record-ready: no editing, nothing missing.** There is no editor. Videos and hooks are raw.
+5. **Mauro records** straight off the board and ships.
+
+The YouTube goal right now is **subscriber growth** (broad B2B is fine). YouTube is reach; X is where it converts. Video CTAs point to X.
+
+---
+
 ## What this project makes
 
 Two types of visual content. Every job is one or the other. Figure out which before you start.
