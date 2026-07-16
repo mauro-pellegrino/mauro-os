@@ -324,9 +324,11 @@ Everything scrolls in one column. The renderer measures total height and outputs
 
 ## Voice rules
 
-Apply to every word in every doc, both types. Mauro's rules, hard constraints. Quoted real ad copy or real customer quotes pass through as-is.
+**`brand/voice.md` is the gate.** Read it before writing any board or social copy. This section is the render-time checklist; when the two differ, `brand/voice.md` wins. Applies to every word in every doc, both types. Quoted real ad copy or real customer quotes pass through as-is.
 
 ### Hard-banned constructions (grep-sweep before every render)
+
+- **Off-voice slang (see `brand/voice.md`).** Notably **"clock / clocks"** as slang for detecting AI ("prospects clock it", "nobody clocks the output") — use "spot", "catch", or "can tell". Mauro does not talk like this.
 
 - **Em dashes (`—`)** in body. Replace with commas, periods, colons, or restructure. Only allowed em dash is the footer `— Mauro`.
 - **"Not X but Y" / "It's not X. It's Y." / "X, not Y." / "X rather than Y." / "X instead of Y." / "X, never Y."** State Y directly.
