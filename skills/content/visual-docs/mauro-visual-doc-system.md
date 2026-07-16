@@ -380,7 +380,7 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 
 1. **Pick the type.** Type 1 SOCIAL (green, paged) or Type 2 BOARD (warm, long-scroll, editable)? Public or private?
 2. **Pick the dimension.** `square` / `portrait` / `long` for social; `board` for breakdowns.
-3. **Outline the structure.** Social: map sections to pages. Board: assign each section a DIFFERENT component (table / stat-tiles / compare / grid / timeline / item-cards / image / callout) and a rotating accent family, confirm no two neighbors match on either, then write the sparse labels (not sentences). Never the same card stack twice.
+3. **Outline the structure.** Social: map sections to pages. Board: first pull EVERY distinct point out of the source (one beat each, don't summarize) and check the beat count against the target video runtime (~1 beat per 30-45s; 8 min → ~10-16 beats). Then assign each beat a component (table / stat-tiles / compare / grid / timeline / item-cards / image / callout) and a rotating accent family, confirm no two neighbors match on either, and write the sparse labels (not sentences). Never the same card stack twice, never collapse the source into one page.
 4. **Copy the matching skeleton / closest existing doc.** Boards start from the skeleton above.
 5. **Write body content** to `brand/voice.md` and the voice rules here (hard constraints). On boards this means labels, not sentences.
 6. **Drop images** into `./images/` (boards). Dashed placeholders for any not ready.
