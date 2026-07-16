@@ -371,9 +371,9 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 
 1. **Pick the type.** Type 1 SOCIAL (green, paged) or Type 2 BOARD (warm, long-scroll, editable)? Public or private?
 2. **Pick the dimension.** `square` / `portrait` / `long` for social; `board` for breakdowns.
-3. **Outline the structure.** Social: map sections to page boundaries. Board: order flow → header cards → item cards → image slots top to bottom; note which images go where.
+3. **Outline the structure.** Social: map sections to pages. Board: assign each section a DIFFERENT component (table / stat-tiles / compare / grid / timeline / item-cards / image / callout) and a rotating accent family, confirm no two neighbors match on either, then write the sparse labels (not sentences). Never the same card stack twice.
 4. **Copy the matching skeleton / closest existing doc.** Boards start from the skeleton above.
-5. **Write body content** to the voice rules (hard constraints).
+5. **Write body content** to `brand/voice.md` and the voice rules here (hard constraints). On boards this means labels, not sentences.
 6. **Drop images** into `./images/` (boards). Dashed placeholders for any not ready.
 7. **Run the grep sweep.** Fix every hit before rendering.
 8. **Render.** `python3 render_one.py deck.html portrait` (social) or `... board` (board). Banners: inline 1500×600.
