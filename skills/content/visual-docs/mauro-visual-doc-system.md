@@ -34,6 +34,8 @@ Built to be worked on: swap a label, reorder sections, drop new images in, re-re
 
 **Both types share** the same render script, typography, and voice rules, so everything reads as one brand across X, LinkedIn, and YouTube.
 
+> **Recording a board for a video?** Follow `video-board-corrections.md` on top of the board rules: it wraps each section in a one-screen scroll-snap frame so sections never bleed on camera, and gives blank slots for pasting screenshots.
+
 ---
 
 ## When to use this skill
@@ -442,6 +444,7 @@ Keep `[TITLE]` / `[SUBTITLE]` as placeholders. Render with a one-off inline `pyt
 | File | Purpose |
 |---|---|
 | `mauro-visual-doc-system.md` | This file. The visual + voice system spec (both types). |
+| `video-board-corrections.md` | Board addendum for screen-recorded video: one section = one screen (scroll-snap frames) + blank slots for pasting screenshots. Use whenever a board will be recorded. |
 | `render_one.py` | Render pipeline: social (square/portrait/long) + board (long breakdown). |
 | `setup-guide.md` | One-time setup: standing up the claude.ai project. |
 | `juan-tutorial.md` | VA usage tutorial (how Juan produces docs in the project). |
