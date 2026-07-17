@@ -1,0 +1,103 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Video board demo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif; color:#1B1B1B;
+    background:#F7F3EA;
+    background-image:
+      linear-gradient(#ECE6D8 1px, transparent 1px),
+      linear-gradient(90deg, #ECE6D8 1px, transparent 1px);
+    background-size:54px 54px;
+  }
+
+  /* ---- base board blocks (from mauro-visual-doc-system.md) ---- */
+  .doc-title { font-size:48px; font-weight:800; letter-spacing:-1px; color:#1B4332; margin-bottom:8px; }
+  .doc-sub { font-size:18px; color:#5F6B62; margin-bottom:32px; }
+  .flow { text-align:center; margin:24px 0; }
+  .flow .node { font-size:24px; font-weight:800; color:#1B4332; }
+  .flow .hl { border-bottom:3px solid #E9B949; }
+  .flow .arrow { font-size:26px; margin:10px 0; color:#52B788; }
+  .header-card { background:#1B4332; border-radius:12px; padding:26px 32px; text-align:center; margin:0 auto 20px; max-width:640px; }
+  .header-card h2 { font-size:28px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#B7E4C7; margin-top:4px; }
+  .item-card { background:#D8F3DC; border:2px solid #1B4332; border-radius:12px; padding:24px 30px; max-width:680px; margin:16px auto; }
+  .item-card .pill { display:inline-block; background:#1B4332; color:#fff; font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; letter-spacing:1.5px; padding:5px 12px; border-radius:6px; margin-bottom:12px; }
+  .item-card h3 { font-size:22px; font-weight:700; color:#1B1B1B; margin-bottom:8px; }
+  .item-card p { font-size:17px; line-height:1.5; }
+  .item-card .quote { font-style:italic; color:#33493F; }
+  .item-card .tag-win { display:inline-block; background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px; }
+  .caption { font-size:13px; color:#5F6B62; text-align:center; margin-top:8px; }
+  .footer { text-align:center; color:#1B4332; font-size:14px; opacity:.7; }
+
+  /* ---- video-board corrections ---- */
+  :root { --frame-h: 100vh; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  html::-webkit-scrollbar { display: none; }
+  .frame {
+    min-height: var(--frame-h);
+    scroll-snap-align: start; scroll-snap-stop: always;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: 72px 100px; box-sizing: border-box;
+  }
+  .frame > .inner { width: 100%; max-width: 940px; }
+  .frame img, .frame .shot { display:block; margin:0 auto; width:auto; height:auto; max-width:100%; max-height:60vh; object-fit:contain; border-radius:12px; border:1px solid #D8CFBB; }
+  .slot { display:flex; align-items:center; justify-content:center; text-align:center; max-width:100%; }
+  .slot--tweet { min-height:46vh; }
+  .slot--wide  { min-height:44vh; }
+  .slot--tall  { min-height:62vh; }
+  .slot--square{ min-height:52vh; }
+  body.debug .frame { outline:2px dashed #E9B949; outline-offset:-2px; }
+</style></head>
+
+<!-- TIP: add class="debug" to <body> to see each frame boundary while editing -->
+<body>
+
+  <section class="frame">
+    <div class="inner" style="text-align:center;">
+      <div class="doc-title">How I scaled this account</div>
+      <div class="doc-sub">a breakdown you can screen-record cleanly</div>
+      <div class="flow">
+        <div class="node">Find the hook</div>
+        <div class="arrow">&#9660;</div>
+        <div class="node">Make it <span class="hl">Winning</span></div>
+        <div class="arrow">&#9660;</div>
+        <div class="node">Scale angles &amp; formats</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame">
+    <div class="inner">
+      <div class="header-card"><h2>The tweet that started it</h2><div class="sub">problem aware</div></div>
+      <!-- blank reserved space; paste <img class="shot" src="images/tweet-1.png"> or type text here -->
+      <div class="slot slot--tweet"></div>
+    </div>
+  </section>
+
+  <section class="frame">
+    <div class="inner">
+      <div class="header-card"><h2>New Formats</h2><div class="sub">break the 1-format wall</div></div>
+      <div class="item-card">
+        <span class="pill">PROBLEM AWARE</span>
+        <h3>UGC / real-customer reaction <span class="tag-win">WINNING</span></h3>
+        <p class="quote">"Skeptic-converted arc, adds social proof in-feed."</p>
+      </div>
+      <div class="item-card">
+        <h3>Screen-recording walkthrough</h3>
+        <p>The report and morph reveal. Product as the creative.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame">
+    <div class="inner" style="text-align:center;">
+      <!-- blank reserved space; paste <img class="shot" src="images/account.png"> or type text here -->
+      <div class="slot slot--wide"></div>
+      <div class="footer" style="margin-top:40px;">@maurojpelle</div>
+    </div>
+  </section>
+
+</body></html>
