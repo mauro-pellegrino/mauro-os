@@ -7,6 +7,8 @@ Mauro's operating system for the ghostedcalls / maurojpelle brand. Everything he
 | Dir | What it is | Status |
 |---|---|---|
 | `CLAUDE.md` | Session brain: identity, ICP, beliefs, routing, output rules | ready |
+| `ONBOARDING.md` | New-teammate front door: what the repo is and how to run it | ready |
+| `docs/` | Team planning docs (`NEXT-STEPS.md`, `JUAN-PLAN.md`) | ready |
 | `brand/` | Personal brand context (positioning, audience, posts, lead magnets) + `voice.md` writing rules | ready |
 | `skills/` | All skill dirs (content, creative-strategy, dm-setting, lead-gen, ops, research, youtube) | being retargeted to Mauro's ICP where examples still assume a different one |
 | `research/transcripts/` | maurojpelle transcript research | ready |

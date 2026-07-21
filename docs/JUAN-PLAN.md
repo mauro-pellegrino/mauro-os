@@ -19,7 +19,7 @@ Work through the phases in order. Each project says what it produces, the exact 
 
 ### Project 0.2: Read the brand (same day)
 **Produces:** Juan understands who this content is for.
-1. Read `ONBOARDING.md` fully.
+1. Read `ONBOARDING.md` (repo root) fully.
 2. Read `brand/positioning.md`, `brand/audience.md`, `brand/voice.md`.
 3. Write Mauro a 5-line summary in Slack of who the ICP is and what the brand promises. This is the check that the reading happened.
 
