@@ -69,7 +69,7 @@ Longer sentences explain the why.
 
 Ratio: roughly 60% short (under 12 words), 40% longer explanatory.
 
-Uses line breaks aggressively, single sentences get their own line.
+**Spacing (Mauro, 2026-07-21): default to spaced single lines, not full paragraphs.** Most thoughts get their own line with a blank line after. Group at most 2 tightly-related sentences before a break. Never write the dense 4-5 sentence paragraph block, it reads like an essay and kills readability in the X reader. When you scan the finished article it should look airy, lots of white space between short lines. This is how Mauro's feed already reads, the article body matches it.
 
 No em dashes. Use a comma, a period, or rewrite the aside as its own sentence. See voice.md hard bans.
 
@@ -388,7 +388,7 @@ What doesn't work:
 
 Every draft marks its image spots with generation-ready prompts, cover first (5:2), then inline images where they support the content.
 
-**Default style (Mauro, 2026-07-10): hand-drawn doodle illustration.** Thin black ink line-art characters and objects on a flat warm yellow background. Playful, imperfect linework. Small sparkle and arrow doodle accents. The scene tells the article's concept as a visual story, it is not a labeled diagram. No gradients, no realistic rendering, minimal text inside the image. Reference: the Jul 8 "the perfect ad creative research for winning ads" cover.
+**Default style (Mauro, 2026-07-21): hand-drawn doodle illustration.** Thin black ink line-art characters and objects on a flat cream background (`#F7F3EA`, the brand ground). Playful, imperfect linework. Small sparkle and arrow doodle accents in Sage green (`#52B788`). The scene tells the article's concept as a visual story, it is not a labeled diagram. No gradients, no realistic rendering, minimal text inside the image. Reference: the Jul 8 "the perfect ad creative research for winning ads" cover, recolored off the old flat-yellow ground onto brand cream. Do not use a saturated yellow ground; the covers should read warm and light, not all-yellow.
 
 **Secondary style: brand-palette infographic.** [CALIBRATE: Mauro's own brand palette is not defined yet. Until it is, use the doc-system palette in `skills/content/visual-docs/mauro-visual-doc-system.md`.] Use only when the content is genuinely a table, comparison, or numeric readout that a doodle scene can't carry. Doodle-first is the default for covers, always.
 
@@ -404,9 +404,9 @@ Every draft marks its image spots with generation-ready prompts, cover first (5:
 [Line 3: explicit promise of what this delivers]
 
 [SECTION 1 HEADER]
-[Opening claim — one short sentence]
-[3-4 sentences expanding the claim]
-[Sub-bullets if listing 3+ items — otherwise prose]
+[Opening claim — one short sentence on its own line]
+[Expand the claim across several short spaced lines, blank line between thoughts — not one dense paragraph]
+[Sub-bullets if listing 3+ items — otherwise spaced lines]
 [One-line payoff before moving on]
 
 [SECTION 2 HEADER]
@@ -454,8 +454,9 @@ Target section depth:
 **Step 5 — Word count check**
 Count the words. If under 800, identify which section is thin and expand it. Do not publish under 800 words. Target 900-1100 for the sweet spot.
 
-**Step 6 — Apply rhythm pass**
+**Step 6 — Apply rhythm + spacing pass**
 Read every sentence. Any sentence over 20 words — break it. Any three consecutive long sentences — add a one-line punchy break.
+Then check spacing: no paragraph runs longer than 2 sentences. Give most thoughts their own line with a blank line after. If a block looks dense when you scan it, split it into spaced lines.
 
 **Step 7 — Add CTA**
 Pick one from the approved CTA patterns. Never invent a new one.
@@ -468,6 +469,11 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 ---
 
 ## Correction Log
+
+**21 July 2026 — Off-yellow covers + airier article spacing**
+Two changes from Mauro:
+1. **Doodle cover background moves off flat yellow onto brand cream** (`#F7F3EA`), with Sage green (`#52B788`) doodle accents. The doodle line-art style itself stays (Mauro likes it); only the all-yellow ground is retired. Supersedes the "flat yellow" ground in the 10 July entry below. The companion infographic template in `long-form/infographic-html-long-form.md` was also recolored off yellow/`#24243C` onto the green brand palette.
+2. **Article body defaults to spaced single lines, not full paragraphs.** Most thoughts get their own line with a blank line after; group at most 2 sentences before a break. Added the Spacing rule under Sentence Rhythm and a spacing pass to Step 6.
 
 **10 July 2026 — Image style, structure originality, title options (incrementality article)**
 Three corrections from Mauro on the "$21 cpa / $33" article:

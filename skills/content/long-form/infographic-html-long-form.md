@@ -120,14 +120,18 @@ Before drafting, get these from Mauro:
 ### HTML structure template
 
 ```html
-<!-- Panel 1 -->
-<div class="panel" style="background: #F5D679; padding: 60px; color: #24243C;">
+<!-- Colors follow the brand palette in skills/content/visual-docs/mauro-visual-doc-system.md.
+     Deep Forest #1B4332, Pale Mint #B7E4C7, White #FFFFFF, Ink #1B1B1B, Sage #52B788.
+     No yellow. Panel 1 is a light hero; panels 2-3 are Deep Forest. Not a green wall — 2-3 panels only. -->
+
+<!-- Panel 1 · light hero (the thumbnail) -->
+<div class="panel" style="background: #B7E4C7; padding: 60px; color: #1B4332;">
   <h1>[Title]</h1>
   <p>[Subtitle]</p>
 </div>
 
-<!-- Panel 2 -->
-<div class="panel" style="background: #24243C; padding: 60px; color: white;">
+<!-- Panel 2 · Deep Forest -->
+<div class="panel" style="background: #1B4332; padding: 60px; color: white;">
   <h2>[Section header]</h2>
   <ul>
     <li>[Point 1]</li>
@@ -136,11 +140,11 @@ Before drafting, get these from Mauro:
   </ul>
 </div>
 
-<!-- Panel 3 -->
-<div class="panel" style="background: #24243C; padding: 60px; color: white;">
+<!-- Panel 3 · Deep Forest closing -->
+<div class="panel" style="background: #1B4332; padding: 60px; color: white;">
   <h2>[Conclusion / Result]</h2>
   <p>[Closing line]</p>
-  <small>@maurojpelle</small>
+  <small style="color: #52B788;">@maurojpelle</small>
 </div>
 ```
 
