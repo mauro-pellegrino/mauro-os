@@ -80,7 +80,7 @@ These are Mauro's hard rules. Claude follows them, but you're the check. If you 
 - **No "not X, but Y" / "it's not X, it's Y" / "X, not Y"** style contrast lines. Just say the thing.
 - **No "most agencies / most people do X" openers.**
 - **No hype words:** "insane", "wild", "crazy", "game-changing". (One exception: the "Claude is INSANE for [X]" line is a deliberate hook Mauro uses in auto-DMs. Leave it if it's that.)
-- **No made-up numbers.** Only real numbers, or a placeholder like `[X%]`. The only public number you can use is Growthub ~$300k/mo. Any other specific number needs Mauro's OK first.
+- **No made-up numbers.** Only real numbers, or a placeholder like `[X%]`. The only public number you can use is the agency Mauro runs (~$300k/mo). Any other specific number needs Mauro's OK first.
 - **No trailing summary line** at the end that repeats the point. End on the point.
 - **Never name a client** in anything. If a real client is involved, keep them unnamed.
 
@@ -101,7 +101,7 @@ These are Mauro's hard rules. Claude follows them, but you're the check. If you 
 ## First-week guardrails
 
 - **You produce, Mauro approves.** No posting, no DMs, no live comments, no offer mentions.
-- **Only approved public number:** Growthub ~$300k/mo. Nothing else.
+- **Only approved public number:** the agency Mauro runs (~$300k/mo). Nothing else.
 - **When Claude writes something that sounds off,** trust the voice rules over the draft. Send it back.
 - **When in doubt about the type, the content, or a number,** ask Mauro before building. Better a quick question than a rebuild.
 

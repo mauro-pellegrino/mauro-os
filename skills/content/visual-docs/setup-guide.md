@@ -66,7 +66,7 @@ that pattern across the whole doc.
 No em dashes in body (footer signature only). No "not X but Y" / "X, not Y" / "rather
 than" / "instead of" cadence. No "Most X does Y" openers. No three-fragment staccato.
 No trailing summary one-liners. No invented numbers (real or [X%] only; only pre-approved
-public number is Growthub ~$300k/mo). No Caveat / handwriting fonts.
+public number is the agency I run, ~$300k/mo). No Caveat / handwriting fonts.
 
 For boards, keep Mauro's pasted-in images in an ./images/ folder, reference them with
 relative paths, and leave a dashed placeholder for any not ready.

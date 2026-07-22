@@ -365,7 +365,7 @@ When a violation hits, **fix every instance of that pattern across the whole doc
 
 ### Numbers rule
 
-Never invent a performance number. Real numbers from source only, or a bracket placeholder like `[X%]`. Only pre-approved public number: Growthub ~$300k/mo. Anything else specific needs Mauro's sign-off before it goes in a doc.
+Never invent a performance number. Real numbers from source only, or a bracket placeholder like `[X%]`. Only pre-approved public number: the agency I run (~$300k/mo). Anything else specific needs Mauro's sign-off before it goes in a doc.
 
 ---
 

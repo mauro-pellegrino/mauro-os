@@ -43,11 +43,11 @@ git clone git@github.com:mauro-pellegrino/mauro-os.git ~/mauro-os
 
 ## 4. Memory bootstrap
 
-`claude-setup/memory/` holds the portable memory files (user profile, writing feedback rules, personal-brand context). To seed a new machine:
+`memory/` (repo root) holds the portable memory files (user profile, writing feedback rules, personal-brand context). To seed a new machine:
 
 ```bash
 # find the project memory dir Claude Code created for this repo, e.g.:
-cp claude-setup/memory/* ~/.claude/projects/-Users-<user>-mauro-os/memory/
+cp memory/* ~/.claude/projects/-Users-<user>-mauro-os/memory/
 ```
 
 Or simpler: paste the contents into a first session and ask Claude to save them to memory.

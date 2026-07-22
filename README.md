@@ -8,11 +8,11 @@ Mauro's operating system for the ghostedcalls / maurojpelle brand. Everything he
 |---|---|---|
 | `CLAUDE.md` | Session brain: identity, ICP, beliefs, routing, output rules | ready |
 | `ONBOARDING.md` | New-teammate front door: what the repo is and how to run it | ready |
-| `docs/` | Team planning docs (`NEXT-STEPS.md`, `JUAN-PLAN.md`) | ready |
+| `docs/` | Human operating docs: `SETUP.md` (machine/team setup), `JUAN-PLAN.md`, `NEXT-STEPS.md` | ready |
 | `brand/` | Personal brand context (positioning, audience, posts, lead magnets) + `voice.md` writing rules | ready |
 | `skills/` | All skill dirs (content, creative-strategy, dm-setting, lead-gen, ops, research, youtube) | being retargeted to Mauro's ICP where examples still assume a different one |
-| `research/transcripts/` | maurojpelle transcript research | ready |
-| `claude-setup/` | Portable Claude memory files + team setup guide (SETUP.md) | ready |
+| `research/` | Research inputs (maurojpelle transcripts, competitor digs) | ready |
+| `memory/` | Portable Claude memory snapshot (seed a new machine per `docs/SETUP.md`) | ready |
 | `.claude/` | Hooks (voice injection, skill auto-save, session-notes prompt) + youtube-lead-magnet agent | ready |
 
 ## GitHub

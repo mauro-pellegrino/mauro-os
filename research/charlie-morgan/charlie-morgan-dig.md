@@ -71,7 +71,7 @@ Named-framework packaging is doing a lot of work: "Time Compression Theory," "Th
 
 ## 10 titles for Mauro (modeled on the above, in his lane + voice)
 
-Agency owners + AI content + client acquisition, broad enough for subs. Numbers are bracketed or use the one approved figure (Growthub ~$300k/mo); confirm any specific claim before publishing.
+Agency owners + AI content + client acquisition, broad enough for subs. Numbers are bracketed or use the one approved figure (the agency's ~$300k/mo); confirm any specific claim before publishing.
 
 1. You'll never post cringe again after watching this
 2. I run the AI content engine for a $300k/mo agency. Here's the whole system.
