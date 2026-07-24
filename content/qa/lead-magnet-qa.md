@@ -1,7 +1,7 @@
-# @maurojpelle — Virality, Reach & Trendjacking (first-person answers)
+# @maurojpelle — Lead Magnet Q&A (Virality, Reach & Trendjacking)
 **Date:** 2026-07-24
 **Source:** Mauro voice notes, transcribed and cleaned (fixed transcription artifacts, kept his voice and meaning intact).
-**Use:** Source material for content on reach, virality, trendjacking, first lines, and lead magnets. Also the raw material for a virality/reach lead magnet. Companion to `brand/business-context-answers.md` and `brand/voice.md`. Ground any post or article built from this in Mauro's ICP (`brand/audience.md`) and run the pre-publish checklist in `voice.md`.
+**Use:** Q&A intake for a lead magnet on reach and virality. Also general source material for content on reach, virality, trendjacking, first lines, and lead magnets. Companion to `brand/business-context-answers.md` and `brand/voice.md`. Ground any post or article built from this in Mauro's ICP (`brand/audience.md`) and run the pre-publish checklist in `voice.md`.
 
 ---
 

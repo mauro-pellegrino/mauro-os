@@ -16,4 +16,4 @@ This is where the interview material lives: **Juan's questions + Mauro's transcr
 - This is **source material**, not a finished asset. Full video transcripts still go in `research/transcripts/maurojpelle/`.
 
 ## Files
-- `virality-reach-qa.md` — reach, virality, trendjacking, first lines, lead magnets (2026-07-24).
+- `lead-magnet-qa.md` — lead magnet Q&A on reach, virality, trendjacking, first lines (2026-07-24).
