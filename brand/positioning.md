@@ -39,9 +39,8 @@ He's *in it daily*, building and measuring, not theorizing. And he's honest abou
 
 ## Content pillars (from the audience's stated wants)
 
-1. **Cobbler's children** — build your own inbound engine, the one you build for clients.
-2. **Anti-cringe authority** — post as the expert without the guru ick (faceless/AI-friendly, since they fear being on camera).
-3. **Low-time system that proves it converts** — AI as the time-multiplier, with leading indicators so they don't quit at week three.
+1. **Anti-cringe authority** — post as the expert without the guru ick (faceless/AI-friendly, since they fear being on camera).
+2. **Low-time system that proves it converts** — AI as the time-multiplier, with leading indicators so they don't quit at week three.
 
 ## Voice
 

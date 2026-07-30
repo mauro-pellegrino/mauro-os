@@ -73,7 +73,7 @@ Before generating ideas, load all 4 sources:
 1. **Weekly research brief** (`research/weekly-briefs/`, create this folder as briefs are produced): YouTube outliers, hot X conversations, ICP language captured, content gaps
 2. **Mauro's content ideas backlog** (`research/ideas/`, create as ideas accumulate): his own priority list of topics, systems to document, and ICP beliefs to break. Always cross-reference before generating; don't suggest something he has already planned or deprioritised.
 3. **ICP profile** (`brand/audience.md`): who the viewer is, the 5 segments, and what they're struggling with
-4. **Positioning + business context** (`brand/positioning.md`, `brand/business-context-answers.md`): the three content pillars, the belief the channel breaks, and the 15 stories the ICP tells themselves
+4. **Positioning + business context** (`brand/positioning.md`, `brand/business-context-answers.md`): the two content pillars, the belief the channel breaks, and the 15 stories the ICP tells themselves
 
 ---
 
@@ -143,22 +143,40 @@ Produce ideas in ranked order: highest priority first. Rank by the following wei
 
 ### Idea Output Template
 
+**Corrections (Juan, 2026-07-15), applied every time:**
+1. **Use all the YouTube skills.** Idea generation pulls the title skill (`youtube-title-generator.md`) and the hook skill (`youtube-hook-script.md`) into every idea, not just the idea skill.
+2. **Build ideas from existing competitor outliers.** Every idea maps to a specific outlier in `skills/youtube/01-outliers.csv` (or a fresh one from the weekly brief). Adapt the proven pattern to Mauro's lane, never invent from a blank page.
+3. **Present a title AND a hook** for every idea, each built with its skill (a named title mechanism; the hook skill's 3-part spoken open), not a throwaway one-liner.
+4. **Present a video outline** (the content beats) for every idea.
+
 ```
 IDEA #[N]: [Short working title]
 Priority: [1 / 2 / 3]
-Source: [Which research signal triggered this: outlier video, X conversation, content gap, ICP language]
+
+Based on outlier:
+[channel] "[outlier title]" ([views], [core_angle from 01-outliers.csv]) -> the proven pattern being adapted
 
 Core Angle:
-[1-2 sentences. The specific claim or reframe this video makes.]
+[1-2 sentences. The specific claim or reframe, and the angle only Mauro can back from the engine he runs.]
 
 Target Viewer:
 [1 sentence. Precise ICP description.]
 
 Why It Will Perform:
-[2-3 sentences. Ground in research evidence.]
+[2-3 sentences. Ground in the outlier evidence + Mauro's differentiation.]
 
-One-Line Hook:
-"[Declarative hook, no question, no 'most brands' opener.]"
+Title (via title skill):
+[Title built with a named mechanism from youtube-title-generator.md. State the mechanism. Placeholder any unconfirmed number.]
+
+Hook (via hook skill):
+[The 3-part spoken open from youtube-hook-script.md: contrarian claim, stakes/credibility anchor, roadmap. A few spoken sentences, not a one-liner.]
+
+Outline (video contents):
+1. [beat]
+2. [beat]
+3. [beat]
+...
+[CTA beat: qualified-viewer CTA per the hook skill]
 ```
 
 ---
@@ -194,7 +212,7 @@ Once ideas are approved:
 
 ## High-Priority Idea Categories
 
-These categories map to the three pillars in `brand/positioning.md` and the belief inventory in `brand/business-context-answers.md`. When in doubt, suggest from these before inventing new angles.
+These categories map to the two pillars in `brand/positioning.md` and the belief inventory in `brand/business-context-answers.md`. When in doubt, suggest from these before inventing new angles.
 
 **1. Engine walkthroughs (highest priority: main conversion driver)**
 Full builds and walkthroughs of the systems Mauro actually runs: the transcript-to-content pipeline, the skills library, lead magnet production, the weekly acquisition analysis, moving from skills to agents. Show the real thing on screen.
@@ -208,19 +226,16 @@ Pull directly from the 15 stories in `brand/business-context-answers.md`, for ex
 - "Why post at all if I can rely on referrals?"
 - "I didn't start posting three years ago, so I'm cooked now"
 
-**3. Cobbler's children**
-Build your own inbound engine, the one you already build for clients. Turning delivery work into content. Why agencies that crush lead gen for clients starve their own pipeline.
-
-**4. Anti-cringe authority**
+**3. Anti-cringe authority**
 Posting as the expert without the guru ick. Faceless and AI-friendly formats for owners who won't go on camera. What separates operator content from guru content.
 
-**5. Low-time system + proof it converts**
-The hour-a-day version. Leading indicators so owners don't quit at week three. Tying content to booked calls instead of vanity metrics.
+**4. Low-time system + proof it converts**
+The hour-a-day version. Leading indicators so owners don't quit at week three. Tying content to booked calls instead of vanity metrics. Turning real delivery work into content lives here, framed as system input.
 
-**6. Tool-specific tutorials**
+**5. Tool-specific tutorials**
 Claude setups, skills, agents, and workflows applied to agency content and acquisition. Near-zero competition at the operator level; most coverage is beginner prompt content.
 
-**7. Result case studies**
+**6. Result case studies**
 What produced a specific confirmed outcome (like the $28k deal off X), broken down as a system, not a brag. Numbers need Mauro's sign-off before publishing.
 
 ---

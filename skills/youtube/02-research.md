@@ -89,7 +89,7 @@ All drafts, all in your lane (AI content engine for agency owners), none final. 
 2. **Build & Sell an AI Content System to Your Clients (full walkthrough)** — model: Liam "Build & Sell AI Agents" — package the engine you run as a client offer, not just self-use.
 3. **Watch Me Build an Agency's Inbound Content Engine in [X] Hours** — model: Nick "Watch me start & sell an AI service in 10 hours" — real-time build on camera, fixed time box.
 4. **I Let AI Run My Agency's Content for 30 Days (here's what it booked)** — model: Platten "I Let Claude AI Get Me Clients for 30 Days (240 Meetings)" — 30-day experiment tied to booked calls (needs a real, signed-off number).
-5. **Replace Your Whole Content Team With One AI System** — model: Nate "Marketing Team with 1 AI Agent" — the cobbler's-children angle, one operator + system beats a team.
+5. **Replace Your Whole Content Team With One AI System** — model: Nate "Marketing Team with 1 AI Agent" — one operator plus a system beats a whole team.
 6. **What I'd Do Instead of 'Just Post More' in 2026 (for agency owners)** — model: Nick "What I'd Learn Instead of Automation" — contrarian: system over volume.
 7. **5 AI Content Systems Every Agency Should Steal** — model: Greg "5 AI Startup Ideas" / Platten "3 Boring AI Systems" — numbered, stealable, proof attached.
 8. **The AI Content Engine, Clearly Explained (why it beats posting more)** — model: Greg "MCP clearly explained" — explainer of the mechanism for people who think content doesn't convert.

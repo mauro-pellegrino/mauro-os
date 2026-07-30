@@ -17,7 +17,7 @@ The output is two specific buckets: autodm post ideas (for X distribution this w
 
 Before producing any written output, read `brand/voice.md` and `brand/audience.md` in full. All copy must pass the pre-publish checklist in voice.md. Ground every audience-facing decision (segment, stated pain, language) in the ICP in audience.md: established agency owners whose pipeline runs on referrals and outreach, who want an AI content system installed.
 
-Also load: `brand/positioning.md` (the three content pillars) and any recent wins worth a BOF post. [WINS LOG, create `brand/wins-log.md` as results come in; until then, pull wins from `brand/sessions/` and Mauro directly.]
+Also load: `brand/positioning.md` (the two content pillars) and any recent wins worth a BOF post. [WINS LOG, create `brand/wins-log.md` as results come in; until then, pull wins from `brand/sessions/` and Mauro directly.]
 
 ---
 
@@ -115,7 +115,7 @@ Ideas should be sourced from a mix of:
 - **Trend signals**: capitalize on a live anxiety or topic spike
 - **Pain phrases from conversations**: translate a verbatim ICP frustration into a lead-magnet hook
 
-Aim for diversity across the 4 ideas: vary format (prompt file / framework / playbook / swipe file / live audit offer). All four should map to one of the three pillars (cobbler's children, anti-cringe authority, low-time system that converts).
+Aim for diversity across the 4 ideas: vary format (prompt file / framework / playbook / swipe file / live audit offer). All four should map to one of the two pillars (anti-cringe authority, low-time system that converts).
 
 ---
 

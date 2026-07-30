@@ -26,16 +26,15 @@ Full context: `brand/positioning.md`, `brand/business-context-answers.md`, `bran
 
 Established agency owners (marketing, creative, ad, social, SEO), operators already running a real agency at mid six figures a month and up, whose pipeline runs on referrals and cold outreach and is drying up. They know they should be using AI to produce content and win clients but don't have the systems for it. They want the machine installed. Not beginners. Not solo freelancers hunting cheap prompts.
 
-**Their pains:** pipeline dried up, referrals brittle. Great at delivering results, bad at selling themselves (the cobbler's children). Can't stay consistent (no time, perfectionism, "the longer I leave it the better the next post has to be"). They post and get nothing back. Outbound feels spammy and soul-sucking.
+**Their pains:** pipeline dried up, referrals brittle. Great at delivering results, bad at selling themselves. Can't stay consistent (no time, perfectionism, "the longer I leave it the better the next post has to be"). They post and get nothing back. Outbound feels spammy and soul-sucking.
 
 **Their fears:** looking cringe or like a guru, wasting time with no ROI, being on camera.
 
 **The belief to break:** "Personal branding is vanity that doesn't convert and only works if you're already known." The counter: done as a measured system off your real work, a personal brand is the most reliable client channel an agency has, and AI makes it sustainable.
 
 **Content pillars:**
-1. Cobbler's children: build the inbound engine you build for clients, for yourself.
-2. Anti-cringe authority: post as the expert without the guru ick (faceless and AI-friendly).
-3. Low-time system that proves it converts: AI as the time-multiplier, with leading indicators.
+1. Anti-cringe authority: post as the expert without the guru ick (faceless and AI-friendly).
+2. Low-time system that proves it converts: AI as the time-multiplier, with leading indicators.
 
 Mirror the language bank in `brand/audience.md`. Speak to the sophisticated operator, never the beginner. Reframe yes/no questions into expert stances.
 

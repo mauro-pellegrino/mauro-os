@@ -260,7 +260,7 @@ Bad parentheticals:
 | Title direction | Why it could work |
 |---|---|
 | *The AI content engine behind a $300k/mo agency (step by step)* | Credential anchor plus process transparency. Only someone actually running the engine can make this video. Number needs sign-off. |
-| *You build inbound for clients. Here's how to build yours.* | The cobbler's children pillar stated as a direct challenge. Speaks only to real agency owners. |
+| *The content system that books calls on 1 hour a day* | Low-time pillar plus proof-it-converts. Speaks to the owner who froze on content for lack of time. |
 | *How I turn one client call into a week of content with Claude* | Named mechanism plus speed compression. Concrete, operational, low-competition. |
 | *AI lead magnets that book calls (with the actual prompts)* | Named mechanism plus hand-over-the-goods parenthetical. |
 | *Personal branding without the cringe (a system, no face required)* | Hits the ICP's stated fear directly (cringe, being on camera). |
