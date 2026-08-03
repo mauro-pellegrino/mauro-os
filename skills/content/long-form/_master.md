@@ -236,6 +236,8 @@ Full rules in `brand/voice.md`. Non-negotiables for long-form copy:
 5. **Numbers over adjectives.** Always cite a specific dollar, count, or time figure. Real or bracketed, never invented.
 6. **Possessive operator credit** ("my", "I") in the setup. Theory-mode language ("agencies should") underperforms operator-mode language ("I shipped").
 7. **Branded effect closers** are allowed when applicable. [CALIBRATE: Mauro has not named his branded effect yet. Propose options; don't invent one silently per post.]
+8. **No clipped short-phrase stacking**, especially as an opener. A run of short clipped sentences or subject-dropped fragments ("We started on X. Moved to LinkedIn 18 months ago. Now everything's on YouTube.") reads as AI. Fold into flowing sentences with the subject kept. One short sentence for a single punch is fine; a stack of them is not.
+9. **Every line carries personality.** No flat voiceless setup or transition lines. Say what you think about the thing or how it went, don't just state the mechanic.
 
 Run every long-form through the pre-publish checklist in voice.md.
 

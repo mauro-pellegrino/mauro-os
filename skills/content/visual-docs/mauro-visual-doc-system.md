@@ -346,6 +346,8 @@ Everything scrolls in one column. The renderer measures total height and outputs
 - **"Most [group] does X."** Preacher opener. Reframe to the observation or principle. ("the most X" superlative is fine.)
 - **Two-sentence X/Y contrast.** Fold into one statement.
 - **Three-fragment staccato** ("Bigger. Faster. Cheaper."). Fold into a sentence. Bulleted lists are fine.
+- **Clipped short-phrase / subject-dropped fragment stacks**, broader than the three-word staccato: any run of short clipped sentences or subject-dropped fragments ("We started on X. Moved to LinkedIn 18 months ago. Now everything's on YouTube."), especially as an opener. Fold into flowing sentences with the subject kept.
+- **Flat, voiceless lines.** Every line carries a point of view, a real detail, or a human aside. A line that only reports information (a setup or transition with no opinion or texture) gets rewritten, not shipped.
 - **Hot-take openers**, **hype adjectives** ("insane", "wild", "game-changing"), **generic openers** ("Here's the thing / the truth").
   - Exception: the proven "Claude is INSANE for [X]" auto-DM opener is a deliberate hook, not body prose.
 - **Trailing summary / moral one-liners.** End on the point.
@@ -399,6 +401,8 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 - [ ] No em dashes in body (footer only)
 - [ ] No contrast cadence ("not X but Y", "X, not Y", "rather than", "instead of")
 - [ ] No "Most [group] does X" openers, no three-fragment staccato, no trailing morals
+- [ ] No clipped short-phrase / subject-dropped fragment stacks (especially the opener); read it aloud
+- [ ] No flat voiceless lines; every line carries a point of view, a real detail, or a human aside
 - [ ] No invented numbers (real or `[X%]`; specifics signed off)
 - [ ] No handwriting / Caveat fonts
 - [ ] Type 1: page count matches plan, no page >30% bottom whitespace, PNG dims exact

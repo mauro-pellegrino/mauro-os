@@ -117,9 +117,10 @@ Template details + pattern formulas live in `skills/content/short-form/short-for
 3. "Most brands/agencies…" openers.
 4. Problem-to-purpose reframes ("that's the filter doing its job").
 5. Filler openers: "Quick reminder", "Real talk", "Here's the thing", "Friendly reminder".
-6. AI-staccato fragments (Mauro's spec is natural full sentences; auto-DMs are the exception, not this).
+6. AI-staccato fragments, including clipped short-sentence stacks and subject-dropped fragments strung together ("We started on X. Moved to LinkedIn 18 months ago. Now everything's on YouTube."), especially as an opener. Mauro's spec is natural full sentences; auto-DMs are the exception, not this.
 7. Unverified numbers.
 8. Beginner-level framing (per `feedback_expert_not_beginner_positioning`).
+9. Flat, voiceless lines. Every line carries a point of view, a real detail, or a human aside; a line that only reports information gets rewritten.
 
 ---
 

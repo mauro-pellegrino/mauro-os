@@ -31,6 +31,24 @@ Opening with "most brands do X wrong" is one of the most overused AI and content
 
 The test: could this sentence have been written by someone who has never run the system? If yes, rewrite it with something only your own data and experience can back.
 
+**4. CHOPPY SHORT-PHRASE STACKING IS BANNED, ESPECIALLY AS AN OPENER.**
+Do not string clipped short sentences or subject-dropped fragments together for rhythm. This is broader than the three-word staccato ("Bigger. Faster. Cheaper."): a run of short clipped sentences counts too, and dropping the subject ("Moved to LinkedIn 18 months ago.") makes it worse. One short sentence for a single deliberate punch is fine. A stack of them reads as robotic AI cadence, and Mauro does not type that way.
+
+❌ "We started on X. Moved to LinkedIn 18 months ago. Now almost everything goes on YouTube first."
+❌ "Titles. Scripts. Research. All handled by the system."
+✅ "We started on X, moved to LinkedIn about 18 months ago, and now almost everything I make starts on YouTube."
+
+The test: read the opener out loud. If it sounds like a clipped list of facts instead of a person talking, fold it into flowing sentences.
+
+**5. FLAT, VOICELESS LINES ARE BANNED. EVERY LINE CARRIES PERSONALITY.**
+A sentence that only reports information, with no opinion, stake, or real-experience detail, reads as AI filler. Setup and transition lines are the usual offenders. Say what you think about the thing or how it actually went, don't just state the mechanic.
+
+❌ "The logic isn't obvious, so here it is." (throat-clearing, zero personality)
+❌ "Going from a good YouTube video to a good LinkedIn post is easy. Going the other way is not." (flat, no voice in it)
+✅ "Turning a good video into a LinkedIn post is easy. Try it the other way and you're staring at a blank page with nothing to pull from."
+
+Every paragraph carries at least one of: an opinion, a specific detail only you would know, or a casual human aside. If a paragraph is pure information, put a person back in it.
+
 ---
 
 ## The Voice in One Sentence
@@ -356,5 +374,7 @@ Run every piece of AI-assisted content through this before publishing:
 - [ ] Read it out loud. Would you say this at a coffee shop?
 - [ ] Is there anything that would make a commenter disagree?
 - [ ] Any "That's the [reframe] doing its job" / "That's not a problem, that's the system working" lines? Cut them. State the observation, don't reframe it.
+- [ ] Any clipped short-phrase or subject-dropped fragment stacks, especially the opener? Fold them into flowing sentences.
+- [ ] Read each paragraph: does it have a point of view, or is it flat information? Put personality into any flat line.
 
 The fastest way to de-AI your writing is to add something that creates friction. AI avoids disagreement, while humans don't.
