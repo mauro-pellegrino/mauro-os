@@ -38,16 +38,16 @@ Do not string clipped short sentences or subject-dropped fragments together for 
 ❌ "Titles. Scripts. Research. All handled by the system."
 ✅ "We started on X, moved to LinkedIn about 18 months ago, and now almost everything I make starts on YouTube."
 
-The test: read the opener out loud. If it sounds like a clipped list of facts instead of a person talking, fold it into flowing sentences.
+The test: read the opener out loud. If it sounds like a clipped list of facts instead of a person talking, fold it into flowing sentences. This folding is the one edit allowed on Mauro's raw phrasing: keep his words, just join them.
 
-**5. FLAT, VOICELESS LINES ARE BANNED. EVERY LINE CARRIES PERSONALITY.**
-A sentence that only reports information, with no opinion, stake, or real-experience detail, reads as AI filler. Setup and transition lines are the usual offenders. Say what you think about the thing or how it actually went, don't just state the mechanic.
+**5. PERSONALITY MEANS MAURO'S OWN WORDS, NOT INVENTED VOICE.**
+When a line reads flat, the fix is to pull Mauro's actual phrasing from the raw transcription, not to dress it up. Do not flatten his raw words into generic filler, and do not add colour he never said: invented metaphors, invented asides, or words he wouldn't use (e.g. "scramble"). His raw voice memo is the source of personality; the job is fidelity to it, with only light cleanup (fold choppy stacking per ban #4, cut repetition).
 
-❌ "The logic isn't obvious, so here it is." (throat-clearing, zero personality)
-❌ "Going from a good YouTube video to a good LinkedIn post is easy. Going the other way is not." (flat, no voice in it)
-✅ "Turning a good video into a LinkedIn post is easy. Try it the other way and you're staring at a blank page with nothing to pull from."
+❌ Flattening his words into filler: "The logic isn't obvious, so here it is."
+❌ Inventing voice he didn't use: "you're staring at a blank page", "it does the grunt work", "mediocre on four platforms."
+✅ His actual raw line: "The logic isn't obvious, so let me lay it out in a way you can copy for your own agency."
 
-Every paragraph carries at least one of: an opinion, a specific detail only you would know, or a casual human aside. If a paragraph is pure information, put a person back in it.
+The test: is every distinctive phrase traceable to something Mauro actually said in the source? If a phrase is yours and not his, replace it with his or cut it.
 
 ---
 
@@ -375,6 +375,6 @@ Run every piece of AI-assisted content through this before publishing:
 - [ ] Is there anything that would make a commenter disagree?
 - [ ] Any "That's the [reframe] doing its job" / "That's not a problem, that's the system working" lines? Cut them. State the observation, don't reframe it.
 - [ ] Any clipped short-phrase or subject-dropped fragment stacks, especially the opener? Fold them into flowing sentences.
-- [ ] Read each paragraph: does it have a point of view, or is it flat information? Put personality into any flat line.
+- [ ] Personality check: does every distinctive phrase trace to Mauro's raw words? Replace any invented voice or off-voice word (e.g. "scramble") with his actual phrasing, or cut it.
 
 The fastest way to de-AI your writing is to add something that creates friction. AI avoids disagreement, while humans don't.
