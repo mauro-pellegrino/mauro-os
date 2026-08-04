@@ -241,18 +241,22 @@ This is the default container for any script text that doesn't fit a more specif
 
 ## Vertical Spacing Guide
 
+Sections must read as separate slides. If two sections look like one continuous block when zoomed out, the gap is too small. Err on the side of too much space.
+
 | Between | Gap (px) |
 |---|---|
 | Title text → Creator pill | 150 |
 | Creator pill → Image placeholder | 100 |
 | Image placeholder → Body text | 120 |
-| Narration block → Next element | 100–120 |
-| Process title → Following content | 150 |
-| Pillar headers → Description boxes | 130 |
-| Label → Description rows | 80 between rows |
-| Two-path child nodes | 70 between nodes |
-| Section end → Next Process title | 250–300 |
-| Last content → Brand badge | 200 |
+| Narration block → Next element | 160–200 |
+| Process title → Following content | 220 |
+| Pillar headers → Description boxes | 140 |
+| Label → Description rows | 120 between rows |
+| Two-path child nodes | 80 between nodes |
+| **Section end → Next Process title** | **550–650** |
+| Last content → Brand badge | 300 |
+
+The section break is the most important number in this table. 250 was too tight in practice and made the board read as one long scroll instead of a sequence of beats.
 
 ---
 
