@@ -260,6 +260,34 @@ The section break is the most important number in this table. 250 was too tight 
 
 ---
 
+## Added Material: Always Go the Extra Mile
+
+The source material (transcript, script, voice note) is the spine of the video, not the ceiling. A board built only from what Mauro said is an under-delivered video. Every board must add the usable assets a viewer would need to actually do the thing, even when the source never mentioned them.
+
+**This is mandatory, not optional.** If a board contains no material beyond the source, it is not finished.
+
+For every topic on the board, ask what the viewer needs in order to act, then build it:
+
+| If the video covers | The board must also contain |
+|---|---|
+| A document the viewer should build (voice doc, ICP doc, brief) | The **structure** of that document, section by section, and a **copy-paste prompt** that generates a first draft |
+| A thing to avoid (AI tells, cringe patterns, bad hooks) | The **explicit list**, with a wrong example and a right example per item |
+| A process or system | A **numbered step list** that stands alone, plus what breaks at each step |
+| A tool or model workflow | The **actual prompt or config**, written out in full, not described |
+| A framework | A **named diagram** of it, and a worked example using real inputs |
+| A claim about results | The **measurement method**, so the viewer can check their own |
+
+Recurring assets that lift almost any video on this channel:
+- A copy-paste prompt block (use a plain text element, monospace-style content, so it reads as something to take)
+- A before/after pair on one real paragraph or output
+- A checklist the viewer can run in 60 seconds
+- The failure modes: what goes wrong and the symptom that shows it
+- A "start here if you have one hour" beat, so the video converts into action
+
+Where added material is Mauro's opinion rather than his logged experience, that is fine and expected. What is never fine: inventing a performance number, a client result, or a claim about what happened. Those still come only from real source material or a bracketed placeholder.
+
+---
+
 ## How to Convert a Script into a Board
 
 1. **Segment the script** — split at every new topic, subheading, named process, or clear shift in what the script is doing
