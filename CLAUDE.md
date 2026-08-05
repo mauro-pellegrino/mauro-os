@@ -79,6 +79,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Tear down an ad or piece of content from a transcript | `skills/research/ad-teardown.md` |
 | Brand breakdown for a YouTube video | `skills/youtube/youtube-brand-breakdown.md` |
 | Generate YouTube video ideas | `skills/youtube/youtube-idea-generator.md` |
+| Write a full YouTube video top-to-bottom (script + board outline) | `skills/youtube/ideal-youtube-video.md` |
 | Write YouTube hook + script | `skills/youtube/youtube-hook-script.md` |
 | Generate YouTube titles | `skills/youtube/youtube-title-generator.md` |
 | Miro board from script (Chrome ext) | `skills/youtube/miro-design-system.md` |
