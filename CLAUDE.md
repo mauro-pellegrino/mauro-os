@@ -75,6 +75,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Produce a case study (gather, structure, publish) | `skills/ops/case-study-production.md` |
 | Save a session recap | `skills/ops/save-recap.md` |
 | Weekly research brief | `skills/research/weekly-research.md` |
+| Build / rebuild Mauro's voice doc from his real corpus ("the spice project") | `skills/research/voice-extraction.md` |
 | Brand breakdown (competitor or client) | `skills/research/brand-breakdown.md` |
 | Tear down an ad or piece of content from a transcript | `skills/research/ad-teardown.md` |
 | Brand breakdown for a YouTube video | `skills/youtube/youtube-brand-breakdown.md` |
