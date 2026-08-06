@@ -65,6 +65,81 @@ Each magnet ships with:
 
 ---
 
+## Title Engineering (applies to every subtype)
+
+**Ported from `growthub-os` 2026-08-06.** The rules are universal. The evidence behind them is Growthub's, and is labelled as such, so replace it with @maurojpelle data as that accrues.
+
+### The formula
+
+`[topic a beginner recognises] + [artifact noun] + [number or year]`
+
+Three jobs. The topic earns the scroll, the **artifact noun** creates the perceived value, the number or year makes it feel current and finite.
+
+### The artifact noun is non-negotiable
+
+The title has to name the thing that lands in their DMs.
+
+Approved artifact nouns: guide, playbook, checklist, sheet, kit, system, workflow, prompt file, stack, template, swipe file, breakdown, tutorial, formats, prompts.
+
+### The evidence (Growthub account, 40 rows, pulled 2026-07-31)
+
+| Post | Views | Comment rate |
+|---|---|---|
+| AUTODM AI | 59,471 | 0.9% |
+| Winning Hooks Guide | 38,724 | 1.3% |
+| Andromeda 101 | 27,918 | **3.9%** |
+| Andromeda Redo | 20,934 | **4.0%** |
+| AI Statics Workflow | 21,057 | 3.5% |
+
+Two separate effects, and they are not the same effect:
+
+- **Breadth drives reach.** "AI" is the widest word available and pulled the highest views on the account.
+- **A concrete, currently-urgent named thing drives redemption.** The Andromeda posts hit roughly 4x the comment rate. Comments are the redemption action, so this is the number that matters for leads.
+
+Broad enough that a beginner recognises it, concrete enough that it feels urgent.
+
+**For @maurojpelle the equivalent of "Andromeda" is whatever is currently live and unresolved for agency owners.** Right now that is the skills-to-agents transition. Swap the anchor as the live problem changes.
+
+### Hard bans on titles
+
+- **No invented concept nouns.** Nobody wants a "camouflage static" or an "autopsy".
+- **No diagnoses or questions.** "Why Your Ads Stopped Scaling" promises nothing received.
+- **No sophistication signalling.** Broad title for reach, real depth for the qualified reader.
+
+### Worked corrections (Growthub, kept as pattern reference)
+
+| Rejected | Shipped |
+|---|---|
+| The Camouflage Static Swipe File | Ads That Don't Look Like Ads (Full Playbook) |
+| The 3-Bottleneck Ad Account Audit | The Meta Ads Audit Checklist (2026) |
+| The Losing-Ad Autopsy Sheet | The Losing Ads Review Sheet |
+| Rebuild a Competitor's Winner (Legally) | The Competitor Ad Teardown Kit |
+| The $3k to $100k a Day Ladder | The Scaling Checklist: $3k to $100k a Day |
+
+The pattern in every fix: stop being clever, name the object.
+
+---
+
+## THE $100 BAR
+
+**Every lead magnet has to be worth at least $100 to the person who asks for it.** Not $100 of reading. $100 of work they did not have to do.
+
+1. The magnet is **a thing you fill in, not a thing you read.** If a page has no blank field, no row to score, and no verdict at the end, it is an article wearing a magnet's title.
+2. The last two pages are usually where the $100 lives. The explainer pages are setup.
+
+The four things that clear the bar, in order of value:
+
+| | What it is |
+|---|---|
+| **Paste-ready prompts** | With variable slots, chained, in order. Including at least one that tells them no |
+| **A real swipe file** | Named examples pulled apart, plus a blank sheet so they map their own |
+| **A scoring artifact** | They put their own numbers in and get a verdict out: kill, iterate, scale |
+| **A filled-in worked example** | The template completed for a real case, so they can see what done looks like |
+
+**The test before shipping any magnet:** if someone read the whole thing and did nothing differently tomorrow, it failed, regardless of how good the writing was.
+
+---
+
 ## X Post Template
 
 The hook formulas below were proven on the agency X account Mauro ran before this brand. The structures carry; revalidate performance on this account as its own data accrues and log top performers in `brand/` as they happen.
@@ -228,19 +303,41 @@ Auto-connect OFF is the verified live setting. Do not flip it to ON.
 
 ## Cover Image Spec
 
-Every magnet has a cover image that gets attached to the X or LinkedIn post.
+Every magnet has a cover image that gets attached to the X or LinkedIn post. It is the magnet's identity in the feed, and skipping it makes the post perform noticeably worse.
 
-Consistent structure:
+### Default: screenshot the magnet's own home page (Mauro, 2026-08-06)
 
-- Colored band header at top ([BRAND COLOR — visual identity for @maurojpelle pending; pick one color and reuse it on every magnet])
-- Dark body below (near-black background, white text)
-- Title in large white sans-serif at top of dark section
-- 1-2 line subtitle in smaller white text
+**"Usually the cover image for the Notion, Gamma, or just most lead magnets is the screenshot of the home page tbh."**
+
+The default is not a designed card. It is a clean screenshot of the asset's own first screen:
+
+- **Notion magnet** -> the parent delivery page, showing title, intro callout and the list of nested subpages
+- **Gamma deck** -> slide one
+- **PDF or HTML doc** -> page one
+- **Prompt pack** -> the first page with a prompt visible
+
+**Why.** It shows the reader the actual thing they are about to receive, and the visible subpage list does the "what's inside" job for free. A designed card promises, a screenshot proves. It is also faster, since the asset already exists by the time the cover is needed.
+
+**What makes a screenshot cover work:**
+
+- Crop tight, no browser chrome, no sidebar, no cursor
+- Title legible at feed thumbnail size. If it isn't, zoom the page before capturing
+- Enough of the subpage list visible that the reader can count the pages
+- No internal UI: no comment bubbles, no Share button, no member avatars
+- Retina capture, then downscale. A 1x screenshot looks soft in feed
+
+### Fallback: the designed card
+
+Use when there is no asset to screenshot yet, or its first screen is text-heavy and dull.
+
+- Colored band header at top ([BRAND COLOR - visual identity for @maurojpelle pending; pick one and reuse it on every magnet])
+- Dark body below, near-black background, white text
+- Title in large white sans-serif
+- 1-2 line subtitle
 - "Created by @maurojpelle" credit line
-- 4-6 bulleted items showing what's inside, each prefixed with a small emoji or icon
-- Optional asset thumbnail or file icon at the bottom (used in prompt-pack covers)
+- 4-6 bulleted items showing what's inside
 
-The cover image is the magnet's identity in the feed. Skipping it = the post performs noticeably worse.
+Build the designed card as HTML and screenshot it. Do not generate it with an image model, the title and bullets have to be exactly right.
 
 ---
 
@@ -286,6 +383,40 @@ This means:
 - Visual elements (screenshots, diagrams, charts) are added manually by Mauro after the extension build
 - When a visual is needed inside a magnet, mark the spot with `[VISUAL: description of what to insert]` so Mauro knows where to drop the image manually
 - For frameworks specifically, the before/after panel can be inserted as text inside the Notion page if a visual isn't ready, then swapped for a designed panel later
+
+### Notion structure rule
+
+Every section of a magnet ("Page 1", "Page 2", ...) is a **real, separately created Notion child page** nested inside the parent delivery page. Never headings, toggles, or dividers stacked on one page.
+
+Build order: one create-pages call for the parent, then one call per section with the parent as its parent, then reference the children in the parent content. End state: parent = cover + intro + N clickable subpages + CTA + credit line. **If a build ends with all content on the parent page, it is wrong. Rebuild it as subpages.**
+
+### In-asset prompt blocks
+
+Every page of a Notion magnet ships with two generation-ready prompt blocks, so the visuals never depend on inventing prompts later.
+
+1. **Page image prompt** — a quote block where the image should render: `> **PAGE IMAGE PROMPT (16:9, <style>):** ...`
+2. **HTML style prompt** — a per-page prompt that renders that page as a styled HTML block: `> **HTML STYLE PROMPT (Claude):** ...`
+
+Three allowed image styles, rotate across them:
+
+| Style | When |
+|---|---|
+| **Real example screenshot** | Any page teaching a format or structure. **Strongest option, use it most** |
+| **Worked example** | Any page whose deliverable is a template. Show it filled in |
+| **Doodle scene** | Concept and mechanism pages only |
+
+**The rule: the image ADDS to the page, it never restates it.** Cover the page text. Does the image still teach something? If not, it is decoration and it is wrong.
+
+**Banned outright:** an infographic or "key takeaways" graphic whose content is a restatement of the text on the same page.
+
+### Render vs generate
+
+**Render as HTML and screenshot** when the image has more than ~30 words that must be exactly right, any table, checklist, aligned diagram boxes, or numbers you will want to change later.
+
+**Generate with an image model** only for illustrative work: a doodle, a scene, a metaphor, one or two short labels.
+
+**Never generate a fake example of a real thing.** A fabricated ad, a fabricated dashboard, a fabricated screenshot with invented engagement numbers. If the page teaches by example, the example has to be real.
+
 
 ---
 
