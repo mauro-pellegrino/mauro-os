@@ -73,6 +73,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Start / end of day, plan the day, accountability | `skills/ops/daily-ops.md` |
 | Weekly content loop | `skills/ops/content-loop.md` |
 | Monday acquisition analysis | `skills/ops/monday-acquisition-analysis.md` |
+| Monthly content analytics review (reach/impressions/follows from X export) | `skills/ops/content-analytics-review.md` |
 | Produce a case study (gather, structure, publish) | `skills/ops/case-study-production.md` |
 | Save a session recap | `skills/ops/save-recap.md` |
 | Weekly research brief | `skills/research/weekly-research.md` |
