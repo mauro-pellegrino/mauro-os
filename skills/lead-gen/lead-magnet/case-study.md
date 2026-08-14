@@ -170,7 +170,7 @@ Avoid: any visual that could identify a client or the agency. Blur logos, redact
 ### LinkedIn (primary channel for case studies)
 - **"I took [anonymized framing] from [number] to [bigger number]"** (Variant A, verified numbers only)
 - **"[Doing X] requires a NEW playbook"** (when the case study introduces a strategic shift)
-- **"I built the exact inbound engine agencies build for their clients. For the agency itself."** (cobbler's-children angle, the brand's core pillar)
+- **"The exact content system that books calls for a $300k/mo agency (numbers need sign-off)"** (low-time / proof-it-converts angle)
 
 ### X
 - **"After running [the system] for [timeframe], here's the [specific framework]"**

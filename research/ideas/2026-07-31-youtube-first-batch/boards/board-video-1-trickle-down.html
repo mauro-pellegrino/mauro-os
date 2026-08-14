@@ -1,0 +1,180 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>youtube-first board</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif; color:#1B1B1B;
+    background:#F7F3EA;
+    background-image:
+      linear-gradient(#ECE6D8 1px, transparent 1px),
+      linear-gradient(90deg, #ECE6D8 1px, transparent 1px);
+    background-size:54px 54px;
+  }
+  .doc { width:1080px; margin:0 auto; padding:90px 100px; }
+  .doc-title { font-size:54px; font-weight:800; letter-spacing:-1px; color:#1B4332; }
+  .doc-sub { font-size:19px; color:#5F6B62; margin-bottom:20px; }
+
+  .section { max-width:760px; margin:26px auto; }
+  .section.forest { --accent:#1B4332; --tint:#D8F3DC; }
+  .section.clay   { --accent:#C15F3C; --tint:#F7DFD3; }
+  .section.slate  { --accent:#3F5E77; --tint:#DDE7EF; }
+
+  .header-card { background:var(--accent); border-radius:12px; padding:22px 30px; text-align:center; }
+  .header-card h2 { font-size:30px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#fff; opacity:.8; margin-top:3px; }
+
+  .conn { display:block; margin:6px auto; }
+  .conn line, .conn path { stroke:var(--accent,#1B4332); stroke-width:2; fill:none; }
+  .conn polygon { fill:var(--accent,#1B4332); }
+
+  .item { background:var(--tint); border:2px solid var(--accent); border-radius:12px; padding:20px 26px; margin:12px 0; }
+  .item .pill { display:inline-block; background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace;
+    font-size:12px; font-weight:700; letter-spacing:1.5px; padding:4px 11px; border-radius:6px; margin-bottom:10px; }
+  .item h3 { font-size:24px; font-weight:700; color:#1B1B1B; }
+  .item p  { font-size:18px; color:#33413B; margin-top:4px; }
+
+  .tiles { display:flex; gap:14px; }
+  .tile { flex:1; background:#fff; border:2px solid var(--accent); border-radius:12px; padding:20px; text-align:center; }
+  .tile .n { font-size:52px; font-weight:800; color:var(--accent); line-height:1; }
+  .tile .l { font-size:14px; color:#5F6B62; margin-top:6px; }
+
+  table { width:100%; border-collapse:collapse; border-radius:12px; overflow:hidden; }
+  th { background:var(--accent); color:#fff; font-size:15px; text-align:left; padding:12px 16px; }
+  td { background:#fff; font-size:17px; padding:12px 16px; border-top:1px solid #EAE3D4; }
+  tr:nth-child(even) td { background:#FBF8F1; }
+
+  .compare { display:flex; gap:14px; }
+  .col { flex:1; border:2px solid var(--accent); border-radius:12px; overflow:hidden; }
+  .col .h { background:var(--accent); color:#fff; font-weight:700; padding:12px 16px; font-size:16px; }
+  .col ul { list-style:none; padding:12px 16px; }
+  .col li { font-size:17px; padding:5px 0; }
+
+  .rail { border-left:3px solid var(--accent); margin-left:20px; padding-left:26px; }
+  .rail .step { position:relative; margin:14px 0; }
+  .rail .step .b { position:absolute; left:-40px; top:0; width:30px; height:30px; border-radius:50%;
+    background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace; font-weight:700;
+    font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .rail .step h3 { font-size:21px; font-weight:700; color:#1B1B1B; }
+  .rail .step p { font-size:16px; color:#5F6B62; }
+
+  .callout { background:var(--accent); color:#fff; border-radius:12px; padding:24px 30px;
+    font-size:25px; font-weight:700; text-align:center; }
+
+  .tag-win { display:inline-block; background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace;
+    font-size:11px; font-weight:700; letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px; }
+  .hl { border-bottom:3px solid #E9B949; }
+
+  .footer { text-align:center; margin-top:56px; color:#1B4332; font-size:14px; opacity:.7; }
+</style></head>
+<body>
+  <div class="doc">
+    <div class="doc-title">why we build on youtube first</div>
+    <div class="doc-sub">one video, every platform, run with AI</div>
+
+    <!-- 1 · Forest · timeline (the migration) -->
+    <div class="section forest">
+      <div class="header-card"><h2>the migration</h2><div class="sub">where the brand has lived</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <div class="rail">
+        <div class="step"><span class="b">1</span><h3>X</h3><p>where it started</p></div>
+        <div class="step"><span class="b">2</span><h3>LinkedIn</h3><p>18 months ago</p></div>
+        <div class="step"><span class="b">3</span><h3>YouTube <span class="tag-win">NOW</span></h3><p>going hard, first</p></div>
+      </div>
+    </div>
+
+    <!-- 2 · Clay · compare (the core rule) -->
+    <div class="section clay">
+      <div class="header-card"><h2>the core rule</h2></div>
+      <div class="compare">
+        <div class="col"><div class="h">Big → small</div><ul><li>video → posts</li><li>repurposing</li><li>easy</li></ul></div>
+        <div class="col"><div class="h">Small → big</div><ul><li>post → video</li><li>inventing from zero</li><li>impossible</li></ul></div>
+      </div>
+    </div>
+
+    <!-- 3 · Slate · split → one source many cuts -->
+    <div class="section slate">
+      <div class="header-card"><h2>one source, many cuts</h2><div class="sub">the trickle-down</div></div>
+      <svg class="conn" width="360" height="56" viewBox="0 0 360 56"><path d="M180 0 V18 M40 38 V18 H320 V38 M180 18 V38"/><polygon points="33,36 47,36 40,48"/><polygon points="173,36 187,36 180,48"/><polygon points="313,36 327,36 320,48"/></svg>
+      <div class="item"><span class="pill">SOURCE</span><h3>1 YouTube video</h3><p>the widest version of the idea</p></div>
+      <div class="tiles" style="margin-top:12px;">
+        <div class="tile"><div class="n">X</div><div class="l">thread</div></div>
+        <div class="tile"><div class="n">in</div><div class="l">LinkedIn post</div></div>
+        <div class="tile"><div class="n">IG</div><div class="l">clip</div></div>
+      </div>
+    </div>
+
+    <!-- 4 · Forest · callout (why youtube for high-ticket) -->
+    <div class="section forest">
+      <div class="header-card"><h2>why youtube for $10k deals</h2></div>
+      <div class="callout">Trust gets built in a <span class="hl">12-minute</span> video, not a 10-second post.</div>
+    </div>
+
+    <!-- 5 · Clay · stat tiles (trust math) -->
+    <div class="section clay">
+      <div class="header-card"><h2>the trust gap</h2></div>
+      <div class="tiles">
+        <div class="tile"><div class="n">12m</div><div class="l">watching you think</div></div>
+        <div class="tile"><div class="n">10s</div><div class="l">one post, then gone</div></div>
+        <div class="tile"><div class="n">$10k+</div><div class="l">what trust closes</div></div>
+      </div>
+    </div>
+
+    <!-- 6 · Slate · item cards (the ai layer) -->
+    <div class="section slate">
+      <div class="header-card"><h2>the ai layer</h2><div class="sub">skills in Claude Code</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <div class="item"><span class="pill">IDEAS</span><h3>Idea generation</h3><p>off competitor outliers</p></div>
+      <div class="item"><span class="pill">TITLES</span><h3>Title writing</h3><p>mechanism-based</p></div>
+      <div class="item"><span class="pill">SCRIPTS</span><h3>Scriptwriting</h3><p>the record-ready draft</p></div>
+      <div class="item"><span class="pill">RESEARCH</span><h3>Competitor research</h3><p>YouTube MCP, saved natively</p></div>
+    </div>
+
+    <!-- 7 · Forest · step rail (the skill loop) -->
+    <div class="section forest">
+      <div class="header-card"><h2>the skill loop</h2><div class="sub">how the machine sharpens</div></div>
+      <div class="rail">
+        <div class="step"><span class="b">1</span><h3>Build a skill</h3><p>one job, e.g. scriptwriting</p></div>
+        <div class="step"><span class="b">2</span><h3>Test on real work</h3><p>a real script, not a fake one</p></div>
+        <div class="step"><span class="b">3</span><h3>Find the break</h3><p>read the output</p></div>
+        <div class="step"><span class="b">4</span><h3>Ask Claude to edit it</h3><p>then run again</p></div>
+      </div>
+    </div>
+
+    <!-- 8 · Clay · callout (the honest part) -->
+    <div class="section clay">
+      <div class="header-card"><h2>the honest part</h2></div>
+      <div class="callout">The first version is always bad. Even a good skill can get a lot better.</div>
+    </div>
+
+    <!-- 9 · Slate · stat tiles (the cadence) -->
+    <div class="section slate">
+      <div class="header-card"><h2>the cadence</h2></div>
+      <div class="tiles">
+        <div class="tile"><div class="n">2-3</div><div class="l">videos / week</div></div>
+        <div class="tile"><div class="n">1</div><div class="l">source each</div></div>
+        <div class="tile"><div class="n">4</div><div class="l">platforms fed</div></div>
+      </div>
+    </div>
+
+    <!-- 10 · Forest · table (the system) -->
+    <div class="section forest">
+      <div class="header-card"><h2>the system</h2><div class="sub">how it fits together</div></div>
+      <table>
+        <tr><th>Layer</th><th>What it does</th></tr>
+        <tr><td>Source</td><td>1 high-quality YouTube video</td></tr>
+        <tr><td>Cadence</td><td>2-3 a week, mapped ahead</td></tr>
+        <tr><td>AI</td><td>ideas, titles, scripts, research, repurposing</td></tr>
+        <tr><td>Human</td><td>taste, and the parts only you can say</td></tr>
+      </table>
+    </div>
+
+    <!-- 11 · Forest · CTA callout -->
+    <div class="section forest">
+      <div class="callout">Flip the order. Go YouTube-first. DM me "youtube" on X.</div>
+    </div>
+
+    <div class="footer">@maurojpelle</div>
+  </div>
+</body></html>

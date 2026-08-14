@@ -13,10 +13,12 @@
 **One-line positioning:** You build the inbound machine for your clients. I'll show you how to build it for yourself, with AI doing the heavy lifting.
 
 **Proof (his own, operational):**
-- He architected and runs the AI content and client-acquisition engine for the agency he runs (about $300k/mo, at least a third of it from the organic accounts he manages). He recently closed a $28k deal off X.
+- He architected and runs the AI content and inbound engine for Growthub, the B2B agency he runs content and acquisition for (about $300k/mo, at least a third of it from the organic accounts he manages). He recently closed a $28k deal off X.
 - He ties content to booked calls and runs a weekly acquisition analysis. The engine is measured, and it converts.
 - He's moving from skills toward agents, ahead of most operators.
 - Any specific public number needs Mauro's sign-off before use. Never borrow the agency's anchors as his personal proof.
+
+**Lane boundary (Mauro vs Growthub):** Ecom, brands, and Meta ad creative is *Growthub's* service, what the agency delivers, not Mauro's. Mauro's lane is inbound: personal brand, YouTube, and content systems that book calls (this is how he generates inbound calls for Growthub). Never position Mauro as an ecom or ad-creative practitioner, and never make his content about running Meta ads for brands.
 
 Full context: `brand/positioning.md`, `brand/business-context-answers.md`, `brand/operating-baseline.md`.
 
@@ -26,16 +28,15 @@ Full context: `brand/positioning.md`, `brand/business-context-answers.md`, `bran
 
 Established agency owners (marketing, creative, ad, social, SEO), operators already running a real agency at mid six figures a month and up, whose pipeline runs on referrals and cold outreach and is drying up. They know they should be using AI to produce content and win clients but don't have the systems for it. They want the machine installed. Not beginners. Not solo freelancers hunting cheap prompts.
 
-**Their pains:** pipeline dried up, referrals brittle. Great at delivering results, bad at selling themselves (the cobbler's children). Can't stay consistent (no time, perfectionism, "the longer I leave it the better the next post has to be"). They post and get nothing back. Outbound feels spammy and soul-sucking.
+**Their pains:** pipeline dried up, referrals brittle. Great at delivering results, bad at selling themselves. Can't stay consistent (no time, perfectionism, "the longer I leave it the better the next post has to be"). They post and get nothing back. Outbound feels spammy and soul-sucking.
 
 **Their fears:** looking cringe or like a guru, wasting time with no ROI, being on camera.
 
 **The belief to break:** "Personal branding is vanity that doesn't convert and only works if you're already known." The counter: done as a measured system off your real work, a personal brand is the most reliable client channel an agency has, and AI makes it sustainable.
 
 **Content pillars:**
-1. Cobbler's children: build the inbound engine you build for clients, for yourself.
-2. Anti-cringe authority: post as the expert without the guru ick (faceless and AI-friendly).
-3. Low-time system that proves it converts: AI as the time-multiplier, with leading indicators.
+1. Anti-cringe authority: post as the expert without the guru ick (faceless and AI-friendly).
+2. Low-time system that proves it converts: AI as the time-multiplier, with leading indicators.
 
 Mirror the language bank in `brand/audience.md`. Speak to the sophisticated operator, never the beginner. Reframe yes/no questions into expert stances.
 
@@ -72,6 +73,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Start / end of day, plan the day, accountability | `skills/ops/daily-ops.md` |
 | Weekly content loop | `skills/ops/content-loop.md` |
 | Monday acquisition analysis | `skills/ops/monday-acquisition-analysis.md` |
+| Monthly content analytics review (reach/impressions/follows from X export) | `skills/ops/content-analytics-review.md` |
 | Produce a case study (gather, structure, publish) | `skills/ops/case-study-production.md` |
 | Save a session recap | `skills/ops/save-recap.md` |
 | Weekly research brief | `skills/research/weekly-research.md` |
@@ -87,6 +89,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Miro board brief from script | `skills/youtube/youtube-miro-board.md` |
 | Canva slide deck | `skills/youtube/youtube-canva-slides.md` |
 | VA visual production brief for slides | `skills/youtube/youtube-slide-visuals.md` |
+| Judge a tweet + draft a reply in Mauro's voice | `skills/content/x-reply-assistant.md` |
 | X article from transcript or script | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
 | Long-form post (video, infographic/HTML, doc screenshot, case study) | `skills/content/long-form/_master.md` + the matching subtype file |

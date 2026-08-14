@@ -18,6 +18,9 @@
 - [feedback_lead_magnet_no_repo_save.md](feedback_lead_magnet_no_repo_save.md) — Don't save lead magnets to repo; they go to Notion + X analytics
 - [feedback_youtube_series_not_oneoffs.md](feedback_youtube_series_not_oneoffs.md) — YouTube ideas must be episodes of repeatable series, never one-off videos
 
+## Reference
+- [jk-molina-reference-library.md](jk-molina-reference-library.md) — Whale-bait / minimalist-$1M PDFs are JK Molina's (Likes Aint Cash / cashie.studio), filed in research/jk-molina/ — not Charlie Morgan
+
 ## Project
 - [project_mauro_personal_brand.md](project_mauro_personal_brand.md) — Mauro's personal brand for agency owners using AI
 - [project_claude_insane_autodm_opener.md](project_claude_insane_autodm_opener.md) — "Claude is INSANE for [X]" is a proven opener for Claude-based auto-DM lead-gen posts

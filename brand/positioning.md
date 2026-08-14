@@ -20,7 +20,7 @@ Agency owners (marketing/creative/ad/social/SEO) whose pipeline is referral- and
 
 ## Who it's NOT for
 
-Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT the lane of the agency Mauro runs (selling Meta creative to ecom brand operators). Different audience, different promise.
+Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT Growthub's lane: ecom, brands, and Meta ad creative is the agency's *service*, what Growthub delivers, not Mauro's. Mauro has nothing to do with ecom or ad creative. His lane is inbound (personal brand, YouTube, content), and that inbound is what books Growthub its calls. Different audience, different promise.
 
 ## The belief Mauro breaks
 
@@ -39,9 +39,8 @@ He's *in it daily*, building and measuring, not theorizing. And he's honest abou
 
 ## Content pillars (from the audience's stated wants)
 
-1. **Cobbler's children** — build your own inbound engine, the one you build for clients.
-2. **Anti-cringe authority** — post as the expert without the guru ick (faceless/AI-friendly, since they fear being on camera).
-3. **Low-time system that proves it converts** — AI as the time-multiplier, with leading indicators so they don't quit at week three.
+1. **Anti-cringe authority** — post as the expert without the guru ick (faceless/AI-friendly, since they fear being on camera).
+2. **Low-time system that proves it converts** — AI as the time-multiplier, with leading indicators so they don't quit at week three.
 
 ## Voice
 

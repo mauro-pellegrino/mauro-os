@@ -105,7 +105,7 @@ Starter list from his brand files. [CALIBRATE: extract the full list from Mauro'
 - "inbound" (the outcome his ICP wants)
 - "operator" (how he addresses the reader, peer to peer)
 - "show the work" / "build in public"
-- "the cobbler's children" (agencies great at delivery, bad at their own pipeline)
+- the pain, stated plainly (agencies great at delivery, bad at their own pipeline)
 - "leftover hours" (the time constraint his ICP lives in)
 - Numbers always written as numerals: $28k, 3 systems, 5 formats
 - Timeframes always specific: "last 6 months", "in mid-2026"
@@ -281,7 +281,7 @@ Templates:
 Mauro-lane examples:
 - `the real reason your posts don't book calls (and it's not the writing)`
 - `why agency content dies at week three — the mechanism nobody names`
-- `the cobbler's children problem: why agencies can't market themselves`
+- `why agencies can't market themselves (and the system that fixes it)`
 
 **Best for:** Articles that explain the mechanism behind why something works.
 

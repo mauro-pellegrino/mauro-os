@@ -117,9 +117,10 @@ Template details + pattern formulas live in `skills/content/short-form/short-for
 3. "Most brands/agencies…" openers.
 4. Problem-to-purpose reframes ("that's the filter doing its job").
 5. Filler openers: "Quick reminder", "Real talk", "Here's the thing", "Friendly reminder".
-6. AI-staccato fragments (Mauro's spec is natural full sentences; auto-DMs are the exception, not this).
+6. AI-staccato fragments, including clipped short-sentence stacks and subject-dropped fragments strung together ("We started on X. Moved to LinkedIn 18 months ago. Now everything's on YouTube."), especially as an opener. Mauro's spec is natural full sentences; auto-DMs are the exception, not this.
 7. Unverified numbers.
 8. Beginner-level framing (per `feedback_expert_not_beginner_positioning`).
+9. Invented voice. Personality means Mauro's own words from the raw transcription, not invented metaphors/asides or off-voice words (e.g. "scramble"). Don't flatten his raw phrasing into filler; every distinctive phrase traces to something he actually said.
 
 ---
 

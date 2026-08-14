@@ -31,6 +31,24 @@ Opening with "most brands do X wrong" is one of the most overused AI and content
 
 The test: could this sentence have been written by someone who has never run the system? If yes, rewrite it with something only your own data and experience can back.
 
+**4. CHOPPY SHORT-PHRASE STACKING IS BANNED, ESPECIALLY AS AN OPENER.**
+Do not string clipped short sentences or subject-dropped fragments together for rhythm. This is broader than the three-word staccato ("Bigger. Faster. Cheaper."): a run of short clipped sentences counts too, and dropping the subject ("Moved to LinkedIn 18 months ago.") makes it worse. One short sentence for a single deliberate punch is fine. A stack of them reads as robotic AI cadence, and Mauro does not type that way.
+
+❌ "We started on X. Moved to LinkedIn 18 months ago. Now almost everything goes on YouTube first."
+❌ "Titles. Scripts. Research. All handled by the system."
+✅ "We started on X, moved to LinkedIn about 18 months ago, and now almost everything I make starts on YouTube."
+
+The test: read the opener out loud. If it sounds like a clipped list of facts instead of a person talking, fold it into flowing sentences. This folding is the one edit allowed on Mauro's raw phrasing: keep his words, just join them.
+
+**5. PERSONALITY MEANS MAURO'S OWN WORDS, NOT INVENTED VOICE.**
+When a line reads flat, the fix is to pull Mauro's actual phrasing from the raw transcription, not to dress it up. Do not flatten his raw words into generic filler, and do not add colour he never said: invented metaphors, invented asides, or words he wouldn't use (e.g. "scramble"). His raw voice memo is the source of personality; the job is fidelity to it, with only light cleanup (fold choppy stacking per ban #4, cut repetition).
+
+❌ Flattening his words into filler: "The logic isn't obvious, so here it is."
+❌ Inventing voice he didn't use: "you're staring at a blank page", "it does the grunt work", "mediocre on four platforms."
+✅ His actual raw line: "The logic isn't obvious, so let me lay it out in a way you can copy for your own agency."
+
+The test: is every distinctive phrase traceable to something Mauro actually said in the source? If a phrase is yours and not his, replace it with his or cut it.
+
 ---
 
 ## The Voice in One Sentence
@@ -356,5 +374,7 @@ Run every piece of AI-assisted content through this before publishing:
 - [ ] Read it out loud. Would you say this at a coffee shop?
 - [ ] Is there anything that would make a commenter disagree?
 - [ ] Any "That's the [reframe] doing its job" / "That's not a problem, that's the system working" lines? Cut them. State the observation, don't reframe it.
+- [ ] Any clipped short-phrase or subject-dropped fragment stacks, especially the opener? Fold them into flowing sentences.
+- [ ] Personality check: does every distinctive phrase trace to Mauro's raw words? Replace any invented voice or off-voice word (e.g. "scramble") with his actual phrasing, or cut it.
 
 The fastest way to de-AI your writing is to add something that creates friction. AI avoids disagreement, while humans don't.

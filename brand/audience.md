@@ -25,7 +25,7 @@ Owners/founders of marketing, creative, ad, social, or SEO agencies (and solo op
 - "Over the past couple months my main lead sources have dried up. Referrals have slowed down. Basically losing clients and not able to replace them." — [r/PPC](https://www.reddit.com/r/PPC/comments/15f2err/for_ads_agency_owners_and_freelancers_how_are_you/)
 - "My agency has went down almost 60-70%... we don't know how long it'll run." — [r/agency](https://www.reddit.com/r/agency/comments/1fw5sg9/my_agency_is_performing_the_worst_ive_ever_seen/)
 
-**2. The cobbler's children (great at delivery, bad at selling themselves)**
+**2. Great at delivery, bad at selling themselves**
 - "I was great at delivering results but bad at sales." — [r/agency](https://www.reddit.com/r/agency/comments/1ium035/why_im_closing_my_agency_lessons_learned/)
 - "We'd crush lead gen for clients... but filling our own pipeline? Totally different game." — [r/agency](https://www.reddit.com/r/agency/comments/1ium035/why_im_closing_my_agency_lessons_learned/)
 
@@ -69,12 +69,11 @@ Owners/founders of marketing, creative, ad, social, or SEO agencies (and solo op
 
 "dried up" · "losing clients and not able to replace them" · "great at delivering results but bad at sales" · "filling our own pipeline is a totally different game" · "screaming into the void" · "spammy, soul-sucking" · "dark social" · "they reached out to me first" · "yes it's cringe but it works" · "I'm not into cringe posting" · "emotionally exhausting" · "the longer I leave it the better the next post has to be" · "haven't found my voice" · "promised me the world and delivered nothing" · "positions you as an expert" · "gives you leverage" · "slow burn" · "without it consuming my life and time" · "race to the bottom"
 
-## The 3 content angles they're begging for (pillars)
+## The 2 content angles they're begging for (pillars)
 
-1. **Cobbler's children:** build the inbound engine you build for clients, for yourself.
-2. **Anti-cringe authority:** post as the expert without the guru ick (faceless/AI-friendly).
-3. **Low-time system that proves it converts:** AI as the time-multiplier, with leading indicators so they don't quit at week three.
+1. **Anti-cringe authority:** post as the expert without the guru ick (faceless/AI-friendly).
+2. **Low-time system that proves it converts:** AI as the time-multiplier, with leading indicators so they don't quit at week three.
 
 ## How to use
 
-Every @maurojpelle post, video, or article aims at this ICP and one of the 3 pillars. Mirror the language bank. Lead with proof over theory. Never sound like the guru they're afraid of becoming.
+Every @maurojpelle post, video, or article aims at this ICP and one of the 2 pillars. Mirror the language bank. Lead with proof over theory. Never sound like the guru they're afraid of becoming.

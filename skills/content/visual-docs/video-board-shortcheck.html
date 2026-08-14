@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Video board short check</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif; color:#1B1B1B;
+    background:#F7F3EA;
+    background-image:
+      linear-gradient(#ECE6D8 1px, transparent 1px),
+      linear-gradient(90deg, #ECE6D8 1px, transparent 1px);
+    background-size:54px 54px;
+  }
+  .doc-title { font-size:48px; font-weight:800; letter-spacing:-1px; color:#1B4332; margin-bottom:8px; }
+  .doc-sub { font-size:18px; color:#5F6B62; }
+  .header-card { background:#1B4332; border-radius:12px; padding:26px 32px; text-align:center; margin:0 auto 20px; max-width:640px; }
+  .header-card h2 { font-size:28px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#B7E4C7; margin-top:4px; }
+
+  /* video-board corrections (short: frame pinned to 700px for a quick PNG check) */
+  :root { --frame-h: 700px; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  html::-webkit-scrollbar { display: none; }
+  .frame { min-height: var(--frame-h); scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 56px 100px; box-sizing: border-box; }
+  .frame > .inner { width: 100%; max-width: 940px; }
+  .frame img, .frame .shot { display:block; margin:0 auto; width:auto; height:auto; max-width:100%; max-height:60vh; object-fit:contain; border-radius:12px; border:1px solid #D8CFBB; }
+  .slot { display:flex; align-items:center; justify-content:center; text-align:center; max-width:100%; }
+  .slot--tweet { min-height:46vh; }
+  .slot--wide  { min-height:44vh; }
+</style></head>
+<body>
+
+  <section class="frame">
+    <div class="inner" style="text-align:center;">
+      <div class="doc-title">How I scaled this account</div>
+      <div class="doc-sub">a breakdown, section by section</div>
+    </div>
+  </section>
+
+  <section class="frame">
+    <div class="inner">
+      <div class="header-card"><h2>The tweet that started it</h2><div class="sub">problem aware</div></div>
+      <!-- blank reserved space; paste <img class="shot" src="images/tweet-1.png"> or type text here -->
+      <div class="slot slot--tweet"></div>
+    </div>
+  </section>
+
+</body></html>
