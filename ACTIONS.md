@@ -15,15 +15,19 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 ---
 
-## UNBLOCK JUAN
+## JUAN
 
-He stalled 23 July after 3 commits. Every remaining task in his plan waits on Mauro.
+Not stalled. 17 commits between 30 July and 14 Aug, all stranded on `research/youtube-competitor-mining` because the branch was never merged after PR #1. Merged to main 14 Aug (`7095d78`), zero conflicts.
 
-- [ ] Send Juan these 3, in order:
-  - Phase 1.1, scaffold the 9 missing folders
-  - YouTube transcript into `research/transcripts/maurojpelle/`
-  - Turn his 9-channel research into a pick-4-to-6 table
-- [ ] Confirm he's still active. 3 weeks silent could be capacity, not blockers.
+**Process fix so this doesn't repeat:**
+
+- [ ] New branch per batch, PR opened when the batch is done, merged the same week. Never keep committing to a branch that already merged.
+- [ ] Delete `research/youtube-competitor-mining` now that it's in main, so the next batch starts clean.
+
+**Still open from his plan:**
+
+- [ ] Phase 1.1 scaffolding. `brand/short-form-batches/` and `research/ideas/` now exist. Still missing: `brand/social-proof/`, `brand/wins-log.md`, `ops/daily/`, `ops/acquisition/`, `ops/weekly/`, `research/weekly-briefs/`, `skills/content/linkedin-docs/personalized-decks/agency-owners/`
+- [ ] Pick 4-6 monitored channels from his research. `[MONITORED CHANNELS]` is still a placeholder in `skills/research/weekly-research.md` and `skills/youtube/youtube-hook-script.md`
 - [ ] Do NOT give him the agency-inbound deck yet. It needs social proof, which needs the analytics export.
 
 ---

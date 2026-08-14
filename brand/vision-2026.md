@@ -21,9 +21,9 @@ Everything below is sized against 120 hours, not against an open-ended runway.
 
 Named on 1 July, in his own words: *"I hide in building systems because it feels productive, instead of shipping my own thing and putting it in front of people. I optimize what I can measure and avoid the uncomfortable work of selling."*
 
-Six weeks of git history since then supports it. 46 commits from Mauro, almost all of them skills, research and infrastructure. In the same period: no offer defined, no X analytics baseline pulled, no post shipped from the repo, no outreach conversation logged.
+Six weeks of git history since then supports it. 46 commits from Mauro plus 17 from Juan, almost all of them skills, research and infrastructure. Two people producing steadily. In the same period: no offer defined, no X analytics baseline pulled, no post published, no outreach conversation logged.
 
-The enemy is not time. It is that building produces a visible artifact every session and selling produces rejection.
+Capacity is not the constraint, and the merge proved it. Building produces a visible artifact every session. Selling produces rejection. That asymmetry is the enemy.
 
 ---
 
@@ -31,7 +31,7 @@ The enemy is not time. It is that building produces a visible artifact every ses
 
 It is 31 December 2026. The brand has made $0. The X account is still around 200 followers. There is still one YouTube video.
 
-The repo has grown to twice its size. There are skills for lead magnets, articles, long-forms, YouTube boards, Miro design systems and DM setting, all of them well built, none of them ever run against a paying client of his own. The 26 voicenote questions are still unanswered. The Juan loop never restarted after 23 July. `[BOOKING LINK]` and `[MONITORED CHANNELS]` are still placeholders.
+The repo has grown to twice its size. There are skills for lead magnets, articles, long-forms, YouTube boards, Miro design systems and DM setting, all of them well built, none of them ever run against a paying client of his own. The 26 voicenote questions are still unanswered. Juan kept producing all year and every batch landed in the repo instead of in front of a buyer. `[BOOKING LINK]` and `[MONITORED CHANNELS]` are still placeholders.
 
 The agency is fine. It always was. That's what makes this version survivable, and that's why it's the likely one.
 
@@ -92,7 +92,7 @@ The split from `operating-baseline.md`, costed against 6 hours a week:
 
 Content is packaging of work already done. It is not net-new creation. Anything that reads as net-new creation is the enemy in disguise.
 
-**Juan's three unblocking tasks, in order:** Phase 1.1 folder scaffolding, the YouTube transcript into `research/transcripts/maurojpelle/`, then the 9-channel research turned into a pick-4-to-6 table. Everything else in `JUAN-PLAN.md` waits on inputs only Mauro can supply.
+**Juan is producing, and the output is not the constraint.** 17 commits merged on 14 Aug: the JK Molina reference library, two new skills, voice corrections, a short-form batch and a YouTube batch. What's missing is the merge and review loop, so his work reaches main the same week instead of sitting on a branch. Two things still need Mauro: the Phase 1.1 folders that remain, and picking 4-6 monitored channels so `[MONITORED CHANNELS]` resolves.
 
 ---
 
