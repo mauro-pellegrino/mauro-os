@@ -86,6 +86,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Miro board brief from script | `skills/youtube/youtube-miro-board.md` |
 | Canva slide deck | `skills/youtube/youtube-canva-slides.md` |
 | VA visual production brief for slides | `skills/youtube/youtube-slide-visuals.md` |
+| Judge a tweet + draft a reply in Mauro's voice | `skills/content/x-reply-assistant.md` |
 | X article from transcript or script | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
 | Long-form post (video, infographic/HTML, doc screenshot, case study) | `skills/content/long-form/_master.md` + the matching subtype file |
