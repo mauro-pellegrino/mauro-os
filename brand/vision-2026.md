@@ -59,24 +59,26 @@ Identity statement to test against the personal run:
 
 Break: one client at $5k/mo, or two at $2.5k. Both are well inside what his own proof supports. `operating-baseline.md` already flags the $100 workshop idea as the wrong price for this buyer.
 
-**The one concrete thing that proves the pattern broke:** a signed client who found him through his own channel, not the agency's.
+**The one concrete thing that proves the pattern broke:** a signed client who found him through his own channel.
+
+**The ICP, sharpened 17 Aug:** an agency owner who already makes good YouTube videos but isn't converting them on X or LinkedIn, and wants to set the system up himself. Named examples of the profile: Brando, @antonioventre. The qualifier is "do you already have YouTube videos?"
 
 ---
 
-## 5. The boss fight (next 30 days, to 12 Sep)
+## 5. The boss fight (next 30 days)
 
-**Define, price and sell the offer.**
+**Send the offer. It is already defined.**
 
-Not build anything new. Everything needed already exists in the repo.
+"Agency Booked Calls" was built in cashie.studio and formalised 17 Aug: 2 booked calls in 30 days, $200/week x 4, 1 spot, standing. The defining work is done. The sending has not started.
 
 | Week | What ships |
 |---|---|
-| 1 | Section A of the voicenote questions answered. Offer doc drafted from them: promise, deliverables, price, delivery process |
+| 1 | The four validation scripts sent: Brando, the 2-3 churned contacts, the referral ask, the 200-follower hand raiser |
 | 2 | X analytics exported, first `ops/acquisition/` baseline built, Monday analysis run for real |
-| 3 | Three named agency owners contacted directly about the offer |
+| 3 | Follow-ups on anyone who replied. Skool channel decision made |
 | 4 | First call held. Offer revised from what actually got asked on it |
 
-The gate at day 30 is one sales conversation held, not one asset shipped.
+The gate at day 30 is one sales conversation held, not one asset shipped. Nothing here requires building a new asset first.
 
 ---
 
@@ -103,7 +105,7 @@ Content is packaging of work already done. It is not net-new creation. Anything 
 3. Nothing publishes without Mauro's review.
 4. Never name clients in public-facing content.
 5. Never fabricate a number. Bracket it or leave it out.
-6. No Growthub material in this repo, ever.
+6. Nothing from the agency's brand or repo in this repo, ever.
 7. Articles and lead magnets never get saved to the repo.
 
 ---

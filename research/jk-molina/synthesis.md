@@ -97,7 +97,7 @@ Consistent across all 16:
 
 Resolved 14 Aug: keep both. The value model stays at `skills/lead-gen/lead-magnet/`. The insight model lives at `skills/lead-gen/lead-magnet-insight/`.
 
-**Lorenzo rejected the insight approach** for Growthub in `#course-creator_club` (Oct 2024): "we sell to rich people that want to become richer, they want to save time and get there earlier, more than save a couple thousands." That argument transfers to agency owners at $300k/mo.
+**the agency owner rejected the insight approach** for the agency in `#course-creator_club` (Oct 2024): "we sell to rich people that want to become richer, they want to save time and get there earlier, more than save a couple thousands." That argument transfers to agency owners at $300k/mo.
 
 **What doesn't transfer.** JK sells coaching to solopreneurs, daily email offers, $250/week group access. Mauro sells an install to agency owners on 5-7 hours a week with no list, no landing page and no payment processor. The ladder transfers. The cadence does not.
 

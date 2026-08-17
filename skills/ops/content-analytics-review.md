@@ -67,7 +67,7 @@ Rank formats by **mean impressions per post** and by **follows**, not by total i
 ### Distribution (the core of this review)
 The reply-reach-by-account table is the most actionable thing here. For each account he replies to:
 - **High imp + high follows** → keep replying, this room converts (baseline example: @perkmaybe, 3 replies to 3 follows).
-- **High imp + zero follows** → reach without conversion. Fine for visibility, but he's spending a lot of replies for nothing (baseline: @lorenzo_pravata, 27 replies, 1,470 imp, 0 follows, mostly banter). Flag it.
+- **High imp + zero follows** → reach without conversion. Fine for visibility, but he's spending a lot of replies for nothing (baseline: [agency owner account], 27 replies, 1,470 imp, 0 follows, mostly banter). Flag it.
 - **One-off big hits** → replying under a large account once spiked reach (baseline: @thedankoe 1,349 imp off one reply). These say "reply more under big accounts in the niche," which is a distribution lever, not luck to chase randomly.
 
 Then look at the follow-driver list: what actually produced follows this month, and what format/room those came from.

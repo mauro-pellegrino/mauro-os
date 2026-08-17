@@ -35,7 +35,7 @@ Give a clear verdict first. Two questions decide it:
 
 **A. Is it in or adjacent to his lane?**
 Green: content, AI for content, personal branding, B2B acquisition, agency ops, outbound, lead gen, X/LinkedIn growth, build-in-public from operators.
-Red: ecom, brand/ad creative, Meta ads for brands (that's Growthub's service, not Mauro's lane, per CLAUDE.md lane boundary). Also anything with zero overlap to his world where the only upside is random networking.
+Red: ecom, brand/ad creative, Meta ads for brands (that's the agency's service, not Mauro's lane, per CLAUDE.md lane boundary). Also anything with zero overlap to his world where the only upside is random networking.
 
 **B. Does he genuinely have something to add?**
 A real take, a real tactic, a real experience, a real question, or genuine warmth for someone in his orbit. If the honest answer is "not really," it's a skip. Forced replies read as engagement farming and are a waste of his time.
@@ -152,7 +152,7 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 ## Cross-Reference
 
 - **Voice rules + AI tells**: `brand/voice.md`
-- **Lane boundary (Mauro vs Growthub)**: `CLAUDE.md` section 1
+- **Lane boundary (Mauro vs the agency)**: `CLAUDE.md` section 1
 - **ICP + rooms worth being in**: `brand/audience.md`
 - **Positioning / proof he can reference**: `brand/positioning.md`
 - **When a reply thread turns into a real conversation worth taking to DMs**: `skills/dm-setting/`

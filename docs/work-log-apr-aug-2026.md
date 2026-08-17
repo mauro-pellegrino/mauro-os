@@ -2,7 +2,7 @@
 
 **For:** Juan (content production for @maurojpelle)
 **Written:** 2026-08-03
-**Source:** growthub-os git history (166 commits in this window, 219 total), mauro-os git history, the H1 2026 content-to-calls report, 22 daily worklogs, 11 acquisition call docs, and the weekly learning files.
+**Source:** the agency repo git history (166 commits in this window, 219 total), mauro-os git history, the H1 2026 content-to-calls report, 22 daily worklogs, 11 acquisition call docs, and the weekly learning files.
 
 ---
 
@@ -45,7 +45,7 @@ The topics ranked most-usable are marked ⭐ in each section.
 - Every client name: the education platform, the haircare brand, the SaaS client, the supplement brands, all of them.
 - Specific client spend and dashboard screenshots.
 - Team member names and who worked on what.
-- Aggregate managed-spend figures from Lorenzo's videos. Those are Lorenzo's proof, not Mauro's. Never borrow them.
+- Aggregate managed-spend figures from the agency owner's videos. Those are the agency owner's proof, not Mauro's. Never borrow them.
 
 ---
 
@@ -104,7 +104,7 @@ The topics ranked most-usable are marked ⭐ in each section.
 | Jun 2 | Formalized the Monday acquisition analysis as a repeatable SOP. This is the weekly loop that turns raw exports into a decision doc. |
 | Jun 3 | Case-study production SOP locked. Captured the guidance that personal posts still have to reinforce the brand's process. |
 | Jun 5 | Built the first **agent** (not just a skill) for YouTube lead magnets. |
-| Jun 7-9 | Built the Growthub Control Panel: Next.js dashboard, edit-in-Sheets data model, week selector, call sources page, password gate, stay-signed-in login. |
+| Jun 7-9 | Built the agency Control Panel: Next.js dashboard, edit-in-Sheets data model, week selector, call sources page, password gate, stay-signed-in login. |
 | Jun 8 | Redefined the call model: booked vs conducted, with a real qualified definition pulled from the sales team's own doc. |
 | Jun 15-24 | Ran the weekly analysis for W24, W25, W26. Backfilled W21 to W24 into the dashboard so the trend was real. |
 | Jun 16 | Read the paid-X data: geo and age targeting off-ICP, 0 clicks on \$250 spent. Killed the assumption. |
@@ -127,7 +127,7 @@ The topics ranked most-usable are marked ⭐ in each section.
 | Date | What happened |
 |---|---|
 | Jul 1 | Wrote the @maurojpelle operating baseline: 17 questions answered honestly, followed by a brutal self-assessment. Named his own pattern out loud: "I hide in building systems because it feels productive." |
-| Jul 3 | Pulled and saved Lorenzo's full YouTube transcript library, 31 videos, as searchable source material. |
+| Jul 3 | Pulled and saved the agency owner's full YouTube transcript library, 31 videos, as searchable source material. |
 | Jul 6-10 | Built the bulk short-form generator (transcripts to a scheduling-tool CSV) and calibrated it through **4 rounds of corrections in 3 days**: variable length from real data, blank-line formatting, voice bans, tweets that stand alone. |
 | Jul 6 | Built the daily ops focus + accountability system, live through 3 cloud routines and a shared canvas. |
 | Jul 7 | Wrote 30 standalone tweets answering the exact pain points buyers typed into the booking form. |

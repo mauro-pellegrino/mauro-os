@@ -20,7 +20,7 @@ Agency owners (marketing/creative/ad/social/SEO) whose pipeline is referral- and
 
 ## Who it's NOT for
 
-Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT Growthub's lane: ecom, brands, and Meta ad creative is the agency's *service*, what Growthub delivers, not Mauro's. Mauro has nothing to do with ecom or ad creative. His lane is inbound (personal brand, YouTube, content), and that inbound is what books Growthub its calls. Different audience, different promise.
+Beginners with no agency, people chasing follower counts for vanity, anyone wanting generic "post 3x a day" advice. And it is NOT the agency's lane: ecom, brands, and Meta ad creative is the agency's *service*, what the agency I run delivers, not Mauro's. Mauro has nothing to do with ecom or ad creative. His lane is inbound (personal brand, YouTube, content), and that inbound is what books the agency its calls. Different audience, different promise.
 
 ## The belief Mauro breaks
 

@@ -25,8 +25,8 @@ One code widget per section reads better than one giant block. Split on the `##`
 
 ## Keeping it current
 
-This is a **snapshot**, not a live copy. The internal source is `growthub-os/skills/lead-gen/lead-magnet/_master.md` and it changes weekly.
+This is a **snapshot**, not a live copy. The internal source is `the agency repo's lead magnet master` and it changes weekly.
 
 Re-export when the internal one gains something material. Last synced: **2026-08-06**.
 
-Known drift risk: this is the third copy of these rules (growthub-os, mauro-os, here). Two copies already went stale before, which is how `voice.md` and the mauro-os magnet skills ended up months behind. Check the date above before handing this to anyone.
+Known drift risk: this is the third copy of these rules (the agency repo, mauro-os, here). Two copies already went stale before, which is how `voice.md` and the mauro-os magnet skills ended up months behind. Check the date above before handing this to anyone.

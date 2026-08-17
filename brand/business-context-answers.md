@@ -31,7 +31,7 @@ $5k/mo from this brand by the end of 2026. Emotionally, I want to run the agency
 I don't have an offer and I'm not posting consistently. Underneath that, I hide in building systems because it feels productive, instead of shipping my own thing and putting it in front of people. I optimize what I can measure and avoid the uncomfortable work of selling.
 
 **What's your current offer and pricing?**
-None. Zero. I've floated $100 workshops or done-for-you setup of the systems I run (lead magnets, X articles, infographics), but nothing exists yet, and that price is way too low for who I actually want to sell to.
+**Agency Booked Calls**, built in cashie.studio and formalised 17 Aug 2026. 2 booked calls in 30 days for an agency owner who already makes good YouTube videos but isn't converting it on X or LinkedIn. Three components: the Booked Call Blueprint, the Lead Magnet Engine, the DM Sequence Stack. Weekly 1-hour call plus Slack access plus the templates. $200/week for 4 weeks, 1 spot, standing (no deadline). Guarantee: no booked call in 30 days means free work until they get one. Never sent to anyone yet. Full copy in `research/jk-molina/cashie-studio/offer/`.
 
 **How do people find you right now?**
 Barely anywhere. X with about 200 followers and one YouTube video. No ads, no list, no newsletter. Right now I mostly ride the agency's channels. This brand has almost no discovery of its own.
@@ -63,7 +63,7 @@ No list and no platform yet. I want one.
 Almost nothing for this brand. No payment processor, no course or community platform, no CRM, no email tool. Just Claude and the systems I've built in my own repo. (The agency I run has a full stack, Calendly, Tweet Hunter, Slack, tl;dv, a Next.js dashboard, but that's the agency, not this brand.)
 
 **What's your biggest bottleneck, leads, conversions, retention, or offer clarity?**
-Offer clarity first, then leads. I have no offer, so nothing downstream can work. It isn't a conversion or retention problem because there's nothing yet to convert or retain.
+Answered 1 July as offer clarity first, then leads. As of 17 Aug the offer exists and has never been sent, so the bottleneck moved: it is now distribution and my own willingness to send it.
 
 **What have you already tried that didn't work?**
 Posting and commenting on X through a VA. It doesn't work for this account. It needs my own voice and my real work, not outsourced activity.

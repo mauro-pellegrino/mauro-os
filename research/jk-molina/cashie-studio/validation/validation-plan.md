@@ -13,8 +13,8 @@
 |---|---|---|
 | Past clients | 0 | Ghostwrote for 5-6 brands (Meta ads and CRO agencies for ecom), no packaged offer ever sold |
 | Churned / reachable | 2-3 | People he can talk to again |
-| Warm referral | 1 | **Brando**, referred through Lorenzo, already asking about lead magnets in Slack |
-| Lorenzo's network | unknown | Distribution channel, not a client |
+| Warm referral | 1 | **Brando**, referred through the agency owner, already asking about lead magnets in Slack |
+| the agency owner's network | unknown | Distribution channel, not a client |
 | X followers | ~200 | Self-described as low quality |
 | Email list | 0 | Doesn't exist |
 
@@ -48,9 +48,9 @@ When they say yes:
 >
 > Shall I send you the details?
 
-### Lorenzo (referral ask, not a pitch)
+### the agency owner (referral ask, not a pitch)
 
-> Hey Lorenzo, do you have anyone in your network who'd want 2 booked calls in 30 days from content? I'm taking on 1 client at $200/week and I thought you might know someone.
+> Hey [agency owner], do you have anyone in your network who'd want 2 booked calls in 30 days from content? I'm taking on 1 client at $200/week and I thought you might know someone.
 
 ### The 200 followers (hand raiser)
 
@@ -68,9 +68,9 @@ A notes app. Who was messaged, what they said, what the next step is. No CRM.
 
 ## The two things Mauro raised that are still open
 
-**1. The Brando conflict, in his own words:** *"will have to speak with lorenzo, since it's literally free advice he's willing to give."*
+**1. The Brando conflict, in his own words:** *"will have to speak with the agency owner, since it's literally free advice he's willing to give."*
 
-This is real and it's the same conflict flagged when Brando came up around the Loom. Brando is being helped for free through Lorenzo's Slack. Charging him $200/week for the adjacent thing needs Lorenzo's agreement first. Cashie's answer ("Lorenzo is your distribution channel, not your client") sidesteps it. The conversation with Lorenzo has to happen before the Brando script goes out.
+This is real and it's the same conflict flagged when Brando came up around the Loom. Brando is being helped for free through the agency owner's Slack. Charging him $200/week for the adjacent thing needs the agency owner's agreement first. Cashie's answer ("the agency owner is your distribution channel, not your client") sidesteps it. The conversation with the agency owner has to happen before the Brando script goes out.
 
 **2. Distribution was asked and never answered.** Mauro: *"how about distribution, jk never clears this up, skool? What should I use."* Cashie deferred it and the conversation ended before returning to it.
 
@@ -82,6 +82,6 @@ For a single validation client this doesn't block anything. A DM conversation an
 
 ## What validation actually means here
 
-The whole plan is roughly 205 reachable people, most of them cold, one of them genuinely warm. The realistic read: this validates or kills the offer on **Brando plus the 2-3 churned contacts plus whoever Lorenzo names**. The 200 followers are a long shot and the hand raiser costs one post.
+The whole plan is roughly 205 reachable people, most of them cold, one of them genuinely warm. The realistic read: this validates or kills the offer on **Brando plus the 2-3 churned contacts plus whoever the agency owner names**. The 200 followers are a long shot and the hand raiser costs one post.
 
 A yes from any one of those is validation. A no from all of them, with reasons, is also validation and more useful than silence.

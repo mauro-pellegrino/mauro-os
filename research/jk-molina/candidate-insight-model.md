@@ -25,7 +25,7 @@ Mauro's call on each row. Nothing moves into `skills/` until a row is marked ado
 | **Leads → Customers → Clients** | **Adapt, blocked** | The concept is sound. The paid step needs a payment processor Mauro does not have |
 | **Cash Script 5 stages** | **Adapt** | A decent DM skeleton. The "close their file, be a heartless bastard" register does not fit B2B agency sales |
 | **Scarcity via capacity** | **Adapt** | Mauro's constraint is 5-7 hours a week, not client slots |
-| **$50-100 workshop funnel** | **Reject for now** | Lorenzo's Oct 2024 objection applies: this buyer wants to save time, not money |
+| **$50-100 workshop funnel** | **Reject for now** | the agency owner's Oct 2024 objection applies: this buyer wants to save time, not money |
 | **Daily email offers** | **Reject** | No list, no platform, and it would eat the entire weekly budget |
 | **Weekly-fee pricing ($250/week)** | **Reject** | A coaching-retainer construct. Agency owners buy installs and monthly retainers |
 | **Declared Freedom Number, protagonist posting** | **Reject** | This is the guru theater `positioning.md` explicitly rules out |
@@ -54,7 +54,7 @@ Everything below this line is the proposal as originally drafted. Read it as a c
 
 JK's evidence for the split: two value-based videos produced 0 clients, one insight video produced 5. His data, his account.
 
-**Mauro's ICP caveat, read before adopting this wholesale.** Lorenzo rejected the insight approach for a similar buyer in Oct 2024: established operators want to save time more than money, so withholding the how can read as friction rather than intrigue. The insight model earns its keep on cold reach. On a warm agency owner who already trusts you, the value model usually converts faster. When unsure, use the value model.
+**Mauro's ICP caveat, read before adopting this wholesale.** the agency owner rejected the insight approach for a similar buyer in Oct 2024: established operators want to save time more than money, so withholding the how can read as friction rather than intrigue. The insight model earns its keep on cold reach. On a warm agency owner who already trusts you, the value model usually converts faster. When unsure, use the value model.
 
 ---
 

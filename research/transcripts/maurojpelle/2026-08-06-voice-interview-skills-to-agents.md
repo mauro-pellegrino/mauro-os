@@ -105,4 +105,4 @@
 
 ## Q9, Q10, Q11
 
-Not recorded. Ghostwritten drafts exist and are marked as such in `brand/sessions/`. **Do not mine those for voice.** They are Claude imitating this transcript, so feeding them back into voice extraction would be circular, which is exactly the failure mode that produced the current Growthub fork.
+Not recorded. Ghostwritten drafts exist and are marked as such in `brand/sessions/`. **Do not mine those for voice.** They are Claude imitating this transcript, so feeding them back into voice extraction would be circular, which is exactly the failure mode that produced the current agency fork.

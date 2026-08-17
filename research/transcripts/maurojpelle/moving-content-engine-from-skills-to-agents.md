@@ -3,7 +3,7 @@
 **Video ID:** n/a (raw voice memo, not yet published)
 **URL:** TBD (add when published)
 **Fetched/Captured:** 2026-08-06
-**Source:** Mauro voice memo answering 11 prompts about migrating the Growthub content engine from Claude Code skills to agents. Use as a script/article/short-form source and voice reference. Explaining it to a peer (Lorenzo / Bogdan), rambling, real numbers left in to bracket or cut later.
+**Source:** Mauro voice memo answering 11 prompts about migrating the the agency content engine from Claude Code skills to agents. Use as a script/article/short-form source and voice reference. Explaining it to a peer (the agency owner / the co-founder), rambling, real numbers left in to bracket or cut later.
 
 **Prompt Mauro was answering:**
 1. What the engine looked like as skills, and what a normal week felt like.
@@ -14,7 +14,7 @@
 6. What he's keeping as a skill on purpose, and why.
 7. What it actually saves in time / mental load.
 8. What most operators get wrong about agents (the claim that makes them flinch).
-9. Why he's doing it on the real Growthub engine, not a toy project.
+9. Why he's doing it on the real the agency engine, not a toy project.
 10. First thing to tell someone making the same jump, and what not to bother with yet.
 11. What he's still unsure about.
 

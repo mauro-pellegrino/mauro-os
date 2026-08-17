@@ -2,7 +2,8 @@
 **Owner:** Mauro
 **Brand:** AI for established agency owners (separate lane from the agency Mauro runs)
 **Date:** 2026-07-01
-**Status:** Greenfield. No offer, no list, no funnel. 200 X followers, 1 YouTube video.
+**Status:** Offer defined and validation-planned (17 Aug 2026), never sent. No list, no funnel, no payment processor. 200 X followers, 1 YouTube video.
+**Note:** the "brutal truth" and "recommendation" sections below were written 1 July when no offer existed. The offer-clarity diagnosis is now closed. The posting and selling diagnosis still stands.
 
 This is the objective starting line, in Mauro's own words, with honest annotations. Built to be revisited, not to flatter.
 
@@ -20,7 +21,7 @@ $5k/mo from @maurojpelle by end of 2026. "Made it" = running the agency and his 
 He has a ton of real, working material to share, so it only makes sense to build something lasting for himself. Wants to help past-Mauro and others like him.
 
 **4. Current offer and price.**
-None. Zero.
+**Agency Booked Calls.** $200/week x 4 weeks, 1 spot, standing. Promise: 2 booked calls in 30 days. Built in cashie.studio, formalised 17 Aug 2026, never sent. See `research/jk-molina/cashie-studio/offer/`.
 
 **5. What he'd sell in 30 days.**
 Started at "$100 workshops" or done-for-you setup of the systems he already runs (lead magnets, X articles, infographics). See the ruthless flag below, the price is wrong for the buyer.
@@ -61,7 +62,7 @@ Nothing. No payment processor, no course/community platform, no CRM, no email to
 5 to 7.
 
 **13. His view of the bottleneck.**
-Not posting, and no offer.
+As of 1 July: not posting, and no offer. The offer half closed 17 Aug. Not posting and not selling still stands.
 
 **14. What he wishes were solved.**
 His day-to-day. He doesn't know what to actually do with the time: post, comment on X, or focus on YouTube. Wants a clear routine. (Answered below.)
@@ -104,7 +105,7 @@ The deeper pattern, same one from the H1 analysis: he hides in building. 5-7 hou
 ---
 
 ## Open items
-- Define and price the offer (next session).
+- ~~Define and price the offer.~~ Done 17 Aug. Next step is sending it, not defining it.
 - Ground the buyer psychology in real agency-owner language (founders' own "how I run the agency" content is a better source than the agency's acquisition calls, which show brand-operator psychology, a different ICP).
 - Stand up the basics only when the offer exists: a way to take payment, a simple way to capture emails.
 - Set the number he'll hold himself to weekly (posts shipped, outreach conversations).

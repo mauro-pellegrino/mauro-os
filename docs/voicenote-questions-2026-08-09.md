@@ -1,6 +1,6 @@
 # Voicenote questions, 9 Aug 2026
 
-**Why these:** `brand/operating-baseline.md` says the offer is the blocker and posting is second. `docs/NEXT-STEPS.md` has 10 YouTube calibration questions still open. These pull the raw material out of your head so those get closed. Nothing here re-asks what `business-context-answers.md` already answers (ICP, beliefs, writing style, goal, hours).
+**Why these:** written 9 Aug, when `brand/operating-baseline.md` said the offer was the blocker. The offer landed 17 Aug, so section A is largely closed. Sections B and C stand unchanged. `docs/NEXT-STEPS.md` has 10 YouTube calibration questions still open. These pull the raw material out of your head so those get closed. Nothing here re-asks what `business-context-answers.md` already answers (ICP, beliefs, writing style, goal, hours).
 
 **How to record:** one voicenote per question. Say the number out loud first. Two to five minutes each, rambling is fine and better than tidy. Don't prepare, don't edit. Send them in any order.
 
@@ -8,7 +8,9 @@
 
 ---
 
-## A. The offer (the actual blocker)
+## A. The offer
+
+> **Update 17 Aug 2026: mostly answered.** The offer was already built in cashie.studio and is now filed at `research/jk-molina/cashie-studio/offer/`. A3 (what you install), A7 (price) and A8 (the kill criteria) are effectively answered. **A1, A2, A5 and A6 are still worth recording** because they feed the case study and the sales call, not the offer definition.
 
 **A1.** Walk me through the engine you run at the agency, start to finish, like you're explaining it to another agency owner on a call. What happens Monday, what happens by Friday, what comes out the other end, who touches what.
 

@@ -64,7 +64,7 @@
 
 **Cashie:** Nice. How do you actually deliver this, how many calls, how much DM access, what does working with you look like week to week?
 
-**Mauro:** I would give them access to my templetized claude skills (have to do this yet), where they can create lead magnets from scratch, know which templates work, (need to create those as well) and how to transform yt vids into lead magnets, x articles as well. I do everything in skill internally in Growthub.
+**Mauro:** I would give them access to my templetized claude skills (have to do this yet), where they can create lead magnets from scratch, know which templates work, (need to create those as well) and how to transform yt vids into lead magnets, x articles as well. I do everything in skill internally in the agency.
 
 **Cashie:** So for this offer, while the templates are still being built, what do you actually deliver right now? If someone signs up tomorrow, what do they get from you?
 
@@ -124,7 +124,7 @@
 
 **Mauro:** I have no warm people, but people close to my boss who want my shi:
 
-> **Lorenzo** [12:02 PM] hey @Brando Monetti feel free to ask here your questions for the content
+> **the agency owner** [12:02 PM] hey @Brando Monetti feel free to ask here your questions for the content
 > X / LI
 > I'd recommend you to just take YT videos and use those to create X / LI content
 > mauro should have a skill on claude for that
@@ -154,9 +154,9 @@
 
 **Cashie:** $200/week is right for implementation. You're doing the work, not just advising. That's the price. How to send it, DM on X or wherever you're already talking to them. Brando is in Slack right now. Send it there.
 
-**Mauro:** Okay Dm is fine, but will have to speak with lorenzo, since it's literally free advice he's willing to give
+**Mauro:** Okay Dm is fine, but will have to speak with the agency owner, since it's literally free advice he's willing to give
 
-**Cashie:** That's fine. Lorenzo is your distribution channel, not your client. Ask him directly: "Hey Lorenzo, do you have anyone in your network who'd want 2 booked calls in 30 days from content? I'm taking on 1 client at $200/week and I thought you might know someone." That's it. No pitch. Just asking if he knows someone.
+**Cashie:** That's fine. the agency owner is your distribution channel, not your client. Ask him directly: "Hey [agency owner], do you have anyone in your network who'd want 2 booked calls in 30 days from content? I'm taking on 1 client at $200/week and I thought you might know someone." That's it. No pitch. Just asking if he knows someone.
 
 **Mauro:** Okay, but how about distribution, jk never clears this up, skool? What should I use
 

@@ -69,7 +69,7 @@ Each magnet ships with:
 
 ## Title Engineering (applies to every subtype)
 
-**Ported from `growthub-os` 2026-08-06.** The rules are universal. The evidence behind them is Growthub's, and is labelled as such, so replace it with @maurojpelle data as that accrues.
+**Ported from the agency repo 2026-08-06.** The rules are universal. The evidence behind them is the agency's, and is labelled as such, so replace it with @maurojpelle data as that accrues.
 
 ### The formula
 
@@ -83,7 +83,7 @@ The title has to name the thing that lands in their DMs.
 
 Approved artifact nouns: guide, playbook, checklist, sheet, kit, system, workflow, prompt file, stack, template, swipe file, breakdown, tutorial, formats, prompts.
 
-### The evidence (Growthub account, 40 rows, pulled 2026-07-31)
+### The evidence (the agency's account, 40 rows, pulled 2026-07-31)
 
 | Post | Views | Comment rate |
 |---|---|---|
@@ -108,7 +108,7 @@ Broad enough that a beginner recognises it, concrete enough that it feels urgent
 - **No diagnoses or questions.** "Why Your Ads Stopped Scaling" promises nothing received.
 - **No sophistication signalling.** Broad title for reach, real depth for the qualified reader.
 
-### Worked corrections (Growthub, kept as pattern reference)
+### Worked corrections (the agency's account, kept as pattern reference)
 
 | Rejected | Shipped |
 |---|---|

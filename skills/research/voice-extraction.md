@@ -3,14 +3,14 @@
 **Version:** 1.0
 **Created:** 2026-08-06
 **Owner:** Mauro
-**Output:** `brand/voice-mauro.md`, a voice doc built from counted observation of Mauro's own corpus, replacing the Growthub fork currently sitting at `brand/voice.md`.
+**Output:** `brand/voice-mauro.md`, a voice doc built from counted observation of Mauro's own corpus, replacing the agency fork currently sitting at `brand/voice.md`.
 **Run:** once properly, then re-run quarterly or whenever the voice drifts.
 
 ---
 
 ## Why this exists
 
-`brand/voice.md` is a fork of `growthub-os/brands/growthub/voice.md`. Diffed 2026-08-05: **124 of 360 lines differ, and almost all of those are swapped examples.** Structure, principles, rhythm patterns and signature moves are Lorenzo's. The examples were changed, the mechanics were not.
+`brand/voice.md` is a fork of `the agency repo's voice.md`. Diffed 2026-08-05: **124 of 360 lines differ, and almost all of those are swapped examples.** Structure, principles, rhythm patterns and signature moves are the agency owner's. The examples were changed, the mechanics were not.
 
 The proof it is not Mauro's voice, found in one script run:
 
@@ -24,7 +24,7 @@ A voice doc written from adjectives ("confident", "direct", "no fluff") will alw
 
 | Corpus | Where | What it gives | What it cannot give |
 |---|---|---|---|
-| **Typed, unguarded** | `growthub-os/ops/daily/*worklog*.md` (543 prompts, ~8,300 words) + Slack `from:me` | Vocabulary, bluntness, punctuation habits, hedging, courtesy markers, verdict words | Anything long-form. Every entry is a short imperative command |
+| **Typed, unguarded** | `the agency repo's daily worklogs` (543 prompts, ~8,300 words) + Slack `from:me` | Vocabulary, bluntness, punctuation habits, hedging, courtesy markers, verdict words | Anything long-form. Every entry is a short imperative command |
 | **Spoken, at length** | A recorded interview, see Step 1. Also `research/transcripts/maurojpelle/` and any tl;dv call where Mauro talks | How he explains, reasons, builds an argument over minutes. **This is the register articles and long forms need** | Typing habits, since speech has no punctuation |
 | **Published, the control** | `brand/posts/`, live X and LinkedIn posts | What currently ships | Nothing about how he actually sounds. This is the performance, not the person |
 
@@ -41,7 +41,7 @@ The typed corpus already exists and needs no work. The spoken one does not exist
 **How to record:**
 
 - One sitting, voice memo, 30 to 40 minutes. No script, no notes.
-- **Rule: you are explaining it to Lorenzo or Bogdan on a call.** Not recording content.
+- **Rule: you are explaining it to the agency owner or the co-founder on a call.** Not recording content.
 - If you catch yourself doing a hook, a punchy opener, or a tidy closing line, stop and restart the sentence.
 - Say the real numbers out loud even if they are not public. Brackets get added later.
 - Tangents are allowed and wanted. Do not stay on-question.
@@ -91,7 +91,7 @@ Create `brand/voice-mauro.md`. Rules for what may go in it:
 3. **No adjective-only rules.** "Confident" is banned unless immediately followed by the mechanic that produces it.
 4. **Contradictions get kept, not resolved.** If he hedges when proposing and states flatly when reporting, that is two rules with two contexts, not one averaged rule.
 5. **Record what he never does**, sourced from absence in the corpus, not from taste.
-6. **Do not inherit structure from the Growthub doc.** Start from what the corpus shows, then check whether a Growthub section is warranted. Section order should differ if the voice differs.
+6. **Do not inherit structure from the agency doc.** Start from what the corpus shows, then check whether an agency section is warranted. Section order should differ if the voice differs.
 
 ## Step 6: Blind test, non-negotiable
 
@@ -104,13 +104,13 @@ Log the result at the bottom of `voice-mauro.md` with the date and the score. A 
 
 ## Step 7: Retire the fork
 
-Once `voice-mauro.md` passes, rename `brand/voice.md` to `brand/voice-growthub-fork-ARCHIVED.md` and update the `CLAUDE.md` §5 pointer. Do not delete it, it is the control for future comparisons.
+Once `voice-mauro.md` passes, rename `brand/voice.md` to `brand/voice-agency-fork-ARCHIVED.md` and update the `CLAUDE.md` §5 pointer. Do not delete it, it is the control for future comparisons.
 
 ---
 
 ## Worked output from the 2026-08-05 partial run (typed corpus only)
 
-Ran against 491 usable prompts, 8,024 words, 25 worklog days. Reproduce with a script over `growthub-os/ops/daily/*worklog*.md`, matching `^- \d\d:\d\d · .*? · "(.*)$`.
+Ran against 491 usable prompts, 8,024 words, 25 worklog days. Reproduce with a script over `the agency repo's daily worklogs`, matching `^- \d\d:\d\d · .*? · "(.*)$`.
 
 | Observation | Count |
 |---|---|
@@ -139,7 +139,7 @@ Ran against 491 usable prompts, 8,024 words, 25 worklog days. Reproduce with a s
 - **Cleaning the transcript.** Kills the dataset.
 - **Answering the questions in writing.** Produces performance, not voice.
 - **Adjective rules.** "Confident and direct" describes every voice doc ever written and constrains nothing.
-- **Editing the fork instead of starting fresh.** The fork's structure is Lorenzo's; inheriting it re-imports the problem.
+- **Editing the fork instead of starting fresh.** The fork's structure is the agency owner's; inheriting it re-imports the problem.
 - **Skipping the blind test.** Without it there is no evidence the doc did anything.
 - **Averaging contradictions.** Context-dependent behaviour is two rules, not one blurred one.
 

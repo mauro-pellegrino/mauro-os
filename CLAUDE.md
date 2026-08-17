@@ -13,12 +13,12 @@
 **One-line positioning:** You build the inbound machine for your clients. I'll show you how to build it for yourself, with AI doing the heavy lifting.
 
 **Proof (his own, operational):**
-- He architected and runs the AI content and inbound engine for Growthub, the B2B agency he runs content and acquisition for (about $300k/mo, at least a third of it from the organic accounts he manages). He recently closed a $28k deal off X.
+- He architected and runs the AI content and inbound engine for the B2B agency he runs content and acquisition for (about $300k/mo, at least a third of it from the organic accounts he manages). He recently closed a $28k deal off X.
 - He ties content to booked calls and runs a weekly acquisition analysis. The engine is measured, and it converts.
 - He's moving from skills toward agents, ahead of most operators.
 - Any specific public number needs Mauro's sign-off before use. Never borrow the agency's anchors as his personal proof.
 
-**Lane boundary (Mauro vs Growthub):** Ecom, brands, and Meta ad creative is *Growthub's* service, what the agency delivers, not Mauro's. Mauro's lane is inbound: personal brand, YouTube, and content systems that book calls (this is how he generates inbound calls for Growthub). Never position Mauro as an ecom or ad-creative practitioner, and never make his content about running Meta ads for brands.
+**Lane boundary (Mauro vs the agency):** Ecom, brands, and Meta ad creative is *the agency's* service, what the agency delivers, not Mauro's. Mauro's lane is inbound: personal brand, YouTube, and content systems that book calls (this is how he generates inbound calls for the agency). Never position Mauro as an ecom or ad-creative practitioner, and never make his content about running Meta ads for brands.
 
 Full context: `brand/positioning.md`, `brand/business-context-answers.md`, `brand/operating-baseline.md`.
 
