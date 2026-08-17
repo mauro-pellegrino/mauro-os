@@ -59,6 +59,8 @@ Rules that hold across every opener:
 - Uses sub-bullets under sections sparingly, only when listing 3+ items
 - Never uses more than 3 levels of hierarchy
 
+**Header formatting in the X editor (Mauro, 2026-08-17): section headers must be set as Subheadings, not body text.** In the X article editor, select each section header and apply the Subheading style so it renders visibly bigger than the body. Never leave headers sitting at body-text size. When Mauro reviews a draft and the only miss is formatting, this is almost always it: the writing and structure are right, the headers are just flat. The companion infographic quote-tweet must carry the same subheading structure too, not a flat wall of text.
+
 ---
 
 ### Sentence Rhythm (most important)
@@ -469,6 +471,9 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 ---
 
 ## Correction Log
+
+**17 August 2026 — Section headers must be Subheadings in the X editor**
+Mauro reviewed the "how to create lead magnets with Claude" article via a Loom and approved the writing and structure outright ("I really like the writing", "this is so good"). The one fix: the section headers were sitting at body-text size. In the X article editor, every section header must be set to the Subheading style so it renders bigger than the body. He also confirmed his distribution cadence: publish the article, then roughly 3 hours later post the infographic version as a quote tweet (like Lorenzo). That infographic must use the same subheading structure, not a flat layout, since the subheadings are what make the article version read better than the flat infographics.
 
 **21 July 2026 — Off-yellow covers + airier article spacing**
 Two changes from Mauro:
