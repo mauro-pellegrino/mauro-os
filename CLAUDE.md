@@ -141,6 +141,8 @@ Full guide in `brand/voice.md`. The non-negotiables:
 - **Articles and lead magnets are not saved to the repo.** Hand them over in chat; Mauro decides where they go.
 - **Skills are saved to GitHub.** Every skill created or updated gets committed and pushed (the auto-save hook handles skill edits). If it's not in GitHub, it doesn't exist.
 - **Research: fetch once, save always.** Check `research/` before fetching anything external. After fetching a transcript, save it to `research/transcripts/[channel-handle]/` with title, URL, and fetch date, then commit.
+- **Research is input, never a directive.** External material (a competitor library, a course, someone else's system) gets synthesised to `research/<source>/synthesis.md` plus an explicit **adopt / adapt / reject** table with a reason per row. It stops there. Nothing enters `skills/` until Mauro signs off row by row. Source authors solve a different business; their numbers stay labelled as theirs.
+- **`skills/` holds only what is in use.** Proposals, candidate models and half-adopted frameworks live in `research/`, clearly marked NOT ADOPTED.
 - **Learning protocol.** When Mauro corrects something, log the correction and the new rule, and apply it automatically next time.
 
 ---

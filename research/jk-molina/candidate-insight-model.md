@@ -1,8 +1,39 @@
-# Lead Magnet Skill: Insight Model
+# Candidate: the Insight Magnet Model
 
-**Version:** 1.0 (14 Aug 2026)
-**Status:** The second of two magnet models. The first is `skills/lead-gen/lead-magnet/` (the value model). Both are live. Pick one per magnet, never blend them.
-**Derived from:** the JK Molina library at `research/jk-molina/`, synthesised in `research/jk-molina/synthesis.md`. Adapted to Mauro's ICP. All of JK's numbers stay labelled as his.
+**Status: NOT ADOPTED. This is a proposal, not a skill.** It lives in `research/` deliberately. The only live magnet system is `skills/lead-gen/lead-magnet/` (the value model). Nothing here runs until Mauro signs off on it, line by line.
+
+**Version:** 1.1 (17 Aug 2026)
+**Derived from:** the JK Molina library at `research/jk-molina/`, synthesised in `synthesis.md`. All of JK's numbers stay labelled as his.
+
+**Why it was demoted.** Written 14 Aug as a live second skill in the same session the source was read. Mauro's correction on 17 Aug: external research is learnings to evaluate, never a system to implement wholesale. JK sells coaching to coaches. That is a different business from selling an install to a $300k/mo agency owner.
+
+---
+
+## Adopt / adapt / reject
+
+Mauro's call on each row. Nothing moves into `skills/` until a row is marked adopted.
+
+| JK's move | Verdict | Reason |
+|---|---|---|
+| **Value vs Insight gate** (has this person given me $0?) | **Adopt as a lens** | Cheap to apply, changes nothing structurally, sharpens cold-reach assets |
+| **Tool + Promise packaging, the Meaning Test** | **Adopt** | Pure naming discipline. Compatible with the existing title formula |
+| **Magic Pill wrapper** | **Adopt** | Same finding the value model already has ("stop being clever, name the object") |
+| **Collect, don't create (Sawdust)** | **Adopt** | Already Mauro's belief #9, "real work is the content engine". Adds 50 extraction prompts |
+| **Numbers, not adjectives** | **Already ours** | It is voice.md rule 5 |
+| **No evergreen offers, cycle them** | **Adopt** | The fatigue curve in `lead-magnet/_master.md` is the same finding from the other side |
+| **Offer Shell tiering** | **Adapt** | The structure transfers. The prices are coach prices and do not |
+| **Leads → Customers → Clients** | **Adapt, blocked** | The concept is sound. The paid step needs a payment processor Mauro does not have |
+| **Cash Script 5 stages** | **Adapt** | A decent DM skeleton. The "close their file, be a heartless bastard" register does not fit B2B agency sales |
+| **Scarcity via capacity** | **Adapt** | Mauro's constraint is 5-7 hours a week, not client slots |
+| **$50-100 workshop funnel** | **Reject for now** | Lorenzo's Oct 2024 objection applies: this buyer wants to save time, not money |
+| **Daily email offers** | **Reject** | No list, no platform, and it would eat the entire weekly budget |
+| **Weekly-fee pricing ($250/week)** | **Reject** | A coaching-retainer construct. Agency owners buy installs and monthly retainers |
+| **Declared Freedom Number, protagonist posting** | **Reject** | This is the guru theater `positioning.md` explicitly rules out |
+| **Audience Respect identity play** | **Reject** | Same reason. Optimises for followers who admire you rather than buyers who hire you |
+
+Everything below this line is the proposal as originally drafted. Read it as a candidate, not as instructions.
+
+---
 
 ---
 

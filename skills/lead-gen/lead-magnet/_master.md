@@ -1,13 +1,9 @@
-# Lead Magnet Skill: Master File (Value Model)
+# Lead Magnet Skill: Master File
 
-**Version:** 2.2 (2026-08-14)
-**Status:** Shared shell across all lead magnet subtypes. Always load this file together with the relevant subtype file.
+**Version:** 2.3 (2026-08-17)
+**Status:** The live magnet system. Shared shell across all subtypes. Always load this file together with the relevant subtype file.
 
-> **There are two magnet models.** This one is the **value model**: give $100 of work they didn't have to do. The second is the **insight model** at `skills/lead-gen/lead-magnet-insight/_master.md`: give the least that proves you have the answer.
->
-> The gate is one question: **has this person given you more than $0?** No → consider the insight model. Yes → use this one.
->
-> Default to this file for warm readers and existing clients. The insight model earns its keep on cold reach. Never blend the two in a single asset. Both models share everything below from "X Post Template" onward.
+> **Note on the JK Molina research.** A candidate second model (the "insight model", give the least that proves you have the answer) is written up at `research/jk-molina/candidate-insight-model.md`. It is **not adopted** and nothing from it runs here. That file carries an adopt / adapt / reject table awaiting Mauro's call. Do not import from it without his sign-off.
 
 ---
 
