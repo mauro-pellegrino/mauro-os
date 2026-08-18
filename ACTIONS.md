@@ -7,12 +7,17 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 ## THIS WEEK
 
-**The offer exists. Send it.** "Agency Booked Calls", $200/wk x 4, 1 spot, standing. Copy and scripts in `research/jk-molina/cashie-studio/`.
+**Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
+- **Agency Booked Calls** — $200/wk x 4, 1 spot, standing. Done-with-you. Ready to send.
+- **The Lead Magnet System** — $500 one-time, self-serve. **Not built yet.** 4 of its 6 pages don't exist.
 
 - [ ] Send the Brando script. He asked about lead magnets in Slack and is the warmest lead there is
 - [ ] Send the churned-contact script to the 2-3 people reachable
 - [ ] Send the referral ask
 - [ ] Post the 200-follower hand raiser
+- [ ] Send Juan the test brief (`docs/juan-lead-magnet-test-brief.md`)
+- [ ] Pick a brand colour. One hex, blocks every Notion page cover
+- [ ] Create a Stripe payment link for the $500 offer
 - [ ] Export X analytics. analytics.x.com, last 90 days, export CSV. Send it over.
 - [ ] Run the Koe protocol, personal version. One full day. Questions are on the Mac, not in this repo.
 - [ ] Pick a title for the Loom, or say unlisted instead
@@ -27,6 +32,8 @@ Not stalled. 17 commits between 30 July and 14 Aug, all stranded on `research/yo
 
 - [ ] New branch per batch, PR opened when the batch is done, merged the same week. Never keep committing to a branch that already merged.
 - [ ] Delete `research/youtube-competitor-mining` now that it's in main, so the next batch starts clean.
+
+**Send him the test brief:** `docs/juan-lead-magnet-test-brief.md`. He builds one magnet from the docs alone, logs every gap, writes the missing prompts. That run produces 3 of the 6 pages of the $500 product.
 
 **Still open from his plan:**
 
