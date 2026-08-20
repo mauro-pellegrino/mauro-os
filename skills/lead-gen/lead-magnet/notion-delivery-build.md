@@ -28,7 +28,7 @@ A solo build test found this file and the subtype files specifying two different
 
 Apply these to EVERY lead-magnet Notion delivery page:
 
-1. **Brand-color cover image.** Set the parent page cover to a solid brand-color block. [BRAND COLOR — visual identity for @maurojpelle pending; pick one color and reuse it on every magnet so the pages read as one system.]
+1. **Brand-color cover image.** Set the parent page cover to a solid brand-color block. `#4A392C`. See `brand/colors.md`.
 2. **Authority line at the very top** of the parent page, before the intro. Use a signed-off proof line from `_master.md` (e.g. "Built by Mauro, who runs this exact engine daily for a real B2B agency."). Never borrow the agency's client anchors.
 3. **No emojis in subpage titles.** Plain text titles only.
 4. **Booking CTA at the bottom** of the parent page (and/or the final subpage): "Want this installed in your agency? Book a call: `{{calendly_url}}`". `{{calendly_url}}` is [PENDING — no booking link exists yet]. Flag it as a blocker rather than inventing a link.
@@ -54,7 +54,7 @@ If you catch yourself adding an H1/H2 for these sections on the parent page, STO
 End state: a parent page containing 5-7 clickable subpages, the second-to-last being the fill-in page.
 
 FORMATTING RULES (apply all):
-- Set the parent page COVER to a solid [BRAND COLOR] image/color.
+- Set the parent page COVER to a solid #4A392C.
 - Subpage titles are PLAIN TEXT. No emojis.
 - Put the authority line at the very top of the parent page.
 - Put a booking CTA at the bottom of the parent page.
@@ -62,7 +62,7 @@ FORMATTING RULES (apply all):
 ═══════════════════════════════════════════
 
 PARENT PAGE
-Cover: solid [BRAND COLOR].
+Cover: solid #4A392C.
 Top line (authority line): "[SIGNED-OFF PROOF LINE, e.g. Built by Mauro, who runs this exact engine daily for a real B2B agency.]"
 Title: [MAGNET TITLE]
 Subtitle: [MAGNET SUBTITLE — number anchor + scale anchor, real and signed off]

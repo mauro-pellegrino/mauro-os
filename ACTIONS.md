@@ -16,7 +16,7 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 - [ ] Send the referral ask
 - [ ] Post the 200-follower hand raiser
 - [ ] Send Juan the test brief (`docs/juan-lead-magnet-test-brief.md`)
-- [ ] Pick a brand colour. One hex, blocks every Notion page cover
+- [x] Brand colour set 20 Aug: `#4A392C` primary, `#F5EFE4` cream, `#E0A854` amber. Full palette in `brand/colors.md`
 - [ ] Create a Stripe payment link for the $500 offer
 - [ ] Export X analytics. analytics.x.com, last 90 days, export CSV. Send it over.
 - [ ] Run the Koe protocol, personal version. One full day. Questions are on the Mac, not in this repo.
