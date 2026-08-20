@@ -1,7 +1,7 @@
 # Offer: Agency Booked Calls
 
 **Built with:** Offer Cashie (cashie.studio), conversation predates the 30 July 2026 close date. Captured to the repo 17 Aug 2026.
-**Type:** Client Offer (JK's category 1, $40-500/week band).
+**Type:** Done-with-you retainer.
 **Status:** written, never sent. Deadline dropped 17 Aug (see Formalised below).
 
 ---

@@ -2,7 +2,7 @@
 
 **Filed 18 Aug 2026.** Mauro's words when sending the cashie chats: *"will be mostly focused for sending them the lead magnet system for a one payment of 500$."*
 
-**Type:** Customer Offer (JK's category 2, $9-999 band). This is the doorway, not the retainer.
+**Type:** One-time self-serve asset. The cheap first yes.
 **Status:** the product does not exist yet as a thing anyone can receive. Build plan below.
 
 ---
@@ -18,7 +18,7 @@
 | Spots | 1 | Unlimited |
 | Job | Revenue and a case study | Create a customer |
 
-The $500 asset is the cheaper yes. Someone buys it, uses it, and the next conversation starts from "you already paid me once" instead of cold. That is the whole point of the customer step: a buyer is a materially better prospect than a lead.
+The $500 asset is the cheaper yes. Someone buys it, uses it, and the next conversation starts from "you already paid me once" instead of cold. Someone who has paid you is a better prospect than someone who has only read you.
 
 It also fits the ICP. They already make good YouTube videos, X and LinkedIn are solid or dormant, they want to set the system up themselves. Self-serve is what they asked for.
 
