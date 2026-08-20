@@ -97,7 +97,7 @@ Write like you're explaining to a smart peer over coffee — not presenting a ca
 **Sentence structure:**
 
 - Short sentences. One idea per line.
-- Isolated one-liners for emphasis. Like this.
+- Isolated one-liners for emphasis, used rarely and only for a genuine punch. Do not use them to restate a point ("That's the input.", "It's a repackaging job."). Fold those into the surrounding sentence with commas (see the folding rule in Personal edge below).
 - Vary length intentionally — longer setup, then short punch
 - Paragraphs are rarely longer than 3-4 lines
 - Line breaks are used aggressively for rhythm and readability
