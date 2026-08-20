@@ -140,6 +140,22 @@ The four things that clear the bar, in order of value:
 
 **The test before shipping any magnet:** if someone read the whole thing and did nothing differently tomorrow, it failed, regardless of how good the writing was.
 
+### The fill-in page is mandatory and its position is fixed
+
+Added 20 Aug 2026 after a solo build test found the canonical structure could not produce one.
+
+**Every magnet contains at least one page the reader fills in, and it sits second to last.** The final page is the CTA. So the running order always ends:
+
+```
+... content pages ... → [FILL-IN PAGE] → [CTA PAGE]
+```
+
+The fill-in page is whichever of the four bar-clearing artifacts fits the subtype: paste-ready prompts with slots, a swipe file plus a blank sheet, a scoring artifact, or a completed worked example they can copy the shape of.
+
+If a build ends without a fill-in page, it is not finished. **A magnet that hands over rules and has nothing to complete fails this file's own bar.**
+
+Score any magnet against `brand/lead-magnets/shareable/magnet-scoring-sheet.md` before it ships. Any zero in its Section 2 is an automatic hold.
+
 ---
 
 ## X Post Template

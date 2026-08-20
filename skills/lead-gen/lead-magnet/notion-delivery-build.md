@@ -10,6 +10,20 @@
 
 The Chrome extension reliably fails the same way: it dumps everything onto one page instead of nested subpages, and it skips the brand polish. This template forces the subpage structure and bakes in the standing formatting rules so every magnet page comes out consistent.
 
+## Division of ownership (added 20 Aug 2026)
+
+A solo build test found this file and the subtype files specifying two different build shapes, both reading as correct. Resolved:
+
+| Owns | This file | The subtype file |
+|---|---|---|
+| How many pages and what they're called | no | **yes** |
+| What goes on each page | no | **yes** |
+| Nesting, cover, authority line, CTA, credit line, no-emoji rule | **yes** | no |
+
+**The five subpage names below are a default for when the subtype doesn't specify its own.** When the subtype defines a page structure (as `prompt-swipe-file.md` does with its prompt groups), that structure wins and you substitute it into the template. The count flexes 5 to 7.
+
+**One rule overrides both files:** the second-to-last page is always the fill-in page, and the last page is always the CTA. See "The fill-in page is mandatory" in `_master.md`.
+
 ## Standing formatting rules
 
 Apply these to EVERY lead-magnet Notion delivery page:
@@ -19,7 +33,7 @@ Apply these to EVERY lead-magnet Notion delivery page:
 3. **No emojis in subpage titles.** Plain text titles only.
 4. **Booking CTA at the bottom** of the parent page (and/or the final subpage): "Want this installed in your agency? Book a call: `{{calendly_url}}`". `{{calendly_url}}` is [PENDING — no booking link exists yet]. Flag it as a blocker rather than inventing a link.
 5. **"Created by @maurojpelle"** credit line at the bottom.
-6. **Force subpages.** The five sections must each be a nested child page, never headings on the parent.
+6. **Force subpages.** Every section must be a nested child page, never headings on the parent. 5-7 pages, subtype decides.
 
 ## Token resolution
 
@@ -35,9 +49,9 @@ You are building a lead-magnet DELIVERY PAGE in Notion using the Notion integrat
 ═══════════════════════════════════════════
 CRITICAL STRUCTURE RULE — READ TWICE
 ═══════════════════════════════════════════
-Do NOT put all content on one page. Build ONE parent page, then create FIVE SEPARATE CHILD SUBPAGES nested inside it. Each section below is its own nested child page — NOT a heading, NOT a toggle, NOT a divider on the parent page.
+Do NOT put all content on one page. Build ONE parent page, then create the SEPARATE CHILD SUBPAGES the subtype specifies (5-7) nested inside it. Each section below is its own nested child page — NOT a heading, NOT a toggle, NOT a divider on the parent page.
 If you catch yourself adding an H1/H2 for these sections on the parent page, STOP and make it a nested subpage instead.
-End state: a parent page containing 5 clickable subpages.
+End state: a parent page containing 5-7 clickable subpages, the second-to-last being the fill-in page.
 
 FORMATTING RULES (apply all):
 - Set the parent page COVER to a solid [BRAND COLOR] image/color.
@@ -53,7 +67,7 @@ Top line (authority line): "[SIGNED-OFF PROOF LINE, e.g. Built by Mauro, who run
 Title: [MAGNET TITLE]
 Subtitle: [MAGNET SUBTITLE — number anchor + scale anchor, real and signed off]
 Intro paragraph: [1-2 lines on what this is and how to start]
-Then create the 5 subpages below as nested child pages.
+Then create the subpages below as nested child pages.
 Bottom of parent page: booking CTA — "Want this installed in your agency? Book a call: {{calendly_url}}" — and a final line: "Created by @maurojpelle".
 
 SUBPAGE 1 — "Start Here: How to Use"
@@ -68,10 +82,13 @@ SUBPAGE 3 — "What's Inside"
 SUBPAGE 4 — "Worked Example"
 [A real, anonymized example showing the output shape]
 
-SUBPAGE 5 — "Want a Free Breakdown?"
+SUBPAGE 5 — "Score Your Own" [FILL-IN PAGE — mandatory, always second to last]
+[The fill-in artifact: blank fields, rows to score, or a template to complete. Never prose.]
+
+SUBPAGE 6 — "Want a Free Breakdown?"
 [The soft offer / reply CTA]
 
-FINAL CHECK: parent page has exactly 5 nested subpages, a brand-color cover, an authority line at top, a booking CTA + @maurojpelle credit at the bottom, and no emojis in any subpage title.
+FINAL CHECK: parent page has 5-7 nested subpages including a fill-in page second to last, a brand-color cover, an authority line at top, a booking CTA + @maurojpelle credit at the bottom, and no emojis in any subpage title.
 ```
 
 ---
