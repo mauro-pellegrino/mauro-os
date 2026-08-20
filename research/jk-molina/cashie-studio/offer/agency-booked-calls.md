@@ -142,3 +142,17 @@ That last point changes the delivery obligation. If they're setting it up themse
 Trigger to buy Skool: the group tier opening, or 3 paying 1:1 clients, whichever comes first.
 
 **What this makes the qualifier.** "Do you already have YouTube videos?" A yes means the input exists and the system has something to run on. A no means they're not ready, and that is a clean disqualification rather than a maybe.
+
+---
+
+## The destination: the Camilo Castañeda shape (noted 20 Aug)
+
+Mauro's reference for where the group tier eventually lands.
+
+**What Castañeda runs:** Epic Ads Lab, a Meta creative agency with $100M+ tracked spend, and alongside it **Ad Creators Lab** on Skool at $77/mo. The community sells the exact creative system his agency uses for paying clients: weekly live roasts, AI prompt libraries, scaling frameworks. Same operator-packages-his-own-system structure Mauro is already positioned for.
+
+**The version Mauro wants:** the same shape, aimed at written AI content, visuals, slides and Miro boards rather than ad creative. That is a real open lane. Castañeda owns AI ad creative; nobody obviously owns the written-and-visual side, and the skills library already produces exactly that.
+
+**Where the models diverge: price and stage.** $77/mo needs ~65 members to clear $5k/mo. The group tier priced at ~$150/week needs 8 or 9. Castañeda can fill a cheap room because he has the audience and the proof; Mauro has 200 followers and no case study. Same model, different stage. Start at the higher price with fewer people and drop toward volume pricing when there is an audience to fill it.
+
+**The mechanic worth taking now:** the weekly live roast. It is the recurring reason a member stays subscribed, it produces content as a byproduct, and Mauro's version writes itself: roast a lead magnet, a post, or a board live.
