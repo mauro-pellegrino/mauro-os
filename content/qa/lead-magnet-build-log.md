@@ -65,7 +65,7 @@ One line per moment I was unsure. Format: `[file, section] — what I couldn't t
 
 4. `[notion-delivery-build.md, rule 4] + [_master.md, Token resolution]` — `{{calendly_url}}` has no value and no booking link exists. — Left the token visible, flagged it as a blocker in-page, kept the DM "reply yes" offer as the working CTA. (Known problem, not solved.)
 
-5. `[notion-delivery-build.md, rule 1] + [_master.md, Cover fallback]` — `#4A392C` is unfilled. — Picked `#5B4BE1` (electric indigo), used it on every page and the cover. Pure guess. (Known problem.)
+5. `[notion-delivery-build.md, rule 1] + [_master.md, Cover fallback]` — `[BRAND COLOR]` is unfilled. — Picked `#5B4BE1` (electric indigo), used it on every page and the cover. Pure guess. (Known problem.)
 
 6. `[notion-delivery-build.md, CRITICAL STRUCTURE RULE]` — hardcoded "FIVE subpages," but the shareable spec says 5-7. — Went with 5 (the build prompt is the thing you actually paste, so it wins). Saying which: **5 subpages.** (Known problem.)
 

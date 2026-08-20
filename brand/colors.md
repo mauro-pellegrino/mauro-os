@@ -23,6 +23,6 @@
 
 ## Existing conventions this replaces
 
-- `#4A392C` in `skills/lead-gen/lead-magnet/_master.md` and `notion-delivery-build.md`
+- The `[BRAND COLOR]` placeholder in `skills/lead-gen/lead-magnet/_master.md` and `notion-delivery-build.md`
 - The `#5B4BE1` a build test guessed to finish a run. Dead, do not reuse
 - Article doodles keep their own muted `#F3E3A3` on off-white, which sits inside this family already

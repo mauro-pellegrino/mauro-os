@@ -51,7 +51,8 @@ Example: `_master.md, In-asset prompt blocks — the page image prompt just says
 
 These are already logged. Note them if you hit them, don't try to solve them.
 
-- `{{calendly_url}}` and `#4A392C` are unfilled placeholders. Use anything, flag it.
+- `{{calendly_url}}` is still an unfilled placeholder. Use anything, flag it.
+- Brand colour is now set: `#4A392C`. Full palette in `brand/colors.md`.
 - `notion-delivery-build.md` is hardcoded to exactly 5 subpages while the spec says 5-7. Pick one and say which.
 - `case-study.md` and `industry-specific.md` are unusable. Don't try them.
 - There is no landing page or email capture. The DM links straight to the Notion page for now.

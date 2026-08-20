@@ -34,7 +34,7 @@ The YouTube skills kept their structure but need Mauro's voice and channel decis
 
 ## 3. Brand identity decisions
 
-- Brand colors (`#4A392C` in deck/slide specs; current hexes are inherited working values)
+- ~~Brand colors~~ Resolved 20 Aug. Palette in `brand/colors.md`: `#4A392C` primary, `#F5EFE4` cream, `#E0A854` amber
 - Logo / brand mark (`[LOGO: supply when brand mark exists]`)
 - Name for the signature effect/system (x-article and long-form skills have `[CALIBRATE: Mauro hasn't named his effect]`)
 

@@ -54,7 +54,7 @@ Each of these stops a magnet shipping. Each is a five-minute decision.
 | Placeholder | Where it bites | Needed |
 |---|---|---|
 | `{{calendly_url}}` | Every Notion CTA, every DM P.S., the final subpage | A booking link, or "reply to this" instead |
-| `#4A392C` | Every Notion page cover, the fallback designed card | One hex, reused on every magnet |
+| ~~Brand colour~~ | ~~Every Notion page cover~~ | **Resolved 20 Aug: `#4A392C`. See `brand/colors.md`** |
 | Authority anchors | Every LinkedIn post, every asset's top line | Sign-off on which numbers are public |
 | Kit + `get.ghostedcalls.com` | The whole capture half of the diagram | An email platform, or accept DM-only capture |
 
