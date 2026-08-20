@@ -153,6 +153,14 @@ He deletes "it took a lot of back and forth, that back and forth was the actual 
 
 **5. Factual precision on named references.** Get the name right (it was "Wiz of ecom", not "Wiz of VC"). Attribute real people ("Like Charlie Morgan says"). A wrong name burns credibility with an operator audience.
 
+**6. Fold short restatement lines into longer sentences with commas (Mauro, 2026-08-20).**
+Mauro rarely leaves a short declarative sitting alone to restate or label a point. Lines like "That's the input." or "It's a repackaging job." read as written-for-effect, not how he talks. Connect the beat to the sentence around it with commas, even when it makes a longer, slightly run-on sentence. He talks that way, and the occasional run-on is more human than a clipped label line. This is not a ban on all short sentences, a single deliberate punch still lands. It targets the explanatory restatement specifically.
+
+❌ "...you're making content every week. That's the input. The skill turns what you said into something people opt in for."
+✅ "...you're making content every week already, and the skill just turns what you already said into something people will actually opt in for."
+❌ "...like a separate writing project. It's a repackaging job. Once the recipe is built..."
+✅ "...like a separate writing project, when really you're just repackaging content you already have, and once the recipe is built the AI does the heavy lifting."
+
 **The non-native-speaker angle** is a recurring, ownable vein for Mauro: most of his clients are non-native English speakers, AI output is "obvious as fuck" on them because they use words they'd never say, and the fix is recording your own voice. Call transcripts are the #1 base document for content because of this. Reach for this angle; it's his, and it lands.
 
 ---
@@ -228,6 +236,12 @@ Soft, conversational, never pushy.
 
 > "Want the exact setup? DM me the keyword and I'll send it over."
 > "Talk soon, Mauro."
+
+**The "here's how it works" breakdown:**
+When laying out a process or the contents of something, use a plain lead-in line and then bullets, one step or component per line. Don't cram the whole thing into a single prose sentence. This is how Mauro actually walks through a mechanism.
+
+> "Here's how it works:"
+> then bullet each step or component on its own line.
 
 ---
 
@@ -409,6 +423,7 @@ Run every piece of AI-assisted content through this before publishing:
 - [ ] Is there anything that would make a commenter disagree?
 - [ ] Any "That's the [reframe] doing its job" / "That's not a problem, that's the system working" lines? Cut them. State the observation, don't reframe it.
 - [ ] Any clipped short-phrase or subject-dropped fragment stacks, especially the opener? Fold them into flowing sentences.
+- [ ] Any short line that just restates or labels a point ("That's the input.", "It's a repackaging job.")? Fold it into the surrounding sentence with commas.
 - [ ] Personality check: does every distinctive phrase trace to Mauro's raw words? Replace any invented voice or off-voice word (e.g. "scramble") with his actual phrasing, or cut it.
 
 The fastest way to de-AI your writing is to add something that creates friction. AI avoids disagreement, while humans don't.

@@ -234,6 +234,8 @@ Unlike lead magnets, long-forms have **multiple CTA mechanics**. The subtype fil
 
 The subtype file picks one. Do not stack multiple CTAs in a single post.
 
+**Asset-ready rule (Mauro, 2026-08-20):** never draft or ship a post with a DM-trigger or comment-to-DM CTA unless the thing it promises is already built and ready to send. A keyword CTA is a promise to deliver. If the giveaway is a lead magnet, the skill that produces it and the finished asset both have to exist before the post goes out. When a draft includes a keyword CTA, prepare the deliverable alongside it (or flag that it still needs building) rather than pointing at a resource that doesn't exist yet.
+
 ---
 
 ## Asset Build Constraints
