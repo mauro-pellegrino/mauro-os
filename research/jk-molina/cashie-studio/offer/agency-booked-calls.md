@@ -131,6 +131,14 @@ Named examples of this exact profile: **Brando**, **@antonioventre**.
 
 That last point changes the delivery obligation. If they're setting it up themselves, the teaching has to be **precise**, not directional. A weekly call plus Slack access does not cover it on its own. The templates and the walkthrough have to be good enough to follow without Mauro in the room.
 
-**Delivery idea: a Skool channel.** Somewhere the templates, walkthroughs and "what's working" live, rather than dripping them through DMs. Not decided, worth pricing out. It also answers the distribution question Cashie deferred and never returned to.
+**Group tier: decided 20 Aug.** Mauro wants one eventually, and the arithmetic says he needs one.
+
+1:1 at $800/mo means 6 clients to reach $5k/mo. That is 6 weekly calls, which is his entire 5-7 hour budget with nothing left for content or delivery. A group of 6 at ~$150/week is ~$3,900/mo on **one** weekly call. Group is the only shape that reaches the goal inside the hours he actually has.
+
+**Sequence, not simultaneous.** Land the 1:1 client first, get the result, then open the group on the back of it. A group with no proof and no members is hard to fill, and an empty room signals nothing is happening.
+
+**Skool becomes the container at that point, not before.** $99/mo is 12% of revenue for a room with one person in it. Classroom modules are the right home for the precise teaching a self-implementer needs, and Skool's directory only helps once the community is populated. Until then a shared Notion plus the promised Slack does the same job for free.
+
+Trigger to buy Skool: the group tier opening, or 3 paying 1:1 clients, whichever comes first.
 
 **What this makes the qualifier.** "Do you already have YouTube videos?" A yes means the input exists and the system has something to run on. A no means they're not ready, and that is a clean disqualification rather than a maybe.

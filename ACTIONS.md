@@ -62,7 +62,7 @@ Because they self-implement, the teaching has to be precise, not directional. Th
 
 - [ ] $5k/mo by end 2026. $200/wk at 1 spot is $800/mo, so this offer validates but does not reach it. Hold the number, move it, or plan the second vehicle.
 - [ ] The rule: no new skills until there is a paying client. Sharpest rule on the board, easiest to ignore.
-- [ ] Skool channel yes or no. It is also the answer to distribution, which cashie never resolved.
+- [x] Skool: yes, but not yet. Buy it when the group tier opens or at 3 paying clients. Group tier confirmed 20 Aug as the shape that reaches $5k/mo inside 5-7 hrs/week.
 - [ ] Series vs one-offs on YouTube. The repo contradicts itself and one doc is misleading whoever reads it next.
 
 **Settled 17 Aug:** offer deadline dropped (standing, scarcity is the 1 spot). IP is Mauro's, no clearance needed. All agency naming scrubbed from the repo.
