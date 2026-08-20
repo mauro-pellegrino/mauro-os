@@ -18,6 +18,7 @@
 - [feedback_lead_magnet_no_repo_save.md](feedback_lead_magnet_no_repo_save.md) — Don't save lead magnets to repo; they go to Notion + X analytics
 - [feedback_youtube_series_not_oneoffs.md](feedback_youtube_series_not_oneoffs.md) — YouTube ideas must be episodes of repeatable series, never one-off videos
 - [feedback_reply_lead_with_verdict.md](feedback_reply_lead_with_verdict.md) — When Mauro drops a tweet, lead with a straight reply/skip verdict; don't default to drafting replies for everything
+- [feedback_git_pull_push_hygiene.md](feedback_git_pull_push_hygiene.md) — Pull main at session start, push after every unit of work; work on main, don't let unpushed commits stack
 
 ## Reference
 - [jk-molina-reference-library.md](jk-molina-reference-library.md) — Whale-bait / minimalist-$1M PDFs are JK Molina's (Likes Aint Cash / cashie.studio), filed in research/jk-molina/ — not Charlie Morgan

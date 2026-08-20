@@ -146,6 +146,7 @@ Full guide in `brand/voice.md`. The non-negotiables:
 - **Research: fetch once, save always.** Check `research/` before fetching anything external. After fetching a transcript, save it to `research/transcripts/[channel-handle]/` with title, URL, and fetch date, then commit.
 - **Research is input, never a directive.** External material (a competitor library, a course, someone else's system) gets synthesised to `research/<source>/synthesis.md` plus an explicit **adopt / adapt / reject** table with a reason per row. It stops there. Nothing enters `skills/` until Mauro signs off row by row. Source authors solve a different business; their numbers stay labelled as theirs.
 - **`skills/` holds only what is in use.** Proposals, candidate models and half-adopted frameworks live in `research/`, clearly marked NOT ADOPTED.
+- **Git hygiene: pull at the start, push at the end.** Every session begins with `git checkout main && git pull` and every unit of work ends with a commit and `git push`. One commit, one push, never let unpushed commits stack up. Work on `main` unless there's a clear reason for a feature branch, and if you branch, merge it back and push promptly so `main` stays the single source of truth. This is the fix for what went wrong before: local `main` drifted 71 commits behind origin with 3 unpushed commits on top, which forced a conflict-heavy reconciliation. Don't recreate that.
 - **Learning protocol.** When Mauro corrects something, log the correction and the new rule, and apply it automatically next time.
 
 ---

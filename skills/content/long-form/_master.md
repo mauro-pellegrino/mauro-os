@@ -2,7 +2,7 @@
 
 **Version:** 2.0
 **Created:** 2026-05-26
-**Updated:** 2026-07-14 (retargeted to Mauro's own brand, @maurojpelle)
+**Updated:** 2026-08-20 (added voice-note / transcript as the primary intake; input routes to template)
 **Status:** Shared shell across all long-form subtypes. Always load this file together with the relevant subtype file.
 
 ---
@@ -17,6 +17,30 @@ This is **distinct from**:
 - **Short forms**: pure text or single-image posts under ~150 words
 
 Volume target on @maurojpelle: [CALIBRATE: set a realistic weekly long-form count with Mauro; his available time is roughly an hour a day.]
+
+---
+
+## Input: Voice Note or Transcript (primary intake)
+
+The default input for a long-form post is a **voice note or a video transcription**. The workflow is input-first: the content of what Mauro said decides the template, never the other way around. Never pick a vehicle and then bend the idea to fit it.
+
+**The loop:**
+
+1. **Read the whole transcript.** Find the idea(s) worth a post. One voice note can carry 2-3 posts if there's more than one distinct idea. Don't force it, one idea is fine.
+2. **Pick the template from the idea.** Match what the note actually contains to the right shape:
+   - **Pure-copy LinkedIn long-form producible from the voice note alone** (no video, dashboard, design, or client data): use the vehicles in the "Voice note → LinkedIn: the runnable set" section of `skills/content/vehicle-library.md`. The three long-form ones are **Authority Long-Form** (MOF, mechanism + real numbers), **Growth Long-Form** (TOF/MOF, one scaling insight, contrarian pivot), and **Personal Long-Form** (TOF/MOF, a personal story tied to the actual work). The other 8 runnable vehicles cover non-long-form shapes when that fits the idea better.
+   - **Long-form that needs media** (the note references a real result, dashboard, build, or artifact worth showing): use the media-based subtype files below. The voice note supplies all the copy; mark every asset Mauro must add with a `[MEDIA: ...]` block. Do not invent the asset.
+3. **Write it in that template's shape**, following the "what makes it work" / format spec for the chosen vehicle or subtype.
+4. **Run it through `brand/voice.md`** before handing it over. The hard bans kill LinkedIn posts fastest: no em dashes, no "it's not X, it's Y", no "most people" openers.
+5. **Hand over the draft with the vehicle name tagged at the top.** Always tag which vehicle was used, that tag is how we learn which formats convert once 20-30 posts exist.
+
+**Cadence rule:** don't reuse the same vehicle inside one week. With the 11 runnable vehicles that's over two months before anything repeats.
+
+**Where the input lives:** save every voice note / transcript to `research/transcripts/maurojpelle/` per the repo's fetch-once-save-always rule before producing from it.
+
+### Direction: one intake, every format
+
+Voice note or video transcription is becoming the **universal intake for all content formats**, not just long-form: article (`x-article-creator.md`), long-form (this skill), tweet / short-form (`short-form/`), HTML infographic (`visual-docs/`), and lead magnet (`lead-gen/lead-magnet/`). Same principle everywhere: the transcription is the source, its content routes to the format, and every output still passes `brand/voice.md`. Build each format's voice-note intake the same way this one works. [CALIBRATE: wire the tweet/short-form intake next once the long-form loop is proven.]
 
 ---
 
