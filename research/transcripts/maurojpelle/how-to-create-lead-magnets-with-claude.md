@@ -24,7 +24,7 @@
 
 1:15 This is just for one type of lead magnet format. Why skills and not agent? Well, skills is kind of like the recipe of how we want it to cook the content.
 
-1:25 So in this case, the transcript and the visuals into the container of information inside of Notion. The end result is a Notion document like you see with Lorenzo where he posts, uhm, just a Notion doc with, uh, title options, sub-pages.
+1:25 So in this case, the transcript and the visuals into the container of information inside of Notion. The end result is a Notion document like you see with the agency owner where he posts, uhm, just a Notion doc with, uh, title options, sub-pages.
 
 1:40 It also has ChedGBT and HTML prompts for VA. Why? Because this is like images, right? We don't want to send out just text message like text, text inside of a Notion.
 

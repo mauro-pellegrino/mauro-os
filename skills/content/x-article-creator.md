@@ -473,7 +473,7 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 ## Correction Log
 
 **17 August 2026 — Section headers must be Subheadings in the X editor**
-Mauro reviewed the "how to create lead magnets with Claude" article via a Loom and approved the writing and structure outright ("I really like the writing", "this is so good"). The one fix: the section headers were sitting at body-text size. In the X article editor, every section header must be set to the Subheading style so it renders bigger than the body. He also confirmed his distribution cadence: publish the article, then roughly 3 hours later post the infographic version as a quote tweet (like Lorenzo). That infographic must use the same subheading structure, not a flat layout, since the subheadings are what make the article version read better than the flat infographics.
+Mauro reviewed the "how to create lead magnets with Claude" article via a Loom and approved the writing and structure outright ("I really like the writing", "this is so good"). The one fix: the section headers were sitting at body-text size. In the X article editor, every section header must be set to the Subheading style so it renders bigger than the body. He also confirmed his distribution cadence: publish the article, then roughly 3 hours later post the infographic version as a quote tweet (like the agency owner). That infographic must use the same subheading structure, not a flat layout, since the subheadings are what make the article version read better than the flat infographics.
 
 **21 July 2026 — Off-yellow covers + airier article spacing**
 Two changes from Mauro:

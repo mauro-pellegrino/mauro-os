@@ -22,7 +22,7 @@ Mauro asked for the subtype examples and worked examples to use **the agency own
 
 That directly contradicts two standing rules set four days earlier:
 
-- **His own instruction, 17 Aug:** *"we need to make sure that we remove all growthub from my stuff mauro os, ghostedcalls."* 46 mentions across 16 files were scrubbed to zero.
+- **His own instruction, 17 Aug:** *"we need to make sure that we remove all the agency from my stuff mauro os, ghostedcalls."* 46 mentions across 16 files were scrubbed to zero.
 - **`CLAUDE.md` §7:** never name clients in anything public-facing. `positioning.md` adds that any specific public number needs his sign-off, and that he must never borrow the agency's anchors as his own proof.
 
 This is a paid product going to strangers, which is the most public-facing thing in the repo.

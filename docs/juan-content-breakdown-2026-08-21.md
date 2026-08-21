@@ -3,7 +3,7 @@
 **For:** Juan
 **From:** Mauro
 **Written:** 2026-08-21
-**Source work:** a single working session in the `growthub-os` repo, spanning the evening of 08-20 into 08-21
+**Source work:** a single working session in the `the agency repo` repo, spanning the evening of 08-20 into 08-21
 **Status:** raw material and instructions. Nothing in here is a finished post.
 
 ---
@@ -28,15 +28,15 @@ The session produced three categories of number and they have completely differe
 
 | Category | Examples | Can it be published? |
 |---|---|---|
-| **Growthub's internal financials** | close rate 27.1%, $300k MRR, 118 qualified calls, 32 sales, monthly close rates, AOV targets | **NO. Not without Lorenzo's and Bogdan's explicit sign-off.** This is the agency's confidential performance data. Mauro is an employee reporting on it, not an owner licensed to publish it. |
-| **Numbers from a private call** | Blue Sense at 8 figures, A$24-25k average retainer, sub-2% churn, ~40 clients fired, CAC ~$10k, LTGP ~$200k | **NO. Hard no.** These came from a 33-minute private call between Nathan Perdriau, Lorenzo and Bogdan on 2026-08-17. Publishing them would burn a live referral partner for a post. Not a grey area. |
+| **the agency's internal financials** | close rate 27.1%, $300k MRR, 118 qualified calls, 32 sales, monthly close rates, AOV targets | **NO. Not without the agency owner's and the co-founder's explicit sign-off.** This is the agency's confidential performance data. Mauro is an employee reporting on it, not an owner licensed to publish it. |
+| **Numbers from a private call** | Blue Sense at 8 figures, A$24-25k average retainer, sub-2% churn, ~40 clients fired, CAC ~$10k, LTGP ~$200k | **NO. Hard no.** These came from a 33-minute private call between Nathan Perdriau, the agency owner and the co-founder on 2026-08-17. Publishing them would burn a live referral partner for a post. Not a grey area. |
 | **Method, process and Mauro's own mistakes** | how to join content output to booked calls, the parsing traps, the correlation approach, the three errors found in his own files | **YES. Publish freely.** This is Mauro's own work product and his own record. It is also the strongest material in the session. |
 
-**The practical consequence:** every publishable angle in section 5 is built on **method and self-correction**, not on Growthub's figures. That is not a limitation — the method is more forwardable than the numbers, because a reader can run it on their own account and a number they can't verify does nothing for them.
+**The practical consequence:** every publishable angle in section 5 is built on **method and self-correction**, not on the agency's figures. That is not a limitation — the method is more forwardable than the numbers, because a reader can run it on their own account and a number they can't verify does nothing for them.
 
 **If Mauro does get sign-off** on a redacted version (percentages and ratios, no absolute revenue), section 5 marks which angles get materially stronger. Ask, don't assume.
 
-**One more flag, for Mauro not Juan.** There is a standing rule in the Growthub memory that article subjects must come from the *reader's* ad account, never from our own content analytics. That rule was written for Lorenzo's audience of brand operators. Mauro's own audience is agency owners using AI, where the measurement layer genuinely *is* the subject, and the August objective read recommends publishing exactly that. Those two point in opposite directions here. Worth Mauro deciding explicitly rather than letting it resolve by accident.
+**One more flag, for Mauro not Juan.** There is a standing rule in the the agency memory that article subjects must come from the *reader's* ad account, never from our own content analytics. That rule was written for the agency owner's audience of brand operators. Mauro's own audience is agency owners using AI, where the measurement layer genuinely *is* the subject, and the August objective read recommends publishing exactly that. Those two point in opposite directions here. Worth Mauro deciding explicitly rather than letting it resolve by accident.
 
 ---
 
@@ -63,7 +63,7 @@ Roughly five hours. Four new or rewritten documents, three corrected files, one 
 
 **Inputs joined:**
 - The sales team's own weekly call log (qualification verdict, not our intake guess)
-- Lorenzo's Calendly export, 364 bookings, to recover the date each lead *booked* rather than the date the call ran
+- the agency owner's Calendly export, 364 bookings, to recover the date each lead *booked* rather than the date the call ran
 - Two overlapping X analytics exports, deduplicated by post ID
 - Three weeks of the newer content tracker
 
@@ -109,7 +109,7 @@ A 33-minute peer call had been analysed once from a summary. Reading it in full 
 
 **Correction one, and it was mine.** A competitor file said the subject had "no own channel" and shouldn't be added to YouTube monitoring. He has had a channel for three years. It's in the transcript, in plain language, and I'd written the opposite. Mauro caught it by asking a simple question.
 
-**Correction two.** An earlier version of the same file called him a competitor. He isn't. He briefs creative and doesn't produce it, which makes Growthub a supplier rather than a rival, and a referral was agreed on the call.
+**Correction two.** An earlier version of the same file called him a competitor. He isn't. He briefs creative and doesn't produce it, which makes the agency a supplier rather than a rival, and a referral was agreed on the call.
 
 **Also found:** the transcript had never been saved. The folder for it existed and was empty. Four days of it living only in a chat window. It's saved now.
 
@@ -206,7 +206,7 @@ Title drafts:
 
 Angles A, B and C do not improve much — they're method pieces and they stand alone.
 
-Angle B gets a stronger opener with one ratio in it. And a fifth angle opens up that is currently blocked: the correlation result itself, published as percentages and relative figures with no absolute revenue. That would be the strongest differentiation available, because the objective read notes nobody in this space publishes a measured loop. It needs Lorenzo's explicit yes.
+Angle B gets a stronger opener with one ratio in it. And a fifth angle opens up that is currently blocked: the correlation result itself, published as percentages and relative figures with no absolute revenue. That would be the strongest differentiation available, because the objective read notes nobody in this space publishes a measured loop. It needs the agency owner's explicit yes.
 
 ---
 
@@ -218,12 +218,12 @@ Juan, this is your list. Everything here is collection, not creation.
 |---|---|---|---|
 | 1 | X analytics export, current month | Mauro's X analytics | **Do this first, it's time-sensitive.** The window is rolling and history dies. Save to `research/` with the date range in the filename. |
 | 2 | A monthly export reminder | Calendar or Notion | Recurring, first of the month, both accounts. The point of asset 1 is that it never gets forgotten again. |
-| 3 | Screenshot of the ambiguous date headers | The weekly targets sheet, `growthub-os/research/q1-q2-content-vs-calls/raw-data/` | This is the visual for Angle A error 3. Show mixed formats with no year. Ask Mauro before opening the file — it has Growthub financials in it, so **crop to headers only, no data rows.** |
+| 3 | Screenshot of the ambiguous date headers | The weekly targets sheet, `the agency repo/research/q1-q2-content-vs-calls/raw-data/` | This is the visual for Angle A error 3. Show mixed formats with no year. Ask Mauro before opening the file — it has the agency financials in it, so **crop to headers only, no data rows.** |
 | 4 | Screenshot of the README line | Same repo, git history | The `"reference only"` line as it was written. Visual for Angle A error 2. |
 | 5 | Terminal screenshot of the correlation output | Ask Mauro to re-run and screenshot | Visual for Angle B. **Crop or blur any absolute figures** — the r-values are the point. |
-| 6 | The four session documents | `growthub-os` | Read-only, for context. Do not copy Growthub financials into `mauro-os`. Paths in section 8. |
+| 6 | The four session documents | `the agency repo` | Read-only, for context. Do not copy the agency financials into `mauro-os`. Paths in section 8. |
 
-**Hard rule on assets 3, 5 and 6:** Growthub's financial figures do not get copied into this repo. This repo is Mauro's personal brand and it is a publishing surface. Keep the wall.
+**Hard rule on assets 3, 5 and 6:** the agency's financial figures do not get copied into this repo. This repo is Mauro's personal brand and it is a publishing surface. Keep the wall.
 
 ---
 
@@ -240,12 +240,12 @@ Juan, this is your list. Everything here is collection, not creation.
 
 ## 8. Reference paths
 
-All in `growthub-os`, which is a separate repo from this one:
+All in `the agency repo`, which is a separate repo from this one:
 
 - `research/content-tracker/six-month-output-vs-qualified-calls-2026-08-20.md`
 - `research/q1-q2-content-vs-calls/close-rate-and-acv-from-weekly-targets-2026-08-20.md`
 - `research/competitors/nathanperdriau-bluesense.md`
-- `research/transcripts/nathanperdriau/2026-08-17-bogdan-lorenzo-call.md` — **contains private call content, internal only**
+- `research/transcripts/nathanperdriau/2026-08-17-the co-founder-the agency owner-call.md` — **contains private call content, internal only**
 - `ops/mauro-action-points-2026-08-21.md`
 - `ops/mauro-objective-read-2026-08-03.md` — the source of the series recommendations in section 5
 
@@ -253,10 +253,10 @@ All in `growthub-os`, which is a separate repo from this one:
 
 ## 9. Open for Mauro
 
-1. **Redaction sign-off from Lorenzo?** Gates the fifth angle entirely and improves Angle B. One conversation.
+1. **Redaction sign-off from the agency owner?** Gates the fifth angle entirely and improves Angle B. One conversation.
 2. **Which angle ships first?** A is recommended. Nothing in section 5 is written until this is picked.
 3. **The rule conflict in section 1** — reader's-account subjects versus publishing the measurement layer. Needs an explicit call.
-4. **Does Juan get read access to `growthub-os`?** Section 6 asks him to read files there. Currently unresolved, and if the answer is no then assets 3 to 6 come from Mauro directly.
+4. **Does Juan get read access to `the agency repo`?** Section 6 asks him to read files there. Currently unresolved, and if the answer is no then assets 3 to 6 come from Mauro directly.
 5. **Angle D without the peer's framing** — is the idea strong enough standing on Mauro's own funnel? Worth a look before it gets drafted.
 
 ---
@@ -265,7 +265,7 @@ All in `growthub-os`, which is a separate repo from this one:
 
 Worth writing down because it's the actual pattern.
 
-This session produced four documents of analysis for Growthub and **zero published content for Mauro's own brand.** The material for several strong posts is in section 5 and none of it is written.
+This session produced four documents of analysis for the agency and **zero published content for Mauro's own brand.** The material for several strong posts is in section 5 and none of it is written.
 
 The August objective read named this exactly: 166 commits of system work against one saved post, one lead magnet, one video. It also named the fix, which is not another plan — it's a rule that runs before the choosing starts. No system work in the personal hours until that week's posts are out.
 
