@@ -7,7 +7,12 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 ## THIS WEEK
 
-**Product rebuild in progress.** First Notion assembly shipped without examples, templates or an install path. Source of truth is now `brand/lead-magnets/product/`. Pages 0-3 and 6-7 written, pages 4 (skill files) and 5 (templates) still to build.
+**Product restructured as an engine, 21 Aug.** Source of truth is `brand/engine/`. Module 01 is lead magnets, complete on its own, with room for 02-04. Packaging: **Whop** for storefront, payment, gating and modules; a **git repo** for the skill files so updates propagate; Notion dropped (no payment, no access control, freezes on duplicate).
+
+5 of 8 module-01 pages written. Left: 03 the rules, 04 the skill files, 05 the templates. All three are assembly from files that already exist.
+
+- [ ] Confirm Whop's course + gating features are on the free tier
+- [ ] Create the public repo that holds the skill files
 
 **Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
 - **Agency Booked Calls** — $200/wk x 4, 1 spot, standing. Done-with-you. Ready to send.
