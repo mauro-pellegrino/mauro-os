@@ -59,7 +59,9 @@ Two of six exist. That is the gap between a reference doc and a $500 product.
 
 ## Payment
 
-**A Stripe payment link.** Not Whop, not Gumroad, not Skool.
+**Manual invoice, decided 21 Aug.** Not Stripe links, not Whop, not Gumroad, not Skool.
+
+At one buyer arriving through a DM, an invoice is the whole payment system. Revisit a payment link at the third buyer, when sending invoices by hand starts costing more than the setup would.
 
 At one-to-ten buyers arriving through a DM conversation, a storefront adds nothing. He sends a link, they pay, he shares the Notion duplicate link. Manual delivery is fine at this volume and takes thirty seconds.
 
