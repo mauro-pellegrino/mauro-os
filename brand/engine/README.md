@@ -87,3 +87,36 @@ Camilo Castañeda, Brando, Antonio Ventre.
 Operators already think in systems, so a module in an engine reads as normal. What reads as a downgrade is a course. The nearest comparable in this space sells "the creative system my agency uses," not a program, and that's the register.
 
 **The risk to manage:** "one of many" can imply incomplete. Module 01 has to be genuinely finished for everything lead-magnet before it ships, which is why 03, 04 and 05 are not optional.
+
+---
+
+## Module pipeline: what already exists to package
+
+Surveyed the agency repo 21 Aug. Every module below is built from systems already in daily use. None of it needs inventing, only packaging and de-personalising.
+
+| Module | Built from | Why it fits the ICP |
+|---|---|---|
+| **02 · The Article System** | `x-article-creator`, `miro-to-article`, `long-form/` (6 subtypes incl. the text-only wrong-version-teardown) | One video becomes a long-form authority piece. Cheapest format to ship |
+| **03 · The Format Multiplier** | `short-form/bulk-short-form-generator`, the 39-vehicle library | One transcript becomes a month of posts. Directly the "I have video, no written presence" problem |
+| **04 · The Measurement Loop** | `content-loop`, `content-control-panel`, `monday-acquisition-analysis`, `content-tracker.py`, `build-dashboard.py` | The stage almost nobody builds. Content matched against booked calls |
+| **05 · The Visual Doc System** | `linkedin-docs/`, `linkedin-html-doc-guide`, `visual-docs/`, `render_png.py` | HTML to PNG docs and infographics. The "visuals and slides" half of the pitch |
+| **06 · The Board System** | `skills/miro/` (7 files: `visual-language`, `writing-for-boards`, `video-board-generator.py`, `api-gotchas`) | Script to Miro board. Rare, visual, and big-channel operators already plan videos |
+| **07 · The YouTube System** | 8 skills: `youtube-title-generator`, `hook-script`, `idea-generator`, `miro-board`, `canva-slides`, `slide-visuals`, `brand-breakdown` | Their own channel, run better. Highest-affinity module for this ICP |
+
+**Off-lane, do not package:** `creative-strategy/research-pipeline/` and `static-ads`. Those are ecom ad creative, which is the agency's service and not Mauro's lane per `positioning.md`.
+
+**What this settles about pricing.** Recurring is viable because six more modules of material already exist. It is not viable *today* because none of them are packaged. The honest sequence is a one-time price for module 01 now, switching to $99/mo the month module 02 ships.
+
+---
+
+## What module 01 is still objectively missing
+
+Checked against its own rules, 21 Aug.
+
+1. **It teaches one subtype of five.** Page 04 ships the prompt-swipe-file subtype only. Framework, case study, video and industry-specific exist internally and are absent. The module claims to cover lead magnets and covers one kind.
+2. **One worked example.** The other four subtypes have nothing to copy the shape of.
+3. **Zero images.** The rules say a real example screenshot is the strongest option and to use it most. The module contains no screenshots at all, so it breaks its own image rule on every page.
+4. **The evidence is buried.** The 40-post table, the seven rejected-to-shipped titles and the fatigue curve are the least reconstructable thing in here, and they sit mid-document inside page 03 instead of leading.
+5. **No video.** The buyer's whole profile is that they make video. The module is entirely reading.
+
+Items 1 and 3 are the two that would stop a buyer mid-build.
