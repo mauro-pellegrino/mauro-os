@@ -74,7 +74,9 @@ If you install module 01 and never touch another, you have a working lead magnet
 
 **Not theory.** Every rule in here exists because something got shipped, measured, and in several cases rewritten. Where a number appears it's real. Where I don't have a number I say so.
 
-**Not finished.** The engine gets corrected most weeks. That's why the files live in a repo rather than a frozen copy: when I fix something, you get the fix.
+**Not finished, and that's the point.** The engine gets corrected most weeks. The files live in a repo rather than a frozen copy, so when I fix something you get the fix. New modules land the same way.
+
+**Not a one-time purchase.** You're inside the engine while you're a member. That means the corrections, the new modules and whatever I work out next. Cancel whenever and the module you installed keeps working, because it's files on your machine, not a login.
 
 ---
 

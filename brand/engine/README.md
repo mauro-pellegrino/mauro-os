@@ -23,6 +23,25 @@ Internal. Not shipped to buyers.
 
 ---
 
+## Pricing, 21 Aug 2026
+
+**$99/month entry. Free trial for selected people.**
+
+Replaces the $500 one-time. Recurring fits the engine shape: modules arrive over time, files get corrected weekly, and a subscription is the honest way to charge for that. $99/mo needs ~51 members to clear $5k/mo.
+
+**The load-bearing risk, stated plainly.** At $99/mo with downloadable files and a free trial, someone can trial, download module 01, and cancel. Access control on files is weak by design, because the files have to leave the platform to be useful.
+
+That is survivable only if the recurring value is in what they cannot download once:
+- **New modules.** 02, 03 and 04 have to actually ship. If they don't, churn after month one is correct behaviour by the buyer.
+- **Corrections.** The repo has to keep moving. A static repo is a frozen copy with extra steps.
+- **A live element.** Not built yet. The weekly roast is the obvious candidate and it's the single strongest retention mechanic available.
+
+If none of those three exist, this should be a one-time purchase instead. Recurring without recurring value is just churn with a subscription button.
+
+**Free trial:** deliberate and hand-picked, not open. Pick people whose feedback is worth the leak, and whose logo or name you'd want next to this later.
+
+---
+
 ## Structure
 
 ```
@@ -59,7 +78,11 @@ Five of eight written. The three left are assembly from files that already exist
 
 ## Why the engine framing fits this ICP
 
-The buyer is an operator who already produces good video and isn't converting it into written content. Camilo Castañeda, Brando, Antonio Ventre.
+**The buyer runs a real YouTube channel and wants a LinkedIn and X presence to match.** They already publish video consistently, so the source material is abundant and recurring. What they lack is the written and visual formats, and the system that converts one into the other.
+
+Camilo Castañeda, Brando, Antonio Ventre.
+
+**Why this ICP is the right one.** A big channel means the input problem is already solved. The engine's first stage is source material, and they have more of it than they can use. Nobody in this profile needs convincing that content works, only that there's a way to convert what they already make. That is a much shorter argument.
 
 Operators already think in systems, so a module in an engine reads as normal. What reads as a downgrade is a course. The nearest comparable in this space sells "the creative system my agency uses," not a program, and that's the register.
 

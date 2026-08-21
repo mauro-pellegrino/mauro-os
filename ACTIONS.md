@@ -11,7 +11,9 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 5 of 8 module-01 pages written. Left: 03 the rules, 04 the skill files, 05 the templates. All three are assembly from files that already exist.
 
-- [ ] Confirm Whop's course + gating features are on the free tier
+- [ ] Confirm Whop's course + gating + free-trial features are on the free tier
+- [ ] Pricing changed 21 Aug: **$99/mo entry**, hand-picked free trials. Was $500 one-time
+- [ ] Modules 02-04 are now load-bearing, not optional. Recurring without new modules is churn
 - [ ] Create the public repo that holds the skill files
 
 **Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
