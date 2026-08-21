@@ -7,6 +7,8 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 ## THIS WEEK
 
+**Product rebuild in progress.** First Notion assembly shipped without examples, templates or an install path. Source of truth is now `brand/lead-magnets/product/`. Pages 0-3 and 6-7 written, pages 4 (skill files) and 5 (templates) still to build.
+
 **Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
 - **Agency Booked Calls** — $200/wk x 4, 1 spot, standing. Done-with-you. Ready to send.
 - **The Lead Magnet System** — $500 one-time, self-serve. **Not built yet.** 4 of its 6 pages don't exist.
