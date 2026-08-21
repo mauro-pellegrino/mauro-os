@@ -4,7 +4,19 @@
 
 ---
 
-## 1 · The naming conflict, read this first
+## 1 · DECIDED: anonymised, no names
+
+**Mauro's call, 21 Aug: never name the agency owner or the co-founder. Anonymised only.**
+
+Every worked example, every evidence table, every subtype example ships as "a $300k/month agency's account" or "a co-founder's account". Real numbers, real structures, real results. No names, ever, in anything a buyer sees.
+
+This matches the 17 Aug scrub and `CLAUDE.md` §7. No permission needed from anyone, so the examples are unblocked and can be built immediately.
+
+**Nothing below in this section needs re-reading. Kept as the record of why.**
+
+---
+
+## 1b · The conflict this resolved
 
 Mauro asked for the subtype examples and worked examples to use **the agency owner and the co-founder's real accounts as named examples**.
 
@@ -107,7 +119,7 @@ Decide whether the product teaches the DM-only path (honest, matches what Mauro 
 
 Ranked by what unblocks the most.
 
-1. **Answer §1.** Named or anonymised. Blocks every worked example.
+1. ~~Answer §1.~~ **Answered 21 Aug: anonymised, no names.** Examples unblocked.
 2. **The 365-day analytics exports.** X and LinkedIn, both accounts. Blocks the evidence rebuild, which is the most valuable page.
 3. **The resources you actually send.** The real lead magnets, as links or exports. Blocks the extra worked examples.
 4. **One decision on §6.** DM-only or full funnel.
