@@ -9,7 +9,7 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 **Product restructured as an engine, 21 Aug.** Source of truth is `brand/engine/`. Module 01 is lead magnets, complete on its own, with room for 02-04. Packaging: **Whop** for storefront, payment, gating and modules; a **git repo** for the skill files so updates propagate; Notion dropped (no payment, no access control, freezes on duplicate).
 
-5 of 8 module-01 pages written. Left: 03 the rules, 04 the skill files, 05 the templates. All three are assembly from files that already exist.
+All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not writing: 3 of 5 subtypes missing from page 04, zero screenshots anywhere, the evidence rebuild on page 03, and `{{calendly_url}}` still empty on page 06.
 
 - [ ] Confirm Whop's course + gating + free-trial features are on the free tier
 - [ ] Pricing changed 21 Aug: **$99/mo entry**, hand-picked free trials. Was $500 one-time

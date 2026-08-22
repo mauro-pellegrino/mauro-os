@@ -51,14 +51,14 @@ brand/engine/
     ├── 00-start-here.md          why it works, and whether to bother
     ├── 01-install.md             three paths, Claude Project first
     ├── 02-brand-context.md       the required input. Replaces every "ask Mauro"
-    ├── 03-the-rules.md           TO BUILD. Source: ../../lead-magnets/shareable/lead-magnet-system.md
-    ├── 04-skill-files.md         TO BUILD. The actual files, in full
-    ├── 05-templates.md           TO BUILD. Post, DM, LeadShark, cover, page structure
-    ├── 06-worked-example.md      TO BUILD. Source: content/qa/magnet-youtube-to-week-of-content.md
+    ├── 03-the-rules.md           written. Evidence still needs the 365-day rebuild
+    ├── 04-skill-files.md         written. Ships 1 subtype of 5
+    ├── 05-templates.md           written. Post, DM, LeadShark, cover, page structure
+    ├── 06-worked-example.md      written. {{calendly_url}} still empty in 2 places
     └── 07-score-your-own.md      20 checks, verdict bands
 ```
 
-Five of eight written. The three left are assembly from files that already exist.
+All eight written, verified 22 Aug. See "What module 01 is still objectively missing" below for what remains.
 
 ---
 
