@@ -107,11 +107,13 @@ Evidence is the least reconstructable part of the product. This is the highest-v
 Mauro asked where these take the reader. Current honest answer:
 
 - **The magnet** lives on a published Notion page. The auto-DM links straight to it
-- **No landing page**, no email capture, no booking link. `{{calendly_url}}` is still empty
+- **No landing page**, no email capture, no booking link
 - So the chain ends at: they claim it, they read it, they reply in the DM. That is the whole funnel today
 - Page 05 templates all point at that, which is coherent but thin
 
-Decide whether the product teaches the DM-only path (honest, matches what Mauro runs) or the full path with a landing page (better, and neither of us has built it).
+**DECIDED 22 Aug: DM-only.** The product teaches the path Mauro actually runs. A landing page and email capture is a build neither of us has done and it would block shipping for weeks. The 90-day export backs it: 0 URL clicks across 377 posts, so the audience is not clicking out anyway.
+
+`{{calendly_url}}` is replaced with "DM me @maurojpelle" everywhere it appears. A live placeholder in a paid product is worse than either option.
 
 ---
 
@@ -141,9 +143,9 @@ Ranked by what unblocks the most.
 | 06 · The Board System | Material exists |
 | 07 · The YouTube System | Material exists. Highest affinity for this ICP |
 
-**Pricing, settled 21 Aug:** one payment for module 01 now. Switch to $99/mo the month module 02 ships, because recurring is only honest once the library is actually arriving.
+**Pricing, settled 22 Aug:** $500 one-time for module 01. Switch to $99/mo the month module 02 ships, because recurring is only honest once the library is actually arriving. Early buyers get the $500 credited against month one.
 
-**Packaging, settled 21 Aug:** Whop for storefront, payment, gating and modules. A git repo for the skill files behind one download link so corrections reach existing buyers. Verify Whop's course, gating and trial features are on the free tier before building.
+**Packaging, settled 22 Aug:** Notion duplicate-template page as the container, manual invoice for payment. A git repo for the skill files behind one download link so corrections reach existing buyers. Whop parked until pricing goes recurring.
 
 ---
 
@@ -152,4 +154,4 @@ Ranked by what unblocks the most.
 - The offer has never been sent to a single person. Two names have been on the list for a month
 - The Loom is recorded and unpublished, still needs a title and the naming decision
 - Module 01 breaks its own image rule: zero screenshots in a product that says screenshots are the strongest option
-- `{{calendly_url}}` empty, no email platform, no measurement of any magnet ever shipped
+- No email platform, and no measurement of any magnet ever shipped. The calendly gap is closed by the 22 Aug DM-only decision

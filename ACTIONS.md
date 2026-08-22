@@ -7,14 +7,19 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 ## THIS WEEK
 
-**Product restructured as an engine, 21 Aug.** Source of truth is `brand/engine/`. Module 01 is lead magnets, complete on its own, with room for 02-04. Packaging: **Whop** for storefront, payment, gating and modules; a **git repo** for the skill files so updates propagate; Notion dropped (no payment, no access control, freezes on duplicate).
+**Product restructured as an engine, 21 Aug.** Source of truth is `brand/engine/`. Module 01 is lead magnets, complete on its own, with room for 02-04.
+
+**Three decisions settled 22 Aug:**
+- **Price: $500 one-time.** Not $99/mo. Recurring needs modules arriving, weekly corrections and a live element, and none of the three exists yet. The files are downloadable by design, so a monthly trial is download-and-cancel. The $500 gets credited against month one when the engine goes recurring.
+- **Container: Notion.** Whop parked. Its three advantages (payment, gating, module structure) only bind at recurring pricing and real volume. The Notion duplicate page is already built and live. Delivery is DM, invoice, share the link. Revisit Whop when module 02 ships.
+- **Funnel: DM-only.** No landing page, no email capture. It's what Mauro actually runs, and there were 0 URL clicks across 90 days. `{{calendly_url}}` replaced with "DM me @maurojpelle".
 
 All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not writing: 3 of 5 subtypes missing from page 04, zero screenshots anywhere, the evidence rebuild on page 03, and `{{calendly_url}}` still empty on page 06.
 
-- [ ] Confirm Whop's course + gating + free-trial features are on the free tier
-- [ ] Pricing changed 21 Aug: **$99/mo entry**, hand-picked free trials. Was $500 one-time
-- [ ] Modules 02-04 are now load-bearing, not optional. Recurring without new modules is churn
-- [ ] Create the public repo that holds the skill files
+- [x] ~~Confirm Whop's free tier~~ Moot, Whop parked 22 Aug
+- [x] Pricing settled 22 Aug: **$500 one-time**, credited against month one when recurring starts
+- [ ] Modules 02-04 stay load-bearing. They're what makes the switch to $99/mo honest later
+- [ ] Create the public repo that holds the skill files (still the update mechanism, Notion page links to it)
 
 **Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
 - **Agency Booked Calls** — $200/wk x 4, 1 spot, standing. Done-with-you. Ready to send.

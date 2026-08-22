@@ -51,7 +51,7 @@ You already make good video. The problem is it stops there, and the rest of the 
 **Then: 5 nested child subpages (below).**
 
 **Bottom of parent page:**
-> Want this installed in your agency? Book a call: `{{calendly_url}}`
+> Want this installed in your agency? DM me @maurojpelle
 > [BLOCKER — no booking link exists yet. Do not invent one. Ship with the DM reply-offer instead until the link exists.]
 >
 > Created by @maurojpelle
@@ -261,7 +261,7 @@ Reply **"yes"** to the DM and I'll do a free teardown of your agency's content a
 
 No pitch on the call unless you ask for one. I run this exact engine daily, so it's the part I actually enjoy pulling apart.
 
-> Want this installed for you instead of DIY? Book a call: `{{calendly_url}}` [BLOCKER — pending]
+> Want this installed for you instead of DIY? DM me @maurojpelle
 
 Created by @maurojpelle
 

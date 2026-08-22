@@ -4,9 +4,17 @@ Internal. Not shipped to buyers.
 
 ---
 
-## Packaging decision, 21 Aug 2026
+## Packaging decision, REVERSED 22 Aug 2026
 
-**Whop is the container. A git repo holds the files. Nothing else.**
+**Notion is the container. A git repo holds the files. Whop is parked.**
+
+Whop's three advantages are payment, gating and module structure. All three only bind at recurring pricing and real volume. At $500 one-time and fewer than ten buyers arriving through DMs, none of them apply, and its free tier was never verified. The Notion duplicate-template page is already built and live (`content/qa/notion-assembly-log.md`).
+
+Delivery: DM, manual invoice, share the duplicate link. Revisit Whop the month module 02 ships and pricing goes monthly, which is exactly when its features start earning their keep.
+
+The eight engine pages remain the source of truth. Notion is the delivery surface.
+
+**The superseded 21 Aug reasoning, kept as the record:**
 
 | Layer | Tool | Why |
 |---|---|---|
@@ -23,15 +31,17 @@ Internal. Not shipped to buyers.
 
 ---
 
-## Pricing, 21 Aug 2026
+## Pricing, SETTLED 22 Aug 2026
 
-**$99/month entry. Free trial for selected people.**
+**$500 one-time. The $500 is credited against month one when the engine goes recurring.**
 
-Replaces the $500 one-time. Recurring fits the engine shape: modules arrive over time, files get corrected weekly, and a subscription is the honest way to charge for that. $99/mo needs ~51 members to clear $5k/mo.
+The 21 Aug move to $99/mo is reversed, on the strength of the risk this same file already documented. Recurring survives only on new modules, weekly corrections and a live element. Module 02 is not built and there is no live element, so a subscription today charges for a track record that does not exist.
 
-**The load-bearing risk, stated plainly.** At $99/mo with downloadable files and a free trial, someone can trial, download module 01, and cancel. Access control on files is weak by design, because the files have to leave the platform to be useful.
+The download problem is decisive on its own: the files have to leave the platform to be useful, so a monthly trial is sign up, download module 01, cancel.
 
-That is survivable only if the recurring value is in what they cannot download once:
+The credit-against-month-one term means early buyers are not punished for buying first, and there is a clean path to move them onto $99/mo the month module 02 ships. $99/mo needs ~51 members to clear $5k/mo, which is a target for later.
+
+**The superseded 21 Aug case for recurring, kept as the record.** It is survivable only if the recurring value is in what they cannot download once:
 - **New modules.** 02, 03 and 04 have to actually ship. If they don't, churn after month one is correct behaviour by the buyer.
 - **Corrections.** The repo has to keep moving. A static repo is a frozen copy with extra steps.
 - **A live element.** Not built yet. The weekly roast is the obvious candidate and it's the single strongest retention mechanic available.
@@ -54,7 +64,7 @@ brand/engine/
     ├── 03-the-rules.md           written. Evidence still needs the 365-day rebuild
     ├── 04-skill-files.md         written. Ships 1 subtype of 5
     ├── 05-templates.md           written. Post, DM, LeadShark, cover, page structure
-    ├── 06-worked-example.md      written. {{calendly_url}} still empty in 2 places
+    ├── 06-worked-example.md      written. CTA set to DM-only
     └── 07-score-your-own.md      20 checks, verdict bands
 ```
 
