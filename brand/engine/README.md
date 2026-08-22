@@ -4,17 +4,19 @@ Internal. Not shipped to buyers.
 
 ---
 
-## Packaging decision, REVERSED 22 Aug 2026
+## Packaging decision, FINAL 22 Aug 2026
 
-**Notion is the container. A git repo holds the files. Whop is parked.**
+**Whop is the container. A git repo holds the files. Notion is out, permanently.**
 
-Whop's three advantages are payment, gating and module structure. All three only bind at recurring pricing and real volume. At $500 one-time and fewer than ten buyers arriving through DMs, none of them apply, and its free tier was never verified. The Notion duplicate-template page is already built and live (`content/qa/notion-assembly-log.md`).
+Mauro ruled Notion out on 22 Aug. That settles it: the container is Whop, which was the 21 Aug call and the only reason it was reversed was that a Notion page already existed.
 
-Delivery: DM, manual invoice, share the duplicate link. Revisit Whop the month module 02 ships and pricing goes monthly, which is exactly when its features start earning their keep.
+Whop does payment, gating, module structure and file delivery in one thing, free to start at ~3% per sale. It also survives the switch to $99/mo when module 02 ships, with no rebuild. Nothing else on the list does all four.
 
-The eight engine pages remain the source of truth. Notion is the delivery surface.
+**What this costs:** Juan's assembled Notion page is dead. The six pages themselves port straight across as Whop course pages, so the writing survives and the assembly does not.
 
-**The superseded 21 Aug reasoning, kept as the record:**
+**What it needs before building:** verify that Whop's course, gating and free-trial features are all on the free tier. Still unchecked, and the plan rests on it. If they are not, the fallback is Gumroad (~10%, simpler, no module structure) rather than a return to Notion.
+
+**The superseded 21 Aug reasoning, still correct and kept as the record:**
 
 | Layer | Tool | Why |
 |---|---|---|

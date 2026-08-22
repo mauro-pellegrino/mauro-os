@@ -11,12 +11,12 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 
 **Three decisions settled 22 Aug:**
 - **Price: $500 one-time.** Not $99/mo. Recurring needs modules arriving, weekly corrections and a live element, and none of the three exists yet. The files are downloadable by design, so a monthly trial is download-and-cancel. The $500 gets credited against month one when the engine goes recurring.
-- **Container: Notion.** Whop parked. Its three advantages (payment, gating, module structure) only bind at recurring pricing and real volume. The Notion duplicate page is already built and live. Delivery is DM, invoice, share the link. Revisit Whop when module 02 ships.
+- **Container: Whop. Notion is out** (Mauro, 22 Aug). Whop does payment, gating, module structure and file delivery in one, free to start at ~3%, and survives the switch to $99/mo without a rebuild. Juan's assembled Notion page is dead; the six pages port across as Whop course pages. Fallback if the free tier disappoints is Gumroad, not Notion.
 - **Funnel: DM-only.** No landing page, no email capture. It's what Mauro actually runs, and there were 0 URL clicks across 90 days. `{{calendly_url}}` replaced with "DM me @maurojpelle".
 
 All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not writing: 3 of 5 subtypes missing from page 04, zero screenshots anywhere, the evidence rebuild on page 03, and `{{calendly_url}}` still empty on page 06.
 
-- [x] ~~Confirm Whop's free tier~~ Moot, Whop parked 22 Aug
+- [ ] Verify Whop free tier: courses, gating, free trials. Blocks the build. Fallback is Gumroad
 - [x] Pricing settled 22 Aug: **$500 one-time**, credited against month one when recurring starts
 - [ ] Modules 02-04 stay load-bearing. They're what makes the switch to $99/mo honest later
 - [ ] Create the public repo that holds the skill files (still the update mechanism, Notion page links to it)

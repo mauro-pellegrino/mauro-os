@@ -145,7 +145,7 @@ Ranked by what unblocks the most.
 
 **Pricing, settled 22 Aug:** $500 one-time for module 01. Switch to $99/mo the month module 02 ships, because recurring is only honest once the library is actually arriving. Early buyers get the $500 credited against month one.
 
-**Packaging, settled 22 Aug:** Notion duplicate-template page as the container, manual invoice for payment. A git repo for the skill files behind one download link so corrections reach existing buyers. Whop parked until pricing goes recurring.
+**Packaging, final 22 Aug:** Whop as the container. Notion ruled out by Mauro. A git repo for the skill files behind one download link so corrections reach existing buyers. Verify Whop's course, gating and trial features are on the free tier before building; fallback is Gumroad, not Notion.
 
 ---
 
