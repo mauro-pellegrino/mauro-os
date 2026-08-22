@@ -14,16 +14,16 @@ Full reasoning in `brand/vision-2026.md`. Questions in `docs/voicenote-questions
 - **Container: Whop. Notion is out** (Mauro, 22 Aug). Whop does payment, gating, module structure and file delivery in one, free to start at ~3%, and survives the switch to $99/mo without a rebuild. Juan's assembled Notion page is dead; the six pages port across as Whop course pages. Fallback if the free tier disappoints is Gumroad, not Notion.
 - **Funnel: DM-only.** No landing page, no email capture. It's what Mauro actually runs, and there were 0 URL clicks across 90 days. `{{calendly_url}}` replaced with "DM me @maurojpelle".
 
-All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not writing: 3 of 5 subtypes missing from page 04, zero screenshots anywhere, the evidence rebuild on page 03, and `{{calendly_url}}` still empty on page 06.
+All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not writing: 3 of 5 subtypes missing from page 04, zero screenshots anywhere, the evidence rebuild on page 03, and the Whop build itself.
 
 - [ ] Verify Whop free tier: courses, gating, free trials. Blocks the build. Fallback is Gumroad
 - [x] Pricing settled 22 Aug: **$500 one-time**, credited against month one when recurring starts
 - [ ] Modules 02-04 stay load-bearing. They're what makes the switch to $99/mo honest later
-- [ ] Create the public repo that holds the skill files (still the update mechanism, Notion page links to it)
+- [ ] Create the public repo that holds the skill files (still the update mechanism, one download link inside Whop)
 
 **Two offers now, both filed in `research/jk-molina/cashie-studio/offer/`:**
 - **Agency Booked Calls** — $200/wk x 4, 1 spot, standing. Done-with-you. Ready to send.
-- **The Lead Magnet System** — $500 one-time, self-serve. **Not built yet.** 4 of its 6 pages don't exist.
+- **The Lead Magnet System** — $500 one-time, self-serve. All 6 pages now written as the 8 engine pages. Needs the Whop build, 3 more subtypes and screenshots.
 
 - [ ] Send the Brando script. He asked about lead magnets in Slack and is the warmest lead there is
 - [ ] Send the churned-contact script to the 2-3 people reachable
@@ -32,7 +32,7 @@ All 8 module-01 pages written (verified 22 Aug, 1,574 lines). What's left is not
 - [ ] Send Juan the test brief (`docs/juan-lead-magnet-test-brief.md`)
 - [x] Brand colour set 20 Aug: `#4A392C` primary, `#F5EFE4` cream, `#E0A854` amber. Full palette in `brand/colors.md`
 - [x] Payment: invoice manually for now. No Stripe link needed at one buyer (decided 21 Aug)
-- [ ] Export X analytics. analytics.x.com, last 90 days, export CSV. Send it over.
+- [x] X analytics exported 22 Aug, 90 days, saved to `research/x-analytics/`. Read in `docs/objective-read-2026-08-22.md`
 - [ ] Run the Koe protocol, personal version. One full day. Questions are on the Mac, not in this repo.
 - [ ] Pick a title for the Loom, or say unlisted instead
 
