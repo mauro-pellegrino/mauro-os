@@ -1,0 +1,91 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>YouTube thumbnails 16:9</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#8A8A8A; display:flex; flex-direction:column; align-items:center; gap:30px; padding:30px 0;
+         font-family:'Inter',sans-serif; }
+  .thumb { width:1280px; height:720px; position:relative; overflow:hidden; background:#0E2418; }
+
+  .kick { font-family:'JetBrains Mono',monospace; font-size:26px; font-weight:700; letter-spacing:4px; color:#52B788; }
+  .huge { font-size:150px; font-weight:900; color:#fff; line-height:.86; letter-spacing:-6px; text-transform:uppercase; }
+  .huge em { font-style:normal; color:#E9B949; }
+  .face { position:absolute; right:0; bottom:0; width:430px; height:660px; border:5px dashed rgba(233,185,73,.75);
+          border-radius:20px 20px 0 0; display:flex; align-items:flex-end; justify-content:center; padding-bottom:26px;
+          font-family:'JetBrains Mono',monospace; font-size:20px; font-weight:700; color:rgba(233,185,73,.85);
+          letter-spacing:2px; text-align:center; }
+
+  /* T1 podium */
+  .t1 .copy { position:absolute; left:66px; top:70px; width:660px; }
+  .t1 .huge { font-size:118px; }
+  .t1 .podium { position:absolute; left:70px; bottom:54px; display:flex; align-items:flex-end; gap:16px; }
+  .t1 .p { width:150px; border-radius:10px 10px 0 0; display:flex; flex-direction:column; justify-content:flex-end;
+           align-items:center; padding-bottom:14px; font-family:'JetBrains Mono',monospace; font-size:19px; font-weight:700; }
+  .t1 .p.a { height:238px; background:#52B788; color:#0E2418; }
+  .t1 .p.b { height:148px; background:#B7E4C7; color:#0E2418; }
+  .t1 .p.c { height:82px;  background:#E9B949; color:#0E2418; }
+
+  /* T2 split numbers */
+  .t2 .top { position:absolute; top:0; left:0; right:0; height:104px; background:#E9B949; display:flex;
+             align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:32px;
+             font-weight:700; letter-spacing:5px; color:#0E2418; }
+  .t2 .nums { position:absolute; top:104px; left:0; right:0; bottom:0; display:flex; }
+  .t2 .half { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; }
+  .t2 .half.win { background:#52B788; }
+  .t2 .n { font-size:210px; font-weight:900; letter-spacing:-10px; line-height:.9; }
+  .t2 .half.win .n { color:#0E2418; }
+  .t2 .half.lose .n { color:#5F6B62; }
+  .t2 .l { font-family:'JetBrains Mono',monospace; font-size:24px; font-weight:700; letter-spacing:2px; }
+  .t2 .half.win .l { color:#0E2418; }
+  .t2 .half.lose .l { color:#B7E4C7; }
+
+  /* T3 tile wall */
+  .t3 .sheet { position:absolute; inset:-20px; display:grid; grid-template-columns:repeat(20,1fr); gap:10px;
+               transform:rotate(-5deg) scale(1.16); }
+  .t3 .t { background:#24503A; border-radius:5px; }
+  .t3 .t.on { background:#52B788; }
+  .t3 .t.hot { background:#E9B949; }
+  .t3 .veil { position:absolute; inset:0;
+    background:linear-gradient(100deg,#0E2418 0%,#0E2418 40%,rgba(14,36,24,.90) 56%,rgba(14,36,24,.35) 82%,rgba(14,36,24,.10) 100%); }
+  .t3 .copy { position:absolute; left:66px; top:50%; transform:translateY(-50%); width:660px; }
+  .t3 .flop { font-size:74px; font-weight:900; color:#E9B949; letter-spacing:-2px; margin-top:6px; text-transform:uppercase; }
+</style></head>
+<body>
+
+  <!-- T1 -->
+  <div class="thumb t1">
+    <div class="copy">
+      <div class="kick">LEAD MAGNETS</div>
+      <div class="huge" style="margin-top:16px;">The asset<br>is <em>third</em></div>
+    </div>
+    <div class="podium">
+      <div class="p a">THE POST</div>
+      <div class="p b">THE DM</div>
+      <div class="p c">ASSET</div>
+    </div>
+    <div class="face">MAURO CUTOUT HERE</div>
+  </div>
+
+  <!-- T2 -->
+  <div class="thumb t2">
+    <div class="top">SAME ASSET. NEW TITLE.</div>
+    <div class="nums">
+      <div class="half win"><div class="n">4%</div><div class="l">NAMED A THING</div></div>
+      <div class="half lose"><div class="n">0.9%</div><div class="l">BROAD TOPIC</div></div>
+    </div>
+  </div>
+
+  <!-- T3 -->
+  <div class="thumb t3">
+    <div class="sheet"><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t hot"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t hot"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t hot"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t on"></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div><div class="t "></div></div>
+    <div class="veil"></div>
+    <div class="copy">
+      <div class="kick">18 MONTHS, 3 A WEEK</div>
+      <div class="huge" style="margin-top:14px; font-size:190px;">200+</div>
+      <div class="flop">most flopped</div>
+    </div>
+    <div class="face">MAURO CUTOUT HERE</div>
+  </div>
+
+</body></html>
