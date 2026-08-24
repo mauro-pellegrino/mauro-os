@@ -25,7 +25,8 @@ This is a fast, high-volume skill. He's scrolling and firing off replies in minu
 - `brand/audience.md` — the ICP and the rooms worth being seen in
 - `brand/voice.md` — the one carry-over rule (no em dashes) and the AI tells to avoid
 - This file's reply bank below — the live style anchors, pulled from Mauro's actual replies
-- `brand/analytics/` — the latest weekly review, which names the rooms that converted and the accounts to drop
+- `brand/analytics/reply-target-list.md` — the live KEEP / TEST / RED / DROP roster of accounts. **Read this first on every reply call.**
+- `brand/analytics/` — the latest weekly review, the numbers the roster is built from
 
 Note: his **reply voice is not his long-form voice.** Long-form is structured and confident-expert. Replies are fast, casual, and human: slang, typos, one line. Anchor on the reply bank in this file, not on the article examples in voice.md.
 
@@ -39,6 +40,15 @@ Reach in the wrong room is worth zero. This is measured, not a theory. From the 
 - The **9 replies that produced follows** pulled 257 impressions between them. That is **35 follows per 1,000 impressions**, against 0.95 across all replies.
 
 So the first question is never "is this post good." It's **whose audience is in the replies.**
+
+**Check the handle against `brand/analytics/reply-target-list.md` before anything else.**
+- On **RED** → skip, and say which room it is. No exceptions, no matter the reach.
+- On **DROP** → skip.
+- On **KEEP** → reply, and go straight to the archetype.
+- On **TEST** → reply, and note it's a test account with a specific thing being measured.
+- **Not on the list** → judge it with the green/red room definitions below, then say whether it should be added to the roster and to which tier.
+
+If Mauro pastes a post with no handle, ask for the handle before giving a final verdict. Draft the replies anyway so he isn't blocked, and mark the verdict conditional.
 
 **Green rooms:** the poster's audience is agency owners, agency operators, B2B founders, people talking about pipeline, clients, retainers, acquisition, content that books calls.
 
@@ -212,4 +222,4 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 - **ICP + rooms worth being in**: `brand/audience.md`
 - **Positioning / proof he can reference**: `brand/positioning.md`
 - **When a reply thread turns into a real conversation worth taking to DMs**: `skills/dm-setting/`
-- **Which rooms are working right now**: the latest review in `brand/analytics/`, refreshed by `skills/ops/content-analytics-review.md`
+- **Which rooms are working right now**: `brand/analytics/reply-target-list.md`, refreshed by `skills/ops/content-analytics-review.md`
