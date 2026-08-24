@@ -117,3 +117,13 @@ If I had one afternoon I'd spend all of it on the title and the four lines under
 The other one I'd point at is the comment rate table from the agency's account, 40 magnet posts. The named concrete magnets pulled around 4% comment rate against 0.9% for the broad AI one. Same account, same period, so it's a clean comparison and it's the whole title argument in one line.
 
 Clearance note for whoever uses this: the 40-row table is the agency's data, it ships unnamed as "a $300k/month agency's account." The 3-a-week number is Mauro's own and is clear to use. [OPEN: whether the $28k deal off X goes in here, needs Mauro's sign-off before it goes public.]
+
+
+---
+
+## Outputs built from this file (2026-08-24)
+
+- Short-form batch, 18 posts: `brand/short-form-batches/2026-08-24-lead-magnet-machine.csv` + `-review.md`
+- X article: handed over in chat, not saved to the repo (per the article workflow rule in `CLAUDE.md`)
+- YouTube video board, 15 frames: `content/boards/board-lead-magnet-machine.html`
+- Next topics in this pipeline: `content/qa/topic-queue.md`

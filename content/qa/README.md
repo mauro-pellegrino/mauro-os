@@ -17,3 +17,5 @@ This is where the interview material lives: **Juan's questions + Mauro's transcr
 
 ## Files
 - `lead-magnet-qa.md` — lead magnet Q&A on reach, virality, trendjacking, first lines (2026-07-24).
+- `topic-01-lead-magnet-machine.md` — Topic 1: the machine around the asset. The post/DM/asset split, comment rate as the leading indicator, magnet fatigue, the post-delivery conversation (2026-08-24).
+- `topic-queue.md` — the next Q&A topics in this pipeline, questions written out and ready to record (2026-08-24).
