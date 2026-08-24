@@ -1,7 +1,8 @@
 # Skill: X Reply Assistant
 
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2026-08-14
+**Updated:** 2026-08-24 (room targeting + proof-over-opinion, from the 18-24 Aug analytics review)
 **Input:** A tweet (screenshot, pasted text, or URL) that Mauro is considering replying to
 **Output:** (1) a call on whether it's worth replying, and (2) if yes, 1-3 reply options in Mauro's real reply voice
 
@@ -24,8 +25,33 @@ This is a fast, high-volume skill. He's scrolling and firing off replies in minu
 - `brand/audience.md` — the ICP and the rooms worth being seen in
 - `brand/voice.md` — the one carry-over rule (no em dashes) and the AI tells to avoid
 - This file's reply bank below — the live style anchors, pulled from Mauro's actual replies
+- `brand/analytics/` — the latest weekly review, which names the rooms that converted and the accounts to drop
 
 Note: his **reply voice is not his long-form voice.** Long-form is structured and confident-expert. Replies are fast, casual, and human: slang, typos, one line. Anchor on the reply bank in this file, not on the article examples in voice.md.
+
+---
+
+## Step 0: The Room Test (do this before judging the post)
+
+Reach in the wrong room is worth zero. This is measured, not a theory. From the week of 18-24 Aug 2026 (`brand/analytics/2026-08-24-weekly-review.md`):
+
+- The **top 10 replies by impressions** pulled 3,858 impressions, 41% of all reply reach, and produced **0 follows and 0 bookmarks**. All ten were AI model or AI tool takes.
+- The **9 replies that produced follows** pulled 257 impressions between them. That is **35 follows per 1,000 impressions**, against 0.95 across all replies.
+
+So the first question is never "is this post good." It's **whose audience is in the replies.**
+
+**Green rooms:** the poster's audience is agency owners, agency operators, B2B founders, people talking about pipeline, clients, retainers, acquisition, content that books calls.
+
+**Red rooms:** the poster's audience is AI enthusiasts, model watchers, tool reviewers, prompt accounts, general hustle Twitter. These posts hand out impressions freely. None of it converts, because his ICP is not standing there.
+
+A red room stays a skip even when the post is about AI, even when it will obviously reach 1,000+ people. Impressions are not the goal.
+
+**Targeting rules (from the same week):**
+- 246 replies went to 166 different accounts, 119 of them replied to exactly once. That spray produced almost nothing. The one account he showed up in four times converted twice (@simonnyyberg, 46 total impressions, 2 follows). Repeat presence in a small right room beat 1,484 impressions in a big wrong one.
+- Work a **fixed list of roughly 15 green-room accounts**, daily, and hold it for at least 3 weeks. Recognition compounds; one-off replies don't.
+- **Drop an account after 3+ replies with 0 follows and 0-1 profile visits.** 39 replies into 11 such accounts returned 663 impressions and nothing else. Check this against the weekly review before adding an account to the list.
+
+If Mauro sends a post from a red room, say so in the verdict and name the reason. That's the highest-value call this skill makes.
 
 ---
 
@@ -34,8 +60,9 @@ Note: his **reply voice is not his long-form voice.** Long-form is structured an
 Give a clear verdict first. Two questions decide it:
 
 **A. Is it in or adjacent to his lane?**
-Green: content, AI for content, personal branding, B2B acquisition, agency ops, outbound, lead gen, X/LinkedIn growth, build-in-public from operators.
+Green: content, AI applied to his own content and acquisition work, personal branding, B2B acquisition, agency ops, outbound, lead gen, X/LinkedIn growth, build-in-public from operators.
 Red: ecom, brand/ad creative, Meta ads for brands (that's the agency's service, not Mauro's lane, per CLAUDE.md lane boundary). Also anything with zero overlap to his world where the only upside is random networking.
+Red, and this one is new: **AI model and tool discourse.** Which model is best, benchmark takes, evals as a topic, "Opus 5 vs everything", tool-tribe arguments. AI as leverage inside his workflow is green. AI as a subject to have opinions about is a red room that pays in impressions and nothing else. This is where his four biggest replies of the week went, for zero follows.
 
 **B. Does he genuinely have something to add?**
 A real take, a real tactic, a real experience, a real question, or genuine warmth for someone in his orbit. If the honest answer is "not really," it's a skip. Forced replies read as engagement farming and are a waste of his time.
@@ -45,6 +72,7 @@ A real take, a real tactic, a real experience, a real question, or genuine warmt
 - Lane green, nothing to add → skip or "only if you know them." Don't manufacture a take.
 - Lane red → skip, even if the post is popular. Visibility in the wrong room doesn't convert.
 - Call out engagement (views/likes) as a tiebreaker only, never the main reason. A big post he has nothing to say on is still a skip.
+- Red room (Step 0) overrides everything below it. Lane green plus red room is still a skip.
 
 Be honest per belief #13. A lukewarm "meh, your time's better spent elsewhere" is more useful to him than a yes on everything.
 
@@ -101,8 +129,10 @@ The reply must pass as something Mauro thumb-typed on his phone. The rules:
 - No "It's not X, it's Y." No "Most people." No three-part parallel stacks. No colon-setup-then-payoff. No wise-narrator tone.
 - If it sounds like a caption written to impress, rewrite it as the thing he'd actually mumble while scrolling.
 
-**Reference real work only**
+**Reference real work only, and lead with it**
 - HTMLs, Claude, booked calls, LinkedIn calls, the content engine, $10k+ deals, agency acquisition are all real and fair game.
+- **Proof beats opinion, measured.** Every reply that produced a follow in the week of 18-24 Aug named something he actually runs: where his booked calls come from, the AI content and inbound engine he runs for a B2B agency, the weekly analysis. Every zero-follow reply was a position anyone could hold. When there's a choice between stating a view and reporting what happened in his own work, report what happened.
+- The test: could 500 other accounts have typed this reply? If yes, either put his real work in it or skip the post.
 - Never invent a number or a result to sound credible in a reply. Bracket it or leave it out (belief #10).
 
 ---
@@ -148,6 +178,12 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 - To a warm "love that you're giving free advice!!" → "Thanks Lisa!"
 - To a peer just saying he's on it / working on it → "🫡"
 
+**Converted anchors** (these produced follows in the week of 18-24 Aug, 35 fol/1k. Note the shape: he answers with his own operating reality, in one line.)
+- To a post about where deals come from → "most of my booked calls come through linkedin..." (2 follows off 19 impressions)
+- To someone asking what he does → "running an AI content + inbound engine for a b2b agency, in..." (1 follow off 58)
+- To a peer's growth post → "whats driving more for you on x, the posts or the reps" (1 follow off 13)
+- To a model-choice question, answered from use rather than preference → "it depends on what you're going to use it for and the aud..." (1 follow off 108)
+
 [CALIBRATE: add new anchors here as Mauro's replies land well. This bank is the ground truth for the voice, keep it fed.]
 
 ---
@@ -162,6 +198,9 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 - **Selling in the reply.** No CTA, no lead magnet pitch, no "DM me." Replies build the relationship; the profile and DMs do the selling.
 - **Fake numbers or fake experience** to sound credible. Banned everywhere, worst in a fast reply where it can't be caught.
 - **Replying in the wrong lane** (ecom, ad creative) because the post is popular. Wrong room.
+- **Chasing a big AI post for the impressions.** The single most expensive habit in the 18-24 Aug data. 3,858 impressions, 0 follows.
+- **Spraying one reply across 100+ accounts** instead of holding presence in 15. 119 accounts got exactly one reply that week and returned almost nothing.
+- **Posting an opinion when he could post what he ran.** Opinion replies reached and converted nobody; work-report replies converted at 35 per 1k.
 - **Fixing his typos into "correct" copy.** Light cleanup only; don't sand off the human texture.
 
 ---
@@ -173,3 +212,4 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 - **ICP + rooms worth being in**: `brand/audience.md`
 - **Positioning / proof he can reference**: `brand/positioning.md`
 - **When a reply thread turns into a real conversation worth taking to DMs**: `skills/dm-setting/`
+- **Which rooms are working right now**: the latest review in `brand/analytics/`, refreshed by `skills/ops/content-analytics-review.md`
