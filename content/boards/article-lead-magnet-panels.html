@@ -1,0 +1,127 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Article panels — the lead magnet machine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; color:#1B1B1B; background:#EDEAE2;
+         display:flex; flex-direction:column; align-items:center; gap:40px; padding:40px 0; }
+  .page { width:1080px; height:1080px; background:#fff; padding:70px; position:relative;
+          display:flex; flex-direction:column; box-shadow:0 8px 30px rgba(0,0,0,.12); }
+
+  .sticker { display:inline-block; background:#B7E4C7; color:#1B4332; font-size:28px; font-weight:800;
+             padding:10px 20px; border-radius:8px; }
+  h1 { font-size:48px; font-weight:800; color:#1B4332; letter-spacing:-1px; line-height:1.1; margin-top:26px; }
+  .sub { font-family:'JetBrains Mono',monospace; font-size:18px; color:#5F6B62; margin-top:14px; }
+  .handle { position:absolute; top:70px; right:70px; font-size:18px; font-weight:700; color:#52B788; }
+  .foot { margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end;
+          border-top:2px solid #1B4332; padding-top:16px; }
+  .foot .n { font-family:'JetBrains Mono',monospace; font-size:15px; color:#5F6B62; }
+  .foot .m { font-size:15px; font-weight:700; color:#1B4332; }
+
+  /* page 1 — ranked bars */
+  .bars { margin-top:58px; }
+  .bar { margin-bottom:40px; }
+  .bar .lab { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:9px; }
+  .bar .lab span:first-child { font-size:26px; font-weight:700; color:#1B4332; }
+  .bar .lab span:last-child { font-family:'JetBrains Mono',monospace; font-size:26px; font-weight:700; color:#1B4332; }
+  .track { height:48px; background:#F1F5F2; border-radius:8px; overflow:hidden; }
+  .fill { height:100%; background:#52B788; border-radius:8px; }
+  .fill.dark { background:#1B4332; }
+  .fill.pale { background:#B7E4C7; }
+  .note-tag { display:inline-block; background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace;
+              font-size:15px; font-weight:700; padding:7px 13px; border-radius:6px; margin-top:8px; }
+
+  /* page 2 — two stat blocks */
+  .stats { display:flex; gap:26px; margin-top:56px; }
+  .stat { flex:1; border:3px solid #1B4332; border-radius:16px; padding:50px 30px; text-align:center; }
+  .stat.win { background:#D8F3DC; }
+  .stat .n { font-size:104px; font-weight:800; color:#1B4332; line-height:1; letter-spacing:-3px; }
+  .stat.loss .n { color:#5F6B62; }
+  .stat .l { font-size:22px; font-weight:700; color:#1B4332; margin-top:16px; }
+  .stat .s { font-size:17px; color:#5F6B62; margin-top:6px; }
+  .strip { background:#1B4332; border-radius:12px; padding:24px 30px; margin-top:38px;
+           color:#B7E4C7; font-size:25px; font-weight:700; text-align:center; }
+
+  .titles { display:flex; gap:22px; margin-top:34px; }
+  .t { flex:1; border:2px solid #1B4332; border-radius:12px; padding:22px 24px; }
+  .t.win { background:#D8F3DC; }
+  .t .q { font-size:21px; font-weight:700; color:#1B4332; }
+  .t .k { font-family:'JetBrains Mono',monospace; font-size:15px; color:#5F6B62; margin-top:7px; }
+
+  /* page 3 — decay */
+  .decay { display:flex; align-items:center; gap:22px; margin-top:60px; }
+  .box { flex:1; border:3px solid #1B4332; border-radius:16px; padding:46px 26px; text-align:center; }
+  .box .k { font-family:'JetBrains Mono',monospace; font-size:16px; color:#5F6B62; }
+  .box .n { font-size:82px; font-weight:800; color:#1B4332; line-height:1.05; letter-spacing:-2px; margin-top:8px; }
+  .box .u { font-size:18px; color:#5F6B62; margin-top:4px; }
+  .box.spent .n { color:#C15F3C; }
+  .arrowbox { text-align:center; }
+  .arrowbox svg { display:block; }
+  .drop { background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace; font-size:19px; font-weight:700;
+          padding:6px 12px; border-radius:6px; margin-bottom:12px; }
+  .rest { background:#D8F3DC; border:3px solid #1B4332; border-radius:16px; padding:34px 34px; margin-top:44px; }
+  .rest h3 { font-size:32px; font-weight:800; color:#1B4332; }
+  .rest p { font-size:20px; color:#33413B; margin-top:6px; }
+</style></head>
+<body>
+
+  <!-- PANEL 1 · the ranked split -->
+  <div class="page">
+    <div class="handle">@maurojpelle</div>
+    <div><span class="sticker">Where the result comes from</span></div>
+    <h1>The asset is third on the list</h1>
+    <div class="sub">a lead magnet, split across its parts</div>
+    <div class="bars">
+      <div class="bar"><div class="lab"><span>The post</span><span>~50%</span></div>
+        <div class="track"><div class="fill" style="width:50%"></div></div></div>
+      <div class="bar"><div class="lab"><span>The DM</span><span>~25%</span></div>
+        <div class="track"><div class="fill dark" style="width:25%"></div></div></div>
+      <div class="bar"><div class="lab"><span>The asset</span><span>~15%</span></div>
+        <div class="track"><div class="fill" style="width:15%"></div></div></div>
+      <div class="bar"><div class="lab"><span>Landing page + P.S. offer</span><span>the rest</span></div>
+        <div class="track"><div class="fill pale" style="width:10%"></div></div></div>
+      <span class="note-tag">my gut from running these, nobody measured it</span>
+    </div>
+    <div class="foot"><span class="n">3 magnets a week, 18 months</span><span class="m">— Mauro</span></div>
+  </div>
+
+  <!-- PANEL 2 · comment rate, named vs broad -->
+  <div class="page">
+    <div class="handle">@maurojpelle</div>
+    <div><span class="sticker">40 magnet posts, one account</span></div>
+    <h1>The title is doing that</h1>
+    <div class="sub">comment rate = comments / views</div>
+    <div class="stats">
+      <div class="stat win"><div class="n">4%</div><div class="l">Named a concrete thing</div>
+        <div class="s">checklist, swipe file, teardown</div></div>
+      <div class="stat loss"><div class="n">0.9%</div><div class="l">The broad AI one</div>
+        <div class="s">one broad promise</div></div>
+    </div>
+    <div class="strip">Same account, same period.</div>
+    <div class="titles">
+      <div class="t win"><div class="q">"Creative testing checklist"</div><div class="k">names an object</div></div>
+      <div class="t"><div class="q">"How to fix your creative testing"</div><div class="k">names a topic</div></div>
+    </div>
+    <div class="foot"><span class="n">a $300k/month agency's account</span><span class="m">— Mauro</span></div>
+  </div>
+
+  <!-- PANEL 3 · fatigue -->
+  <div class="page">
+    <div class="handle">@maurojpelle</div>
+    <div><span class="sticker">Magnet fatigue</span></div>
+    <h1>Same magnet, six days apart</h1>
+    <div class="sub">same audience, nothing changed in the asset</div>
+    <div class="decay">
+      <div class="box"><div class="k">FIRST DM</div><div class="n">7,839</div><div class="u">redemptions</div></div>
+      <div class="arrowbox">
+        <div class="drop">-88%</div>
+        <svg width="110" height="40" viewBox="0 0 110 40"><line x1="0" y1="20" x2="86" y2="20" stroke="#1B4332" stroke-width="3"/><polygon points="84,12 84,28 106,20" fill="#1B4332"/></svg>
+      </div>
+      <div class="box spent"><div class="k">FIFTH DM</div><div class="n">901</div><div class="u">redemptions</div></div>
+    </div>
+    <div class="rest"><h3>Rest it 8 to 12 weeks</h3><p>Nothing was wrong with it, it was spent.</p></div>
+    <div class="foot"><span class="n">five DMs, six days</span><span class="m">— Mauro</span></div>
+  </div>
+
+</body></html>
