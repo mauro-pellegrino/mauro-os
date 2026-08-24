@@ -44,7 +44,7 @@ Roughly fifteen minutes of my own time per magnet once the source material is in
 
 ## The part nobody tells you
 
-They fatigue. Fast.
+They fatigue, and faster than you would guess.
 
 Five auto-DMs, one account, one week: **7,839 → 6,329 → 4,369 → 1,637 → 901**. The fifth did eleven percent of the first, six days apart.
 
@@ -72,12 +72,15 @@ Say yes if you already produce real work, you can name the live problem, and you
 
 ## How to use the rest of this
 
-1. **The Rules** — the title formula, the $100 bar, structure, images, cover, delivery. The what.
-2. **The Prompts** — every prompt written out, paste-ready. Slots to fill, nothing to invent.
-3. **The Worked Example** — one magnet built start to finish, so you can see what done looks like.
-4. **Score Your Own** — 20 checks and a verdict. Run it before you ship, not after.
-5. **The Delivery Kit** — the post, the DM, the auto-DM config, the cover spec.
+1. **Install** — get Claude set up. Three paths, pick one, none of them need a terminal.
+2. **Your Brand Context** — the one input the system needs from you. Fill it in once, every magnet after that inherits it.
+3. **The Rules** — the title formula, the $100 bar, structure, images, cover, fatigue, measurement. The what.
+4. **The Skill Files** — the actual files, in full. Copy them in and the system runs.
+5. **The Templates** — the post, the DM, the auto-DM config, the cover spec, the in-asset prompt blocks.
+6. **The Worked Example** — one magnet built start to finish, so you can see what done looks like.
+7. **Score Your Own** — 20 checks and a verdict. Run it before you ship, not after.
+8. **The Google Doc Format** — the second delivery lane, for when you want a document rather than a workspace.
 
 **Your first build will take a few hours.** Every one after that is the fifteen minutes. Don't judge the system on the first run.
 
-Start with page 2. Then build one, score it, and ship it before you read anything twice.
+Go to Install next. Then build one, score it, and ship it before you read anything twice.
