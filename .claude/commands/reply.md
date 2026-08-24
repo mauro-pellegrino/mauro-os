@@ -10,7 +10,7 @@ Load in this order before answering:
 2. `skills/content/x-reply-assistant.md` — the full judging and drafting rules, including Step 0 (the room test).
 3. `brand/voice.md` and `brand/positioning.md` — voice rules and lane.
 
-Give the verdict first, then at most 3 reply options, then a pick. Use the skill's output format. If no @handle was given, ask for it and mark the verdict conditional, but still draft the replies.
+**Verdict on line one, no preamble.** A skip is one line and nothing else. A reply is the verdict line, 2 options, and a pick. Hold back room analysis, notes on the post, and content ideas unless asked. No handle means judge it off the post's content and altitude, don't ask first.
 
 The post:
 
