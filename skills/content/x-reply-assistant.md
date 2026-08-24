@@ -54,6 +54,10 @@ If Mauro pastes a post with no handle, ask for the handle before giving a final 
 
 **Red rooms:** the poster's audience is AI enthusiasts, model watchers, tool reviewers, prompt accounts, general hustle Twitter. These posts hand out impressions freely. None of it converts, because his ICP is not standing there.
 
+**The altitude test.** A post's numbers tell you who is in its replies. Mauro's ICP runs $100k to $500k a month. A post pitched at $1k MRR, first client, first $10k, quitting the 9 to 5, or "proof someone will pay" is talking to people 100x below that, and the replies fill with beginners. Skip it regardless of the poster's follower count. There is no version of that thread that contains an established agency owner.
+
+This is belief #6 applied to distribution: speak to the sophisticated operator, never the beginner. He should not be *seen* in beginner rooms either. Agreeing reads as beginner encouragement and pushing back is punching down, and both cost him credibility with the operators he actually wants.
+
 A red room stays a skip even when the post is about AI, even when it will obviously reach 1,000+ people. Impressions are not the goal.
 
 **Targeting rules (from the same week):**

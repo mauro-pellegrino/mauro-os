@@ -41,7 +41,11 @@ These got on-lane replies and produced profile visits or real reach without a fo
 
 ## RED: do not reply
 
-The room does not contain agency owners. These paid in impressions and returned nothing.
+The room does not contain agency owners. Two ways a room goes red.
+
+**1. Wrong subject.** AI models, tools, benchmarks, prompt tricks. The accounts below. These paid in impressions and returned nothing.
+
+**2. Wrong altitude.** The post is pitched at $1k MRR, first client, first $10k, quitting the job, "proof someone will pay." No handle needed to call it, the numbers in the post are the signal. Mauro's ICP is at $100k to $500k a month, so the replies are 100x below him and there is nobody there to convert. Skip on sight.
 
 | Account | Replies | Imp | Follows | Room |
 |---|---|---|---|---|
@@ -79,4 +83,5 @@ Candidates to check first, since their audiences overlap the ICP: @thejustinwels
 2. Any account with 3+ replies, 0 follows and 0-1 profile visits moves to DROP.
 3. Any account that produces a follow moves to KEEP.
 4. Any account whose replies are about models, tools or benchmarks moves to RED, no matter the reach.
+4b. Any account posting at beginner altitude ($1k MRR, first client, first $10k) moves to RED, no matter the reach.
 5. Any TEST account still at zero after 5 replies moves to DROP.
