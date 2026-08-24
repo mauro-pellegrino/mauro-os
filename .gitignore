@@ -9,5 +9,6 @@ private/
 
 # Rendered board exports (regenerate with skills/content/visual-docs/render_one.py)
 content/boards/frames/
+content/boards/frames-article/
 content/boards/*.pdf
 content/boards/*.png

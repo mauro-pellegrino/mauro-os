@@ -1,0 +1,210 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Board — the lead magnet article, walked through</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif; color:#1B1B1B;
+    background:#F7F3EA;
+    background-image:
+      linear-gradient(#ECE6D8 1px, transparent 1px),
+      linear-gradient(90deg, #ECE6D8 1px, transparent 1px);
+    background-size:54px 54px;
+  }
+
+  /* ---- base board blocks (mauro-visual-doc-system.md) ---- */
+  .doc-title { font-size:52px; font-weight:800; letter-spacing:-1px; color:#1B4332; margin-bottom:10px; }
+  .doc-sub { font-size:19px; color:#5F6B62; margin-bottom:30px; }
+
+  .forest { --accent:#1B4332; --tint:#D8F3DC; }
+  .clay   { --accent:#C15F3C; --tint:#F7DFD3; }
+  .slate  { --accent:#3F5E77; --tint:#DDE7EF; }
+
+  .header-card { background:var(--accent); border-radius:12px; padding:22px 30px; text-align:center; max-width:760px; margin:0 auto; }
+  .header-card h2 { font-size:30px; font-weight:800; color:#fff; }
+  .header-card .sub { font-family:'JetBrains Mono',monospace; font-size:15px; color:#fff; opacity:.82; margin-top:4px; }
+
+  .conn { display:block; margin:8px auto; }
+  .conn line, .conn path { stroke:var(--accent,#1B4332); stroke-width:2; fill:none; }
+  .conn polygon { fill:var(--accent,#1B4332); }
+
+  .item { background:var(--tint); border:2px solid var(--accent); border-radius:12px; padding:20px 26px; margin:14px auto; max-width:760px; }
+  .item .pill { display:inline-block; background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace;
+    font-size:12px; font-weight:700; letter-spacing:1.5px; padding:4px 11px; border-radius:6px; margin-bottom:10px; }
+  .item h3 { font-size:24px; font-weight:700; color:#1B1B1B; }
+  .item p  { font-size:18px; color:#33413B; margin-top:5px; }
+
+  .compare { display:flex; gap:16px; max-width:760px; margin:0 auto; }
+  .col { flex:1; border:2px solid var(--accent); border-radius:12px; overflow:hidden; background:#fff; }
+  .col .h { background:var(--accent); color:#fff; font-weight:700; padding:13px 18px; font-size:17px; }
+  .col ul { list-style:none; padding:16px 18px; }
+  .col li { font-size:18px; padding:7px 0; }
+
+  .rail { border-left:3px solid var(--accent); max-width:700px; margin:0 auto; padding-left:30px; }
+  .step { position:relative; padding:12px 0; }
+  .step .b { position:absolute; left:-52px; top:10px; width:34px; height:34px; border-radius:50%;
+    background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:15px;
+    display:flex; align-items:center; justify-content:center; }
+  .step h3 { font-size:22px; font-weight:700; }
+  .step p { font-size:17px; color:#5F6B62; margin-top:2px; }
+
+  .callout { background:var(--accent); color:#fff; border-radius:12px; padding:28px 34px;
+    font-size:27px; font-weight:700; text-align:center; max-width:800px; margin:0 auto; line-height:1.3; }
+
+  .flow { text-align:center; }
+  .flow .node { font-size:26px; font-weight:800; color:#1B4332; }
+
+  .hl { border-bottom:3px solid #E9B949; }
+  .caption { font-size:14px; color:#5F6B62; text-align:center; margin-top:12px; }
+  .footer { text-align:center; color:#1B4332; font-size:15px; opacity:.75; margin-top:34px; }
+
+  /* ---- video-board corrections (one section = one screen) ---- */
+  :root { --frame-h: 100vh; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  html::-webkit-scrollbar { display: none; }
+  .frame {
+    min-height: var(--frame-h);
+    scroll-snap-align: start; scroll-snap-stop: always;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: 72px 100px; box-sizing: border-box;
+  }
+  .frame > .inner { width: 100%; max-width: 940px; }
+  .frame img, .frame .shot { display:block; margin:0 auto; width:auto; height:auto; max-width:100%; max-height:58vh;
+    object-fit:contain; border-radius:12px; border:1px solid #D8CFBB; }
+  .slot { display:flex; align-items:center; justify-content:center; text-align:center; max-width:100%; }
+  .slot--tweet { min-height:44vh; }
+  .slot--wide  { min-height:42vh; }
+  body.debug .frame { outline:2px dashed #E9B949; outline-offset:-2px; }
+</style></head>
+
+<!-- Walks the X article beat by beat, so the video and the article pair up.
+     The three data panels are pulled in from the rendered article images in this folder.
+     Add class="debug" to <body> while editing to see frame boundaries. -->
+<body>
+
+  <!-- FRAME 1 · Forest · title + the chain -->
+  <section class="frame section forest">
+    <div class="inner" style="text-align:center;">
+      <div class="doc-title">The asset is third on the list</div>
+      <div class="doc-sub">walking the article, part by part</div>
+      <div class="flow">
+        <div class="node">Comment</div>
+        <svg class="conn" width="26" height="36" viewBox="0 0 26 36"><line x1="13" y1="0" x2="13" y2="24"/><polygon points="6,23 20,23 13,36"/></svg>
+        <div class="node">Auto DM</div>
+        <svg class="conn" width="26" height="36" viewBox="0 0 26 36"><line x1="13" y1="0" x2="13" y2="24"/><polygon points="6,23 20,23 13,36"/></svg>
+        <div class="node">Conversation</div>
+        <svg class="conn" width="26" height="36" viewBox="0 0 26 36"><line x1="13" y1="0" x2="13" y2="24"/><polygon points="6,23 20,23 13,36"/></svg>
+        <div class="node"><span class="hl">Booked call</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAME 2 · Clay · the article's opening claim -->
+  <section class="frame section clay">
+    <div class="inner">
+      <div class="callout">The ones that flopped and the ones that pulled were often the exact same resource.</div>
+      <div class="caption">3 lead magnets a week, 18 months, a couple hundred of them.</div>
+    </div>
+  </section>
+
+  <!-- FRAME 3 · Slate · panel 1, the ranked split -->
+  <section class="frame section slate">
+    <div class="inner">
+      <div class="header-card"><h2>The split nobody measures</h2><div class="sub">my gut from running these</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <img src="article-lead-magnet-panels-p1.png" alt="">
+    </div>
+  </section>
+
+  <!-- FRAME 4 · Forest · the test that proved it -->
+  <section class="frame section forest">
+    <div class="inner">
+      <div class="header-card"><h2>Same resource, different copy</h2><div class="sub">the test that made me believe it</div></div>
+      <svg class="conn" width="26" height="38" viewBox="0 0 26 38"><line x1="13" y1="0" x2="13" y2="26"/><polygon points="6,25 20,25 13,38"/></svg>
+      <div class="compare">
+        <div class="col"><div class="h">What changed</div><ul>
+          <li>The post copy</li><li>The image or video</li><li>Perceived value</li></ul></div>
+        <div class="col"><div class="h">What didn't</div><ul>
+          <li>The resource</li><li>The link</li><li>The delivery</li></ul></div>
+      </div>
+      <div class="caption">Only what they thought they were getting before they got it.</div>
+    </div>
+  </section>
+
+  <!-- FRAME 5 · Clay · panel 2, the comment rate table -->
+  <section class="frame section clay">
+    <div class="inner">
+      <div class="header-card"><h2>Look at the gap</h2><div class="sub">40 posts, same account</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <img src="article-lead-magnet-panels-p2.png" alt="">
+    </div>
+  </section>
+
+  <!-- FRAME 6 · Slate · the diagnosis -->
+  <section class="frame section slate">
+    <div class="inner">
+      <div class="header-card"><h2>The two numbers I watch</h2><div class="sub">what broke, and how you tell</div></div>
+      <div class="item"><span class="pill">TITLE</span><h3>Normal reach, almost no comments</h3><p>The title or the promise in the copy.</p></div>
+      <div class="item"><span class="pill">DISTRIBUTION</span><h3>The reach itself died</h3><p>The magnet had nothing to do with it.</p></div>
+      <div class="item"><span class="pill">WRONG CROWD</span><h3>Claims, no DM replies</h3><p>Worse than pulling fewer.</p></div>
+    </div>
+  </section>
+
+  <!-- FRAME 7 · Clay · panel 3, fatigue -->
+  <section class="frame section clay">
+    <div class="inner">
+      <div class="header-card"><h2>Then it just stops working</h2><div class="sub">five DMs, six days</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <img src="article-lead-magnet-panels-p3.png" alt="">
+    </div>
+  </section>
+
+  <!-- FRAME 8 · Forest · after they get it -->
+  <section class="frame section forest">
+    <div class="inner">
+      <div class="header-card"><h2>What happens after they get it</h2><div class="sub">the human step</div></div>
+      <svg class="conn" width="26" height="38" viewBox="0 0 26 38"><line x1="13" y1="0" x2="13" y2="26"/><polygon points="6,25 20,25 13,38"/></svg>
+      <div class="rail">
+        <div class="step"><div class="b">1</div><h3>Check the profile</h3><p>Qualified or not.</p></div>
+        <div class="step"><div class="b">2</div><h3>"What did you think of it?"</h3><p>Nothing else in that message.</p></div>
+        <div class="step"><div class="b">3</div><h3>"What are you working on right now?"</h3><p>Qualifying that doesn't feel like qualifying.</p></div>
+        <div class="step"><div class="b">4</div><h3>Wait for the problem</h3><p>They bring it up themselves.</p></div>
+        <div class="step"><div class="b">5</div><h3>The call</h3><p>Lands soft, because they said it first.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAME 9 · Slate · the fill-in test -->
+  <section class="frame section slate">
+    <div class="inner">
+      <div class="header-card"><h2>One thing makes this easier</h2><div class="sub">put something in it they fill in</div></div>
+      <div class="item"><span class="pill">SKIM</span><h3>Nothing to complete</h3><p>They close it and you never hear back.</p></div>
+      <div class="item"><span class="pill">WORK</span><h3>Page three, their own answers</h3><p>They've done work inside your thing.</p></div>
+      <div class="item"><span class="pill">RESULT</span><h3>The next DM lands differently</h3><p>They already invested.</p></div>
+    </div>
+  </section>
+
+  <!-- FRAME 10 · Clay · the hole, with room for a screenshot -->
+  <section class="frame section clay">
+    <div class="inner">
+      <div class="header-card"><h2>The hole in mine</h2><div class="sub">the part I would rather say out loud</div></div>
+      <svg class="conn" width="26" height="34" viewBox="0 0 26 34"><line x1="13" y1="0" x2="13" y2="22"/><polygon points="6,21 20,21 13,34"/></svg>
+      <div class="compare">
+        <div class="col"><div class="h">Built</div><ul><li>The post</li><li>The auto DM</li><li>The Notion asset</li><li>The follow-up</li></ul></div>
+        <div class="col"><div class="h">Not built yet</div><ul><li>Landing page</li><li>Email capture</li><li>The P.S. offer</li></ul></div>
+      </div>
+      <div class="caption">No reply means the lead is gone. It's the next thing I'm building.</div>
+    </div>
+  </section>
+
+  <!-- FRAME 11 · Forest · the close + CTA to X -->
+  <section class="frame section forest">
+    <div class="inner" style="text-align:center;">
+      <div class="callout">One afternoon: the title and the four lines under it. Reuse an asset you already have.</div>
+      <div class="item" style="margin-top:26px;"><h3>The full article is on X</h3><p>Come find me there, @maurojpelle.</p></div>
+      <div class="footer">— Mauro</div>
+    </div>
+  </section>
+
+</body></html>
