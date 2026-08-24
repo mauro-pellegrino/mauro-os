@@ -34,7 +34,7 @@ The document lane ships a magnet as a single PDF with hand-drawn diagrams, in th
 
 ## Still missing, ranked by what it adds
 
-**1. Three subtypes, and this is the biggest hole.** Page 03 §8 lists five subtypes in a table. Page 04 ships the skill file for one. The module names its own gap and leaves it open, which is worse than not listing five.
+**1. ~~Three subtypes~~ CLOSED 24 Aug.** Framework and video-sourced are now Files 3 and 4 on page 04. Case study and industry-specific are stated as deliberately out, with reasons, on page 03 §8. Original finding: Page 03 §8 lists five subtypes in a table. Page 04 ships the skill file for one. The module names its own gap and leaves it open, which is worse than not listing five.
 
 Two are ready to port with no new thinking: `skills/lead-gen/lead-magnet/framework.md` (207 lines, solid) and `youtube-video.md` (227 lines). `case-study.md` and `industry-specific.md` were marked unusable during the build test, so they stay out and page 03 should say why rather than list them.
 

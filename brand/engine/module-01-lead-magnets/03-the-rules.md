@@ -209,19 +209,21 @@ That single instruction is the difference between a download and a read.
 
 ---
 
-## 8. The five subtypes
+## 8. The subtypes
 
-Same rules above, different source material.
+Same rules above, different source material. Three ship with this module.
 
-| Subtype | Source | Natural artifact |
-|---|---|---|
-| **Prompt swipe file** | Prompts you actually run | Paste-ready prompts with slots |
-| **Framework** | A repeatable method you own | A scoring sheet or decision tree |
-| **Case study** | One result, pulled apart | A worked example plus a template |
-| **Video-sourced** | A transcript, yours or a competitor's | Whatever the video's structure implies |
-| **Industry-specific** | One niche, one problem | A swipe file of real examples in that niche |
+| Subtype | Source | Natural artifact | Skill file |
+|---|---|---|---|
+| **Prompt swipe file** | Prompts you actually run | Paste-ready prompts with slots | `magnet-prompt-file.md` |
+| **Framework** | A repeatable method you own | A scoring sheet or decision tree | `magnet-framework.md` |
+| **Video-sourced** | A transcript, yours or someone else's | Whatever the video's structure implies | `magnet-video.md` |
 
 **The video-sourced one is the cheat code.** The source already exists, so the magnet starts from material rather than a blank page. Keep a transcript library and you never run out.
+
+**Two more exist and are deliberately not here.** A case-study subtype and a niche-packaged subtype both run internally and neither is in a state worth handing over. The case study version needs a transformation you can show end to end, and most people reading this don't have one they're allowed to publish yet. The niche-packaged version is built around a table of live niches that is empty by design, because it changes every quarter. Shipping either as a half-file would cost you more time than building from the three above.
+
+If you want one of them later, the framework file plus a case study you own gets you most of the way there.
 
 ---
 

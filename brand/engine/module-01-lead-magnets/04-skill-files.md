@@ -1,10 +1,12 @@
 # The Skill Files
 
-**Three files. Paste them in and the system runs.**
+**Five files. Paste them in and the system runs.**
 
-Download all three from the repo link at the top of this module, or copy them from the code blocks below. Either way they go wherever your setup keeps context: Project knowledge if you're on Path A, the folder if you're on Path B.
+One master file, three subtypes, one delivery file. Download them from the repo link at the top of this module, or copy them from the code blocks below. Either way they go wherever your setup keeps context: Project knowledge if you're on Path A, the folder if you're on Path B.
 
-You'll have four files total once you add your own `brand-context.md` from page 02. That one is not optional. These three tell the system what to do. Yours tells it who it's for.
+You'll have six files total once you add your own `brand-context.md` from page 02. That one is not optional. These five tell the system what to do. Yours tells it who it's for.
+
+**You do not need all three subtypes on day one.** Load the master, the delivery file, and whichever subtype matches the material you already have. Add the others when you need them.
 
 ---
 
@@ -299,7 +301,218 @@ examples. Short. The post is a teaser, not the magnet.
 
 ---
 
-## File 3 · `magnet-delivery.md`
+## File 3 · `magnet-framework.md`
+
+The second subtype. Use it when what you own is a repeatable method rather than a set of prompts.
+
+```markdown
+# Subtype: Framework
+
+Load with magnet-master.md.
+DM noun: "breakdown"
+
+## WHAT THIS IS
+
+A repeatable method you own, broken into named components the reader can
+run. Higher abstraction than a prompt file, lower specificity than a case
+study.
+
+Use this when the thing you know is a system rather than a set of
+commands. Systems thinking, a memorable mental model, production rules.
+
+## INPUTS
+
+1. The system being framed. Name it as a system, not a topic.
+2. Number of components. FIVE IS THE RULE. Four or six only if the
+   subject genuinely demands it. Past six the reader stops tracking,
+   under four it reads thin.
+3. One consistent label for the components: parts, phases, pillars,
+   layers. Pick one and never mix them.
+4. Whatever version of this already exists, even if it only exists in
+   your head.
+5. Trigger keyword. 3-7 characters, all caps.
+6. Whether the framework flips an old way of working. If yes, you are
+   also building a before/after.
+
+If the framework has no memorable name yet, propose two or three before
+drafting anything. One to three sticky words. A descriptive name is a
+dead name.
+
+## TITLE
+
+Anchor on a specific outcome, a year, or a contrarian stance. Generic
+titles do not ship.
+
+  The [Framework Name] for [Audience] ([Year])
+  The [Audience] [Artifact Noun] (NOT [the default everyone does])
+
+Subtitle: The ideal [system] to [outcome] in [year] with [the specific
+differentiator]. Number anchor and proof anchor, both, or no subtitle.
+
+## BODY
+
+  [Framework name + one-sentence pitch]
+
+  PART 1: [Component name, 1-3 words]
+    What it is, 2-3 lines
+    Why it works, the mechanism
+    Worked example or a diagram
+
+  [repeat to 5 parts]
+
+  BEFORE / AFTER (when the framework flips something)
+    BEFORE: three old behaviours, stated plainly
+    AFTER: three new ones, same three areas
+
+  FILL-IN PAGE (second to last, mandatory)
+    The framework as a blank they complete on their own business
+
+  CTA PAGE (last)
+
+## RULES FOR EACH COMPONENT
+
+- Named in one to three words. Memorable beats descriptive.
+- Defined in two or three lines. Long definitions belong in the asset,
+  not the summary.
+- Mechanism always stated. "What" without "why" is a listicle.
+- A worked example or a visual on every single component. A framework
+  without examples reads as theory and nobody trusts it.
+- Say where each component sits in the wider system. No floating parts.
+
+## HOOK
+
+  Your [thing] [does the problem], and that's [killing the outcome]
+  [Component] is the 80/20 of [thing]
+  [Thing] in [year] requires a NEW playbook
+
+Paragraph two carries the proof anchor. The hook works because of what
+follows it, so a hook with no anchor under it is a weaker hook.
+
+Bullets promise four things, always: the breakdown of each component, the
+exact process for each, the mapping rule for when to use what, and real
+examples.
+
+## ANTI-PATTERNS
+
+- A generic framework name. It has to be specific or contrarian.
+- Components with no mechanism.
+- More than six components, or fewer than four.
+- Treating it like a prompt pack. This is systems thinking, and
+  paste-ready commands are the other subtype.
+- A hook with no proof anchor in the next paragraph.
+```
+
+---
+
+## File 4 · `magnet-video.md`
+
+The third subtype, and the cheapest one to run. The magnet is a video you already made.
+
+```markdown
+# Subtype: Video-Sourced
+
+Load with magnet-master.md.
+DM noun: "breakdown". NEVER "video".
+
+## WHAT THIS IS
+
+The magnet IS an existing video, or one you are about to record. The
+auto-DM sends the link. The post, the cover and the DM all frame it as a
+breakdown, so the reader expects a written deep-dive, clicks, and the
+video over-delivers anyway.
+
+Lowest production cost on the asset side, because the asset exists.
+Highest cost on the framing side, because the cover has to do real work.
+
+Use this file whenever the link in the DM goes to a video URL.
+
+## INPUTS
+
+1. The video URL, or the topic if it is not recorded yet.
+2. The transcript. Pull it from the description, or have the system fetch
+   it. Save it before you use it, so the next magnet off the same video
+   costs nothing.
+3. The three to five core insights. The system extracts these from the
+   transcript.
+4. The single strongest claim in the video. This becomes the post hook.
+5. Trigger keyword. 3-7 characters, all caps.
+
+## THE RULE THAT MAKES THIS WORK
+
+Never reveal it is a video.
+
+- The post never says video, watch, or just posted.
+- The cover never has a play button, a thumbnail, or any platform
+  branding.
+- The DM noun is breakdown.
+
+They should believe a written deep-dive is coming. The video then beats
+their expectation instead of setting it.
+
+## THE COVER DOES THE HEAVY LIFTING
+
+This is the one subtype where the cover matters more than the copy. It
+decides between "a 14-minute video I will not watch" and "a 30-page guide
+I want".
+
+Four options. Pick one, or combine two.
+
+  A. Table of contents. Screenshot the chapters with timestamps,
+     formatted as a contents page. Makes 14 minutes look like 8 modules.
+     Best when the video has clear chapters.
+  B. The framework diagram. One clean visual pulled from the video.
+     Best when the video presents something that draws well.
+  C. Before and after, side by side. Best for transformation videos.
+  D. A designed card listing three to five specific things covered.
+     Use when the video does not visualise well and the cover has to
+     compensate.
+
+Cover brief, and this output is mandatory:
+
+  Image type: [A / B / C / D]
+  What to show: [exactly what to capture]
+  Text overlay: [the title plus three bullets, written out]
+  Goal: make this read as a [guide / system / breakdown], never as a
+        [N]-minute video
+
+Skip the cover brief and the post underperforms. Every time.
+
+## BODY
+
+The video is the body. What you build around it:
+
+  THE BREAKDOWN PAGE
+    The three to five insights, written out, so the DM has substance
+    even before they click
+
+  FILL-IN PAGE (mandatory)
+    The thing the video walks through, as a blank
+
+  THE LINK
+
+## RECORDING IT AFTERWARDS
+
+You can publish the post and the DM before the video exists, then record
+against the brief you already published.
+
+The three to five insights become the brief. The cover gets designed
+first and the video matches it later.
+
+The risk is real: if what you record does not match what you claimed, the
+DM under-delivers to everyone who already raised a hand. Verify before
+the auto-DM goes live.
+
+## ANTI-PATTERNS
+
+- Saying video anywhere in the post, the cover or the DM.
+- Shipping without a cover brief.
+- Sending the raw link with no breakdown page, so the DM is one URL.
+- Reusing a video whose claims you have not re-watched.
+```
+
+---
+
+## File 5 · `magnet-delivery.md`
 
 The build prompt. Paste this once the content exists and it creates the pages.
 
@@ -364,7 +577,7 @@ a different mechanic for a different job, do not confuse the two.
 
 ## What to do now
 
-1. Get all three files into your setup, plus your `brand-context.md`.
+1. Get the master, the delivery file and at least one subtype into your setup, plus your `brand-context.md`.
 2. Read page 05 for the post, DM and config templates.
 3. Read page 06 to see a finished magnet.
 4. Build one. Score it on page 07. Ship it.

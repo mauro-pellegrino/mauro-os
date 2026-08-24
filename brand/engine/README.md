@@ -64,7 +64,7 @@ brand/engine/
     ├── 01-install.md             three paths, Claude Project first
     ├── 02-brand-context.md       the required input. Replaces every "ask Mauro"
     ├── 03-the-rules.md           written. Evidence still needs the 365-day rebuild
-    ├── 04-skill-files.md         written. Ships 1 subtype of 5
+    ├── 04-skill-files.md         written. 3 subtypes shipped, 2 deliberately out
     ├── 05-templates.md           written. Post, DM, LeadShark, cover, page structure
     ├── 06-worked-example.md      written. CTA set to DM-only
     └── 07-score-your-own.md      20 checks, verdict bands
@@ -125,8 +125,8 @@ Surveyed the agency repo 21 Aug. Every module below is built from systems alread
 
 Checked against its own rules, 21 Aug.
 
-1. **It teaches one subtype of five.** Page 04 ships the prompt-swipe-file subtype only. Framework, case study, video and industry-specific exist internally and are absent. The module claims to cover lead magnets and covers one kind.
-2. **One worked example.** The other four subtypes have nothing to copy the shape of.
+1. ~~It teaches one subtype of five.~~ **Closed 24 Aug.** Page 04 now ships three subtypes: prompt swipe file, framework, video-sourced. Case study and niche-packaged are stated as deliberately out, with the reason, rather than listed as a promise.
+2. **Worked examples for the two new subtypes.** The document-format magnet covers the framework shape. Video-sourced has nothing to copy yet. Blocked on Mauro naming a shipped magnet.
 3. **Zero images.** The rules say a real example screenshot is the strongest option and to use it most. The module contains no screenshots at all, so it breaks its own image rule on every page.
 4. **The evidence is buried.** The 40-post table, the seven rejected-to-shipped titles and the fatigue curve are the least reconstructable thing in here, and they sit mid-document inside page 03 instead of leading.
 5. **No video.** The buyer's whole profile is that they make video. The module is entirely reading.
