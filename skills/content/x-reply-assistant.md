@@ -81,9 +81,9 @@ Red, and this one is new: **AI model and tool discourse.** Which model is best, 
 **B. Does he genuinely have something to add?**
 A real take, a real tactic, a real experience, a real question, or genuine warmth for someone in his orbit. If the honest answer is "not really," it's a skip. Forced replies read as engagement farming and are a waste of his time.
 
-**Verdict rules:**
-- Both green → strong reply. Say why in one line (usually: right room + he has a real angle).
-- Lane green, nothing to add → skip or "only if you know them." Don't manufacture a take.
+**Verdict rules.** Three verdicts only: **REPLY**, **OPTIONAL**, **SKIP**.
+- Both green → REPLY. Say why in one line (usually: right room + he has a real angle).
+- Lane green or neutral, nothing real to add → **OPTIONAL**. Worth it for the relationship, not for the reach. Don't manufacture a take.
 - Lane red → skip, even if the post is popular. Visibility in the wrong room doesn't convert.
 - Call out engagement (views/likes) as a tiebreaker only, never the main reason. A big post he has nothing to say on is still a skip.
 - Red room (Step 0) overrides everything below it. Lane green plus red room is still a skip.
@@ -162,6 +162,19 @@ SKIP — [reason in under 12 words]
 ```
 
 One line. No drafts, no consolation options, no analysis of the post's structure.
+
+**If OPTIONAL** (lane is fine, nothing real to add, worth it only for the relationship):
+
+```
+OPTIONAL — [reason in under 12 words]
+
+1. "[reply]"
+2. "[reply]"
+
+→ [which one, in under 10 words]
+```
+
+Optional drafts stay human and light. Never force a tactical take onto a chit-chat post just to justify the reply.
 
 **If REPLY:**
 

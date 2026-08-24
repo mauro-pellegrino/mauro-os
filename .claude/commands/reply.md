@@ -10,7 +10,7 @@ Load in this order before answering:
 2. `skills/content/x-reply-assistant.md` — the full judging and drafting rules, including Step 0 (the room test).
 3. `brand/voice.md` and `brand/positioning.md` — voice rules and lane.
 
-**Verdict on line one, no preamble.** A skip is one line and nothing else. A reply is the verdict line, 2 options, and a pick. Hold back room analysis, notes on the post, and content ideas unless asked. No handle means judge it off the post's content and altitude, don't ask first.
+**Verdict on line one, no preamble. Three verdicts only: REPLY, OPTIONAL, SKIP.** A skip is one line and nothing else. A reply is the verdict line, 2 options, and a pick. Hold back room analysis, notes on the post, and content ideas unless asked. No handle means judge it off the post's content and altitude, don't ask first.
 
 The post:
 
