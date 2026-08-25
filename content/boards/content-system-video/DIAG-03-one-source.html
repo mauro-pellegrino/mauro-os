@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<title>DIAG-03 One source, nine formats</title>
+<style>
+body{width:2600px;height:1480px;display:flex}
+.row{display:flex;gap:26px;flex:1;align-items:stretch}
+.source{width:520px;border:5px solid var(--ink);background:var(--yellow);padding:30px 32px;display:flex;flex-direction:column}
+.source .h{font-size:36px;font-weight:900;letter-spacing:-.02em;line-height:1.1;margin-bottom:14px}
+.source .b{font-size:23px;font-weight:600;line-height:1.45}
+.source .foot{margin-top:auto;padding-top:18px;border-top:3px solid rgba(26,26,26,.25);font-size:21px;font-weight:800;line-height:1.35}
+.fan{width:70px;display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:900;color:#9A937E}
+.outs{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.o{border:4px solid var(--ink);background:#fff;padding:18px 20px;display:flex;flex-direction:column}
+.o .n{font-size:25px;font-weight:900;letter-spacing:-.01em;line-height:1.1;margin-bottom:7px}
+.o .s{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:16px;font-weight:600;color:var(--grey);line-height:1.35;margin-bottom:11px;word-break:break-all}
+.o .d{font-size:20px;font-weight:600;line-height:1.4;color:#3A362D}
+.o .st{margin-top:auto;padding-top:11px;font-size:16px;font-weight:900;letter-spacing:.1em;color:#7A6A2E}
+.o.wide{grid-column:span 3;flex-direction:row;align-items:center;gap:26px;background:#F1ECDE}
+.o.wide .n{margin:0;white-space:nowrap}
+.o.wide .d{margin:0}
+</style></head><body><div class="wrap">
+<div class="kicker">The only economics that matter here</div>
+<h1>One source in. <span class="hl">Nine formats out.</span> Nobody writes nine times.</h1>
+<div class="sub">Every format below is a separate skill file that already knows the shape, the funnel stage and the voice. The source is the same recording.</div>
+<div class="rule" style="margin:28px 0 30px"></div>
+
+<div class="row">
+  <div class="source">
+    <div class="h">A voice note, a call recording, or a thing I actually built this week</div>
+    <div class="b">Not an idea. Not a topic. A real piece of work with real detail in it, because the detail is the only thing that cannot be faked and the only thing worth reading.</div>
+    <div class="foot">If the source is thin, every one of the nine is thin. Garbage in, garbage out is the whole failure mode here.</div>
+  </div>
+  <div class="fan">&rarr;</div>
+  <div class="outs">
+    <div class="o"><div class="n">X article</div><div class="s">content/x-article-creator.md</div><div class="d">Long mega-playbook. The asset everything else points at.</div><div class="st">MOF</div></div>
+    <div class="o"><div class="n">Long-form post</div><div class="s">content/long-form/ · 5 subtypes</div><div class="d">Video, infographic, doc screenshot, case study, teardown.</div><div class="st">TOF / MOF</div></div>
+    <div class="o"><div class="n">Short-form set</div><div class="s">content/short-form/</div><div class="d">Cut from the long piece, never written cold. Bulk to CSV.</div><div class="st">TOF</div></div>
+    <div class="o"><div class="n">Lead magnet</div><div class="s">lead-gen/lead-magnet/ · 6 subtypes</div><div class="d">A tool you fill in, not prose you read.</div><div class="st">CAPTURE</div></div>
+    <div class="o"><div class="n">Auto-DM post</div><div class="s">the magnet's delivery hook</div><div class="d">The giveaway post that puts the magnet in a DM.</div><div class="st">CAPTURE</div></div>
+    <div class="o"><div class="n">LinkedIn doc</div><div class="s">content/linkedin-docs/</div><div class="d">Same argument, carousel shape, second platform.</div><div class="st">TOF / MOF</div></div>
+    <div class="o"><div class="n">YouTube board</div><div class="s">youtube/ · the full chain</div><div class="d">Idea, title, hook, script, then the board it gets read off.</div><div class="st">TOF</div></div>
+    <div class="o"><div class="n">DM opener</div><div class="s">dm-setting/industries/</div><div class="d">Value-first, anchored to the asset above rather than a pitch.</div><div class="st">BOF</div></div>
+    <div class="o"><div class="n">Email</div><div class="s">lead-gen/email-to-call.md</div><div class="d">The one that asks for the call.</div><div class="st">BOF</div></div>
+    <div class="o wide"><div class="n">And back in &rarr;</div><div class="d">Whatever ships gets its performance written back against the format that produced it, which is what decides next week's mix. A system that never closes this loop is just a content generator.</div></div>
+  </div>
+</div>
+
+<div class="src">Format list and file paths are my own repo as of 25 Aug 2026. Funnel tags are how I classify them, not an industry standard. <b>No claim is made here about output per hour.</b> That number needs my real figures. [ NEEDS: see DIAG-09. ]</div>
+<div class="tag"><b>@maurojpelle</b><i>BUILD IN PUBLIC</i></div>
+</div></body></html>

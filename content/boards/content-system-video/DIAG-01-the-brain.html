@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<title>DIAG-01 The repo is the brain</title>
+<style>
+body{width:2400px;height:1265px;display:flex}
+.stack{display:flex;flex-direction:column;gap:22px;flex:1}
+.brain{border:5px solid var(--ink);background:var(--yellow);padding:26px 34px;display:flex;align-items:center;gap:32px}
+.brain .f{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:38px;font-weight:800;white-space:nowrap}
+.brain .t{font-size:25px;font-weight:600;line-height:1.4}
+.arrow{text-align:center;font-size:34px;font-weight:900;color:#9A937E;line-height:1}
+.cols{display:flex;gap:20px;flex:1}
+.col{flex:1;border:4px solid var(--ink);background:#fff;display:flex;flex-direction:column}
+.ch{background:var(--ink);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:baseline}
+.ch b{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:27px;font-weight:800}
+.ch i{font-style:normal;font-size:17px;font-weight:800;letter-spacing:.14em;color:#B9B3A4}
+.cb{padding:20px 22px;flex:1;display:flex;flex-direction:column}
+.cd{font-size:23px;font-weight:700;line-height:1.35;margin-bottom:16px}
+ul{list-style:none;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:19px;font-weight:500;line-height:1.6;color:#3A362D}
+li{padding-left:20px;position:relative}
+li:before{content:"";position:absolute;left:0;top:12px;width:9px;height:9px;background:#C4BCA6}
+.note{margin-top:auto;padding-top:14px;border-top:3px solid #E2DBC9;font-size:19px;font-weight:700;color:#4A463D;line-height:1.35}
+</style></head><body><div class="wrap">
+<div class="kicker">The shape of the whole thing</div>
+<div class="stack">
+<h1>One brain file. <span class="hl">Four folders.</span> Everything else is downstream.</h1>
+<div class="sub">Nothing here is a plugin or a product. It is a git repo of markdown that Claude Code reads at the start of every session.</div>
+<div class="rule" style="margin:26px 0 22px"></div>
+
+<div class="brain">
+  <div class="f">CLAUDE.md</div>
+  <div class="t"><b>Read first, every session.</b> Who I am, who I serve, the beliefs, and a routing table that maps any incoming request to exactly one skill file. If the routing table is wrong, everything after it is wrong.</div>
+</div>
+<div class="arrow">&darr;</div>
+
+<div class="cols">
+  <div class="col"><div class="ch"><b>skills/</b><i>THE VERBS</i></div><div class="cb">
+    <div class="cd">How to do a thing. One file per format, not one per topic.</div>
+    <ul><li>content/</li><li>lead-gen/</li><li>youtube/</li><li>research/</li><li>ops/</li><li>dm-setting/</li><li>creative-strategy/</li></ul>
+    <div class="note">A skill is a spec. It survives me.</div></div></div>
+
+  <div class="col"><div class="ch"><b>brand/</b><i>THE NOUNS</i></div><div class="cb">
+    <div class="cd">Who the output is for and how it has to sound.</div>
+    <ul><li>positioning.md</li><li>audience.md</li><li>voice.md</li><li>beliefs</li><li>learnings.md</li></ul>
+    <div class="note">Swap this folder and the same skills write for someone else.</div></div></div>
+
+  <div class="col"><div class="ch"><b>research/</b><i>THE INPUTS</i></div><div class="cb">
+    <div class="cd">Raw material. Fetched once, saved forever, never re-fetched.</div>
+    <ul><li>transcripts/</li><li>post-studies/</li><li>competitors/</li><li>weekly-briefs/</li></ul>
+    <div class="note">This is the part that compounds. Month twelve is not month one.</div></div></div>
+
+  <div class="col"><div class="ch"><b>content/</b><i>THE OUTPUT</i></div><div class="cb">
+    <div class="cd">What came out, kept so the next thing can be built from it.</div>
+    <ul><li>posts/</li><li>boards/</li><li>sessions/</li></ul>
+    <div class="note">Output becomes input. That loop is the whole trick.</div></div></div>
+</div>
+</div>
+
+<div class="src">Structure of my own working repo as it stands 25 Aug 2026. Nobody sells this as a template. It is the layout that survived me correcting it over and over, and the folder names are real. What sits inside each one will drift as the repo changes. [ NEEDS: how long you have been running it, if you want to say that on camera. ]</div>
+<div class="tag"><b>@maurojpelle</b><i>BUILD IN PUBLIC</i></div>
+</div></body></html>
