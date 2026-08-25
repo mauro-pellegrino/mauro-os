@@ -3,8 +3,8 @@
 > **STATUS: NOT ADOPTED.** Research input only. Nothing in this file enters `skills/` until Mauro signs off row by row on the adopt/adapt/reject table below.
 
 **Source:** `source-2026-08-24-x-top-formats-q3.md`, saved 2026-08-25.
-**Whose data:** every example links to **@lorenzo_pravata**, not @maurojpelle. Treat every number below as **Lorenzo's account**, not ours. Window: 4 Jun to 24 Aug 2026, 521 posts, 1,423,324 impressions, 1,734 link clicks, 107 DM conversations.
-**Open question for Mauro:** is this an account we run, or an outside account? It changes whether the numbers are usable internally and whether the account can ever be named. See "Attribution" at the bottom.
+**Whose data:** every example links to **@lorenzo_pravata**, not @maurojpelle. Window: 4 Jun to 24 Aug 2026, 521 posts, 1,423,324 impressions, 1,734 link clicks, 107 DM conversations.
+**Attribution resolved (Mauro, 2026-08-25): this is an account we run.** So the numbers are first-party and publishable, with one condition: the account is never named. Content refers to it as "one of the accounts I run" / "the accounts I manage", per the standing rule on never naming clients in anything public-facing. See "Attribution" at the bottom.
 
 ---
 
@@ -44,7 +44,7 @@ The through-line: reach, audience, clicks and conversations are bought by four d
 | 7 | **Six-week rotation clock on the winning format, rotate on schedule not on evidence of decline.** | **ADAPT** | The logic is good, six weeks is *their* saturation curve in *their* niche. Take the clock, set our own interval from our own p90 trend. |
 | 8 | **Credit what's working before naming the gap in a teardown.** | **ADOPT** | Already how `skills/research/brand-breakdown.md` should behave; worth making explicit. Costs nothing. |
 | 9 | **"Articles promising one mechanism get opened, articles promising a list get impressions."** | **ADAPT** | A title rule worth testing in `x-article-creator.md`. One account, 34 articles, so it's a hypothesis not a law. |
-| 10 | **Every specific number in the doc** (90.5%, 107 DMs, 1,437 opens, 2.72% save rate, the appendix table). | **REJECT for our content** | Lorenzo's account, different niche, different offer. Belief 10: never present someone else's numbers as ours. Usable internally as a comparison baseline, never in a Mauro post. |
+| 10 | **Every specific number in the doc** (90.5%, 107 DMs, 1,437 opens, 2.72% save rate, the appendix table). | **ADOPT, unnamed** (revised 2026-08-25, was REJECT) | Mauro confirmed it's an account we run, so these are first-party numbers and belief 10 is satisfied. Condition: the account is never named, and no example post links go in published content (a link names the account). Frame as "one of the accounts I run". |
 | 11 | **The doc's eight-format taxonomy as a replacement for our vehicle library.** | **REJECT** | We have 13 in-use vehicles built around Mauro's actual production. Cross-map the two, don't swap. The value is the *outcome column* the taxonomy adds, not the taxonomy. |
 | 12 | **The semantic-dedup hypothesis** (platform collapsing near-identical posts like ad creative). | **REJECT for now** | The source flags it as untested itself. Interesting, unverifiable, no action attached. |
 | 13 | **"Formats one and five are where you sell, everything else earns the right to."** | **ADAPT** | Clean allocation principle. Our version needs the BOF gap monitor in `content-loop.md` to actually track the split. |
@@ -58,6 +58,11 @@ The through-line: reach, audience, clicks and conversations are bought by four d
 3. **The self-reply stack test** (items 4, 5): the largest claimed effect in the doc and the one we're least likely to be running.
 4. **Content assets** off step 1, never off this doc.
 
-## Attribution
+## Attribution (resolved 2026-08-25)
 
-Do not publish, quote, or paraphrase this document's numbers under Mauro's name. If @lorenzo_pravata is an account we run, the numbers are usable internally and the account still cannot be named publicly per the standing client rule. If it isn't ours, the doc is a competitor's analysis and stays purely as a comparison baseline.
+Mauro confirmed @lorenzo_pravata is an account we run, so the numbers are first-party and publishable under his name. Two conditions hold every time:
+
+1. **Never name the account or link a single example post.** A link names it. Refer to it as "one of the accounts I run" or "the accounts I manage". Standing client rule.
+2. **Keep the lane clean.** The account's own subject matter (ecom brands, ad creative) is the agency's service, not Mauro's. Publish the format mechanics and the export numbers, never Mauro as an ecom or ad-creative practitioner.
+
+Shipped off this: 3 X articles (formats / decay / measurement) plus 48 tweets, handed over in chat 2026-08-25, not saved to the repo per the standing rule on articles.
