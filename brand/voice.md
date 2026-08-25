@@ -409,6 +409,36 @@ The instinct to add the reframe usually means the writer wants to sound clever. 
 
 ---
 
+---
+
+## Raw tweet types + finishing rules (Mauro, 2026-08-25)
+
+These cover Mauro's own raw X posts, the ones he types straight into the box. Not articles, not threads. He flagged the **finishing** specifically, because the ending is where an AI draft always gives itself away.
+
+### The three types he runs
+
+**Type 1: the flat dismissal.** A tool or tactic debate gets flattened, then the real variable gets named, then one jab closes it.
+> "Claude code, codex, all the same. / If you don't know what to talk about, I don't care what you use to write content. / No one will actually care, not even your customer. / Especially if it looks like slop."
+
+**Type 2: the inbound question.** Someone asked him something, he answers it honestly and briefly, then gives the actual take, then lands on a bullet list of concrete outputs.
+> "People have been asking me if I've tried grok for copy. / I might try it yes. / But you can use whatever subscription, if you spend time at it, anything will work. / ... * x articles * lead magnets * boards for yt vids"
+
+**Type 3: the build-in-public stack.** A time or scale anchor, what's actually built as bullets, then a personal reason (usually self-deprecating, often profane), then a flat confidence line.
+> "Spent about 4 months on claude code. / I've set up our whole inbound acquisition system inside: / [bullets] / I don't switch because I would rather just keep improving here, too fucking lazy for that. / And my current outputs are too good, and they can only improve."
+
+### Finishing rules
+
+1. **End on the last real beat.** No summary, no takeaway, no "that's the difference between X and Y". The point lands and the tweet stops. Ending on the final bullet of a list is correct and normal.
+2. **No CTA, no question to the audience.** Never "what are you using?", never "try it".
+3. **Only three endings are allowed:** a flat jab, a bullet, or a flat confidence statement.
+4. **The closer is never a lesson.** Do not generalise his own experience into advice in the last line.
+5. **Profanity is self-directed and used once.** "too fucking lazy for that" points at himself, never at the reader.
+6. **Lowercase product names throughout:** claude code, codex, grok, x, linkedin, miro, notion, yt.
+7. **Bullets are lowercase fragments.** No trailing periods, no explanation clause hanging off them.
+8. **One idea per line,** blank line between most lines.
+9. **Loose grammar stays.** "I might try it yes." Don't tidy his phrasing into a correct sentence.
+10. **Casual approximations,** "about 4 months", not a precise figure he didn't say.
+
 ## The 60-Second Pre-Publish Checklist
 
 Run every piece of AI-assisted content through this before publishing:
@@ -424,6 +454,7 @@ Run every piece of AI-assisted content through this before publishing:
 - [ ] Any "That's the [reframe] doing its job" / "That's not a problem, that's the system working" lines? Cut them. State the observation, don't reframe it.
 - [ ] Any clipped short-phrase or subject-dropped fragment stacks, especially the opener? Fold them into flowing sentences.
 - [ ] Any short line that just restates or labels a point ("That's the input.", "It's a repackaging job.")? Fold it into the surrounding sentence with commas.
+- [ ] Raw tweet? Check the last line. If it summarises, teaches, or asks the reader anything, delete it and end on the beat before.
 - [ ] Personality check: does every distinctive phrase trace to Mauro's raw words? Replace any invented voice or off-voice word (e.g. "scramble") with his actual phrasing, or cut it.
 
 The fastest way to de-AI your writing is to add something that creates friction. AI avoids disagreement, while humans don't.
