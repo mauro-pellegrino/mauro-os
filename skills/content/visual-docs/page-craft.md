@@ -68,7 +68,8 @@ reference build.
 
 - **EYEBROW** · mono, uppercase, 2.6px letter-spacing, `--hot`, sits above the H1. Names the *series*
   (`GROWTHUB · CREATIVE PLAYBOOK`), never the doc. 13px. One per carousel, page 1 only.
-- **HIGHLIGHT-HEADER** · `display:inline-block` marker block in `--highlight`, `--ink` text, 34px/800.
+- **HIGHLIGHT-HEADER** · marker block in `--highlight`, `--ink` text, 32px/800, shrink-wrapped with
+  `align-self:flex-start` (see the gotcha in §3).
   Opens every section. **Width follows the text, never full-bleed** — the ragged right edge is the look.
   Every page opens with one, including page 1's second beat. This is what makes pages read as siblings.
 - **DARK-CALLOUT** · `--dark` fill, mono label in `--mono-dark`, content in `--highlight`. The label
@@ -112,7 +113,8 @@ the moment copy changes.
 | Body measure | `max-width` around `940px` on `p`, inside a `948px` content width, so lines never run the full column. |
 | Footer | Byte-identical markup on every page. |
 
-**Bottom whitespace is allowed.** Both reference pages end roughly 20% short and that is correct. A page
+**Bottom whitespace is allowed.** The reference pages end at 952 and 1215 of 1350, so page 1 keeps a
+full 20% of air under it. That is correct. A page
 that stops when the idea stops reads confident. Stretching type or padding to fill the frame reads
 desperate. (The base system's ">30% bottom whitespace" check is a smell test for a page that should merge
 with its neighbour, not an instruction to pad.)
@@ -125,6 +127,40 @@ with its neighbour, not an instruction to pad.)
                   display:flex; align-items:center; justify-content:center; }
 .nblock .bar h2 { align-self:center; padding:14px 22px; } /* title centres, chip stretches */
 ```
+
+**Two gotchas that bit this exact build:**
+
+1. **`display:inline-block` is ignored on a flex item.** The highlight-header rendered full-bleed
+   instead of shrink-wrapping, because a child of `display:flex; flex-direction:column` gets
+   `align-self:stretch` by default and the display value is blown away. The fix is
+   `align-self:flex-start`, not `inline-block`. Any time a block should hug its text inside a flex
+   column, that is the property you want.
+2. **A headline that wraps changes the whole page.** `h1` at 60px broke "Educational ads on Meta,
+   from zero" onto two lines and pushed every block below it down. 54px holds it on one line.
+   Size the H1 to the actual title, not to a number from a spec table.
+
+**Measure before you render.** A render is slow and a page that overflows silently becomes an extra
+page in the PDF. Check heights first:
+
+```python
+from playwright.sync_api import sync_playwright
+import pathlib
+u = pathlib.Path("deck.html").resolve().as_uri()
+with sync_playwright() as p:
+    b = p.chromium.launch(); pg = b.new_page(viewport={"width":1080,"height":1350})
+    pg.goto(u, wait_until="networkidle")
+    print(pg.evaluate("""() => [...document.querySelectorAll('.page')].map((el,i)=>{
+      const k = [...el.children];
+      return {page:i+1, scrollH:el.scrollHeight,
+              bodyBottom:Math.max(...k.slice(0,-1).map(x=>x.offsetTop+x.offsetHeight))};
+    })"""))
+    b.close()
+```
+
+`scrollH` must be exactly the page height (1350 for portrait). One pixel over and
+`render_one.py` emits a extra page. `bodyBottom` tells you the real slack: the reference build sits
+at 952 and 1215 out of 1350, which is the breathing room you want. If a page reads 1350 for both
+numbers, it is full to the edge and the next copy edit will overflow it.
 
 **Bullets:** kill `list-style` and draw them with `::before` in `--hot` and `position:absolute; left:0`.
 Native bullets can't be coloured independently of the text and their indent won't match your padding.
@@ -178,6 +214,9 @@ When the doc is for a client, not for Mauro:
 - [ ] Mono labels name a role, not a title, and are uppercase + letterspaced.
 - [ ] Number chip is flush to the border, stretches to the bar height, doesn't shrink on a 2-line title.
 - [ ] Bullets are `::before`, coloured `--hot`, not native `list-style`.
+- [ ] Ran the height measure. Every `.page` `scrollHeight` equals the frame height exactly.
+- [ ] Shrink-wrapped blocks use `align-self:flex-start`, not `display:inline-block`.
+- [ ] H1 sits on the intended number of lines at the real title length.
 - [ ] Client doc: client handle, client footer, client palette, no `@maurojpelle`, no Mauro numbers.
 
 ---
