@@ -97,6 +97,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Long-form post (video, infographic/HTML, doc screenshot, case study) | `skills/content/long-form/_master.md` + the matching subtype file |
 | LinkedIn HTML doc / industry deck | `skills/content/linkedin-docs/` + `skills/content/visual-docs/mauro-visual-doc-system.md` |
 | Visual infographic (X quote-tweet / social) or YouTube breakdown board (long scroll, editable, paste-in images) | `skills/content/visual-docs/mauro-visual-doc-system.md` |
+| HTML craft for any visual doc (palette tokens, components, layout mechanics), or a doc in a client's brand | `skills/content/visual-docs/page-craft.md` |
 | Pick a format / vehicle before writing anything | `skills/content/vehicle-library.md` |
 | Short-form posts from long content | `skills/content/short-form/short-form-from-long-content.md` |
 | Bulk short-form generation from transcripts | `skills/content/short-form/bulk-short-form-generator.md` |

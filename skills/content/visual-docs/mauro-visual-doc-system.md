@@ -36,6 +36,12 @@ Built to be worked on: swap a label, reorder sections, drop new images in, re-re
 
 > **Recording a board for a video?** Follow `video-board-corrections.md` on top of the board rules: it wraps each section in a one-screen scroll-snap frame so sections never bleed on camera, and gives blank slots for pasting screenshots.
 
+> **Writing the HTML?** Read `page-craft.md` before you start a doc. It carries the palette
+> contract (semantic `:root` tokens, so the same components render in Mauro's green or a client's
+> brand), the extra social components (eyebrow, highlight-header, dark-callout, numbered-block,
+> mini-card row, bridge line), the flex/footer mechanics, and multi-page rhythm. Start a client doc
+> from `reference/client-brand-2page.html`.
+
 ---
 
 ## When to use this skill
@@ -444,6 +450,8 @@ Keep `[TITLE]` / `[SUBTITLE]` as placeholders. Render with a one-off inline `pyt
 | File | Purpose |
 |---|---|
 | `mauro-visual-doc-system.md` | This file. The visual + voice system spec (both types). |
+| `page-craft.md` | HTML craft addendum: palette contract, client-brand mode, extra social components, layout mechanics, multi-page rhythm. Read before writing any doc. |
+| `reference/client-brand-2page.html` | Working 2-page client-brand build (Lorenzo / GrowtHub). Copy to start a client doc. |
 | `video-board-corrections.md` | Board addendum for screen-recorded video: one section = one screen (scroll-snap frames) + blank slots for pasting screenshots. Use whenever a board will be recorded. |
 | `render_one.py` | Render pipeline: social (square/portrait/long) + board (long breakdown). |
 | `setup-guide.md` | One-time setup: standing up the claude.ai project. |

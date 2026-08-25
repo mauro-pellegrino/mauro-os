@@ -1,0 +1,179 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Reference · client-brand 2-page social doc</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* ============================================================
+     PALETTE CONTRACT — the only place brand colors are named.
+     Swap these values for any brand and every component below
+     re-skins correctly. Nothing downstream hardcodes a hex.
+     This set = Lorenzo / GrowtHub (client work, not Mauro's).
+     Mauro equivalent: ground #FFFFFF, ink #1B4332, dark #1B4332,
+     highlight #E9B949, hot #52B788, mono-dark #B7E4C7.
+     ============================================================ */
+  :root {
+    --ground:      #FFFFFF;  /* page background */
+    --ink:         #262151;  /* headings, borders, dark body text */
+    --body:        #2E2A47;  /* running body text */
+    --muted:       #8A8699;  /* captions, footer */
+    --dark:        #211E3C;  /* dark callout fill */
+    --highlight:   #F2CE6B;  /* header-bar fill + emphasis text on dark */
+    --hot:         #E62E8B;  /* number chips, bullets, eyebrow, handle */
+    --mono-dark:   #3FDC8F;  /* mono label inside a dark callout */
+    --hairline:    #D9D5E2;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8E8EC; }
+
+  /* One page = one social frame. portrait 1080x1350. */
+  .page {
+    width:1080px; height:1350px; background:var(--ground);
+    padding:62px 66px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  /* ---------- COVER STACK (page 1 only) ---------- */
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:14px; }
+  h1 { font-size:62px; font-weight:800; line-height:1.02; letter-spacing:-1.6px;
+    color:var(--ink); margin-bottom:20px; }
+  .lede { font-size:20px; line-height:1.55; max-width:900px; }
+  .handle { font-size:19px; font-weight:700; color:var(--hot); margin-top:18px; }
+
+  /* ---------- HIGHLIGHT HEADER (marker block, opens a section) ---------- */
+  .hl-head { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-size:34px; font-weight:800; letter-spacing:-0.5px;
+    padding:9px 20px 11px; margin:38px 0 22px; }
+  .page > .hl-head:first-child { margin-top:6px; }
+
+  p { font-size:20px; line-height:1.6; margin-bottom:16px; max-width:940px; }
+
+  /* ---------- DARK CALLOUT (one per page, carries the definition) ---------- */
+  .callout { background:var(--dark); padding:26px 32px; margin:26px 0 8px;
+    border-left:7px solid var(--hot); }
+  .callout--flush { border-left:none; }
+  .callout .label { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:2.2px; text-transform:uppercase; color:var(--mono-dark); margin-bottom:12px; }
+  .callout p { color:var(--highlight); font-size:20px; margin-bottom:10px; max-width:none; }
+  .callout ul { list-style:none; }
+  .callout li { color:var(--highlight); font-size:19px; line-height:1.5;
+    padding:5px 0 5px 30px; position:relative; }
+  .callout li::before { content:"\2192"; position:absolute; left:0; color:var(--mono-dark); }
+  .callout .quote { color:#F4F2FA; font-size:19px; font-style:italic; line-height:1.5; }
+
+  /* ---------- BRIDGE LINE (hands the reader to the next page) ---------- */
+  .bridge { font-size:20px; font-weight:700; color:var(--ink); margin:30px 0 20px; }
+
+  /* ---------- MINI-CARD ROW (names what the next page will fix) ---------- */
+  .mini-row { display:flex; gap:16px; }
+  .mini { flex:1; border:2px solid var(--ink); padding:16px 18px; }
+  .mini .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:8px; }
+  .mini h3 { font-size:19px; font-weight:700; line-height:1.25; color:var(--ink); }
+
+  /* ---------- NUMBERED BLOCK (two-tone header bar, chip flush to the edge) ---------- */
+  .nblock { border:2px solid var(--ink); margin-bottom:26px; }
+  .nblock .bar { display:flex; align-items:stretch; background:var(--highlight); }
+  .nblock .num { background:var(--hot); color:#fff; font-size:26px; font-weight:800;
+    width:56px; flex:none; display:flex; align-items:center; justify-content:center; }
+  .nblock .bar h2 { color:var(--ink); font-size:25px; font-weight:800; letter-spacing:-0.3px;
+    padding:14px 22px; align-self:center; }
+  .nblock .body { padding:22px 24px 24px; }
+  .nblock .body p:last-child { margin-bottom:0; }
+  .nblock .body ul { list-style:none; margin-top:4px; }
+  .nblock .body li { font-size:19px; line-height:1.5; padding:4px 0 4px 20px; position:relative; }
+  .nblock .body li::before { content:"\2022"; position:absolute; left:0; color:var(--hot);
+    font-size:20px; line-height:1.3; }
+
+  /* ---------- FOOTER (identical on every page, pinned to the bottom) ---------- */
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 26px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ PAGE 1 · cover + the problem ============ -->
+<div class="page">
+  <div class="eyebrow">GrowtHub &middot; Creative Playbook</div>
+  <h1>Educational ads on Meta, from zero</h1>
+  <p class="lede">We create over 500 ads a month for top DTC brands. The highest leverage skill we
+    have is scripting ads that don't look like ads. Educational is the format that rewards it most,
+    and the easiest to get wrong.</p>
+  <div class="handle">@lorenzo_pravata</div>
+
+  <div class="hl-head">Why educational ads fail</div>
+  <p>They fail when they sound like an ad pretending to be education. A guy holds up a supplement
+    bottle and says "did you know magnesium plays a critical role in over 300 enzymatic reactions?"
+    The viewer's ad-filter fires before a single word lands.</p>
+
+  <div class="callout">
+    <div class="label">What real educational content has</div>
+    <p>Tension. It earns attention by doing three things a bottle-in-hand monologue never does:</p>
+    <ul>
+      <li>Challenges something the viewer assumed was true</li>
+      <li>Shows them why what they are currently doing isn't working</li>
+      <li>Hands them a piece of information they genuinely didn't have</li>
+    </ul>
+  </div>
+
+  <div class="bridge">An educational ad reads as boring for one of three reasons. The next page
+    fixes all three.</div>
+  <div class="mini-row">
+    <div class="mini"><div class="tag">Weak</div><h3>The insight is weak</h3></div>
+    <div class="mini"><div class="tag">Wrong</div><h3>The format is wrong</h3></div>
+    <div class="mini"><div class="tag">Mismatch</div><h3>The messenger doesn't match</h3></div>
+  </div>
+
+  <div class="footer">&mdash; Lorenzo</div>
+</div>
+
+<!-- ============ PAGE 2 · the three elements ============ -->
+<div class="page">
+  <div class="hl-head">The 3 elements that make them work</div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">1</div><h2>A non-obvious insight at the core</h2></div>
+    <div class="body">
+      <p>Strong insights carry two things at once: specificity and a slight counter-intuitiveness.
+        The audience wishes they had known it earlier, and now they want to know what to do about
+        it. We pull these from our research process.</p>
+      <div class="callout callout--flush">
+        <div class="label">Worked example</div>
+        <div class="quote">"Magnesium gets blocked by phytic acid in cereal grains, which is why
+          9 out of 10 people supplementing still feel deficient."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">2</div><h2>A format that doesn't broadcast "ad"</h2></div>
+    <div class="body">
+      <p>Any format that borrows from organic content buys the first 10 to 20 seconds of attention.
+        From there the insight does the work. A talking-head selfie saying the same words fails
+        because the ad-filter kicks in before the insight ever lands.</p>
+      <ul>
+        <li>Podcast-style</li><li>Debate-style</li><li>Spokesperson</li>
+        <li>Expert VSL</li><li>TikTok-style</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">3</div><h2>A messenger that matches the message</h2></div>
+    <div class="body">
+      <p>Whoever is on screen needs a credible reason to be the one delivering this. When the
+        messenger and the message line up, the ad holds. When they don't, the whole thing
+        collapses.</p>
+      <ul>
+        <li>A clinician explaining biochemistry</li>
+        <li>A founder breaking down product development</li>
+        <li>A skeptic challenging an expert</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">&mdash; Lorenzo</div>
+</div>
+
+</body></html>
