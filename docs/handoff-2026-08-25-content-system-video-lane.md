@@ -30,6 +30,62 @@ them, they win.
 
 ---
 
+## 0b. Two decisions Mauro has to make before anything gets built
+
+I found both of these after drafting, by reading what is already in this repo. Neither is mine to
+settle.
+
+### Decision 1: Miro lane, or a scroll-snap HTML board?
+
+This repo already has a YouTube board method that does not use Miro at all.
+`skills/content/visual-docs/video-board-corrections.md` builds the whole board as **one long HTML
+page with scroll-snap frames**, screen-recorded directly, exported through `render_one.py`. One
+section owns the screen at a time and cannot bleed into the next.
+
+The other model, and the one the word "lane" implies, is a Miro board read off camera, with each
+diagram placed as an image. That is what §5 below specs.
+
+| | Scroll-snap HTML board | Miro lane |
+|---|---|---|
+| Already documented here | **Yes**, with a working demo | No, would be new to this repo |
+| Recording | Scroll and it lands on frame | Pan and zoom by hand |
+| Diagrams | Live in the page, editable as HTML | Rendered to PNG and placed |
+| Section bleed on camera | Solved by scroll-snap | Managed by hand |
+| Best when | One person recording solo | Someone reads it aloud off a big canvas |
+
+**My read:** for a solo record, the scroll-snap board is the better fit and it is already built and
+proven in this repo. The ten diagram specs in §3 work unchanged either way. If Mauro picks the HTML
+board, the diagrams become sections inside the page rather than ten separate PNGs, and §5 is
+ignored entirely.
+
+**Do not build both.** Ask him which one, then delete the other path from this document.
+
+### Decision 2: which palette
+
+I built the two reference diagrams in the **board palette** (off-white `#FAF6EC`, ink `#1A1A1A`,
+muted yellow `#F3E3A3`), because Mauro approved that style earlier the same day and asked for
+"similar htmls, same colour as everything".
+
+But this repo's own visual docs run on **Mauro's green**: ink `#1B4332`, highlight `#E9B949`,
+accent `#52B788`, per `skills/content/visual-docs/page-craft.md`. So "everything" points at two
+different palettes depending on which body of work he meant.
+
+`base.css` is written as semantic tokens exactly so this is a one-block swap and no component names
+a raw hex, which is the palette contract `page-craft.md` sets. To re-skin, replace the `:root` block:
+
+```css
+:root{
+  --paper:#FFFFFF; --ink:#1B4332; --yellow:#E9B949; --grey:#8A8699;
+  --line:#1B4332; --red:#BD0A0A; --panel:#FFFFFF;
+}
+```
+
+**Ask Mauro which one.** If his own content should look like his own content, it is the green. If
+these read as a continuation of the board work he just signed off, it is the off-white. Running two
+palettes across one channel is the outcome to avoid.
+
+---
+
 ## 1. The video
 
 **Format:** process breakdown. This is the first one of these produced for the channel, so mark the
@@ -257,6 +313,9 @@ Five things that cost time the first go:
 
 ## 5. Putting the lane on Miro, when Mauro says go
 
+**Only applies if he picks the Miro path in §0b.** If he picks the scroll-snap HTML board, skip this
+section entirely and follow `skills/content/visual-docs/video-board-corrections.md` instead.
+
 This repo has no Miro skill, so the spec is inlined here.
 
 ### Block specs
@@ -321,6 +380,8 @@ Nothing below can be filled in by guessing.
 5. **Sign-off on any line that references the agency**, per `CLAUDE.md` §1. Default is to keep it out.
 6. **Which real file to open on camera** in Act 3, and a screen recording of it.
 7. **Series or one-off**, which changes how Act 1 and the close are written.
+8. **Miro lane or scroll-snap HTML board**, per §0b. This one decides how everything gets built.
+9. **Board palette or his own green**, per §0b.
 
 ---
 
