@@ -1,10 +1,10 @@
 # Skill: X Reply Assistant
 
-**Version:** 1.1
+**Version:** 1.2
 **Created:** 2026-08-14
-**Updated:** 2026-08-24 (room targeting + proof-over-opinion, from the 18-24 Aug analytics review)
+**Updated:** 2026-08-25 (third verdict: OPTIONAL, for orbit posts with nothing to add)
 **Input:** A tweet (screenshot, pasted text, or URL) that Mauro is considering replying to
-**Output:** (1) a call on whether it's worth replying, and (2) if yes, 1-3 reply options in Mauro's real reply voice
+**Output:** (1) one of three verdicts on whether it's worth replying, and (2) unless it's a SKIP, 1-3 reply options in Mauro's real reply voice
 
 ---
 
@@ -12,8 +12,8 @@
 
 Mauro grows @maurojpelle largely through replies. Conversations create growth: a good reply on the right post pulls profile clicks, followers, and warm DMs from operators in his world. This skill does two jobs when he sends a tweet:
 
-1. **Judge it.** Is this a good one to reply to, or a skip? Give a straight yes/no with the reason, not a hedge.
-2. **Draft it.** If yes, write 1-3 short replies that sound exactly like Mauro types on X, not like an AI wrote them.
+1. **Judge it.** REPLY, OPTIONAL, or SKIP, with the reason in one line. Commit to one of the three. Never hedge between them.
+2. **Draft it.** Unless it's a SKIP, write 1-3 short replies that sound exactly like Mauro types on X, not like an AI wrote them.
 
 This is a fast, high-volume skill. He's scrolling and firing off replies in minutes. Keep the output tight so he can pick and post.
 
@@ -44,8 +44,8 @@ So the first question is never "is this post good." It's **whose audience is in 
 **Check the handle against `brand/analytics/reply-target-list.md` before anything else.**
 - On **RED** → skip, and say which room it is. No exceptions, no matter the reach.
 - On **DROP** → skip.
-- On **KEEP** → reply, and go straight to the archetype.
-- On **TEST** → reply, and note it's a test account with a specific thing being measured.
+- On **KEEP** → the room is settled, so it can never be a SKIP. Carry on to Step 1 to decide between REPLY and OPTIONAL.
+- On **TEST** → same as KEEP, and note it's a test account with a specific thing being measured.
 - **Not on the list** → judge it with the green/red room definitions below, then say whether it should be added to the roster and to which tier.
 
 If Mauro pastes a post with no handle, still give the verdict off the post's own content and altitude, and tag the verdict line with `(handle?)` only when the handle would actually change the call. Never make him answer a question before he gets an answer.
@@ -76,17 +76,21 @@ Give a clear verdict first. Two questions decide it:
 **A. Is it in or adjacent to his lane?**
 Green: content, AI applied to his own content and acquisition work, personal branding, B2B acquisition, agency ops, outbound, lead gen, X/LinkedIn growth, build-in-public from operators.
 Red: ecom, brand/ad creative, Meta ads for brands (that's the agency's service, not Mauro's lane, per CLAUDE.md lane boundary). Also anything with zero overlap to his world where the only upside is random networking.
+Neutral: no lane either way. A personal post, a life update, a joke, a thanks. From a stranger this is red, because there is no relationship to bank. From someone in his orbit (KEEP, TEST, or a peer he actually talks to) it is neutral, and neutral is the OPTIONAL lane.
 Red, and this one is new: **AI model and tool discourse.** Which model is best, benchmark takes, evals as a topic, "Opus 5 vs everything", tool-tribe arguments. AI as leverage inside his workflow is green. AI as a subject to have opinions about is a red room that pays in impressions and nothing else. This is where his four biggest replies of the week went, for zero follows.
 
 **B. Does he genuinely have something to add?**
-A real take, a real tactic, a real experience, a real question, or genuine warmth for someone in his orbit. If the honest answer is "not really," it's a skip. Forced replies read as engagement farming and are a waste of his time.
+A real take, a real tactic, a real experience, or a real question. If the honest answer is "not really," he does not get a REPLY. Whether that becomes OPTIONAL or SKIP is decided by the room, not by how good the post is. Forced replies read as engagement farming and are a waste of his time.
 
-**Verdict rules.** Three verdicts only: **REPLY**, **OPTIONAL**, **SKIP**.
-- Both green → REPLY. Say why in one line (usually: right room + he has a real angle).
-- Lane green or neutral, nothing real to add → **OPTIONAL**. Worth it for the relationship, not for the reach. Don't manufacture a take.
-- Lane red → skip, even if the post is popular. Visibility in the wrong room doesn't convert.
-- Call out engagement (views/likes) as a tiebreaker only, never the main reason. A big post he has nothing to say on is still a skip.
-- Red room (Step 0) overrides everything below it. Lane green plus red room is still a skip.
+**Verdict rules.** Three verdicts only: **REPLY**, **OPTIONAL**, **SKIP**. Run these in order and stop at the first one that fires.
+
+1. **RED or DROP on the roster → SKIP.** No exceptions, no matter the reach. This overrides everything below.
+2. **Lane red → SKIP**, even if the post is popular. Visibility in the wrong room doesn't convert. One carve-out: a KEEP or TEST handle posting off-lane is an OPTIONAL, not a SKIP. The roster already settled that their audience is the right room, so the post's topic doesn't un-settle it.
+3. **Lane green and he has a real angle → REPLY.** Say why in one line: right room, and what the angle is.
+4. **Lane neutral, or lane green with nothing real to add → OPTIONAL.** Worth it for the relationship, not for the reach. Don't manufacture a take.
+5. **Anything left → SKIP.** In practice this is a stranger, off-lane, with nothing to add.
+
+Engagement (views, likes) is a tiebreaker inside a verdict, never the reason for one. A big post in a red room is still a SKIP. A big post from someone in his orbit that he has nothing to say on is an OPTIONAL, not a REPLY.
 
 Be honest per belief #13. A lukewarm "meh, your time's better spent elsewhere" is more useful to him than a yes on everything.
 
@@ -230,11 +234,11 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 
 ## Anti-Patterns
 
-- **Replying to everything.** The skip call is half the value. Protect his time.
+- **Replying to everything.** The SKIP call is half the value. Protect his time. OPTIONAL is not a soft yes, it's a real choice he's allowed to decline.
 - **Long replies.** Anything over ~25 words stops sounding like him.
 - **Corporate polish.** Perfect grammar, no slang, tidy structure. Reads as AI or as a brand account.
 - **AI tells in a reply.** "It's not X, it's Y", "Most people", colon-payoff, parallel triplets. Instant tell.
-- **Forcing a take** where he has none, just to engage. Manufactured insight is obvious.
+- **Forcing a take** where he has none, just to engage. Manufactured insight is obvious. This is what separates OPTIONAL from REPLY: an OPTIONAL draft stays light and human and never reaches for a tactic that isn't there.
 - **Selling in the reply.** No CTA, no lead magnet pitch, no "DM me." Replies build the relationship; the profile and DMs do the selling.
 - **Fake numbers or fake experience** to sound credible. Banned everywhere, worst in a fast reply where it can't be caught.
 - **Replying in the wrong lane** (ecom, ad creative) because the post is popular. Wrong room.
