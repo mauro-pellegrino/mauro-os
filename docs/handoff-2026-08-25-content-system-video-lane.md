@@ -1,7 +1,8 @@
 # Handoff: build the "full content system" YouTube lane
 
 **Written:** 2026-08-25. **For:** the mauro-os Claude account.
-**Deliverable:** one video board lane for @maurojpelle, plus ten HTML diagrams that carry it.
+**Deliverable:** one video board for @maurojpelle, plus ten HTML diagrams that carry it.
+**Built by:** Juan, once Mauro has approved the copy. See §5b.
 
 **Nothing in here has been pushed to Miro.** That is deliberate. Read this, build the diagrams
 first, get Mauro's sign-off on the copy, and only then put the lane on a board.
@@ -369,6 +370,45 @@ loop with `set --` mangled a presigned URL and returned a silent 400.
 
 ---
 
+## 5b. Juan owns the build
+
+Per `skills/content/visual-docs/juan-tutorial.md`, the loop is: Juan writes the questions, Mauro
+answers in voice notes, the transcript becomes the script, **Juan builds the board**, Mauro records
+straight off it. This video fits that loop exactly, so hand it to Juan at the point the copy is
+approved.
+
+**This also all but settles Decision 1 in §0b.** Juan already has a tutorial for Type 2 boards, works
+in the "Mauro Visual Docs" project, and produces record-ready HTML. Building this as a Miro lane
+would put it outside the one workflow he is trained on. Confirm with Mauro, but the default should
+be the scroll-snap HTML board.
+
+### Juan's step 1: write the questions that unblock §6
+
+Every blocked item below is a question Mauro can answer in a voice note in under five minutes. That
+is Juan's first job here, before any building. Draft them as real questions, not as a list of gaps:
+
+- How many hours a week do you actually spend running the system now, end to end?
+- What do the tools cost you a month, all in?
+- Which single file would you open on camera to show what a skill looks like, and why that one?
+- Is this episode one of a series, or a one-off?
+- What is the CTA at the end, and which link?
+- How long have you been running it in this shape?
+
+### Juan's step 2: build the eight remaining diagrams
+
+Specs are in §3. Two are built already in `content/boards/content-system-video/` and are the
+reference. `DIAG-09` stays unbuilt until the voice note lands.
+
+### What Juan does not do
+
+- **Never posts, never publishes, never DMs.** He produces, Mauro approves.
+- **Never fills a `[ NEEDS ]` with an estimate.** A visible gap on the asset is correct. An invented
+  number is not.
+- **Never edits anything inside `skills/`** without Mauro saying so, because edits there auto-publish.
+- Never names the agency, its founders, or any client on an asset.
+
+---
+
 ## 6. Blocked on Mauro
 
 Nothing below can be filled in by guessing.
@@ -392,4 +432,5 @@ Nothing below can be filled in by guessing.
 - Zero invented numbers. Every gap is a visible `[ NEEDS ]`, on the asset itself.
 - Lane copy read out loud once, start to finish, before it goes on a board.
 - Mauro has approved the copy in chat.
-- Only then: build the lane, one spine, computed geometry, assert no overlaps.
+- Juan has the questions written and the voice note back before `DIAG-09` is attempted.
+- Only then: build the board, and if it is the Miro path, one spine with computed geometry and zero overlaps.
