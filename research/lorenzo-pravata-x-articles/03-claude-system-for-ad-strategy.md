@@ -3,9 +3,32 @@
 > **STATUS: RESEARCH INPUT. NOT ADOPTED.** Raw source capture. Nothing here enters `skills/` without Mauro's row-by-row sign-off.
 
 **Source account:** @lorenzo_pravata (an account we run, per attribution resolved 2026-08-25). Never name it in public-facing content.
-**Posted:** 27 Jul 2026 | **Format:** X Article, quote-posted with a designed title card
-**Post metrics at capture:** 2,500 impressions, 25 likes, 2 replies, 1 repost
+**Format:** X Article, quote-posted with a designed title card
 **Captured:** 2026-08-26. Part of the "top 10 articles that booked the most calls" set.
+
+## ⚠️ This article was posted twice. It is the only repeat in the set.
+
+Identical title, identical body, identical card image. Posted 4 Apr 2026, then again 27 Jul 2026, 16 weeks apart.
+
+| | **Run 1 — 4 Apr** | **Run 2 — 27 Jul** | Change |
+|---|---|---|---|
+| Impressions | **15,000** | 2,500 | **-83%** |
+| Likes | 69 | 25 | -64% |
+| Replies | 7 | 2 | -71% |
+| Reposts | **13** | 1 | **-92%** |
+| Like rate | 0.46% | **1.00%** | +117% |
+| Repost rate | 0.087% | 0.040% | -54% |
+
+**This is the most useful data point in the entire set,** because it is the only controlled comparison available: same asset, same account, same card, two dates. Everything that differs is timing and audience state.
+
+What it says:
+
+1. **Re-running an article is a real practice on this account,** not an accident. The set of "top 10 articles that booked calls" contains the same article twice, which means both runs booked calls.
+2. **The second run reached 17% of the first run's audience but engaged them harder.** Like rate more than doubled. A much smaller, much warmer pool saw it.
+3. **Reposts collapsed almost completely (13 → 1).** Reposting is the discovery mechanic. On run 2 the article had already been shared by the people who would share it, so it had no route out to new audiences and settled onto the existing followers.
+4. **Reach and engagement rate move in opposite directions on the same asset.** This kills any remaining case for using like rate to rank posts. Run 2 looks better on the dashboard metric and is worse on every outcome that matters.
+
+**Correction to the earlier read on this article.** When only the July run was visible, this looked like a low-reach, high-engagement article, and I read that as a smaller but more engaged audience finding it. That read was measuring a repost, not the article. The article's actual first-run performance is 15K impressions and 13 reposts, which puts it **second only to article 08 (25K)** and well above article 06 (12K). It is one of the strongest articles in the set, not the weakest.
 
 ---
 
@@ -17,7 +40,7 @@
 
 Title mechanics: lowercase, `(full breakdown)` again, same as 01. But note the title names a **tool** (Claude) rather than a competitor or a format. Borrowed search interest from a named product.
 
-**Lowest reach of the three so far (2.5K vs 5.0K and 5.5K), highest like-to-impression ratio (1.0% vs 0.48% and 0.67%).** Smaller, more engaged audience. If this one booked calls, it did it on a fraction of the reach, which is the more interesting outcome.
+**On its first run (4 Apr) this is the second-highest-reach article in the set: 15K impressions, 69 likes, 13 reposts.** Only article 08 (25K) beat it. The 27 Jul repost did 2.5K. See the two-run table above.
 
 ---
 
@@ -145,8 +168,8 @@ The transferable claim for Mauro is not "use Claude Projects." It's the compound
 | Card image | borrowed screenshot | custom teaching diagram | designed title card |
 | Hard numbers in body | many | several | none |
 | CTA | spend threshold, bio link | DM "AUDIT" or bio | DM "stealth", spend qualifier |
-| Impressions | 5.0K | 5.5K | 2.5K |
-| Like rate | 0.48% | 0.67% | 1.00% |
+| Impressions | 5.0K | 5.5K | **15.0K** (Apr run) / 2.5K (Jul run) |
+| Like rate | 0.48% | 0.67% | 0.46% (Apr) / 1.00% (Jul) |
 
 **Three-article read:** every title is lowercase with a parenthetical promise, and every CTA carries a spend qualifier that filters for the buyer. Reach tracks with how well-known the entity in the title is. Engagement rate runs the opposite way. The three are: someone else's operation, our format, our system. That's a rotation, not a repetition, which is consistent with the six-week format-rotation finding in `research/lorenzo-pravata-x-formats/synthesis.md`.
 
