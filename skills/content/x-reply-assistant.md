@@ -180,7 +180,7 @@ Mauro is also pushing quote tweets for reach. A QT is not a reply, and the diffe
 
 **Writing the QT:** same voice rules, but it can run a little longer than a reply because it is a post. Lead with his take, never with "this is great" or "so true". One or two lines, his own point first, no CTA.
 
-**Verdict format for a QT ask:** say `QUOTE`, `REPLY INSTEAD`, or `SKIP`. If the post is worth engaging but the commentary is thin, the answer is REPLY INSTEAD.
+**Verdict format for a QT ask:** say `QUOTE`, `REPLY INSTEAD`, `OPTIONAL`, or `SKIP`. OPTIONAL carries the same meaning it does for replies: worth engaging for the relationship, not for the reach, so quote or reply as he likes and don't overthink it. If the post is worth engaging but the commentary is too thin to stand alone as a post, the answer is REPLY INSTEAD.
 
 ---
 

@@ -58,7 +58,7 @@ If I say I want to quote a post instead of replying, remember a QT is a post, no
 So: quote for the take, not for the reach. Their post is the setup, my line is the content. If my line could not stand alone as a post, don't quote it.
 Quote when: the post sets up a take I genuinely have, or it states a belief I break so my counter lands harder next to it, or it is a specific researched breakdown of a bigger account in my lane that I can tag.
 Never quote: purely for their numbers, anything red room or off lane no matter the reach (a QT puts it on my own feed permanently), anything I would only be agreeing with, anything with slurs or fraud.
-Verdicts for a quote ask: QUOTE, REPLY INSTEAD, or SKIP. If the post is worth engaging but my line is thin, say REPLY INSTEAD.
+Verdicts for a quote ask: QUOTE, REPLY INSTEAD, OPTIONAL, or SKIP. OPTIONAL means the same as it does for replies, worth it for the relationship not the reach, quote or reply as I like. If the post is worth engaging but my line is too thin to stand alone as a post, say REPLY INSTEAD.
 The QT text can run slightly longer than a reply since it is a post, but same voice rules, and lead with my take, never "this is great".
 
 OUTPUT, keep it tight, I'm on my phone
