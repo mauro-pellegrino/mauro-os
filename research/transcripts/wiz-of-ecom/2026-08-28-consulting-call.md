@@ -12,7 +12,78 @@ board that leaves the team, do not quote him by name in public content without a
 **Action items Fathom flagged, kept where they fell in the conversation.** They are also
 consolidated at the bottom of this file.
 
+## Fathom summary, as generated
+
+> Verbatim from Fathom, kept as the source recorded it. **One number to treat with care:** the
+> summary calls the CRM follow-up "$80k–$120k MRR". What Wiz actually said at 27:52 was *"80 to
+> 120k of new revenue on a monthly, month-to-month basis"*, which is not the same claim as MRR.
+> Use the transcript wording if this ever goes into a doc or a post.
+
+**Meeting Purpose**
+
+Review Growthub's marketing strategy and identify high-impact growth opportunities.
+
+**Key Takeaways**
+
+- Prioritize the CRM: The highest-impact action is building a manual HubSpot CRM to systematically follow up with all past leads who didn't close. Wiz Of Ecom estimates this process adds $80k–$120k MRR.
+- Adopt Episodal Content: Shift Twitter content to an "episodal" style (e.g., "wins from the last 24 hours") to promote results without sounding salesy. This is a current high-performer.
+- Innovate with Vehicles: Lead the market by creating new content vehicles (e.g., quote-tweeting viral AI creatives with a "how-to" guide) to capture high-intent audiences directly.
+- Pitch Omnisend: Wiz Of Ecom will introduce Growthub to Omnisend for a potential 6-month sponsorship deal, offering a new, high-margin revenue stream.
+
+**Topics**
+
+*Growthub's Current State*
+
+- Performance: Twitter is the primary lead source (55% of qualified calls), with LinkedIn and YouTube at ~10% each.
+- Process: Content is generated from a "second brain" of transcripts and competitor research, then processed via AI tools (e.g., Claude) to create various formats.
+- Challenge: A drop in performance since August 1st prompted the strategy review.
+
+*Recommended Content Strategy*
+
+- Twitter/X:
+  - Stop Auto DMs: X's recent ban on automation makes this tactic ineffective.
+  - Focus on Keywords: Research and track high-performing keywords (e.g., "AI," "personal brand") to optimize posts.
+  - Repurpose Winners: Convert successful posts into multiple formats (articles, docs, Reddit posts) to maximize reach.
+  - Adopt Episodal Promotions: Frame promotions as ongoing updates (e.g., "wins from the last 24 hours") to build a narrative and avoid sales fatigue.
+  - Build in Public: Share behind-the-scenes content (e.g., agency updates) to attract high-quality engagement from key accounts.
+  - Showcase Referrals: Publicly celebrate referrals from high-figure founders to build social proof and demonstrate value.
+- LinkedIn:
+  - Strategic Repurposing: Avoid visual-heavy formats like Reddit posts or doc screenshots.
+  - Top Performer: Screenshot viral X conversations and add strategic commentary.
+  - Format: Adapt X threads into long-form LinkedIn posts with better spacing and emojis.
+
+*The "Capture & Convert" Funnel*
+
+- Problem: Content alone is insufficient; a robust funnel is needed to capture and convert leads.
+- Solution: Implement a "Capture & Convert" system with two key components:
+  1. Lead Magnets: Create ICP-specific lead magnets (e.g., case studies for info product owners) to capture leads with name, email, and phone number.
+  2. CRM & Follow-up: Build a manual HubSpot CRM to track leads and execute personalized, non-automated follow-ups.
+     - Why Manual? Each lead's journey is unique; automation is ineffective.
+     - Why High-Impact? This process adds $80k–$120k MRR by converting leads who were close to buying.
+     - Tactic: Reference a small, personal detail from the initial call in the first follow-up email to build rapport.
+
+*AI & Ecosystem*
+
+- Wiz Of Ecom's AI Suite: A multi-LLM setup (Claude, ChatGPT) with a knowledge base of personal story and ICP data. It reads a ClickUp vault of viral content structures to generate 70% of a post, which a human then refines.
+- Growthub's AI Account ("Bugman"):
+  - Recommendation: Use this account as a distribution/theme page for sponsorships, not a primary lead source.
+  - Rationale: Theme pages are high-margin (Wiz Of Ecom projects $250k profit this year) but generate few direct leads. Personal brands are more effective for lead generation.
+
+**Next Steps**
+
+- Mauro:
+  - Create a HubSpot CRM and manually add all past qualified leads who didn't close.
+  - Begin personalized follow-ups with these leads, using call transcripts to address specific objections.
+  - Send 90-day Twitter analytics and ICP breakdown to Wiz Of Ecom for the Omnisend pitch.
+- Growthub Team:
+  - Immediately implement the recommended "episodal" and "building in public" content styles on Twitter.
+  - Begin creating new content vehicles, starting with quote-tweeting viral AI creatives with "how-to" guides.
+  - Develop ICP-specific lead magnets to capture leads with name, email, and phone number.
+  - Plan and hire for a "setter" role to call qualified leads immediately after they book a call or opt-in.
+
 ---
+
+## Full transcript
 
 Lorenzo Pravatà and Wiz Of Ecom - August 28
 VIEW RECORDING - 58 mins (No highlights):
