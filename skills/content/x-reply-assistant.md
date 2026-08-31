@@ -1,8 +1,9 @@
 # Skill: X Reply Assistant
 
-**Version:** 1.2
+**Version:** 1.3
 **Created:** 2026-08-14
-**Updated:** 2026-08-25 (third verdict: OPTIONAL, for orbit posts with nothing to add)
+**Updated:** 2026-08-31 (Step 4: quote tweets, quote for the take not the reach)
+**Previously:** 2026-08-25 (third verdict: OPTIONAL, for orbit posts with nothing to add)
 **Input:** A tweet (screenshot, pasted text, or URL) that Mauro is considering replying to
 **Output:** (1) one of three verdicts on whether it's worth replying, and (2) unless it's a SKIP, 1-3 reply options in Mauro's real reply voice
 
@@ -152,6 +153,34 @@ The reply must pass as something Mauro thumb-typed on his phone. The rules:
 - **Proof beats opinion, measured.** Every reply that produced a follow in the week of 18-24 Aug named something he actually runs: where his booked calls come from, the AI content and inbound engine he runs for a B2B agency, the weekly analysis. Every zero-follow reply was a position anyone could hold. When there's a choice between stating a view and reporting what happened in his own work, report what happened.
 - The test: could 500 other accounts have typed this reply? If yes, either put his real work in it or skip the post.
 - Never invent a number or a result to sound credible in a reply. Bracket it or leave it out (belief #10).
+
+---
+
+## Step 4: Quote Tweets (added 31 Aug 2026)
+
+Mauro is also pushing quote tweets for reach. A QT is not a reply, and the difference decides everything:
+
+- **A reply borrows someone else's room.** It sits under their post, in front of their audience.
+- **A QT lands on Mauro's own timeline first.** His followers see it. He only reaches the quoted author's audience if that author engages or reposts it.
+- So the impressions on the quoted post **do not transfer to him**. A 700k-view AI-tooling post does not put him in that room. It puts AI-tooling content on his feed, in front of agency owners. That is worse than a reply, not better.
+
+**The rule: quote for the take, not for the reach.** The quoted post is the setup, his commentary is the content. If the commentary could not stand alone as a post, don't quote it.
+
+**Quote when:**
+- The post sets up a take he genuinely has, and his line reads better next to it than alone.
+- The post is a **foil**: it states the belief he breaks (personal branding is vanity, AI content is slop, outbound is the only way). His counter lands harder quoted than replied.
+- **The authority play:** a specific, researched breakdown of a bigger account in his lane, tagging them. If they engage, their audience sees him. Generic "X is crushing it" does not count.
+- The post is in or adjacent to his lane, so the quote still reads as his own content to his ICP.
+
+**Never quote:**
+- Purely because the post has big numbers. Reach on the quoted post is not his reach.
+- Red-room or off-lane posts (AI model discourse, ecom, ad creative, hustle content) regardless of impressions. On a QT the cost is higher, it pollutes his own timeline.
+- A post he would only be agreeing with. That is a repost with extra steps.
+- Anything with slurs, fraud, doxxing or crude framing. A QT puts it on his profile permanently.
+
+**Writing the QT:** same voice rules, but it can run a little longer than a reply because it is a post. Lead with his take, never with "this is great" or "so true". One or two lines, his own point first, no CTA.
+
+**Verdict format for a QT ask:** say `QUOTE`, `REPLY INSTEAD`, or `SKIP`. If the post is worth engaging but the commentary is thin, the answer is REPLY INSTEAD.
 
 ---
 
