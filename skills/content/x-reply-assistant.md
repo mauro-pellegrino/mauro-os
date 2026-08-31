@@ -261,6 +261,26 @@ These are Mauro's real replies, kept verbatim as the style source. Mirror the rh
 
 ---
 
+## The Quote Bank (live QT anchors)
+
+Every quote tweet Mauro fires gets logged here with the post it quoted and why it earned the quote. Same job as the reply bank: keep the pattern learnable instead of re-deciding it every time. Add the result once it's known.
+
+| Date | Quoted post | Handle | Mauro's quote | Why it worked |
+|---|---|---|---|---|
+| 31 Aug 2026 | "How to manufacture your own luck" list, one line of which was "post fire organic content" | @maxwellcopy | "The content one is the only one you can measure. Everything else on this list is hoping the right person happens to be standing there." | General-room post with one line in his lane. He didn't co-sign the list, he hijacked it toward the measured-content thesis, so the commentary stands alone as a post to his ICP. |
+
+**The pattern to look for**, from the candidates seen so far:
+- A post with **one line in his lane** inside a broader list. He quotes to claim that line and reframe the rest.
+- A **foil**: it states a belief he breaks (AI content is slop, personal branding is vanity, outbound is the only way, don't show client results). His counter reads sharper quoted than replied.
+- A post from a **big account whose reach he cannot get by replying**, where his line is genuinely post-worthy.
+- A **prediction or observation he can extend with his own data** (the cold-email-dies-to-agent-gatekeepers type).
+
+**Never quoted, on purpose:** red-room posts regardless of reach, ecom and ad-creative posts, beginner-altitude posts, and anything where the honest version of his commentary is agreement.
+
+[CALIBRATE: log every QT here, with the result once it lands. If a quote type stops producing, mark it.]
+
+---
+
 ## Anti-Patterns
 
 - **Replying to everything.** The SKIP call is half the value. Protect his time. OPTIONAL is not a soft yes, it's a real choice he's allowed to decline.
