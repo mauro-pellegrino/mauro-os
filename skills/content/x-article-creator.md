@@ -1,4 +1,16 @@
 # Skill: X Article Creator
+
+> **⚠️ 2026-09-01: two specs in this file are contradicted by measured evidence.**
+> See `~/growthub-os/skills/content/x-articles/_corpus.md`, 41 captures scored with impressions.
+> - **The 800-1,200 word output spec targets the weakest band in the corpus.** 900-1,800 words
+>   medians 73,300 impressions. 1,800-3,000 medians 225,900. Five of eight same-account pairs
+>   went to the longer article.
+> - **Lowercase titles lose.** Three accounts tested both cases and capitalised won every time,
+>   by 5x, 6x and 12x.
+>
+> For subject, title, cover, body and distribution, use the seven-skill set at
+> `~/growthub-os/skills/content/x-articles/`. See `skills/content/x-articles-POINTER.md`.
+> This file stays for Mauro's voice patterns and its correction log.
 **Version:** 2.0
 **Created:** 5 March 2026
 **Updated:** 14 July 2026 (retargeted to Mauro's own brand, @maurojpelle)
