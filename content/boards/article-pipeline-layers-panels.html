@@ -1,0 +1,176 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Article panels — content, capture, convert</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  .page {
+    width:1080px; height:1350px; background:var(--ground);
+    padding:62px 66px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:14px; }
+  h1 { font-size:54px; font-weight:800; line-height:1.04; letter-spacing:-1.6px;
+    color:var(--ink); margin-bottom:18px; }
+  .lede { font-size:19px; line-height:1.55; max-width:900px; }
+  .handle { font-size:19px; font-weight:700; color:var(--hot); margin:16px 0 30px; }
+
+  .hl-head { align-self:flex-start; background:var(--highlight); color:var(--ink);
+    font-size:32px; font-weight:800; letter-spacing:-0.5px;
+    padding:9px 20px 11px; margin:30px 0 18px; }
+
+  p { font-size:18px; line-height:1.6; margin-bottom:14px; max-width:940px; }
+
+  .callout { background:var(--dark); padding:24px 30px; margin:22px 0 6px;
+    border-left:7px solid var(--hot); }
+  .callout .label { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:2.2px; text-transform:uppercase; color:var(--mono-dark); margin-bottom:12px; }
+  .callout p { color:var(--highlight); font-size:18px; margin-bottom:0; max-width:none; }
+  .callout ul { list-style:none; }
+  .callout li { color:var(--highlight); font-size:18px; line-height:1.45;
+    padding:5px 0 5px 30px; position:relative; }
+  .callout li::before { content:"\2192"; position:absolute; left:0; color:var(--mono-dark); }
+
+  .bridge { font-size:19px; font-weight:700; color:var(--ink); margin:24px 0 0; }
+
+  .mini-row { display:flex; gap:14px; margin-top:4px; }
+  .mini { flex:1; border:2px solid var(--ink); padding:14px 16px; }
+  .mini .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:7px; }
+  .mini h3 { font-size:17px; font-weight:700; line-height:1.25; color:var(--ink); }
+
+  .nblock { border:2px solid var(--ink); margin-bottom:26px; }
+  .nblock .bar { display:flex; align-items:stretch; background:var(--highlight); }
+  .nblock .num { background:var(--hot); color:#fff; font-size:26px; font-weight:800;
+    width:56px; flex:none; display:flex; align-items:center; justify-content:center; }
+  .nblock .bar h2 { color:var(--ink); font-size:24px; font-weight:800; letter-spacing:-0.3px;
+    padding:13px 22px; align-self:center; }
+  .nblock .body { padding:20px 24px 22px; }
+  .nblock .body p:last-child { margin-bottom:0; }
+  .nblock .body ul { list-style:none; margin-top:6px; }
+  .nblock .body li { font-size:17px; line-height:1.45; padding:3px 0 3px 20px; position:relative; }
+  .nblock .body li::before { content:"\2022"; position:absolute; left:0; color:var(--hot);
+    font-size:20px; line-height:1.25; }
+  .nblock .seen { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--muted); margin-top:12px; }
+
+  .stagerow { display:flex; flex-wrap:wrap; gap:10px; margin:2px 0 4px; }
+  .stage { border:2px solid var(--ink); padding:9px 15px; font-size:16px; font-weight:700;
+    color:var(--ink); }
+  .stage.first { background:var(--ink); color:#fff; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 26px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ PANEL 1 · the three layers ============ -->
+<div class="page">
+  <div class="eyebrow">The inbound engine &middot; layer map</div>
+  <h1>Content, capture, convert</h1>
+  <p class="lede">Every agency owner who has asked me why their content doesn't book calls has had
+    the same shape underneath. Three layers, and only one of them shows up in a dashboard.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">1</div><h2>Content</h2></div>
+    <div class="body">
+      <p>Posts, articles, videos, the vehicles, the volume.</p>
+      <div class="seen">Visible: impressions, likes, followers</div>
+    </div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">2</div><h2>Capture</h2></div>
+    <div class="body">
+      <p>Something that takes an anonymous scroll and turns it into a name, an email and a
+        phone number.</p>
+      <ul>
+        <li>A lead magnet and a book-a-call page</li>
+        <li>A thank you page and a welcome flow</li>
+        <li>Emails going out every week</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">3</div><h2>Convert</h2></div>
+    <div class="body">
+      <p>A CRM with real stages, follow-ups written by a person, someone getting on the phone.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="label">Why it always presents as a content problem</div>
+    <p>Layer one is the only layer you can see. The twelve people who read your article, decided
+      they wanted to talk to you, and found nothing to click are completely invisible.</p>
+  </div>
+
+  <div class="bridge">The pipeline problem always presents as a content problem, so you keep
+    treating the layer that is already working.</div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ PANEL 2 · the convert layer ============ -->
+<div class="page">
+  <div class="eyebrow">The inbound engine &middot; convert layer</div>
+  <h1>The part of my engine with no AI in it</h1>
+  <p class="lede">I build AI systems all day. The convert layer is deliberately manual, because every
+    lead's journey diverges and a sequence treats all of them identically, which is exactly why
+    nobody answers a sequence.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="hl-head">What manual looks like</div>
+  <p>A board where the stages go past "booked a call":</p>
+  <div class="stagerow">
+    <div class="stage first">Booked a call</div>
+    <div class="stage">Showed up</div>
+    <div class="stage">Said interested</div>
+    <div class="stage">Interested, not now</div>
+    <div class="stage">Contract sent</div>
+    <div class="stage">Went quiet</div>
+  </div>
+  <p style="margin-top:16px;">Three to five follow-ups a day, written by a human, each one referencing
+    something specific from the actual conversation.</p>
+
+  <div class="hl-head">Where AI belongs</div>
+  <div class="callout">
+    <div class="label">Run every lost call transcript, one row per lead</div>
+    <ul>
+      <li>The objection they stated, quoted in their words</li>
+      <li>The objection underneath it, if the stated one was a proxy</li>
+      <li>What they said they were struggling with</li>
+      <li>The outcome they said they wanted</li>
+      <li>What would need to be true for them to buy</li>
+    </ul>
+  </div>
+  <div class="bridge">Now the follow-up answers the thing they said out loud.</div>
+
+  <div class="hl-head">For the ones worth it</div>
+  <p>Build them the strategy before they have paid you. A content plan plus three finished pieces,
+    with the objection they raised answered inside it. They are talking to five agencies who all
+    sound the same, and finished work is the only demonstration that survives that comparison.</p>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>
