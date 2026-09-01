@@ -51,6 +51,21 @@ The finding that every converter documents a process we operate, and that a tool
 
 **Reach rules transfer cleanly.** They came from 41 captures across 24 different accounts, so they are not account-specific.
 
+## The title shape gate, added after two rejections
+
+Both fired on 2026-09-01 against @lorenzo_pravata drafts, and the lesson is account-agnostic, so it applies here without adaptation.
+
+**Passing the title rubric is not the same as having a title.** Length, capitalisation and the dollar-figure rule are hygiene. A title can clear all three and still be unusable, which happened twice in one session.
+
+Two gates now sit in front of the rubric in `03-title.md`:
+
+- **Shape.** The title must match one of the six patterns in that file. `Zero Winning Ads Contained These Phrases` matched none. Zero of 41 captures is a finding statement, meaning a title that reports what the author discovered rather than promising the reader something.
+- **Head noun.** It must be concrete and recognisable. Winners name Meta Andromeda, Claude, Clay, Figma, Ogilvy. `These Phrases`, `This Mistake`, `What Nobody Tells You` are deictics with no referent and do not travel past an existing audience. **This one bites harder on a small account**, where the title has to earn reach outside the follower base.
+
+**The related failure: titling the proof instead of the product.** A striking detail buried inside a large piece is not the piece's subject. Titling on it caps the article at whatever that detail is worth. Subject size sets the ceiling, and the title inherits the size of the noun it picks.
+
+`07-improve.md` Trigger D now catches this class: a pre-publish rejection is the fastest evidence the system gets, and it arrives before any impressions are spent.
+
 ## Two findings that override the older skill
 
 Both `[reach]`, both in `_corpus.md`:
