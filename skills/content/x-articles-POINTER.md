@@ -31,10 +31,30 @@ Copying the new set here would repeat that in six months. One canonical home, on
 
 `brand/voice.md`, `brand/positioning.md` and `brand/audience.md`. The skills read voice from wherever they are run. This repo is where @maurojpelle's voice lives, and `skills/content/x-article-creator.md` is where its correction log lives.
 
+## The two lanes, and why it matters here
+
+**Every article declares `reach` or `convert` before a subject is picked.** Set by Mauro 2026-09-01. Reach and booked calls are independent, Spearman +0.16 across twelve articles carrying both numbers, so an article aimed at both is aimed at neither. Both lanes are real. Full split in `01-subject.md` Step 0.
+
+| | `reach` | `convert` |
+|---|---|---|
+| Job | grow the audience that converts later | booked calls now |
+| Length | 1,800-3,000 words | whatever it needs |
+| Cover | engraving over diagram | proof over aesthetics |
+| Ask | soft, or none | a unique DM keyword |
+| Judged on | 7d and 30d impressions | DMs on the keyword, 3-day booking lift |
+
+## ⚠️ The convert-lane evidence is not from this account
+
+The convert rules come from twelve `@lorenzo_pravata` articles measured against Calendly bookings. **That is a different ICP.** Lorenzo sells performance creative to brand operators spending $100k+/mo on Meta. This repo sells to agency owners installing AI systems.
+
+The finding that every converter documents a process we operate, and that a tool tutorial did 0.48x and a client case study 0.30x, is `[observed, n=12]` **on Lorenzo's account only.** Treat it as the strongest available hypothesis for @maurojpelle, not as established. It becomes evidence for this account when this account's own articles are logged in the prediction ledger with their outcomes.
+
+**Reach rules transfer cleanly.** They came from 41 captures across 24 different accounts, so they are not account-specific.
+
 ## Two findings that override the older skill
 
-Both measured, both in `_corpus.md`:
+Both `[reach]`, both in `_corpus.md`:
 
-**Length.** The 1,800-3,000 word band medians 225,900 impressions. The 900-1,800 band medians 73,300. `x-article-creator.md` specs 800-1,200 words, which is the weakest band in the corpus.
+**Length.** The 1,800-3,000 word band medians 225,900 impressions. The 900-1,800 band medians 73,300. `x-article-creator.md` specs 800-1,200 words, which is the second-weakest band. **On the convert lane that spec is fine**, since all twelve of Lorenzo's converters run 738-1,012 words. On the reach lane it is wrong.
 
-**Title case.** Three accounts tested capitalised against lowercase titles and the capitalised one won every time, by 5x, 6x and 12x.
+**Title case.** Three accounts tested capitalised against lowercase titles and the capitalised one won every time, by 5x, 6x and 12x. This one applies to both lanes.
