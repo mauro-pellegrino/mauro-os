@@ -1,0 +1,95 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F7F3EA;
+    --ink:#1B4332;
+    --body:#2F4F42;
+    --highlight:#E9B949;
+    --hot:#52B788;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#111}
+  body{zoom:0.42}
+  .cover{
+    width:1600px;height:640px;background:var(--ground);
+    position:relative;overflow:hidden;
+    font-family:Inter,system-ui,sans-serif;
+    display:flex;
+  }
+  /* left vertical rule */
+  .rule{position:absolute;left:70px;top:64px;bottom:64px;width:7px;background:var(--hot);}
+
+  .content{padding:78px 0 78px 108px;width:930px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+
+  .pill{
+    display:inline-block;align-self:flex-start;
+    background:var(--highlight);color:var(--ink);
+    font-family:'JetBrains Mono',monospace;font-weight:600;
+    font-size:19px;letter-spacing:2.6px;text-transform:uppercase;
+    padding:11px 20px 10px;margin-bottom:38px;
+  }
+  h1{
+    color:var(--ink);font-weight:800;font-size:104px;line-height:0.98;
+    letter-spacing:-3px;margin-bottom:34px;
+  }
+  .sub{
+    color:var(--body);font-size:34px;line-height:1.32;font-weight:400;max-width:800px;
+  }
+  .sub b{font-weight:800;color:var(--ink)}
+
+  /* right-side faint architecture diagram, bleeds off the edge */
+  .diagram{position:absolute;right:-60px;top:0;height:640px;width:760px;z-index:1;opacity:.5}
+</style></head>
+<body>
+<div class="cover">
+  <div class="rule"></div>
+
+  <svg class="diagram" viewBox="0 0 760 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#52B788" stroke-width="2.5">
+      <!-- layer 1: dense, connected, alive -->
+      <rect x="40"  y="46"  width="128" height="52" rx="4"/>
+      <rect x="230" y="30"  width="128" height="52" rx="4"/>
+      <rect x="230" y="108" width="128" height="52" rx="4"/>
+      <rect x="420" y="30"  width="128" height="52" rx="4"/>
+      <rect x="420" y="108" width="128" height="52" rx="4"/>
+      <rect x="610" y="68"  width="128" height="52" rx="4"/>
+      <path d="M168 72 H199 V56 H230"/>
+      <path d="M168 72 H199 V134 H230"/>
+      <path d="M358 56 H420"/>
+      <path d="M358 134 H420"/>
+      <path d="M548 56 H579 V94 H610"/>
+      <path d="M548 134 H579 V94 H610"/>
+      <circle cx="199" cy="72" r="4" fill="#52B788"/>
+      <circle cx="579" cy="94" r="4" fill="#52B788"/>
+
+      <!-- the drop into layer 2 -->
+      <path d="M674 120 V214" stroke-dasharray="9 11"/>
+
+      <!-- layer 2: missing. dashed ghosts only -->
+      <rect x="230" y="248" width="128" height="52" rx="4" stroke-dasharray="8 10" opacity=".55"/>
+      <rect x="420" y="248" width="128" height="52" rx="4" stroke-dasharray="8 10" opacity=".55"/>
+      <rect x="610" y="248" width="128" height="52" rx="4" stroke-dasharray="8 10" opacity=".55"/>
+      <path d="M358 274 H420" stroke-dasharray="8 10" opacity=".55"/>
+      <path d="M548 274 H420" stroke-dasharray="8 10" opacity=".55"/>
+
+      <!-- severed connector into layer 3 -->
+      <path d="M674 300 V352" stroke-dasharray="9 11" opacity=".55"/>
+
+      <!-- layer 3: one lonely node, nothing arriving -->
+      <rect x="610" y="386" width="128" height="52" rx="4" opacity=".8"/>
+      <rect x="420" y="386" width="128" height="52" rx="4" stroke-dasharray="8 10" opacity=".4"/>
+      <path d="M548 412 H610" stroke-dasharray="8 10" opacity=".4"/>
+      <path d="M674 438 V520"/>
+      <rect x="610" y="520" width="128" height="52" rx="4"/>
+    </g>
+  </svg>
+
+  <div class="content">
+    <span class="pill">Acquisition &middot; Teardown</span>
+    <h1>The Wrong<br>Layer</h1>
+    <p class="sub">Your <b>content</b> is layer one. Your pipeline is leaking at <b>two and three</b>.</p>
+  </div>
+</div>
+</body></html>
