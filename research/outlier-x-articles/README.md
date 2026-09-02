@@ -27,6 +27,12 @@ this folder. Store the cover as `NN-cover.png` alongside it. Add a row below.
 |---|---|---|---|---|---|---|
 | [01](01-saaspocalypse-is-overblown.md) | @denk_tweets | Everyone claims that SaaS is dead. They're all wrong. | *needs filling* | *needs filling* | Illustrated visual joke, category name carved on the object | The cover image and the title |
 
+## Cover prompts
+
+Covers saved for their look and their device, with copy-paste image prompts derived from them, live in
+[cover-prompt-library.md](cover-prompt-library.md). An image can be saved there on its own, without the
+article it came from.
+
 ## Open gaps on the corpus
 
 - **01 needs its link, view count and cover image file.** Text and title are captured.
