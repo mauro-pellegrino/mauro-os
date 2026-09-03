@@ -150,6 +150,86 @@ Keep the from-behind figure, the high-key light and the absence of text. Change 
 
 ---
 
+## 03. Vintage engraving, candlestick phone, cord climbing into a staircase
+
+**Source account:** `@knoxtwts` (handle read off the screenshot)
+**Article title:** `how to build a customer acquisition system that gets smarter after every lead`
+**Captured:** 2026-09-02. **Cover and title only — no body text, no view count.** Image file not supplied.
+**Saved for:** the photo.
+
+### What it looks like
+
+- **Format:** landscape, text baked into the image. The article title renders separately below the card.
+- **Medium:** vintage engraving / mid-century lithograph. Fine hatching and stipple, printed texture, no gradients.
+- **Palette:** four colours doing everything. Pale sage-green sky, cream-white clouds, dark olive-black land, solid black type.
+- **Setting:** rolling moorland under a big sky full of billowing cumulus clouds rendered in fine line work. Low, wide, empty.
+- **The object:** an oversized antique candlestick telephone standing on the ground mid-frame, receiver on its hook, drawn in heavy engraved detail.
+- **The device:** the phone's coiled cord runs out along the ground to the right, then **rises and becomes a flight of steps**, climbing diagonally toward the upper right of the frame. A small laptop or monitor sits on one of the upper steps.
+- **Type:** `EVERY LEAD TEACHES` in heavy condensed black display caps, spanning most of the width across the sky. The phone overlaps the type, so the lettering sits *behind* the object rather than on top of the picture.
+
+### Why it works
+
+**1. The metaphor is the article's thesis, drawn.** An old phone is one lead, one call. The cord climbing into a
+staircase is that call compounding into a system. The picture argues "every lead teaches" before the words do.
+Nothing in the frame is decorative.
+
+**2. The baked-in line is not the title.** `EVERY LEAD TEACHES` is a three-word compression of the argument. The
+actual title below is the long descriptive one. **So the image carries the quotable spine line and the title
+carries the specifics.** That split is the most liftable idea in this cover, and it's different from both 01
+(where the baked text *is* the headline) and 02 (where there's no text at all).
+
+**3. Old medium, modern subject.** An engraving from 1890 about lead-gen systems. Same anachronism trick as the
+SaaS coffin in 01, and it's why both read as considered rather than generated.
+
+**4. Type behind the object.** The phone occludes the lettering, which gives depth and makes the composition
+read as designed rather than as a caption slapped over a picture.
+
+### Prompt: the base
+
+```
+A vintage engraving in the style of a mid-century lithograph, wide landscape
+format. Rolling empty moorland under a large sky filled with billowing cumulus
+clouds, all rendered in fine hatching and stipple with visible printed texture.
+
+Limited flat palette: pale sage-green sky, cream-white clouds, dark olive-black
+land. No gradients.
+
+Standing on the ground mid-frame is an oversized antique candlestick telephone,
+receiver on its hook, drawn in heavy engraved detail. Its thick coiled cord runs
+out along the ground to the right, then rises off the ground and becomes a
+flight of ascending steps climbing diagonally toward the upper right of the
+frame. A small laptop sits on one of the upper steps.
+
+Engraved illustration only. No lettering, no text, no logo. Leave the upper
+middle of the sky open and uncluttered.
+```
+
+### Prompt: the swappable parts
+
+The whole mechanic is **one obsolete object whose own cable, cord, wire or thread turns into the thing it
+becomes.** Keep that. Change these:
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The obsolete object | Candlestick telephone | A typewriter, a Rolodex, a filing cabinet, a printing press, a ship's telegraph |
+| What its cord becomes | A staircase climbing up-right | A railway track heading to the horizon, a river, a beanstalk, a bar chart, a rope bridge |
+| What sits at the top | A laptop | A monitor, a dashboard, a small city, an open door |
+| The landscape | Moorland under cumulus | Prairie, coastline, ploughed field, desert with mesas. Keep it empty and low. |
+| The palette | Sage / cream / olive-black | Any single muted colour plus cream plus near-black. Three, not four. |
+
+### The two-layer text device
+
+Generate the illustration clean, then add the lettering yourself so it can sit behind the object:
+
+1. **The spine line, baked in.** Three or four words, heavy condensed display caps, spanning most of the width across the open sky. This is the *compression* of the argument, not the title. `EVERY LEAD TEACHES` is the model: subject, verb, and nothing else.
+2. **Mask the object back over it** so the lettering is occluded. That single step is what separates this from a caption.
+3. **Let the platform render the real title** below the card, long and descriptive.
+
+So one cover ships two headlines: a quotable three-word thesis inside the frame, and a specific twelve-word
+promise underneath it.
+
+---
+
 ## Also on file
 
 The engraving-style cover in [01-saaspocalypse-is-overblown.md](01-saaspocalypse-is-overblown.md) is described in

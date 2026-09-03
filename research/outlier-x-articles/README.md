@@ -27,6 +27,7 @@ this folder. Store the cover as `NN-cover.png` alongside it. Add a row below.
 |---|---|---|---|---|---|---|
 | [01](01-saaspocalypse-is-overblown.md) | @denk_tweets | Everyone claims that SaaS is dead. They're all wrong. | *needs filling* | *needs filling* | Illustrated visual joke, category name carved on the object | The cover image and the title |
 | [02](02-first-ai-consulting-retainer.md) | @coreyganim | How to land your first AI consulting retainer | **170K** | *needs filling* | Anime-style sunrise vista, lone figure from behind, no text | The whole piece |
+| [03](cover-prompt-library.md) | @knoxtwts | how to build a customer acquisition system that gets smarter after every lead | *needs filling* | *needs filling* | Vintage engraving, candlestick phone whose cord climbs into a staircase, spine line baked in | The cover |
 
 ## Cover prompts
 
@@ -38,6 +39,8 @@ article it came from.
 
 - **01 needs its link, view count and cover image file.** Text and title are captured.
 - **02 needs its link and cover image file.** Title, text and views are captured.
+- **03 is cover and title only.** No body text and no view count captured, so it cannot be read as an outlier
+  yet. It lives in the cover library rather than as its own capture file.
 - Different authors means no house style to average out. Tag the author on every row so a pattern can later be
   checked per-account rather than across the whole pile.
 
@@ -47,7 +50,17 @@ Two captures, and they already disagree on both of the things that matter most. 
 corpus settle it later.
 
 **Covers.** 01's cover states the article's argument before a word is read. 02's cover carries no information
-at all and sells a feeling. 02 did 170K.
+at all and sells a feeling. 02 did 170K. 03 goes back to arguing, with the thesis drawn as an object metaphor.
+
+**One thing all three agree on, and it's the early signal worth watching:** every cover is an *illustration*.
+Not one is a screenshot of real tooling. That runs against the proof-of-work-screenshot convention recorded
+elsewhere in `research/`, and it may simply be what the reach lane rewards while screenshots belong to the
+convert lane. Three captures is not enough to call it.
+
+**How the baked-in text is handled splits three ways.** 01 bakes in the headline itself and annotates it by
+hand. 02 bakes in nothing and lets the platform render the title. 03 bakes in a three-word compression of the
+argument that is *not* the title, and lets the platform render the long descriptive title underneath. 03's
+split is the most interesting of the three because it ships two headlines off one cover.
 
 **Titles.** The recorded reach rules say winners avoid plain reader-benefit promises and use a qualifier to
 filter the ICP. 02 is nothing but a benefit promise, aimed at beginners, with no qualifier, and it is the
