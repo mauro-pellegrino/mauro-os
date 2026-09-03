@@ -80,6 +80,76 @@ Ask GPT for the illustration only. Do not ask it to render the headline or the h
 
 ---
 
+## 02. Sunrise vista, lone figure from behind, no text at all
+
+**From:** [02-first-ai-consulting-retainer.md](02-first-ai-consulting-retainer.md), `@coreyganim`, **170K views**.
+**Captured:** 2026-09-02. Image file not supplied, description is from the paste.
+
+### What it looks like
+
+- **Format:** landscape, rendered above the title by the platform.
+- **Medium:** soft digital painting in an anime / concept-art register (reads as AI-generated). Clean, glowing, no visible brushwork or paper texture.
+- **Palette:** warm gold at the horizon through peach cloud to soft blue at the top. Saturated green meadow. Bright, optimistic, high key.
+- **Setting:** sunrise over layered mountain ranges with a sea of low cloud filling the valleys. The sun sits low, left of centre, throwing rays across the frame. Foreground is a wildflower meadow in yellow, purple, pink and blue.
+- **Subject:** one small figure sitting cross-legged in the meadow, **seen from behind**, dark hooded top, looking out at the view. Small in the frame.
+- **Text:** none. No overlay, no lettering, no logo. The headline renders below the image as platform-styled white text.
+
+### Why it works
+
+**1. It sells the feeling, not the subject.** Nothing in the frame refers to AI, consulting, or retainers. It is
+calm, arrival, the view after the climb. Pure aspiration.
+
+**2. The figure is seen from behind, so the reader occupies it.** No face means no one to compare yourself to.
+You are the person sitting there looking at the view. That is the entire mechanic, and it pairs exactly with a
+"how to land your **first**" title aimed at someone who has not arrived yet.
+
+**3. Clean image, platform-rendered title.** Nothing competes with the headline and nothing is at risk of being
+cropped. It also means one illustration can be reused with any title.
+
+**This is the opposite strategy to entry 01** and it is on the higher-reach article. Keep both.
+
+### Prompt: the base
+
+```
+A wide landscape digital painting in a soft anime concept-art style. Sunrise
+over layered mountain ranges, with a sea of low cloud filling the valleys
+between them. The sun sits low on the horizon, left of centre, throwing warm
+rays across the scene. The sky graduates from pale gold at the horizon through
+peach clouds to soft blue at the top.
+
+The foreground is a green meadow scattered with wildflowers in yellow, purple,
+pink and blue.
+
+One small figure sits cross-legged in the meadow, seen from behind, wearing a
+dark hooded top, looking out at the view. Small in the frame, calm and still.
+No face visible.
+
+Soft glowing light, clean rendering, high-key and optimistic. No text, no
+lettering, no logo anywhere in the image.
+```
+
+### Prompt: the swappable parts
+
+Keep the from-behind figure, the high-key light and the absence of text. Change these:
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The vantage | Cross-legged in a meadow above cloud-filled valleys | On a rooftop over a waking city, at the end of a pier at first light, on a ridge above a river valley |
+| The time of day | Sunrise | Golden hour, first light after rain, clear dawn with mist burning off |
+| The distance | Small in frame, vista dominates | Keep it small. The scale is what makes it aspirational rather than a portrait. |
+| Text | None | None. Let the platform render the title. |
+
+### When to use which
+
+| | 01 engraving / argument cover | 02 vista / feeling cover |
+|---|---|---|
+| Says | here is the take | here is where this gets you |
+| Suits | a rebuttal, a contrarian stance, a named enemy | a how-to, a ladder, a first-time-doing-this piece |
+| Title sits | baked into the image | rendered below by the platform |
+| Reader is | being argued with | being invited in |
+
+---
+
 ## Also on file
 
 The engraving-style cover in [01-saaspocalypse-is-overblown.md](01-saaspocalypse-is-overblown.md) is described in

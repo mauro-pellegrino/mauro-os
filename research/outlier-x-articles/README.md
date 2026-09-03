@@ -26,6 +26,7 @@ this folder. Store the cover as `NN-cover.png` alongside it. Add a row below.
 | # | Author | Title | Views | Link | Cover class | Saved for |
 |---|---|---|---|---|---|---|
 | [01](01-saaspocalypse-is-overblown.md) | @denk_tweets | Everyone claims that SaaS is dead. They're all wrong. | *needs filling* | *needs filling* | Illustrated visual joke, category name carved on the object | The cover image and the title |
+| [02](02-first-ai-consulting-retainer.md) | @coreyganim | How to land your first AI consulting retainer | **170K** | *needs filling* | Anime-style sunrise vista, lone figure from behind, no text | The whole piece |
 
 ## Cover prompts
 
@@ -36,5 +37,19 @@ article it came from.
 ## Open gaps on the corpus
 
 - **01 needs its link, view count and cover image file.** Text and title are captured.
+- **02 needs its link and cover image file.** Title, text and views are captured.
 - Different authors means no house style to average out. Tag the author on every row so a pattern can later be
   checked per-account rather than across the whole pile.
+
+## Tensions to keep open, not resolve
+
+Two captures, and they already disagree on both of the things that matter most. Log both readings and let the
+corpus settle it later.
+
+**Covers.** 01's cover states the article's argument before a word is read. 02's cover carries no information
+at all and sells a feeling. 02 did 170K.
+
+**Titles.** The recorded reach rules say winners avoid plain reader-benefit promises and use a qualifier to
+filter the ICP. 02 is nothing but a benefit promise, aimed at beginners, with no qualifier, and it is the
+highest-reach piece here. The likely reconciliation is that refusing to filter is itself the reach mechanic,
+which would put the qualifier rules on the `convert` lane only.
