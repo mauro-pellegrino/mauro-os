@@ -52,57 +52,62 @@ They say they eliminated every hand-engineered feature and let the model read th
 the levers were deleted on purpose. hacks are dead by design.
 
 **5.**
-posting more does not stack on x.
-there's a diversity function that decays your own posts against each other inside one feed response:
+Posting more does not stack on x.
+There's a diversity function that decays your own posts against each other inside one feed response:
 
 * it sorts by score, not time
 * your best post keeps its value
 * your weaker posts absorb the decay
 * you're never zeroed, just worth less each time
 
-five posts don't buy five slots in one person's feed.
+Five posts don't buy five slots in one person's feed.
+You are basically competing with yourself at some times
 
 **6.**
-the "links get suppressed 80% on x" thing:
+The "links get suppressed 80% on x" thing:
 
 * there is no link filter in the published code
 * nothing in the scorer touches external links at all
 
-that doesn't prove links are boosted. it proves the suppression claim has nothing behind it. i believed links were fine from my own numbers, now there's no mechanism punishing them either.
+So just link away
 
 **7.**
-ragebait isn't free reach on x.
-four actions are scored negative and subtracted:
+Ragebait isn't free reach on x.
+Four actions are scored negative and subtracted:
 
 * not interested
 * block author
 * mute author
 * report
 
-bait that provokes mutes and blocks lowers your score mechanically. the engagement it wins can cost more than it makes.
+Bait that provokes mutes and blocks lowers your score mechanically.
 
-**8.**
-two x myths that die the second you open the code:
-
-* "first 30 minutes is the point of no return", there's no time-window mechanic, just a hard age cutoff
-* "bookmarks are a top-3 signal", bookmark isn't one of the 19 scored actions at all
-
-both get repeated weekly. neither is in the file.
+**8.** (cut in the final edit)
 
 **9.**
-nothing resurfaces on x.
+Nothing resurfaces on x.
 
-* age is a hard cutoff, not a slow decay
 * old posts get removed
 * if the age can't even be read, the post is dropped
 
-there's no evergreen resurfacing in for you. repurposing means reposting a new angle, not praying an old banger revives.
+There's no evergreen resurfacing in for you.
+You are better off just reposting your winners with different angles or QT tweeting
 
 **10.**
-what i'm actually changing after reading the x source:
+What i'm actually changing after reading the x alg:
 
 * optimize for profile-click into follow, both are scored, that's the growth path
 * make content people forward, share via dm and copy link are scored actions
-* stop treating volume as reach, the diversity decay throttles it
+* stop treating volume as reach
 
-and i'll never quote a weight number again, because there aren't any to quote.
+---
+
+## What changed in Mauro's final edit (2026-09-04)
+
+The posts above are Mauro's finalized versions. His edits are the lesson, not the first draft:
+
+- **He trims the second explanatory sentence off the closer.** #7 dropped "the engagement it wins can cost more than it makes." #10 dropped "and i'll never quote a weight number again". The mechanical statement lands and stops; he does not add the follow-on that spells out the takeaway.
+- **He'll swap a careful hedge for a flat punch.** #6 replaced the whole "that doesn't prove links are boosted, it proves the suppression claim has nothing behind it" honesty beat with "So just link away." When a shorter, more direct closer exists, he takes it.
+- **He'll add a plain-spoken aside instead.** #5 added "You are basically competing with yourself at some times." #9 swapped the "praying an old banger revives" line for "You are better off just reposting your winners with different angles or QT tweeting" — a direct what-to-do-instead, in his own loose phrasing.
+- **He cut a whole post (#8).** Tighter thread beats completeness.
+- **Sentence-case first letters, lowercase product names and bullets.** Not strict all-lowercase.

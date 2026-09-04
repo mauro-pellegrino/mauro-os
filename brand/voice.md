@@ -436,10 +436,12 @@ Structure per post:
 
 Rules specific to this type, on top of the finishing rules below:
 - **Ground every claim in the source.** "that system got replaced", "bookmark isn't one of the 19 scored actions at all". Numbers and specifics come from the file, not from him.
-- **Refuse to overclaim, on the record.** The strongest move in the batch is post 6: "that doesn't prove links are boosted. it proves the suppression claim has nothing behind it." When a debunk would let him swing the other way, he explicitly doesn't. This intellectual honesty is the signature, not a footnote.
-- **Cross-check against his own data when he has it.** "i believed links were fine from my own numbers, now there's no mechanism punishing them either." Source plus lived numbers beats source alone.
-- **The closer is a mechanical consequence, never advice.** "five posts don't buy five slots in one person's feed." "both get repeated weekly. neither is in the file." State what the mechanism does; don't tell the reader what to do (post 10, "what i'm actually changing", is the one allowed exception because it's framed as his own change, not a directive).
+- **The closer is short and lands flat. Trim the second sentence.** Mauro's final edit consistently cut the explanatory follow-on and stopped on the punch. #7 lost "the engagement it wins can cost more than it makes." #10 lost "and i'll never quote a weight number again." His preferred closer forms: a flat consequence ("Five posts don't buy five slots in one person's feed"), a flat instruction-to-himself-or-the-reader kept blunt ("So just link away", "You are better off just reposting your winners with different angles or QT tweeting"), or a plain aside ("You are basically competing with yourself at some times"). When a shorter, more direct closer exists, take it.
+- **Do not over-hedge.** An earlier draft of #6 had a careful "that doesn't prove links are boosted, it proves the suppression claim has nothing behind it" honesty beat. He cut all of it for "So just link away." Refusing to overclaim is a real move he'll use, but it is not the default and it never survives at the cost of punch. Grounding-in-source is the signature; the careful hedge is optional.
+- **Cross-check against his own data when it sharpens the point,** but don't pad the post with it.
 - **Name the myth in the myth's own words, in quotes,** then kill it: `"links get suppressed 80% on x"`, `"first 30 minutes is the point of no return"`.
+- **Cut posts that don't earn their slot.** He dropped a whole post from the thread in the edit. Tighter beats complete.
+- **Casing:** sentence-case the first letter of lines, keep product names lowercase (x, dm, yt) and bullets as lowercase fragments. Not strict all-lowercase.
 
 ### Finishing rules
 
