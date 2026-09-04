@@ -426,6 +426,21 @@ These cover Mauro's own raw X posts, the ones he types straight into the box. No
 **Type 3: the build-in-public stack.** A time or scale anchor, what's actually built as bullets, then a personal reason (usually self-deprecating, often profane), then a flat confidence line.
 > "Spent about 4 months on claude code. / I've set up our whole inbound acquisition system inside: / [bullets] / I don't switch because I would rather just keep improving here, too fucking lazy for that. / And my current outputs are too good, and they can only improve."
 
+**Type 4: the source-check myth-buster (Mauro, 2026-09-04).** He goes to a primary source (open-source code, a doc, a real dataset, his own numbers), checks it, and debunks one repeated myth per post against what the source actually contains. The authority is the source, not him. Full canonical batch: `research/transcripts/maurojpelle/2026-09-04-x-source-code-myth-buster-thread.md`. Posts 1-3 are the clearest exemplars.
+
+Structure per post:
+> title line naming the myth or the finding (e.g. "Stop blaming the x algorithm", "A like isn't what you're looking for")
+> one line of what the source actually shows, often "I asked Claude to check it" / "after reading the x source"
+> bullets of concrete evidence (lowercase fragments)
+> one flat closer that states the mechanical consequence and stops
+
+Rules specific to this type, on top of the finishing rules below:
+- **Ground every claim in the source.** "that system got replaced", "bookmark isn't one of the 19 scored actions at all". Numbers and specifics come from the file, not from him.
+- **Refuse to overclaim, on the record.** The strongest move in the batch is post 6: "that doesn't prove links are boosted. it proves the suppression claim has nothing behind it." When a debunk would let him swing the other way, he explicitly doesn't. This intellectual honesty is the signature, not a footnote.
+- **Cross-check against his own data when he has it.** "i believed links were fine from my own numbers, now there's no mechanism punishing them either." Source plus lived numbers beats source alone.
+- **The closer is a mechanical consequence, never advice.** "five posts don't buy five slots in one person's feed." "both get repeated weekly. neither is in the file." State what the mechanism does; don't tell the reader what to do (post 10, "what i'm actually changing", is the one allowed exception because it's framed as his own change, not a directive).
+- **Name the myth in the myth's own words, in quotes,** then kill it: `"links get suppressed 80% on x"`, `"first 30 minutes is the point of no return"`.
+
 ### Finishing rules
 
 1. **End on the last real beat.** No summary, no takeaway, no "that's the difference between X and Y". The point lands and the tweet stops. Ending on the final bullet of a list is correct and normal.
