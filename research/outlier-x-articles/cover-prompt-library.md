@@ -230,6 +230,202 @@ promise underneath it.
 
 ---
 
+## 04. Dark integration diagram, borrowed logo, four labelled output tiles
+
+**Source account:** `@Ecombos_Ai` (EcomBos, verified)
+**Article title:** `How to Make Claude Build AI Ads That Actually Sell`
+**Captured:** 2026-09-02. **Cover and title only — no body text, no view count.** Image file not supplied.
+**Saved for:** the photo.
+
+### What it looks like
+
+- **Format:** landscape, near-black background. The title renders below the card in heavy red-orange type.
+- **Medium:** designed composite, not an illustration. Real image tiles arranged on a dark canvas with glow effects and drawn connectors. Dark-mode tech-product aesthetic.
+- **Palette:** black ground, orange on the left half, yellow-green on the right half, white labels. Two accent colours, split down the middle.
+- **The centre:** a bright yellow lightning bolt running vertically down the middle of the frame, splitting it. Immediately left of it, an orange rounded-square app icon carrying the **Claude asterisk**. Immediately right, a yellow-green rounded-square icon carrying the author's own `EB` mark.
+- **The four tiles:** two stacked on the left, two on the right, each a real still from an ad, each with a small icon and an all-caps label in a chip at the bottom left:
+  - `UGC` — a woman holding a dropper bottle to camera
+  - `PRODUCT DEMO` — a dark studio shot of the bottle with splash and crystals
+  - `ANIMATION` — a 3D Pixar-style character with lanterns and the product
+  - `CINEMATIC AD` — a skateboarder against a sunset
+- **The connectors:** curved cables run from each tile into the centre icons. Orange on the left, yellow-green on the right, glowing.
+
+### Why it works
+
+**1. It borrows a logo the reader already recognises.** The Claude asterisk is doing scroll-stopping work that
+the author's own mark cannot do alone. The title names Claude too, so the cover and the title borrow the same
+recognition twice. This is the cheapest reach lever in the whole library and it costs nothing to use.
+
+**2. The two logos either side of a lightning bolt read as a collaboration.** No words needed. The reader
+understands "these two things, combined" instantly, and the bolt supplies the energy.
+
+**3. Four labelled tiles are a bullet list disguised as a picture.** `UGC / PRODUCT DEMO / ANIMATION /
+CINEMATIC AD` tells the reader exactly what they get, as a countable set, before they read the title. A visual
+promise of four things.
+
+**4. The tiles are real outputs, presented as design.** This is the hybrid the other three covers do not
+attempt: proof-of-work content arranged into a composed graphic rather than shown as a raw screenshot. It gets
+the credibility of the artifact and the polish of a designed cover at once.
+
+**5. Dark ground with two neon accents is a hard stop in a light feed.** Every other cover in this library is
+pale. This one is the only black frame.
+
+### Prompt: what to generate and what to build
+
+**Do not try to generate this one.** It is an assembly job, not an illustration. A generator will not produce
+readable labels, a clean logo, or aligned tiles. Build it in a design tool:
+
+```
+LAYOUT (16:9, near-black #0A0A0A ground)
+
+CENTRE       Vertical lightning bolt, bright yellow, full height, soft glow.
+             Left of it:  rounded-square icon, accent colour A, the tool's logo.
+             Right of it: rounded-square icon, accent colour B, your own mark.
+             Both icons glow in their own colour.
+
+TILES        Four image tiles, 2 left and 2 right, rounded corners, slight
+             inner border. Each is a real still from actual output.
+             Each carries a chip bottom-left: small icon + ALL-CAPS label.
+
+CONNECTORS   Curved cables from each tile into the nearest centre icon.
+             Left cables in accent A, right cables in accent B. Glowing,
+             rounded corners, no sharp angles.
+
+PALETTE      Black plus exactly two accent colours. Left half is accent A,
+             right half is accent B. Nothing else.
+```
+
+If you want the tiles themselves generated, prompt each one separately as a plain image and drop it in.
+
+### Prompt: the swappable parts
+
+The mechanic is **a recognisable tool logo joined to yours, feeding a countable set of labelled outputs.**
+
+| Slot | This cover | Mauro's version |
+|---|---|---|
+| Borrowed logo | Claude asterisk | Claude, Notion, Miro, YouTube, X. Whatever the article actually names. |
+| Your mark | `EB` | Mauro's own mark |
+| The four tiles | UGC / product demo / animation / cinematic ad | The vehicles he actually ships: `X ARTICLE` / `VISUAL DOC` / `SHORT FORM` / `YOUTUBE BOARD` |
+| Tile content | Real ad stills | Real screenshots of his own published pieces |
+| Accent pair | Orange and yellow-green | Any two, one per side. Keep the split. |
+| The join | Lightning bolt | Bolt, plus sign, seam, socket |
+
+Four tiles is the number. Six gets unreadable at feed size, two is not a set.
+
+### On the title
+
+`How to Make Claude Build AI Ads That Actually Sell`
+
+- **Title Case, and it is the only Title Case title in this library.** The recorded reach corpus says
+  capitalised titles beat lowercase on every account that tested both. Worth watching whether the ones here
+  that use it outperform.
+- **Names a tool with a real referent** (`Claude`), which satisfies the concrete-head-noun rule.
+- **`That Actually Sell` pre-empts the objection in the title.** The reader's live doubt about AI ads is that
+  they look fake and do not convert, and the title answers it before it is raised.
+- **`actually` is now in two covers in this library** (this one and 01's `How to actually use AI in your
+  business`). It is doing a specific job both times: implying every other version of this advice does not work,
+  without naming anyone. Cheap contrarianism with no target to argue back.
+
+---
+
+## 05. Monochrome lighthouse, borrowed logo as the light source, one spot colour
+
+**Source account:** `@Aidanb2b` (Aidan Collins, verified, bio reads "Scaling B2B Offers on LinkedIn & X")
+**Article title:** `saturation is a skill issue: how the algorithm changed on linkedin and X + how to win now`
+**Captured:** 2026-09-02. **Cover and title only — no body text, no view count.** Image file not supplied.
+**Saved for:** the photo.
+
+### What it looks like
+
+- **Format:** landscape. No text baked in. The title renders below the card in heavy white type.
+- **Medium:** high-contrast black-and-white engraving, dramatic and detailed, in the register of a 19th-century steel plate.
+- **Palette:** monochrome. **One spot colour in the entire frame** — the LinkedIn blue.
+- **Setting:** night storm. Heavy black clouds, a violent sea with breaking waves on both sides, a rocky promontory running from the bottom left into the middle distance.
+- **The subject:** a lighthouse standing at the end of the promontory. Its lamp is **the LinkedIn logo**, glowing blue, throwing hard radiating beams across the whole sky.
+- **The device:** a long single-file procession of small silhouetted figures walking the causeway toward the lighthouse, stretching from the bottom-left corner into the distance. Dozens of them, queueing.
+
+### Why it works
+
+**1. One spot colour on a monochrome frame is the strongest attention mechanic in this library.** Everything is
+black and white except one small blue square, and it is the light source, so the eye has nowhere else to go.
+
+**2. The borrowed logo is built into the metaphor, not pasted beside it.** Entry 04 puts a recognisable logo in
+a frame. This one makes the logo *be* the thing the metaphor is about. The platform is the lighthouse. Same
+borrowed recognition, far more elegant, and it cannot be read as a sponsor slot.
+
+**3. The queue is the article's subject, drawn.** The title says saturation. The picture shows a hundred people
+walking single file toward the one light. You understand the problem before reading a word.
+
+**4. It draws the problem and the answer in one frame.** The crowd is the saturation. The beam still cutting
+through the storm is the argument that it still works. Both halves of the thesis, one image.
+
+**5. Storm-and-beacon is a metaphor everyone already holds,** so it needs no decoding. The work went into
+swapping the lamp for a logo, not into inventing a new symbol.
+
+### Prompt: the base
+
+```
+A dramatic high-contrast black-and-white engraving in the style of a
+19th-century steel plate illustration, wide landscape format.
+
+Night storm. Heavy black clouds fill the sky. A violent sea with large breaking
+waves on both sides. A rocky promontory runs from the bottom left corner into
+the middle distance.
+
+A tall lighthouse stands at the end of the promontory. Its lamp blazes at the
+top, throwing hard radiating beams of light across the entire sky.
+
+A long single-file procession of small silhouetted figures walks along the
+causeway toward the lighthouse, starting at the bottom left corner and
+receding into the distance. Dozens of figures, queueing.
+
+Pure monochrome, fine engraved line work, deep blacks, strong dramatic
+contrast. No text, no lettering, no logo.
+```
+
+Then, in your editor, **replace the lamp with the logo** and let it be the only colour in the frame. Do not ask
+the generator to place a logo. It will deform it.
+
+### Prompt: the swappable parts
+
+The mechanic is **a monochrome engraving where a recognisable logo is the single source of light and the only
+colour, with a crowd in the frame carrying the problem.**
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The light source | Lighthouse lamp | A campfire, a single lit window, a street lamp, a beacon on a hill, a lit doorway |
+| The logo | LinkedIn blue | Whatever platform or tool the article is actually about |
+| The crowd | Queue walking the causeway | A crowd facing away, a packed harbour of identical boats, a field of identical tents |
+| The weather | Night storm | Fog, blizzard, dust storm. It has to be hostile so the light matters. |
+| Spot colour | LinkedIn blue | Exactly one colour. The moment there are two, the device is gone. |
+
+**The rule that makes this work: one colour, and it has to be the light.** A spot colour anywhere else in the
+frame reads as a mistake.
+
+### On the title
+
+`saturation is a skill issue: how the algorithm changed on linkedin and X + how to win now`
+
+The most constructed title in this library. Sixteen words, lowercase, and it stacks **three** components with a
+colon and a plus:
+
+| Part | Job |
+|---|---|
+| `saturation is a skill issue` | The stance. Blames the reader in four words. |
+| `how the algorithm changed on linkedin and X` | The mechanism. This is what gets it opened. |
+| `+ how to win now` | The action. This is what gets it saved. |
+
+Three things worth taking:
+
+1. **`skill issue` is borrowed slang carrying an insult.** It is a gamer idiom meaning "the problem is you, not
+   the game." Using it as a diagnosis provokes hard while naming no opponent, so there is nobody to argue back.
+2. **The colon-plus construction buys both outcomes at once.** The recorded corpus finding is that articles
+   promising one mechanism get *opened* and articles promising a list get *impressions*. This title promises a
+   mechanism and an action stapled together, which is an attempt to have both. Worth testing.
+3. **Two platforms named plus a recency clamp** (`now`). Category anchoring for scroll recognition and search.
+
+---
+
 ## Also on file
 
 The engraving-style cover in [01-saaspocalypse-is-overblown.md](01-saaspocalypse-is-overblown.md) is described in
