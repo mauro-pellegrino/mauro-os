@@ -14,9 +14,9 @@ call. The statusline reads this file (blocked count, Tier 1 open, total left).
 
 | Blocked on Mauro | Open | In progress | Done | Tier 1 still open |
 |---|---|---|---|---|
-| 3 | 8 | 1 | 0 | 8 |
+| 3 | 9 | 0 | 3 | 8 |
 
-*Counts written by hand 2026-09-06, matched to what the statusline prints. Tier 1 open counts
+*Counts updated 2026-09-06 after the Miro connection, matched to what the statusline prints. Tier 1 open counts
 `[ ]` and `[~]` only, blocked items are counted in their own column. Update them when the list moves.*
 
 **The single objective:** a YouTube engine that runs without Mauro being the bottleneck, feeding
@@ -33,17 +33,26 @@ the parts still done by hand.
 
 **The board end (started today)**
 
-- [~] Connect the Miro account over MCP. OAuth URL issued 2026-09-06, waiting on Mauro to
-  authorize in the browser. Unblocks everything below it.
-- [ ] Build one board end-to-end through the MCP from an existing script, and compare it against
-  what the Chrome extension produces. This is the test of whether the API path is good enough.
-- [?] **Blocked on Mauro:** which Miro team and board the automation is allowed to write into.
-  A wrong answer here writes into client boards.
+- [x] **Done 2026-09-06.** Miro connected over MCP (`miro-personal`, board read + write scopes).
+- [x] **Done 2026-09-06.** First board built end-to-end through the MCP: 59 items, no failures,
+  VIDEO 1 of the 2026-07-31 batch. https://miro.com/app/board/uXjVHqG6AzI=/
+- [x] **Answered 2026-09-06.** The connected Miro is Mauro's personal team: no spaces, 6 boards,
+  all his own. No client boards are reachable, so the automation writes at the team root.
+- [ ] Mauro reviews that board against `boards/board-video-1-trickle-down.html` and says what the
+  MCP version gets wrong. The design-system spec has no yellow-background text widget, so
+  narration blocks were built as filled rects; that substitution needs a verdict.
+- [ ] Fold the verdict back into `skills/youtube/miro-design-system.md` as an MCP section, so the
+  next board does not re-derive the layout maths (centre axis 1000, the y-stack, the rect-for-
+  narration workaround).
 - [ ] Decide the board path: Chrome extension (`skills/youtube/miro-design-system.md`) or MCP.
   Two skills currently describe the same job two ways. One of them should win and the other
   gets marked deprecated.
 - [ ] `brand/scripts/` does not exist. Both Miro skills tell the agent to look there first, so
-  step 0 of the board flow fails on a missing folder. Create it and put the existing scripts in.
+  step 0 of the board flow fails on a missing folder. The scripts that do exist are buried in
+  `research/ideas/2026-07-31-youtube-first-batch/ideas-and-scripts.md` (3 of them, titles locked).
+  Decide whether they move to `brand/scripts/` or the skills get repointed.
+- [?] **Blocked on Mauro:** VIDEO 1's script ends on a DM keyword CTA ("send me youtube on X").
+  Per the operating rules that asset has to exist before the video ships. It does not yet.
 
 **The research end (the actual vidIQ part)**
 
