@@ -1,11 +1,12 @@
 # Video knowledge docs
 
-Ten information files, one per planned video. **These are not scripts.** Each one holds the
+Twelve information files, one per planned video. **These are not scripts.** Each one holds the
 information the video is built on: what the system actually is, the numbers with their provenance,
 what is measured against what is assumed, and the overclaims to avoid. The script gets written from
 the doc, the board gets built from the script, and the video gets recorded off the board.
 
-Written 2026-09-07 from both repos. `mauro-os` supplied the transcripts, the digs and the voice.
+Written 2026-09-07 from both repos. 11 and 12 are a pair: the system as it runs today, then the
+gap it does not cover. `mauro-os` supplied the transcripts, the digs and the voice.
 `growthub-os` supplied the live system: 73 skill files, the article corpus, the ops conventions and
 the measured numbers.
 
@@ -21,6 +22,8 @@ the measured numbers.
 | 08 | [can't prove it](08-content-working-cant-prove-it.md) | Impressions and calls are independent on our own data. | Spearman +0.16, and 5,500 impressions outbooking 47,000 |
 | 09 | [transcript to article](09-transcript-to-article.md) | Six skills in order plus a seventh that keeps them honest. | Every converter documents a process we operate |
 | 10 | [record off a board](10-record-off-a-board.md) | A script makes you read, a board makes you talk. | 59 items built through the MCP, zero failures |
+| 11 | [the $100k/mo system](11-claude-code-content-system.md) | The prompts are the least interesting part. The corrections, the provenance and the agents are the asset. | 73 skills, 4 agents, 25 tools, and the incident behind each agent |
+| 12 | [q3 agents](12-q3-agents-for-booked-calls.md) | Every agent installed so far is defensive. None of them causes a call. | 4 scars, 7 candidates, and an honest count of two |
 
 ## How each file is laid out
 

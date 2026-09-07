@@ -14,9 +14,9 @@ call. The statusline reads this file (blocked count, Tier 1 open, total left).
 
 | Blocked on Mauro | Open | In progress | Done | Tier 1 still open |
 |---|---|---|---|---|
-| 2 | 10 | 0 | 5 | 9 |
+| 3 | 10 | 0 | 5 | 9 |
 
-*Counts updated 2026-09-07 after the video knowledge docs, matched to what the statusline prints. Tier 1 open counts
+*Counts updated 2026-09-07 after docs 11 and 12, matched to what the statusline prints. Tier 1 open counts
 `[ ]` and `[~]` only, blocked items are counted in their own column. Update them when the list moves.*
 
 **The single objective:** a YouTube engine that runs without Mauro being the bottleneck, feeding
@@ -54,8 +54,13 @@ the parts still done by hand.
 - [?] **Blocked on Mauro:** VIDEO 1's script ends on a DM keyword CTA ("send me youtube on X").
   Per the operating rules that asset has to exist before the video ships. It does not yet.
 
-- [x] **Done 2026-09-07.** Ten knowledge docs written in `research/video-knowledge/`, one per
-  planned video, sourced from both repos. Information first, evidence-tagged, script second.
+- [x] **Done 2026-09-07.** Twelve knowledge docs in `research/video-knowledge/`, one per planned
+  video, sourced from both repos. Information first, evidence-tagged, script second. Docs 11 and 12
+  are the full system tour and the agent gap it exposes.
+- [?] **Blocked on Mauro:** sign off the `$100k/mo` framing in doc 11. It is the organic share of
+  the pre-cleared `$300k/mo`, and it is a public number, so it needs his word before it is said on
+  camera. `Owner: Mauro · Ask: is "the organic share of a ~$300k/mo agency" the right framing ·
+  Unblocks: recording doc 11 · Cost: seconds`
 - [ ] Mauro picks which of the ten get scripted, and in what order. The docs are ready; nothing
   downstream moves until the order is set.
 
