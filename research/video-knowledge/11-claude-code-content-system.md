@@ -19,12 +19,29 @@ that shaped it, and the numbers with their sources attached.
 
 ## ⚠️ The number in the title, before anything else
 
-`$300k/mo` is the only pre-cleared public figure for the agency, and **at least a third of it comes
-from the organic accounts** the engine runs. That is where `$100k/mo` comes from.
+**What Mauro said, 2026-09-07, verbatim:** *"$100k/mo is that clients closed from x & li form a
+$150k/mmr, but I've closed more than that month by month I think, probably around $500k total."*
 
-Say it as what it is: the organic-attributable share of a roughly $300k/mo agency. Do not say the
-engine generates $100k/mo of new revenue, because that is a different claim and nothing here
-measures it. `[NEEDS: Mauro's explicit sign-off on this framing before recording]`
+That is three different claims and they cannot be used interchangeably on camera.
+
+| Claim | What it would mean | Safe to say |
+|---|---|---|
+| **$100k/mo** | The title as given. Reads as monthly revenue attributable to the engine. | Only with the definition attached |
+| **$150k MRR** | Clients closed out of X and LinkedIn, currently on the books as recurring | Needs confirming as current, not peak |
+| **~$500k total** | Cumulative closed across months, not a monthly figure | Carries "I think" and "probably" in the source |
+
+**The rule that applies:** never invent a number, and any specific public figure needs sign-off. The
+source sentence carries two hedges, so none of these is camera-ready as stated. `$300k/mo` remains
+the one pre-cleared figure for the agency itself.
+
+**The safe version of the title's claim**, if the $150k is confirmed: *clients closed out of X and
+LinkedIn represent about $150k in monthly recurring revenue.* That is a closed-revenue claim, which
+is stronger than a vague monthly attribution and easier to defend, because it names the channel and
+the contract type.
+
+`[NEEDS: confirm the $150k MRR is current rather than peak, and confirm what the ~$500k counts:
+cumulative contract value, cumulative cash collected, or something else]`
+`[NEEDS: final call on which figure the title uses]`
 
 ---
 
@@ -150,13 +167,15 @@ gap is the subject of the next video.
 | 45 minutes lost to a rebuilt SOP | `[observed: MAP.md]` |
 | 649 of 678 rows one owner, UTM empty on 673 | `[measured: CONVENTIONS.md rule 3]` |
 | Worked-example claim measured backwards | `[observed: CONVENTIONS.md rule 1]` |
-| $100k/mo as the organic share of ~$300k/mo | `[observed: brand positioning, needs sign-off on the framing]` |
+| $150k MRR closed from X and LinkedIn | `[observed: Mauro, 2026-09-07, hedged in the source]` |
+| ~$500k closed in total | `[observed: Mauro, 2026-09-07, "I think", "probably"]` |
+| $300k/mo agency revenue | `[observed: the one pre-cleared public figure]` |
 
 ---
 
 ## Beats on camera
 
-1. The number, and exactly what it means, in the first thirty seconds.
+1. The number, and exactly what it means, in the first thirty seconds. Channel, contract type, period.
 2. Open the repo. Eleven areas, one map.
 3. Route it or it does not exist, with the 45-minute story.
 4. The skills folder. Eight names, 73 files, why activity beats client.
@@ -173,13 +192,16 @@ gap is the subject of the next video.
 
 ## Do not say
 
-- That the system produces $100k/mo. It runs the accounts that produce the organic share.
+- Any of the three revenue figures without its definition attached in the same sentence.
+- "$500k" as a monthly number. The source describes it as a total.
+- That the system produces the revenue. It runs the accounts and the content that produce the calls.
 - Any client or account name, on screen or in narration. Blur the repo tree if a folder is named.
 - Any impression or booking figure not already in the sources above.
 - That it is finished. Two of the four agents were installed after something was missed.
 
 ## Gaps
 
-- `[NEEDS: sign-off on the $100k/mo framing]`
-- `[NEEDS: a screen-safe repo tree, client folder names removed]`
-- `[NEEDS: current skill and tool counts re-checked on the day of recording]`
+- ~~screen-safe repo tree~~ **Closed 2026-09-07.**
+  [`assets/repo-tree-screen-safe.txt`](assets/repo-tree-screen-safe.txt), account names redacted.
+- ~~current counts~~ **Verified 2026-09-07: 73 skills, 4 agents, 25 tools.** Re-check on the day.
+- `[NEEDS: the revenue figure resolved, see the top of this file]`

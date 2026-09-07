@@ -142,4 +142,6 @@ lands.
 
 ## Gaps
 
-- `[NEEDS: a screen-safe view of the repo tree with client names absent]`
+- ~~screen-safe repo tree~~ **Closed 2026-09-07.** Built at
+  [`assets/repo-tree-screen-safe.txt`](assets/repo-tree-screen-safe.txt). Account folder names are
+  redacted, counts verified the same day. Read it straight to camera or paste it into the board.

@@ -121,5 +121,29 @@ the skill, run it again. That loop is the actual product. Agents are what you in
 
 ## Gaps
 
-- `[NEEDS: the current count of installed agents and what each one does]`
-- `[NEEDS: one concrete example of an agent failing quietly, with the date]`
+**Both closed 2026-09-07.**
+
+**The installed agents: four.** `[measured: .claude/agents/, 2026-09-07]`
+
+| Agent | What it does |
+|---|---|
+| `performance-loop` | Consolidates the exports weekly, computes reach and above-floor bookings per account, flags drops before they become quarters. Reports numbers with caveats, never one month as a trend. |
+| `signal-sweep` | Reads every channel and call transcript, extracts asks, decisions, numbers and corrections, diffs them against what is already recorded, and persists the durable ones. |
+| `board-qa` | Runs a 15-gate recordable check on a video lane and names the specific failing block. |
+| `youtube-lead-magnet` | Turns a video into the full autodm package. Its first instruction is to run the existing skill and never invent rules. |
+
+**Quiet failures, three of them, all dated.**
+
+1. **Two months of wrong end-of-day reports.** A calendar block has no done state, so the end-of-day
+   ritual inferred completion from Notion, Slack and call transcripts and got it wrong for two
+   months. Fixed 2026-08-31 by taking the tick from Google Tasks instead. Mauro's own verdict on the
+   old version: *"calendar blocks don't get done automatically, so that makes it ass."*
+2. **A statistic that was noise, presented as a finding.** On 2026-09-02 a reporting script
+   nominated a 221-view post with zero likes and zero replies as the highest engagement rate of the
+   week at 22.2%. A rate on a tiny denominator. Caught before it reached the board; both insight
+   rules now require 1,000+ views.
+3. **A blocked count nobody could trust.** The statusline showed a blocked-item count that a
+   two-item spot check found stale on both items, in under a minute, on 2026-09-01.
+
+All three share the shape worth naming on camera: nothing errored, nothing alerted, and the output
+looked exactly like a correct output.

@@ -31,6 +31,18 @@ The one claim · the information (the dense part) · an evidence table tagging e
 `[measured]`, `[observed]` or `[assumed]` · the on-camera beats · what not to say · the gaps as
 `[NEEDS: x]`.
 
+## Gap status, 2026-09-07
+
+Eight gaps closed by going back to the repos and re-running the scripts. What is left needs either
+Mauro's decision or a recording-day re-check. Two things surfaced while closing them:
+
+- **A phrasing error in the corpus.** "The bottom four booked 78% of the calls" is 78% *of what the
+  top four booked*, not 78% of the set. Corrected in doc 08. The growthub-os evidence file and the
+  script's own print statement still carry the ambiguous wording.
+- **The keyword join does not exist yet.** The DM keyword is the only attributable path in
+  principle, and nothing in the repo actually joins a keyword to a booking. What runs is same-day
+  correlation, D and D-1, which the script itself calls correlation and not attribution.
+
 ## Standing rules these were written under
 
 - Never invent a number. `$300k/mo` is the only pre-cleared public figure, and every other specific

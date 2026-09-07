@@ -1,0 +1,28 @@
+growthub-os/                     the whole operation, one repo
+├── skills/                      73 markdown files, split by activity
+│   ├── content/                 long-form, short-form, linkedin-docs, x-articles/ (7 files)
+│   ├── research/                weekly research, brand breakdowns, ad teardowns
+│   ├── ops/                     daily ops, content loop, monday analysis, case studies
+│   ├── miro/                    board builds, the DSL gotchas, the house diagram style
+│   ├── lead-gen/                five lead magnet subtypes, email to call
+│   ├── youtube/                 ideas, titles, hooks, boards, slides
+│   ├── creative-strategy/       static ads, the ad script QA
+│   └── dm-setting/              outbound and inbound DM templates
+├── .claude/agents/              4 installed agents
+│   ├── performance-loop.md      catches a reach drop before it becomes a quarter
+│   ├── signal-sweep.md          catches an ask buried in a chat thread
+│   ├── board-qa.md              15 gates: is this lane recordable
+│   └── youtube-lead-magnet.md   packages a video into a lead magnet
+├── ops/
+│   ├── MAP.md                   the index. route it or it gets rebuilt
+│   ├── CONVENTIONS.md           nine rules: evidence tags, provenance, limits
+│   ├── tools/                   25 python scripts, one per number anyone cites
+│   └── daily/                   the worklog, the weekly spine, today.json
+├── research/                    article studies, creative examples, competitor digs
+├── accounts/                    [REDACTED] one folder per account
+├── acquisition-calls/           one dated analysis per week
+├── outbound-calls/              the cold email motion end to end
+└── BACKLOG.md                   the standing list, and what is blocked on me
+
+Counts verified 2026-09-07: 73 skills, 4 agents, 25 tools.
+Account folder names are redacted on purpose. Never show them on camera.

@@ -157,4 +157,6 @@ already spoken to a prospect cannot be taken back.
 ## Gaps
 
 - `[NEEDS: Mauro's decision on whether the CRM motion jumps the queue]`
-- `[NEEDS: a re-check of the installed agent list on the day of recording]`
+- ~~re-check the installed agent list~~ **Verified 2026-09-07: four, unchanged.**
+  `performance-loop`, `signal-sweep`, `board-qa`, `youtube-lead-magnet`.
+- `[NEEDS: a re-check on the day of recording, since B or C may be installed by then]`

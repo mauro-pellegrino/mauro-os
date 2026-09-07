@@ -118,4 +118,14 @@ account it happened in.
 
 ## Gaps
 
-- `[NEEDS: one real magnet with its keyword and the calls it produced, cleared for public use]`
+**Partly closed 2026-09-07, and the answer is uncomfortable.** There is no keyword-to-booking
+dataset in the repo. Nothing joins a DM word to a Calendly row, and `post-to-call.py` records why:
+*"there is no per-post tracking link and the UTM route was rejected as too ugly for the bio."* What
+runs instead is same-day correlation, a booking on day D credited to the posts on D and D-1, which
+the script itself calls correlation rather than attribution.
+
+So the claim in section 2 has to be stated as design intent, not as something running today. The
+keyword **is** the only attributable path available. It is not yet instrumented end to end.
+
+- `[NEEDS: one real magnet with its keyword and the calls it produced, once the join exists]`
+- `[NEEDS: Mauro's call on whether instrumenting the keyword join is worth a session]`

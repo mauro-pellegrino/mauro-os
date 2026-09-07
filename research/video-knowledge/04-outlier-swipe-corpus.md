@@ -109,4 +109,9 @@ stops the two lanes contaminating each other.
 
 ## Gaps
 
-- `[NEEDS: whether the archive batch has been folded in since 2026-09-01, and the new n]`
+- ~~has the archive batch been folded in~~ **Closed 2026-09-07. No.** The corpus is still **41
+  captures**, and `research/article-studies/archive-2026-04-20/` holds a separate batch of 43 files
+  that has not been merged in. Every number in the writing skills therefore still rests on n=41.
+  `[measured: file counts, 2026-09-07]`
+- `[NEEDS: Mauro's call on whether the 43-file archive batch gets folded in, which would move every
+  number the article skills cite]`
