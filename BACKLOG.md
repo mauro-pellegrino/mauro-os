@@ -14,9 +14,9 @@ call. The statusline reads this file (blocked count, Tier 1 open, total left).
 
 | Blocked on Mauro | Open | In progress | Done | Tier 1 still open |
 |---|---|---|---|---|
-| 3 | 9 | 0 | 3 | 8 |
+| 2 | 10 | 0 | 5 | 9 |
 
-*Counts updated 2026-09-06 after the Miro connection, matched to what the statusline prints. Tier 1 open counts
+*Counts updated 2026-09-07 after the video knowledge docs, matched to what the statusline prints. Tier 1 open counts
 `[ ]` and `[~]` only, blocked items are counted in their own column. Update them when the list moves.*
 
 **The single objective:** a YouTube engine that runs without Mauro being the bottleneck, feeding
@@ -54,6 +54,11 @@ the parts still done by hand.
 - [?] **Blocked on Mauro:** VIDEO 1's script ends on a DM keyword CTA ("send me youtube on X").
   Per the operating rules that asset has to exist before the video ships. It does not yet.
 
+- [x] **Done 2026-09-07.** Ten knowledge docs written in `research/video-knowledge/`, one per
+  planned video, sourced from both repos. Information first, evidence-tagged, script second.
+- [ ] Mauro picks which of the ten get scripted, and in what order. The docs are ready; nothing
+  downstream moves until the order is set.
+
 **The research end (the actual vidIQ part)**
 
 - [ ] Define what the research tool scores. vidIQ scores keywords and outliers; decide what the
@@ -62,8 +67,9 @@ the parts still done by hand.
   schedule and by what (YouTube API key is already in the local permissions).
 - [ ] Wire the title step to the outlier data. `youtube-title-generator.md` and the Charlie Morgan
   pattern work in `research/charlie-morgan/` are not connected to each other.
-- [?] **Blocked on Mauro:** the ~10 titles to shoot, drafted off the Charlie Morgan patterns, were
-  never signed off. Nothing downstream moves until a topic is picked.
+- [x] **Superseded 2026-09-07.** The ten titles now exist as ten full knowledge docs with sources
+  and evidence tags, in `research/video-knowledge/`. The sign-off question is now which order to
+  shoot them in, tracked above.
 
 **The recording end**
 
