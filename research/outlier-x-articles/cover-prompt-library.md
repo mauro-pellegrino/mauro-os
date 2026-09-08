@@ -512,6 +512,87 @@ His lane is inbound systems for agency owners, and his edge is that he is moving
 
 ---
 
+## 07. Borrowed cartoon style, get-rich iconography rendered as knowing satire
+
+**Source account:** *not supplied* (avatar and handle cropped out of the paste).
+**Article title:** `how to print $50k/month with zero audience using other people's traffic`
+**Captured:** 2026-09-08, pasted by Mauro (screenshot). **Cover and title only — no body, no view count, no handle.** Image file not supplied.
+**Saved for:** the device, and as the library's caution case.
+
+### What it looks like
+
+- **Format:** landscape card, art baked into the image. The article title renders below in heavy white platform type.
+- **Medium:** an original scene drawn in the unmistakable *Simpsons* animation register. Flat cel shading, thick black outlines, the show's yellow skin, no gradients or photographic texture. It is not a restaged frame from the show, it is a new composition wearing the show's look.
+- **Palette:** the show's own yellow, walls of cash green, tropical blues and sand behind. Borrowed cartoon palette plus the green of money, which is the only colour the subject needs.
+- **Subject:** Bart Simpson in a plain white hoodie, hunched over a laptop, hood up, buried on all sides by neat stacks of banded cash. Palm trees and a bright beach fill the background.
+- **The device (a look borrowed, not a frame restaged):** where 06 rebuilds one specific poster, this borrows an IP's *entire visual language* and draws something new inside it. The recognition comes from the style, so any subject can be dropped in. On top of that it stacks the most saturated "make money online" iconography there is — the cash walls, the laptop, the beach — rendered as cartoon, which reads as a wink at the cliché rather than a straight pitch.
+
+### Why it works
+
+**1. A borrowed cartoon style buys recognition and a licence to be flippant at the same time.** The Simpsons look is decoded in a fraction of a second, same borrowed-recognition lever as 04, 05 and 06. But the cartoon register also frames everything after it as comedy, so the outrageous claim in the title lands as a bit, not a scam. The style pre-loads the tone.
+
+**2. It invokes the get-rich-online cliché and mocks it in the same frame.** Cash stacks, a laptop, a palm-tree beach is the single most worn image in the make-money-online genre. Drawing it as a cartoon both summons the fantasy and holds it at arm's length. The reader who is sick of that imagery still stops, because this one is in on the joke.
+
+**3. The title is pure curiosity-gap guru bait, and the cartoon is what makes it survivable.** `print $50k/month with zero audience using other people's traffic` is a lowercase, hyperbolic, mechanism-teasing promise of exactly the kind the reach corpus rewards for impressions. Straight, over a stock photo, it reads scam. Under the Simpsons frame it reads satire, and the same words become clickable instead of cringe.
+
+**4. Zero design decisions were made, which is the point.** Like 06's borrowed poster palette, nothing here is an original aesthetic choice. The style, the colour and the tone are all lifted, so the whole cover is assembled from recognition the author did not build.
+
+### The risk, stated plainly, because this is the library's caution case
+
+This is the closest cover in the pile to the exact thing Mauro's ICP is afraid of looking like. The get-rich claim, the money walls, the beach, the cartoon guru energy — that is the "AI money guy" register that reads scam/guru/cringe to an established operator. 06 carried a version of this risk and cleared it because its IP genuinely mapped to the argument. This one has no visible mapping between the borrowed style and any thesis. The Simpsons look does not *mean* anything about the article, it is decoration chosen for reach. That is the tell that separates a borrowed frame that argues (05, 06) from one that just grabs (this).
+
+- **The borrowed look must earn its place or it reads as bait.** 05 and 06 make the borrowed thing carry meaning. Here the cartoon carries only attention. High floor for stopping the scroll, low ceiling for credibility.
+- **Copyright is the same live consideration as 06,** and arguably sharper, since this leans on a character likeness rather than a poster composition. Fine as a one-off organic joke, not something to templatise.
+- **It probably out-reaches every other cover here and under-converts all of them for a sophisticated ICP.** Reach and trust are pulling opposite ways in one frame.
+
+### Prompt: what to generate and what to build
+
+A generator can approximate a cartoon-style scene, but it will not draw a clean recognisable character likeness and will mangle any lettering. Treat it as a style-transfer composite:
+
+```
+BASE      Prompt an original scene in the target show's animation style:
+          flat cel shading, thick black outlines, the show's palette,
+          no gradients or photo texture. Describe a NEW composition, do
+          not name copyrighted characters if the generator refuses them.
+
+SUBJECT   A hooded figure at a laptop, surrounded by neat banded stacks
+          of cash, tropical beach and palm trees behind. The three
+          make-money-online props (cash, laptop, beach) are the whole set.
+
+TONE      Keep it a cartoon. The comic register is what turns the
+          get-rich claim from a pitch into a joke.
+
+TITLE     Do not bake it in. Let the platform render the lowercase,
+          mechanism-teasing headline below the card.
+```
+
+### Prompt: the swappable parts
+
+The mechanic is **borrow an IP's entire art style (not one frame), draw the genre's most clichéd imagery inside it, and let the cartoon tone reframe an outrageous claim as a joke.**
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The borrowed style | The Simpsons | Any instantly-decoded animation look: South Park, Family Guy, Rick and Morty, PS1-era 3D, MS Paint |
+| The clichéd imagery | Cash walls, laptop, beach | Whatever the genre's most worn visual is. The point is to invoke and mock it at once. |
+| The subject | Hooded figure at a laptop | Keep it small and recognisable inside the style. |
+| The tone | Cartoon = joke | Non-negotiable. The comic register is the whole safety mechanism on the claim. |
+| The title | Lowercase guru-bait promise | Lowercase, mechanism-teasing, hyperbolic. Straight-faced would tip it into scam. |
+
+### On the title
+
+`how to print $50k/month with zero audience using other people's traffic`
+
+- **Lowercase, and the most nakedly benefit-led title in the library since 02.** Where 02 sold a calm first-timer feeling, this sells a hard money number up front (`$50k/month`).
+- **`print` and `zero audience` and `other people's traffic` are all curiosity-gap mechanisms.** Each raises a "how, exactly?" the reader has to open to answer. `other people's traffic` is the mechanism tease that does the real work — it implies a specific method, not just a promise.
+- **No qualifier, no ICP filter.** Same refuse-to-filter move flagged on 02: it aims wide on purpose. The reach corpus note stands — refusing to filter may itself be the impressions mechanic, which is a `reach`-lane move and the opposite of what the `convert` lane wants.
+- **This is a title Mauro's brief would reject on content** (guru number, no proof, aimed at beginners) even where the *construction* is worth studying.
+
+### For Mauro specifically
+
+Do not run this one straight. It is the single most off-brand cover in the library for an inbound-systems operator selling to established agency owners — it is a demonstration of the exact register the ICP is afraid of. Its value is diagnostic: it marks the floor. It shows how far the borrowed-recognition lever can be pushed toward pure reach, and it makes the line visible. Everything above it (05's load-bearing logo, 06's mapped IP) earns the borrowed thing. This one spends it. Save it as the boundary of the technique, not as a template.
+
+---
+
 ## Also on file
 
 The engraving-style cover in [01-saaspocalypse-is-overblown.md](01-saaspocalypse-is-overblown.md) is described in

@@ -31,6 +31,7 @@ this folder. Store the cover as `NN-cover.png` alongside it. Add a row below.
 | [04](cover-prompt-library.md) | @Ecombos_Ai | How to Make Claude Build AI Ads That Actually Sell | *needs filling* | *needs filling* | Dark integration diagram, Claude logo joined to author's mark, four labelled output tiles | The cover |
 | [05](cover-prompt-library.md) | @Aidanb2b | saturation is a skill issue: how the algorithm changed on linkedin and X + how to win now | *needs filling* | *needs filling* | Monochrome engraving, LinkedIn logo as the lighthouse lamp, one spot colour, crowd queueing | The cover |
 | [06](cover-prompt-library.md) | @immortalhowwl | AI "Money Heist" With GPT6-Astra: 10 Agents, 10 Minutes, 10 Steps | *needs filling* | *needs filling* | Movie-poster hijack, OpenAI logo as the Dalí mask, franchise name fused with the product | The cover |
+| [07](cover-prompt-library.md) | *not supplied* | how to print $50k/month with zero audience using other people's traffic | *needs filling* | *needs filling* | Borrowed Simpsons art style, get-rich cash/laptop/beach cliché drawn as knowing satire | The device, and as the caution case |
 
 ## Cover prompts
 
@@ -50,9 +51,9 @@ article it came from.
 - Different authors means no house style to average out. Tag the author on every row so a pattern can later be
   checked per-account rather than across the whole pile.
 
-## Patterns and tensions across the five
+## Patterns and tensions across the seven
 
-Five covers in. Log the readings, don't harden them into rules yet.
+Seven covers in. Log the readings, don't harden them into rules yet.
 
 **Nothing here is a raw screenshot.** Four of five are illustrations, and the fifth (04) arranges real
 screenshots into a designed composite. Not one is a bare screengrab of tooling. That runs against the
@@ -71,6 +72,15 @@ and maps the plot onto the argument (a crew moving as one = multi-agent orchestr
 than a tool logo, and the only overtly *fun* cover in the pile. Also the only one carrying real downside risk:
 done cheap it is the "AI guy meme" the ICP fears. Highest ceiling, lowest floor. One capture, no number, so
 this is a note, not a rule.
+
+**07 marks the floor of the borrowed-recognition lever.** It borrows an IP's whole art style (the Simpsons look)
+rather than a logo or a specific frame, then draws the most saturated get-rich imagery inside it — cash walls,
+laptop, beach. The split against 05 and 06 is the sharpest reading in the library so far: those make the
+borrowed thing *carry the argument*, while 07's borrowed style carries only attention and maps to nothing in the
+piece. That is the line between a frame that argues and a frame that just grabs. 07 is the deliberate caution
+case: it out-reaches everything here and reads as exactly the guru/scam register the ICP fears. Highest floor
+for stopping the scroll, lowest ceiling for trust. Off-brand for Mauro on content, kept for where it puts the
+boundary.
 
 **Covers split on whether they carry information.** 01, 03, 04 and 05 all argue: an object metaphor, a drawn
 thesis, a labelled output set, a crowd and a beacon. 02 carries no information at all and sells a feeling, and
