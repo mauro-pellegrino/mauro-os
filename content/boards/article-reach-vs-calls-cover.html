@@ -1,0 +1,92 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F7F3EA;
+    --ink:#1B4332;
+    --body:#2F4F42;
+    --highlight:#E9B949;
+    --hot:#52B788;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#111}
+  .cover{
+    width:1600px;height:640px;background:var(--ground);
+    position:relative;overflow:hidden;
+    font-family:Inter,system-ui,sans-serif;
+    display:flex;
+  }
+  /* left vertical rule */
+  .rule{position:absolute;left:70px;top:64px;bottom:64px;width:7px;background:var(--hot);}
+
+  .content{padding:78px 0 78px 108px;width:930px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+
+  .pill{
+    display:inline-block;align-self:flex-start;
+    background:var(--highlight);color:var(--ink);
+    font-family:'JetBrains Mono',monospace;font-weight:600;
+    font-size:19px;letter-spacing:2.6px;text-transform:uppercase;
+    padding:11px 20px 10px;margin-bottom:38px;
+  }
+  h1{
+    color:var(--ink);font-weight:800;font-size:104px;line-height:0.98;
+    letter-spacing:-3px;margin-bottom:34px;
+  }
+  .sub{
+    color:var(--body);font-size:34px;line-height:1.32;font-weight:400;max-width:820px;
+  }
+  .sub b{font-weight:800;color:var(--ink)}
+  .sub .num{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--ink)}
+
+  /* right-side faint scatter, bleeds off the edge */
+  .diagram{position:absolute;right:-40px;top:0;height:640px;width:720px;z-index:1;opacity:.5}
+</style></head>
+<body>
+<div class="cover">
+  <div class="rule"></div>
+
+  <!-- reach (x) vs booked calls (y): a cloud with no slope. the flat line is the point. -->
+  <svg class="diagram" viewBox="0 0 720 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- axes -->
+    <g stroke="#2F4F42" stroke-width="2.5" opacity=".55">
+      <path d="M150 110 V520"/>
+      <path d="M150 520 H660"/>
+    </g>
+    <!-- axis ticks, faint -->
+    <g stroke="#2F4F42" stroke-width="2" opacity=".28">
+      <path d="M150 200 H660"/>
+      <path d="M150 290 H660"/>
+      <path d="M150 380 H660"/>
+      <path d="M150 450 H660"/>
+    </g>
+
+    <!-- the dead-flat trend line: no relationship -->
+    <path d="M150 352 H648" stroke="#E9B949" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+
+    <!-- scattered points: reach up the x, calls all over the y. no trend. -->
+    <g fill="#52B788">
+      <circle cx="188" cy="300" r="12"/>
+      <circle cx="214" cy="470" r="10"/>
+      <circle cx="256" cy="188" r="13"/>
+      <circle cx="292" cy="372" r="11"/>
+      <circle cx="330" cy="262" r="12"/>
+      <circle cx="360" cy="488" r="10"/>
+      <circle cx="398" cy="330" r="13"/>
+      <circle cx="436" cy="176" r="11"/>
+      <circle cx="470" cy="428" r="12"/>
+      <circle cx="506" cy="296" r="10"/>
+      <circle cx="548" cy="392" r="13"/>
+      <circle cx="584" cy="236" r="11"/>
+      <circle cx="616" cy="452" r="12"/>
+      <circle cx="640" cy="330" r="10"/>
+    </g>
+  </svg>
+
+  <div class="content">
+    <span class="pill">Content Engine &middot; Teardown</span>
+    <h1>Reach Doesn&rsquo;t<br>Book Calls</h1>
+    <p class="sub">Impressions and booked calls correlate at <span class="num">+0.16</span> on the account I run this on. The dashboard everyone screenshots predicts <b>nothing</b>.</p>
+  </div>
+</div>
+</body></html>
