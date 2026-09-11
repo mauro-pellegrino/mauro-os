@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 -c \"import json, os; content=open(os.environ['CLAUDE_PROJECT_DIR'] + '/brand/voice.md').read(); print(json.dumps({'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext': 'WRITING STYLE RULES — Apply to ALL content output in this session. Read these before producing any writing:\\n' + content}}))\"",
+            "command": "python3 -c \"import json,os;d=os.environ.get('CLAUDE_PROJECT_DIR','');p=os.path.join(d,'brand','voice.md');p=p if os.path.exists(p) else '/Users/mauro/mauro-os/brand/voice.md';print(json.dumps({'hookSpecificOutput':{'hookEventName':'SessionStart','additionalContext':'WRITING STYLE RULES - Apply to ALL content output in this session. Read these before producing any writing:\\n'+open(p).read()}}))\"",
             "statusMessage": "Loading writing style rules..."
           }
         ]
@@ -28,7 +28,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"systemMessage\": \"Session ending — worth capturing notes for content-pipeline? Tell me what we worked on and I will save the raw notes.\"}'",
+            "command": "echo '{\"systemMessage\": \"Session ending \u2014 worth capturing notes for content-pipeline? Tell me what we worked on and I will save the raw notes.\"}'",
             "statusMessage": "Session ending..."
           }
         ]
@@ -41,6 +41,17 @@
             "type": "command",
             "command": "cd \"$CLAUDE_PROJECT_DIR\" && git add -A && { git diff --cached --quiet || git commit -m \"auto-save: fin de sesion $(date '+%Y-%m-%d %H:%M')\"; } && git push 2>/dev/null || true",
             "statusMessage": "Guardando y pusheando cambios a GitHub..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/voice-gate.py\" 2>/dev/null || python3 /Users/mauro/mauro-os/.claude/hooks/voice-gate.py 2>/dev/null || true",
+            "statusMessage": "Loading writing rules..."
           }
         ]
       }
