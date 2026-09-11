@@ -93,6 +93,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | VA visual production brief for slides | `skills/youtube/youtube-slide-visuals.md` |
 | Judge a tweet + draft a reply in Mauro's voice | `skills/content/x-reply-assistant.md` |
 | Any drafted prose, before delivery (anti-slop audit) | `skills/content/anti-slop-protocol.md` |
+| **Any drafted copy, before Mauro sees it** | the `gate` agent in `.claude/agents/` (4 passes, runs on a different model) |
 | **Any transcript or doc into an X article** | `skills/content/x-articles-POINTER.md` → `~/growthub-os/skills/content/x-articles/` |
 | X article from transcript or script (legacy, Mauro voice + correction log) | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
@@ -116,7 +117,8 @@ If a skill's examples still target a different ICP, adapt them to Mauro's ICP (e
 
 ## 5. BRAND CONTEXT: WHAT TO LOAD
 
-- Every content task: `brand/voice.md` (writing rules), `skills/content/anti-slop-protocol.md` (human-signal constraints + mandatory self-audit), `brand/positioning.md`, `brand/audience.md`.
+- Every content task: `brand/voice.md` (writing rules), `skills/content/anti-slop-protocol.md` (human-signal constraints + mandatory self-audit), `brand/claims.md` (every number and fact allowed in copy), `brand/positioning.md`, `brand/audience.md`.
+- **Nothing reaches Mauro unchecked.** Every draft goes to the `gate` agent first. It runs voice, claim, slop and format passes against the rule files and returns a fix list. Failures get redrafted and re-gated, and only passing work is shown. When Mauro overrules the Gate in either direction, that disagreement becomes an entry in `skills/content/gate-playbook.md`.
 - Strategy, offer, or planning tasks: add `brand/business-context-answers.md` and `brand/operating-baseline.md`.
 - Source material lives in `research/transcripts/maurojpelle/` and `brand/sessions/`. Real work is the content engine; pull from it instead of inventing scenarios.
 - Published brand assets: `brand/posts/`, `brand/lead-magnets/`.
