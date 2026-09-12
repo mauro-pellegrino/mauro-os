@@ -14,9 +14,9 @@ call. The statusline reads this file (blocked count, Tier 1 open, total left).
 
 | Blocked on Mauro | Open | In progress | Done | Tier 1 still open |
 |---|---|---|---|---|
-| 3 | 10 | 0 | 5 | 9 |
+| 4 | 16 | 0 | 5 | 9 |
 
-*Counts updated 2026-09-07 after docs 11 and 12, matched to what the statusline prints. Tier 1 open counts
+*Counts updated 2026-09-12 after the Gate build (2026-09-11), matched to what the statusline prints. Tier 1 open counts
 `[ ]` and `[~]` only, blocked items are counted in their own column. Update them when the list moves.*
 
 **The single objective:** a YouTube engine that runs without Mauro being the bottleneck, feeding
@@ -86,6 +86,43 @@ the parts still done by hand.
 ---
 
 ## TIER 2 — everything else in mauro-os
+
+**The Gate (built 2026-09-11, `8100d65`)**
+
+The writing rules kept getting skipped because nothing enforced them. Four files shipped:
+`.claude/hooks/voice-gate.py` (UserPromptSubmit, injects the rules on any content prompt),
+`.claude/agents/gate.md` (four-pass review on sonnet), `brand/claims.md`, and
+`skills/content/gate-playbook.md`. Routed in `CLAUDE.md`.
+
+- [ ] **Prove the Gate catches what Mauro rejected.** Run it against the quote-tweet drafts he
+  rejected on 2026-09-11. It has to flag the lesson closers, the capitalised product names, and
+  "One. Two reads as carelessness." If it passes them, delete the agent and keep the hook. The
+  Gate is unproven until this runs, and the hook may already fix the root cause on its own.
+- [ ] **Make the Gate automatic, or accept that it is not.** Today it only runs because
+  `CLAIMS.md`-style routing in `CLAUDE.md` tells Claude to call it. A rule of exactly that kind
+  got skipped on 2026-09-11, which is what caused the whole problem. A blocking hook would fix
+  it. Decide after the test above.
+- [ ] **Decide how growthub gets the Gate.** Most content work happens in growthub-os and the
+  Gate is only here. Three options: copy it there (the two then drift, which is what already
+  happened to `x-article-creator.md`), add a pointer there aimed at this copy, or leave the Gate
+  scoped to personal-brand copy only. Recommendation is the pointer, matching
+  `x-articles-POINTER.md`.
+- [ ] **Keep `gate-playbook.md` alive.** Seven entries from one session. It works only if new
+  rejections keep arriving as entries. If nothing appends for a month, it is dead weight and
+  should be deleted rather than left to rot.
+- [?] **Blocked on Mauro:** three rows in `brand/claims.md` are marked *needs sign-off*, so the
+  CLAIM pass fails any draft that uses them. They are the ~$300k/mo agency figure, the "at least
+  a third from the organic accounts he manages" figure, and the $28k deal closed off X. Unblocks
+  when Mauro approves each for public use, or tells me to keep them internal.
+
+**Anti-slop protocol overlap**
+
+- [ ] `skills/content/anti-slop-protocol.md` and `brand/voice.md` ban several of the same things
+  (hedging, parallel structures, invented numbers). Two rule files covering one subject is how
+  drift starts. Decide whether the protocol folds into `voice.md` or stays separate for its
+  quotas and self-audit block, which `voice.md` does not have.
+
+---
 
 - [ ] Statusline and worklog hook still point at growthub by config. Statusline was scoped to the
   session's project on 2026-09-06 (`growthub-os@40f0b3f`); the Stop hook still writes every turn
