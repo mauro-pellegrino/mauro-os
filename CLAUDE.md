@@ -94,6 +94,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Judge a tweet + draft a reply in Mauro's voice | `skills/content/x-reply-assistant.md` |
 | Any drafted prose, before delivery (anti-slop audit) | `skills/content/anti-slop-protocol.md` |
 | **Any drafted copy, before Mauro sees it** | the `gate` agent in `.claude/agents/` (4 passes, runs on a different model) |
+| Turn a system that actually runs into a monospace card + notes (source doc for Juan) | `skills/content/system-extraction.md` |
 | **Any transcript or doc into an X article** | `skills/content/x-articles-POINTER.md` → `~/growthub-os/skills/content/x-articles/` |
 | X article from transcript or script (legacy, Mauro voice + correction log) | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
