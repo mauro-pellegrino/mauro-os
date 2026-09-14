@@ -87,6 +87,15 @@
   .page.p2 .callout p { font-size:23px; margin-bottom:12px; }
   .page.p2 .callout li { font-size:19px; padding:9px 0 9px 34px; }
 
+  /* NUMBERED BLOCK — two-tone header bar, chip flush to the edge */
+  .nblock { border:2px solid var(--ink); margin-bottom:22px; }
+  .nblock .bar { display:flex; align-items:stretch; background:var(--highlight); }
+  .nblock .num { background:var(--hot); color:#fff; font-size:28px; font-weight:800;
+    width:60px; flex:none; display:flex; align-items:center; justify-content:center; }
+  .nblock .bar h2 { color:var(--ink); font-size:26px; font-weight:800; letter-spacing:-0.4px;
+    padding:16px 24px; align-self:center; }
+  .nblock .body { padding:20px 24px 22px; font-size:19px; line-height:1.5; color:var(--body); }
+
   .footer { margin-top:auto; border-top:1px solid var(--hairline);
     padding:16px 0 24px; font-size:14px; color:var(--muted); }
 </style></head>
@@ -150,6 +159,32 @@
       <li>Do not rank or filter what you keep</li>
       <li>A weak capture is worth as much as a strong one</li>
     </ul>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ PANEL 3 · the three killed rules (LinkedIn lead) ============ -->
+<div class="page">
+  <div class="eyebrow">Scored against the corpus</div>
+  <h1>Three of my own rules, killed by my own data</h1>
+  <p class="lede">I wrote all three into the engine. The engine measured them and took them
+    back out.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">1</div><h2>Lowercase titles</h2></div>
+    <div class="body">Capitalised won every within-account test, by 5x, 6x and 12x.</div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">2</div><h2>Capping articles at 800 to 1,200 words</h2></div>
+    <div class="body">Second-weakest band in the whole dataset.</div>
+  </div>
+
+  <div class="nblock">
+    <div class="bar"><div class="num">3</div><h2>Reach as the metric</h2></div>
+    <div class="body">The four lowest-reach articles booked 78% of the calls.</div>
   </div>
 
   <div class="footer">&mdash; Mauro</div>
