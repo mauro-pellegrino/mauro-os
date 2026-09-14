@@ -21,7 +21,15 @@ Columns: the claim as it may be stated, where it came from, and whether it can b
 | At least a third of it comes from the organic accounts he manages | `CLAUDE.md` §1 | **needs sign-off** |
 | Closed a $28k deal off X | `CLAUDE.md` §1 | **needs sign-off** |
 | Ties content to booked calls and runs a weekly acquisition analysis | `CLAUDE.md` §1 | yes |
+| Generated over 150 qualified booked calls for the agency in 2026 | Calendly export, confirmed by Mauro 2026-09-14 | yes, **see the attribution note below** |
 | Never name the client or the agency in public-facing copy | `CLAUDE.md` §7 | rule, not a claim |
+
+**Attribution note on the 150.** Mauro's own published article states that 649 of 678 Calendly
+rows sit under one owner and the UTM field is empty on 673 of them, and that you cannot cleanly
+attribute a booking to a channel with data like that. So "150 booked calls" is defensible from the
+export. "150 booked calls **through X and LinkedIn**" is a channel claim the Calendly data alone
+does not carry. Either state the total without the channel, or say how the 150 were separated
+from the rest. A prospect who reads the article and then the offer will find this.
 
 **Never borrow the agency's anchors as Mauro's personal proof.** Stating the agency's revenue as
 his own is a CLAIM failure even though the number is real.
