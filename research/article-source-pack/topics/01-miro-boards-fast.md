@@ -3,7 +3,8 @@
 One source document. Juan writes the article from this. Everything below is sourced or marked
 `[NEEDS: …]`. Nothing here is invented.
 
-**Status:** evidence is strong, the numbers are missing. Six questions for Mauro at the bottom.
+**Status:** answered 2026-09-14. A board used to take 4 hours by hand. It is now almost done in 2.
+Raw version, which is the one Juan works from, is at `~/Downloads/juan-mds/01-miro-boards.md`.
 
 ---
 
@@ -94,10 +95,8 @@ correct up front, and being correct up front is faster than it sounds.
 
 These are the gaps. The article is weak without at least the first two.
 
-1. **How long does one board take now, start to finish?** The whole claim is "fast as hell" and
-   there is no number anywhere in either repo.
-2. **How long did it take before, and what was the before?** Hand-placing in Miro, a designer, a
-   Canva deck, nothing at all? The contrast is the article.
+1. ~~How long now~~ **Answered: almost done in 2 hours.**
+2. ~~How long before~~ **Answered: 4 hours, built by hand.**
 3. **How many boards a week, and for how long?** There is a standing requirement of four a week.
    Is that the number to use, and since when?
 4. **What still breaks?** The gotchas file ends in August. Has anything failed since, and does the
