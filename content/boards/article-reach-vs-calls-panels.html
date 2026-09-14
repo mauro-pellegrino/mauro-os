@@ -1,0 +1,158 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>QT panels — reach vs calls, and the capture trap</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  /* One page = one square social frame, 1080x1080. */
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:58px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:14px; }
+  h1 { font-size:56px; font-weight:800; line-height:1.05; letter-spacing:-1.7px;
+    color:var(--ink); margin-bottom:20px; }
+  h1 .pop { background:var(--highlight); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:19px; line-height:1.55; max-width:900px; }
+  .handle { font-size:20px; font-weight:700; color:var(--hot); margin:18px 0 32px; }
+
+  .hl-head { align-self:flex-start; background:var(--highlight); color:var(--ink);
+    font-size:34px; font-weight:800; letter-spacing:-0.6px;
+    padding:9px 20px 11px; margin:4px 0 20px; }
+
+  p { font-size:18px; line-height:1.6; margin-bottom:14px; max-width:900px; }
+
+  /* COMPARE CARDS — the two articles, side by side */
+  .cmp { display:flex; gap:16px; margin-bottom:30px; }
+  .cmp .card { flex:1; border:2px solid var(--ink); padding:28px 26px 30px; }
+  .cmp .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:12px; }
+  .cmp .imp { font-size:26px; font-weight:700; color:var(--ink); }
+  .cmp .impk { font-size:15px; color:var(--muted); margin-bottom:22px; }
+  .cmp .mult { font-size:70px; font-weight:800; line-height:1; color:var(--ink);
+    letter-spacing:-2.4px; }
+  .cmp .multk { font-size:15px; color:var(--muted); margin-top:10px; }
+
+  /* STRIP — bordered stat block, mono label + rows */
+  .strip { border:2px solid var(--ink); padding:26px 26px 28px; }
+  .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:16px; }
+  .strip .row { display:flex; align-items:baseline; gap:16px; padding:9px 0; }
+  .strip .n { font-family:'JetBrains Mono',monospace; font-size:28px; font-weight:700;
+    color:var(--ink); width:92px; flex:none; }
+  .strip .t { font-size:19px; color:var(--body); }
+
+  /* STAGE ROW — small bordered counters */
+  .stagerow { display:flex; gap:12px; margin:6px 0 24px; }
+  .stage { border:2px solid var(--ink); padding:10px 18px; font-size:17px; font-weight:700;
+    color:var(--ink); }
+  .stage.first { background:var(--ink); color:#fff; }
+
+  /* DARK CALLOUT — one per page, carries the rule */
+  .callout { background:var(--dark); padding:24px 30px; border-left:7px solid var(--hot); }
+  .callout .label { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:2.2px; text-transform:uppercase; color:var(--mono-dark); margin-bottom:12px; }
+  .callout p { color:var(--highlight); font-size:19px; margin-bottom:6px; max-width:none; }
+  .callout ul { list-style:none; margin-top:6px; }
+  .callout li { color:var(--highlight); font-size:17px; line-height:1.45;
+    padding:5px 0 5px 30px; position:relative; }
+  .callout li::before { content:"\2192"; position:absolute; left:0; color:var(--mono-dark); }
+
+  /* PANEL 2 carries a lighter idea, so it runs one step up the scale */
+  .page.p2 p { font-size:21px; line-height:1.6; margin-bottom:20px; }
+  .page.p2 .hl-head { font-size:44px; padding:13px 26px 15px; margin-bottom:28px; }
+  .page.p2 .stage { font-size:20px; padding:16px 26px; }
+  .page.p2 .stagerow { margin:14px 0 34px; }
+  .page.p2 .callout { padding:38px 38px 40px; }
+  .page.p2 .callout p { font-size:23px; margin-bottom:12px; }
+  .page.p2 .callout li { font-size:19px; padding:9px 0 9px 34px; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 24px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ PANEL 1 · the receipt ============ -->
+<div class="page">
+  <div class="eyebrow">Content engine &middot; n=12 &middot; one account</div>
+  <h1>The four lowest-reach articles booked <span class="pop">78%</span> of the calls</h1>
+  <p class="lede">Between them they pulled 9.0% of the audience. I only know that because the
+    impressions export and the booking export finally sat in the same file.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="cmp">
+    <div class="card">
+      <div class="tag">More reach</div>
+      <div class="imp">47,000</div>
+      <div class="impk">impressions</div>
+      <div class="mult">0.48x</div>
+      <div class="multk">bookings against baseline</div>
+    </div>
+    <div class="card">
+      <div class="tag">Less reach</div>
+      <div class="imp">5,707</div>
+      <div class="impk">impressions</div>
+      <div class="mult">2.12x</div>
+      <div class="multk">bookings against baseline</div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="label">What the correlation came out at</div>
+    <div class="row"><div class="n">+0.16</div><div class="t">impressions against booked calls</div></div>
+    <div class="row"><div class="n">+0.05</div><div class="t">impressions against lift over baseline</div></div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ PANEL 2 · the capture trap ============ -->
+<div class="page p2">
+  <div class="eyebrow">Stage 1 &middot; capture</div>
+  <div class="hl-head">40 of 41 were winners</div>
+  <p>For months almost everything I logged was something that had worked. The file could say what a
+    250,000-impression article had in common, and it could not say what separated it from the one
+    that did 60,000, because that one was never in the file.</p>
+  <p>A dataset of only winners can describe what good looks like and tell you nothing about a
+    near miss.</p>
+
+  <div class="stagerow">
+    <div class="stage first">41 logged</div>
+    <div class="stage">40 winners</div>
+    <div class="stage">1 near miss</div>
+  </div>
+
+  <div class="callout">
+    <div class="label">The capture rule</div>
+    <p>Capture the raw thing with its result attached, and score it later.</p>
+    <ul>
+      <li>Do not analyse on the way in</li>
+      <li>Do not rank or filter what you keep</li>
+      <li>A weak capture is worth as much as a strong one</li>
+    </ul>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>
