@@ -99,3 +99,33 @@ for r in top[:8]:
 cta = [r for r in D if r[8] == "cta"]
 print(f"\ncta posts: n={len(cta)} median {st.median([imp(r) for r in cta]):,.0f} "
       f"max {max(imp(r) for r in cta):,} · all are link cards, all below median")
+
+# ---------------------------------------------------------------- deeper pass
+# opener grammar, read off the captured text. "how" = opens with how to / how a / how you
+HOW = {  # index into D by impressions, which are unique in this set
+ 22876:1, 39382:1, 106743:1, 20270:1, 27360:1, 16823:1, 69152:1, 30769:1, 140457:1,
+ 20936:0, 3327:1, 3503:1, 14000:1, 151596:1, 31057:1, 7463:1, 5253:1, 23880:1,
+ 546619:0, 200950:0, 12666:0, 25486:0, 180446:0, 10416:0, 3465:0, 189705:0, 32012:0,
+ 5060:1, 14368:1, 16546:0, 257640:1, 8690:0, 25040:1, 6536:1, 2647:0, 2759:0, 6461:0,
+ 3209:0, 3140:0, 3613:0, 6295:0, 7118:0, 3126:0, 2319:0, 1807:0, 1831:0, 566:0, 554:0,
+ 805:0, 798:0, 448:0, 232:0, 2093342854:0,
+}
+howed = [r for r in D if HOW.get(imp(r), 0) == 1]
+rest  = [r for r in D if HOW.get(imp(r), 0) != 1]
+print(f"\nOPENER GRAMMAR")
+print(f'  opens with "how"  n={len(howed):>2}  median {st.median([imp(r) for r in howed]):>9,.0f}  '
+      f'outliers {len([r for r in howed if imp(r)>=THRESH])}')
+print(f'  everything else   n={len(rest):>2}  median {st.median([imp(r) for r in rest]):>9,.0f}  '
+      f'outliers {len([r for r in rest if imp(r)>=THRESH])}')
+
+# repost per like: how hard a post is pushed outward vs merely approved
+print(f"\nREPOST PER LIKE, top 8 by impressions")
+for r in top[:8]:
+    rp, lk = r[5], r[3]
+    print(f"  {imp(r):>9,}  {r[8]:<20} rp/lk {rp/lk if rp and lk else float('nan'):.3f}")
+
+print(f"\nREPOST PER LIKE by topic (items with both figures)")
+for k in sorted({r[8] for r in D}):
+    rows = [r for r in D if r[8] == k and r[5] and r[3]]
+    if rows:
+        print(f"  {k:<20} {st.median([r[5]/r[3] for r in rows]):.3f}  n={len(rows)}")
