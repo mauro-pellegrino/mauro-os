@@ -5,6 +5,7 @@
 **Bio:** "Full time CEO of @CloseAI_hq | Part time Angel Investor, Content Creator, boyfriend"
 **Positioning:** The solo-operator who removed himself from the content pipeline. Runs an "$80k MRR solo-agency" (his claim) on the back of an AI content engine built in Claude Code, and is now founding an AI SDR startup. Content is build-in-public reveals of the actual `.md`/Claude Code systems he runs.
 **Saved:** 2026-08-18 · **Method:** in-app browser profile + post read
+**Post ledger (12 Aug to 15 Sep 2026, 63 items with metrics):** [`ronin-post-ledger-2026-09-15.md`](ronin-post-ledger-2026-09-15.md) - findings and adopt/adapt/reject in [`ronin-post-ledger-synthesis.md`](ronin-post-ledger-synthesis.md)
 **Cluster note:** Same content cluster as [Machina @EXM7777](machina-exm7777.md). The post that flagged him is a **quote-tweet of Machina's "listener agent" post** — Ronin extended Machina's idea with his own "Audience Radar" build. These two feed each other; watch the cluster, not just the account.
 
 ---
