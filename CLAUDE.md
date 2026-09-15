@@ -80,6 +80,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Save a session recap | `skills/ops/save-recap.md` |
 | Weekly research brief | `skills/research/weekly-research.md` |
 | Build / rebuild Mauro's voice doc from his real corpus ("the spice project") | `skills/research/voice-extraction.md` |
+| Raw 35-day capture of an account, step 1 of a profile study | `skills/research/profile-extraction.md` |
 | Brand breakdown (competitor or client) | `skills/research/brand-breakdown.md` |
 | Tear down an ad or piece of content from a transcript | `skills/research/ad-teardown.md` |
 | Brand breakdown for a YouTube video | `skills/youtube/youtube-brand-breakdown.md` |
