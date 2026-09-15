@@ -74,6 +74,29 @@ spending $100k+/mo on Meta.** Mauro sells to agency owners installing AI systems
 findings as evidence for this account is a CLAIM failure. Stated as "the strongest hypothesis I
 have, measured on another account", it passes.
 
+## The X "For You" ranking code, as Mauro published it 2026-09-04
+
+Every row below is from Mauro's own published thread, verbatim source at
+`research/transcripts/maurojpelle/2026-09-04-x-source-code-myth-buster-thread.md`. Already public.
+The authority is the open-source repo, not him, so state it that way.
+
+| Claim | Source | Public |
+|---|---|---|
+| The For You ranking code is open source; the scoring formula is a weighted sum of predicted actions | published thread #2 | yes |
+| The code gives the exact formula and the full list of scored actions, and none of the weight values | published thread #2 | yes |
+| Scored actions include profile click, follow author, share via DM, share via copy link, dwell time, quoted click | published thread #3 | yes |
+| A post that earns a profile visit and a follow works more of the scorer than one that earns a like | published thread #3 | yes |
+| Four actions are scored negative and subtracted: not interested, block author, mute author, report | published thread #7 | yes |
+| Hand-engineered features were eliminated; the model reads the viewer's own engagement history. No post-at-9am, hashtag or reply-to-yourself lever exists | published thread #4 | yes |
+| A diversity function decays your own posts against each other inside one feed response: it sorts by score not time, the best post keeps its value, weaker posts absorb the decay | published thread #5 | yes |
+| Five posts don't buy five slots in one person's feed | published thread #5 | yes |
+| There is no link filter in the published code and nothing in the scorer touches external links | published thread #6 | yes |
+| Nothing resurfaces: old posts get removed, and a post whose age can't be read is dropped | published thread #9 | yes |
+| "reply = 13.5 likes", "repost = 20x" and "one reply beats 150 likes" are 2023 numbers from a system that got replaced | published thread #1 | yes |
+
+**Never quote a weight value.** The code publishes none, and Mauro said so publicly. Any specific
+multiplier is a CLAIM failure.
+
 ## @maurojpelle X analytics, 2 to 15 September 2026
 
 Source for every row: `brand/analytics/exports/2026-09-02_2026-09-15-account-overview.csv` (daily)
@@ -97,6 +120,8 @@ and `brand/analytics/exports/2026-09-09_2026-09-15-content.csv` (per-post). Work
 | The 2 attributed follows: one 234-impression original post, one 12-impression reply | content export | yes |
 | The four highest-reach posts of that week were bare article links: 876, 678, 380, 369 impressions (2,303 total), 5 profile visits, 0 attributed follows | content export | yes |
 | Highest-reach single reply that week: 124 impressions, 0 follows | content export | yes |
+| Reply-reach spread that week: one reply under a large in-niche account did 124 impressions, while 7 replies under a smaller account did 68 between them | content export | yes |
+| Link/media posts: 7 posts, 33.7% of the week's impressions, 11 of 15 bookmarks | content export | yes |
 | Length buckets: 15 words or under n=4 median 529 impressions; 30-60 words n=17 median 143. All four posts in the short bucket are bare t.co links | content export | yes, **always with the confound stated** |
 
 **Two cautions on this block.** Two weeks is not a trend, say so when quoting it. And the
