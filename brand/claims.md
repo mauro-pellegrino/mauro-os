@@ -74,6 +74,35 @@ spending $100k+/mo on Meta.** Mauro sells to agency owners installing AI systems
 findings as evidence for this account is a CLAIM failure. Stated as "the strongest hypothesis I
 have, measured on another account", it passes.
 
+## @maurojpelle X analytics, 2 to 15 September 2026
+
+Source for every row: `brand/analytics/exports/2026-09-02_2026-09-15-account-overview.csv` (daily)
+and `brand/analytics/exports/2026-09-09_2026-09-15-content.csv` (per-post). Working read saved at
+`brand/analytics/2026-09-15-two-week-review.md`. All public, these are Mauro's own account numbers.
+
+| Claim | Source | Public |
+|---|---|---|
+| Sep 2-8: 32,455 impressions, 113 new follows, 3 unfollows, 134 profile visits | overview export | yes |
+| Sep 9-15: 10,258 impressions, 109 new follows, 17 unfollows, 95 profile visits | overview export | yes |
+| Impressions fell 68.4% week over week; new follows fell by 4 | derived from the two rows above | yes |
+| Follows per 1,000 impressions went 3.48 (week one) to 10.63 (week two) | derived | yes |
+| Sep 3: 4,823 impressions, 0 new follows | overview export | yes |
+| Sep 5: 8,826 impressions, 14 new follows (1.6 per 1k), the fortnight's peak reach day | overview export | yes |
+| Sep 8: 2,784 impressions, 36 new follows | overview export | yes |
+| Sep 10: 2,144 impressions, 38 new follows (17.7 per 1k), the fortnight's best follow day | overview export | yes |
+| Sep 13: 1,121 impressions, 0 new follows, 7 unfollows | overview export | yes |
+| Sep 9-15 post export: 196 posts, 173 of them replies, 8,260 impressions total | content export | yes |
+| Replies carried 3,072 of 8,260 impressions (37%) and 69 of 103 profile visits (67%) | content export | yes |
+| The per-post New follows column sums to 2 across Sep 9-15 against 109 in the daily overview | both exports | yes |
+| The 2 attributed follows: one 234-impression original post, one 12-impression reply | content export | yes |
+| The four highest-reach posts of that week were bare article links: 876, 678, 380, 369 impressions (2,303 total), 5 profile visits, 0 attributed follows | content export | yes |
+| Highest-reach single reply that week: 124 impressions, 0 follows | content export | yes |
+| Length buckets: 15 words or under n=4 median 529 impressions; 30-60 words n=17 median 143. All four posts in the short bucket are bare t.co links | content export | yes, **always with the confound stated** |
+
+**Two cautions on this block.** Two weeks is not a trend, say so when quoting it. And the
+≤15-word length result is confounded with format (every post in the bucket is an article link),
+so it never ships as a length finding.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
