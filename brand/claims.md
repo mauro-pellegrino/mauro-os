@@ -128,6 +128,49 @@ and `brand/analytics/exports/2026-09-09_2026-09-15-content.csv` (per-post). Work
 ≤15-word length result is confounded with format (every post in the bucket is an article link),
 so it never ships as a length finding.
 
+## The video board system, as written up 2026-09-16
+
+Source for every row: Mauro's own article draft on generating the Miro video boards, handed over
+2026-09-16, plus `research/article-source-pack/topics/01-miro-boards-fast.md` (his answers,
+2026-09-14). The API rows were confirmed against `skills/miro/api-gotchas.md` in the agency repo on
+the dates shown. The article is not saved to this repo, per the standing rule.
+
+| Claim | Source | Public |
+|---|---|---|
+| A board took 4 hours by hand and is close to 2 hours now | source pack, answered 2026-09-14 | yes |
+| Four boards a week, standing | article draft | yes |
+| A real board runs 200 to 400 items | article draft + source pack | yes |
+| Past 200 items the edit call parses the whole board and gives up; creating still works, editing and deleting do not. Confirmed 2026-08-04 | claims row above + source pack | yes |
+| A 37-item create returned 17 created and one error covering the other 20, naming no item and no attribute. 2026-08-03 | claims row above + source pack | yes |
+| The response body showed plausible urls for items that had not been created | article draft + source pack | yes |
+| Two attribute values caused it, neither documented as invalid | article draft | yes |
+| The build is four steps, beats then components then geometry then write, and only the write touches the board | article draft | yes |
+| Shapes take an explicit width and height; a sticky accepts one or the other and grows to fit its text | article draft | yes |
+| The quick inspection call returns frames, docs, tables and diagrams, and does not see images, text, shapes or stickies | article draft | yes |
+| Diagrams are authored in markup, rendered and pasted in as images. Hand-placing and prompting a diagram are both banned, approved as the default 2026-08-25 | article draft | yes |
+| Eight files, read in the same order every time: master, visual, archetype, writing, gotchas, assets, diagram, QA. The order is dependency | article draft | yes |
+| Font size takes one size for headers, labels and one-liners and a smaller one for multi-sentence body cells. It was corrected three times before it stuck | article draft | yes |
+| The board gate is fifteen checks; the first four are blockers and the run stops there | article draft + claims row above | yes |
+| Roughly half the gate checks run as a script and the rest need eyes | article draft | yes |
+| Something placed wrong stays wrong, or gets lassoed by hand in the ui | article draft | yes |
+| The limit made placing boxes by hand impossible and forced a different shape of work | article draft, Mauro's own framing | yes |
+| The script is split into distinct points with no summarising and no merging, and the beat count is checked against the target runtime first | article draft | yes |
+| Each beat gets a form and a colour family: text read out loud exactly as written, diagrams, and pasted media that is real captures only | article draft | yes |
+| Every coordinate, every height and every gap is computed up front | article draft | yes |
+| A fixed row pitch computed in advance drifts when a sticky grows, because a sticky takes a width or a height and never both | article draft | yes |
+| A full process map was built that duplicated one already on the same board, because nobody listed the board first | article draft | yes |
+
+
+**On the forty-shapes example.** The article illustrates the blind inspection call with "a board
+holding forty shapes and a dozen images reports as empty". That is an illustration of the
+mechanism, not a measurement of a specific board, so it never ships as a stat on a panel or in a
+post. State the mechanism instead.
+
+**The generalised rule in the article** ("any system with no undo forces correctness up front, and
+correctness up front is faster than fixing") is Mauro's own framing of his own measurement, so it
+ships as a stance. It is not a measured finding about other people's systems and never gets stated
+as one.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
