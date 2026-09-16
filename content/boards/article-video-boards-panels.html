@@ -12,7 +12,7 @@
     --body:      #1B1B1B;
     --muted:     #5F6B62;
     --dark:      #1B4332;
-    --highlight: #E9B949;
+    --highlight: #B7E4C7;
     --hot:       #52B788;
     --mono-dark: #B7E4C7;
     --hairline:  #D9DED9;
@@ -58,12 +58,6 @@
   .filecap { font-family:'JetBrains Mono',monospace; font-size:14px; color:var(--muted);
     letter-spacing:.4px; margin-bottom:20px; }
 
-  /* DARK CALLOUT — one per page */
-  .callout { background:var(--dark); padding:24px 32px 26px; border-left:7px solid var(--hot); }
-  .callout .label { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
-    letter-spacing:2.2px; text-transform:uppercase; color:var(--mono-dark); margin-bottom:10px; }
-  .callout p { color:var(--highlight); font-size:24px; font-weight:700; line-height:1.35; }
-
   .footer { margin-top:auto; border-top:1px solid var(--hairline);
     padding:16px 0 20px; font-size:14px; color:var(--muted); }
 </style></head>
@@ -91,17 +85,12 @@
     <div class="card last"><div class="n">04 &middot; write</div><div class="t">One create call</div><div class="s">The only step that touches the board.</div></div>
   </div>
 
-  <div class="callout">
-    <div class="label">The shift</div>
-    <p>Correctness moves from after the write to before it.</p>
-  </div>
-
   <div class="footer">&mdash; Mauro</div>
 </div>
 
 <!-- ============ PANEL 2 · the rules and the gate ============ -->
 <div class="page">
-  <div class="eyebrow">The six rules the boards run on</div>
+  <div class="eyebrow">What the boards run on</div>
   <h1>Every correction lands in <span class="pop">one of eight files</span></h1>
   <p class="lede">Read in the same order every time, so a rule fixed once doesn't get relearned on
     the next board.</p>
@@ -109,17 +98,12 @@
   <div class="filecap">master &middot; visual &middot; archetype &middot; writing &middot; gotchas &middot; assets &middot; diagram &middot; qa</div>
 
   <div class="grid">
-    <div class="card"><div class="n">shapes</div><div class="t">The stacked-card look</div><div class="s">Explicit width, height and a border. Mauro's pick, not an api workaround.</div></div>
+    <div class="card"><div class="n">shapes</div><div class="t">The stacked-card look</div><div class="s">Explicit width, height and a border, the way mauro's visual system draws every board.</div></div>
     <div class="card"><div class="n">inventory</div><div class="t">List the board first</div><div class="s">The quick call sees frames and tables, and misses shapes and images.</div></div>
     <div class="card"><div class="n">partial failures</div><div class="t">Trust the failed list</div><div class="s">17 of 37 created, and the body returned urls for the 20 that weren't.</div></div>
     <div class="card"><div class="n">diagrams</div><div class="t">Authored in markup</div><div class="s">Rendered and pasted in. Hand-placing and prompting are both banned.</div></div>
     <div class="card"><div class="n">type</div><div class="t">Two font sizes</div><div class="s">Corrected three times before it stuck, which is why it's in a file.</div></div>
     <div class="card"><div class="n">the gate</div><div class="t">Fifteen checks</div><div class="s">The first four are blockers, so a failing lane stops there.</div></div>
-  </div>
-
-  <div class="callout">
-    <div class="label">The tell</div>
-    <p>Font size got corrected three times before it stuck. Three corrections on one rule is what says it belongs in a file, not a head.</p>
   </div>
 
   <div class="footer">&mdash; Mauro</div>
