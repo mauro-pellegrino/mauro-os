@@ -171,6 +171,92 @@ correctness up front is faster than fixing") is Mauro's own framing of his own m
 ships as a stance. It is not a measured finding about other people's systems and never gets stated
 as one.
 
+## The @shannholmberg profile study, run 2026-09-15
+
+Source for every row: `research/profile-studies/shannholmberg-2026-09-15-analysis.md`,
+`vehicles-from-shannholmberg.md` and `shannholmberg-2026-09-15-stats.py`, re-run and confirmed
+2026-09-16. Process rows come from Mauro's loom to Juan, 2026-09-15.
+
+**Limits that ship with any of these numbers.** One account, 35 days, n=52. Impressions are
+timeline figures read at one moment and they keep climbing after. Topic labels are Mauro's
+assignment, not the author's, so every topic-sliced row is the softest thing in the block. No
+follower count or follower delta was captured, so nothing here says whether reach converts to
+follows, and a draft that implies it does is a CLAIM failure.
+
+| Claim | Source | Public |
+|---|---|---|
+| 52 items captured, 2026-08-11 to 2026-09-14, median 9,553 impressions | raw capture + stats.py | yes |
+| Total 2,318,220 impressions; top 10 items carry 81%, top 5 carry 59%, the article carries 11% alone | stats.py | yes |
+| Outlier line set at 3x median, 28,659, leaving 13 outliers of 52 | stats.py | yes |
+| Quote tweets: 35 of 52, median 16,823, 11 of 13 outliers, 81% of reach | stats.py | yes |
+| Standalone posts: 16 of 52, median 2,239, 1 outlier, 7% of reach | stats.py | yes |
+| Article: 1 item, 257,640 impressions | stats.py | yes |
+| A quote tweet's median is 7.5x a standalone post's | derived from the two rows above | yes |
+| Carousel: 18 items, median 22,988, 8 outliers, 63% of reach | stats.py | yes |
+| Single image: 17 items, median 22,876, 5 outliers, 33% of reach | stats.py | yes |
+| Text only: 6 items, median 10,678, zero outliers, 3% of reach | stats.py | yes |
+| Video: 5 items, median 3,140, zero outliers, 1% of reach | stats.py | yes |
+| Link card: 6 items, median 682, zero outliers, 0% of reach, all below median | stats.py | yes |
+| The text-only median, 10,678, is why a plain text post gets 13,000 views: that is the floor, not the ceiling | analysis.md, Step 2 | yes, **13,000 is illustrative of the floor, not a sourced single-post figure; don't state it as one item's count** |
+| The split-CTA vehicle: expect roughly 700 views on the follow-up link post, never judge it on reach | vehicles-from-shannholmberg.md | yes |
+| 22 of 52 items open with "how": median 23,378, 8 of 13 outliers. The other 30 median 3,539 | stats.py opener pass | yes, **the 6.6x is one account** |
+| Tool reactions: 15% of items, 23% of reach, 4 outliers | stats.py topic table | yes |
+| Stack posts: 10% of items, 35% of reach, 2 outliers | stats.py topic table | yes |
+| Second brain, context and skills library posts: 24% of items, 20% of reach | stats.py topic table | yes |
+| Biggest item of the month: 546,619 impressions, seven words of text over a carousel, "my AI stack has changed over the past months" | raw capture | yes |
+| Bookmark-to-like on the top eight: the 546,619 post sits at 0.67, the only one under 1.0; the rest run 1.50 to 2.37, article 2.37 | stats.py | yes |
+| Repost-to-like is flat by topic, 0.049 to 0.083, with no separation | stats.py | yes |
+| Cadence: 52 items in 35 days, about 1.5 a day, one narrow subject. Two personal posts, both under 2,000 | raw capture + stats.py | yes |
+| His article: 41,813 characters, 12 sections, 43 in-body images, 257,640 impressions | raw capture | yes |
+| Named launches he translated: Wayfinder, a grill-me skill, Hermes bot mode, an x ads mcp, GPT-6 Astra | raw capture | yes |
+| Ronin has about 500 youtube subscribers and no videos on the channel | Mauro's loom, 2026-09-15 | yes |
+| The four steps: study content strategy, understand success and outliers, break down, templatize vehicles | Mauro's loom | yes |
+| Verdict column is adopt / adapt / reject, with the reason written under a reject | Mauro's loom + vehicles file | yes |
+| The first pass read one post's repost-to-like ratio as a finding; it did not hold across 52 items | vehicles file, Mauro's own correction | yes |
+
+**The Andromeda comparison does not ship on Mauro's own copy.** The vehicles file cites Meta
+Andromeda posts at roughly 4x the comment rate of anything else on the account. That is the
+agency's account and the agency's lane, per `CLAUDE.md` section 1. Stating it in Mauro's voice
+positions him as an ad-creative practitioner and is a CLAIM and POSITIONING failure.
+
+**Naming @shannholmberg publicly is the point of the vehicle**, not an incidental mention. He is
+not a client, so the no-naming rule in `CLAUDE.md` section 7 does not apply. Mauro still signs off
+on naming him before anything publishes.
+
+## The outlier X-article corpus process, run 2026-08-28
+
+Source: `research/transcripts/maurojpelle/2026-08-28-how-to-save-outlier-x-articles-loom.md`, plus
+`research/outlier-x-articles/README.md` and `cover-prompt-library.md` for the state of the corpus
+itself. All process rows are Mauro's own spec, not measured findings, and are public as method.
+
+| Claim | Source | Public |
+|---|---|---|
+| Rule: save only, build nothing (no skill, no template, no hardened pattern) until roughly 50 articles are in | loom | yes |
+| X has no filter to sort articles by views; outliers are found by hand, from accounts already rated and by browsing Home for large accounts not yet followed | loom | yes |
+| A big follower count is a reason to look, not a reason to save | loom | yes |
+| Most common disqualifying pattern: a YouTube script pasted into X, reading as a transcript with headers | loom | yes |
+| Five components saved per article: title screenshot (from the feed, not inside the article), the cover image, full text, the link, the view count | loom | yes |
+| Cover capture rule: a plain-screenshot cover is already in the title shot; an HTML/detailed cover is right-clicked and copied, never screenshotted | loom | yes |
+| Captures are batched and handed over together, not one at a time; each becomes a numbered file with its cover stored alongside it | loom | yes |
+| The first seven captures: only one of seven (@coreyganim, "How to land your first AI consulting retainer") had a recorded view count, 170,000 | README.md corpus table | yes |
+| Three of the seven captures were cover-and-title only, no body text and no view count, and were moved into a separate cover library rather than counted as outlier captures | README.md | yes |
+| Links were missing on nearly all seven; the link and the view count are treated as the two non-optional fields, since a link lets everything else be re-fetched | loom + README.md | yes |
+| Rule added after the first seven: tag the author on every row, since the corpus spans many different authors and a pattern must be checked per-author before it's treated as real | loom + README.md | yes |
+| Reading discipline: an observation across seven captures is a note; the same observation across fifty, held per author, is a rule | loom | yes |
+| Cross-capture reading, n=5 with numbers on one: none of the five saved covers is a raw screenshot, four are illustrations and one arranges real screenshots into a designed composite | README.md, "Patterns and tensions" | yes, **stated as a hypothesis, n=5** |
+| Three of six covers borrow a recognisable external logo (Claude asterisk, LinkedIn mark as a lighthouse lamp, OpenAI mark as a movie mask); the strongest versions make the logo carry the argument's meaning rather than just appear in frame | README.md | yes, **n=6, one account's worth of covers each** |
+| The @coreyganim piece is the only capture with a view count (170K) and the only cover that carries no argument, selling a feeling instead | README.md | yes |
+| Titles across the five: three lowercase, two capitalised, lengths 7 to 16 words, every one naming a concrete referent | README.md | yes |
+| The seven authors captured so far: @denk_tweets, @coreyganim, @knoxtwts, @Ecombos_Ai, @Aidanb2b, @immortalhowwl, and one not supplied | README.md corpus table | yes |
+
+**Two forms of borrowed authority, same as the profile-study process:** the name ("I broke down
+@author's article") and the number ("I broke down 40 articles"), and the number form is why the
+corpus target is 50 rather than 5.
+
+**Nothing above is a finding about what wins.** The corpus is mid-collection (7 of a ~50 target, one
+of them with a view count). Any sentence that states a pattern as proven rather than as a live
+hypothesis pending a fuller corpus is a CLAIM failure.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
