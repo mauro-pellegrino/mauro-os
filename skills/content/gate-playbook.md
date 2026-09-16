@@ -63,6 +63,27 @@ THEN model it on `research/transcripts/maurojpelle/maurojpelle-raw-tweets.md`, n
 EVIDENCE drafts written from the voice.md description alone still read as AI; drafts written
      after reading the exemplar file were accepted as closer
 
+[G-008] 2026-09-16  confidence: low  hits: 1  misses: 0
+WHEN a draft explains a choice Mauro made about how something looks
+THEN state it as his preference and stop, never build a technical or mechanical justification
+     underneath it
+EVIDENCE the miro board article argued shapes over sticky notes on API grounds (a sticky takes a
+     width or a height and grows to fit its text). Mauro: "you write down the reasoning for using
+     shapes and not stickies because of a technical side, when in reality it's about preference on
+     the aesthetics". A second draft kept the causal clause and bolted "that's a taste decision"
+     on top, which the Gate caught as the same failure with a label stapled to it
+
+[G-009] 2026-09-16  confidence: low  hits: 1  misses: 0
+WHEN the subject is a skill or process Mauro runs internally
+THEN write the explanation plainly and keep every section answering "how do I do this", never
+     build a thesis out of it or generalise it into a lesson about systems
+EVIDENCE the miro board article opened on a 200-item API ceiling and closed on "any system with no
+     undo forces correctness up front". Mauro: "writing that is too complex for just an explanation
+     of a skill & process I follow internally", "writing about the ceiling doesn't make sense as
+     well, and especially the conjectures used". He rewrote the brief himself as five plain
+     questions: how to connect it, what an mcp is, what the output looks like, why he makes them,
+     which skill file runs it
+
 ---
 
 ## How entries get added
