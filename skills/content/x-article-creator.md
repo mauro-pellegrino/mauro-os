@@ -211,11 +211,23 @@ The title does two things: earns the click from the right person, and filters ou
 
 ---
 
-### Case: Always Lowercase
+### Case: Sentence case, product names stay lowercase (Mauro, 2026-09-16)
 
-Default to all-lowercase titles. No exceptions unless a number, acronym, or proper noun requires it.
+**Capitalise the first word only. Leave every product and platform name lowercase.**
 
-Lowercase reads editorial and confident. Title case reads like a press release. The highest-impression articles in the reference set ("the intimate process of deciding how you'll get rich" — 1.5M, "the neuroscience of visualization: why it works (but not how you think)" — 1.4M, "how to master AI b-roll (step by step playbook)") are all lowercase.
+> ✅ `Full guide on creating miro boards with claude code`
+> ❌ `how to create miro boards with claude` (all-lowercase, the old default)
+> ❌ `Full Guide On Creating Miro Boards With Claude Code` (title case, reads like a press release)
+
+This settles a contradiction that sat in this file for two weeks. The old rule was all-lowercase,
+justified by three reference articles on other people's accounts. The measured corpus says
+capitalised titles beat lowercase ones by 5x, 6x and 12x across three accounts that tested both.
+Mauro then picked sentence case himself on the miro board article, which is the version that
+satisfies both: it capitalises, and it keeps `miro` and `claude code` lowercase per gate-playbook
+G-003.
+
+Apply it in that order. Capitalise the first word, lowercase every product name, leave everything
+else as it falls.
 
 ---
 
@@ -262,6 +274,29 @@ Mauro-lane examples:
 - `how to run a content system on leftover hours (the exact setup)`
 
 **Best for:** Tactical breakdowns with a real constraint or method to anchor on.
+
+---
+
+**Pattern 1b: full guide on [doing the thing] with [named tool]** *(Mauro's pick, 2026-09-16)*
+
+The plainest pattern in the bank and the one he reached for unprompted. It promises completeness
+and names the tool, so the head noun is concrete and recognisable to someone who has never heard of
+him. That matters most on a small account, where the title has to travel past the follower base.
+
+Templates:
+- `Full guide on [verb]ing [thing] with [named tool]`
+- `Full guide on [verb]ing [thing] with [named tool] (the exact setup)`
+- `Full guide on the [system name] I run on [named tool]`
+
+Mauro-lane examples:
+- `Full guide on creating miro boards with claude code`
+- `Full guide on turning client calls into a week of content with claude code`
+- `Full guide on the acquisition analysis I run every monday`
+
+**Best for:** Explaining a system he actually operates, where the reader wants the whole setup
+rather than an angle on it. **Do not dress these up.** The matching body register is the plain
+walkthrough, per gate-playbook G-009: answer "how do I do this" in every section and never build a
+thesis out of it.
 
 ---
 
@@ -483,6 +518,14 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 ---
 
 ## Correction Log
+
+**16 September 2026 — Title case resolved, "full guide" pattern added, plain-walkthrough register (miro boards article)**
+Mauro rejected the first draft of the miro board article on four counts, then rewrote the brief and the title himself. Four things came out of it, all now rules:
+1. **Title case is sentence case with lowercase product names.** His pick: `Full guide on creating miro boards with claude code`. This replaces the old all-lowercase default, which had been contradicted by the corpus finding at the top of this file since 1 September and never reconciled. See "Case" above.
+2. **"Full guide on X with [named tool]" is now Pattern 1b.** He reached for it unprompted over a `how to` title. It names the tool, which is what carries a title past the follower base.
+3. **An internal process gets a plain walkthrough, not a thesis.** His words: "writing that is too complex for just an explanation of a skill & process I follow internally". The first draft opened on an API ceiling and closed on a generalisation about systems with no undo. He replaced the whole structure with five plain questions: how to connect it, what an mcp is, what the output looks like, why he makes them, which skill file runs it. Logged as gate-playbook G-009.
+4. **An aesthetic choice is stated as preference, full stop.** The draft argued shapes over sticky notes on API grounds. His words: "in reality it's about preference on the aesthetics". Logged as gate-playbook G-008.
+Em dashes also appeared throughout a draft despite the standing ban, which is the third recurrence. The ban is in `brand/voice.md` and in CLAUDE.md §6.1; there is nothing left to add to the rule, so the fix is running the Gate before he ever sees a draft.
 
 **17 August 2026 — Section headers must be Subheadings in the X editor**
 Mauro reviewed the "how to create lead magnets with Claude" article via a Loom and approved the writing and structure outright ("I really like the writing", "this is so good"). The one fix: the section headers were sitting at body-text size. In the X article editor, every section header must be set to the Subheading style so it renders bigger than the body. He also confirmed his distribution cadence: publish the article, then roughly 3 hours later post the infographic version as a quote tweet (like the agency owner). That infographic must use the same subheading structure, not a flat layout, since the subheadings are what make the article version read better than the flat infographics.

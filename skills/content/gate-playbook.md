@@ -84,9 +84,16 @@ EVIDENCE the miro board article opened on a 200-item API ceiling and closed on "
      questions: how to connect it, what an mcp is, what the output looks like, why he makes them,
      which skill file runs it
 
----
+[G-010] 2026-09-16  confidence: low  hits: 1  misses: 0
+WHEN titling an X article
+THEN capitalise the first word only and keep every product name lowercase, never all-lowercase and
+     never title case
+EVIDENCE Mauro rewrote a proposed title twice in one session and landed on "Full guide on creating
+     miro boards with claude code". `x-article-creator.md` had specified all-lowercase since March
+     and carried a contradicting corpus finding (capitalised beat lowercase 5x, 6x, 12x across
+     three accounts) since 1 September without reconciling them. His pick satisfies both and keeps
+     G-003
 
-## How entries get added
 
 The Gate proposes deltas after a run. Mauro's overrides are the highest-signal source: every time
 he passes something the Gate flagged, or kills something the Gate passed, that disagreement is his
