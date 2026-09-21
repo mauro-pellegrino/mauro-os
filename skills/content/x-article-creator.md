@@ -484,6 +484,9 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 
 ## Correction Log
 
+**21 September 2026 — Title the concept, not the vehicle it was proven on**
+A first title set for the "be negative to win" tweet anchored nearly every option to the YouTube channel (the first 50 videos making $0), because the head-noun gate wants a concrete recognisable noun and YouTube supplies one. Mauro's correction: the titles have to be about the concept, expecting no short-term wins from content, rather than about the channel the proof came from. The rule: when the subject is a discipline the reader can apply on any platform, the channel in the proof is a vehicle, and titling on it caps the piece at the size of that vehicle. Anchor instead on something concrete the reader already owns (their own post count or time window, the metric they are misreading, the named mechanism) and keep the channel inside the body as evidence. This is the "titling the proof instead of the product" failure from `skills/content/x-articles-POINTER.md`, one level up: the vehicle is not the subject either.
+
 **17 August 2026 — Section headers must be Subheadings in the X editor**
 Mauro reviewed the "how to create lead magnets with Claude" article via a Loom and approved the writing and structure outright ("I really like the writing", "this is so good"). The one fix: the section headers were sitting at body-text size. In the X article editor, every section header must be set to the Subheading style so it renders bigger than the body. He also confirmed his distribution cadence: publish the article, then roughly 3 hours later post the infographic version as a quote tweet (like the agency owner). That infographic must use the same subheading structure, not a flat layout, since the subheadings are what make the article version read better than the flat infographics.
 
