@@ -95,6 +95,34 @@ EVIDENCE Mauro rewrote a proposed title twice in one session and landed on "Full
      G-003
 
 
+[G-011] 2026-09-21  confidence: high  hits: 1  misses: 0
+WHEN a draft names a tool, language, platform or product as part of Mauro's own stack
+THEN confirm it appears in `brand/positioning.md`, `brand/operating-baseline.md`, `brand/claims.md`
+     or a transcript in `research/transcripts/maurojpelle/`, and cut it if it does not
+EVIDENCE an article listed python alongside his agents setup. The agents are real. Mauro: "habla de
+     un python que al final yo esto nunca lo usé, así lo mencioné en el md". Same class as an
+     invented number (belief 10, G-006), applied to the stack
+
+[G-012] 2026-09-21  confidence: medium  hits: 1  misses: 0
+WHEN building an HTML block that sits inside an X article
+THEN render the content only, no handle, no logo, no subtitle and no restated section header, and
+     check whether a native X table would serve better than an image
+EVIDENCE a table shipped wrapped in a title, a subtitle, the @maurojpelle handle and a second title,
+     inside an article that had introduced it a paragraph earlier. Mauro: "no hace falta que me
+     digas un título, un subtítulo, nuestro arroba, otro título y después la tabla, porque al final
+     la tabla es lo único que necesitamos mostrar". Full branding is for the standalone QT
+     infographic, which travels without an article around it
+
+[G-013] 2026-09-21  confidence: medium  hits: 1  misses: 0
+WHEN presenting title options for an X article
+THEN at least half the options must be built on a title shape lifted from a named real article that
+     performed, with the account, the source title and its views cited next to each one
+EVIDENCE Mauro preferred a borrowed shape off an off-lane outlier to everything generated cold and
+     named it a system problem: "muchas veces claude es muy malo dándonos títulos... tenemos un
+     problema del sistema, de los skills que tenemos dentro de mauro-os". Borrowed shapes get
+     recased to G-010 and G-003, and the borrowed subject never travels with the shape. Full rules
+     in `skills/content/article-origination.md`
+
 The Gate proposes deltas after a run. Mauro's overrides are the highest-signal source: every time
 he passes something the Gate flagged, or kills something the Gate passed, that disagreement is his
 taste being made explicit and it becomes an entry.

@@ -180,6 +180,7 @@ Always one CTA, always at the end, always low commitment framing.
 - Never use more than 3 bullet points in a row without a sentence break
 - Never explain what you're about to say, just say it
 - Never write in editorial/journalist tone. Write like an operator talking to a smart peer at a coffee shop.
+- **Never name a tool, language or product Mauro does not actually run.** Set by Mauro 2026-09-21: a draft listed python alongside his agents setup. The agents are real, python he has never used, it was only ever a word in an MD file. Before any tool goes in an article, confirm it in `brand/positioning.md`, `brand/operating-baseline.md`, `brand/claims.md` or a transcript in `research/transcripts/maurojpelle/`. If it is not there, it is not in his stack and it does not go in the article. His words: "habla de un python que al final yo esto nunca lo usé, así lo mencioné en el md". Same rule as never inventing a number, applied to the stack.
 
 ---
 
@@ -443,6 +444,36 @@ Every draft marks its image spots with generation-ready prompts, cover first (5:
 
 ---
 
+### In-article HTML blocks: image or native, and how much chrome
+
+**Approved and kept.** Mauro on the first HTML-infographic article, 2026-09-21: "está buenísimo, y no veo otro artículo con algo así". Branded in-article blocks are a differentiator on X, where almost every article is flat text. Keep making them.
+
+Two rules came out of the same review.
+
+**1. Decide per block whether it is an image or a native X block.**
+
+An in-article infographic is a rendered image. X articles also support native tables and headers, and for some content the native version is better: selectable, readable on mobile at any width, editable after publishing, and it costs no render cycle. His words: "hay veces que en vez de poner esta imagen, me conviene directamente que arme la tabla dentro del artículo".
+
+| Content | Ship it as |
+|---|---|
+| A plain 2-4 column table with short cells | native X table inside the article |
+| A comparison the reader will scan once and move on | native X table |
+| A branded, visual, screenshot-worthy readout (stat tiles, matrix, flow, math bar) | rendered image |
+| Anything that needs the green palette to land | rendered image |
+| The cover, and the quote-tweet companion | rendered image, always |
+
+When in doubt, propose both and let Mauro pick. Do not default every block to an image because the render pipeline exists.
+
+**2. Strip the chrome. The block carries its content, the article carries the framing.**
+
+The rejected pattern was a title, then a subtitle, then the `@maurojpelle` handle, then another title, then the table. Five layers of wrapper on one table, inside an article that had already introduced it a paragraph earlier. His words: "no hace falta que me digas un título, un subtítulo, nuestro arroba, otro título y después la tabla, porque al final la tabla es lo único que necesitamos mostrar".
+
+**Inside an article, an in-article block is the content and nothing else.** No handle, no logo, no subtitle, no restated section header. One short label only when the block cannot be read without one, and never when the sentence above it already says the same thing.
+
+The full branded treatment (handle, title block, footer) stays where it belongs: the standalone quote-tweet infographic and the LinkedIn carousel, which travel without an article around them. See `skills/content/visual-docs/mauro-visual-doc-system.md` Type 1.
+
+---
+
 ## Output Template
 
 ```
@@ -518,6 +549,33 @@ Per `feedback_article_workflow`: show the article in chat for Mauro's review bef
 ---
 
 ## Correction Log
+
+**21 September 2026 — In-article blocks, the invented stack, and the title system is behind**
+Source: `research/transcripts/maurojpelle/2026-09-21-article-workflow-and-patience-belief.md`.
+Mauro reviewed the first article shipped with branded in-article HTML blocks. He approved the
+approach outright ("está buenísimo, no veo otro artículo con algo así") and kept it. Four
+corrections came with it:
+1. **An in-article block is not always an image.** Some blocks belong as native X tables inside
+   the article. Decide per block, propose both when unsure. New section above, "In-article HTML
+   blocks".
+2. **Strip the chrome off in-article blocks.** Title, subtitle, handle, second title, then the
+   table was five wrappers on one table the article had already introduced. Inside an article the
+   block carries content only. Full branding stays on the standalone QT infographic. Logged as
+   gate-playbook G-012.
+3. **A tool that is not in his stack does not go in an article.** A draft named python next to his
+   agents setup. The agents are real, python he has never used. Added to Anti-Patterns. Logged as
+   gate-playbook G-011.
+4. **The title system is behind, and he named it as a system problem.** He preferred a title shape
+   lifted off a random outlier article ("How to become a robotics engineer in six months", nothing
+   to do with the lane) to anything this repo generated, and said so: "tenemos un problema del
+   sistema, de los skills que tenemos dentro de mauro-os". Interim fix: every title set now carries
+   at least half its options on a borrowed shape with the source cited, and his picks get logged.
+   Rules live in `skills/content/article-origination.md`. Logged as gate-playbook G-013.
+Also from this session, and the reason `article-origination.md` now exists: articles start from a
+post that already performed or from a captured outlier article, never from a topic picked
+internally, and Claude drafts an answer to every brief question before Mauro sees it. Gaps he has
+to fill come back as one long voice note, not typed answers, because in audio he covers what he
+thinks matters ("voy a hablar yo lo que yo considero importante").
 
 **16 September 2026 — Title case resolved, "full guide" pattern added, plain-walkthrough register (miro boards article)**
 Mauro rejected the first draft of the miro board article on four counts, then rewrote the brief and the title himself. Four things came out of it, all now rules:

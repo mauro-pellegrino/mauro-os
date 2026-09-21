@@ -98,6 +98,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Any drafted prose, before delivery (anti-slop audit) | `skills/content/anti-slop-protocol.md` |
 | **Any drafted copy, before Mauro sees it** | the `gate` agent in `.claude/agents/` (4 passes, runs on a different model) |
 | Turn a system that actually runs into a monospace card + notes (source doc for Juan) | `skills/content/system-extraction.md` |
+| **Brief an article from a post that performed or an outlier article (runs first)** | `skills/content/article-origination.md` |
 | **Any transcript or doc into an X article** | `skills/content/x-articles-POINTER.md` → `~/growthub-os/skills/content/x-articles/` |
 | X article from transcript or script (legacy, Mauro voice + correction log) | `skills/content/x-article-creator.md` |
 | X article from a Miro breakdown | `skills/content/miro-to-article.md` |
@@ -138,7 +139,7 @@ Full guide in `brand/voice.md`. The non-negotiables:
 3. **No "most brands / most people" openers.**
 4. **No trailing summary sentences.** End on the point.
 5. **Natural human voice.** If it reads AI-punchy staccato, rewrite it as plain speech.
-6. **Never invent performance numbers.** Real numbers from source material only, or a bracket placeholder like [X%].
+6. **Never invent performance numbers.** Real numbers from source material only, or a bracket placeholder like [X%]. **The same applies to his stack:** never name a tool, language or product as something Mauro runs unless it is in `brand/positioning.md`, `brand/operating-baseline.md`, `brand/claims.md` or one of his transcripts. (Set 2026-09-21 after a draft credited him with python, which he has never used.)
 7. **No problem-to-purpose reversals** ("that's the filter doing its job"). State the observation and stop.
 8. **Openers are input-driven.** Lead with the strongest hook the piece actually has.
 9. Confident, slightly contrarian, expert to expert. No hedging, no guru theater, no fluff.
@@ -157,6 +158,7 @@ Full guide in `brand/voice.md`. The non-negotiables:
 - **`skills/` holds only what is in use.** Proposals, candidate models and half-adopted frameworks live in `research/`, clearly marked NOT ADOPTED.
 - **Git hygiene: pull at the start, push at the end.** Every session begins with `git checkout main && git pull` and every unit of work ends with a commit and `git push`. One commit, one push, never let unpushed commits stack up. Work on `main` unless there's a clear reason for a feature branch, and if you branch, merge it back and push promptly so `main` stays the single source of truth. This is the fix for what went wrong before: local `main` drifted 71 commits behind origin with 3 unpushed commits on top, which forced a conflict-heavy reconciliation. Don't recreate that.
 - **A DM-trigger giveaway means the asset is ready first.** Never draft or ship a post with an autodm keyword or comment-to-DM CTA unless the resource it promises (and the skill that delivers it) is already built and ready to send. The keyword is a promise; don't make it before the deliverable exists. When a draft includes a keyword CTA, prepare the giveaway alongside it or flag that it still needs building.
+- **Ask Mauro for audio, not typed answers.** When a brief, a script or a skill needs input only he has, send one consolidated question list and ask for a single long voice note. Set 2026-09-21: in audio he covers what he thinks matters instead of answering the question as asked. Transcribe it and save it to `research/transcripts/maurojpelle/` before using it. Draft an answer to every question yourself first, sourced and flagged, so he corrects instead of writing.
 - **Learning protocol.** When Mauro corrects something, log the correction and the new rule, and apply it automatically next time.
 
 ---

@@ -427,6 +427,16 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 
 ---
 
+## In-article blocks (a third context, added 2026-09-21)
+
+A block that renders **inside** an X article is not a Type 1 social asset and does not get Type 1 chrome. No handle, no logo, no subtitle, no restated section header, just the content, because the article around it already does the framing. Mauro rejected a table shipped under a title, a subtitle, the `@maurojpelle` handle and a second title: "al final la tabla es lo único que necesitamos mostrar."
+
+Before rendering one at all, check whether it should be a **native X table** instead of an image. Plain short-celled tables and one-scan comparisons read better native (selectable, mobile-safe, editable after publishing). Render an image when the block is visual, branded or screenshot-worthy. Full rules and the decision table: `skills/content/x-article-creator.md` §In-article HTML blocks.
+
+Type 1 chrome stays on the assets that travel alone: the QT infographic and the LinkedIn carousel.
+
+---
+
 ## QT reaction pattern
 
 One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
