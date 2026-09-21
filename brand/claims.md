@@ -257,6 +257,86 @@ corpus target is 50 rather than 5.
 of them with a view count). Any sentence that states a pattern as proven rather than as a live
 hypothesis pending a fuller corpus is a CLAIM failure.
 
+## Cleared in the 21 Sep article brief
+
+Source: `2026-09-21-distribution-system-article-brief.md`, approved by Mauro in chat 21 Sep 2026.
+This block supersedes the **needs sign-off** flags on the three rows at the top of this file, for
+these exact framings only.
+
+| Claim | Framing that is cleared | Public |
+|---|---|---|
+| The agency I run is at about $300k/mo | as the agency's number, with the engine as the thing that is Mauro's | yes |
+| At least a third of that comes from the organic accounts I manage | same framing | yes |
+| I closed a $28k deal off X | yes | yes |
+| This brand makes $0 today, about 200 followers, one YouTube video, 5 to 7 hours a week on it | yes, and it is an asset not an embarrassment | yes |
+
+**The framing rule does not bend.** Write it as the engine Mauro runs for the agency, never as his
+personal revenue (`brand/positioning.md`).
+
+**Explicitly not cleared, brief says ask Mauro directly:** the channel split on qualified calls over
+the last 90 days (roughly 55% X, 10% LinkedIn, 10% YouTube), and the auto-DM cadence of one to two a
+day with the performance drop starting 1 August.
+
+**Never, per the same brief:** the "$300k/mo closed from X and LinkedIn" phrasing Mauro used in the
+session (looser than the repo version, and the repo version is the one that survives checking); the
+"12 to 20 sign-ups per promoting post" figure (ownership unclear); the 40,000-banned-accounts figure
+(external consulting call, unverified, never referenced in public content).
+
+## The AI-content angle, 27 June 2026
+
+Source: `research/transcripts/maurojpelle/ai-content-that-doesnt-sound-like-ai.md`, Mauro's own
+spoken answers. These are his stances, not measurements, and they ship as stances.
+
+| Claim | Public |
+|---|---|
+| The AI tell is sameness: everyone runs the same tool, so everyone sounds the same, and sameness is invisible | yes |
+| An obviously-AI post tells a prospect the service behind it is slop too | yes |
+| He is not arguing against using AI; the aim is to make AI sound less like AI | yes |
+| The mechanism is voice notes, because the best writing is when you write like you talk | yes |
+| A voice doc does two things: sounds like him in his transcripts, and holds hard bans | yes |
+| He has never used an em dash in his life | yes |
+| Almost everyone he works with is a non-native English speaker, which makes their AI output obvious | yes |
+| Beginner: a new chat every day for a new post. Operator: split by format, each format with its own instructions and context | yes |
+
+## The patience argument, 21 Sep 2026
+
+Source: `research/transcripts/maurojpelle/2026-09-21-article-workflow-and-patience-belief.md`,
+06:07 to 09:40. Mauro's own unprompted riff, previously unmined.
+
+| Claim | Public |
+|---|---|
+| You have to be negative about the timeline to win at content; the realistic horizon is what makes the first year survivable | yes |
+| The bad attitude is expecting the first article to hit and bring clients. The good one is planning to publish 50 videos or 150 articles | yes |
+| An impossible month-one target is demoralising and is what makes people quit | yes |
+| One account Mauro runs took a full year of daily posting before the first genuinely good call | yes, **unnamed only. That account owner is a client, so `CLAUDE.md` §7 applies** |
+| Someone tried X by uploading a YouTube link, then a YouTube video, then a link again, 23 posts total, then concluded X does not work | yes, **unnamed only** |
+| The Viktor Frankl concentration-camp passage as the analogy for the same point | **Mauro's own words, held back by default.** Reads badly in a marketing article. His call to put it back |
+
+## Vendor prices, checked 21 September 2026
+
+Checked against the vendor's own page on the date shown. Re-check before any republish; a stale
+price is a CLAIM failure in a RESOURCES-format piece.
+
+| Item | Price | Source |
+|---|---|---|
+| Claude Pro | $20/month billed monthly, or $17/month on annual billing at $200 up front | claude.com/pricing, 21 Sep 2026 |
+| Claude Max | from $100/month | claude.com/pricing, 21 Sep 2026 |
+| Claude Code | included in Pro | claude.com/pricing, 21 Sep 2026 |
+| X Basic | $3.00/month, $32.00/year (web, US) | help.x.com/en/using-x/x-premium, 21 Sep 2026 |
+| X Premium | $8.00/month, $84.00/year (web, US) | same |
+| X Premium+ | $40.00/month, $395.00/year (web, US) | same |
+| Articles are not listed in the X Basic tier | | help.x.com/en/using-x/x-premium, 21 Sep 2026 |
+| The published For You ranking code is at github.com/twitter/the-algorithm | | repo README, 21 Sep 2026 |
+
+**Two things that did not survive checking, and both ship as stated non-findings.**
+
+X's own Premium page contradicts itself on which tier publishes Articles. The tier summary lists
+Articles under Premium+. The features section, under the heading for Premium and Premium+, says
+publishing Articles is limited to Premium subscribers. Say the contradiction, don't pick silently.
+
+**The claim that the analytics CSV export is gated behind Premium could not be verified** on any of
+X's own help pages. It does not ship as a fact.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
