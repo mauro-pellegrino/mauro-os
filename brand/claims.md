@@ -362,10 +362,15 @@ provenance. The article is not saved to this repo, per the standing rule.
 | Side annotations exist at a fixed offset and are commentary, never the asset | article draft | yes |
 | A diagram never carries a claim on its own authority. The capture goes inside the diagram and the provenance goes in the production note under the slot | article draft | yes |
 | The decide step has no gate on it. Ordering was the fix, and ordering is not enforcement | article draft, Mauro's own framing | yes |
+| Capture is the route people skip, and the reason sounds sensible: a real dashboard looks worse than a designed one | article draft, Mauro's own stance | yes |
+| A real dashboard looks worse than a designed one: the wrong fonts, a date range nobody asked about, a sidebar full of menu items, and a number lower than you would like | article draft | yes |
+| The cost of picking the wrong route is the time spent before you knew the asset was bad, not the bad asset itself. Mauro's framing, and "an hour" in the article is his figure of speech, never a measurement | article draft | yes, **as time spent, never as a stated hour** |
 
 **On the four-columns example.** The article illustrates the image-model failure with "four columns
-of confident nonsense". That is an illustration of the mechanism, not a measurement, so it never
-ships as a stat on a panel or in a post. Same ruling as the forty-shapes example above.
+of confident nonsense". The count is an illustration, never a measurement, so the number itself
+never ships on a panel or in a post. The mechanism does ship: an image model returns a table of
+confident nonsense in beautiful type, every word slightly off and none of it editable. Same ruling
+as the forty-shapes example above.
 
 **On "real creative" in the capture list.** The article names real creative as a thing worth
 capturing. It stays out of Mauro's own panels and posts, because ad creative is the agency's
