@@ -337,6 +337,40 @@ publishing Articles is limited to Premium subscribers. Say the contradiction, do
 **The claim that the analytics CSV export is gated behind Premium could not be verified** on any of
 X's own help pages. It does not ship as a fact.
 
+## The visual-asset rules, as written up 2026-09-23
+
+Source for every row: Mauro's own article draft on how a visual asset gets decided, built and
+placed, handed over 2026-09-23. It follows the video-board write-up above and shares its
+provenance. The article is not saved to this repo, per the standing rule.
+
+| Claim | Source | Public |
+|---|---|---|
+| Three routes to a visual, and they are not interchangeable: author it, draw it, capture it | article draft | yes |
+| Author it for a named process, a two or three column comparison, a table, a grid, a matrix, or a snippet shown exactly as written | article draft | yes |
+| Draw it for a metaphor, a feeling, a joke, or an article header | article draft | yes |
+| Capture it for evidence: a dashboard, a tracker, a real account | article draft | yes |
+| The route gets picked before the style file opens, and picking wrong is where most of the wasted time goes | article draft | yes |
+| A lane came out too dense and had to be rebuilt by hand, 2 September 2026. Every title and line of text below the render moved into blocks above and below it | article draft | yes |
+| Hand-placing a diagram on the canvas is banned, and so is prompting an image model for one. Diagrams are authored in markup, rendered and pasted in. Default since 25 August 2026 | article draft + the 2026-09-16 row above | yes |
+| The render spec is headless, at 2x, to a fixed width. The 2x is what stops the text going soft on a bigger screen or a cropped frame | article draft | yes |
+| One stylesheet, never forked. Every asset imports the same base | article draft | yes |
+| Three files in the skill, and only two get opened for a standalone asset. The lane rules are read only when the asset goes into a recording lane | article draft | yes |
+| The sandwich, in this order: a narration block above, the bare render, a consequence block below | article draft | yes |
+| The render carries no prose. Words inside it are labels, an axis name, a row name, a number | article draft | yes |
+| A standalone asset keeps its headline, takeaway band and source line, because it travels with no narration next to it. In a lane all three come off | article draft | yes |
+| Assets sit centred on the reading spine. A side-column asset does not count toward the lane's image density and gets skipped on camera | article draft | yes |
+| Side annotations exist at a fixed offset and are commentary, never the asset | article draft | yes |
+| A diagram never carries a claim on its own authority. The capture goes inside the diagram and the provenance goes in the production note under the slot | article draft | yes |
+| The decide step has no gate on it. Ordering was the fix, and ordering is not enforcement | article draft, Mauro's own framing | yes |
+
+**On the four-columns example.** The article illustrates the image-model failure with "four columns
+of confident nonsense". That is an illustration of the mechanism, not a measurement, so it never
+ships as a stat on a panel or in a post. Same ruling as the forty-shapes example above.
+
+**On "real creative" in the capture list.** The article names real creative as a thing worth
+capturing. It stays out of Mauro's own panels and posts, because ad creative is the agency's
+service and `CLAUDE.md` §1 keeps it out of his lane. Use a real account or a real post instead.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
