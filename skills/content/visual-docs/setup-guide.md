@@ -82,7 +82,7 @@ CTAs: social posts end with "DM me [keyword]". YouTube CTAs point to X, never
 **Test 1 — skill loaded:**
 > "Read mauro-visual-doc-system.md and give me the brand foundation hexes, and how the two types use them."
 
-Expected: Cream `#F7F3EA`, White `#FFFFFF`, Deep Forest `#1B4332`, Sage `#52B788`, Pale Mint `#B7E4C7`, Mint `#D8F3DC`, Honey (secondary) `#E9B949`. Social = white bg + green blocks; boards = cream bg, Deep Forest header bars, Mint item cards, Pale Mint intro bars, honey for emphasis only. If not, the skill didn't upload right.
+Expected: Cream `#F7F3EA`, White `#FFFFFF`, Deep Forest `#1B4332`, Sage `#52B788`, Pale Mint `#B7E4C7`, Mint `#D8F3DC`, Honey (secondary) `#E9B949`. Social = white bg + green blocks; boards = cream bg, Deep Forest header bars, Mint item cards, Pale Mint intro bars, honey on every asset (headline block, mono labels on dark, left bars and rules). If not, the skill didn't upload right.
 
 **Test 2 — both render modes:**
 > "Test render. Build a minimal portrait social page titled 'Setup Test' and render it. Then build a minimal 3-section board and render it as a board."

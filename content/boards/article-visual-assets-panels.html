@@ -12,7 +12,8 @@
     --body:      #1B1B1B;
     --muted:     #5F6B62;
     --dark:      #1B4332;
-    --highlight: #B7E4C7;
+    --highlight: #E9B949;
+    --mint:      #B7E4C7;
     --hot:       #52B788;
     --mono-dark: #B7E4C7;
     --hairline:  #D9DED9;
@@ -30,13 +31,14 @@
     letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
   h1 { font-size:54px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
     color:var(--ink); margin-bottom:15px; }
-  h1 .pop { background:var(--highlight); padding:0 9px;
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
     -webkit-box-decoration-break:clone; box-decoration-break:clone; }
   .lede { font-size:20px; line-height:1.55; max-width:930px; }
   .handle { font-size:20px; font-weight:700; color:var(--hot); margin:13px 0 22px; }
 
   /* STRIP — bordered stat block, mono number + line */
   .strip { border:2px solid var(--ink); padding:20px 26px 22px; margin-bottom:20px; }
+  .strip { border-top:7px solid var(--highlight); }
   .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
     letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:11px; }
   .strip .row { display:flex; align-items:baseline; gap:18px; padding:8px 0; }
@@ -53,14 +55,14 @@
   .card .t { font-size:23px; font-weight:700; color:var(--ink); line-height:1.2; }
   .card .s { font-size:18px; line-height:1.4; color:var(--body); margin-top:6px; }
   .card.last { background:var(--ink); }
-  .card.last .n { color:var(--hot); }
+  .card.last .n { color:var(--highlight); }
   .card.last .t { color:#fff; }
   .card.last .s { color:var(--mono-dark); }
 
   /* INSIGHT — dark closing block, sage rule, mono label */
-  .insight { background:var(--dark); border-left:7px solid var(--hot); padding:22px 28px 24px; margin-bottom:20px; }
+  .insight { background:var(--dark); border-left:7px solid var(--highlight); padding:22px 28px 24px; margin-bottom:20px; }
   .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
-    letter-spacing:2px; text-transform:uppercase; color:var(--hot); margin-bottom:9px; }
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:9px; }
   .insight .t { font-size:25px; line-height:1.36; font-weight:600; color:#fff; }
 
   .footer { margin-top:auto; border-top:1px solid var(--hairline);
