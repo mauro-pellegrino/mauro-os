@@ -1,0 +1,83 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Cover — the 90 day distribution build</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F7F3EA;
+    --ink:#1B4332;
+    --body:#2F4F42;
+    --highlight:#E9B949;
+    --hot:#52B788;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#111}
+  .cover{
+    width:1600px;height:640px;background:var(--ground);
+    position:relative;overflow:hidden;
+    font-family:Inter,system-ui,sans-serif;
+    display:flex;
+  }
+  /* left vertical rule */
+  .rule{position:absolute;left:70px;top:64px;bottom:64px;width:7px;background:var(--hot);}
+
+  .content{padding:78px 0 78px 108px;width:930px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+
+  .pill{
+    display:inline-block;align-self:flex-start;
+    background:var(--highlight);color:var(--ink);
+    font-family:'JetBrains Mono',monospace;font-weight:600;
+    font-size:19px;letter-spacing:2.6px;text-transform:uppercase;
+    padding:11px 20px 10px;margin-bottom:38px;
+  }
+  h1{
+    color:var(--ink);font-weight:800;font-size:104px;line-height:0.98;
+    letter-spacing:-3px;margin-bottom:34px;
+  }
+  .sub{
+    color:var(--body);font-size:34px;line-height:1.32;font-weight:400;max-width:800px;
+  }
+  .sub b{font-weight:800;color:var(--ink)}
+
+  /* right-side faint diagram: one folder, shipped three ways. bleeds off the edge */
+  .diagram{position:absolute;right:-60px;top:0;height:640px;width:760px;z-index:1;opacity:.5}
+</style></head>
+<body>
+<div class="cover">
+  <div class="rule"></div>
+
+  <svg class="diagram" viewBox="0 0 760 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="var(--hot)" stroke-width="2.5">
+      <!-- the brain: one folder everything comes out of -->
+      <rect x="40" y="262" width="186" height="132" rx="6"/>
+      <path d="M40 292 h66 l20,-26 h100"/>
+
+      <!-- the split into three vehicles -->
+      <path d="M226 328 H286"/>
+      <path d="M286 328 V116 H346"/>
+      <path d="M286 328 H346"/>
+      <path d="M286 328 V540 H346"/>
+      <circle cx="286" cy="328" r="5" fill="var(--hot)"/>
+
+      <!-- three vehicles, same source, displayed differently -->
+      <rect x="346" y="76"  width="330" height="80" rx="5"/>
+      <rect x="346" y="288" width="330" height="80" rx="5"/>
+      <rect x="346" y="500" width="330" height="80" rx="5"/>
+      <g stroke-linecap="round">
+        <path d="M382 106 h180"/><path d="M382 128 h116"/>
+        <path d="M382 318 h180"/><path d="M382 340 h84"/>
+        <path d="M382 530 h180"/><path d="M382 552 h140"/>
+      </g>
+      <circle cx="346" cy="116" r="5" fill="var(--hot)"/>
+      <circle cx="346" cy="328" r="5" fill="var(--hot)"/>
+      <circle cx="346" cy="540" r="5" fill="var(--hot)"/>
+    </g>
+  </svg>
+
+  <div class="content">
+    <span class="pill">Distribution &middot; Build</span>
+    <h1>The First<br>90 Days</h1>
+    <p class="sub">One folder, one channel, one sheet, and <b>something you own</b> at the end of every phase.</p>
+  </div>
+</div>
+</body></html>

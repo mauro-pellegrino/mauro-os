@@ -1,0 +1,201 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Panels — the 90 day distribution build</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --mint:      #B7E4C7;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+    --tint:      #F3F9F5;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:52px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
+  h1 { font-size:54px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
+    color:var(--ink); margin-bottom:15px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:20px; line-height:1.55; max-width:930px; }
+  .handle { font-size:20px; font-weight:700; color:var(--hot); margin:13px 0 22px; }
+
+  /* FORK — one start, two routes, drawn rather than listed */
+  .fork { position:relative; height:470px; margin-bottom:20px; }
+  .fork svg { position:absolute; inset:0; width:100%; height:100%; }
+  .fork .box { position:absolute; border:2px solid var(--ink); padding:16px 20px;
+    display:flex; flex-direction:column; justify-content:center; background:var(--ground); }
+  .fork .box.dead { border:2px dashed var(--hairline); background:var(--ground); }
+  .fork .box.live { background:var(--tint); }
+  .fork .n { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:7px; }
+  .fork .box.dead .n { color:var(--muted); }
+  .fork .t { font-size:21px; font-weight:700; color:var(--ink); line-height:1.24; }
+  .fork .box.dead .t { color:var(--muted); }
+  .fork .verdict { position:absolute; width:455px; }
+  .fork .verdict .v { font-size:22px; font-weight:800; color:var(--ink); line-height:1.24; }
+  .fork .verdict.off .v { color:var(--muted); }
+  .fork .verdict .s { font-size:17px; line-height:1.4; color:var(--body); margin-top:6px; }
+  .fork .verdict.off .s { color:var(--muted); }
+
+  /* ROUTE — the 90 days as a line you walk, not a row of cards */
+  .route { position:relative; height:540px; margin-bottom:18px; }
+  .route svg { position:absolute; inset:0; width:100%; height:100%; }
+  .route .stop { position:absolute; left:210px; width:746px; }
+  .route .chip { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; padding:5px 11px 4px; }
+  .route .t { font-size:25px; font-weight:800; color:var(--ink); line-height:1.16; margin-top:8px; }
+  .route .s { font-size:18px; line-height:1.4; color:var(--body); margin-top:5px; }
+
+  /* INSIGHT — dark closing block, sage rule, mono label */
+  .insight { background:var(--dark); border-left:7px solid var(--highlight); padding:22px 28px 24px; margin-bottom:20px; }
+  .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:9px; }
+  .insight .t { font-size:25px; line-height:1.36; font-weight:600; color:#fff; }
+  .insight .s { font-size:19px; line-height:1.45; color:var(--mono-dark); margin-top:10px; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 20px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ PANEL 1 · the fork, and what the default settings cost ============ -->
+<div class="page">
+  <div class="eyebrow">The 90 day build &middot; day 1 to day 90</div>
+  <h1>The tool is not the problem, <span class="pop">the settings are</span></h1>
+  <p class="lede">Everyone in your niche opens the same model on the same defaults, so the only
+    thing left to compete on is what you do to the output afterwards.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="fork">
+    <svg viewBox="0 0 956 470">
+      <path d="M478,96 V130 H228 V162" fill="none" stroke="var(--hairline)" stroke-width="3"/>
+      <path d="M478,96 V130 H728 V162" fill="none" stroke="var(--hot)" stroke-width="3"/>
+      <path d="M228,264 V278" fill="none" stroke="var(--hairline)" stroke-width="3"/>
+      <path d="M728,264 V278" fill="none" stroke="var(--hot)" stroke-width="3"/>
+      <path d="M228,378 V392" fill="none" stroke="var(--hairline)" stroke-width="3"/>
+      <path d="M728,378 V392" fill="none" stroke="var(--hot)" stroke-width="3"/>
+    </svg>
+
+    <div class="box" style="left:198px;top:0;width:560px;height:96px">
+      <div class="n">Everyone starts here</div>
+      <div class="t">You run the same tool that every other person in your niche is running</div>
+    </div>
+
+    <div class="box dead" style="left:0;top:162px;width:455px;height:102px">
+      <div class="n">Route one</div>
+      <div class="t">You ship it on the settings it came with</div>
+    </div>
+    <div class="box dead" style="left:0;top:278px;width:455px;height:100px">
+      <div class="n">What lands</div>
+      <div class="t">It reads like the last forty posts they scrolled past</div>
+    </div>
+    <div class="verdict off" style="left:0;top:392px">
+      <div class="v">Nothing stops the scroll</div>
+      <div class="s">Attention has nowhere to catch, so the thumb keeps moving down.</div>
+    </div>
+
+    <div class="box live" style="left:501px;top:162px;width:455px;height:102px">
+      <div class="n">Route two</div>
+      <div class="t">You put the effort into how it gets displayed</div>
+    </div>
+    <div class="box live" style="left:501px;top:278px;width:455px;height:100px">
+      <div class="n">What lands</div>
+      <div class="t">It sits out of place, out of order, not seen regularly</div>
+    </div>
+    <div class="verdict" style="left:501px;top:392px">
+      <div class="v">Attention actually stops</div>
+      <div class="s">And the reader has a reason to keep going down the page.</div>
+    </div>
+  </div>
+
+  <div class="insight">
+    <div class="label">What an obviously-AI post tells a prospect</div>
+    <div class="t">You're a lazy fuck who doesn't care who's reading.</div>
+    <div class="s">Slop is everywhere, so you should make an effort at making your slop look less
+      sloppy if it makes sense, because otherwise the post answers a question they never asked out
+      loud, which is whether the service is slop too.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ PANEL 2 · the route, and what you own at each stop ============ -->
+<div class="page">
+  <h1>Five phases, and each one <span class="pop">ends with something you own</span></h1>
+  <p class="lede">Nothing on this route finishes with "now you understand distribution", because
+    understanding is not a thing you can open on a Monday and actually use.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="route">
+    <svg viewBox="0 0 956 540">
+      <path d="M72,54 L132,164 L72,274 L132,384 L72,494"
+            fill="none" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M72,54 L132,164 L72,274 L132,384 L72,494"
+            fill="none" stroke="var(--highlight)" stroke-width="6" stroke-linejoin="round"
+            stroke-linecap="round" stroke-dasharray="2 22" stroke-dashoffset="11"/>
+      <g fill="var(--ground)" stroke="var(--ink)" stroke-width="6">
+        <circle cx="72" cy="54" r="22"/><circle cx="132" cy="164" r="22"/>
+        <circle cx="72" cy="274" r="22"/><circle cx="132" cy="384" r="22"/>
+        <circle cx="72" cy="494" r="22"/>
+      </g>
+      <g fill="var(--ink)" font-family="Inter,sans-serif" font-size="21" font-weight="800" text-anchor="middle">
+        <text x="72" y="62">1</text><text x="132" y="172">2</text><text x="72" y="282">3</text>
+        <text x="132" y="392">4</text><text x="72" y="502">5</text>
+      </g>
+    </svg>
+
+    <div class="stop" style="top:8px">
+      <span class="chip">Days 1 &ndash; 14</span>
+      <div class="t">Build the brain</div>
+      <div class="s">One folder holding everything true about your business, plus a voice doc.</div>
+    </div>
+    <div class="stop" style="top:118px">
+      <span class="chip">Day 15</span>
+      <div class="t">Pick one channel</div>
+      <div class="s">The channel you are on, and the one you are deliberately not doing.</div>
+    </div>
+    <div class="stop" style="top:228px">
+      <span class="chip">Days 15 &ndash; 45</span>
+      <div class="t">Track the inputs</div>
+      <div class="s">Four straight weeks of comments, replies, dms and articles, all in one sheet.</div>
+    </div>
+    <div class="stop" style="top:338px">
+      <span class="chip">Days 30 &ndash; 60</span>
+      <div class="t">Study five accounts</div>
+      <div class="s">A counted study per account, and a written reason underneath every reject.</div>
+    </div>
+    <div class="stop" style="top:448px">
+      <span class="chip">Days 45 &ndash; 90</span>
+      <div class="t">Split by vehicle</div>
+      <div class="s">One source shipped three ways, without reading like the same thing twice.</div>
+    </div>
+  </div>
+
+  <div class="insight">
+    <div class="label">Why the phases compound</div>
+    <div class="t">Every phase ends with a file, a sheet or a published piece you can point at.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>
