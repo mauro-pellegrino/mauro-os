@@ -1,0 +1,139 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Map — where the context lives</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:var(--ground); }
+  .canvas { width:1080px; padding:46px 56px 30px; margin:0 auto; position:relative; }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:11px; }
+  h1 { font-size:38px; font-weight:800; line-height:1.1; letter-spacing:-1.1px;
+    color:var(--ink); margin-bottom:10px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 8px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:17px; line-height:1.5; color:var(--body); max-width:880px; margin-bottom:26px; }
+
+  /* MAP */
+  .map { position:relative; height:360px; }
+  .map > svg { position:absolute; inset:0; width:100%; height:100%; }
+
+  .chip { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700;
+    letter-spacing:1.6px; text-transform:uppercase; padding:5px 10px 4px; }
+
+  .node { position:absolute; border:2px solid var(--ink); background:var(--ground);
+    padding:11px 14px; display:flex; flex-direction:column; justify-content:center; }
+  .node.ghost { border:2px dashed var(--hairline); }
+  .node .t { font-family:'JetBrains Mono',monospace; font-size:15px; font-weight:700;
+    color:var(--ink); line-height:1.2; }
+  .node.ghost .t { color:var(--muted); }
+  .node .s { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:500;
+    color:var(--muted); line-height:1.25; margin-top:5px; }
+
+  .note { position:absolute; font-family:'JetBrains Mono',monospace; font-size:12px;
+    line-height:1.45; color:var(--muted); }
+  .verdict { position:absolute; font-size:17px; font-weight:800; color:var(--ink); }
+  .verdict.off { color:var(--muted); }
+
+  .divider { position:absolute; top:34px; bottom:0; left:50%; width:1px; background:var(--hairline); }
+
+  .bridge { border-top:2px solid var(--ink); margin-top:8px; padding-top:16px;
+    font-size:19px; font-weight:700; color:var(--ink); }
+  .footer { display:flex; justify-content:space-between; align-items:baseline;
+    border-top:1px solid var(--hairline); margin-top:18px; padding-top:13px;
+    font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted); }
+  .footer .h { color:var(--hot); font-weight:700; }
+</style></head>
+<body>
+<div class="canvas">
+
+  <div class="eyebrow">Phase 1 &middot; where the context lives</div>
+  <h1>Two ways to hand a model your context, and <span class="pop">only one of them compounds</span></h1>
+  <p class="lede">Same operator, same prompt, same model. The only difference is whether this
+    morning's improvement is still there on Thursday.</p>
+
+  <div class="map">
+    <div class="divider"></div>
+    <svg viewBox="0 0 968 360">
+      <defs>
+        <marker id="ak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 z" fill="var(--ink)"/></marker>
+        <marker id="ag" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/></marker>
+      </defs>
+
+      <!-- LEFT: the lap that resets -->
+      <path d="M182,124 H224" fill="none" stroke="var(--ink)" stroke-width="2" marker-end="url(#ak)"/>
+      <path d="M330,156 V192 H92 V156" fill="none" stroke="var(--muted)" stroke-width="2"
+            stroke-dasharray="6 6" marker-end="url(#ag)"/>
+
+      <!-- RIGHT: one root, four files that hold -->
+      <path d="M638,124 H670 V59 H698" fill="none" stroke="var(--ink)" stroke-width="2" marker-end="url(#ak)"/>
+      <path d="M638,124 H670 V119 H698" fill="none" stroke="var(--ink)" stroke-width="2" marker-end="url(#ak)"/>
+      <path d="M638,124 H670 V179 H698" fill="none" stroke="var(--ink)" stroke-width="2" marker-end="url(#ak)"/>
+      <path d="M638,124 H670 V239 H698" fill="none" stroke="var(--ink)" stroke-width="2" marker-end="url(#ak)"/>
+    </svg>
+
+    <!-- LEFT COLUMN -->
+    <div style="position:absolute;left:0;top:0"><span class="chip">01 &middot; blank chat, every morning</span></div>
+    <div class="node ghost" style="left:0;top:96px;width:182px;height:56px">
+      <div class="t">new chat</div>
+    </div>
+    <div class="node ghost" style="left:232px;top:96px;width:198px;height:56px">
+      <div class="t">something back</div>
+      <div class="s">30 minutes, and it is fast</div>
+    </div>
+    <div class="note" style="left:78px;top:204px;width:300px;text-align:center">
+      tuesday's improvement is gone by wednesday
+    </div>
+    <div class="note" style="left:0;top:262px;width:430px">
+      whatever context you remember that day<br>
+      every format written in the same window
+    </div>
+    <div class="verdict off" style="left:0;top:322px">Nothing carries over</div>
+
+    <!-- RIGHT COLUMN -->
+    <div style="position:absolute;left:534px;top:0"><span class="chip">02 &middot; one place per format</span></div>
+    <div class="node" style="left:534px;top:96px;width:104px;height:56px">
+      <div class="t">/brain</div>
+    </div>
+    <div class="node" style="left:698px;top:34px;width:220px;height:50px">
+      <div class="t">articles</div><div class="s">instructions + examples</div>
+    </div>
+    <div class="node" style="left:698px;top:94px;width:220px;height:50px">
+      <div class="t">short-form</div><div class="s">instructions + examples</div>
+    </div>
+    <div class="node" style="left:698px;top:154px;width:220px;height:50px">
+      <div class="t">lead magnets</div><div class="s">instructions + examples</div>
+    </div>
+    <div class="node" style="left:698px;top:214px;width:220px;height:50px">
+      <div class="t">scripts</div><div class="s">instructions + examples</div>
+    </div>
+    <div class="note" style="left:534px;top:284px;width:434px">
+      a week spent on article formatting lands in one file,<br>
+      and every article after it is better for free
+    </div>
+    <div class="verdict" style="left:534px;top:322px">Context is there before you start</div>
+  </div>
+
+  <div class="bridge">Improvements stick, because they live in a file instead of in a chat window.</div>
+
+  <div class="footer"><span>&mdash; Mauro</span><span class="h">@maurojpelle</span></div>
+</div>
+</body></html>

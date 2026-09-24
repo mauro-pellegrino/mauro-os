@@ -1,0 +1,113 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Map — the five stories</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:var(--ground); }
+  .canvas { width:1080px; padding:46px 56px 30px; margin:0 auto; position:relative; }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:11px; }
+  h1 { font-size:38px; font-weight:800; line-height:1.1; letter-spacing:-1.1px;
+    color:var(--ink); margin-bottom:10px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 8px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:17px; line-height:1.5; color:var(--body); max-width:900px; margin-bottom:24px; }
+
+  /* MAP — numbered spine, one row per story */
+  .map { position:relative; }
+  .heads { display:flex; padding-left:56px; margin-bottom:10px; }
+  .heads span { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--muted); }
+  .heads .a { width:364px; }
+
+  .row { position:relative; display:flex; align-items:stretch;
+    padding:14px 0 14px 56px; border-top:1px solid var(--hairline); }
+  .row:last-of-type { border-bottom:1px solid var(--hairline); }
+  .num { position:absolute; left:0; top:14px; width:34px; height:34px;
+    background:var(--highlight); color:var(--ink); display:flex; align-items:center;
+    justify-content:center; font-family:'JetBrains Mono',monospace;
+    font-size:14px; font-weight:700; }
+  .spine { position:absolute; left:17px; top:0; bottom:0; width:2px; background:var(--hairline); }
+  .row .story { width:330px; border:2px dashed var(--hairline); padding:11px 14px;
+    display:flex; align-items:center; font-family:'JetBrains Mono',monospace;
+    font-size:13.5px; line-height:1.35; color:var(--muted); }
+  .row .arrow { width:34px; display:flex; align-items:center; justify-content:center; }
+  .row .arrow svg { width:22px; height:12px; }
+  .row .truth { flex:1; border:2px solid var(--ink); padding:11px 16px;
+    display:flex; align-items:center; font-size:16px; line-height:1.38; color:var(--body); }
+
+  .bridge { margin-top:22px; font-size:19px; font-weight:700; color:var(--ink); }
+  .footer { display:flex; justify-content:space-between; align-items:baseline;
+    border-top:1px solid var(--hairline); margin-top:20px; padding-top:13px;
+    font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted); }
+  .footer .h { color:var(--hot); font-weight:700; }
+</style></head>
+<body>
+<div class="canvas">
+
+  <div class="eyebrow">Where everyone starts &middot; and why it fails</div>
+  <h1>Five stories that keep an agency owner off the channel, <span class="pop">and what is actually true</span></h1>
+  <p class="lede">Every one of these gets told in a first call. They are all about the post, which is
+    the last thing the machine produces and the first thing everybody starts with.</p>
+
+  <div class="map">
+    <div class="spine"></div>
+    <div class="heads"><span class="a">What you tell yourself</span><span>What's actually true</span></div>
+
+    <div class="row">
+      <div class="num">01</div>
+      <div class="story">I didn't start posting three years ago, so I'm cooked</div>
+      <div class="arrow"><svg viewBox="0 0 22 12"><path d="M0,6 H16" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M14,1 L21,6 L14,11 z" fill="var(--ink)"/></svg></div>
+      <div class="truth">A three-year-old account with nothing behind it loses to a two-month-old account with twenty client engagements behind it</div>
+    </div>
+
+    <div class="row">
+      <div class="num">02</div>
+      <div class="story">Cold email and outbound is just better than content</div>
+      <div class="arrow"><svg viewBox="0 0 22 12"><path d="M0,6 H16" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M14,1 L21,6 L14,11 z" fill="var(--ink)"/></svg></div>
+      <div class="truth">Outbound stops the day you stop paying for it. A published piece keeps arriving. We run both at the agency</div>
+    </div>
+
+    <div class="row">
+      <div class="num">03</div>
+      <div class="story">Why post at all if I can rely on referrals</div>
+      <div class="arrow"><svg viewBox="0 0 22 12"><path d="M0,6 H16" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M14,1 L21,6 L14,11 z" fill="var(--ink)"/></svg></div>
+      <div class="truth">Referrals are a channel you don't control, and you already know that, or you wouldn't be reading this</div>
+    </div>
+
+    <div class="row">
+      <div class="num">04</div>
+      <div class="story">I just need to post more and be more consistent</div>
+      <div class="arrow"><svg viewBox="0 0 22 12"><path d="M0,6 H16" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M14,1 L21,6 L14,11 z" fill="var(--ink)"/></svg></div>
+      <div class="truth">Posting is the output. Starting there means starting at the end of the machine</div>
+    </div>
+
+    <div class="row">
+      <div class="num">05</div>
+      <div class="story">AI content looks generic and will cheapen my brand</div>
+      <div class="arrow"><svg viewBox="0 0 22 12"><path d="M0,6 H16" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M14,1 L21,6 L14,11 z" fill="var(--ink)"/></svg></div>
+      <div class="truth">Correct, which is why the first two weeks go on a voice document instead of on posts</div>
+    </div>
+  </div>
+
+  <div class="bridge">None of the five survives contact with work you have already done for a client.</div>
+
+  <div class="footer"><span>&mdash; Mauro</span><span class="h">@maurojpelle</span></div>
+</div>
+</body></html>
