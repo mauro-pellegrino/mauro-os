@@ -376,6 +376,41 @@ as the forty-shapes example above.
 capturing. It stays out of Mauro's own panels and posts, because ad creative is the agency's
 service and `CLAUDE.md` §1 keeps it out of his lane. Use a real account or a real post instead.
 
+## The 90 day distribution build, as written up 2026-09-24
+
+Source for every row: Mauro's own article draft, *how to build a claude code content system in 90
+days (that books calls)*, handed over in full 2026-09-24. Same provenance pattern as the video-board
+and visual-asset sections above. The article is not saved to this repo, per the standing rule.
+
+These are the framework's own numbers: a plan Mauro wrote, not a measurement of the world. They ship
+as his prescription, never as evidence of a result. The measured numbers this article uses live in
+the analytics and profile-study sections above, and those are the ones that carry caveats.
+
+| Claim | Source | Public |
+|---|---|---|
+| Five phases across 90 days, and every phase ends with a file, a sheet or a published piece you own | article draft | yes |
+| Phase 1, build the brain, days 1 to 14 | article draft | yes |
+| Phase 2, pick one channel, day 15 | article draft | yes |
+| Phase 3, choose and track the inputs, days 15 to 45 | article draft | yes |
+| Phase 4, study five accounts, days 30 to 60 | article draft | yes |
+| Phase 5, split the output by vehicle, days 45 to 90 | article draft | yes |
+| Phases 3, 4 and 5 overlap on purpose, and phase 4 is the only one that can slip a week | article draft | yes |
+| The voice recording is one sitting, 30 to 40 minutes, no script and no notes | article draft | yes |
+| The blind test is three posts written off the doc, shuffled with three you actually wrote, handed over unlabelled | article draft | yes |
+| The four tracked inputs: comments on targeted profiles, replies under your own posts, dms sent, articles published | article draft | yes |
+| "Conversations started" is the column that moves first, usually around week three | article draft | yes, **as his read, not a measurement** |
+| The input targets ship as `[X]`, deliberately left for the reader to set | article draft | yes |
+| The target list of accounts to comment on is 20 to 30 | article draft | yes |
+| An account study captures 35 days, ten columns, one row per item | article draft + the profile-study section above | yes |
+| The week: Monday 90 minutes on one article, Tuesday to Friday 45 minutes each, Friday plus 20 minutes for the sheet, once a month 2 hours for one account capture | article draft | yes |
+| Inside those 45 minutes: 30 on comments and dms as one block, 15 to write and ship the short-form post | article draft | yes |
+| That week lands a bit over 5 hours | article draft, derived from the row above | yes, **always as "a bit over 5", never as a measured figure** |
+| The article block is the one that never moves. Everything else in the week bends | article draft | yes |
+| 90 days to a booked call running it alone; 30 days to two booked calls with Mauro in it | article draft, **the offer's own promise** | yes, **needs sign-off before it ships anywhere but this article** |
+
+**On the day ranges.** They are a plan, so they never get written as "it takes 14 days". The form
+that ships is the phase and its window, the way the article states it.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
