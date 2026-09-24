@@ -65,6 +65,29 @@
   .route .t { font-size:25px; font-weight:800; color:var(--ink); line-height:1.16; margin-top:8px; }
   .route .s { font-size:18px; line-height:1.4; color:var(--body); margin-top:5px; }
 
+  /* LOOP — the starting-at-the-output cycle, drawn as a closed circuit */
+  .loop { position:relative; height:330px; margin-bottom:20px; }
+  .loop svg { position:absolute; inset:0; width:100%; height:100%; }
+  .loop .node { position:absolute; border:2px solid var(--ink); padding:14px 18px;
+    display:flex; flex-direction:column; justify-content:center; background:var(--ground); }
+  .loop .node.ghost { border:2px dashed var(--hairline); }
+  .loop .n { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:6px; }
+  .loop .node.ghost .n { color:var(--muted); }
+  .loop .t { font-size:20px; font-weight:700; color:var(--ink); line-height:1.2; }
+  .loop .node.ghost .t { color:var(--muted); }
+  .loop .ret { position:absolute; width:956px; text-align:center; font-size:19px;
+    font-weight:700; color:var(--ink); }
+
+  /* CARD GRID */
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px; }
+  .grid.four { grid-template-columns:repeat(4,1fr); }
+  .card { border:2px solid var(--ink); padding:16px 18px 18px; }
+  .card .n { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.6px; text-transform:uppercase; color:var(--hot); margin-bottom:7px; }
+  .card .t { font-size:19px; font-weight:700; color:var(--ink); line-height:1.2; }
+  .card .s { font-size:16px; line-height:1.38; color:var(--body); margin-top:6px; }
+
   /* INSIGHT — dark closing block, sage rule, mono label */
   .insight { background:var(--dark); border-left:7px solid var(--highlight); padding:22px 28px 24px; margin-bottom:20px; }
   .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
@@ -193,6 +216,70 @@
   <div class="insight">
     <div class="label">Why the phases compound</div>
     <div class="t">Every phase ends with a file, a sheet or a published piece you can point at.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ PANEL 3 · the loop you start in, and what never gets built ============ -->
+<div class="page">
+  <h1>Posting is the output, so starting there <span class="pop">starts at the end</span></h1>
+  <p class="lede">Open x, write a post, hit publish, wait, and watch nothing happen. The conclusion
+    people draw from that lap burns more hours than anything else they tell themselves.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="loop">
+    <svg viewBox="0 0 956 330">
+      <defs>
+        <marker id="lk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 z" fill="var(--ink)"/></marker>
+        <marker id="lg" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 z" fill="var(--hairline)"/></marker>
+      </defs>
+      <path d="M70,86 V102" fill="none" stroke="var(--hairline)" stroke-width="3"
+            stroke-dasharray="7 7" marker-end="url(#lg)"/>
+      <path d="M215,163 H245" fill="none" stroke="var(--ink)" stroke-width="3" marker-end="url(#lk)"/>
+      <path d="M462,163 H492" fill="none" stroke="var(--ink)" stroke-width="3" marker-end="url(#lk)"/>
+      <path d="M709,163 H739" fill="none" stroke="var(--ink)" stroke-width="3" marker-end="url(#lk)"/>
+      <path d="M848,221 V271 H145 V223" fill="none" stroke="var(--highlight)" stroke-width="4"
+            stroke-linejoin="round" marker-end="url(#lk)"/>
+    </svg>
+
+    <div class="node ghost" style="left:0;top:0;width:300px;height:86px">
+      <div class="n">Never built</div>
+      <div class="t">The brain, the voice, the split</div>
+    </div>
+
+    <div class="node" style="left:0;top:104px;width:215px;height:117px">
+      <div class="n">Step one</div>
+      <div class="t">Write a post</div>
+    </div>
+    <div class="node" style="left:247px;top:104px;width:215px;height:117px">
+      <div class="n">Step two</div>
+      <div class="t">Hit publish</div>
+    </div>
+    <div class="node" style="left:494px;top:104px;width:215px;height:117px">
+      <div class="n">Step three</div>
+      <div class="t">Wait</div>
+    </div>
+    <div class="node" style="left:741px;top:104px;width:215px;height:117px">
+      <div class="n">Step four</div>
+      <div class="t">Nothing happens</div>
+    </div>
+
+    <div class="ret" style="top:284px">So I need to post more and be more consistent</div>
+  </div>
+
+  <div class="grid four">
+    <div class="card"><div class="n">Story one</div><div class="t">I didn't start three years ago</div><div class="s">Twenty engagements nobody wrote up beats a three year old account with nothing behind it.</div></div>
+    <div class="card"><div class="n">Story two</div><div class="t">Outbound is just better</div><div class="s">Outbound stops the day you stop paying for it. A published piece keeps arriving.</div></div>
+    <div class="card"><div class="n">Story three</div><div class="t">I can rely on referrals</div><div class="s">A channel you don't control, which is why you're reading a 90 day plan instead of waiting.</div></div>
+    <div class="card"><div class="n">Story four</div><div class="t">AI content cheapens my brand</div><div class="s">Correct, and that is exactly why the first two weeks go on a voice document.</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">Why the lap never pays</div>
+    <div class="t">Nothing upstream of the post ever gets built, so every lap costs the same and returns the same.</div>
   </div>
 
   <div class="footer">&mdash; Mauro</div>
