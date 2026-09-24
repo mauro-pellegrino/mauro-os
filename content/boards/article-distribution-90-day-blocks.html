@@ -1,0 +1,488 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>In-article blocks — the 90 day distribution build</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+    --tint:      #F3F9F5;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:var(--ground); }
+
+  /* Every block is a bare in-article render: no eyebrow, no title, no handle, no footer.
+     Words inside are labels, a row name, an axis name or a number. Never prose. */
+  .canvas { width:1080px; padding:40px 56px; margin:0 auto 40px; position:relative; background:var(--ground); }
+
+  .chip { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700;
+    letter-spacing:1.6px; text-transform:uppercase; padding:5px 10px 4px; }
+  .lab { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--muted); }
+  .lab.on { color:var(--hot); }
+
+  .node { border:2px solid var(--ink); background:var(--ground); padding:11px 14px; }
+  .node.ghost { border:2px dashed var(--hairline); }
+  .node.fill { background:var(--tint); }
+  .node .t { font-family:'JetBrains Mono',monospace; font-size:15px; font-weight:700;
+    color:var(--ink); line-height:1.2; }
+  .node.ghost .t { color:var(--muted); }
+  .node .s { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:500;
+    color:var(--muted); line-height:1.35; margin-top:5px; }
+
+  .note { font-family:'JetBrains Mono',monospace; font-size:12px; line-height:1.45; color:var(--muted); }
+  .verdict { font-size:17px; font-weight:800; color:var(--ink); }
+  .verdict.off { color:var(--muted); }
+
+  /* spine map: numbered rows */
+  .rows { position:relative; }
+  .rows .spine { position:absolute; left:17px; top:0; bottom:0; width:2px; background:var(--hairline); }
+  .r { position:relative; display:flex; align-items:stretch;
+    padding:14px 0 14px 56px; border-top:1px solid var(--hairline); }
+  .r:last-child { border-bottom:1px solid var(--hairline); }
+  .num { position:absolute; left:0; top:14px; width:34px; height:34px;
+    background:var(--highlight); color:var(--ink); display:flex; align-items:center;
+    justify-content:center; font-family:'JetBrains Mono',monospace; font-size:14px; font-weight:700; }
+  .heads { display:flex; padding-left:56px; margin-bottom:10px; }
+
+  /* lanes */
+  .lanes { display:grid; gap:16px; }
+  .lanes.c2 { grid-template-columns:1fr 1fr; }
+  .lanes.c3 { grid-template-columns:repeat(3,1fr); }
+  .lanes.c4 { grid-template-columns:repeat(4,1fr); }
+  .lane { border:2px solid var(--ink); display:flex; flex-direction:column; }
+  .lane.off { border:2px dashed var(--hairline); }
+  .lane .bar { background:var(--ink); color:var(--ground); padding:8px 14px;
+    font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:1.6px; text-transform:uppercase; }
+  .lane.off .bar { background:var(--ground); color:var(--muted); border-bottom:2px dashed var(--hairline); }
+  .lane .body { padding:13px 15px 15px; }
+  .lane .h { font-size:18px; font-weight:800; color:var(--ink); line-height:1.2; }
+  .lane.off .h { color:var(--muted); }
+  .lane ul { list-style:none; margin-top:9px; }
+  .lane li { font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.45;
+    color:var(--body); padding-left:15px; position:relative; margin-bottom:5px; }
+  .lane li:before { content:"\203A"; position:absolute; left:0; color:var(--hot); font-weight:700; }
+  .lane.off li { color:var(--muted); }
+  .lane.off li:before { content:"\00D7"; color:var(--muted); }
+
+  /* stat tiles */
+  .tiles { display:grid; gap:14px; }
+  .tiles.c3 { grid-template-columns:repeat(3,1fr); }
+  .tiles.c4 { grid-template-columns:repeat(4,1fr); }
+  .tile { border:2px solid var(--ink); padding:14px 16px 16px; }
+  .tile.off { border:2px dashed var(--hairline); }
+  .tile .n { font-size:34px; font-weight:800; color:var(--ink); line-height:1; letter-spacing:-1px; }
+  .tile.off .n { color:var(--muted); }
+  .tile .k { font-family:'JetBrains Mono',monospace; font-size:11.5px; line-height:1.35;
+    color:var(--muted); margin-top:8px; }
+
+  .foot { margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:11.5px;
+    line-height:1.5; color:var(--muted); border-top:1px solid var(--hairline); padding-top:11px; }
+  .foot b { color:var(--ink); font-weight:700; }
+  .mono-title { font-family:JetBrains Mono,monospace; font-size:15px; font-weight:700; color:var(--ink); line-height:1.2; }
+  .arrow { display:flex; align-items:center; justify-content:center; }
+</style></head>
+<body>
+
+<!-- ============ 1 · the five phases — slot: "Here is the whole thing." ============ -->
+<div class="canvas">
+  <div class="rows">
+    <div class="spine"></div>
+    <div class="heads"><span class="lab" style="width:330px">The phase</span><span class="lab">What you are holding when it ends</span></div>
+    <div class="r"><div class="num">01</div>
+      <div style="width:330px"><span class="chip">Days 1 &ndash; 14</span>
+        <div class="verdict" style="margin-top:7px">Build the brain</div></div>
+      <div class="node" style="flex:1"><div class="t">one folder, one voice doc</div>
+        <div class="s">everything true about the business in one place, and a voice document that passed a blind test</div></div>
+    </div>
+    <div class="r"><div class="num">02</div>
+      <div style="width:330px"><span class="chip">Day 15</span>
+        <div class="verdict" style="margin-top:7px">Pick one channel</div></div>
+      <div class="node" style="flex:1"><div class="t">two lines, written down</div>
+        <div class="s">the channel you are on, and the channel you are deliberately not doing yet</div></div>
+    </div>
+    <div class="r"><div class="num">03</div>
+      <div style="width:330px"><span class="chip">Days 15 &ndash; 45</span>
+        <div class="verdict" style="margin-top:7px">Track the inputs</div></div>
+      <div class="node" style="flex:1"><div class="t">four rows, no gaps</div>
+        <div class="s">comments, replies, dms sent, articles published, four straight weeks in one sheet</div></div>
+    </div>
+    <div class="r"><div class="num">04</div>
+      <div style="width:330px"><span class="chip">Days 30 &ndash; 60</span>
+        <div class="verdict" style="margin-top:7px">Study five accounts</div></div>
+      <div class="node" style="flex:1"><div class="t">five verdict tables</div>
+        <div class="s">one counted study per account, one adopt minimum, a written reason under every reject</div></div>
+    </div>
+    <div class="r"><div class="num">05</div>
+      <div style="width:330px"><span class="chip">Days 45 &ndash; 90</span>
+        <div class="verdict" style="margin-top:7px">Split by vehicle</div></div>
+      <div class="node" style="flex:1"><div class="t">one source, three vehicles</div>
+        <div class="s">article, short-form and giveaway off the same work, and no two read the same</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 2 · the brain — slot: Phase 1 ============ -->
+<div class="canvas">
+  <div style="display:flex;align-items:stretch">
+    <div style="width:270px">
+      <span class="chip">Already exists</span>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+        <div class="node ghost"><div class="t">call transcripts</div></div>
+        <div class="node ghost"><div class="t">client work</div></div>
+        <div class="node ghost"><div class="t">case studies</div></div>
+        <div class="node ghost"><div class="t">wins, screenshots</div></div>
+        <div class="node ghost"><div class="t">offers, pricing</div></div>
+      </div>
+    </div>
+    <div class="arrow" style="width:96px">
+      <svg width="80" height="40" viewBox="0 0 80 40"><path d="M4,20 H64" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M62,13 L74,20 L62,27 z" fill="var(--ink)"/></svg>
+    </div>
+    <div style="width:206px;display:flex;flex-direction:column;justify-content:center">
+      <span class="chip">One location</span>
+      <div class="node fill" style="margin-top:12px;padding:20px 16px">
+        <div class="t" style="font-size:24px">/brain</div>
+        <div class="s" style="margin-top:9px">unsorted is fine<br>anonymised on the way in<br>raw kept beside cleaned</div>
+      </div>
+    </div>
+    <div class="arrow" style="width:96px">
+      <svg width="80" height="40" viewBox="0 0 80 40"><path d="M4,20 H64" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M62,13 L74,20 L62,27 z" fill="var(--ink)"/></svg>
+    </div>
+    <div style="flex:1">
+      <span class="chip">Prompt 1 returns</span>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+        <div class="node"><div class="t">01 inventory</div><div class="s">one line per file, and what it could prove</div></div>
+        <div class="node"><div class="t">02 claims table</div><div class="s">every number, its file, public or not</div></div>
+        <div class="node"><div class="t">03 ten angles</div><div class="s">each traced to a named file</div></div>
+        <div class="node fill"><div class="t">04 gap list</div><div class="s">the recordings still missing</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><b>04 is the one that pays for the exercise.</b> It turns "what do I post about" into a short list of recordings to make.</div>
+</div>
+
+<!-- ============ 3 · the voice pipeline — slot: after prompt 2 ============ -->
+<div class="canvas">
+  <div style="display:flex;align-items:stretch;gap:14px">
+    <div class="node" style="width:212px"><div class="t">01 record</div>
+      <div class="s">one sitting, 30 to 40 minutes<br>explaining it to a client<br>no script, no hook, tangents wanted</div></div>
+    <div class="arrow" style="width:32px"><svg width="30" height="30" viewBox="0 0 36 30"><path d="M2,15 H24" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M22,9 L32,15 L22,21 z" fill="var(--ink)"/></svg></div>
+    <div class="node" style="width:212px"><div class="t">02 transcribe raw</div>
+      <div class="s">ums, false starts, repeats,<br>swearing, abandoned sentences,<br>topic jumps, all kept</div></div>
+    <div class="arrow" style="width:32px"><svg width="30" height="30" viewBox="0 0 36 30"><path d="M2,15 H24" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M22,9 L32,15 L22,21 z" fill="var(--ink)"/></svg></div>
+    <div class="node" style="width:212px"><div class="t">03 measure</div>
+      <div class="s">sentence lengths, openers,<br>hedges, verdict words, profanity,<br>punctuation, the typos left in</div></div>
+    <div class="arrow" style="width:32px"><svg width="30" height="30" viewBox="0 0 36 30"><path d="M2,15 H24" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M22,9 L32,15 L22,21 z" fill="var(--ink)"/></svg></div>
+    <div class="node fill" style="width:212px"><div class="t">04 voice doc</div>
+      <div class="s">every rule cites a real line,<br>every count states its n,<br>ends on a hard-ban list</div></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;margin-top:18px">
+    <span class="chip">Where it fails</span>
+    <div class="note" style="flex:1">clean the transcript at step 02 and step 03 measures the cleaning, not the voice</div>
+  </div>
+</div>
+
+<!-- ============ 4 · the blind test — slot: The blind test ============ -->
+<div class="canvas">
+  <div style="display:flex;align-items:stretch;gap:14px">
+    <div style="width:250px">
+      <span class="lab">The six</span>
+      <div style="margin-top:11px;display:flex;flex-direction:column;gap:8px">
+        <div class="node fill"><div class="t">3 written off the doc</div></div>
+        <div class="node"><div class="t">3 you actually wrote</div></div>
+        <div class="node ghost"><div class="t">shuffled, unlabelled</div></div>
+      </div>
+    </div>
+    <div class="arrow" style="width:52px"><svg width="40" height="30" viewBox="0 0 40 30"><path d="M2,15 H28" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M26,9 L36,15 L26,21 z" fill="var(--ink)"/></svg></div>
+    <div class="node" style="width:220px;display:flex;flex-direction:column;justify-content:center">
+      <div class="t">someone who knows<br>how you write</div>
+      <div class="s" style="margin-top:8px">picks yours out of the six</div>
+    </div>
+    <div class="arrow" style="width:52px"><svg width="40" height="30" viewBox="0 0 40 30"><path d="M2,15 H28" stroke="var(--ink)" stroke-width="2" fill="none"/><path d="M26,9 L36,15 L26,21 z" fill="var(--ink)"/></svg></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:10px">
+      <div class="lane"><div class="bar">Can't reliably pick</div>
+        <div class="body"><div class="h">Ship off it</div></div></div>
+      <div class="lane off"><div class="bar">Picks yours every time</div>
+        <div class="body"><div class="h">The tells are the rules you are missing</div></div></div>
+    </div>
+  </div>
+  <div class="foot"><b>A voice doc that has not passed a blind test is a hypothesis.</b></div>
+</div>
+
+<!-- ============ 5 · x premium, the contradiction — slot: Resources for phase 2 ============ -->
+<div class="canvas">
+  <div class="lanes c2">
+    <div class="lane off"><div class="bar">Tier summary, top of the page</div>
+      <div class="body"><div class="h">Articles listed under Premium+</div>
+        <ul><li>$40 a month on web</li></ul></div></div>
+    <div class="lane"><div class="bar">Features section, same page</div>
+      <div class="body"><div class="h">Publishing Articles limited to Premium</div>
+        <ul><li>$8 a month, $84 a year on web</li></ul></div></div>
+  </div>
+  <div class="foot"><b>X's own help page says both.</b> Read here as the detailed section being the accurate one, which puts you at $8. Check what your own account offers before paying for the higher tier. <b>Basic does not carry Articles either way.</b></div>
+</div>
+
+<!-- ============ 6 · two weeks of reach — slot: Why inputs and not reach ============ -->
+<div class="canvas">
+  <div class="heads" style="padding-left:0"><span class="lab" style="width:190px">@maurojpelle</span><span class="lab">Own account, daily overview export</span></div>
+  <div class="tiles c4">
+    <div class="tile off"><div class="n">32,455</div><div class="k">impressions<br>sep 2 to 8</div></div>
+    <div class="tile"><div class="n">10,258</div><div class="k">impressions<br>sep 9 to 15</div></div>
+    <div class="tile off"><div class="n">113</div><div class="k">new follows<br>sep 2 to 8</div></div>
+    <div class="tile"><div class="n">109</div><div class="k">new follows<br>sep 9 to 15</div></div>
+  </div>
+  <div style="display:flex;gap:14px;margin-top:14px">
+    <div class="node fill" style="flex:1"><div class="t">impressions &minus;68.4%</div><div class="s">week over week</div></div>
+    <div class="node fill" style="flex:1"><div class="t">new follows &minus;4</div><div class="s">week over week</div></div>
+    <div class="node fill" style="flex:1"><div class="t">3.48 &rarr; 10.63</div><div class="s">follows per 1,000 impressions</div></div>
+  </div>
+  <div class="foot"><b>Two weeks is not a trend.</b> Managed to impressions, week two reads as a collapse. Measured per view, it worked three times harder.</div>
+</div>
+
+<!-- ============ 7 · the counted account study — slot: How to actually study an account ============ -->
+<div class="canvas">
+  <div class="heads" style="padding-left:0"><span class="lab" style="width:190px">@shannholmberg</span><span class="lab">Not my numbers. 52 items, 11 aug to 14 sep 2026, counted by hand</span></div>
+  <div class="tiles c4">
+    <div class="tile"><div class="n">52</div><div class="k">items in the window</div></div>
+    <div class="tile"><div class="n">9,553</div><div class="k">median impressions</div></div>
+    <div class="tile"><div class="n">81%</div><div class="k">of reach in the top 10 items</div></div>
+    <div class="tile"><div class="n">7.5x</div><div class="k">quote tweet median over standalone median</div></div>
+  </div>
+  <div style="display:flex;gap:14px;margin-top:14px">
+    <div class="node" style="flex:1"><div class="t">35 of 52 were quote tweets</div><div class="s">11 of the 13 outliers sat there</div></div>
+    <div class="node ghost" style="flex:1"><div class="t">6 of 6 link-card posts</div><div class="s">every one landed below the account median</div></div>
+  </div>
+  <div class="foot"><b>The limits ship with the numbers.</b> One account, 35 days, n=52. Impressions read at a single moment and still climbing, so every figure is a floor. No follower data captured, so none of it says whether the reach converted.</div>
+</div>
+
+<!-- ============ 8 · the verdict table — slot: The verdict table ============ -->
+<div class="canvas">
+  <div class="lanes c3">
+    <div class="lane"><div class="bar">Adopt</div>
+      <div class="body"><div class="h">Runs this month, as is</div>
+        <ul><li>the mechanic, named</li><li>where it goes in your week</li></ul></div></div>
+    <div class="lane"><div class="bar">Adapt</div>
+      <div class="body"><div class="h">Mechanism transfers, calendar does not</div>
+        <ul><li>what carries over</li><li>what you are changing, and why</li></ul></div></div>
+    <div class="lane off"><div class="bar">Reject</div>
+      <div class="body"><div class="h">Works for them, not for you</div>
+        <ul><li>the reason, written down</li><li>what would have to change first</li></ul></div></div>
+  </div>
+  <div class="foot"><b>The reason column under a reject is the whole value of the table.</b> Without it you re-adopt the same rejected tactic in four months because you forgot why you killed it.</div>
+</div>
+
+<!-- ============ 9 · one source, three vehicles — slot: Phase 5 ============ -->
+<div class="canvas">
+  <div style="display:flex;align-items:center">
+    <div style="width:230px">
+      <span class="chip">One source</span>
+      <div class="node fill" style="margin-top:12px;padding:18px 16px">
+        <div class="t" style="font-size:19px">one engagement<br>that went well</div>
+        <div class="s" style="margin-top:8px">a call, a project, a result, a recording</div>
+      </div>
+    </div>
+    <div class="arrow" style="width:70px">
+      <svg width="56" height="200" viewBox="0 0 56 200">
+        <path d="M2,100 H20 V32 H44" stroke="var(--ink)" stroke-width="2" fill="none"/>
+        <path d="M2,100 H20 V100 H44" stroke="var(--ink)" stroke-width="2" fill="none"/>
+        <path d="M2,100 H20 V168 H44" stroke="var(--ink)" stroke-width="2" fill="none"/>
+        <path d="M42,26 L52,32 L42,38 z" fill="var(--ink)"/>
+        <path d="M42,94 L52,100 L42,106 z" fill="var(--ink)"/>
+        <path d="M42,162 L52,168 L42,174 z" fill="var(--ink)"/>
+      </svg>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:10px">
+      <div class="node"><div class="t">article</div><div class="s">the full walkthrough of what you did and why, with the numbers</div></div>
+      <div class="node"><div class="t">short-form</div><div class="s">the four arguments inside it, each one standing on its own</div></div>
+      <div class="node"><div class="t">giveaway</div><div class="s">the actual template or checklist you used during the work</div></div>
+    </div>
+  </div>
+  <div class="foot"><b>The failure mode is publishing the same piece three times in three shapes.</b> Three lanes, three jobs, one source underneath.</div>
+</div>
+
+<!-- ============ 10 · the first screen — slot: The first screen is most of the job ============ -->
+<div class="canvas">
+  <div style="display:flex;gap:22px;align-items:stretch">
+    <div style="width:340px">
+      <span class="lab">What the feed shows</span>
+      <div style="margin-top:11px;border:2px solid var(--ink)">
+        <div style="height:104px;background:var(--tint);border-bottom:2px solid var(--ink);display:flex;align-items:center;justify-content:center">
+          <span class="lab on">cover image</span></div>
+        <div style="padding:12px 14px;border-bottom:1px solid var(--hairline)">
+          <div class="mono-title">the title, in large text</div></div>
+        <div style="padding:12px 14px">
+          <div style="height:7px;background:var(--hairline);margin-bottom:7px"></div>
+          <div style="height:7px;background:var(--hairline);margin-bottom:7px"></div>
+          <div style="height:7px;background:var(--hairline);width:60%"></div>
+          <div class="note" style="margin-top:9px">the first three lines</div>
+        </div>
+      </div>
+      <div class="note" style="margin-top:10px">built as one unit, like a youtube thumbnail</div>
+    </div>
+    <div style="flex:1">
+      <span class="lab">What moves it, counted</span>
+      <div style="margin-top:11px;display:flex;flex-direction:column;gap:8px">
+        <div class="node"><div class="t">write long</div><div class="s">1,800 to 3,000 words medians 225,900 impressions, against 73,300 for 900 to 1,800. n=41 captures, 24 accounts</div></div>
+        <div class="node"><div class="t">capitalise the title</div><div class="s">three accounts tested capitalised against lowercase. Capitalised won every time, by 5x, 6x and 12x</div></div>
+        <div class="node"><div class="t">a concrete head noun</div><div class="s">a tool, a system, a named method, a number. "this mistake" has no referent, so it only travels to people who already follow you</div></div>
+        <div class="node fill"><div class="t">open with "how"</div><div class="s">22 of 52 items medianed 23,378 against 3,539 for the other 30. One account, one month, so a hypothesis</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><b>Cover and title carry different jobs.</b> Say the same thing in both and you spent one of the two assets you had.</div>
+</div>
+
+<!-- ============ 11 · what gets repeated vs what is in the code ============ -->
+<div class="canvas">
+  <div class="rows">
+    <div class="spine"></div>
+    <div class="heads"><span class="lab" style="width:352px">What gets repeated</span><span class="lab">What is in the published code</span></div>
+    <div class="r"><div class="num">01</div>
+      <div class="node ghost" style="width:352px;margin-right:14px"><div class="t">a reply is worth 13.5 likes</div></div>
+      <div class="node" style="flex:1"><div class="t">2023 number, from a system that got replaced</div></div></div>
+    <div class="r"><div class="num">02</div>
+      <div class="node ghost" style="width:352px;margin-right:14px"><div class="t">a repost is worth 20x</div></div>
+      <div class="node" style="flex:1"><div class="t">2023 number, same system</div></div></div>
+    <div class="r"><div class="num">03</div>
+      <div class="node ghost" style="width:352px;margin-right:14px"><div class="t">one reply beats 150 likes</div></div>
+      <div class="node" style="flex:1"><div class="t">2023 number, same system</div></div></div>
+    <div class="r"><div class="num">04</div>
+      <div class="node ghost" style="width:352px;margin-right:14px"><div class="t">links get suppressed 80%</div></div>
+      <div class="node" style="flex:1"><div class="t">no link filter in the code, and the scorer does not touch external links at all</div></div></div>
+    <div class="r"><div class="num">05</div>
+      <div class="node ghost" style="width:352px;margin-right:14px"><div class="t">posting more stacks</div></div>
+      <div class="node" style="flex:1"><div class="t">a diversity function decays your own posts against each other inside one feed response, sorted by score</div></div></div>
+  </div>
+  <div class="foot"><b>github.com/twitter/the-algorithm.</b> The repo gives the formula and the full list of scored actions, and zero of the weight values. Anyone pricing a repost in 2026 is guessing.</div>
+</div>
+
+<!-- ============ 12 · what the scorer reads ============ -->
+<div class="canvas">
+  <div class="lanes c2">
+    <div class="lane"><div class="bar">Scored, added</div>
+      <div class="body"><ul>
+        <li>profile click</li><li>follow author</li><li>share via dm</li>
+        <li>share via copy link</li><li>dwell time</li><li>quoted click</li></ul></div></div>
+    <div class="lane off"><div class="bar">Scored, subtracted</div>
+      <div class="body"><ul>
+        <li>not interested</li><li>block author</li><li>mute author</li><li>report</li></ul></div></div>
+  </div>
+  <div style="display:flex;gap:14px;margin-top:14px">
+    <div class="node fill" style="flex:1"><div class="t">a like is on neither list</div>
+      <div class="s">a post that earns a profile visit and a follow works more of the scorer than one that earns a like</div></div>
+    <div class="node" style="flex:1"><div class="t">the levers were deleted on purpose</div>
+      <div class="s">every hand-engineered feature removed, so no post-at-9am, no hashtag, no reply-to-yourself</div></div>
+  </div>
+</div>
+
+<!-- ============ 13 · the week, inside 5 to 7 hours ============ -->
+<div class="canvas">
+  <div class="heads" style="padding-left:0"><span class="lab" style="width:230px">The week</span><span class="lab">The article block never moves. Everything else bends</span></div>
+  <div style="display:flex;gap:12px;align-items:stretch">
+    <div class="lane" style="width:250px"><div class="bar">Monday &middot; 90 min</div>
+      <div class="body"><div class="h">One article</div>
+        <ul><li>source picked</li><li>structure done</li><li>draft written</li><li>first screen built</li></ul>
+        <div class="note" style="margin-top:9px">nothing else happens monday</div></div></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;gap:12px">
+        <div class="node" style="flex:1"><div class="t">tue</div><div class="s">45 min</div></div>
+        <div class="node" style="flex:1"><div class="t">wed</div><div class="s">45 min</div></div>
+        <div class="node" style="flex:1"><div class="t">thu</div><div class="s">45 min</div></div>
+        <div class="node" style="flex:1"><div class="t">fri</div><div class="s">45 min + 20</div></div>
+      </div>
+      <div style="display:flex;gap:12px;flex:1">
+        <div class="node fill" style="flex:1"><div class="t">30 min</div><div class="s">comments and dms, one block, off the notification list, never by scrolling</div></div>
+        <div class="node fill" style="flex:1"><div class="t">15 min</div><div class="s">write and ship the short-form post, off the same source as the article</div></div>
+        <div class="node fill" style="flex:1"><div class="t">20 min, friday</div><div class="s">fill the sheet. Friday rather than monday, because on monday you round up</div></div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:12px">
+    <div class="node" style="flex:1"><div class="t">once a month, 2 hours</div><div class="s">one competitor account captured and counted</div></div>
+    <div class="node" style="flex:1"><div class="t">a bit over 5 hours a week</div><div class="s">and nothing left over for scrolling, which is deliberate</div></div>
+  </div>
+</div>
+
+<!-- ============ 14 · the 90 days on one page — slot: The 90 days on one page ============ -->
+<div class="canvas">
+  <div style="position:relative;height:262px">
+    <svg viewBox="0 0 968 262" style="position:absolute;inset:0;width:100%;height:100%">
+      <g stroke="var(--hairline)" stroke-width="1">
+        <line x1="210" y1="26" x2="210" y2="248"/><line x1="336" y1="26" x2="336" y2="248"/>
+        <line x1="463" y1="26" x2="463" y2="248"/><line x1="589" y1="26" x2="589" y2="248"/>
+        <line x1="715" y1="26" x2="715" y2="248"/><line x1="967" y1="26" x2="967" y2="248"/>
+      </g>
+      <g font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="var(--muted)">
+        <text x="210" y="16">DAY 1</text><text x="336" y="16">15</text><text x="463" y="16">30</text>
+        <text x="589" y="16">45</text><text x="715" y="16">60</text><text x="938" y="16">90</text>
+      </g>
+    </svg>
+    <div style="position:absolute;left:0;top:36px;width:200px" class="verdict">Build the brain</div>
+    <div style="position:absolute;left:210px;top:32px;width:126px;height:32px;background:var(--ink)"></div>
+    <div style="position:absolute;left:0;top:80px;width:200px" class="verdict">Pick one channel</div>
+    <div style="position:absolute;left:330px;top:76px;width:12px;height:32px;background:var(--highlight)"></div>
+    <div style="position:absolute;left:0;top:124px;width:200px" class="verdict">Track the inputs</div>
+    <div style="position:absolute;left:336px;top:120px;width:253px;height:32px;background:var(--ink)"></div>
+    <div style="position:absolute;left:0;top:168px;width:200px" class="verdict">Study five accounts</div>
+    <div style="position:absolute;left:463px;top:164px;width:252px;height:32px;background:var(--hot)"></div>
+    <div style="position:absolute;left:0;top:212px;width:200px" class="verdict">Split by vehicle</div>
+    <div style="position:absolute;left:589px;top:208px;width:378px;height:32px;background:var(--ink)"></div>
+  </div>
+  <div class="foot"><b>Phases 3, 4 and 5 overlap on purpose.</b> Phase 4, in sage, is the only one that can slip a week without breaking anything after it.</div>
+</div>
+
+<!-- ============ 15 · the stack, with the prices checked ============ -->
+<div class="canvas">
+  <div class="lanes c3">
+    <div class="lane"><div class="bar">Tier 0 &middot; month one</div>
+      <div class="body"><div class="h">claude, and a folder</div>
+        <ul><li>$20 a month billed monthly</li><li>$17 a month on annual, $200 up front</li><li>the brain, the voice doc, the extraction</li></ul></div></div>
+    <div class="lane"><div class="bar">Tier 1 &middot; once publishing</div>
+      <div class="body"><div class="h">x premium, for Articles</div>
+        <ul><li>$8 a month, $84 a year on web</li><li>see the tier contradiction above</li></ul></div></div>
+    <div class="lane off"><div class="bar">Tier 2 &middot; later</div>
+      <div class="body"><div class="h">Visual tooling, and a scheduler if the cadence needs one</div>
+        <ul><li>no price, I do not run a scheduler</li></ul></div></div>
+  </div>
+  <div class="foot"><b>Under $30 a month for the first two tiers.</b> No payment processor, no crm, no email tool. Buying tier 2 in month one is the most common way people avoid phase 1.</div>
+</div>
+
+<!-- ============ 16 · milestones ============ -->
+<div class="canvas">
+  <div class="lanes c3">
+    <div class="lane"><div class="bar">End of month 1</div>
+      <div class="body"><ul>
+        <li>open one place and find every transcript, case study, win and piece of client work</li>
+        <li>pull three publishable angles out of it without writing from scratch</li>
+        <li>name the channel you are on, and the one you are not doing yet</li>
+        <li>get something back that sounds like you rather than like a tool</li></ul></div></div>
+    <div class="lane"><div class="bar">End of month 2</div>
+      <div class="body"><ul>
+        <li>hit your weekly input numbers without deciding what to do each morning</li>
+        <li>name five accounts, and what you are taking from each</li>
+        <li>ship one source as three vehicles without repeating yourself</li>
+        <li>build cover, title and first three lines as one unit</li></ul></div></div>
+    <div class="lane"><div class="bar">End of month 3</div>
+      <div class="body"><ul>
+        <li>say which piece produced which conversation, and be right</li>
+        <li>read four weeks of inputs and name the lane producing replies</li>
+        <li>run the week inside the hours you have, without it eating delivery</li>
+        <li>trace a booked call back to a specific post, article or dm</li></ul></div></div>
+  </div>
+  <div class="foot"><b>Written as things you can do, not numbers you have to hit.</b> Numbers you have to hit are what make you quit in week three.</div>
+</div>
+
+</body></html>
+
