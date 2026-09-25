@@ -122,6 +122,7 @@ and `brand/analytics/exports/2026-09-09_2026-09-15-content.csv` (per-post). Work
 | Highest-reach single reply that week: 124 impressions, 0 follows | content export | yes |
 | Reply-reach spread that week: one reply under a large in-niche account did 124 impressions, while 7 replies under a smaller account did 68 between them | content export | yes |
 | Link/media posts: 7 posts, 33.7% of the week's impressions, 11 of 15 bookmarks | content export | yes |
+| Profile visits per 1,000 impressions that week: 22.5 on the 173 replies (69 / 3,072), 2.2 on the four bare article links (5 / 2,303), a 10.2x gap on the rounded pair | derived from the content export | yes |
 | Length buckets: 15 words or under n=4 median 529 impressions; 30-60 words n=17 median 143. All four posts in the short bucket are bare t.co links | content export | yes, **always with the confound stated** |
 
 **Two cautions on this block.** Two weeks is not a trend, say so when quoting it. And the
