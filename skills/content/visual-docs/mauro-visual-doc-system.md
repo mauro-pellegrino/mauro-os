@@ -97,6 +97,15 @@ Three or four honey marks per page is the target. It stays a mark and a fill beh
 
 **Handle:** `@maurojpelle` (Sage) · **Footer:** `— Mauro` (left-aligned, above a thin Deep Forest divider). Optional on boards.
 
+**No handle on a QT panel (Mauro, 2026-09-28).** The handle block comes off every square QT
+infographic. The tweet it hangs under already carries his name, so the panel repeating it is chrome
+the asset doesn't need. The `— Mauro` footer stays. Carousels and lead-magnet covers keep the handle.
+
+**The H1 on a Type 1 panel is Ink `#1B1B1B`, not Deep Forest (Mauro, 2026-09-28).** Green belongs on
+the eyebrow, the first line of the panel. A green headline on top of a green eyebrow puts the brand
+colour on the two biggest blocks at once. Every border, dark fill and stat number stays Deep Forest,
+so the page still reads green.
+
 ### How the two types use it
 
 - **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts), honey on the headline block and the marks listed above. The accent families are available for section variety, and green stays the default.
@@ -448,7 +457,7 @@ Type 1 chrome stays on the assets that travel alone: the QT infographic and the 
 
 ## QT reaction pattern
 
-One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
+One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. **No `@maurojpelle` block on the panel, and the H1 is Ink, not Deep Forest** (see Brand). Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
 
 ---
 

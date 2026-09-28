@@ -123,6 +123,18 @@ EVIDENCE Mauro preferred a borrowed shape off an off-lane outlier to everything 
      recased to G-010 and G-003, and the borrowed subject never travels with the shape. Full rules
      in `skills/content/article-origination.md`
 
+[G-014] 2026-09-28  confidence: medium  hits: 1  misses: 0
+WHEN building a square QT infographic panel for Mauro
+THEN give it no `@maurojpelle` handle block, and set the H1 in Ink `#1B1B1B` rather than Deep Forest,
+     leaving green on the eyebrow, the borders, the dark fills and the stat numbers
+EVIDENCE the profile-study QT pair shipped with the handle under the lede on both panels and a green
+     H1 on both, copied forward from every earlier QT build in `content/boards/`. Mauro: "the
+     infographics without the @maurojpelle and the first part in green (no the title)". The tweet
+     underneath already carries his name, so the panel restating it is chrome the asset doesn't need.
+     Same family as G-012, which stripped chrome off in-article blocks: this narrows what counts as
+     necessary chrome on the standalone asset too
+
+
 The Gate proposes deltas after a run. Mauro's overrides are the highest-signal source: every time
 he passes something the Gate flagged, or kills something the Gate passed, that disagreement is his
 taste being made explicit and it becomes an entry.

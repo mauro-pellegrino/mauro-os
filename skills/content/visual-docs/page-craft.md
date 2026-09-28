@@ -54,7 +54,10 @@ Each color does exactly one job, on every page, without exception:
   left bar. **Never a fill area wider than ~60px.** This is the whole reason it reads as an accent
   instead of a second brand color.
 - **`--dark`** is one callout per page, max. Two dark boxes on one page and neither one lands.
-- **`--ink`** is every heading and every border. One color for structure means the page reads as a grid.
+- **`--ink`** is every border, every dark fill and every stat number. One color for structure means the
+  page reads as a grid. On Mauro's own Type 1 panels the H1 is the exception: it takes `--body`, because
+  green on the eyebrow and green on the headline is the brand colour twice at the top of the page. A
+  client doc follows the client's own heading colour.
 
 Break the role split and the doc immediately looks assembled rather than designed. This is the most
 common failure and it is not subtle.
