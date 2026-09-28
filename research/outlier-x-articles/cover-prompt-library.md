@@ -426,6 +426,173 @@ Three things worth taking:
 
 ---
 
+## 06. Movie-poster hijack, borrowed logo as the hero's mask, plot mapped to the how-to
+
+**Source account:** `@immortalhowwl` (display name "Logics", verified)
+**Article title:** `AI "Money Heist" With GPT6-Astra: 10 Agents, 10 Minutes, 10 Steps`
+**Opening line:** "The Professor never needed to be the best hacker, negotiator, engineer, or thief in the room. His real skill was designing a plan in which ten people could move as one."
+**Captured:** 2026-09-07, pasted by Mauro (screenshot). **Cover, title and opening lines — no full body, no view count.** Image file not supplied.
+**Saved for:** the device.
+
+### What it looks like
+
+- **Format:** landscape card, art baked into the image. The article title renders below in platform white type.
+- **Medium:** a near-exact restage of the *Money Heist / La Casa de Papel* key art. Photographic cast shot, red boiler suits, the whole ensemble lined up, deep red-to-black cinematic grade. It reads as an official poster at a glance, which is the point.
+- **Palette:** the show's own palette. Blood red, black, warm skin tones. Borrowed wholesale, so no palette decision was made.
+- **The subject:** the *Casa de Papel* crew in their red jumpsuits, arranged exactly as the promotional poster arranges them.
+- **The device (two swaps on one borrowed frame):**
+  1. **The Dalí mask is replaced with the borrowed tech logo.** Where the show's iconic white Salvador Dalí mask sits on the central figure, this puts a clean white disc carrying the **OpenAI/ChatGPT mark**. The AI *is* the Professor, the mastermind, without a word of explanation.
+  2. **The logo type is fused with the IP.** The show's `LA CASA DE PAPEL` lockup becomes `ASTRA / GPTHEIST` in the same heavy poster treatment. The franchise name and the product name are welded into one word.
+
+### Why it works
+
+**1. It hijacks recognition you did not build and cannot buy.** The poster is already burned into millions of memories, so the brain auto-completes it before the eye finishes scanning. The scroll stops on familiarity, then the swapped mask creates the double-take. This is the same borrowed-recognition lever as 04 and 05, but borrowed from *pop culture* instead of a tool logo, which is a far bigger recognition pool.
+
+**2. The story does the explaining, so the cover carries an argument with no diagram.** Money Heist is one premise: a crew of specialists execute a single flawless plan under one mastermind. That is multi-agent orchestration, exactly. The opening line spells it out ("ten people could move as one"). The IP is the metaphor, fully formed, for free.
+
+**3. Two borrowed logos, one frame.** The tech mark on the mask (the tool) and the restaged franchise lockup (the culture). Both do scroll-stopping work the author's own brand cannot, and they reinforce rather than compete: the recognisable heist crew *and* the recognisable AI logo.
+
+**4. The title's rule-of-three mirrors the heist promise.** `10 Agents, 10 Minutes, 10 Steps` is built like a heist-movie tagline: a crew size, a clock, a plan. Three parallel tens make it read as a countable, executable set (a bullet list disguised as a tagline, same job as 04's four tiles), and the parallelism is what makes it memorable.
+
+**5. It is the only cover in the library that is unmistakably *fun*.** Every other frame is considered and quiet. This one is a joke told at full volume, and in a feed of earnest AI takes that is its own hard stop.
+
+### The risk, because this one has a real one
+
+This is the highest-ceiling and highest-floor device in the library. Done clean it is the strongest scroll-stopper here. Done cheap it is exactly the "AI guy meme" that reads guru/cringe, which is the specific fear Mauro's ICP holds. Three guardrails:
+
+- **The IP has to genuinely map to the argument.** Money Heist → a crew moving as one → multi-agent orchestration is a real fit. If the mapping is forced (grab a hot show because it is hot), the reader feels the reach and it reads try-hard. No map, no hijack.
+- **The restage has to look like the real poster, not a knockoff.** The credibility is entirely in the fidelity. A loose imitation loses the recognition and keeps only the cringe.
+- **Copyright is a live consideration.** Pastiche/parody of a poster for organic commentary is the norm on this format and low-risk, but it is a borrowed studio property. Fine for a one-off organic post; do not build it into a repeatable branded template or anything that ships at scale without a nod from Mauro.
+
+### Prompt: what to generate and what to build
+
+**Do not ask a generator to reproduce the poster from a text prompt.** It will approximate the cast, mangle the logo and deform the type. This is a restage-and-composite job:
+
+```
+BASE      Start from the actual key-art composition of the show you are
+          hijacking (crew line-up, colour grade, framing). Recreate or
+          reference it so it reads as the real poster at a glance.
+
+SWAP 1    Replace the hero's mask / face with a clean white disc carrying
+          the borrowed tech logo, undeformed. Do this as a layer you
+          control, not in the generator.
+
+SWAP 2    Rebuild the franchise title lockup in the same heavy poster
+          treatment, fusing the IP name with the product name into one
+          word (ASTRA / GPTHEIST is the model).
+
+GRADE     Keep the show's own palette. The borrowed colour is part of the
+          borrowed recognition.
+```
+
+### Prompt: the swappable parts
+
+The mechanic is **restage a poster everyone already knows, swap the hero's mask for a borrowed tech logo, fuse the franchise name with the product, and pick a story whose plot already is your argument.**
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The IP | Money Heist (a crew moving as one) | Pick for the mapping, not the heat. *Ocean's Eleven* (assembling a specialist crew), *The Matrix* (seeing the system underneath), *Moneyball* (system beats intuition), *Mission: Impossible* (the plan nobody thinks is possible) |
+| The argument it maps to | Multi-agent orchestration | Whatever the article actually argues. The plot has to *be* the thesis. |
+| The hero's mask/face | OpenAI mark on the Dalí mask | Claude, the tool the piece names, or Mauro's own mark if the piece is about his system |
+| The fused lockup | `ASTRA / GPTHEIST` | `[franchise] + [product]` welded into one word, in the poster's own type |
+| The palette | Borrowed from the show | Always borrowed. Making a palette decision breaks the "official poster" read. |
+
+### On the title
+
+`AI "Money Heist" With GPT6-Astra: 10 Agents, 10 Minutes, 10 Steps`
+
+- **The IP is quoted in the title, so the cover and title borrow the same recognition twice** — same double-borrow move as 04, which named Claude in both places.
+- **Title Case, the second in the library after 04.** The recorded corpus says capitalised titles beat lowercase where tested.
+- **The colon splits a hook from a promise.** `AI "Money Heist" With GPT6-Astra` is the scroll-stopping hook; `10 Agents, 10 Minutes, 10 Steps` is the countable, saveable promise. Same colon-buys-both construction flagged on 05, executed shorter.
+- **Rule-of-three with parallel numbers.** Three tens read as one designed set and are far stickier than three unlike numbers would be.
+
+### For Mauro specifically
+
+His lane is inbound systems for agency owners, and his edge is that he is moving from skills to agents ahead of the field. A heist/crew IP mapped to multi-agent orchestration is *on his actual thesis*, which is the rare case where this device is honest rather than decorative. If he ever runs it, the hero's mask should carry the tool he actually builds on, the article underneath has to deliver the real ten-step build, and it ships as a one-off, not a recurring template. Keep the fidelity high or do not run it.
+
+---
+
+## 07. Borrowed cartoon style, get-rich iconography rendered as knowing satire
+
+**Source account:** *not supplied* (avatar and handle cropped out of the paste).
+**Article title:** `how to print $50k/month with zero audience using other people's traffic`
+**Captured:** 2026-09-08, pasted by Mauro (screenshot). **Cover and title only — no body, no view count, no handle.** Image file not supplied.
+**Saved for:** the device, and as the library's caution case.
+
+### What it looks like
+
+- **Format:** landscape card, art baked into the image. The article title renders below in heavy white platform type.
+- **Medium:** an original scene drawn in the unmistakable *Simpsons* animation register. Flat cel shading, thick black outlines, the show's yellow skin, no gradients or photographic texture. It is not a restaged frame from the show, it is a new composition wearing the show's look.
+- **Palette:** the show's own yellow, walls of cash green, tropical blues and sand behind. Borrowed cartoon palette plus the green of money, which is the only colour the subject needs.
+- **Subject:** Bart Simpson in a plain white hoodie, hunched over a laptop, hood up, buried on all sides by neat stacks of banded cash. Palm trees and a bright beach fill the background.
+- **The device (a look borrowed, not a frame restaged):** where 06 rebuilds one specific poster, this borrows an IP's *entire visual language* and draws something new inside it. The recognition comes from the style, so any subject can be dropped in. On top of that it stacks the most saturated "make money online" iconography there is — the cash walls, the laptop, the beach — rendered as cartoon, which reads as a wink at the cliché rather than a straight pitch.
+
+### Why it works
+
+**1. A borrowed cartoon style buys recognition and a licence to be flippant at the same time.** The Simpsons look is decoded in a fraction of a second, same borrowed-recognition lever as 04, 05 and 06. But the cartoon register also frames everything after it as comedy, so the outrageous claim in the title lands as a bit, not a scam. The style pre-loads the tone.
+
+**2. It invokes the get-rich-online cliché and mocks it in the same frame.** Cash stacks, a laptop, a palm-tree beach is the single most worn image in the make-money-online genre. Drawing it as a cartoon both summons the fantasy and holds it at arm's length. The reader who is sick of that imagery still stops, because this one is in on the joke.
+
+**3. The title is pure curiosity-gap guru bait, and the cartoon is what makes it survivable.** `print $50k/month with zero audience using other people's traffic` is a lowercase, hyperbolic, mechanism-teasing promise of exactly the kind the reach corpus rewards for impressions. Straight, over a stock photo, it reads scam. Under the Simpsons frame it reads satire, and the same words become clickable instead of cringe.
+
+**4. Zero design decisions were made, which is the point.** Like 06's borrowed poster palette, nothing here is an original aesthetic choice. The style, the colour and the tone are all lifted, so the whole cover is assembled from recognition the author did not build.
+
+### The risk, stated plainly, because this is the library's caution case
+
+This is the closest cover in the pile to the exact thing Mauro's ICP is afraid of looking like. The get-rich claim, the money walls, the beach, the cartoon guru energy — that is the "AI money guy" register that reads scam/guru/cringe to an established operator. 06 carried a version of this risk and cleared it because its IP genuinely mapped to the argument. This one has no visible mapping between the borrowed style and any thesis. The Simpsons look does not *mean* anything about the article, it is decoration chosen for reach. That is the tell that separates a borrowed frame that argues (05, 06) from one that just grabs (this).
+
+- **The borrowed look must earn its place or it reads as bait.** 05 and 06 make the borrowed thing carry meaning. Here the cartoon carries only attention. High floor for stopping the scroll, low ceiling for credibility.
+- **Copyright is the same live consideration as 06,** and arguably sharper, since this leans on a character likeness rather than a poster composition. Fine as a one-off organic joke, not something to templatise.
+- **It probably out-reaches every other cover here and under-converts all of them for a sophisticated ICP.** Reach and trust are pulling opposite ways in one frame.
+
+### Prompt: what to generate and what to build
+
+A generator can approximate a cartoon-style scene, but it will not draw a clean recognisable character likeness and will mangle any lettering. Treat it as a style-transfer composite:
+
+```
+BASE      Prompt an original scene in the target show's animation style:
+          flat cel shading, thick black outlines, the show's palette,
+          no gradients or photo texture. Describe a NEW composition, do
+          not name copyrighted characters if the generator refuses them.
+
+SUBJECT   A hooded figure at a laptop, surrounded by neat banded stacks
+          of cash, tropical beach and palm trees behind. The three
+          make-money-online props (cash, laptop, beach) are the whole set.
+
+TONE      Keep it a cartoon. The comic register is what turns the
+          get-rich claim from a pitch into a joke.
+
+TITLE     Do not bake it in. Let the platform render the lowercase,
+          mechanism-teasing headline below the card.
+```
+
+### Prompt: the swappable parts
+
+The mechanic is **borrow an IP's entire art style (not one frame), draw the genre's most clichéd imagery inside it, and let the cartoon tone reframe an outrageous claim as a joke.**
+
+| Slot | This cover | Alternatives that keep the device |
+|---|---|---|
+| The borrowed style | The Simpsons | Any instantly-decoded animation look: South Park, Family Guy, Rick and Morty, PS1-era 3D, MS Paint |
+| The clichéd imagery | Cash walls, laptop, beach | Whatever the genre's most worn visual is. The point is to invoke and mock it at once. |
+| The subject | Hooded figure at a laptop | Keep it small and recognisable inside the style. |
+| The tone | Cartoon = joke | Non-negotiable. The comic register is the whole safety mechanism on the claim. |
+| The title | Lowercase guru-bait promise | Lowercase, mechanism-teasing, hyperbolic. Straight-faced would tip it into scam. |
+
+### On the title
+
+`how to print $50k/month with zero audience using other people's traffic`
+
+- **Lowercase, and the most nakedly benefit-led title in the library since 02.** Where 02 sold a calm first-timer feeling, this sells a hard money number up front (`$50k/month`).
+- **`print` and `zero audience` and `other people's traffic` are all curiosity-gap mechanisms.** Each raises a "how, exactly?" the reader has to open to answer. `other people's traffic` is the mechanism tease that does the real work — it implies a specific method, not just a promise.
+- **No qualifier, no ICP filter.** Same refuse-to-filter move flagged on 02: it aims wide on purpose. The reach corpus note stands — refusing to filter may itself be the impressions mechanic, which is a `reach`-lane move and the opposite of what the `convert` lane wants.
+- **This is a title Mauro's brief would reject on content** (guru number, no proof, aimed at beginners) even where the *construction* is worth studying.
+
+### For Mauro specifically
+
+Do not run this one straight. It is the single most off-brand cover in the library for an inbound-systems operator selling to established agency owners — it is a demonstration of the exact register the ICP is afraid of. Its value is diagnostic: it marks the floor. It shows how far the borrowed-recognition lever can be pushed toward pure reach, and it makes the line visible. Everything above it (05's load-bearing logo, 06's mapped IP) earns the borrowed thing. This one spends it. Save it as the boundary of the technique, not as a template.
+
+---
+
 ## Also on file
 
 The engraving-style cover in [01-saaspocalypse-is-overblown.md](01-saaspocalypse-is-overblown.md) is described in

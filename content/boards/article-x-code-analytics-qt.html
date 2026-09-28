@@ -1,0 +1,182 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>QT panels — impressions is the number you control least</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:52px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
+  h1 { font-size:54px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
+    color:var(--ink); margin-bottom:16px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:20px; line-height:1.55; max-width:900px; }
+  .handle { font-size:20px; font-weight:700; color:var(--hot); margin:14px 0 24px; }
+
+  /* COMPARE CARDS — two formats, side by side */
+  .cmp { display:flex; gap:16px; margin-bottom:20px; }
+  .cmp .card { flex:1; border:2px solid var(--ink); border-top:7px solid var(--ink);
+    padding:24px 26px 26px; position:relative; }
+  .cmp .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:11px; }
+  .cmp .imp { font-size:25px; font-weight:700; color:var(--ink); }
+  .cmp .impk { font-size:15px; color:var(--muted); margin-bottom:16px; }
+  .cmp .mult { font-size:76px; font-weight:800; line-height:1; color:var(--ink);
+    letter-spacing:-2.4px; }
+  .cmp .multk { font-size:15px; color:var(--muted); margin-top:9px; line-height:1.4; }
+  .cmp .card.win { border-top:7px solid var(--highlight); }
+
+  /* STRIP — bordered stat block, mono label + rows */
+  .strip { border:2px solid var(--ink); border-top:7px solid var(--highlight);
+    padding:20px 26px 22px; margin-bottom:20px; }
+  .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .strip .row { display:flex; align-items:baseline; gap:16px; padding:8px 0; }
+  .strip .n { font-family:'JetBrains Mono',monospace; font-size:25px; font-weight:700;
+    color:var(--ink); width:88px; flex:none; }
+  .strip .t { font-size:19px; line-height:1.4; color:var(--body); }
+
+  /* COMPARE COLUMNS — scored up vs subtracted */
+  .cols { display:flex; gap:16px; margin-bottom:20px; }
+  .cols .col { flex:1; border:2px solid var(--ink); }
+  .cols .h { background:var(--ink); color:#fff; font-size:18px; font-weight:700;
+    padding:13px 22px; }
+  .cols ul { list-style:none; padding:13px 22px 17px; }
+  .cols li { font-size:20px; line-height:1.4; padding:6px 0 6px 28px; position:relative;
+    color:var(--body); }
+  .cols li::before { content:""; position:absolute; left:0; top:11px;
+    width:11px; height:11px; background:var(--hot); }
+  .cols .col.neg li::before { background:var(--ink); transform:rotate(45deg); }
+  .gap-tag { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700;
+    letter-spacing:1.4px; text-transform:uppercase; padding:3px 8px; margin-left:9px;
+    vertical-align:3px; }
+
+  .strip.tight { padding:18px 26px 20px; margin-bottom:18px; }
+  .strip.tight .row { padding:6px 0; }
+  .strip.tight .n { font-size:15px; width:150px; letter-spacing:.5px; }
+  .strip.tight .t { font-size:18px; }
+
+  /* INSIGHT — dark closing block, honey rule, mono label */
+  .insight { background:var(--dark); border-left:7px solid var(--highlight);
+    padding:22px 28px 24px; }
+  .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:10px; }
+  .insight .t { font-size:24px; line-height:1.36; font-weight:600; color:#fff; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 20px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ QT PANEL 1 · the ratio ============ -->
+<div class="page">
+  <div class="eyebrow">My own export &middot; 9 to 15 Sep 2026 &middot; 196 posts</div>
+  <h1>My worst format on the reach chart sent <span class="pop">10.2x</span> the people to my profile</h1>
+  <p class="lede">Profile visits per thousand impressions, my replies against the four bare article
+    links that topped my reach chart the same week.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="cmp">
+    <div class="card">
+      <div class="tag">4 article links</div>
+      <div class="imp">2,303</div>
+      <div class="impk">impressions</div>
+      <div class="mult">2.2</div>
+      <div class="multk">profile visits per 1,000 impressions</div>
+    </div>
+    <div class="card win">
+      <div class="tag">173 replies</div>
+      <div class="imp">3,072</div>
+      <div class="impk">impressions</div>
+      <div class="mult">22.5</div>
+      <div class="multk">profile visits per 1,000 impressions</div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="label">What each format actually did</div>
+    <div class="row"><div class="n">69</div><div class="t">of my 103 profile visits came from replies</div></div>
+    <div class="row"><div class="n">5</div><div class="t">profile visits from the four highest-reach posts</div></div>
+    <div class="row"><div class="n">11</div><div class="t">of my 15 bookmarks came from the 7 link and media posts</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">What I still can't prove</div>
+    <div class="t">Profile visits are the one column that's filled in. X attributed 2 of my 109
+      follows that week to a post at all.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ QT PANEL 2 · the scored list, and the gap ============ -->
+<div class="page">
+  <div class="eyebrow">X For You ranking code &middot; open source</div>
+  <h1>Share via dm is scored, and I have <span class="pop">never written for it</span></h1>
+  <p class="lede">A weighted sum of predicted actions, and the file publishes none of the weights.
+    Two of the actions it does publish are forwarding, and I have never written for those.</p>
+  <div class="handle">@maurojpelle</div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="h">Scored, and added</div>
+      <ul>
+        <li>Profile click</li>
+        <li>Follow author</li>
+        <li>Share via dm <span class="gap-tag">The gap</span></li>
+        <li>Share via copy link <span class="gap-tag">The gap</span></li>
+        <li>Dwell time</li>
+        <li>Quoted click</li>
+        <li>Like</li>
+      </ul>
+    </div>
+    <div class="col neg">
+      <div class="h">Scored, and subtracted</div>
+      <ul>
+        <li>Not interested</li>
+        <li>Block author</li>
+        <li>Mute author</li>
+        <li>Report</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="strip tight">
+    <div class="label">What the file does not contain</div>
+    <div class="row"><div class="n">no weights</div><div class="t">every multiplier being quoted at you came from somewhere else</div></div>
+    <div class="row"><div class="n">no timing lever</div><div class="t">the hand-engineered features were stripped out of the ranking path</div></div>
+    <div class="row"><div class="n">no link filter</div><div class="t">nothing in the scorer touches external links</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">The boring argument against ragebait</div>
+    <div class="t">The actions a reader takes to get away from you count against you.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>

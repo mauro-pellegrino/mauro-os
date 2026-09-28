@@ -1,0 +1,177 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>QT panels — the profile study, one word and one reject</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:52px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
+  h1 { font-size:52px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
+    color:var(--body); margin-bottom:16px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:20px; line-height:1.55; max-width:900px; margin-bottom:34px; }
+
+  /* COMPARE CARDS — two buckets, side by side */
+  .cmp { display:flex; gap:16px; margin-bottom:20px; }
+  .cmp .card { flex:1; border:2px solid var(--ink); border-top:7px solid var(--ink);
+    padding:24px 26px 26px; position:relative; }
+  .cmp .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:11px; }
+  .cmp .imp { font-size:25px; font-weight:700; color:var(--ink); }
+  .cmp .impk { font-size:15px; color:var(--muted); margin-bottom:16px; }
+  .cmp .mult { font-size:76px; font-weight:800; line-height:1; color:var(--ink);
+    letter-spacing:-2.4px; }
+  .cmp .multk { font-size:15px; color:var(--muted); margin-top:9px; line-height:1.4; }
+  .cmp .card.win { border-top:7px solid var(--highlight); }
+
+  /* STRIP — bordered stat block, mono label + rows */
+  .strip { border:2px solid var(--ink); border-top:7px solid var(--highlight);
+    padding:20px 26px 22px; margin-bottom:20px; }
+  .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .strip .row { display:flex; align-items:baseline; gap:16px; padding:8px 0; }
+  .strip .n { font-family:'JetBrains Mono',monospace; font-size:25px; font-weight:700;
+    color:var(--ink); width:88px; flex:none; }
+  .strip .t { font-size:19px; line-height:1.4; color:var(--body); }
+
+  .strip.tight { padding:18px 26px 20px; margin-bottom:18px; }
+  .strip.tight .row { padding:6px 0; }
+  .strip.tight .n { font-size:15px; width:196px; letter-spacing:.5px; }
+  .strip.tight .t { font-size:18px; }
+
+  .strip.wide .n { width:172px; font-size:22px; }
+
+  /* COMPARE COLUMNS — verdicts side by side */
+  .cols { display:flex; gap:16px; margin-bottom:20px; }
+  .cols .col { flex:1; border:2px solid var(--ink); }
+  .cols .h { background:var(--ink); color:#fff; font-size:18px; font-weight:700;
+    padding:13px 22px; }
+  .cols ul { list-style:none; padding:13px 22px 17px; }
+  .cols li { font-size:20px; line-height:1.4; padding:6px 0 6px 28px; position:relative;
+    color:var(--body); }
+  .cols li::before { content:""; position:absolute; left:0; top:11px;
+    width:11px; height:11px; background:var(--hot); }
+  .cols .col.neg li::before { background:var(--ink); transform:rotate(45deg); }
+  .gap-tag { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700;
+    letter-spacing:1.4px; text-transform:uppercase; padding:3px 8px; margin-left:9px;
+    vertical-align:3px; }
+
+  /* INSIGHT — dark closing block, honey rule, mono label */
+  .insight { background:var(--dark); border-left:7px solid var(--highlight);
+    padding:22px 28px 24px; }
+  .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:10px; }
+  .insight .t { font-size:24px; line-height:1.36; font-weight:600; color:#fff; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 20px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ QT PANEL 1 · the one word ============ -->
+<div class="page">
+  <div class="eyebrow">@shannholmberg &middot; 11 Aug to 14 Sep 2026 &middot; 52 posts</div>
+  <h1>22 of his 52 posts open with <span class="pop">how</span>, and they median 6.6x the other 30</h1>
+  <p class="lede">Eight of the month&rsquo;s thirteen outliers sit inside those 22. I went in with a
+    list of questions about topics, formats and offers, and this was on none of them.</p>
+  <div class="cmp">
+    <div class="card">
+      <div class="tag">The other 30 posts</div>
+      <div class="imp">5 of 13</div>
+      <div class="impk">outliers</div>
+      <div class="mult">3,539</div>
+      <div class="multk">median impressions</div>
+    </div>
+    <div class="card win">
+      <div class="tag">The 22 opening with how</div>
+      <div class="imp">8 of 13</div>
+      <div class="impk">outliers</div>
+      <div class="mult">23,378</div>
+      <div class="multk">median impressions</div>
+    </div>
+  </div>
+
+  <div class="strip tight">
+    <div class="label">Two grammars running at the same time</div>
+    <div class="row"><div class="n">how to [job]</div><div class="t">second person, numbered, carousel, the daily engine</div></div>
+    <div class="row"><div class="n">my [domain] stack</div><div class="t">first person, rarer, and much bigger when it lands</div></div>
+    <div class="row"><div class="n">lowercase</div><div class="t">52 out of 52, titles included</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">The limit on that number</div>
+    <div class="t">One account, 35 days, 52 items. Until I run the same pass on a second account,
+      6.6x is his number.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ QT PANEL 2 · the reject ============ -->
+<div class="page">
+  <div class="eyebrow">@shannholmberg &middot; step 4, every vehicle gets a verdict</div>
+  <h1>35% of his reach comes off one vehicle, and I <span class="pop">rejected</span> it</h1>
+  <p class="lede">Eight vehicles came out of the study, seven of them run on my account in some
+    form, and the biggest one doesn&rsquo;t.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="h">Adopt, runs as-is</div>
+      <ul>
+        <li>How-to carousel</li>
+        <li>N-layers breakdown</li>
+        <li>Reference piece</li>
+        <li>Split cta</li>
+        <li>Account study</li>
+      </ul>
+    </div>
+    <div class="col neg">
+      <div class="h">Adapt, or reject</div>
+      <ul>
+        <li>Launch translation <span class="gap-tag">Adapt</span></li>
+        <li>Monthly mega-article <span class="gap-tag">Adapt</span></li>
+        <li>Stack reveal <span class="gap-tag">Reject</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="strip wide">
+    <div class="label">The one I can&rsquo;t run</div>
+    <div class="row"><div class="n">10%</div><div class="t">of his items, carrying 35% of the month&rsquo;s reach</div></div>
+    <div class="row"><div class="n">546,619</div><div class="t">impressions on seven words of text over a carousel</div></div>
+    <div class="row"><div class="n">every tool</div><div class="t">in the list tagged, which is where the work happens</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">Why it doesn&rsquo;t move</div>
+    <div class="t">A tool with an audience has a reason to amplify a post that tags it. Ad
+      platforms have no audience to lend.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>

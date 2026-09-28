@@ -24,7 +24,7 @@ A long vertical board with plenty of room, built to be **edited and screen-recor
 Built to be worked on: swap a label, reorder sections, drop new images in, re-render. One continuous tall page, any height, high quality.
 
 - Dimension: `board` (1080 wide, natural height, single continuous page)
-- Palette: cream ground, green as the brand anchor, sections color-coded across a small accent set (green / clay / slate), honey for the one thing that must pop
+- Palette: cream ground, green as the brand anchor, sections color-coded across a small accent set (green / clay / slate), honey standing alongside green on every board
 - Text: sparse. Labels and anchors, not sentences. Mauro says the detail on camera.
 - Structure: varies section to section. Never the same card stack repeated down the page.
 - Length: scales to the source and the video. One beat per point in the source, ~10-16 beats for an 8-minute video. A 7-minute Q&A is a long board, never one compressed page.
@@ -84,20 +84,38 @@ Cream/white ground, green as the brand anchor, plus a small disciplined accent s
 | Clay | `#C15F3C` | `#F7DFD3` | `#C15F3C` |
 | Slate | `#3F5E77` | `#DDE7EF` | `#3F5E77` |
 
-**Emphasis pop (both types):** Honey `#E9B949` with Ink text. One or two touches per board, max: a `WINNING`-style tag, one highlighted stat, an underline on a key word. Never a section color, never a background wall.
+**Honey `#E9B949` (both types), standing. Set by Mauro 2026-09-23: green and yellow, always.**
+
+Honey is the second colour in the system, on every asset, alongside green. It carries the Ink text on top of it. Where it goes, every time:
+
+- The H1 highlight block (`.pop`), Deep Forest text on a honey fill.
+- The mono label inside a dark callout or dark card.
+- The 7px left bar on a dark insight block, and the top rule on a bordered strip.
+- A `WINNING`-style tag, one highlighted stat, an underline on a key word.
+
+Three or four honey marks per page is the target. It stays a mark and a fill behind short type, never a section background, never a wall behind body copy. This matches the `--highlight` role already in `page-craft.md`'s palette contract, which the earlier "garnish only" wording contradicted.
 
 **Handle:** `@maurojpelle` (Sage) · **Footer:** `— Mauro` (left-aligned, above a thin Deep Forest divider). Optional on boards.
 
+**No handle on a QT panel (Mauro, 2026-09-28).** The handle block comes off every square QT
+infographic. The tweet it hangs under already carries his name, so the panel repeating it is chrome
+the asset doesn't need. The `— Mauro` footer stays. Carousels and lead-magnet covers keep the handle.
+
+**The H1 on a Type 1 panel is Ink `#1B1B1B`, not Deep Forest (Mauro, 2026-09-28).** Green belongs on
+the eyebrow, the first line of the panel. A green headline on top of a green eyebrow puts the brand
+colour on the two biggest blocks at once. Every border, dark fill and stat number stays Deep Forest,
+so the page still reads green.
+
 ### How the two types use it
 
-- **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts). The accent families are available for section variety, but green is the default. Honey only when one thing must pop.
+- **Social (Type 1):** white background, green blocks (Pale Mint stickers, Sage badges, Deep Forest callouts), honey on the headline block and the marks listed above. The accent families are available for section variety, and green stays the default.
 - **Boards (Type 2):** cream background (faint grid optional). Each section picks ONE accent family and applies it to that section's header bar, card tint, border, and pill. The next section uses a different family. Open and close on Forest, vary in between. This color-coding is what keeps a long board from reading as a green wall.
 
 ### Critical color rules
 
 - **Rotate section accents.** No two adjacent sections share a family. An all-Forest board is the exact mistake this rule exists to prevent.
 - **Never use Pale Mint, Mint, Honey, or any card tint as text on cream/white.** They are fills, never text on a light ground.
-- **Honey is a garnish, not a base.** One or two touches per board. Carrying a whole card or background = wrong.
+- **Honey appears on every asset, and stays a mark.** It fills a headline block, a left bar, a rule, a tag, a mono label. A whole card or a page background in honey is wrong.
 - Header fills (Forest / Clay / Slate) always use white text. Card tints always use Ink text.
 
 ---
@@ -253,7 +271,7 @@ Note how each `.section` sets its own accent family and uses a different compone
   .callout { background:var(--accent); color:#fff; border-radius:12px; padding:24px 30px;
     font-size:25px; font-weight:700; text-align:center; }
 
-  /* honey emphasis, sparing */
+  /* honey, standing: headline block, mono label on dark, left bar, tag, underline */
   .tag-win { display:inline-block; background:#E9B949; color:#1B4332; font-family:'JetBrains Mono',monospace;
     font-size:11px; font-weight:700; letter-spacing:1px; padding:3px 9px; border-radius:5px; margin-left:8px; }
   .hl { border-bottom:3px solid #E9B949; }
@@ -427,9 +445,19 @@ Never invent a performance number. Real numbers from source only, or a bracket p
 
 ---
 
+## In-article blocks (a third context, added 2026-09-21)
+
+A block that renders **inside** an X article is not a Type 1 social asset and does not get Type 1 chrome. No handle, no logo, no subtitle, no restated section header, just the content, because the article around it already does the framing. Mauro rejected a table shipped under a title, a subtitle, the `@maurojpelle` handle and a second title: "al final la tabla es lo único que necesitamos mostrar."
+
+Before rendering one at all, check whether it should be a **native X table** instead of an image. Plain short-celled tables and one-scan comparisons read better native (selectable, mobile-safe, editable after publishing). Render an image when the block is visual, branded or screenshot-worthy. Full rules and the decision table: `skills/content/x-article-creator.md` §In-article HTML blocks.
+
+Type 1 chrome stays on the assets that travel alone: the QT infographic and the LinkedIn carousel.
+
+---
+
 ## QT reaction pattern
 
-One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
+One square `1080×1080` infographic + a one-line tweet naming the underweighted insight and pointing at the carousel. **No `@maurojpelle` block on the panel, and the H1 is Ink, not Deep Forest** (see Brand). Pick the single operator-eye-view insight the average reader skims past; build a focused punch visual (math comparison, paired Stop/Start, single-card definition). Not a 3-card breakdown. Lead the carousel with the reaction visual, then the supporting infographics.
 
 ---
 
