@@ -115,6 +115,24 @@ The writing rules kept getting skipped because nothing enforced them. Four files
   a third from the organic accounts he manages" figure, and the $28k deal closed off X. Unblocks
   when Mauro approves each for public use, or tells me to keep them internal.
 
+**Visual format: ASCII diagrams (agent trees), set 2026-09-29**
+
+Mauro wants ASCII diagrams in Ghosted Calls content, for Bogdan's and Lorenzo's too (the growthub
+side is tracked in `~/growthub-os/research/ideas/content-assets-ideas.md`). An ASCII diagram is a
+plain monospace diagram in a dark terminal window, with boxes and arrows drawn from characters. When
+it shows who hands work to whom, it is an **agent tree**. Reference:
+`research/visual-references/2026-09-29-claude-code-agent-tree-ascii.png` (main session on Opus at
+high effort, advisor on call, three subagents at medium, back to main for review). Draft as text,
+edit in Monodraw or ASCIIFlow, screenshot in a dark theme.
+
+- **Scope, widened 2026-09-29:** not only agents. Any process, funnel, comparison or framework can be an ASCII diagram. Reference account: Shann Holmberg (@shannholmberg).
+- [ ] **Use `skills/content/system-extraction.md` for it.** That skill already produces a monospace
+  architecture card from a system that runs. Add the terminal-window screenshot style as its visual
+  output, so the card and this format are one thing, not two.
+- [ ] **First one: the Claude Code agent tree Mauro is setting up now.** It sits inside his lane (AI
+  content systems that book calls), and it is a system he really runs. Draw it once the setup is
+  finished, never before.
+
 **Anti-slop protocol overlap**
 
 - [ ] `skills/content/anti-slop-protocol.md` and `brand/voice.md` ban several of the same things
