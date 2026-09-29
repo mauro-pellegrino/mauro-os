@@ -125,6 +125,7 @@ it shows who hands work to whom, it is an **agent tree**. Reference:
 high effort, advisor on call, three subagents at medium, back to main for review). Draft as text,
 edit in Monodraw or ASCIIFlow, screenshot in a dark theme.
 
+- **Scope, widened 2026-09-29:** not only agents. Any process, funnel, comparison or framework can be an ASCII diagram. Reference account: Shann Holmberg (@shannholmberg).
 - [ ] **Use `skills/content/system-extraction.md` for it.** That skill already produces a monospace
   architecture card from a system that runs. Add the terminal-window screenshot style as its visual
   output, so the card and this format are one thing, not two.
