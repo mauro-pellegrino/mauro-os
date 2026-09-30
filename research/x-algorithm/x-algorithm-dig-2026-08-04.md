@@ -1,5 +1,8 @@
 # X (Twitter) Algorithm Dig — read from the source code
 
+
+> **Update 2026-09-30.** xAI changed weights on 29 Sep (`a707cc2`) and cold start on 30 Sep (`77d431a`). Click 0.4 → 0.3. Time after the tap (`cont_click_dwell_time`) 0 → 0.4. Not interested -43.2 → -47.52. Insult-labelled posts now drop for non-followers. Fresh-post test slots switched on: accounts under 50K followers, posts under 200 impressions and under 2 hours old. Full table: `~/growthub-os/research/x-algorithm/README.md`.
+
 **Source:** [github.com/xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) (official, xAI org)
 **Method:** GitHub REST API + raw file reads of the actual Rust source. Web search used only to identify claims, then every claim checked against code.
 **Fetched:** 2026-08-04
