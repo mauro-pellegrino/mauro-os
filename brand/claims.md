@@ -94,8 +94,55 @@ The authority is the open-source repo, not him, so state it that way.
 | Nothing resurfaces: old posts get removed, and a post whose age can't be read is dropped | published thread #9 | yes |
 | "reply = 13.5 likes", "repost = 20x" and "one reply beats 150 likes" are 2023 numbers from a system that got replaced | published thread #1 | yes |
 
-**Never quote a weight value.** The code publishes none, and Mauro said so publicly. Any specific
-multiplier is a CLAIM failure.
+**The no-weights rule is retired, 2026-10-01.** It used to read "never quote a weight value, the
+code publishes none." That was true of the January 2026 release Mauro read. `home-mixer/params/param.rs`
+was added to `github.com/xai-org/x-algorithm` on 13-14 August 2026 and publishes every default. The
+verified values are in the block below. His published thread stays accurate about the formula and the
+scored actions; the sentence about no weight values is now out of date, and a reader who checks will
+find that, so don't repeat it.
+
+## X ranking weights, read from param.rs on 2026-10-01
+
+Source: `home-mixer/params/param.rs` at `github.com/xai-org/x-algorithm`, fetched and quoted line by
+line on 2026-10-01. These are **defaults**, which X can override per experiment or per user without a
+release, so every use says so.
+
+| Param | Value |
+|---|---|
+| `ClickWeight` (the tap) | 0.3 |
+| `ContClickDwellTimeWeight` (time after the tap) | 0.4 |
+| `DwellWeight` (dwell with no tap) | 0.05 |
+| `ContDwellTimeWeight` | 0.004 |
+| `ShareViaCopyLink` | 20.0, the highest positive in the file |
+| `Reply` | 5.0 |
+| `Quote` | 5.0 |
+| `Retweet` | 1.0 |
+| `Like` | 0.5 |
+| `OpenLink` | 0.2 |
+| `VideoOpen` | 0.07 |
+| `VQV` (video quality view) | 0.0 |
+| `BidirectionalFollowReplyWeightBoost` | 15.0 |
+| `NotInterested` | -47.52 |
+| `BlockAuthor` | -31.2 |
+| `MuteAuthor` | -58.8 |
+| `Report` | -234.0 |
+| Cold start: follower cap / impression threshold / max post age / feed slots | 50,000 / 200 / 7,200s (2 hours) / slots 15-16 |
+
+**Four separate dwell params, don't collapse them.** `ContClickDwellTimeWeight` (0.4) is time after a
+tap and is the one that beats the tap itself. `DwellWeight` (0.05) is dwell without a tap. Quoting
+0.05 as "time after the tap" is a CLAIM failure, and so is the reverse.
+
+**The weights multiply predicted probabilities, not counts.** The file says so in a comment and names
+the misreading itself, that "one report cancels 468 likes". A report sits at -234 because a report is
+far rarer than a like, not because it outweighs 468 of them.
+
+**Add or multiply is not stated.** The file names `BidirectionalFollowReplyWeightBoost` 15.0 and does
+not say whether it adds to or multiplies the 5.0 reply weight. Say "a boost of 15" and don't pick one.
+
+**Not verified, and not shippable without the git history:** every "it went from X to Y" claim about
+the 29 Sep release (tap 0.4 to 0.3, time after tap 0 to 0.4, not interested -43.2 to -47.52), the
+pre-30-Sep cold start limits of 1K followers and 48 hours, and the self-decay curve figures (62.5%,
+43.75%, a floor at a quarter). The current values above are confirmed. The deltas are not.
 
 ## @maurojpelle X analytics, 2 to 15 September 2026
 
