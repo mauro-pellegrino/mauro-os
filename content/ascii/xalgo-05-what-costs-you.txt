@@ -1,0 +1,24 @@
+┌─ WHAT COSTS YOU · subtracted from the post, not scaled ────────────────────────────────────┐
+│                                                                                            │
+│   report                -234.0                                                             │
+│   mute author           -58.8                                                              │
+│   not interested        -47.52                                                             │
+│   block author          -31.2                                                              │
+│                                                                                            │
+│   Bait that gets someone to tap not interested lowers your score                           │
+│   mechanically. That is the weight that moved this week.                                   │
+│                                                                                            │
+├─ AND POSTING MORE STILL DOESN'T STACK ─────────────────────────────────────────────────────┤
+│                                                                                            │
+│   A diversity function decays your own posts against each other                            │
+│   inside one feed response.                                                                │
+│                                                                                            │
+│   your best post        keeps its full value                                               │
+│   the weaker ones       absorb the decay                                                   │
+│   the floor             it never drops to zero                                             │
+│   the order             by score, not by time                                              │
+│                                                                                            │
+│   Five posts don't buy five slots in one person's feed.                                    │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

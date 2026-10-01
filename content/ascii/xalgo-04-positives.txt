@@ -1,0 +1,27 @@
+┌─ THE WEIGHTS WORTH WRITING FOR · positives, in order ──────────────────────────────────────┐
+│                                                                                            │
+│   share via copy link     20.0   the highest in the file                                   │
+│   reply                   5.0                                                              │
+│   quote                   5.0                                                              │
+│   retweet                 1.0                                                              │
+│   like                    0.5                                                              │
+│   time after the tap      0.4                                                              │
+│   the tap                 0.3                                                              │
+│   open link               0.2    no link penalty in here                                   │
+│   video open              0.07                                                             │
+│   video quality view      0.0                                                              │
+│                                                                                            │
+├─ THE ONE NOBODY TALKS ABOUT ───────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   A like is worth a fortieth of someone sending your post to one                           │
+│   person in a dm. Copy link is private and deliberate, which is                            │
+│   why the ranker works hardest to predict it.                                              │
+│                                                                                            │
+├─ STATED, BUT NOT EXPLAINED ────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   BidirectionalFollowReplyWeightBoost   15.0                                               │
+│   A reply from someone you follow back. The file does not say                              │
+│   whether it adds to the 5.0 or multiplies it.                                             │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

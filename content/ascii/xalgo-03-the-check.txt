@@ -1,0 +1,24 @@
+┌─ I CHECKED THE POST AGAINST THE FILE · three verdicts ─────────────────────────────────────┐
+│                                                                                            │
+├─ IN THE FILE TODAY ────────────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   the tap                   0.3                                                            │
+│   time after the tap        0.4                                                            │
+│   not interested            -47.52                                                         │
+│   insult-labelled posts     hidden from non-followers                                      │
+│                                                                                            │
+├─ NOT IN THE CODE AT ALL ───────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   "the time after a tap counts from 10 seconds"                                            │
+│                                                                                            │
+│   No threshold anywhere in the file. The model predicts the time                           │
+│   as a value. Treat the 10 seconds as that author's reading.                               │
+│                                                                                            │
+├─ TRUE ON MONDAY, STALE BY TUESDAY ─────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   "the fresh post pool is still switched off"                                              │
+│                                                                                            │
+│   The 30 Sep release switched it on.                                                       │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

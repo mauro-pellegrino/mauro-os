@@ -1,0 +1,23 @@
+┌─ HOW A POST IS SCORED · param.rs, read 1 Oct 2026 ─────────────────────────────────────────┐
+│                                                                                            │
+│                     ┌─ THE SUM ─────────────────────┐                                      │
+│                     │ for every action:             │                                      │
+│                     │                               │                                      │
+│                     │ weight  ×  predicted          │                                      │
+│                     │         chance of it          │                                      │
+│                     │                               │                                      │
+│                     │ add them all up               │                                      │
+│                     └────────────────────────────────┘                                     │
+│                                                                                            │
+│   The weights multiply PROBABILITIES, not counts.                                          │
+│   The file says so in a comment, and names the misreading itself.                          │
+│                                                                                            │
+├─ WHY REPORT SITS AT -234 ──────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   A report is far rarer than a like, so the weight has to be big                           │
+│   for the model to notice it at all.                                                       │
+│                                                                                            │
+│   "one report cancels 468 likes"      wrong, and the code says so                          │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
