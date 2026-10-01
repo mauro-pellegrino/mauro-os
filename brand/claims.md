@@ -412,6 +412,28 @@ the analytics and profile-study sections above, and those are the ones that carr
 **On the day ranges.** They are a plan, so they never get written as "it takes 14 days". The form
 that ships is the phase and its window, the way the article states it.
 
+## The process-map build, run 2026-10-01
+
+Source for every row: Mauro's voice notes at
+`research/transcripts/maurojpelle/2026-10-01-process-maps-voice-notes.md` and the measured run that
+same morning in `growthub-os` `ops/process-maps/`. Mauro confirmed the headline time in the notes
+("24 minutes measured").
+
+| Claim | Source | Public |
+|---|---|---|
+| The LinkedIn lead-magnet process ran 10:06 to 10:30 on 2026-10-01, 24 minutes paste to live staging page | measured run, confirmed in voice notes | yes |
+| Roughly five of those 24 minutes were Mauro's own attention (find the post, capture it, read the draft) | **his estimate, not measured.** He asked for "an honest version of how much time it should take me" | yes, **always labelled an estimate** |
+| The 24 minutes only holds because the promised resource already existed | voice notes | yes |
+| The resource-creation branch has no measured time yet | voice notes | yes |
+| On the first run Claude wrote a new resource before checking existing ones, so the check moved to the front of the block | voice notes | yes |
+| Proven LinkedIn posts for this process are mostly 300+ comments | voice notes | yes |
+| The process-size rule: one trigger, one output that ships alone, one person who presses go, one number it moves on Monday, 6 to 12 steps | voice notes plus the build | yes |
+| The overview's top-line metric is booked calls per hour of human time | the build | yes |
+
+**Two cautions.** The five-minute figure is Mauro's own estimate and ships as one, never as a
+measurement. And the person who asked for the maps is not on the Named references list below, so
+he is not named in public copy without Mauro's say-so.
+
 ## Named references
 
 Real people and products may be named. Get the name right, a wrong one burns credibility with an
