@@ -1,0 +1,28 @@
+WHY THEY DON'T ALL GO IN A LINE           one change, same 9 steps
+==================================================================
+
+  BEFORE                           AFTER
+  nine boxes, one column           three boxes and a block
+
+  +--------------------------+     +--------------------------+
+  | 1 find the post      you |     | 1 find the post      you |
+  +--------------------------+     +--------------------------+
+  | 2 capture it         you |     | 2 capture it         you |
+  +--------------------------+     +--------------------------+
+  | 3 check built     claude |     
+  +--------------------------+     +==========================+
+  | 4 resource        claude |     | CLAUDE   steps 3-8       |
+  +--------------------------+     | six in a row             |
+  | 5 write post      claude |     | one block, nobody        |
+  +--------------------------+     +==========================+
+  | 6 write dm        claude |     
+  +--------------------------+     +--------------------------+
+  | 7 make image      claude |     | 9 read draft         you |
+  +--------------------------+     +--------------------------+
+  | 8 staging page    claude |     
+  +--------------------------+     
+  | 9 read draft         you |     
+  +--------------------------+     
+
+  the block is the part where nobody is needed
+  the three boxes outside it are the whole human job
