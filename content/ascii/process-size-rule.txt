@@ -1,0 +1,27 @@
+WHAT COUNTS AS A PROCESS                    too narrow / too broad
+==================================================================
+
+  TOO NARROW                                        TOO BROAD
+  "make the image"                          "linkedin strategy"
+  nothing ships on its own                  no single output
+  = a STEP inside something                 = a CHANNEL
+          |                                         |
+          +--------------------+--------------------+
+                               |
+                               v
++================================================================+
+| A PROCESS HAS ALL FIVE                                         |
+|                                                                |
+|   1  one trigger            a proven post, a brief, a Monday   |
+|   2  one output             that ships on its own              |
+|   3  one person             who presses go                     |
+|   4  one number             it moves on Monday                 |
+|   5  between 6 and 12 steps                                    |
++================================================================+
+
+  DRAWN ONCE, NOT COPIED INTO EVERY MAP
+  +----------------------------------------------------------------+
+  | the check that reviews every draft                             |
+  | the staging page                                               |
+  | the person who schedules it                                    |
+  +----------------------------------------------------------------+
