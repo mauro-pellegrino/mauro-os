@@ -414,25 +414,37 @@ that ships is the phase and its window, the way the article states it.
 
 ## The process-map build, run 2026-10-01
 
-Source for every row: Mauro's voice notes at
-`research/transcripts/maurojpelle/2026-10-01-process-maps-voice-notes.md` and the measured run that
-same morning in `growthub-os` `ops/process-maps/`. Mauro confirmed the headline time in the notes
-("24 minutes measured").
+Two different sources sit behind this block and they are **not** equally solid.
+
+**A. The voice notes**, `research/transcripts/maurojpelle/2026-10-01-process-maps-voice-notes.md`.
+Mauro's own words, transcribed. Solid.
+
+**B. A markdown write-up handed over 2026-10-01**, built from those notes plus the run. It is a
+drafted synthesis, **not written by Mauro**, and it carries its own drift: it has him saying "I've
+seen in a production course" where the notes say "done", "screenshot the comment and the reply"
+where the notes say "or", and it introduced an "ad libraries" input and a banned "isn't X, it's Y"
+line that are in no transcript. Treat B as a handed-over account of what was built, never as
+evidence of his wording. Rows sourced to B alone need his confirmation before they ship.
 
 | Claim | Source | Public |
 |---|---|---|
-| The LinkedIn lead-magnet process ran 10:06 to 10:30 on 2026-10-01, 24 minutes paste to live staging page | measured run, confirmed in voice notes | yes |
+| The LinkedIn lead-magnet process ran 10:06 to 10:30 on 2026-10-01, 24 minutes paste to live staging page | the clock times are **B only**; the notes carry just "24 minutes measured" | 24 minutes yes, the timestamps **need confirmation** |
 | Roughly five of those 24 minutes were Mauro's own attention (find the post, capture it, read the draft) | **his estimate, not measured.** He asked for "an honest version of how much time it should take me" | yes, **always labelled an estimate** |
-| The 24 minutes only holds because the promised resource already existed | voice notes | yes |
-| The resource-creation branch has no measured time yet | voice notes | yes |
-| On the first run Claude wrote a new resource before checking existing ones, so the check moved to the front of the block | voice notes | yes |
+| The 24 minutes only holds because the promised resource already existed | voice notes, "this is because we already had something built" | yes |
+| The resource-creation branch has no measured time yet | B. **Never call it the slowest step**, nothing timed it | yes |
+| On the first run Claude reached for a new resource before checking existing ones, so the check moved to the front of the block | **B only.** The notes do not contain this, and it sits unreconciled against the row above: whether the 24 minutes includes that detour is unanswered | **needs confirmation** |
 | Proven LinkedIn posts for this process are mostly 300+ comments | voice notes | yes |
-| The process-size rule: one trigger, one output that ships alone, one person who presses go, one number it moves on Monday, 6 to 12 steps | voice notes plus the build | yes |
-| The overview's top-line metric is booked calls per hour of human time | the build | yes |
+| The process-size rule: one trigger, one output that ships alone, one person who presses go, one number it moves on Monday, 6 to 12 steps | **B only.** The notes have Mauro asking for a solution, not adopting one | **needs confirmation** |
+| The overview's top-line metric is booked calls per hour of human time | **B only** | **needs confirmation** |
+| The overview is generated from one data file, filled every Monday with what shipped, human minutes, and calls on the post day or the day after | **B only.** Unclear whether this is live or planned, and the post-day window is a proximity read the UTM gaps above cannot clean up | **needs confirmation** |
+| A process shipping three weeks with no calls is a retire candidate; one booking calls with almost none of Mauro's time gets more volume | **B only** | **needs confirmation** |
+| Shared modules (the draft check, the staging page, the scheduler) are drawn once rather than copied into every map | **B only** | **needs confirmation** |
 
-**Two cautions.** The five-minute figure is Mauro's own estimate and ships as one, never as a
-measurement. And the person who asked for the maps is not on the Named references list below, so
-he is not named in public copy without Mauro's say-so.
+**Three cautions.** The five-minute figure is Mauro's own estimate and ships as one, never as a
+measurement, which also means a draft cannot carry it and then close on "a time I made up is worse
+than no time at all". The person who asked for the maps is not on the Named references list below,
+so he is not named in public copy without Mauro's say-so. And every **B only** row above is
+unconfirmed: it ships after Mauro says yes, not before.
 
 ## Named references
 
