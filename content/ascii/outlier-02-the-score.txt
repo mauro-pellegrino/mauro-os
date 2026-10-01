@@ -1,0 +1,31 @@
+┌─ WHAT COUNTS AS AN OUTLIER · measured against its own account ─────────────────────────────┐
+│                                                                                            │
+│   A post that did far better than that account normally does.                              │
+│                                                                                            │
+├─ THE SCORE ────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│                     ┌─ THE RATIO ─────────────────┐                                        │
+│                     │ the post's number           │                                        │
+│                     │ ────────────────────        │                                        │
+│                     │ their median, last          │                                        │
+│                     │ 10 to 20 posts              │                                        │
+│                     └──────────────────────────────┘                                       │
+│                                                                                            │
+│   3x or more        an outlier                                                             │
+│   10x               a strong one                                                           │
+│                                                                                            │
+├─ THE FLOOR · so a tiny account can't win on ratio alone ───────────────────────────────────┤
+│                                                                                            │
+│   on x              at least 50,000 impressions                                            │
+│   on linkedin       at least 300 comments                                                  │
+│                                                                                            │
+├─ WHAT THE NUMBER ALONE DOESN'T TELL YOU ───────────────────────────────────────────────────┤
+│                                                                                            │
+│   100,000 views on an account that always gets 100,000 is a Tuesday.                       │
+│   The same post on an account that gets 10,000 is an outlier.                              │
+│                                                                                            │
+│   Follower count tells you nothing. An 11.5k account can be                                │
+│   nothing but YouTube scripts pasted into x, headers and all.                              │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

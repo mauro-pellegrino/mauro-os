@@ -9,7 +9,7 @@ src = pathlib.Path(args[0]); handle = args[1] if len(args) > 1 else "@maurojpell
 C = (dict(page="#EFE8D8", win="#FAF6EC", edge="#D9D2C0", bar="#F1EBDD", title="#8A8578", ink="#1A1A1A", foot="#8A8578", accent="#BD0A0A", shadow="rgba(60,50,30,.18)")
      if cream else
      dict(page="#0E1116", win="#1B1F27", edge="#2E3440", bar="#232833", title="#7C8595", ink="#D7DCE4", foot="#7C8595", accent="#E8B86A", shadow="rgba(0,0,0,.55)"))
-text = src.read_text().rstrip("\n")
+text = src.read_text(encoding="utf-8").rstrip("\n")
 lines = text.split("\n"); cols = max(len(l) for l in lines); rows = len(lines)
 font = 17; cw = font * 0.6; lh = font * 1.45
 w = int(cols * cw + 2 * 56); h = int(rows * lh + 56 * 2 + 44 + 60)
@@ -30,7 +30,7 @@ pre{{padding:40px 56px 24px;color:{C['ink']};font:{font}px/{lh}px 'JetBrains Mon
 <pre>{html.escape(text)}</pre>
 <div class="foot"><span>{src.stem.replace('-', ' ')}</span><b>{html.escape(handle)}</b></div>
 </div></body></html>"""
-out_html = src.with_suffix(".html"); out_html.write_text(page)
+out_html = src.with_suffix(".html"); out_html.write_text(page, encoding="utf-8")
 out_png = src.with_suffix(".png")
 CHROMES = [
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
