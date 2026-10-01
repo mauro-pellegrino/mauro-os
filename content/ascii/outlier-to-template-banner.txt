@@ -1,0 +1,11 @@
+OUTLIER  ->  TEMPLATE                                                                             save 50, build nothing
+========================================================================================================================
+
+  THEIR POST                      THE SCORE                       WHAT WE SAVE                    OUR POST                
+  +----------------------+        +----------------------+        +----------------------+        +----------------------+
+  | 626 comments         |        | post / their median  |        | the shape            |        | our five steps       |
+  | a table of ten levels |  --->  | 3x   outlier         |  --->  | the rules            |  --->  | our 36 prompts       |
+  | build time column    |        | 10x  strong          |        | the original         |        | what you get         |
+  +----------------------+        +----------------------+        +----------------------+        +----------------------+
+
+  structure borrowed, subject ours                                       floor: 50K views on x, 300 comments on linkedin
