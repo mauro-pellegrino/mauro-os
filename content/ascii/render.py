@@ -14,7 +14,8 @@ lines = text.split("\n"); cols = max(len(l) for l in lines); rows = len(lines)
 font = 17; cw = font * 0.6; lh = font * 1.45
 w = int(cols * cw + 2 * 56); h = int(rows * lh + 56 * 2 + 44 + 60)
 page = f"""<!DOCTYPE html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/700.css" rel="stylesheet">
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{w+80}px;height:{h+80}px;background:{C['page']};display:flex;align-items:center;justify-content:center}}
@@ -22,7 +23,7 @@ body{{width:{w+80}px;height:{h+80}px;background:{C['page']};display:flex;align-i
 .bar{{height:44px;background:{C['bar']};display:flex;align-items:center;padding:0 18px;gap:9px;border-bottom:1px solid {C['edge']}}}
 .d{{width:13px;height:13px;border-radius:50%}}
 .t{{flex:1;text-align:center;color:{C['title']};font:13px 'JetBrains Mono',monospace;margin-right:60px}}
-pre{{padding:40px 56px 24px;color:{C['ink']};font:{font}px/{lh}px 'JetBrains Mono',ui-monospace,monospace;white-space:pre}}
+pre{{padding:40px 56px 24px;color:{C['ink']};font:{font}px/{lh}px 'DejaVu Sans Mono',Menlo,Consolas,'Liberation Mono',monospace;white-space:pre;font-variant-ligatures:none;letter-spacing:0}}
 .foot{{display:flex;justify-content:space-between;padding:0 56px 26px;font:14px 'JetBrains Mono',monospace;color:{C['foot']}}}
 .foot b{{color:{C['accent']};font-weight:700}}
 </style></head><body><div class="win">
