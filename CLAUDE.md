@@ -99,6 +99,12 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Any drafted prose, before delivery (anti-slop audit) | `skills/content/anti-slop-protocol.md` |
 | **Any drafted copy, before Mauro sees it** | the `gate` agent in `.claude/agents/` (4 passes, runs on a different model) |
 | Turn a system that actually runs into a monospace card + notes (source doc for Juan) | `skills/content/system-extraction.md` |
+| Score a profile's posts and save the outliers as templates | `skills/research/template-intake.md` + `tools/outlier-score.py` |
+| Weekly grab of real work into insight cards | `skills/research/content-sweep.md` |
+| X article with ASCII diagrams and a terminal cover | `skills/content/ascii-article.md` |
+| ASCII diagrams for an article or carousel, or the 5:2 terminal cover (not for video posts) | `skills/content/ascii-diagrams.md` + `content/ascii/build_cover.py` |
+| Tag a staged post with its template | `content-log/README.md` |
+| Map a content process, the system overview, or the ranked queue of what to fix first | `skills/ops/process-maps.md` + `tools/process-maps/` |
 | **Brief an article from a post that performed or an outlier article (runs first)** | `skills/content/article-origination.md` |
 | **Any transcript or doc into an X article** | `skills/content/x-articles-POINTER.md` → `~/growthub-os/skills/content/x-articles/` |
 | X article from transcript or script (legacy, Mauro voice + correction log) | `skills/content/x-article-creator.md` |
