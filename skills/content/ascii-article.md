@@ -111,6 +111,6 @@ Create the file with that header on the first run.
 ## Done when
 
 - The article file has all 8 sections, and section 3 has no `[NEEDS]`.
-- 4-7 cream diagrams and one cover are rendered and checked by eye.
+- 4-7 cream diagrams and the 5:2 cover are rendered and checked by eye.
 - The independent gate run returned PASS.
 - The handover is in chat (or the client's staging surface), the `post-tags.csv` row is in, and the timing row is in.
