@@ -1,5 +1,9 @@
 # Company brain + voice doc research: fetch queue
 
+> **SUPERSEDED 2026-10-04. Do not fetch.** The research this queue was built for was done on
+> 2026-09-30 in the Growthub repo (18 videos, synthesis with an adopt / adapt / reject table), and its
+> method for Mauro's lane is in `research/company-brain-and-voice/phase-1-approach.md`. Kept only as a
+> record of what was queued. Pull from this list only if that synthesis leaves a specific gap.
 > **STATUS: QUEUED, NOT FETCHED. NOT ADOPTED.** Built 2026-09-29 for the phase 1 research Mauro asked
 > for (the company brain and the voice document, best version for the ICP, for Brando's install and
 > for internal use). The transcripts could not be pulled: the session's network policy blocks
