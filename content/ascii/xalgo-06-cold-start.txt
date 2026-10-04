@@ -1,0 +1,22 @@
+┌─ COLD START · switched on 30 Sep, and it is the whole game under 50k ──────────────────────┐
+│                                                                                            │
+│   follower cap            under 50,000                                                     │
+│   impressions             under 200                                                        │
+│   post age                first 2 hours (7,200s)                                           │
+│   feed slots              15 and 16                                                        │
+│                                                                                            │
+├─ WHAT TO DO WITH IT ───────────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   Post when the audience is actually online, and answer every                              │
+│   reply inside that two hour window.                                                       │
+│                                                                                            │
+├─ THE CAVEAT THAT APPLIES TO EVERY NUMBER ABOVE ────────────────────────────────────────────┤
+│                                                                                            │
+│   Every value in that file is a DEFAULT. X can override any of                             │
+│   them per experiment or per user without shipping a release.                              │
+│                                                                                            │
+│   A default is where the feed starts, never proof of what your                             │
+│   feed is running today. Re-check before you quote a number.                               │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

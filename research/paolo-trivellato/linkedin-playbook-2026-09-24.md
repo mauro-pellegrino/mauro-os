@@ -292,3 +292,34 @@ be priced in before setting targets.
 On Slack, free, as things come up. He offered specifically to help with cold LinkedIn outbound and
 HeyReach on a future call. He also offered to send Eugenio's profile and a list of AI-ad
 inspiration profiles across X and LinkedIn, which had not arrived as of writing.
+
+---
+
+## Re-check against the raw transcript, 2026-10-01
+
+Raw transcript saved at `~/growthub-os/research/transcripts/internal-calls/2026-09-24-paolo-consult-transcript.md` (12,205 words). The sections above hold. These points were missing or thin:
+
+- **Copy length on a lead-magnet post: mid-length.** The copy mirrors the image. It stays easy to read but looks like it covers a lot. *"I wouldn't say it's necessarily like super long... probably like mid, mid-length."* [21:59]
+- **Volume target is comments, not post count.** *"Even if you did 2 a week but they were getting hundreds of comments"*, that beats daily posts with few comments. [13:27]
+- **Lead Shark set-up:** leave the DM message empty and use the comment reply with the opt-in link. This works only because the email opt-in and the funnel exist behind it. [33:34]
+- **Video lead magnets work the same way.** A banner on the video ("want to create something like this?") and "comment this word for access" at the bottom. Lorenzo proposed it and Paolo confirmed Eugenio runs it. [49:19–49:36]
+- **Add the result if the client allows it.** A result inside a lead-magnet post adds trust on top of the reach. Case-study lead magnets convert best. [49:57]
+- **The warm DM references the latest post they engaged on**, and its text. [34:50]
+- **Skills do not remove the writer.** His writers still filter ideas, adjust drafts and go back and forth with the AI. [42:33]
+- **Template the image from a winner.** Same structure and design, change the colour scheme, the topic and a few elements. Codex or Claude Design. [23:07]
+
+## The LinkedIn autodm process, step by step
+
+Built from the call. Each step names who does it. Times are `[NEEDS: measured]` until one full run is timed.
+
+1. **Idea.** Pick a winner from the swipe file: LinkedIn 300–400+ comments, or an X post far above its own account's average. Or use a real build we already run. Owner: Mauro. Time `[NEEDS]`.
+2. **Resource.** Build the giveaway in Notion first. No post goes out before the resource exists. Owner: Mauro with Claude. Time `[NEEDS]`.
+3. **Image.** A dense infographic templated from the winner. The CTA ("comment WORD") is inside the image, never in the copy. Owner: Claude image prompt, then the designer. Time `[NEEDS]`.
+4. **Copy.** Mid-length, easy to read, no CTA and no keyword in the text. Owner: Claude draft, Mauro edit. Time `[NEEDS]`.
+5. **Lead Shark.** Keyword trigger, comment reply with the opt-in link, DM message empty. Owner: Mauro or the VA. Time `[NEEDS]`.
+6. **Opt-in page → thank-you page with a VSL, case studies and a book-a-call link.** Built once, reused for every post. Owner: Mauro. Time `[NEEDS]`.
+7. **3 emails in 3 days.** Resource plus "more this week" plus a soft CTA, then a case study, then a direct CTA. Built once. Owner: Mauro.
+8. **Weekly warm outbound.** Export from the Lead Shark **post** section. Claude scores ICP fit. Filter for 3+ posts engaged. DM the top 5 with the latest post they engaged on and one case study, ending "open to seeing how I'd approach it?". Owner: a human setter.
+9. **Measure.** Profile visits a month is the headline number. Then comments per post, opt-ins, and booked calls by Calendly source link.
+
+Steps 6 and 7 are the capture funnel. Without them, step 5 falls back to a DM with the Notion link, which is the old flow.

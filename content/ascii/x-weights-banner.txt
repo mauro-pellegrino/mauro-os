@@ -1,0 +1,14 @@
+X FOR YOU · param.rs                                                              read 1 Oct 2026 · every value is a default
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  share via copy link      20.0   ████████████████████  the highest positive in the file
+  reply                     5.0   █████                 
+  quote                     5.0   █████                 
+  time after the tap        0.4   ▍                     worth more than the tap itself
+  the tap                   0.3   ▎                     
+  open link                 0.2   ▎                     no link penalty anywhere in here
+  video quality view        0.0   ·                     
+
+  not interested        -47.52      block -31.2    mute -58.8    report -234.0   subtracted, not scaled
+
+  no 10 second threshold exists   ·   cold start is on: under 50k, under 200 impressions, first 2 hours

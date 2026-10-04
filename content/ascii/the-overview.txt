@@ -1,0 +1,34 @@
+EVERY CONTENT PROCESS ON ONE PAGE                  runs every week
+==================================================================
+
+  INPUTS            what arrived this week
+  +----------------------------------------------------------------+
+  | outlier posts from other accounts                              |
+  | our own client work                                            |
+  | last week's numbers                                            |
+  +----------------------------------------------------------------+
+                           |
+                           v
+  PROCESSES         one shipped output each, split by channel
+  +----------------------------------------------------------------+
+  | one trigger  ->  6 to 12 steps  ->  one output                 |
+  |                                                                |
+  | shared modules drawn once, not per map                         |
+  +----------------------------------------------------------------+
+                           |
+                           v
+  MONDAY            every process gets three numbers
+  +----------------------------------------------------------------+
+  | what shipped                                                   |
+  | minutes a person spent on it                                   |
+  | calls on the post day or the day after                         |
+  +----------------------------------------------------------------+
+     |                     |
+     |                     v
+     |          BOOKED CALLS PER HOUR OF HUMAN TIME
+     |          three weeks, no calls      -> retire
+     |          calls, almost none of me   -> more volume
+     |
+     +--> back to INPUTS
+
+  ENVIRONMENT       the skills, the agents, Notion and Slack

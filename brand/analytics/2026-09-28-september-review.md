@@ -1,5 +1,9 @@
 # CONTENT ANALYTICS REVIEW — September 2026 (Sep 1-28)
 
+> **Superseded 29 Sep 2026** by `2026-09-content-review.md`, once the post-level export for
+> Sep 2-29 arrived. Two calls in here are wrong: the reach peaks were banter replies, not content,
+> and bare links are not the month's top bookmark format. Kept for the audit trail.
+
 **Inputs:** `exports/2026-09-01_2026-09-28-account-overview.csv` (daily, 28 days),
 `exports/2026-09-09_2026-09-15-content.csv` (per-post, 7 days, the only post-level data for the month).
 Internal working doc. Does not publish.

@@ -72,6 +72,7 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 
 | Request type | Skill to use |
 |---|---|
+| **A markdown file dropped in chat (default handoff)** | article + 10 bullet-point posts + cover prompt, see section 7 |
 | Start / end of day, plan the day, accountability | `skills/ops/daily-ops.md` |
 | Weekly content loop | `skills/ops/content-loop.md` |
 | Monday acquisition analysis | `skills/ops/monday-acquisition-analysis.md` |
@@ -159,8 +160,9 @@ Full guide in `brand/voice.md`. The non-negotiables:
 - **Git hygiene: pull at the start, push at the end.** Every session begins with `git checkout main && git pull` and every unit of work ends with a commit and `git push`. One commit, one push, never let unpushed commits stack up. Work on `main` unless there's a clear reason for a feature branch, and if you branch, merge it back and push promptly so `main` stays the single source of truth. This is the fix for what went wrong before: local `main` drifted 71 commits behind origin with 3 unpushed commits on top, which forced a conflict-heavy reconciliation. Don't recreate that.
 - **A DM-trigger giveaway means the asset is ready first.** Never draft or ship a post with an autodm keyword or comment-to-DM CTA unless the resource it promises (and the skill that delivers it) is already built and ready to send. The keyword is a promise; don't make it before the deliverable exists. When a draft includes a keyword CTA, prepare the giveaway alongside it or flag that it still needs building.
 - **Ask Mauro for audio, not typed answers.** When a brief, a script or a skill needs input only he has, send one consolidated question list and ask for a single long voice note. Set 2026-09-21: in audio he covers what he thinks matters instead of answering the question as asked. Transcribe it and save it to `research/transcripts/maurojpelle/` before using it. Draft an answer to every question yourself first, sourced and flagged, so he corrects instead of writing.
+- **Every markdown file Mauro sends gets the full three-part package.** Default deliverable, no asking first: (1) an X article built from it, (2) at least 10 X posts off the same source, each one a hook line plus bullet points, (3) a cover image prompt. Route the article through `skills/content/x-articles-POINTER.md` when `growthub-os` is on the machine, otherwise `skills/content/x-article-creator.md`. Posts follow `skills/content/short-form/short-form-from-long-content.md`, ignoring its 3-5 cap. Cover prompt uses the doodle style in `x-article-creator.md` (black ink line art, `#F7F3EA` cream ground, `#52B788` sage accents, 5:2). All three go to the `gate` agent before Mauro sees them. If the file is clearly not article material (an analytics export, a config, a half-written skill), say so in one line and ask before spending the work. Set 2026-10-01.
 - **Learning protocol.** When Mauro corrects something, log the correction and the new rule, and apply it automatically next time.
 
 ---
 
-*Last updated: 14 July 2026 | Version 2.0 (rebuilt as the brain of Mauro's brand)*
+*Last updated: 1 October 2026 | Version 2.1 (added the default markdown handoff)*

@@ -1,0 +1,19 @@
+┌─ TEMPLATE INTAKE · somebody else's post, our subject ──────────────────────────────────────┐
+│                                                                                            │
+│   find            an account you already rate, then its top posts                          │
+│   score           against that account's own median, never ours                            │
+│   capture         five things, batched, never one at a time                                │
+│   save            into the repo, and build nothing yet                                     │
+│   template        the shape, the rules, the original                                       │
+│   route           to the process that post type belongs to                                 │
+│                                                                                            │
+├─ ONE INTAKE, EVERY POST TYPE ──────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   lead magnet post      →  the auto dm process                                             │
+│   text post             →  long form                                                       │
+│   article               →  the article process                                             │
+│                                                                                            │
+│   Same pipe on x and on linkedin. The subject is always ours.                              │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,22 @@
+┌─ FOUR DWELL PARAMS · the one everybody mixes up ───────────────────────────────────────────┐
+│                                                                                            │
+│   ContClickDwellTimeWeight    0.4    time AFTER a tap                                      │
+│   ClickWeight                 0.3    the tap itself                                        │
+│   DwellWeight                 0.05   dwell with no tap                                     │
+│   ContDwellTimeWeight         0.004                                                        │
+│                                                                                            │
+├─ WHY IT MATTERS FOR WRITING ───────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│   0.4 beats 0.3, so the time after the tap is worth more than                              │
+│   the tap. A hook that wins the click and loses the reader scores                          │
+│   below one that holds them to the end.                                                    │
+│                                                                                            │
+│   Write the body for the second number, not the first.                                     │
+│                                                                                            │
+├─ QUOTE THE WRONG ONE AND THE ADVICE INVERTS ───────────────────────────────────────────────┤
+│                                                                                            │
+│   0.05 as "time after the tap" makes dwell a sixth of the tap.                             │
+│   Same file, different param, opposite instruction.                                        │
+│                                                                                            │
+│                                                                               @maurojpelle │
+└────────────────────────────────────────────────────────────────────────────────────────────┘

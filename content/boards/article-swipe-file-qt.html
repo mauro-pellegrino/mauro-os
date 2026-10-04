@@ -1,0 +1,179 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>QT panels — the article swipe file, the audit and the rule</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --mono-dark: #B7E4C7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:#E8EAE7; }
+
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:52px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
+  h1 { font-size:52px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
+    color:var(--body); margin-bottom:16px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:20px; line-height:1.55; max-width:900px; margin-bottom:40px; }
+
+  /* COMPARE CARDS — two buckets, side by side */
+  .cmp { display:flex; gap:16px; margin-bottom:22px; }
+  .cmp .card { flex:1; border:2px solid var(--ink); border-top:7px solid var(--ink);
+    padding:24px 26px 26px; position:relative; }
+  .cmp .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:11px; }
+  .cmp .imp { font-size:25px; font-weight:700; color:var(--ink); }
+  .cmp .impk { font-size:15px; color:var(--muted); margin-bottom:16px; }
+  .cmp .mult { font-size:76px; font-weight:800; line-height:1; color:var(--ink);
+    letter-spacing:-2.4px; }
+  .cmp .multk { font-size:15px; color:var(--muted); margin-top:9px; line-height:1.4; }
+  .cmp .card.win { border-top:7px solid var(--highlight); }
+
+  /* STRIP — bordered stat block, mono label + rows */
+  .strip { border:2px solid var(--ink); border-top:7px solid var(--highlight);
+    padding:24px 28px 26px; margin-bottom:22px; }
+  .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .strip .row { display:flex; align-items:baseline; gap:16px; padding:9px 0; }
+  .strip .n { font-family:'JetBrains Mono',monospace; font-size:25px; font-weight:700;
+    color:var(--ink); width:88px; flex:none; }
+  .strip .t { font-size:19px; line-height:1.4; color:var(--body); }
+
+  .strip.tight { padding:22px 28px 24px; margin-bottom:22px; }
+  .strip.tight .row { padding:8px 0; }
+  .strip.tight .n { font-size:15px; width:196px; letter-spacing:.5px; }
+  .strip.tight .t { font-size:18px; }
+
+  .strip.wide .n { width:186px; font-size:20px; }
+
+  /* COMPARE COLUMNS — verdicts side by side */
+  .cols { display:flex; gap:16px; margin-bottom:22px; }
+  .cols .col { flex:1; border:2px solid var(--ink); }
+  .cols .h { background:var(--ink); color:#fff; font-size:18px; font-weight:700;
+    padding:13px 22px; }
+  .cols ul { list-style:none; padding:13px 22px 17px; }
+  .cols li { font-size:20px; line-height:1.4; padding:9px 0 9px 28px; position:relative;
+    color:var(--body); }
+  .cols li::before { content:""; position:absolute; left:0; top:11px;
+    width:11px; height:11px; background:var(--hot); }
+  .cols .col.neg li::before { background:var(--ink); transform:rotate(45deg); }
+  .gap-tag { display:inline-block; background:var(--highlight); color:var(--ink);
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700;
+    letter-spacing:1.4px; text-transform:uppercase; padding:3px 8px; margin-left:9px;
+    vertical-align:3px; }
+
+  /* INSIGHT — dark closing block, honey rule, mono label */
+  .insight { background:var(--dark); border-left:7px solid var(--highlight);
+    padding:26px 30px 28px; }
+  .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:10px; }
+  .insight .t { font-size:24px; line-height:1.36; font-weight:600; color:#fff; }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 20px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ QT PANEL 1 · the audit ============ -->
+<div class="page">
+  <div class="eyebrow">Outlier article swipe file &middot; 7 captures since late August</div>
+  <h1>Seven articles saved as outliers, and <span class="pop">one</span> has a view count on it</h1>
+  <p class="lede">Views are the only number that decides what counts as an outlier. Six of the seven
+    can&rsquo;t be read as one, and I didn&rsquo;t catch it until I sat down to write the process up.</p>
+
+  <div class="cmp">
+    <div class="card">
+      <div class="tag">What&rsquo;s actually in the folder</div>
+      <div class="imp">7 captures</div>
+      <div class="impk">off 7 different handles</div>
+      <div class="mult">1</div>
+      <div class="multk">carrying a measured number</div>
+    </div>
+    <div class="card win">
+      <div class="tag">The only one that qualifies</div>
+      <div class="imp">@coreyganim</div>
+      <div class="impk">first AI consulting retainer</div>
+      <div class="mult">170K</div>
+      <div class="multk">views, the whole sample size</div>
+    </div>
+  </div>
+
+  <div class="strip tight">
+    <div class="label">What a capture has to carry</div>
+    <div class="row"><div class="n">the link</div><div class="t">text, views and cover all re-fetch from it</div></div>
+    <div class="row"><div class="n">the view count</div><div class="t">without it a capture is a screenshot I liked</div></div>
+    <div class="row"><div class="n">the author</div><div class="t">no author column, no way to test whose habit a pattern is</div></div>
+    <div class="row"><div class="n">the full text</div><div class="t">saved whole, so the piece reads without opening x</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">What the gap actually was</div>
+    <div class="t">I was selecting on craft, not on performance. Craft isn&rsquo;t a measurement, and
+      three of the seven were cover and title only.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+<!-- ============ QT PANEL 2 · the rule ============ -->
+<div class="page">
+  <div class="eyebrow">The one rule &middot; save only, do not build</div>
+  <h1>Nothing gets built off this pile until there are <span class="pop">50</span> in it</h1>
+  <p class="lede">Ten minutes a piece to screenshot, and it stays slow on purpose. A rule drawn
+    from five articles is a rule drawn from what I happened to like that week.</p>
+
+  <div class="cols">
+    <div class="col neg">
+      <div class="h">At seven, it&rsquo;s a note</div>
+      <ul>
+        <li>One observation</li>
+        <li>One handle&rsquo;s habit <span class="gap-tag">Unchecked</span></li>
+        <li>My taste, templated</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="h">At fifty, held per author</div>
+      <ul>
+        <li>A pattern that survived</li>
+        <li>Testable against the author column</li>
+        <li>A number that hooks on its own</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="strip wide">
+    <div class="label">The live tension, and why it stays a note</div>
+    <div class="row"><div class="n">0 of 5</div><div class="t">fully captured covers is a raw screenshot</div></div>
+    <div class="row"><div class="n">4 of 5</div><div class="t">are illustrations, the fifth is a designed composite</div></div>
+    <div class="row"><div class="n">1 number</div><div class="t">sitting on top of all five of them</div></div>
+    <div class="row"><div class="n">7 handles</div><div class="t">no house style averaging out across a pile that scattered</div></div>
+  </div>
+
+  <div class="insight">
+    <div class="label">Skipped, whatever the follower count</div>
+    <div class="t">A youtube script pasted into x. Spoken structure, headers dropped in every few
+      paragraphs to fake sections.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>
