@@ -1,0 +1,45 @@
+{
+ "title": "AI content engine",
+ "version": "v1 · 2026-10-04",
+ "north_star": "booked calls per hour of human time",
+ "inputs": [
+  {"t": "Template intake", "who": "Y", "d": "outlier posts from profiles you track, any type → post templates", "status": "proposed"},
+  {"t": "Your real work", "who": "C", "d": "weekly grab: call recordings, team chat, docs → insight cards", "status": "proposed"},
+  {"t": "The market", "who": "C", "d": "what competitors and peers publish and run", "status": "proposed"},
+  {"t": "Last week's numbers", "who": "Y", "d": "X, LinkedIn and booking exports", "status": "proposed"},
+  {"t": "Partner briefs", "who": "P", "d": "brief + deadline from a partner", "status": "proposed"}
+ ],
+ "lanes": [
+  {"name": "LINKEDIN", "processes": [
+   {"t": "Lead magnet autodm", "d": "proven post → template → your resource → keyword in image", "status": "mapped", "map": "specs/linkedin-lead-magnet-autodm.json",
+    "week": {"shipped": null, "human_min": null, "calls": null}},
+   {"t": "Template long form", "d": "same process as X, channel switch", "status": "proposed", "week": null}
+  ]},
+  {"name": "X", "processes": [
+   {"t": "Article", "d": "one subject → long playbook + ASCII diagrams", "status": "proposed", "week": null},
+   {"t": "Template long form", "d": "post templates → your version", "status": "proposed", "week": null},
+   {"t": "Quote tweet", "d": "your article or a peer's post + a diagram", "status": "proposed", "week": null}
+  ]},
+  {"name": "YOUTUBE", "processes": [
+   {"t": "Video board", "d": "script → board → recording", "status": "proposed", "week": null}
+  ]}
+ ],
+ "shared": [
+  {"t": "Gate agent", "who": "C", "d": "voice · claims · slop · format"},
+  {"t": "Staging page", "who": "C", "d": "post · DM · media, nothing else"},
+  {"t": "VA ships", "who": "V", "d": "schedule, autodm keyword, images"}
+ ],
+ "review": {"t": "Monday review", "d": "reach + booked calls per post"},
+ "arch_title": "UNDER IT · HOW CLAUDE CODE RUNS THIS",
+ "arch": [
+  {"t": "CLAUDE.md router", "d": "request type → skill file · the routing table"},
+  {"t": "Rule files", "d": "voice · claims · bans · post templates"},
+  {"t": "Hooks", "d": "load the rules at start · auto-commit skill edits"},
+  {"t": "Agents", "d": "gate · one per repeated job"},
+  {"t": "Skills", "d": "content · research · youtube · lead-gen · ops"},
+  {"t": "Connectors (MCP)", "d": "the tools your team already uses"}
+ ],
+ "changelog": [
+  "2026-10-04 v1: first overview. LinkedIn lead magnet autodm mapped as the example, the rest proposed."
+ ]
+}

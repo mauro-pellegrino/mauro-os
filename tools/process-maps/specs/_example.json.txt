@@ -1,0 +1,18 @@
+{
+ "title": "Process name · one shipped output",
+ "priority": "PRIORITY 1 · why it ranks here, one sourced line (optional)",
+ "foot": "one honest line: what is measured, what is not",
+ "segs": [
+  {"kind": "H", "t": "Pick the subject", "who": "Y", "time": null, "out": "one subject, one intent", "tool": "where you look",
+   "notes": ["Exactly what to do, one line each", "Max 4 lines"], "wait": false, "img": null},
+  {"kind": "C", "steps": [
+   {"t": "Pull the source", "time": null, "out": "research file", "skills": ["skill or tool", "connector"], "branch": null, "img": null},
+   {"t": "Draft", "time": "3 MIN", "out": "draft with every claim sourced", "skills": ["skill file"], "branch": "short dashed branch note (optional)", "img": null}
+  ]},
+  {"kind": "H", "t": "Schedule + ship", "who": "V", "time": null, "out": "post live", "tool": "scheduler", "notes": ["Waits for the VA's slot"], "wait": true, "img": null}
+ ]
+}
+who: Y = You (yellow) · V = VA (green) · P = Partner (pink) · K = Client (grey) · R = Monday review (purple). Claude steps go in a "C" group.
+time: "N MIN" only when a timestamp or a document backs it. Otherwise null, which renders "? MIN".
+wait: true stripes the step in the time strip (the work waits on someone).
+img: a file name in tools/process-maps/assets/, or null.

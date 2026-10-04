@@ -1,0 +1,24 @@
+{
+ "title": "LinkedIn lead magnet autodm",
+ "foot": "example map · no step is timed yet, every time shows ? MIN until one run goes on the clock",
+ "segs": [
+  {"kind": "H", "t": "Find a proven post", "who": "Y", "time": null, "out": "one lead magnet post", "tool": "LinkedIn, tracked profiles",
+   "notes": ["A lead magnet post from a profile you track", "Far above that account's own normal", "Compare to their median, never yours"]},
+  {"kind": "H", "t": "Capture it", "who": "Y", "time": null, "out": "pasted into Claude", "tool": "post · image · comments",
+   "notes": ["Copy the post text", "Copy the image", "Screenshot one comment + the reply", "Add the reaction and comment counts"]},
+  {"kind": "C", "steps": [
+   {"t": "Save the template", "time": null, "out": "shape + rules + original", "skills": ["post templates", "Notion"]},
+   {"t": "Match a resource", "time": null, "out": "real contents pulled", "skills": ["lead magnet library", "search"],
+    "branch": "no match → build the resource first, before any copy"},
+   {"t": "Build the image", "time": null, "out": "keyword in the image", "skills": ["HTML", "headless Chrome", "2x PNG"]},
+   {"t": "Copy + gate", "time": null, "out": "every line sourced", "skills": ["gate agent", "brand/claims.md"]},
+   {"t": "Stage it", "time": null, "out": "post · DM · media", "skills": ["staging page"]}
+  ]},
+  {"kind": "H", "t": "Review", "who": "Y", "time": null, "out": "approved", "tool": "chat",
+   "notes": ["Rows in the image match the resource", "Keyword sits in the image only", "Approve, or send one correction"]},
+  {"kind": "H", "t": "Schedule + DM", "who": "V", "time": null, "out": "keyword → resource link", "tool": "scheduler, autodm tool", "wait": true,
+   "notes": ["Schedule from the staging page", "Set keyword → DM", "DM holds the resource link", "Waits for the VA's slot"]},
+  {"kind": "H", "t": "Measure", "who": "R", "time": null, "out": "comments · DMs · calls", "tool": "Monday review",
+   "notes": ["Comments and DMs sent", "Profile visits", "Booked calls, post day + next day"]}
+ ]
+}

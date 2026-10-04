@@ -1,0 +1,13 @@
+{"slug": "_example",
+ "title": "HOW AN AI CONTENT ENGINE BOOKS CALLS",
+ "hsize": 46,
+ "sub": "the weekly loop that turns an agency's real work into posts, checks every draft before a human sees it, and reads booked calls every Monday.",
+ "handle": "@maurojpelle", "user": "mauro", "host": "ghostedcalls", "bg": "#F5EFE4", "accent": "#E0A854",
+ "mid": [{"file": "_example-01-loop.txt", "from": 0, "to": 9},
+         {"file": "_example-02-gate.txt", "from": 0, "to": 12}],
+ "cols": [{"h": "1 SOURCES", "items": ["call recordings", "team chat · docs"]},
+          {"h": "2 VOICE", "items": ["your own words", "what you never say"]},
+          {"h": "3 DRAFT", "items": ["templates that won", "one source, many posts"]},
+          {"h": "4 GATE", "items": ["voice · claims", "slop · format"]},
+          {"h": "5 MONDAY", "items": ["booked calls", "-> next week's inputs"]}],
+ "tree": ["content-engine/", "├─ sources/", "├─ voice.md", "├─ templates/", "├─ drafts/", "├─ gate/", "└─ monday/", "", "inputs:", "  call recordings", "  team chat", "  past posts", "", "review:", "  every monday"]}

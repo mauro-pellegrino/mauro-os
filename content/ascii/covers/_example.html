@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1500px;height:600px;overflow:hidden;background:#F5EFE4;background-image:radial-gradient(#17131022 1.2px,transparent 1.2px);background-size:18px 18px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace}
+.win{width:1410px;height:540px;background:#121417;border:1px solid #2A2E35;border-radius:12px;box-shadow:0 24px 60px rgba(40,30,0,.35);overflow:hidden;display:flex;flex-direction:column}
+.bar{height:30px;background:#22262D;display:flex;align-items:center;padding:0 14px;gap:7px;color:#7C8595;font-size:12px}
+.d{width:11px;height:11px;border-radius:50%}.t{flex:1;text-align:center;margin-right:50px}
+.in{flex:1;display:flex;padding:16px 26px 12px;gap:22px;color:#D7DCE4;min-height:0}
+.tree{width:250px;flex:none;font-size:12.5px;line-height:1.55;color:#9AA3B2;border-right:1px solid #2E3440;padding-right:16px;white-space:pre}
+.tree div:first-child{color:#E0A854;font-weight:700}
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.h{position:relative;font-family:Silkscreen,monospace;font-weight:700;font-size:46px;line-height:1.02;color:#fff;letter-spacing:.5px}
+.h .sh{position:absolute;left:4px;top:4px;color:#E0A85455;z-index:0}.h .fg{position:relative;z-index:1}
+.sub{margin-top:8px;font-size:13px;color:#AEB6C4;max-width:960px;line-height:1.45}
+.mids{margin-top:10px;display:flex;gap:18px;flex:1;min-height:0;overflow:hidden}
+.mid{font-size:9.6px;line-height:1.22;color:#9AA3B2;white-space:pre;overflow:hidden}
+.sys{margin-top:8px;display:flex;align-items:stretch;gap:6px;border-top:1px solid #2E3440;padding-top:14px}
+.c{flex:1;border:1px solid #4A5160;padding:8px 10px;min-width:0}
+.ch{font-size:12px;font-weight:700;color:#E0A854;letter-spacing:.08em;margin-bottom:6px;border-bottom:1px solid #3A404C;padding-bottom:4px}
+.ci{font-size:11.5px;line-height:1.35;color:#D7DCE4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ar{align-self:center;color:#7C8595;font-size:13px}
+.foot{display:flex;justify-content:space-between;margin-top:8px;font-size:12.5px;color:#7C8595}
+.foot b{color:#E0A854} .cur{display:inline-block;width:8px;height:14px;background:#D7DCE4;vertical-align:-2px;margin-left:4px}
+</style></head><body><div class="win">
+<div class="bar"><span class="d" style="background:#FF5F57"></span><span class="d" style="background:#FEBC2E"></span><span class="d" style="background:#28C840"></span><span class="t">mauro · -zsh · _example · 269x44</span></div>
+<div class="in"><div class="tree"><div>content-engine/</div><div>├─ sources/</div><div>├─ voice.md</div><div>├─ templates/</div><div>├─ drafts/</div><div>├─ gate/</div><div>└─ monday/</div><div>&nbsp;</div><div>inputs:</div><div>  call recordings</div><div>  team chat</div><div>  past posts</div><div>&nbsp;</div><div>review:</div><div>  every monday</div></div>
+<div class="main"><div class="h"><div class="sh">HOW AN AI CONTENT ENGINE BOOKS CALLS</div><div class="fg">HOW AN AI CONTENT ENGINE BOOKS CALLS</div></div>
+<div class="sub">the weekly loop that turns an agency&#x27;s real work into posts, checks every draft before a human sees it, and reads booked calls every Monday.</div>
+<div class="mids"><pre class="mid">┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│ REAL WORK    │ -&gt; │ DRAFTS       │ -&gt; │ POSTED       │
+│ calls · docs │    │ voice + gate │    │ X · LinkedIn │
+└──────┬───────┘    └──────────────┘    └──────┬───────┘
+       ^                                       |
+       |            ┌──────────────┐           |
+       └─────────── │ MONDAY       │ &lt;─────────┘
+                    │ booked calls │
+                    └──────────────┘</pre><pre class="mid">┌──────────────────────────────────────────┐
+│ EVERY DRAFT, BEFORE A HUMAN SEES IT      │
+├──────────────────────────────────────────┤
+│ 1  voice     does it sound like you      │
+│ 2  claims    every number has a source   │
+│ 3  slop      no AI tells                 │
+│ 4  format    fits the vehicle            │
+└──────────────────────────────────────────┘
+                     |
+                     v
+              you approve or fix</pre></div>
+<div class="sys"><div class="c"><div class="ch">1 SOURCES</div><div class="ci">call recordings</div><div class="ci">team chat · docs</div></div><div class="ar">──&gt;</div><div class="c"><div class="ch">2 VOICE</div><div class="ci">your own words</div><div class="ci">what you never say</div></div><div class="ar">──&gt;</div><div class="c"><div class="ch">3 DRAFT</div><div class="ci">templates that won</div><div class="ci">one source, many posts</div></div><div class="ar">──&gt;</div><div class="c"><div class="ch">4 GATE</div><div class="ci">voice · claims</div><div class="ci">slop · format</div></div><div class="ar">──&gt;</div><div class="c"><div class="ch">5 MONDAY</div><div class="ci">booked calls</div><div class="ci">-&gt; next week&#x27;s inputs</div></div></div>
+<div class="foot"><span>mauro@ghostedcalls ~ % <span class="cur"></span></span><b>@maurojpelle</b></div></div></div>
+</div></body></html>
