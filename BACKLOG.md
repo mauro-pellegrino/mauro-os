@@ -24,6 +24,28 @@ X, where the conversion happens.
 
 ---
 
+## NOW — Ghosted Calls phase one: send the Agency Booked Calls offer (set 2026-10-04)
+
+The offer is ready since July (`research/jk-molina/cashie-studio/offer/agency-booked-calls.md`)
+and was never sent. Mauro has the message. Decided 2026-10-04: **remove the $300k/mo number**
+(it is Lorenzo's and needs his sign-off). 90-minute block per day on this account, before Slack.
+
+- [ ] **Run the prospect finder.** Target = a strong YouTube channel with an offer and a weak or
+  missing X / LinkedIn. `! cd ~/mauro-os && YOUTUBE_API_KEY=<key> python3 tools/yt-prospects.py`
+  writes `research/yt-prospects/<date>.csv`. Auto mode blocks Claude from reading the key, so
+  Mauro runs it. Not run yet.
+- [ ] Pick the top 15 from the CSV. Check each X profile by hand (followers, last post date).
+- [ ] The message for these 15 is cold: open on their video and the missing X / LinkedIn, not
+  on "because we've connected before".
+- [ ] Send. Log who was messaged, who answered, the next step, here.
+- [?] **Blocked on Mauro:** the 5-6 agency owners he ghostwrote for and the 2-3 churned contacts
+  are not named anywhere in the repo. They are the warmest list.
+- [?] **Blocked on Lorenzo:** Brando is helped free in Lorenzo's Slack. Talk to Lorenzo first.
+- Warm fallback list (people Mauro replied to most on X, May-Aug): LoganTGott (content agency),
+  itsmarcosruiz (X agency), Aidanb2b, Dwriteway, AlexHartsuff (coaches agency owners, referral ask).
+
+---
+
 ## TIER 1 — the YouTube video flow (the "own vidIQ")
 
 The end-to-end path is: research picks the topic, titles get drafted, Mauro answers in a voice
