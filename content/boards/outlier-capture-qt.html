@@ -1,0 +1,105 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>QT panel: how I capture an outlier post</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* PALETTE CONTRACT — Mauro green. Only place a hex is named. */
+  :root {
+    --ground:    #FFFFFF;
+    --ink:       #1B4332;
+    --body:      #1B1B1B;
+    --muted:     #5F6B62;
+    --dark:      #1B4332;
+    --highlight: #E9B949;
+    --hot:       #52B788;
+    --on-dark:   #FFFFFF;
+    --canvas:    #E8EAE7;
+    --hairline:  #D9DED9;
+  }
+
+  body { font-family:'Inter',sans-serif; color:var(--body); background:var(--canvas); }
+
+  .page {
+    width:1080px; height:1080px; background:var(--ground);
+    padding:52px 62px 0; margin:0 auto 28px;
+    display:flex; flex-direction:column; position:relative;
+  }
+
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+    letter-spacing:2.6px; text-transform:uppercase; color:var(--hot); margin-bottom:13px; }
+  h1 { font-size:52px; font-weight:800; line-height:1.06; letter-spacing:-1.6px;
+    color:var(--body); margin-bottom:16px; }
+  h1 .pop { background:var(--highlight); color:var(--ink); padding:0 9px;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .lede { font-size:20px; line-height:1.55; max-width:900px; color:var(--muted);
+    margin-bottom:30px; }
+
+  /* STRIP — what a capture carries, mono keys + rows */
+  .strip { border:2px solid var(--ink); border-top:7px solid var(--highlight);
+    padding:22px 28px 24px; margin-bottom:20px; }
+  .strip .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .strip .row { display:flex; align-items:baseline; gap:16px; padding:8px 0; }
+  .strip .n { font-family:'JetBrains Mono',monospace; font-size:15px; font-weight:700;
+    letter-spacing:.5px; color:var(--ink); width:186px; flex:none; }
+  .strip .t { font-size:18px; line-height:1.4; color:var(--body); }
+
+  /* CARD ROW — the two judgement calls */
+  .cmp { display:flex; gap:16px; margin-bottom:20px; }
+  .cmp .card { flex:1; border:2px solid var(--ink); border-top:7px solid var(--ink);
+    padding:20px 24px 22px; }
+  .cmp .tag { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:1.8px; text-transform:uppercase; color:var(--hot); margin-bottom:10px; }
+  .cmp .t { font-size:18px; line-height:1.42; color:var(--body); }
+
+  /* INSIGHT — dark closing block, honey bar, mono label */
+  .insight { background:var(--dark); border-left:7px solid var(--highlight);
+    padding:24px 30px 26px; }
+  .insight .label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--highlight); margin-bottom:10px; }
+  .insight .t { font-size:23px; line-height:1.36; font-weight:600; color:var(--on-dark); }
+
+  .footer { margin-top:auto; border-top:1px solid var(--hairline);
+    padding:16px 0 20px; font-size:14px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ============ QT PANEL · capturing an outlier post ============ -->
+<div class="page">
+  <div class="eyebrow">Outlier capture &middot; what a saved post has to carry</div>
+  <h1>The link and the view count are the <span class="pop">two</span> I won&rsquo;t skip</h1>
+  <p class="lede">Same five things every time, no exceptions, so the post is actually usable later.</p>
+
+  <div class="strip">
+    <div class="label">What a capture carries</div>
+    <div class="row"><div class="n">the text</div><div class="t">copy the post text</div></div>
+    <div class="row"><div class="n">the shot</div><div class="t">screenshot the post from the feed</div></div>
+    <div class="row"><div class="n">the link</div><div class="t">copy the link</div></div>
+    <div class="row"><div class="n">the number</div><div class="t">check the numbers are precise before any of it moves</div></div>
+    <div class="row"><div class="n">the batch</div><div class="t">batch them</div></div>
+  </div>
+
+  <div class="cmp">
+    <div class="card">
+      <div class="tag">Why the shot comes off the feed</div>
+      <div class="t">You want the title, the cover and the first few lines in one frame, because
+        that&rsquo;s the unit that did the work.</div>
+    </div>
+    <div class="card">
+      <div class="tag">When the cover is an infographic</div>
+      <div class="t">Copy the image itself, so the detail inside it survives the capture.</div>
+    </div>
+  </div>
+
+  <div class="insight">
+    <div class="label">What the link buys you</div>
+    <div class="t">With a link, everything else can be re-fetched. Without one you&rsquo;ve saved a
+      screenshot of something you&rsquo;ll never find again.</div>
+  </div>
+
+  <div class="footer">&mdash; Mauro</div>
+</div>
+
+</body></html>
