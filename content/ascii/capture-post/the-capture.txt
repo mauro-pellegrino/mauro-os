@@ -1,0 +1,25 @@
+┌─ THE CAPTURE · the same five things, every time ───────────────────────────┐
+│                                                                            │
+│   1  the text     copy the post text                                       │
+│   2  the shot     screenshot the post from the feed                        │
+│   3  the link     copy the link                                            │
+│   4  the number   check the numbers are precise before any of it moves     │
+│   5  the batch    batch them                                               │
+│                                                                            │
+├─ WHY THE SHOT COMES OFF THE FEED ──────────────────────────────────────────┤
+│                                                                            │
+│   you want the title, the cover and the first few lines in one             │
+│   frame, because that's the unit that did the work                         │
+│                                                                            │
+│   when the cover is an infographic, copy the image itself,                 │
+│   so the detail inside it survives the capture                             │
+│                                                                            │
+├─ THE TWO I WON'T SKIP ─────────────────────────────────────────────────────┤
+│                                                                            │
+│   the link         everything else can be re-fetched from it               │
+│   the view count   without it there is nothing to score                    │
+│                                                                            │
+│   without a link, you've saved a screenshot of something                   │
+│   you'll never find again                                                  │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘

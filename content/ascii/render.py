@@ -43,7 +43,7 @@ CHROMES = [
 chrome = next((c for c in CHROMES if pathlib.Path(c).exists()), None)
 if chrome is None:
     sys.exit("No Chrome/Chromium found. Add its path to CHROMES in this script.")
-subprocess.run([chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2",
+subprocess.run([chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--disable-lcd-text", "--force-device-scale-factor=2",
                 f"--window-size={w+80},{h+80}", f"--screenshot={out_png.resolve()}", out_html.resolve().as_uri()],
                stderr=subprocess.DEVNULL, check=True)
 if not out_png.exists():

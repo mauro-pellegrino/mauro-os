@@ -289,6 +289,7 @@ itself. All process rows are Mauro's own spec, not measured findings, and are pu
 | The first seven captures: only one of seven (@coreyganim, "How to land your first AI consulting retainer") had a recorded view count, 170,000 | README.md corpus table | yes |
 | Three of the seven captures were cover-and-title only, no body text and no view count, and were moved into a separate cover library rather than counted as outlier captures | README.md | yes |
 | Links were missing on nearly all seven; the link and the view count are treated as the two non-optional fields, since a link lets everything else be re-fetched | loom + README.md | yes |
+| Intake scores an X capture as that post's impressions divided by the account's own median over its last 10-20 posts, so a capture saved with no view count cannot be scored at all | `tools/outlier-score.py`, `skills/research/template-intake.md` steps 4-5 | yes |
 | Rule added after the first seven: tag the author on every row, since the corpus spans many different authors and a pattern must be checked per-author before it's treated as real | loom + README.md | yes |
 | Reading discipline: an observation across seven captures is a note; the same observation across fifty, held per author, is a rule | loom | yes |
 | Cross-capture reading, n=5 with numbers on one: none of the five saved covers is a raw screenshot, four are illustrations and one arranges real screenshots into a designed composite | README.md, "Patterns and tensions" | yes, **stated as a hypothesis, n=5** |
