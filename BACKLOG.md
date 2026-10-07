@@ -43,6 +43,19 @@ and was never sent. Mauro has the message. Decided 2026-10-04: **remove the $300
 - [?] **Blocked on Lorenzo:** Brando is helped free in Lorenzo's Slack. Talk to Lorenzo first.
 - Warm fallback list (people Mauro replied to most on X, May-Aug): LoganTGott (content agency),
   itsmarcosruiz (X agency), Aidanb2b, Dwriteway, AlexHartsuff (coaches agency owners, referral ask).
+- [x] **Produced 2026-10-07, drafts, nothing sent or posted, not gated.**
+  - Offer page `content/offer/agency-booked-calls.html` (+ `.png` preview): $300k anchor removed,
+    ICP from the 17 Aug formalised version, $200/week x 4, 1 founding spot, starts 1 December,
+    CTA = email "Booked" to mauro@ghostedcalls.com.
+  - 3 nurture emails `content/offer/nurture-emails.md` (idea, problem, sales; day 1-3).
+  - Lead magnet `content/lead-magnets/outlier-to-template-intake/`: fill-in HTML (scores posts vs
+    the account's median, capture checklist, auto-written Claude prompt, template record, weekly
+    pick), LinkedIn post, 1080x1350 image with the INTAKE keyword in the image.
+  - Two weeks of posts `content/drafts/2026-10-w42-w43-posts.md`: 10 X, 4 LinkedIn, 2 X articles.
+- [ ] Run the `gate` agent on the four files above before Mauro reads them.
+- [ ] Host the offer page and the intake sheet at public URLs (no host, email tool or payment link
+  exists). LeadShark needs the sheet URL before LI1 ships on Wed 14 Oct.
+- [ ] Mauro: sign off the 0-of-185 and 57-minute numbers for public posts (new rows in `brand/claims.md`).
 
 ---
 

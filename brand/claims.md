@@ -500,6 +500,20 @@ Real people and products may be named. Get the name right, a wrong one burns cre
 operator audience. Confirmed spellings in use: Wiz of ecom, Charlie Morgan, Claude Code, LeadShark,
 Miro, Notion, Atria, Calendly.
 
+## Mauro's own system, 2026-10-07
+
+Counted from the files on 2026-10-07. Mauro's own setup and his own time, no agency business numbers.
+
+| Claim | Source | Public |
+|---|---|---|
+| From 31 Aug, claude pushed 5 backlog tasks a day into google tasks; 37 days, 185 tasks, 0 ticked | `~/growthub-os/ops/daily/done/*.json`, 37 files, 2026-08-31 to 2026-10-06 | yes, **Mauro decides; it is an internal ops file** |
+| Week of 28 Sep: 1,094 claude code session minutes in the agency repo, 57 in mauro-os | `~/.calendar/week-2026-09-28.json` | yes, **always as claude code session minutes, never as all work hours** |
+| The own-brand block is 10:00 to 11:30 with slack off | `private/systems-eval-2026-10-07.md`, agreed that week | yes |
+| Monday ritual: claude dumps the week (calendar, git, both backlogs), then the diary, then 4 wins | same | yes, **as the design until the first run on 12 Oct** |
+| Worked example: @maurojpelle, 15 original posts 2 to 5 Sep 2026, median 116 impressions; the 5 Sep post did 2,316, 20x, under the 50k floor | `research/x-analytics/maurojpelle-2026-07-08-to-2026-10-05.csv` | yes |
+| Outlier rule: 3x / 10x the account's own median over its last 10-20 posts; floors 50k impressions on x, 300 comments on linkedin; 5-post minimum | `skills/research/template-intake.md` | yes, as method |
+| Batch rule: no two articles in a batch share a structure, title shape or cover; two "5 steps" titles once clashed in one batch | `~/growthub-os/skills/content/x-articles/README.md`, Mauro 2026-10-05 | yes |
+
 ## What is NOT in this file
 
 No hook rates, no CPA figures, no ROAS lifts, no follower counts, no client results, no revenue
