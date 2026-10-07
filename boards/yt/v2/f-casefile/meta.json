@@ -1,0 +1,68 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [],
+    "frames": 26,
+    "minutes": 23,
+    "needs": [
+      "the 45 minutes lost to the rebuilt SOP (MAP.md), not in claims.md",
+      "the working title and the $100k/$150k/$500k figure from doc 11, owned by the titles agent, none cleared"
+    ]
+  },
+  {
+    "doc": "08",
+    "file": "08-content-working-cant-prove-it.html",
+    "titles": [
+      {
+        "title": "Your Content Is Working. You Just Can't Prove It.",
+        "modelled_on": "charlie-morgan-dig.md #5, \"I've Coached 50,000 Men. You All Have The Same Problem.\" (31K): two-sentence universal callout"
+      },
+      {
+        "title": "Impressions Didn't Predict Our Booked Calls (I Measured It)",
+        "modelled_on": "01-outliers.csv, Marcos Ruiz \"I Copied a Twitter/X Account That Makes $100k/mo (it worked?)\" (6,300): claim plus parenthetical proof. Niche: Neil Patel \"How to measure the ROI of your content efforts in 2023\" (14,203 views, YouTube search 2026-10-07)"
+      },
+      {
+        "title": "I Ranked 12 Articles by Booked Calls So You Don't Have To",
+        "modelled_on": "charlie-morgan-dig.md #9, \"I Ranked Every Online Business Model So You Don't Have To\" (24K). Niche: HubSpot Marketing \"What Is Attribution Modeling? A Quick Explainer for Marketers\" (117,669 views)"
+      }
+    ],
+    "frames": 23,
+    "minutes": 21,
+    "needs": [
+      "the 12-row table values (impressions, calls, lift), doc 08 section 3",
+      "47,000 against 5,500 impressions and 2 against 8 calls (rows 3 and 9) with the 4.2 and 3.8 baselines",
+      "the converter lift values (2.27x, 2.20x, 2.12x, 1.30x, 1.03x, 0.88x) and the other shapes",
+      "UTM filled on 4 of 541 bookings (_corpus.md)",
+      "the topic-mix table under booking days (post-to-call.py run 2026-09-07)",
+      "the same test on @maurojpelle's own data"
+    ]
+  },
+  {
+    "doc": "06",
+    "file": "06-cited-inside-chatgpt.html",
+    "titles": [
+      {
+        "title": "How Agencies Get Cited Inside ChatGPT (Clearly Explained)",
+        "modelled_on": "01-outliers.csv, Greg Isenberg \"Model Context Protocol (MCP) clearly explained (why it matters)\" (1.3M). Niche: Jamie Stenton \"How to Get ChatGPT to Recommend Your Business | AI SEO Strategy for Local Businesses\" (22,454 views, YouTube search 2026-10-07)"
+      },
+      {
+        "title": "How ChatGPT Picks Agencies (One Operator's Playbook)",
+        "modelled_on": "01-outliers.csv, David Ondrej \"Build Everything with AI Agents: Here's How\" (1.7M): the how promise, with the one-source framing in the parenthetical. Niche: Exposure Ninja \"How To Rank in ChatGPT (with REAL Examples!)\" (17,930 views)"
+      },
+      {
+        "title": "Before You Write Another Blog Post, Watch This",
+        "modelled_on": "Liam Ottley \"Before You Move Your Business to ChatGPT, Watch This\" (26,755 views, YouTube search 2026-10-07); Liam Ottley is a 01-outliers.csv channel"
+      }
+    ],
+    "frames": 23,
+    "minutes": 20,
+    "needs": [
+      "the guest's live web / memory split (60/40 in doc 06)",
+      "verify independently that ChatGPT search runs on Bing",
+      "the guest's YouTube view-count example (18k vs 400k)",
+      "the day counts (45 days broad, about a day niche, 30-45 days Reddit) and the three-month decay",
+      "run the test: three models, one agency shortlist, recorded"
+    ]
+  }
+]

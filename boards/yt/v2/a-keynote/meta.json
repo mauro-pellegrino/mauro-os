@@ -1,0 +1,81 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [
+      {
+        "title": "My Claude Code Content System (150+ Booked Calls)",
+        "modelled_on": "01-outliers.csv, Jordan Platten, 'I Let Claude AI Get Me Clients for 30 Days (240 Meetings Booked)', 39k: result in brackets after the claim"
+      },
+      {
+        "title": "73 Claude Code Skills That Run an Agency's Inbound",
+        "modelled_on": "01-outliers.csv, Liam Ottley, 'The 8 AI Skills That Will Separate Winners From Losers in 2025', 1.6M: a number of skills up front"
+      },
+      {
+        "title": "Build Your Content Engine With Claude Code: Here's How",
+        "modelled_on": "01-outliers.csv, David Ondrej, 'Build Everything with AI Agents: Here's How', 1.7M: build X with tool, here's how"
+      }
+    ],
+    "frames": 25,
+    "minutes": 24,
+    "needs": [
+      "time lost on the rebuilt SOP (doc says 45 minutes, not in claims.md)",
+      "the revenue figure for the title ($100k/mo, $150k MRR, ~$500k total are all uncleared; none used)"
+    ]
+  },
+  {
+    "doc": "12",
+    "file": "12-agents-for-booked-calls.html",
+    "titles": [
+      {
+        "title": "Building AI Agents That Actually Book Calls",
+        "modelled_on": "01-outliers.csv, Greg Isenberg, 'Building AI Agents that actually work (Full Course)', 566k: the anti-hype 'that actually' qualifier"
+      },
+      {
+        "title": "I Ranked 7 AI Agents by How Close They Get to a Call",
+        "modelled_on": "charlie-morgan-dig.md #9, 'I Ranked Every Online Business Model So You Don't Have To', 24k: the save-you-effort ranking"
+      },
+      {
+        "title": "The 7 AI Agents I'm Installing for More Booked Calls",
+        "modelled_on": "01-outliers.csv, Nate Herk, 'How I Sold These 4 AI Agents for $23000 (as a beginner)', 457k: a counted set of agents tied to a result"
+      }
+    ],
+    "frames": 24,
+    "minutes": 22,
+    "needs": [
+      "doc's 'UTM filled on 4 of 541 bookings' (673 of 678 used instead, from claims.md)",
+      "doc's 'one account down 92% on posts'",
+      "outbound volume (30k emails a month) and first-test replies (5, 4 to one angle, 1 to the other)",
+      "sign-off to quote the outside consultant's line on camera",
+      "re-check on recording day which of B and C is installed",
+      "Mauro's decision on whether the re-engagement motion (A) jumps the queue"
+    ]
+  },
+  {
+    "doc": "01",
+    "file": "01-skills-to-agents.html",
+    "titles": [
+      {
+        "title": "I Moved My Content Engine to AI Agents (What Broke)",
+        "modelled_on": "01-outliers.csv, Marcos Ruiz, 'I Copied a Twitter/X Account That Makes $100k/mo (it worked?)': first-person move plus a bracketed honest-outcome tag (6.3k on a small channel, 1.6x its other top videos)"
+      },
+      {
+        "title": "What I'd Build Before AI Agents in 2026",
+        "modelled_on": "01-outliers.csv, Nick Saraev, 'What I'd Learn Instead of Automation in 2026', 492k: contrarian 'what I'd do first' with the year"
+      },
+      {
+        "title": "When to Turn Claude Skills Into Agents (Clearly Explained)",
+        "modelled_on": "01-outliers.csv, Greg Isenberg, 'How AI agents & Claude skills work (Clearly Explained)', 647k: the hot mechanic plus the Clearly Explained tag"
+      }
+    ],
+    "frames": 24,
+    "minutes": 23,
+    "needs": [
+      "about 30 minutes a day saved (his estimate, voice note 2026-08-20)",
+      "how long the end-of-day reports were wrong (doc says two months)",
+      "185 tasks pushed, 0 ticked: in claims.md but marked 'Mauro decides'",
+      "the noise statistic: 221 views, 22.2% engagement rate",
+      "the view floor for insight rules (doc says 1,000+)"
+    ]
+  }
+]

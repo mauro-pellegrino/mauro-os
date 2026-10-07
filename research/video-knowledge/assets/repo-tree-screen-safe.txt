@@ -1,4 +1,4 @@
-growthub-os/                     the whole operation, one repo
+agency-repo/                  the whole operation, one repo
 ├── skills/                      73 markdown files, split by activity
 │   ├── content/                 long-form, short-form, linkedin-docs, x-articles/ (7 files)
 │   ├── research/                weekly research, brand breakdowns, ad teardowns

@@ -1,0 +1,66 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [],
+    "frames": 24,
+    "minutes": 23,
+    "needs": [
+      "45 min, MAP.md, missing from claims.md",
+      "the agent's run cadence, if Mauro wants to say it",
+      "the seven-file count is only in the tree asset, claims.md lacks it. Say 'a set of files' if not cleared.",
+      "which tool carries the capitals docstring, doc 11 does not name it"
+    ]
+  },
+  {
+    "doc": "07",
+    "file": "07-reverse-engineer-channel.html",
+    "titles": [
+      {
+        "title": "I reverse-engineered a big YouTube channel in one afternoon",
+        "modelled_on": "01-outliers.csv: Marcos Ruiz, \"I Copied a Twitter/X Account That Makes $100k/mo (it worked?)\" (study someone else's account, report the result)"
+      },
+      {
+        "title": "I ranked a top creator's YouTube tricks so you don't have to",
+        "modelled_on": "charlie-morgan-dig.md #9: \"I Ranked Every Online Business Model So You Don't Have To\" (save-you-effort authority)"
+      },
+      {
+        "title": "Charlie Morgan's YouTube formula (just copy him)",
+        "modelled_on": "01-outliers.csv: David Ondrej, \"Matt Pocock's Agentic Engineering Workflow (just copy him)\". Naming him needs Mauro's sign-off"
+      }
+    ],
+    "frames": 28,
+    "minutes": 23,
+    "needs": [
+      "Mauro's sign-off to name him on camera",
+      "counts are my read of the dig, missing from claims.md",
+      "subscriber count, the dig says about 310k as scraped 2026-07-16",
+      "the ten transcripts, still blocked",
+      "view counts scraped 2026-07-16, approximate"
+    ]
+  },
+  {
+    "doc": "04",
+    "file": "04-outlier-swipe-corpus.html",
+    "titles": [
+      {
+        "title": "You'll never trust your swipe file again after this",
+        "modelled_on": "charlie-morgan-dig.md #1: \"You'll NEVER Doomscroll Again After Watching This\""
+      },
+      {
+        "title": "I studied 41 winning X articles (here's the catch)",
+        "modelled_on": "01-outliers.csv: Marcos Ruiz, \"I Copied a Twitter/X Account That Makes $100k/mo (it worked?)\" (study, then the twist in brackets)"
+      },
+      {
+        "title": "The swipe file that actually works (full system)",
+        "modelled_on": "01-outliers.csv: Greg Isenberg, \"Building AI Agents that actually work (Full Course)\""
+      }
+    ],
+    "frames": 25,
+    "minutes": 23,
+    "needs": [
+      "Mauro's call on folding in the 43-file archive batch. It would move every number the article skills cite.",
+      "the retracted title conclusion, verbatim from _corpus.md"
+    ]
+  }
+]

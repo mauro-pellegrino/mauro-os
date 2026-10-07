@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get your agency cited inside ChatGPT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&family=Special+Elite&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<!-- format F case file · doc 06 · numbers from brand/claims.md -->
+<style>
+:root{--ink:#1B4332;--honey:#E9B949;--paper:#F7F3EA;--red:#C62828;--measured:#1F6B45;--observed:#A8650F;--assumed:#3E4F86}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b0f0d;overflow:hidden}
+body{font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;color:#1B1B1B}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+#stage{position:absolute;overflow:hidden;
+ background:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1.6px) 0 0/9px 9px,
+ radial-gradient(rgba(0,0,0,.28) 1px,transparent 1.6px) 4px 5px/13px 13px,
+ radial-gradient(ellipse at 50% 40%,#2c3832 0%,#1a221e 60%,#111613 100%)}
+#board{position:absolute;left:0;top:0;transform-origin:0 0;transition:transform 1.15s cubic-bezier(.65,.02,.25,1)}
+#board.instant,#board.instant *{transition:none!important}
+.ex.hs{padding-bottom:96px}.ex{position:absolute;transform:rotate(var(--r));box-shadow:0 16px 34px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.4)}
+.pin{position:absolute;top:-16px;left:calc(50% - 15px);width:30px;height:30px;border-radius:50%;z-index:5;
+ background:radial-gradient(circle at 35% 32%,#fff6d6 0 12%,#E9B949 30%,#9a7418 100%);box-shadow:0 5px 7px rgba(0,0,0,.55)}
+/* exhibit kinds */
+.paper{background:var(--paper);padding:34px 38px 30px}
+.card{background:repeating-linear-gradient(#fffef9 0 45px,#cfdfe8 45px 47px);border-top:10px solid #d9534f;padding:26px 36px 30px}
+.folder{background:#E2C88E;padding:44px 44px 40px;border-radius:0 10px 6px 6px}
+.folder:before{content:attr(data-tab);position:absolute;top:-46px;left:0;background:#E2C88E;padding:10px 26px 8px;border-radius:10px 10px 0 0;
+ font:700 22px 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--ink)}
+.term{background:#0f2219;color:#E6F0E9;padding:0 0 26px;font-family:'JetBrains Mono',monospace}
+.term .bar{height:40px;background:#1d3a2b;display:flex;align-items:center;gap:9px;padding:0 16px;margin-bottom:22px}
+.term .bar i{width:13px;height:13px;border-radius:50%;background:#4f6e5d;display:block}
+.term .bar span{margin-left:12px;font-size:16px;color:#a9c4b3}
+.term pre{font:500 21px/1.5 'JetBrains Mono',monospace;padding:0 28px;white-space:pre}
+.term pre b{color:var(--honey);font-weight:700}.term pre em{font-style:normal;color:#8fae9b}
+.term pre u{text-decoration:none;color:#ff8a80;font-weight:700}
+/* type inside exhibits */
+.id{font:700 16px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6b6250;margin-bottom:14px}
+.term .id{color:#8fae9b;padding:0 28px}
+.h{font:900 44px/1.05 'Inter';letter-spacing:-.02em;color:var(--ink)}
+.h.xl{font-size:150px;letter-spacing:-.04em;line-height:.95}
+.h.l{font-size:60px}
+.hand{font:700 46px/1.0 'Caveat',cursive;color:#1d2a52}
+.hand.l{font-size:60px}
+.big{font:900 150px/.9 'Inter';letter-spacing:-.05em;color:var(--ink)}
+.big.m{font-size:104px}
+.lab{font:600 25px/1.3 'Inter';color:#2f3a33;margin-top:10px}
+.src{margin-top:22px;padding-top:12px;border-top:2px dashed #bcae8f;font:700 15px 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#7a6e55}
+.card .src{border-color:#9fb6c4;color:#5d7383}
+.term .src{margin:22px 28px 0;border-color:#355a45;color:#8fae9b}
+.row{display:flex;gap:20px;align-items:baseline}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:baseline;margin-top:8px}
+.stat b{font:900 64px/1 'Inter';color:var(--ink);letter-spacing:-.03em;text-align:right}
+.stat span{font:600 25px 'Inter';color:#2f3a33}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.chip{border:3px solid var(--ink);padding:6px 14px;font:700 21px 'JetBrains Mono',monospace;color:var(--ink);background:#fff}
+.chip.on{background:var(--honey)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:14px;border:3px solid var(--ink)}
+.ba>div{padding:20px 22px;min-height:150px}
+.ba>div:first-child{background:#e9e2d3;border-right:3px solid var(--ink)}
+.ba>div:last-child{background:#fff}
+.ba .k{font:800 16px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#6b6250;margin-bottom:10px}
+.ba>div:last-child .k{color:var(--measured)}
+.ba .v{font:800 30px/1.2 'Inter';color:var(--ink)}
+.ba>div:first-child .v{text-decoration:line-through;text-decoration-color:rgba(198,40,40,.7);text-decoration-thickness:4px}
+table.t{width:100%;border-collapse:collapse;margin-top:10px}
+table.t td{padding:11px 10px;border-bottom:2px solid #d8cfbb;font:600 24px 'Inter';vertical-align:top}
+table.t td:first-child{font:800 22px 'JetBrains Mono',monospace;color:var(--ink);white-space:nowrap}
+table.t tr.hot td{background:#fbeec6}
+.list{margin-top:8px}.list div{font:700 30px/1.25 'Inter';color:var(--ink);padding:9px 0;border-bottom:2px solid #d8cfbb;display:flex;gap:18px}
+.list div span{font:800 24px 'JetBrains Mono',monospace;background:var(--honey);padding:2px 10px;height:fit-content}
+.needs{display:inline-block;background:var(--red);color:#fff;font:800 19px/1.3 'JetBrains Mono',monospace;padding:4px 10px;border-radius:3px;letter-spacing:.02em}
+.needs.blk{display:block;margin-top:14px}
+svg text{font-family:'Inter',sans-serif}
+/* stamps */
+.stamp{position:absolute;bottom:14px;right:20px;z-index:6;transform:rotate(-9deg) scale(2.6);opacity:0;
+ transition:transform .38s cubic-bezier(.3,1.6,.5,1),opacity .2s;border:5px double currentColor;padding:6px 14px 4px;text-align:center;
+ font:400 34px/1 'Special Elite',monospace;letter-spacing:.06em;background:rgba(247,243,234,.88);border-radius:4px}
+.stamp small{display:block;font:700 13px 'JetBrains Mono',monospace;letter-spacing:.1em;margin-top:5px}
+.stamp.measured{color:var(--measured)}.stamp.observed{color:var(--observed)}.stamp.assumed{color:var(--assumed)}.stamp.none{color:var(--red)}
+.ex.stamped .stamp{opacity:.95;transform:rotate(-9deg) scale(1)}
+/* strings */
+#strings{position:absolute;left:0;top:0;pointer-events:none;z-index:50;overflow:visible}
+#strings path{fill:none;stroke:#d8a531;stroke-width:4;filter:drop-shadow(0 3px 2px rgba(0,0,0,.5));transition:stroke-dashoffset 1.2s ease .35s}
+/* caption tape, outside the exhibits (max 8 words) */
+#cap{position:absolute;left:50%;bottom:4.2%;transform:translateX(-50%) rotate(-.6deg);background:#f2efe6;color:#111;
+ font-weight:900;letter-spacing:-.01em;padding:.35em .8em;box-shadow:0 8px 20px rgba(0,0,0,.5);white-space:nowrap;z-index:60}
+#cap:empty{opacity:0}
+/* presenter notes (N) */
+#notes{position:absolute;top:0;right:0;bottom:0;width:36%;background:rgba(8,12,10,.94);color:#e8eee9;padding:28px 30px;overflow:auto;
+ font:500 19px/1.5 'Inter';display:none;z-index:90;border-left:4px solid var(--honey)}
+#notes.on{display:block}
+#notes .t{font:800 15px 'JetBrains Mono',monospace;color:var(--honey);letter-spacing:.12em;margin-bottom:14px}
+#notes p{margin-bottom:12px}
+#notes .needs{font-size:14px}
+</style></head>
+<body>
+<div id="stage"><div id="board"><div class="ex paper hs" id="result" style="--r:-0.56deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">Exhibit 0.1 · the claim</div><div class="h">A no-name page gets cited like a big publisher.</div><div style="background:#fff;border:3px solid #1B4332;border-radius:14px;padding:22px 26px;margin-top:6px"><div style="display:flex;justify-content:flex-end"><div style="background:#e9ecef;border-radius:18px;padding:12px 20px;font:600 26px Inter">Shortlist agencies for [your niche]</div></div><div style="margin-top:18px;font:600 25px/1.5 Inter;color:#222">Here are three options:<div style="margin-top:10px">1. Agency A <span class="chip" style="font-size:16px;padding:2px 10px">a no-name blog</span></div><div>2. Agency B <span class="chip" style="font-size:16px;padding:2px 10px">a major publication</span></div><div>3. Agency C <span class="chip on" style="font-size:16px;padding:2px 10px">the agency's own site</span></div></div></div><div class="lab" style="font-size:18px">mock built in HTML · no real capture yet</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex folder" id="title" style="--r:-1.12deg" data-tab="CASE FILE 06"><div class="pin"></div><div class="h xl">Get your agency cited inside ChatGPT</div></div>
+<div class="ex paper hs" id="source" style="--r:0.48deg"><div class="pin"></div><div class="stamp none">MEASURED: NONE<small>0 claims verified</small></div><div class="id">Exhibit 0.2 · the only source</div><div class="stat"><b>1</b><span>podcast episode</span><b>1</b><span>guest, leads growth at Gamma</span><b>0</b><span>claims verified by me</span></div><div class="src">Distribution podcast, episode 1</div></div>
+<div class="ex folder" id="s1" style="--r:-1.37deg" data-tab="EXHIBIT A"><div class="pin"></div><div class="h l">Where answers come from</div></div>
+<div class="ex card hs" id="split" style="--r:0.11deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">A1 · two pools</div><div class="hand">Live web, or memory. You need to be in both.</div><span class="needs blk">[NEEDS: the guest&#x27;s web / memory split]</span><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="bing" style="--r:-0.43deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">A2 · the index</div><div class="hand">ChatGPT search runs on Bing.</div><span class="needs blk">[NEEDS: verify independently]</span><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="memory" style="--r:-1.41deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">A3 · memory compounds</div><div class="hand">The first citation wins every repeat answer to that user.</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex paper hs" id="authority" style="--r:0.02deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">A4 · the arbitrage</div><div class="ba"><div style="background:#fff;border-right:3px solid #1B4332"><div class="k">A NO-NAME BLOG</div><div class="v" style="text-decoration:none">cited</div></div><div><div class="k">A MAJOR PUBLICATION</div><div class="v">cited about as often</div></div></div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="window" style="--r:-1.48deg"><div class="pin"></div><div class="stamp assumed">ASSUMED<small>the guest's framing</small></div><div class="id">A5 · the clock</div><div class="hand">The window closes when the labs ship authority ranking.</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex paper hs" id="claude" style="--r:-0.21deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">A6 · worked example: Claude barely cites anyone</div><div class="ba"><div><div class="k">BEFORE</div><div class="v">Write pages for Claude to cite</div></div><div><div class="k">AFTER · GAMMA</div><div class="v">Ship an official Claude app, get surfaced as a tool</div></div></div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex folder" id="s2" style="--r:-1.38deg" data-tab="EXHIBIT B"><div class="pin"></div><div class="h l">What gets cited</div></div>
+<div class="ex paper hs" id="compare" style="--r:-1.31deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">B1 · comparisons get cited</div><div class="ba"><div><div class="k">PRAISE</div><div class="v">Why our agency is great</div></div><div><div class="k">COMPARISON</div><div class="v">Agency A vs Agency B for [niche]</div></div></div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="ownsite" style="--r:-0.24deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">B2 · your own site</div><div class="hand">Your comparison pages become what the model says about competitors.</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="open" style="--r:1.05deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">B3 · open wins</div><div class="hand">Medium and Quora are indexed. A signup wall is invisible.</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="negative" style="--r:-1.2deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">B4 · sentiment</div><div class="hand">One negative Reddit comment stayed in answers for months.</div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex term hs" id="outline" style="--r:-0.89deg"><div class="pin"></div><div class="stamp assumed">ASSUMED<small>shape, not tested</small></div><div class="bar"><i></i><i></i><i></i><span>comparison-page.md</span></div><div class="id">B5 · worked example: one page, outlined</div><pre><b># [Agency A] vs [Agency B] for [niche]</b>
+## Who each one fits
+## Where A wins
+## Where B wins
+## Price model, side by side
+## The verdict, by situation
+<em>open page, no signup wall</em></pre><div class="src">a template shape, no result attached</div></div>
+<div class="ex folder" id="s3" style="--r:0.41deg" data-tab="EXHIBIT C"><div class="pin"></div><div class="h l">Where, and for how long</div></div>
+<div class="ex paper hs" id="platform" style="--r:1.43deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">C1 · the platform map</div><table class="t"><tr class=""><td>Reddit</td><td>ChatGPT only</td></tr><tr class=""><td>YouTube</td><td>cited, views irrelevant</td></tr><tr class=""><td>Medium / Quora</td><td>yes, open by default</td></tr><tr class=""><td>Substack</td><td>barely, gating kills it</td></tr><tr class="hot"><td>X</td><td>never observed</td></tr><tr class=""><td>LinkedIn</td><td>yes, chaotically</td></tr><tr class=""><td>Instagram</td><td>not yet</td></tr></table><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="xrow" style="--r:0.25deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">C2 · the X claim</div><div class="hand l">X: never observed being cited.</div><span class="needs blk">[NEEDS: verify before acting]</span><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="yt" style="--r:-0.33deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">C3 · YouTube</div><div class="hand">Titles decide it. View count is irrelevant.</div><span class="needs blk">[NEEDS: the guest&#x27;s view-count example]</span><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card hs" id="timing" style="--r:1.52deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>1 guest · unverified</small></div><div class="id">C4 · the clock</div><div class="hand">Broad topics take weeks. Niche ones can take a day. Citations decay.</div><span class="needs blk">[NEEDS: the guest&#x27;s day counts and decay window]</span><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex paper hs" id="ba3" style="--r:-1.45deg"><div class="pin"></div><div class="stamp assumed">ASSUMED<small>if the X claim holds</small></div><div class="id">C5 · before / after, for a brand built on X</div><div class="ba"><div><div class="k">BEFORE</div><div class="v">Everything lives on X</div></div><div><div class="k">AFTER</div><div class="v">Owned pages and YouTube carry the citable version</div></div></div><div class="src">source: 1 podcast guest · unverified</div></div>
+<div class="ex card" id="test" style="--r:1.15deg"><div class="pin"></div><div class="id">C6 · the test</div><div class="hand l">Ask three models for an agency shortlist. Record what comes back.</div><span class="needs blk">[NEEDS: run the test, then stamp it]</span><div class="src">to run on camera</div></div>
+<div class="ex folder" id="cta" style="--r:-0.67deg" data-tab="CLOSE THE FILE"><div class="pin"></div><div class="h l">Agency Booked Calls</div><div class="lab" style="font-size:34px;font-weight:800">Link in the description</div></div><svg id="strings"></svg></div><div id="cap"></div><div id="notes"></div></div>
+<script>
+const EX=[{"id": "result", "col": 0, "span": 3, "clear": false, "dy": 40}, {"id": "title", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "source", "col": 6, "span": 3, "clear": false, "dy": 40}, {"id": "s1", "col": 0, "span": 3, "clear": false, "dy": 0}, {"id": "split", "col": 0, "span": 1, "clear": false, "dy": 0}, {"id": "bing", "col": 1, "span": 1, "clear": false, "dy": 0}, {"id": "memory", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "authority", "col": 0, "span": 2, "clear": false, "dy": 0}, {"id": "window", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "claude", "col": 0, "span": 3, "clear": false, "dy": 0}, {"id": "s2", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "compare", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "ownsite", "col": 3, "span": 1, "clear": false, "dy": 0}, {"id": "open", "col": 4, "span": 1, "clear": false, "dy": 0}, {"id": "negative", "col": 5, "span": 1, "clear": false, "dy": 0}, {"id": "outline", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "s3", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "platform", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "xrow", "col": 6, "span": 1, "clear": false, "dy": 0}, {"id": "yt", "col": 7, "span": 1, "clear": false, "dy": 0}, {"id": "timing", "col": 8, "span": 1, "clear": false, "dy": 0}, {"id": "ba3", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "test", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "cta", "col": 3, "span": 3, "clear": true, "dy": 0}];
+const STR=[["g_result", "result", "source"], ["g_split", "split", "source"], ["g_bing", "bing", "source"], ["g_memory", "memory", "source"], ["g_authority", "authority", "source"], ["g_window", "window", "source"], ["g_claude", "claude", "source"], ["g_compare", "compare", "source"], ["g_ownsite", "ownsite", "source"], ["g_open", "open", "source"], ["g_negative", "negative", "source"], ["g_platform", "platform", "source"], ["g_xrow", "xrow", "source"], ["g_yt", "yt", "source"], ["g_timing", "timing", "source"], ["t1", "xrow", "ba3"], ["t2", "ba3", "test"], ["t3", "compare", "outline"]];
+const FR=[{"focus": "all", "d": 8, "say": ["(Slow flythrough.) Agency owners now ask a model for a shortlist before they ask a person. This board is how the model picks, according to one source.", "Watch the stamps. Nothing here is measured yet."], "cap": "", "stamp": [], "string": [], "t": "0:00"}, {"focus": ["result"], "d": 8, "say": ["The claim first. A page from nobody gets cited about as readily as a big publisher. That is the arbitrage."], "cap": "A no-name page, cited like a publisher", "stamp": ["result"], "string": [], "t": "0:08"}, {"focus": ["source"], "d": 7, "say": ["And the honesty line, early. One podcast episode. One guest, who leads growth at Gamma. Zero of these claims verified by me. So today you get what to test, and you get the stamps."], "cap": "Every claim traces to one source", "stamp": ["source"], "string": ["g_result"], "t": "0:16"}, {"focus": ["s1", "s2", "s3"], "d": 7, "say": ["Three exhibits. Where answers come from. What gets cited. Where, and for how long."], "cap": "Three exhibits today", "stamp": [], "string": [], "t": "0:23"}, {"focus": ["s1", "split"], "d": 65, "say": ["Exhibit A. The guest says ChatGPT answers partly from the live web and partly from memory. <span class=\"needs\">[NEEDS: the guest&#x27;s split]</span>", "So half the game is being fetchable today, and half is having been indexed already."], "cap": "Exhibit A: where answers come from", "stamp": ["split"], "string": ["g_split"], "t": "0:30"}, {"focus": ["bing"], "d": 60, "say": ["ChatGPT search runs on Bing, per the guest. If that holds, Bing indexing is a prerequisite. Check this one yourself before you act on it."], "cap": "Check this one yourself", "stamp": ["bing"], "string": ["g_bing"], "t": "1:35"}, {"focus": ["memory"], "d": 60, "say": ["Memory compounds. The model re-recommends brands it already showed a user, so the first citation wins every repeat answer to that user."], "cap": "The first citation keeps winning", "stamp": ["memory"], "string": ["g_memory"], "t": "2:35"}, {"focus": ["authority"], "d": 65, "say": ["The arbitrage. Publisher authority does not appear to be weighted. A no-name blog gets cited about as readily as a major publication."], "cap": "The arbitrage", "stamp": ["authority"], "string": ["g_authority"], "t": "3:35"}, {"focus": ["window"], "d": 55, "say": ["And the clock on it. The guest's framing is that the window closes when the labs ship authority ranking. I stamped that assumed. It is a prediction."], "cap": "Why the window closes", "stamp": ["window"], "string": ["g_window"], "t": "4:40"}, {"focus": ["claude"], "d": 85, "say": ["Worked example. Claude barely cites anyone, per the guest. Writing to get cited in Claude is close to wasted effort.", "Gamma's answer: stop trying, ship an official Claude app. Now the model surfaces Gamma as a tool."], "cap": "Worked example: the Claude route", "stamp": ["claude"], "string": ["g_claude"], "t": "5:35"}, {"focus": ["s2", "compare"], "d": 80, "say": ["Exhibit B, what gets cited. Comparisons get cited. Praise never does.", "Why our agency is great: never quoted. Agency A versus Agency B for your niche: quoted. The model wants pages that judge between options."], "cap": "Exhibit B: what gets cited", "stamp": ["compare"], "string": ["g_compare"], "t": "7:00"}, {"focus": ["ownsite"], "d": 60, "say": ["Your own site is a top source. Gamma's own website is one of its most cited sources, per the guest. So the comparison page you write is what the model repeats about your competitors."], "cap": "Your site, quoted about competitors", "stamp": ["ownsite"], "string": ["g_ownsite"], "t": "8:20"}, {"focus": ["open"], "d": 55, "say": ["Open content wins. Medium and Quora are still indexed. Substack barely gets cited because writers gate posts. Anything behind a signup wall is invisible."], "cap": "Gated pages are invisible", "stamp": ["open"], "string": ["g_open"], "t": "9:20"}, {"focus": ["negative"], "d": 55, "say": ["Negative sentiment gets cited as readily as positive. One negative Reddit comment stayed in answers for months."], "cap": "Bad comments get cited too", "stamp": ["negative"], "string": ["g_negative"], "t": "10:15"}, {"focus": ["outline"], "d": 90, "say": ["Worked example. One comparison page, outlined. Who each option fits, where each wins, price model side by side, the verdict by situation. Open page, no signup wall.", "Stamped assumed. This is a template shape. Nobody has measured a citation off it yet."], "cap": "Worked example: one comparison page", "stamp": ["outline"], "string": ["t3"], "t": "11:10"}, {"focus": ["s3", "platform"], "d": 80, "say": ["Exhibit C, the platform map, one row at a time. Reddit: ChatGPT only. YouTube: cited, and view count is irrelevant. Medium and Quora: yes. Substack: barely. LinkedIn: yes, chaotically. Instagram: not yet."], "cap": "Exhibit C: the platform map", "stamp": ["platform"], "string": ["g_platform"], "t": "12:40"}, {"focus": ["xrow"], "d": 65, "say": ["And X. Never observed being cited. That is the most consequential claim in the whole set if you live on X, and the guest's own source flags it for checking."], "cap": "The claim that matters most here", "stamp": ["xrow"], "string": ["g_xrow"], "t": "14:00"}, {"focus": ["yt"], "d": 60, "say": ["YouTube: per the guest, a small video gets cited the same as a big one. The title is what matters. <span class=\"needs\">[NEEDS: the guest&#x27;s view counts]</span>"], "cap": "Titles over views", "stamp": ["yt"], "string": ["g_yt"], "t": "15:05"}, {"focus": ["timing"], "d": 65, "say": ["Timing. Broad topics take weeks to earn a citation. Niche ones can take a day. And a citation decays, so Gamma tracks every one in a spreadsheet and re-wins the phrase. <span class=\"needs\">[NEEDS: the day counts and the decay window]</span>", "That makes this a maintenance channel."], "cap": "A maintenance channel", "stamp": ["timing"], "string": ["g_timing"], "t": "16:05"}, {"focus": ["ba3"], "d": 80, "say": ["If the X claim holds, here is the before and after for a brand built on X. Before: everything lives on X. After: owned pages and YouTube carry the citable version, and X keeps booking the calls."], "cap": "Before and after", "stamp": ["ba3"], "string": ["t1"], "t": "17:10"}, {"focus": ["test"], "d": 70, "say": ["So the test, this week, on camera, unrehearsed. Ask three models for an agency shortlist in a niche. Record what comes back. Then this board gets its first measured stamp."], "cap": "The test to run this week", "stamp": [], "string": ["t2"], "t": "18:30"}, {"focus": "all", "d": 25, "say": ["Pull back. Every string on this board ends at one source. That is the honest state of this topic today."], "cap": "Every string ends at one source", "stamp": [], "string": [], "t": "19:40"}, {"focus": ["cta"], "d": 20, "say": ["If you run an established agency and want your inbound built and measured, the link is in the description. The offer is Agency Booked Calls."], "cap": "Link in the description", "stamp": [], "string": [], "t": "20:05"}];
+
+const W0=5652;
+const board=document.getElementById('board'),stage=document.getElementById('stage');
+const cap=document.getElementById('cap'),notes=document.getElementById('notes');
+const svg=document.getElementById('strings');
+let cur=0,SW=0,SH=0;
+function layout(){
+  const cols=new Array(9).fill(90+40);
+  EX.forEach(e=>{
+    const el=document.getElementById(e.id);
+    el.style.width=(e.span*560+(e.span-1)*54)+'px';
+    let y;
+    if(e.clear==='same'){y=window.LASTY;}else if(e.clear){y=Math.max(...cols);window.LASTY=y;}else{y=Math.max(...cols.slice(e.col,e.col+e.span));}
+    y+=(e.dy||0);
+    const x=90+e.col*(560+54);
+    el.style.left=x+'px';el.style.top=y+'px';
+    const h=el.offsetHeight;
+    if(e.clear){for(let i=0;i<cols.length;i++)cols[i]=y+h+54+30;}
+    else for(let i=e.col;i<e.col+e.span;i++)cols[i]=y+h+54+30;
+  });
+  const H=Math.max(...cols)+40;
+  board.style.width=W0+'px';board.style.height=H+'px';
+  svg.setAttribute('width',W0);svg.setAttribute('height',H);
+  window.BH=H;
+  // strings, pin to pin
+  STR.forEach(s=>{
+    const a=document.getElementById(s[1]),b=document.getElementById(s[2]);
+    const ax=a.offsetLeft+a.offsetWidth/2,ay=a.offsetTop,bx=b.offsetLeft+b.offsetWidth/2,by=b.offsetTop;
+    const mx=(ax+bx)/2,my=(ay+by)/2+Math.min(160,Math.hypot(bx-ax,by-ay)*.12);
+    let p=document.getElementById('s_'+s[0]);
+    if(!p){p=document.createElementNS('http://www.w3.org/2000/svg','path');p.id='s_'+s[0];svg.appendChild(p);}
+    p.setAttribute('d',`M${ax} ${ay} Q${mx} ${my} ${bx} ${by}`);
+    const L=p.getTotalLength();p.style.strokeDasharray=L;p.dataset.len=L;
+  });
+}
+function fit(){
+  const vw=innerWidth,vh=innerHeight;
+  SW=Math.min(vw,vh*16/9);SH=SW*9/16;
+  stage.style.width=SW+'px';stage.style.height=SH+'px';
+  stage.style.left=(vw-SW)/2+'px';stage.style.top=(vh-SH)/2+'px';
+  cap.style.fontSize=(SW*0.026)+'px';
+}
+function rectOf(ids){
+  if(ids==='all')return{x:0,y:0,w:W0,h:window.BH,pad:0};
+  let x1=1e9,y1=1e9,x2=-1e9,y2=-1e9;
+  ids.forEach(id=>{const el=document.getElementById(id);x1=Math.min(x1,el.offsetLeft);y1=Math.min(y1,el.offsetTop-20);
+    x2=Math.max(x2,el.offsetLeft+el.offsetWidth);y2=Math.max(y2,el.offsetTop+el.offsetHeight);});
+  return{x:x1,y:y1,w:x2-x1,h:y2-y1,pad:70};
+}
+function go(i,instant){
+  cur=Math.max(0,Math.min(FR.length-1,i));
+  const f=FR[cur];
+  const r=rectOf(f.focus);
+  const capH=f.cap?SH*0.12:0;
+  const availH=SH-capH*(r.pad?1:0);
+  let s=Math.min(SW/(r.w+2*r.pad*(SW/1600)),availH/(r.h+2*r.pad*(SH/900)));
+  if(f.focus!=='all')s=Math.min(s,SW/1600*1.55);
+  const tx=SW/2-s*(r.x+r.w/2),ty=availH/2-s*(r.y+r.h/2);
+  if(instant)board.classList.add('instant');
+  board.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
+  const st=new Set(),sg=new Set();
+  for(let k=0;k<=cur;k++){(FR[k].stamp||[]).forEach(x=>st.add(x));(FR[k].string||[]).forEach(x=>sg.add(x));}
+  EX.forEach(e=>document.getElementById(e.id).classList.toggle('stamped',st.has(e.id)));
+  STR.forEach(s=>{const p=document.getElementById('s_'+s[0]);p.style.strokeDashoffset=sg.has(s[0])?0:p.dataset.len;});
+  cap.textContent=f.cap||'';
+  notes.innerHTML=`<div class="t">FRAME ${cur+1} / ${FR.length} · ${f.t} · ${f.d}s</div>`+f.say.map(p=>`<p>${p}</p>`).join('');
+  history.replaceState(null,'','#'+(cur+1));
+  if(instant){board.offsetHeight;requestAnimationFrame(()=>board.classList.remove('instant'));}
+}
+addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(cur+1);}
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1);}
+  else if(e.key==='n'||e.key==='N'){notes.classList.toggle('on');}
+  else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  else if(e.key==='Home'){go(0);}
+});
+addEventListener('resize',()=>{fit();go(cur,true);});
+function start(){fit();layout();const h=parseInt(location.hash.slice(1));go(isNaN(h)?0:h-1,true);}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(start);
+
+</script>
+</body></html>
