@@ -1,0 +1,27 @@
+┌─ WHAT AN OUTLIER IS · measured against its own account ────────────────────┐
+│                                                                            │
+│   a post that did way better than that account normally does               │
+│                                                                            │
+├─ HOW WE SCORE IT ──────────────────────────────────────────────────────────┤
+│                                                                            │
+│   the number      impressions on x, comments on linkedin                   │
+│   divided by      that account's median, last 10 to 20 posts               │
+│   3x or more      an outlier                                               │
+│   10x             a strong one                                             │
+│                                                                            │
+├─ THE FLOOR · so a tiny account doesn't win on ratio alone ─────────────────┤
+│                                                                            │
+│   on x            at least 50,000 impressions                              │
+│   on linkedin     at least 300 comments                                    │
+│                                                                            │
+├─ WHAT THE NUMBER ON ITS OWN DOESN'T TELL YOU ──────────────────────────────┤
+│                                                                            │
+│   100,000 views on an account that always gets 100,000 is a                │
+│   normal day for them. the same post on an account that                    │
+│   usually gets 10,000 is an outlier                                        │
+│                                                                            │
+│   follower count tells you nothing here. the 11.5k account i               │
+│   looked at was youtube scripts pasted into articles, and it               │
+│   had nothing worth saving                                                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
