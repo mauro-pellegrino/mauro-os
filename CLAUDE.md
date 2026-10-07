@@ -1,6 +1,8 @@
 # CLAUDE.md: mauro-os
 
 > This is the brain of Mauro's brand operating system. Read it at the start of every session. It defines who Mauro is, who he serves, what he believes, how to route requests, and what good output looks like.
+>
+> **Session start:** read `BACKLOG.md`, then `private/system/ROADMAP.md` if it exists (local only, gitignored). The roadmap holds the direction and the lanes; only the Build lane gets the daily 10:00 to 11:30 block. Monday loop: `/gc-monday`. Life interview: `/life-interview`.
 
 ---
 
