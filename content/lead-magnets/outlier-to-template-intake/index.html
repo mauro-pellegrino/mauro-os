@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outlier-to-Template Intake Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5EFE4; --card:#FFFDF8; --ink:#171310; --muted:#6B6258; --line:#E2D8C6;
+  --accent:#E0A854; --accent-ink:#8A5A12; --accent-soft:#F7E6C8;
+  --strong:#2F7D4F; --strong-soft:#DDEFE3; --out:#B7791F; --out-soft:#FBEBD0;
+  --normal:#6B6258; --normal-soft:#EEE7DA; --floor:#A23B2A; --floor-soft:#F6DDD7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.5;
+  background-image:radial-gradient(#17131014 1.2px,transparent 1.2px);background-size:18px 18px}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 16px 64px}
+.mono{font-family:'JetBrains Mono',monospace}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.brand{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+.brand b{color:var(--accent-ink)}
+h1{font-size:40px;line-height:1.08;letter-spacing:-.02em;font-weight:800;margin-bottom:10px}
+h1 span{background:linear-gradient(transparent 62%,var(--accent) 62%)}
+.lede{font-size:17px;color:#3B342D;max-width:760px}
+.rulebox{margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.rule .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.rule .v{font-weight:700;font-size:16px;margin-top:2px}
+nav.steps{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 8px}
+nav.steps a{font-family:'JetBrains Mono',monospace;font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:5px 11px;background:var(--card)}
+nav.steps a:hover{background:var(--accent)}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:18px}
+.sh{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.num{font-family:'JetBrains Mono',monospace;font-weight:700;background:var(--ink);color:var(--bg);border-radius:6px;padding:2px 8px;font-size:13px}
+h2{font-size:22px;letter-spacing:-.01em}
+.hint{color:var(--muted);font-size:14px;margin-bottom:14px}
+label{font-size:12px;font-weight:600;color:var(--muted);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+input,select,textarea{font:inherit;font-size:14px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 9px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+textarea{min-height:70px;resize:vertical}
+.grid3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--ink);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer}
+button.primary{background:var(--ink);color:var(--bg)}
+button:hover{background:var(--accent);color:var(--ink)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:6px;border-bottom:2px solid var(--ink)}
+td{padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+td input{padding:5px 7px}
+td.n{width:34px;font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:12px}
+td.ratio{font-family:'JetBrains Mono',monospace;font-weight:700;width:70px;text-align:right}
+.chip{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.c-strong{background:var(--strong-soft);color:var(--strong)}
+.c-out{background:var(--out-soft);color:var(--out)}
+.c-normal{background:var(--normal-soft);color:var(--normal)}
+.c-floor{background:var(--floor-soft);color:var(--floor)}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.stat{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff}
+.stat .k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.stat .v{font-size:24px;font-weight:800;font-family:'JetBrains Mono',monospace}
+.verdict{margin-top:12px;border-left:5px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:0 10px 10px 0;font-weight:600}
+.cap{border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px;background:#fff}
+.cap h3{font-size:15px;margin-bottom:8px}
+.check{display:flex;gap:9px;align-items:flex-start;font-size:14px;margin:6px 0;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:400}
+.check input{width:auto;margin-top:4px}
+.empty{color:var(--muted);font-style:italic;font-size:14px}
+pre.out{white-space:pre-wrap;font-family:'JetBrains Mono',monospace;font-size:12.5px;background:#171310;color:#EDE6D8;border-radius:10px;padding:14px;margin-top:10px;min-height:60px}
+.routetable td,.routetable th{padding:7px 6px}
+footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.tag{font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--accent-soft);color:var(--accent-ink);border-radius:5px;padding:1px 6px}
+@media (max-width:760px){
+  h1{font-size:30px}
+  .rulebox,.summary{grid-template-columns:1fr 1fr}
+  .grid3,.grid2{grid-template-columns:1fr}
+}
+@media print{nav.steps,.btns{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand"><b>@maurojpelle</b> · ghosted calls</div>
+  <div class="brand">intake sheet · v1</div>
+</header>
+
+<h1>The <span>Outlier-to-Template</span> Intake Sheet</h1>
+<p class="lede">Score any account's posts against that account's own median, capture only the posts that really beat it, and save each one as a template your content system can run. This is the intake I use to decide which posts are worth copying the shape of.</p>
+
+<div class="rulebox">
+  <div class="rule"><div class="k">Outlier</div><div class="v">3x their median</div></div>
+  <div class="rule"><div class="k">Strong</div><div class="v">10x their median</div></div>
+  <div class="rule"><div class="k">Floor on x</div><div class="v">50,000 impressions</div></div>
+  <div class="rule"><div class="k">Floor on linkedin</div><div class="v">300 comments</div></div>
+</div>
+
+<nav class="steps">
+  <a href="#s1">1 · score</a><a href="#s2">2 · capture</a><a href="#s3">3 · prompt</a><a href="#s4">4 · save</a><a href="#s5">5 · route + pick</a>
+</nav>
+
+<!-- STEP 1 -->
+<section id="s1">
+  <div class="sh"><span class="num">01</span><h2>Score the account</h2></div>
+  <p class="hint">Open one account you already rate. Write in its newest 10 to 20 posts with the number shown on each post. Compare it to that account, never to yours: a 20k post is an outlier on a 4k account and a normal day on a 30k account.</p>
+  <div class="grid3">
+    <div><label for="handle">Account</label><input id="handle" placeholder="@handle"></div>
+    <div><label for="platform">Platform</label>
+      <select id="platform"><option value="x">x · impressions</option><option value="linkedin">linkedin · comments</option></select></div>
+    <div><label for="floor">Floor</label><input id="floor" type="number" min="0"></div>
+  </div>
+  <div class="tablewrap">
+  <table id="rows">
+    <thead><tr><th>#</th><th>Date</th><th>First words</th><th>Link</th><th>Number</th><th style="text-align:right">Ratio</th><th>Verdict</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <div class="btns">
+    <button class="primary" id="addRow">+ add row</button>
+    <button id="loadEx">Load my worked example</button>
+    <button id="clearAll">Clear sheet</button>
+  </div>
+  <details>
+    <summary class="hint" style="cursor:pointer">Paste from a spreadsheet instead</summary>
+    <textarea id="paste" placeholder="One post per line: date, first words, link, number (tabs or commas). A line with only a number works too."></textarea>
+    <div class="btns"><button id="doPaste">Fill the sheet from this</button></div>
+  </details>
+  <div class="summary">
+    <div class="stat"><div class="k">Posts scored</div><div class="v" id="sCount">0</div></div>
+    <div class="stat"><div class="k">Account median</div><div class="v" id="sMedian">-</div></div>
+    <div class="stat"><div class="k">Outlier line (3x)</div><div class="v" id="sLine">-</div></div>
+    <div class="stat"><div class="k">To capture</div><div class="v" id="sCap">0</div></div>
+  </div>
+  <div class="verdict" id="verdict">Fill in at least 5 posts to get a median.</div>
+</section>
+
+<!-- STEP 2 -->
+<section id="s2">
+  <div class="sh"><span class="num">02</span><h2>Capture each outlier</h2></div>
+  <p class="hint">About 2 minutes a post. Collect all of them first and send them to Claude in one batch, never one at a time. A capture with no link or no number can't be scored again later, so those two are the fields you never skip.</p>
+  <div id="caps"><p class="empty">Nothing to capture yet. Rows marked OUTLIER or STRONG and above the floor show up here.</p></div>
+</section>
+
+<!-- STEP 3 -->
+<section id="s3">
+  <div class="sh"><span class="num">03</span><h2>Send the batch to Claude</h2></div>
+  <p class="hint">This prompt is written from the sheet above. Paste it into Claude with the screenshots attached. It tells Claude to name the post type, write the shape line by line, and tie every rule to a line of the original, and it tells Claude to refuse anything under the floor.</p>
+  <div class="btns"><button class="primary" id="copyPrompt">Copy the prompt</button></div>
+  <pre class="out" id="prompt"></pre>
+</section>
+
+<!-- STEP 4 -->
+<section id="s4">
+  <div class="sh"><span class="num">04</span><h2>Save the template</h2></div>
+  <p class="hint">One record per shape. First check your store: if the shape already exists, add this post as a new example under it and don't make a second template. Rules describe the original. If the original doesn't show it, it isn't a rule.</p>
+  <div class="grid3">
+    <div><label for="tId">Template ID</label><input id="tId" placeholder="T-01"></div>
+    <div><label for="tType">Post type</label>
+      <select id="tType">
+        <option>short post</option><option>long form</option><option>x article</option><option>lead magnet</option><option>quote tweet</option><option>video</option>
+      </select></div>
+    <div><label for="tStatus">Status</label><select id="tStatus"><option>active</option><option>retired</option></select></div>
+  </div>
+  <div class="grid2">
+    <div><label for="tName">Name (2 to 5 words)</label><input id="tName" placeholder="e.g. weekly analysis listicle"></div>
+    <div><label for="tDupe">Is it new?</label><select id="tDupe"><option>new shape</option><option>new example of an existing template</option></select></div>
+  </div>
+  <div style="margin-top:12px"><label>Shape, line by line</label></div>
+  <div class="grid2">
+    <div><input id="shHook" placeholder="hook line: what it does"></div>
+    <div><input id="shBody" placeholder="body moves: list, steps, story, numbers"></div>
+    <div><input id="shClose" placeholder="close: how it ends"></div>
+    <div><input id="shMedia" placeholder="media: image, video, none"></div>
+  </div>
+  <div style="margin-top:12px"><label>Rules, each tied to a line of the original</label></div>
+  <table id="rules"><thead><tr><th>Rule</th><th>The line in the original that shows it</th></tr></thead><tbody></tbody></table>
+  <div style="margin-top:12px"><label for="tEx">Example (filled from the sheet when you click a capture's "use as example")</label><input id="tEx" placeholder="@handle · date · number (ratio) · link"></div>
+  <div class="btns"><button class="primary" id="copyRecord">Copy the record as markdown</button></div>
+  <pre class="out" id="record"></pre>
+</section>
+
+<!-- STEP 5 -->
+<section id="s5">
+  <div class="sh"><span class="num">05</span><h2>Route it, then pick the week's run</h2></div>
+  <p class="hint">Every template goes to the process that already runs that post type. A lead magnet template needs a real resource behind it: match one you already have first, because building a new one is the slow branch.</p>
+  <table class="routetable">
+    <thead><tr><th>Template type</th><th>Runs through</th><th>Check before you queue it</th></tr></thead>
+    <tbody>
+      <tr><td>lead magnet</td><td>your comment-for-access process</td><td>the resource exists and is ready to send</td></tr>
+      <tr><td>long form</td><td>your long-form post process</td><td>you have the media it needs</td></tr>
+      <tr><td>x article</td><td>your article process</td><td>it doesn't share a structure, title shape or cover with another article that week</td></tr>
+      <tr><td>quote tweet</td><td>your reply process</td><td>the original is still fresh</td></tr>
+      <tr><td>short post</td><td>your short-form process</td><td>the subject comes from your own work</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:18px"><label>This week's run: pick 3 to 5. On Monday, keep or retire each one.</label></div>
+  <table id="week"><thead><tr><th>#</th><th>Template</th><th>Posts run</th><th>What it did (your number)</th><th>Monday call</th></tr></thead><tbody></tbody></table>
+  <div class="verdict" id="weekVerdict">Pick at least 3 templates for the week.</div>
+</section>
+
+<footer>
+  <span>Built from the intake I run in claude code. Your sheet saves in this browser only.</span>
+  <span>@maurojpelle</span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var KEY='gc-intake-v1';
+  var EXAMPLE={handle:'@maurojpelle',platform:'x',rows:[
+    ['2026-09-02','Spent about an hour saving other people\'s x articles','https://x.com/MauroJPelle/status/2095217964924522797',121],
+    ['2026-09-02','If you sorted your posts by engagement','https://x.com/MauroJPelle/status/2095165119973998644',56],
+    ['2026-09-02','Agency owners build layer one properly','https://x.com/MauroJPelle/status/2095177643704426618',71],
+    ['2026-09-02','Here\'s how im building the most cracked x article skills','https://x.com/MauroJPelle/status/2095129532437070092',131],
+    ['2026-09-02','(article link)','https://x.com/MauroJPelle/status/2095088403070996713',310],
+    ['2026-09-02','Claude code, codex, grok, all the same','https://x.com/MauroJPelle/status/2095044268100366619',91],
+    ['2026-09-03','(article link)','https://x.com/MauroJPelle/status/2095483750779875642',610],
+    ['2026-09-03','Six things every high-view X article did','https://x.com/MauroJPelle/status/2095529772428165462',155],
+    ['2026-09-03','Instead of using prompts for your content','https://x.com/MauroJPelle/status/2095439035313410532',116],
+    ['2026-09-03','The agents I actually want','https://x.com/MauroJPelle/status/2095406532133269695',86],
+    ['2026-09-04','Three layers to an inbound engine','https://x.com/MauroJPelle/status/2095806381085409682',112],
+    ['2026-09-04','The cover, the title, and the first two lines','https://x.com/MauroJPelle/status/2095898141983707348',233],
+    ['2026-09-04','Our reach dropped on the 1st of august','https://x.com/MauroJPelle/status/2095768927590605081',99],
+    ['2026-09-04','Our reach dropped on the 1st of august (repost)','https://x.com/MauroJPelle/status/2095801846241628507',91],
+    ['2026-09-05','Any serious personal brand who wants $$$','https://x.com/MauroJPelle/status/2096254391334436891',2316]
+  ]};
+  var FLOORS={x:50000,linkedin:300};
+  var $=function(id){return document.getElementById(id)};
+  var state={handle:'',platform:'x',floor:50000,rows:[],caps:{},rules:[['',''],['',''],['','']],week:[['','','',''],['','','',''],['','','',''],['','','',''],['','','','']],tpl:{}};
+
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+  function load(){try{var s=JSON.parse(localStorage.getItem(KEY)||'null');if(s&&s.rows)state=Object.assign(state,s)}catch(e){}}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function num(v){var n=parseFloat(String(v).replace(/[, ]/g,''));return isNaN(n)?null:n}
+  function fmt(n){return n==null?'-':Math.round(n).toLocaleString('en-US')}
+  function median(a){if(!a.length)return null;var s=a.slice().sort(function(x,y){return x-y});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2}
+
+  function scored(){
+    var nums=state.rows.map(function(r){return num(r[3])}).filter(function(n){return n!=null});
+    var med=nums.length>=5?median(nums):null;
+    var floor=num(state.floor)||0;
+    return state.rows.map(function(r,i){
+      var n=num(r[3]),ratio=(med&&n!=null)?n/med:null,v='';
+      if(ratio!=null){
+        if(ratio>=3&&n<floor)v='floor';
+        else if(ratio>=10)v='strong';
+        else if(ratio>=3)v='out';
+        else v='normal';
+      }
+      return {i:i,r:r,n:n,ratio:ratio,v:v,med:med,count:nums.length};
+    });
+  }
+  var LABEL={strong:'STRONG',out:'OUTLIER',normal:'normal',floor:'under floor'};
+
+  function renderRows(){
+    var tb=$('rows').tBodies[0];tb.innerHTML='';
+    state.rows.forEach(function(r,i){
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td class="n">'+(i+1)+'</td>'+
+        '<td><input data-i="'+i+'" data-c="0" value="'+esc(r[0])+'" placeholder="date"></td>'+
+        '<td><input data-i="'+i+'" data-c="1" value="'+esc(r[1])+'" placeholder="first words"></td>'+
+        '<td><input data-i="'+i+'" data-c="2" value="'+esc(r[2])+'" placeholder="link"></td>'+
+        '<td><input data-i="'+i+'" data-c="3" value="'+esc(r[3])+'" placeholder="0" inputmode="numeric" style="width:110px"></td>'+
+        '<td class="ratio" id="ra'+i+'"></td><td id="ve'+i+'"></td>';
+      tb.appendChild(tr);
+    });
+    tb.querySelectorAll('input').forEach(function(inp){
+      inp.addEventListener('input',function(){state.rows[+inp.dataset.i][+inp.dataset.c]=inp.value;update()});
+    });
+    update();
+  }
+
+  function update(){
+    var s=scored(),med=s.length?s[0].med:null,count=s.length?s[0].count:0,floor=num(state.floor)||0;
+    s.forEach(function(x){
+      var ra=$('ra'+x.i),ve=$('ve'+x.i);if(!ra)return;
+      ra.textContent=x.ratio==null?'':x.ratio.toFixed(1)+'x';
+      ve.innerHTML=x.v?'<span class="chip c-'+x.v+'">'+LABEL[x.v]+'</span>':'';
+    });
+    var caps=s.filter(function(x){return x.v==='strong'||x.v==='out'});
+    var under=s.filter(function(x){return x.v==='floor'});
+    $('sCount').textContent=count;$('sMedian').textContent=fmt(med);$('sLine').textContent=med?fmt(med*3):'-';$('sCap').textContent=caps.length;
+    var metric=state.platform==='x'?'impressions':'comments';
+    var v;
+    if(count<5)v='Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.';
+    else if(caps.length)v=caps.length+' post'+(caps.length>1?'s':'')+' to capture. Everything else on this account is a normal day for it, so leave it.';
+    else if(under.length)v='No template here. '+under.length+' post'+(under.length>1?'s beat':' beats')+' this account\'s median by 3x or more, but under the floor of '+fmt(floor)+' '+metric+'. The ratio is real, the reach is too small to copy the shape from.';
+    else v='No outliers. Every post sits inside this account\'s normal range. Move to the next account.';
+    $('verdict').textContent=v;
+    renderCaps(caps);renderPrompt(caps,under,med);save();
+  }
+
+  function renderCaps(caps){
+    var box=$('caps');
+    if(!caps.length){box.innerHTML='<p class="empty">Nothing to capture yet. Rows marked OUTLIER or STRONG and above the floor show up here.</p>';return}
+    var li=state.platform==='linkedin';
+    var items=['Post text copied, not retyped','Screenshot with its image (an x article: shoot it from the feed, so the title, cover and first lines are in one frame)','The post link','The numbers checked exact on the post: '+(li?'comments, reactions, reposts':'impressions, replies, reposts')];
+    if(li)items.push('A lead magnet post: a screenshot of one comment and the reply it got');
+    box.innerHTML=caps.map(function(x){
+      var key=(x.r[2]||'row'+x.i),c=state.caps[key]||{};
+      return '<div class="cap"><h3>#'+(x.i+1)+' · '+esc(x.r[1]||'(no first words)')+' <span class="chip c-'+x.v+'">'+LABEL[x.v]+' '+x.ratio.toFixed(1)+'x</span></h3>'+
+        items.map(function(t,k){return '<label class="check"><input type="checkbox" data-k="'+esc(key)+'" data-j="'+k+'"'+(c[k]?' checked':'')+'> '+esc(t)+'</label>'}).join('')+
+        '<div class="btns"><button data-ex="'+x.i+'">Use as the example in step 4</button></div></div>';
+    }).join('');
+    box.querySelectorAll('input[type=checkbox]').forEach(function(cb){
+      cb.addEventListener('change',function(){var k=cb.dataset.k;state.caps[k]=state.caps[k]||{};state.caps[k][cb.dataset.j]=cb.checked;save()});
+    });
+    box.querySelectorAll('button[data-ex]').forEach(function(b){
+      b.addEventListener('click',function(){
+        var x=scored()[+b.dataset.ex];
+        $('tEx').value=(state.handle||'@handle')+' · '+(x.r[0]||'date')+' · '+fmt(x.n)+' '+(state.platform==='x'?'impressions':'comments')+' ('+x.ratio.toFixed(1)+'x their median) · '+(x.r[2]||'link');
+        state.tpl.ex=$('tEx').value;renderRecord();save();location.hash='s4';
+      });
+    });
+  }
+
+  function renderPrompt(caps,under,med){
+    var metric=state.platform==='x'?'impressions':'comments';
+    var lines=caps.map(function(x){return '- '+(x.r[0]||'')+' | '+(x.r[1]||'')+' | '+(x.r[2]||'')+' | '+fmt(x.n)+' '+metric+' | '+x.ratio.toFixed(1)+'x'}).join('\n')||'- (no outliers above the floor yet)';
+    var p='I am saving outlier posts from '+(state.handle||'[@handle]')+' on '+state.platform+' as templates for my own content.\n'+
+      'Their median over the last '+(scored().length?scored()[0].count:0)+' posts is '+fmt(med)+' '+metric+'. The floor is '+fmt(num(state.floor))+' '+metric+'.\n\n'+
+      'The outliers, with screenshots attached:\n'+lines+'\n\n'+
+      'For each post:\n'+
+      '1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n'+
+      '2. Write the shape line by line: the hook line, the body moves, the close, the media.\n'+
+      '3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n'+
+      '4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\n'+
+      'Hard limits:\n'+
+      '- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n'+
+      '- If a post is under the floor, say so in one line and do not turn it into a template.\n'+
+      '- Do not rewrite the post for me yet. This step only saves the shape.\n\n'+
+      'My existing templates:\n[paste your template names here, one per line]';
+    $('prompt').textContent=p;
+  }
+
+  function renderRules(){
+    var tb=$('rules').tBodies[0];tb.innerHTML='';
+    state.rules.forEach(function(r,i){
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td><input data-i="'+i+'" data-c="0" value="'+esc(r[0])+'" placeholder="rule '+(i+1)+'"></td><td><input data-i="'+i+'" data-c="1" value="'+esc(r[1])+'" placeholder="quote the line"></td>';
+      tb.appendChild(tr);
+    });
+    tb.querySelectorAll('input').forEach(function(inp){inp.addEventListener('input',function(){state.rules[+inp.dataset.i][+inp.dataset.c]=inp.value;renderRecord();save()})});
+  }
+
+  var TPL=['tId','tType','tStatus','tName','tDupe','shHook','shBody','shClose','shMedia','tEx'];
+  var ROUTE={'short post':'short-form','long form':'long-form','x article':'x-article','lead magnet':'lead-magnet (comment for access)','quote tweet':'quote-tweet','video':'video'};
+  function renderRecord(){
+    var g=function(id){return $(id).value.trim()};
+    var rules=state.rules.filter(function(r){return r[0].trim()}).map(function(r){return '  - '+r[0].trim()+(r[1].trim()?' (shown by: "'+r[1].trim()+'")':'')}).join('\n')||'  - [add at least one rule tied to a line]';
+    var md='## '+(g('tId')||'T-NN')+' · '+(g('tName')||'[template name]')+'\n'+
+      '- Type: '+g('tType')+'\n'+
+      '- New or existing: '+g('tDupe')+'\n'+
+      '- Shape:\n  - hook: '+(g('shHook')||'[ ]')+'\n  - body: '+(g('shBody')||'[ ]')+'\n  - close: '+(g('shClose')||'[ ]')+'\n  - media: '+(g('shMedia')||'[ ]')+'\n'+
+      '- Rules:\n'+rules+'\n'+
+      '- Process: '+ROUTE[g('tType')]+'\n'+
+      '- Status: '+g('tStatus')+'\n'+
+      '- Examples:\n  - '+(g('tEx')||'[@handle · date · number (ratio) · link]');
+    $('record').textContent=md;
+  }
+
+  function renderWeek(){
+    var tb=$('week').tBodies[0];tb.innerHTML='';
+    state.week.forEach(function(r,i){
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td class="n">'+(i+1)+'</td><td><input data-i="'+i+'" data-c="0" value="'+esc(r[0])+'" placeholder="T-NN name"></td>'+
+        '<td><input data-i="'+i+'" data-c="1" value="'+esc(r[1])+'" placeholder="0" style="width:80px"></td>'+
+        '<td><input data-i="'+i+'" data-c="2" value="'+esc(r[2])+'" placeholder="impressions, comments, calls"></td>'+
+        '<td><select data-i="'+i+'" data-c="3"><option value="">-</option><option'+(r[3]==='keep'?' selected':'')+'>keep</option><option'+(r[3]==='run more'?' selected':'')+'>run more</option><option'+(r[3]==='retire'?' selected':'')+'>retire</option></select></td>';
+      tb.appendChild(tr);
+    });
+    tb.querySelectorAll('input,select').forEach(function(inp){inp.addEventListener('input',function(){state.week[+inp.dataset.i][+inp.dataset.c]=inp.value;weekVerdict();save()})});
+    weekVerdict();
+  }
+  function weekVerdict(){
+    var picked=state.week.filter(function(r){return r[0].trim()});
+    var called=picked.filter(function(r){return r[3]});
+    var ret=picked.filter(function(r){return r[3]==='retire'}).length,more=picked.filter(function(r){return r[3]==='run more'}).length;
+    var v;
+    if(picked.length<3)v='Pick at least 3 templates for the week. The rest wait in the store.';
+    else if(!called.length)v=picked.length+' templates queued. On Monday, write in what each one did and make the call.';
+    else v=called.length+' of '+picked.length+' called: '+more+' to run more, '+ret+' to retire. Retired templates stay in the store with the date and the reason.';
+    $('weekVerdict').textContent=v;
+  }
+
+  function bind(){
+    $('handle').value=state.handle;$('platform').value=state.platform;$('floor').value=state.floor;
+    $('handle').addEventListener('input',function(){state.handle=this.value;update()});
+    $('platform').addEventListener('change',function(){state.platform=this.value;state.floor=FLOORS[this.value];$('floor').value=state.floor;renderRows()});
+    $('floor').addEventListener('input',function(){state.floor=this.value;update()});
+    $('addRow').addEventListener('click',function(){state.rows.push(['','','',''] );renderRows()});
+    $('clearAll').addEventListener('click',function(){state.rows=[];for(var i=0;i<10;i++)state.rows.push(['','','','']);state.caps={};state.handle='';$('handle').value='';renderRows()});
+    $('loadEx').addEventListener('click',function(){
+      state.handle=EXAMPLE.handle;state.platform=EXAMPLE.platform;state.floor=FLOORS.x;
+      state.rows=EXAMPLE.rows.map(function(r){return r.slice()});
+      $('handle').value=state.handle;$('platform').value='x';$('floor').value=state.floor;renderRows();
+    });
+    $('doPaste').addEventListener('click',function(){
+      var lines=$('paste').value.split(/\n/).map(function(l){return l.trim()}).filter(Boolean);
+      state.rows=lines.map(function(l){
+        var p=l.split(/\t|,(?=(?:[^"]*"[^"]*")*[^"]*$)/).map(function(x){return x.replace(/^"|"$/g,'').trim()});
+        if(p.length===1)return ['','','',p[0]];
+        var n=p.pop();return [p[0]||'',p[1]||'',p[2]||'',n];
+      });
+      renderRows();
+    });
+    TPL.forEach(function(id){var el=$(id);if(state.tpl[id])el.value=state.tpl[id];el.addEventListener('input',function(){state.tpl[id]=el.value;renderRecord();save()});el.addEventListener('change',function(){state.tpl[id]=el.value;renderRecord();save()})});
+    function copy(id,btn){var t=$(id).textContent;var done=function(){var o=btn.textContent;btn.textContent='Copied';setTimeout(function(){btn.textContent=o},1400)};
+      try{navigator.clipboard.writeText(t).then(done,function(){fallback(t);done()})}catch(e){fallback(t);done()}}
+    function fallback(t){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove()}
+    $('copyPrompt').addEventListener('click',function(){copy('prompt',this)});
+    $('copyRecord').addEventListener('click',function(){copy('record',this)});
+  }
+
+  load();
+  if(!state.rows.length){for(var i=0;i<10;i++)state.rows.push(['','','',''])}
+  if(state.floor==null||state.floor==='')state.floor=FLOORS[state.platform];
+  bind();renderRows();renderRules();renderRecord();renderWeek();
+  if(location.hash==='#example'){$('loadEx').click()}
+})();
+</script>
+</body>
+</html>
