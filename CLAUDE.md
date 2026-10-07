@@ -96,6 +96,8 @@ Identify the task type, load the skill, then load brand context (section 5) befo
 | Canva slide deck | `skills/youtube/youtube-canva-slides.md` |
 | VA visual production brief for slides | `skills/youtube/youtube-slide-visuals.md` |
 | Judge a tweet + draft a reply in Mauro's voice | `skills/content/x-reply-assistant.md` |
+| Judge a LinkedIn post + draft a comment (target list + lookalike test) | `skills/content/linkedin-comment-assistant.md` + `brand/analytics/linkedin-target-list.md` (phone version: `skills/content/linkedin-comments-prompt.md`) |
+| LinkedIn long-form post (text only, the default LinkedIn format) | `skills/content/linkedin-long-form.md` |
 | Any drafted prose, before delivery (anti-slop audit) | `skills/content/anti-slop-protocol.md` |
 | **Any drafted copy, before Mauro sees it** | the `gate` agent in `.claude/agents/` (4 passes, runs on a different model) |
 | Turn a system that actually runs into a monospace card + notes (source doc for Juan) | `skills/content/system-extraction.md` |
@@ -171,4 +173,4 @@ Full guide in `brand/voice.md`. The non-negotiables:
 
 ---
 
-*Last updated: 1 October 2026 | Version 2.1 (added the default markdown handoff)*
+*Last updated: 7 October 2026 | Version 2.2 (added the LinkedIn comment assistant, the LinkedIn target list, and the LinkedIn long-form skill)*
