@@ -506,13 +506,26 @@ Counted from the files on 2026-10-07. Mauro's own setup and his own time, no age
 
 | Claim | Source | Public |
 |---|---|---|
-| From 31 Aug, claude pushed 5 backlog tasks a day into google tasks; 37 days, 185 tasks, 0 ticked | `~/growthub-os/ops/daily/done/*.json`, 37 files, 2026-08-31 to 2026-10-06 | yes, **Mauro decides; it is an internal ops file** |
-| Week of 28 Sep: 1,094 claude code session minutes in the agency repo, 57 in mauro-os | `~/.calendar/week-2026-09-28.json` | yes, **always as claude code session minutes, never as all work hours** |
-| The own-brand block is 10:00 to 11:30 with slack off | `private/systems-eval-2026-10-07.md`, agreed that week | yes |
+| From 31 Aug, claude pushed 5 backlog tasks a day into google tasks; 37 days, 185 tasks, 0 ticked | `~/growthub-os/ops/daily/done/*.json`, 37 files, 2026-08-31 to 2026-10-06 | no, private (review 2026-10-08 #41 #52 #55: no reader value, his own work day) |
+| Week of 28 Sep: 1,094 claude code session minutes in the agency repo, 57 in mauro-os | `~/.calendar/week-2026-09-28.json` | no, private (Mauro 2026-10-08: never reveal work hours) |
+| The own-brand block is 10:00 to 11:30 with slack off | `private/systems-eval-2026-10-07.md`, agreed that week | no, private (Mauro 2026-10-08: never reveal work hours) |
 | Monday ritual: claude dumps the week (calendar, git, both backlogs), then the diary, then 4 wins | same | yes, **as the design until the first run on 12 Oct** |
 | Worked example: @maurojpelle, 15 original posts 2 to 5 Sep 2026, median 116 impressions; the 5 Sep post did 2,316, 20x, under the 50k floor | `research/x-analytics/maurojpelle-2026-07-08-to-2026-10-05.csv` | yes |
 | Outlier rule: 3x / 10x the account's own median over its last 10-20 posts; floors 50k impressions on x, 300 comments on linkedin; 5-post minimum | `skills/research/template-intake.md` | yes, as method |
 | Batch rule: no two articles in a batch share a structure, title shape or cover; two "5 steps" titles once clashed in one batch | `~/growthub-os/skills/content/x-articles/README.md`, Mauro 2026-10-05 | yes |
+| X content exports merged (25 May to 22 Aug, 8 Jul to 5 Oct; the second file holds rows from 17 Aug only), 26 May to 5 Oct 2026: 652 posts and replies, 52,612 impressions, 19 new follows and 430 profile visits credited to posts | `research/x-analytics/*.csv`, `tools/maurojpelle-traffic.py`, run 2026-10-08 | yes, **always as "credited to posts"; the account total can be higher** |
+| Per month (posts and replies): Jul 16 to 31 1,701 impressions, 1 follow, 23 visits; Aug 15,228, 10, 164; Sep 29,106, 5, 182; Oct 1 to 5 6,166, 3, 55 | same | yes |
+| By format: replies 410, 14,346 impressions, 9 follows, 0.63 per 1K; bullet stacks 62, 12,030, 5, 0.42; plain 156, 14,243, 5, 0.35; bare links (article drops) 24, 11,993, 0 follows | same, format classed from the post text only | yes, **19 follows is a small sample** |
+| The Sep 63,443 impressions / 285 follows / 366 visits in `brand/x-linkedin-playbook-2026-10.md` have no export file in the repo and disagree with the content export | checked 2026-10-08 | internal, **do not use until reconciled** |
+
+## The review queue and the animated ASCII tool, 2026-10-08
+
+| Claim | Source | Public |
+|---|---|---|
+| Review loop: every draft goes on one local page, one card each, approve / change / kill plus a why box; one button copies every decision back into claude code; each change or kill reason becomes a rule in the file that wrote the draft, sourced as review date + card number; first-pass approval rate logged per content type after every round | `~/.claude/skills/review-queue/SKILL.md` | yes, as method |
+| A change with an empty why box gets options (title, cover, body) next round; the page is never rebuilt while a round is open, because the clicks are keyed to the cards | same | yes, as method |
+| First-pass approval: round 1, 10 of 39 drafts (26%); round 2, 32 of 69 (46%); both 2026-10-08 | `~/review-queue/decisions/approval-rate.csv` | **needs sign-off.** Round 1 counted cards (some bundled many posts or were not drafts); round 2 was one card per post. Both rounds are the whole queue, mostly agency-account drafts (round 2: 17 Ghosted Calls cards of 69), different batch mixes. Say "drafts for the accounts I run content for", never "my content", and never call two rounds a trend, and never credit the rise to the loop: the rules came out of round 2 |
+| ascii-anim: text types in, box borders sweep in row by row, packets flow along every arrow, one target pulses; $0; a 14 second video renders in about 30 seconds; MP4 because X converts a GIF to MP4 | `tools/ascii-anim/README.md` | yes. Name no language or library as something Mauro runs (CLAUDE.md §6.6) |
 
 ## What is NOT in this file
 

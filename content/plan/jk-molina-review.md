@@ -1,130 +1,144 @@
-# What JK Molina would say about the Ghosted Calls plan
+# What JK Molina would say about the Ghosted Calls plan v2 (the Whop paid group)
 
 **Our reading of his frameworks, not his words.** Only the lines in quotation marks are his, copied
-from the PDFs in `research/jk-molina/`. Everything around them is our interpretation. His numbers
-stay his. Read with `content/plan/ghosted-calls-plan.html` and `research/jk-molina/synthesis.md`.
+from the PDFs in `research/jk-molina/` (page numbers from `pdftotext`). Everything around them is our
+interpretation. His numbers stay his. Read with `content/plan/ghosted-calls-plan.html` and
+`research/jk-molina/synthesis.md`.
 
-Written 2026-10-08. Research status unchanged: nothing here is adopted, per `CLAUDE.md` §7.
+Rewritten 2026-10-08 for the new plan: a one-time Whop payment for Mauro's own skills and systems,
+once improved, then traffic. Research status unchanged: nothing here is adopted, per `CLAUDE.md` §7.
+
+Traffic numbers come from the merged content exports (`tools/maurojpelle-traffic.py`), 26 May to
+5 Oct 2026: 19 follows and 430 profile visits credited to posts, 52,612 impressions.
 
 ---
 
 ## The verdict, in our reading
 
-He would call the plan a building plan with a sales plan written next to it. The offer was written
-before 30 July and sent 0 times. In the same period the repo gained 17 YouTube boards, a Gate, an
-ASCII format, a playbook and a weekly dump script. His own stage rule puts all of that after the
-first sale.
+He would say the plan sells files, to an audience that is not there yet, after a cleanup with no
+end date. Three faults. The product has no access to Mauro in it, which his own table says rarely
+upsells. The Whop sale cannot carry $5k/mo with 19 follows in the window, so its job is to find
+buyers for the client offer. And "once we improve it" is the same building-before-selling pattern
+that kept the Agency Booked Calls offer at 0 sends.
 
 ---
 
 ## Where the plan breaks his rules
 
-### 1. The scoreboard counts the wrong thing
+### 1. Files with no access are his weakest tier
 
-> "The KPI is offers made." (`the-customer-funnel.pdf`)
+> "No access to you (maybe 1 team member). Monetizes fish. Reduces churn. But rarely serves as an upsell." (`servant.pdf` p3, the Tool-Only row)
 
-The Monday dump (`private/system/week.py`) leads with mauro-os session minutes against 450. It has
-no line for offers made. Offers made since July: 0. His fix, in our reading: put "offers made this
-week" as the first line of the dump, above the minutes. A week with 450 minutes and 0 offers is a
-red week by his rule.
+> "The Offer Structure that monetizes access, not stuff." (`the-offer-shell.pdf` p1)
 
-### 2. Building at the stage that calls for selling
+> "People don't buy the guru's offers. They buy the guru." (`minimalist-plan-to-1-million-part-1.pdf` p2)
 
-> "0-$10k/month: Dumb action. Following the Cash Script and 1000 New Whales until you get there." (`servant.pdf`)
+A one-time download of skills is the Tool-Only row. Mauro said "paid group", and a group can carry
+access. His fix, in our reading: the payment buys the systems plus one live install session or a
+group thread where Mauro answers. `[NEEDS: Mauro picks what access the group includes]`
 
-The brand is at $0 (`brand/claims.md`, 21 Sep brief). By his stage table, the only work that counts
-is the script and the list. The roadmap already freezes YouTube and parks the Gate, the ASCII format
-and the anti-slop merge. He would go further and also freeze the playbook's content week
-(allocation B on the page) until the first invoice.
+### 2. A customer offer does not pay the bills at this audience size
 
-### 3. The offer has no end date
+> "Unless you have a big audience, the Customer Funnel probably won't make you more money than your clients." (`the-customer-funnel.pdf` p3)
 
-> "Don't sell a product for more than 2 weeks. People stop listening when they know what you'll say." (`minimalist-plan-to-1-million-part-2.pdf`)
+> "Its true value is in finding and accelerating people who are likely to become clients." (`the-customer-funnel.pdf` p3)
 
-> "Limited offers sell more than unlimited offers." (`the-customer-funnel.pdf`)
+19 follows credited to posts in the export window. The Whop product cannot be the road to $5k/mo
+alone. He would measure it on how many buyers then take Agency Booked Calls, and he would add the
+higher option at checkout:
 
-> "Sales are often highest on the last day because people need consequences to act." (`the-customer-funnel.pdf`)
+> "Include A Higher Access Option" (`the-customer-funnel.pdf` p9)
 
-The close date was dropped on 17 Aug and the offer became "standing" (`agency-booked-calls.md`,
-Formalised). The founding intake starts 1 Dec. He would set a close date before it and say it in
-every message. `[NEEDS: Mauro picks the close date]`
+### 3. "Once we improve it" is building in place of selling
 
-### 4. No middle step between free and $800
+> "0-$10k/month: Dumb action. Following the Cash Script and 1000 New Whales until you get there." (`servant.pdf` p4)
 
-> "Most people don't have a lead problem. They have a lead conversion problem because they lack that middle step in between their free stuff and their more expensive stuff." (`the-customer-funnel.pdf`)
+> "If you feel stuck, a good question to ask yourself: What thing worth $100 can I sell this week that I know will sell?" (`the-customer-funnel.pdf` p8)
 
-> "If you feel stuck, a good question to ask yourself: What thing worth $100 can I sell this week that I know will sell?" (`the-customer-funnel.pdf`)
+> "Volume ain't value. An effective Customer Offer is often much, much less than we think." (`the-customer-funnel.pdf` p14)
 
-The plan goes from a free intake sheet straight to a $200/week retainer. The customer step exists
-only on paper: the $500 Lead Magnet System has 2 of 6 pages (`lead-magnet-system-500.md`). He would
-ask for that question to be answered this week, with something that already exists.
+The plan puts every system into one product and waits for all of them to be clean. The inventory
+on the plan page shows 0 of 5 systems ready for a stranger, and over 40 files with a twin in
+growthub-os. He would sell one system first. The outlier-to-template intake is the closest: a
+skill, a script and a sheet already exist.
 
-**Live disagreement, not a verdict.** The repo rejected the $50-100 workshop for this buyer
-(`candidate-insight-model.md`, adopt/adapt/reject table) on the grounds that established operators
-want to save time more than money. That row stays as it is until Mauro reopens it.
+### 4. An open Whop page is the "standing" offer again
 
-### 5. The free lead magnet gives everything away
+> "Don't sell a product for more than 2 weeks. People stop listening when they know what you'll say." (`minimalist-plan-to-1-million-part-2.pdf` p3)
 
-> "Give them 1. Then sell the workshop with the other 10." (`1000-new-whales.pdf`)
+> "Limited offers sell more than unlimited offers." (`the-customer-funnel.pdf` p8)
 
-> "Attracts triers. Not buyers." (`1000-new-whales.pdf`, on the value-based lead magnet)
+A Whop product left open forever repeats the August mistake, when the offer's close date was
+dropped. His own calendar gives a window:
 
-The Outlier-to-Template Intake Sheet hands over the whole scorer, the checklist and the prompt. He
-would cut it to one piece and point to the rest as the paid thing. The repo chose the value model on
-purpose (`candidate-insight-model.md`, "When unsure, use the value model"). Same status as point 4:
-his view, our rule, Mauro decides.
+> "it's a good idea to sell a Customer Offer for Black Friday because people are in the mood of spending but not committing." (`minimalist-plan-to-1-million-part-2.pdf` p1)
 
-### 6. No platform the plan owns
+`[NEEDS: Mauro picks the open and close dates]`
 
-> "There is no best platform except for the one you own." (`1000-new-whales.pdf`)
+### 5. Do not scale the format that earned no follows
 
-No list, no capture page, no booking link (`brand/x-linkedin-playbook-2026-10.md`, starting line).
-Here he and the repo agree: the playbook's own order of work says "capture before more content".
-In our reading he would still put it after the first sale at $0, because of point 2.
+> "Don't scale what's not working." (`likes-and-cash-workshop.pdf` p14)
 
-### 7. No Big Idea
+In the export, 24 bare-link posts (article drops) did 11,993 impressions and 0 follows. Replies
+did 9 of the 19 follows (0.63 per 1K impressions), bullet stacks 5 (0.42 per 1K). He would put the
+traffic phase on replies and bullet stacks, and keep articles only with a plug to the Whop page
+under each one. The sample is small: one follow moves a rate.
 
-> "If someone other than you uses it in a sentence, you have a Big Idea." (`1000-new-whales.pdf`)
+### 6. The free material gives the whole system away
 
-> "Promises attract Fish. Ideas attract Whales." (`1000-new-whales.pdf`)
+> "Here's My Entire Playbook For Free" (`whale-bait.pdf` p1, listed as Fish Bait)
 
-The plan has a promise (2 booked calls in 30 days) and no named idea for people to repeat.
-`[NEEDS: Mauro picks one idea to post until someone repeats it]`
+> "Give them 1. Then sell the workshop with the other 10." (`1000-new-whales.pdf` p10)
+
+The intake sheet lead magnet and the approved posts walk through whole systems for free. Once the
+Whop product exists, he would give one piece of a system for free and point to the rest. The repo
+chose the value model on purpose (`candidate-insight-model.md`). His view, our rule, Mauro decides.
+
+### 7. The scoreboard still has no offers line
+
+> "The KPI is offers made." (`the-customer-funnel.pdf` p8)
+
+> "Make a Front End offer every day." (`the-offer-shell.pdf` p11)
+
+The plan page now puts "offers made this week" first in the Monday read. It starts at 0. He would
+ask for one offer mention a day, in a post, a reply or a DM, from the day the Whop page is up.
 
 ---
 
 ## Where the plan already matches him
 
-- **Price.** "$100-$250/week is a safe bet if you're starting out with this model." (`minimalist-plan-to-1-million-part-1.pdf`). The offer is $200/week.
-- **The DM line.** His template ends "Shall I send you the details?" (`the-customer-funnel.pdf`). The validation scripts in `cashie-studio/validation/validation-plan.md` use the same line.
-- **Scarcity from capacity.** One spot, because the week has 5 to 7 hours. His audience-respect doc asks for "Real Scarcity" (`audience-respect.pdf`).
-- **Collect, do not create.** "Don't Create. Collect." (`likes-and-cash-workshop.pdf`). The Reading lane (1 post from a system that ran that week) is this rule.
+- **An owned list.** "There is no best platform except for the one you own." (`1000-new-whales.pdf` p1). Every Whop buyer and waitlist email is the first list Mauro owns.
+- **One page in bio.** "When you find yours, put your Big Idea in a landing page." (`1000-new-whales.pdf` p4). The Whop page in bio is that page. `[NEEDS: the Big Idea it carries]`
+- **Made for real work first.** "If you make stuff for leads first, you get less leads. But if you make it for clients first, you get more leads." (`the-customer-funnel.pdf` p3). The systems run every week. The open question is whose they are (point 3).
+- **A customer step before the client offer.** The v1 review asked for a middle step between the free sheet and the $200/week offer. A one-time product is that step.
+
+---
+
+## Price, as his numbers
+
+"Workshops: $9 to $300." (`pricing.pdf` p9). That band is JK's, for his buyers. The plan page keeps
+`[NEEDS: price]`.
 
 ---
 
 ## Where our rules overrule him
 
-> "Most coaches / consultants just 'exist'. There are no stakes." (`audience-respect.pdf`)
-
-He would ask for a declared number and a pinned protagonist post. Both stay rejected as guru
-theater (`candidate-insight-model.md`, `brand/positioning.md`). Daily email offers also stay
-rejected: no list, and the cadence would take the whole week.
+Daily email offers need a list, and there is none yet. The declared-number game and the pinned
+protagonist post stay rejected as guru theater (`candidate-insight-model.md`, `brand/positioning.md`).
 
 ---
 
-## What he would cut until the first invoice
+## What he would cut until the first sale
 
-1. YouTube boards v2 and every new format.
-2. The Gate proof, the ASCII format, the anti-slop merge.
-3. The playbook's target of about 29 X originals a week.
-4. Minutes as the headline number of the Monday dump.
-5. The "standing" offer with no close date.
+1. Packaging all five systems before one is on sale.
+2. A Whop page with no close date.
+3. More article volume as the way to get follows.
+4. Whole systems handed out free in lead magnets.
+5. YouTube boards and every new format.
 
 ## His first move, in our reading
 
-His DM list starts with people already in your world: "Previous Customers", "Previous Clients",
-"People who ask you" (`the-customer-funnel.pdf`). The 5 to 6 agency owners Mauro ghostwrote for and
-the 2 to 3 churned contacts are warmer than 15 names from the prospect finder. They are blocked only
-on Mauro writing the names down (`BACKLOG.md`, NOW block). So: write the names today, send the
-validation script to each one today, then post the hand-raiser that is already written in
-`validation-plan.md`. The prospect finder runs after.
+Get a written yes from the agency on the outlier-to-template system. Fix it (paths, names, README),
+run the stranger test, and put it on Whop with a close date and a higher-access option that leads
+to Agency Booked Calls. Then post one offer mention a day, and spend the rest of the posting on
+replies and bullet stacks.

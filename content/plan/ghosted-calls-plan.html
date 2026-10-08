@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ghosted Calls Plan</title>
-<meta name="description" content="The general plan for Ghosted Calls and @maurojpelle: weekly inputs, what each one produces, the indicators read every Monday, and the stages that unlock the next one.">
+<meta name="description" content="The Ghosted Calls plan v2: a one-time Whop paid group for Mauro's own systems, what must be fixed before it sells, the traffic baseline from the real X export, weekly inputs and phases, read against JK Molina's docs.">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F5EFE4;--card:#FFFDF8;--ink:#171310;--body:#3B342D;--muted:#6B6258;--line:#E2D8C6;--accent:#E0A854;--accent-ink:#8A5A12;--accent-soft:#F7E6C8;--red:#B4442F;--red-soft:#F6DED6;--green:#3F7D4E;--green-soft:#DDEBDD}
@@ -140,272 +140,293 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);display
  .ladder{grid-template-columns:1fr 1fr}.r1,.r2,.r3,.r4{min-height:0}
  .grid{grid-template-columns:1fr}.grid .h{display:none}.span5{grid-column:auto}
  .io{display:block;overflow-x:auto}}
+
+.months{display:flex;gap:14px;align-items:flex-end;height:230px;margin-top:14px}
+.months div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.months i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.months .mv{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;margin-bottom:4px}
+.months .ml{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);text-align:center;margin-top:6px;line-height:1.3}
+.months em{font-style:normal;font-size:10.5px}
+.io.mini{font-size:14px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.tag.ok{background:var(--green-soft);color:var(--green);border:1px solid var(--green)}
+.tag.warn{background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>internal plan · built 2026-10-08 · every number has a source file</span></div>
+<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>internal plan v2 · rebuilt 2026-10-08 · every number has a source file</span></div>
 
-<div class="badge"><span class="hot">the plan</span><span>10:00 to 11:30 block</span><span>450 min a week</span><span>read every monday</span></div>
-<h1>Ghosted Calls: <span>weekly inputs</span> to scale</h1>
-<p class="lede">What goes in each week, what each input is supposed to produce, the numbers the Monday dump reads back, and the stage that unlocks the next one. The direction, in Mauro's words: "Run the agency and my own brand at the same time, sharing what actually works and getting paid from both."</p>
-<p class="src" style="margin-top:8px">direction: private/system/ROADMAP.md (Mauro, 1 July 2026) · goal: brand/vision-2026.md</p>
+<div class="badge"><span class="hot">the plan v2</span><span>paid group on whop</span><span>one-time payment</span><span>then traffic</span><span>read every monday</span></div>
+<h1>Ghosted Calls: <span>sell the system</span>, then get traffic</h1>
+<p class="lede">The direction changed on 8 Oct. Mauro's words: "a paid group for sure, whop one time payment for my skills and systems once we improve it, then focus on traffic." This page lists what goes in the product, what must be fixed before it sells, what the real X export says about traffic, and the weekly inputs that follow from it.</p>
+<p class="src" style="margin-top:8px">direction: Mauro's review, 2026-10-08 · traffic: research/x-analytics/*.csv via tools/maurojpelle-traffic.py</p>
 
 <!-- 1. STARTING LINE -->
 <section>
-  <div class="k">the starting line</div>
+  <div class="k">the starting line, from the export</div>
   <h2>Where the account stands today</h2>
   <div class="stats">
-    <div class="stat dark"><div class="v">0</div><div class="l">times the Agency Booked Calls offer was sent. Written before 30 July.</div><div class="src">cashie-studio/offer/agency-booked-calls.md</div></div>
-    <div class="stat"><div class="v">$0</div><div class="l">brand revenue. About 200 followers, one YouTube video.</div><div class="src">brand/claims.md, 21 Sep brief</div></div>
-    <div class="stat"><div class="v">63,443</div><div class="l">X impressions, 1 to 28 Sep. 285 new follows, 366 profile visits.</div><div class="src">brand/x-linkedin-playbook-2026-10.md</div></div>
-    <div class="stat"><div class="v">29 → 17</div><div class="l">X originals a week, the September drop.</div><div class="src">brand/x-linkedin-playbook-2026-10.md</div></div>
+    <div class="stat dark"><div class="v">19</div><div class="l">new follows credited to posts, 26 May to 5 Oct. 652 posts and replies.</div><div class="src">both content exports, deduped on post id</div></div>
+    <div class="stat"><div class="v">430</div><div class="l">profile visits credited to posts, same window.</div><div class="src">tools/maurojpelle-traffic.py</div></div>
+    <div class="stat"><div class="v">29,106</div><div class="l">X impressions in September, posts and replies. The best month so far.</div><div class="src">maurojpelle-2026-07-08-to-2026-10-05.csv</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">follows from the 24 bare-link posts (article drops), on 11,993 impressions.</div><div class="src">format pass, below</div></div>
   </div>
   <div class="stats" style="margin-top:12px">
-    <div class="stat"><div class="v">57</div><div class="l">mauro-os minutes, week of 28 Sep, against a 450 target.</div><div class="src">ROADMAP.md · claude code session minutes only</div></div>
-    <div class="stat"><div class="v">0</div><div class="l">email list, capture page, payment link or booking link.</div><div class="src">playbook "starting line" + validation-plan.md</div></div>
-    <div class="stat"><div class="v">2 of 6</div><div class="l">pages of the $500 Lead Magnet System that exist.</div><div class="src">cashie-studio/offer/lead-magnet-system-500.md</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">times the Agency Booked Calls offer was sent.</div><div class="src">cashie-studio/offer/agency-booked-calls.md</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">email list, capture page or payment link.</div><div class="src">brand/operating-baseline.md, Q11 and Q15</div></div>
+    <div class="stat"><div class="v">0 of 5</div><div class="l">systems packaged for a stranger to install.</div><div class="src">inventory, section 3</div></div>
     <div class="stat"><div class="v">$5k/mo</div><div class="l">the stated goal by 31 Dec 2026.</div><div class="src">brand/vision-2026.md</div></div>
   </div>
+  <div class="clash">The v1 page used 63,443 impressions, 285 follows and 366 profile visits for September. Those came from <span class="mono">brand/x-linkedin-playbook-2026-10.md</span>, and no export file in the repo carries them. The content export gives 29,106 impressions, 5 follows and 182 profile visits for the same month. The content export only credits follows to a post, so the account total can be higher. <span class="need">[NEEDS: the account overview export, to reconcile]</span></div>
 </section>
 
-<!-- 2. THE CLASH -->
+<!-- 2. TRAFFIC BASELINE -->
 <section>
-  <div class="k">the block</div>
-  <h2>Two plans claim the same 450 minutes</h2>
-  <p class="sub">The roadmap (7 Oct) gives the daily 90-minute block to the Build lane. The X and LinkedIn playbook (1 Oct) fills a week with content. Each one costs almost the whole block on its own.</p>
+  <div class="k">traffic baseline</div>
+  <h2>Per month, from the content export</h2>
+  <p class="sub">The file named 8 Jul to 5 Oct only holds rows from 17 Aug. The older export (25 May to 22 Aug) covers July and early August. Both are merged, and the newer file wins on overlap. May and June hold rows on one day each, so they are left out of the chart.</p>
   <div class="split">
-    <div class="card alloc">
-      <h3>A · roadmap: build lane owns the block</h3>
-      <div class="tot">450 <small>min a week</small></div>
-      <div class="bar"><div class="c1" style="flex:360">outreach 360</div><div class="c2" style="flex:90">1 post 90</div></div>
-      <ul class="legend">
-        <li><span><i class="sw c1"></i>Prospect finder, top 15, send the offer</span><b>4 blocks</b></li>
-        <li><span><i class="sw c2"></i>Reading lane: 1 post from a system that ran that week</span><b>1 block</b></li>
-        <li><span><i class="sw c6"></i>YouTube boards v2 (side-quest)</span><b>frozen</b></li>
-        <li><span><i class="sw c6"></i>Gate proof, ASCII format, anti-slop merge</span><b>parked</b></li>
-      </ul>
-      <p class="src" style="margin-top:8px">private/system/ROADMAP.md, lanes table. The 4 + 1 split is read from "inside the block, 1 day a week".</p>
+    <div class="card">
+      <div class="k" style="margin-bottom:2px">impressions per month, posts and replies</div>
+      <div class="months">
+        <div><span class="mv">1,701</span><i style="height:9px"></i><span class="ml">Jul<br><em>16 to 31</em></span></div>
+        <div><span class="mv">15,228</span><i style="height:84px"></i><span class="ml">Aug</span></div>
+        <div><span class="mv">29,106</span><i style="height:160px"></i><span class="ml">Sep</span></div>
+        <div><span class="mv">6,166</span><i style="height:34px"></i><span class="ml">Oct<br><em>1 to 5</em></span></div>
+      </div>
     </div>
-    <div class="card alloc">
-      <h3>B · playbook: the content week</h3>
-      <div class="tot">435 <small>min a week</small></div>
-      <div class="bar"><div class="c3" style="flex:60">60</div><div class="c1" style="flex:90">X 90</div><div class="c2" style="flex:90">LI 90</div><div class="c4" style="flex:90">article 90</div><div class="c5" style="flex:30">30</div><div class="c6" style="flex:75">replies 75</div></div>
-      <ul class="legend">
-        <li><span><i class="sw c3"></i>Mon: analysis, pick the week's ideas</span><b>60</b></li>
-        <li><span><i class="sw c1"></i>Tue: 5 X listicles and how-tos, 1 ASCII diagram</span><b>90</b></li>
-        <li><span><i class="sw c2"></i>Wed: 1 LinkedIn lead magnet</span><b>90</b></li>
-        <li><span><i class="sw c4"></i>Thu: 1 article (company breakdown)</span><b>90</b></li>
-        <li><span><i class="sw c5"></i>Fri: warm outbound to the top 5</span><b>30</b></li>
-        <li><span><i class="sw c6"></i>Daily: replies to large in-niche accounts</span><b>5 x 15</b></li>
-      </ul>
-      <p class="src" style="margin-top:8px">brand/x-linkedin-playbook-2026-10.md, "A week, in the 5-7 hour budget"</p>
+    <div class="card">
+      <table class="io mini">
+        <tr><th>Month</th><th>Originals</th><th>Replies</th><th>Follows</th><th>Profile visits</th></tr>
+        <tr><td>Jul (16 to 31)</td><td>45</td><td>18</td><td>1</td><td>23</td></tr>
+        <tr><td>Aug</td><td>87</td><td>235</td><td>10</td><td>164</td></tr>
+        <tr><td>Sep</td><td>98</td><td>50</td><td>5</td><td>182</td></tr>
+        <tr><td>Oct (1 to 5)</td><td>11</td><td>101</td><td>3</td><td>55</td></tr>
+      </table>
+      <p style="margin-top:12px;font-size:14.5px">August had the most replies (235) and the most follows (10). September had twice the impressions and half the follows.</p>
     </div>
   </div>
-  <div class="clash">A + B = 885 minutes against a 450-minute block. One of them owns the block until the first invoice is paid. <span class="need">[NEEDS: Mauro picks A or B]</span></div>
+
+  <h3 style="margin:26px 0 10px">Which formats earned the follows</h3>
+  <table class="io">
+    <tr><th>Format</th><th>Posts</th><th>Impressions</th><th>Median</th><th>Follows</th><th>Visits</th><th>Follows per 1K impressions</th></tr>
+    <tr><td>Replies</td><td>410</td><td>14,346</td><td>16</td><td>9</td><td>194</td><td>0.63</td></tr>
+    <tr><td>Bullet stacks</td><td>62</td><td>12,030</td><td>113</td><td>5</td><td>81</td><td>0.42</td></tr>
+    <tr><td>Plain text</td><td>156</td><td>14,243</td><td>69</td><td>5</td><td>130</td><td>0.35</td></tr>
+    <tr><td>Bare link (article drops)</td><td>24</td><td>11,993</td><td>410</td><td>0</td><td>25</td><td>0.00</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">Classes come from the post text only: reply = starts with @, bare link = only a t.co link, bullet stack = holds a "- " list, plain = the rest. The export has no media or quote flag and cuts long text, so an image post can sit in any class. 19 follows is a small sample: one follow moves a rate.</p>
+
+  <div class="split" style="margin-top:14px">
+    <div class="card">
+      <div class="k" style="margin-bottom:6px">top original posts by impressions</div>
+      <ul class="legend">
+        <li><span>5 Sep · "Any serious personal brand who wants $$$ needs to run this analysis" · bullets</span><b>2,316</b></li>
+        <li><span>2 Oct · article drop · bare link</span><b>1,834</b></li>
+        <li><span>26 Sep · "Every monday the same thing runs before I'm at my desk" · bullets</span><b>1,160</b></li>
+        <li><span>10 Sep · article drop · bare link</span><b>1,125</b></li>
+        <li><span>3 Oct · "Ragebait isn't free reach on x" · bullets · 1 follow</span><b>1,124</b></li>
+        <li><span>15 Sep · "When i save an x article for reference" · bullets</span><b>1,067</b></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k" style="margin-bottom:6px">what the export says, plainly</div>
+      <ul class="legend">
+        <li><span>Replies earn the most follows per impression</span><b>9 of 19</b></li>
+        <li><span>Bullet stacks carry the reach among original posts</span><b>4 of top 6</b></li>
+        <li><span>Article drops get reach and no follows</span><b>0 of 19</b></li>
+        <li><span>The top post earned 0 follows</span><b>2,316 imp</b></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<!-- 3. WEEKLY GRID -->
+<!-- 3. THE PRODUCT -->
 <section>
-  <div class="k">the weekly input grid</div>
-  <h2>One week, 10:00 to 11:30, Slack off</h2>
-  <p class="sub">Drawn as allocation A, the roadmap's version, because it is the newer file. The second row shows what the playbook week would put in the same slots. Drafts for weeks 42 and 43 already exist: 10 X posts, 4 LinkedIn posts, 2 X articles (<span class="mono">content/drafts/2026-10-w42-w43-posts.md</span>), so the posting row costs scheduling time this fortnight.</p>
+  <div class="k">the product</div>
+  <h2>What goes in the paid group</h2>
+  <p class="sub">One Whop product, one payment. <span class="need">[NEEDS: name]</span> <span class="need">[NEEDS: price]</span>. Only systems that run in mauro-os and stay in Mauro's lane (inbound and content for agency owners) go in. JK's own band for assets and workshops is $9 to $300 (<span class="mono">pricing.pdf</span> p9). That band is his, not a price for this product.</p>
+  <table class="io">
+    <tr><th>System</th><th>Files today</th><th>Status</th><th>Must be fixed before it sells</th></tr>
+    <tr><td>1 · Outlier to template</td><td>skills/research/template-intake.md, profile-study.md, profile-extraction.md, article-corpus.md, tools/outlier-score.py, the intake sheet</td><td><span class="tag ok">closest to ready</span></td><td>A twin of outlier-score.py sits in growthub-os/ops/tools (20 lines differ): confirm whose it is. Add an install README. Pass the stranger test (see the LI1 viability card).</td></tr>
+    <tr><td>2 · Voice and the Gate</td><td>skills/research/voice-extraction.md, skills/content/anti-slop-protocol.md, gate-playbook.md, .claude/agents/gate.md, the claims-file pattern</td><td><span class="tag ok">mauro-os only</span></td><td>The gate reads Mauro's own brand files. Ship blank templates for voice.md and claims.md, plus one worked example that holds no private data.</td></tr>
+    <tr><td>3 · Process maps</td><td>skills/ops/process-maps.md, tools/process-maps/ (grouped map, overview, ranked queue)</td><td><span class="tag warn">twin in growthub-os</span></td><td>build_grouped.py, build_overview.py and ranked_queue.py also live in growthub-os/ops/process-maps/visual. Confirm ownership. Check that the one spec holds no agency data.</td></tr>
+    <tr><td>4 · ASCII articles and animation</td><td>skills/content/ascii-article.md, ascii-diagrams.md, content/ascii/build_cover.py, tools/ascii-anim/</td><td><span class="tag ok">mauro-os only</span></td><td>The ascii-anim README already lists what it needs (Chrome, playwright, ffmpeg). Its example handle belongs to a Growthub founder: swap it. The cover script needs its own README.</td></tr>
+    <tr><td>5 · Review queue and the approval-rate loop</td><td>~/.claude/skills/review-queue (SKILL.md, build.py)</td><td><span class="tag warn">mixed today</span></td><td>It reads a Growthub Notion page, Growthub media folders and per-person card types. Split out a Ghosted Calls version with no Growthub paths, then a generic one.</td></tr>
+  </table>
+
+  <div class="split" style="margin-top:14px">
+    <div class="card">
+      <div class="k" style="color:var(--red);margin-bottom:6px">excluded: Growthub's, or not his</div>
+      <ul class="legend">
+        <li><span>creative-strategy/ (map, static ads), research/ad-teardown.md, brand-breakdown.md, youtube/youtube-brand-breakdown.md: ad creative is the agency's service, and each has a growthub-os twin</span><b>out</b></li>
+        <li><span>content/x-articles-POINTER.md: it points to growthub-os/skills/content/x-articles</span><b>out</b></li>
+        <li><span>content/system-extraction.md: it reads ~/growthub-os as the working system</span><b>out</b></li>
+        <li><span>content/visual-docs/page-craft.md: built from a Growthub doc, holds that palette</span><b>out</b></li>
+        <li><span>~/.claude/skills/synced (actor-swap, animated-ad, format-playbook): the agency's org skills</span><b>out</b></li>
+        <li><span>~/.claude/skills grill-me, grilling, handoff, teach, to-questionnaire, wait-what, writing-for-agents: a third-party pack</span><b>out</b></li>
+        <li><span>Any agency export, Calendly data, client name or agency revenue figure</span><b>out</b></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k" style="color:var(--accent-ink);margin-bottom:6px">open: twins in growthub-os, ownership unclear</div>
+      <p style="font-size:14.5px">These skills exist in both repos and have been rewritten in mauro-os. They can go in only after Mauro confirms with the agency who owns them. <span class="need">[NEEDS: Mauro confirms ownership]</span></p>
+      <ul class="legend">
+        <li><span>long-form/ (5), short-form/ (2), lead-magnet/ (7)</span><b>twin</b></li>
+        <li><span>youtube/ ideas, hooks, titles, boards, slides, design system (7)</span><b>twin</b></li>
+        <li><span>ops/ daily-ops, content-loop, monday-acquisition-analysis, case-study-production, save-recap</span><b>twin</b></li>
+        <li><span>lead-gen/email-to-call.md, dm-setting/, content-sweep, weekly-research</span><b>twin</b></li>
+        <li><span>~/.claude/skills/week-calendar: his, but it reads both repos and is built around his own week</span><b>hold</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHAT MUST IMPROVE -->
+<section>
+  <div class="k">before the first sale</div>
+  <h2>What must be fixed, for every system</h2>
+  <table class="io">
+    <tr><th>Fix</th><th>Why</th><th>Done when</th></tr>
+    <tr><td>Ownership</td><td>Most skills were built while he runs the agency's engine, and over 40 skill and tool files have a twin in growthub-os</td><td>Mauro has a yes or no per system from the agency</td></tr>
+    <tr><td>Paths</td><td>Skills point to /Users/mauro, ~/growthub-os, ~/review-queue and private/</td><td>a search for those strings in the product folder returns 0</td></tr>
+    <tr><td>Names</td><td>Growthub, its founders and its handles appear in examples</td><td>the same search for the agency and its people returns 0</td></tr>
+    <tr><td>Install</td><td>No system has an install README for someone who never saw the repo</td><td>one README per system: what it needs, how to start it, one worked example</td></tr>
+    <tr><td>Stranger test</td><td>The skills assume Claude Code, the repo layout and Mauro's brand files</td><td>a person outside the repo installs one system from the README without help</td></tr>
+    <tr><td>Delivery</td><td>Whop holds the payment and the group. The files need a home buyers can update from</td><td><span class="need">[NEEDS: private repo, zip or Whop files]</span></td></tr>
+  </table>
+</section>
+
+<!-- 5. TRAFFIC PLAN -->
+<section>
+  <div class="k">the traffic plan</div>
+  <h2>Do more of what earned follows, and send it to one page</h2>
+  <div class="two-funnels">
+    <div class="card">
+      <h3>Three levers, from the export</h3>
+      <ul class="legend">
+        <li><span><b style="font-family:Inter">Replies</b> under large agency-owner and AI-content accounts. Highest follows per impression (0.63 per 1K). August, with 235 replies, had the most follows.</span><b>daily</b></li>
+        <li><span><b style="font-family:Inter">Bullet stacks</b> about a system that ran that week. 4 of the top 6 originals, 0.42 follows per 1K.</span><b>reach</b></li>
+        <li><span><b style="font-family:Inter">Article drops</b> stay for reach (median 410), with a plug to the Whop page under each one, because the drops alone earned 0 follows.</span><b>weekly</b></li>
+      </ul>
+      <p class="src" style="margin-top:8px">LinkedIn: no LinkedIn export for @maurojpelle in the repo. <span class="need">[NEEDS: LinkedIn baseline]</span></p>
+    </div>
+    <div class="card">
+      <h3>The road to the product</h3>
+      <div class="funnel">
+        <div class="fs a" style="width:100%"><span class="t">Impressions</span><span class="n">29,106 in Sep</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs a" style="width:93%"><span class="t">Profile visits</span><span class="n">182 in Sep</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs b" style="width:86%"><span class="t">Whop page in bio</span><span class="n"><span class="need">[NEEDS: page]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs b" style="width:79%"><span class="t">Waitlist or buyer email</span><span class="n">the first list he owns</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:72%"><span class="t">Paid group, one payment</span><span class="n"><span class="need">[NEEDS: price]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:64%;background:var(--ink);color:var(--bg)"><span class="t">Agency Booked Calls</span><span class="n">offered to buyers</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. WEEKLY INPUTS -->
+<section>
+  <div class="k">the weekly inputs</div>
+  <h2>One week, counted in outputs</h2>
+  <p class="sub">Counts only. Two rows: the packaging weeks (phase 1) and the selling weeks (phases 2 and 3). The approved W42 and W43 drafts fill the posting slots for the next two weeks.</p>
   <div class="grid">
     <div></div><div class="h">Mon</div><div class="h">Tue</div><div class="h">Wed</div><div class="h">Thu</div><div class="h">Fri</div>
 
-    <div class="rl">A · block</div>
-    <div class="cell hot"><b>Monday dump + outreach</b>Claude's week.py dump, then send<span class="m">90 min</span></div>
-    <div class="cell hot"><b>Outreach</b>message, follow up, log in BACKLOG<span class="m">90 min</span></div>
-    <div class="cell hot"><b>Outreach</b>message, follow up, log<span class="m">90 min</span></div>
-    <div class="cell hot"><b>Outreach</b>message, follow up, log<span class="m">90 min</span></div>
-    <div class="cell"><b>Reading post</b>1 post from a system that ran this week<span class="m">90 min</span></div>
+    <div class="rl">Packaging</div>
+    <div class="cell hot"><b>Monday read</b>the indicators below, pick the system of the week</div>
+    <div class="cell hot"><b>Fix one system</b>paths, names, README<span class="m">1 system a week</span></div>
+    <div class="cell"><b>1 LinkedIn post</b>from the approved drafts</div>
+    <div class="cell hot"><b>Stranger test</b>someone outside the repo installs it</div>
+    <div class="cell"><b>1 bullet stack</b>on the system fixed this week</div>
 
-    <div class="rl">B · same slot</div>
-    <div class="cell"><b>Analysis</b>pick ideas from the swipe file<span class="m">60 min</span></div>
-    <div class="cell"><b>5 X posts + 1 ASCII</b><span class="m">90 min</span></div>
-    <div class="cell"><b>1 LinkedIn magnet</b>resource, image, copy, Lead Shark<span class="m">90 min</span></div>
-    <div class="cell"><b>1 article</b>company breakdown<span class="m">90 min</span></div>
-    <div class="cell"><b>Warm outbound</b>top 5 from the Lead Shark export<span class="m">30 min</span></div>
+    <div class="rl">Selling</div>
+    <div class="cell"><b>Monday read</b>+ 1 bullet stack</div>
+    <div class="cell hot"><b>Offer post</b>the Whop page, with a close date</div>
+    <div class="cell"><b>1 LinkedIn post</b>points to the Whop page</div>
+    <div class="cell"><b>1 article drop</b>+ a plug to the Whop page under it</div>
+    <div class="cell hot"><b>Buyer follow-up</b>offer Agency Booked Calls to buyers</div>
 
     <div class="rl">Every day</div>
-    <div class="cell span5">Replies to large in-niche accounts, and every reply in a post's first 2 hours <span class="m" style="display:inline">15 min, inside B · outside the block in A <span class="need">[NEEDS: where replies sit in A]</span></span></div>
+    <div class="cell span5">Replies under large agency-owner accounts <span class="need">[NEEDS: daily count]</span> · 1 mention of the offer, in a post, a reply or a DM</div>
 
     <div class="rl">Frozen</div>
-    <div class="cell frz span5"><b>YouTube</b>17 boards in 6 formats built (boards/yt/v2), 0 recorded. Unfreezes when the first 15 messages are sent. The playbook's own pace for it is one video a month.</div>
+    <div class="cell frz span5"><b>YouTube and new formats</b>17 boards built, 0 recorded. They wait until the first Whop sale.</div>
   </div>
 </section>
 
-<!-- 4. INPUT → OUTPUT -->
+<!-- 7. PHASES -->
 <section>
-  <div class="k">input → output</div>
-  <h2>What each input is supposed to produce</h2>
-  <table class="io">
-    <tr><th>Input</th><th>Per week</th><th></th><th>Supposed to produce</th><th>Read on Monday as</th></tr>
-    <tr><td>Offer messages</td><td>first 15 cold, plus the warm list <span class="need">[NEEDS: weekly target after the first 15]</span></td><td class="arrow">→</td><td>replies, then an email with "Booked", then an invoice</td><td>messages sent, replies, "Booked" emails <span class="need">[NEEDS: a log, none exists yet]</span></td></tr>
-    <tr><td>X posts</td><td>5 (B) · playbook asks to restore about 29 originals</td><td class="arrow">→</td><td>profile visits and follows</td><td>profile visits, follows per 1K impressions</td></tr>
-    <tr><td>Article drop</td><td>1, as a bare link post plus a standalone single-idea post</td><td class="arrow">→</td><td>reach and saves; bare-link drops did a 532 median against 156</td><td>bookmarks and reach, never profile visits</td></tr>
-    <tr><td>LinkedIn lead magnet</td><td>1</td><td class="arrow">→</td><td>opt-ins, then warm outbound names</td><td>opt-ins per magnet post <span class="need">[NEEDS: capture page]</span></td></tr>
-    <tr><td>Replies</td><td>15 min a day</td><td class="arrow">→</td><td>profile visits: 22.5 per 1K on replies against 2.2 on bare links (2 to 15 Sep)</td><td>profile visits</td></tr>
-    <tr><td>Reading post</td><td>1</td><td class="arrow">→</td><td>proof that the system runs, for the offer page and the case study</td><td>shipped, yes or no</td></tr>
-    <tr><td>YouTube</td><td>0 until unfrozen</td><td class="arrow">→</td><td>the raw material for every other format</td><td>recorded, yes or no</td></tr>
-  </table>
-  <p class="src" style="margin-top:8px">brand/x-linkedin-playbook-2026-10.md ("what our own data says", "what we measure") · brand/claims.md, @maurojpelle analytics 2 to 15 Sep</p>
-</section>
-
-<!-- 5. FUNNELS -->
-<section>
-  <div class="k">the funnel</div>
-  <h2>Two roads into one founding spot</h2>
-  <div class="two-funnels">
-    <div class="card">
-      <h3>Road 1 · outreach (the build lane)</h3>
-      <div class="funnel">
-        <div class="fs a" style="width:100%"><span class="t">Prospect finder CSV</span><span class="n">not run · needs Mauro + YouTube key</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs a" style="width:94%"><span class="t">Top 15 + warm list</span><span class="n">15 is a target · warm: 5-6 + 2-3</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs b" style="width:88%"><span class="t">Message sent</span><span class="n">0</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs b" style="width:82%"><span class="t">Reply → offer page sent</span><span class="n"><span class="need">[NEEDS: log]</span></span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:76%"><span class="t">Email "Booked"</span><span class="n"><span class="need">[NEEDS: log]</span></span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:70%"><span class="t">Invoice, $200/wk x 4</span><span class="n">manual invoice</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:64%;background:var(--ink);color:var(--bg)"><span class="t">Start 1 Dec</span><span class="n">1 spot</span></div>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Road 2 · content (the playbook)</h3>
-      <div class="funnel">
-        <div class="fs a" style="width:100%"><span class="t">Impressions</span><span class="n">63,443 in Sep</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs a" style="width:93%"><span class="t">Profile visits</span><span class="n">366 in Sep</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs b" style="width:86%"><span class="t">Follows</span><span class="n">285 in Sep</span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:79%"><span class="t">Opt-in / capture</span><span class="n"><span class="need">[NEEDS: capture page]</span></span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:72%"><span class="t">Conversation in DMs</span><span class="n"><span class="need">[NEEDS: count]</span></span></div>
-        <div class="farrow">▼</div>
-        <div class="fs" style="width:64%;background:var(--ink);color:var(--bg)"><span class="t">Offer</span><span class="n">no offer post yet</span></div>
-      </div>
-      <p class="src" style="margin-top:12px">The hand-raiser post ("DM me Booked") is written in validation-plan.md and was never posted.</p>
-    </div>
+  <div class="k">the phases</div>
+  <h2>What unlocks the next phase</h2>
+  <div class="ladder">
+    <div class="rung now r1"><div class="when">phase 0 · now</div><h3>Clear ownership</h3><p>Ask the agency which systems are his to sell. Write the answer per system.</p><div class="unlock"><b>unlocks phase 1</b>a written yes for at least systems 1 and 2</div></div>
+    <div class="rung r2"><div class="when">phase 1 · <span class="need">[NEEDS: dates]</span></div><h3>Package</h3><p>One system a week: no private paths, no agency names, an install README, a stranger test. Put up the Whop page as a waitlist.</p><div class="unlock"><b>unlocks phase 2</b>2 systems pass the stranger test</div></div>
+    <div class="rung r3"><div class="when">phase 2 · launch window</div><h3>Open, then close</h3><p>Open the paid group for a fixed window with a close date. JK's calendar puts customer offers at Black Friday.</p><div class="unlock"><b>unlocks phase 3</b>the first buyer <span class="need">[NEEDS: target count]</span></div></div>
+    <div class="rung r4" style="background:var(--ink);color:var(--bg)"><div class="when" style="color:#9A9184">phase 3 · after the first sale</div><h3 style="color:var(--accent)">Traffic</h3><p style="color:#CFC6B6">Scale replies and bullet stacks. Each article drop carries the Whop plug. Buyers get the Agency Booked Calls offer.</p><div class="unlock" style="border-color:#6B6258;color:#EDE6D8"><b>the goal</b>$5k/mo by 31 Dec 2026 <span class="need">[NEEDS: hold, move or change]</span></div></div>
   </div>
 </section>
 
-<!-- 6. INDICATORS -->
+<!-- 8. INDICATORS -->
 <section>
   <div class="k">leading indicators</div>
-  <h2>What the Monday dump reads back</h2>
-  <p class="sub">The first row comes from <span class="mono">private/system/week.py</span>. Week of 5 Oct, read on Wed 7 Oct, so the week was still open.</p>
+  <h2>What the Monday read checks</h2>
   <div class="ind">
-    <div class="stat"><div class="v">153<small style="font-size:15px;color:var(--muted)"> / 450</small></div><div class="l">mauro-os minutes</div><div class="meter"><i style="width:34%"></i></div><div class="src">34% of target</div></div>
-    <div class="stat"><div class="v">0 of 5</div><div class="l">weekdays with a full 90-minute block</div></div>
-    <div class="stat"><div class="v">12</div><div class="l">commits in mauro-os</div></div>
-    <div class="stat"><div class="v">9</div><div class="l">open items in the NOW block</div></div>
-    <div class="stat"><div class="v">1</div><div class="l">block with no output</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">offers made this week (first line)</div></div>
+    <div class="stat"><div class="v">0 of 5</div><div class="l">systems that pass the stranger test</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">Whop waitlist and buyer emails</div></div>
+    <div class="stat"><div class="v">0.36</div><div class="l">follows per 1K impressions, all formats, 26 May to 5 Oct</div></div>
+    <div class="stat"><div class="v">182</div><div class="l">profile visits, September</div></div>
   </div>
-  <div class="split" style="margin-top:12px">
-    <div class="card">
-      <div class="k" style="margin-bottom:2px">mauro-os minutes per day, week of 5 Oct</div>
-      <div class="dayswrap">
-        <div class="tgt" style="bottom:106px"><span>target 90 a day</span></div>
-        <div class="days">
-          <div><i style="height:66px"></i>Mon 66</div>
-          <div><i style="height:26px"></i>Tue 26</div>
-          <div><i style="height:66px"></i>Wed 66</div>
-          <div><i style="height:0;border-width:0 0 1.5px 0"></i>Thu 0</div>
-          <div><i style="height:0;border-width:0 0 1.5px 0"></i>Fri 0</div>
-        </div>
-      </div>
-      <p class="src" style="margin-top:8px">private/system/weeks/2026-10-05.md · claude code session minutes, never all work hours</p>
-    </div>
-    <div class="card">
-      <div class="k" style="margin-bottom:6px">second row: the playbook's Monday table</div>
-      <ul class="legend">
-        <li><span>Profile visits, X and LinkedIn</span><b>366 X in Sep</b></li>
-        <li><span>Follows per 1K impressions</span><b>4.5 in Sep</b></li>
-        <li><span>Bookmarks on article drops</span><b><span class="need">[NEEDS: export]</span></b></li>
-        <li><span>Opt-ins per lead-magnet post</span><b><span class="need">[NEEDS: capture]</span></b></li>
-        <li><span>Booked calls by source</span><b><span class="need">[NEEDS: Calendly per source]</span></b></li>
-        <li><span>Offers made this week</span><b><span class="need">[NEEDS: added to week.py]</span></b></li>
-      </ul>
-      <p class="src" style="margin-top:8px">4.5 = 285 / 63,443 x 1,000, derived from the playbook's September row</p>
-    </div>
-  </div>
+  <p class="src" style="margin-top:8px">0.36 = 19 follows / 52,612 impressions x 1,000, both from the merged export. Offers made, stranger tests and Whop emails start at 0 because none of them exist yet.</p>
 </section>
 
-<!-- 7. LADDER -->
-<section>
-  <div class="k">the stages</div>
-  <h2>What unlocks the next stage</h2>
-  <div class="ladder">
-    <div class="rung now r1"><div class="when">stage 1 · now</div><h3>Send the offer</h3><p>The 15 messages, the warm list, the founding intake page.</p><div class="unlock"><b>unlocks stage 2</b>the first paid invoice</div></div>
-    <div class="rung r2"><div class="when">stage 2 · 1 to 31 Dec</div><h3>Deliver the founding spot</h3><p>Weekly 1-on-1, Slack, the templates. YouTube unfreezes once the 15 are sent.</p><div class="unlock"><b>unlocks stage 3</b>2 booked calls for the client by day 30, written up as a case study</div></div>
-    <div class="rung r3"><div class="when">stage 3 · <span class="need">[NEEDS: date]</span></div><h3>Open the group tier</h3><p>6 people at about $150/week on one weekly call, about $3,900/mo. The $500 Lead Magnet System runs next to it as the cheaper yes.</p><div class="unlock"><b>unlocks the Skool container</b>the group opens, or 3 paying 1:1 clients, whichever is first</div></div>
-    <div class="rung r4" style="background:var(--ink);color:var(--bg)"><div class="when" style="color:#9A9184">the goal · 31 Dec 2026</div><h3 style="color:var(--accent)">$5k/mo from this brand</h3><p style="color:#CFC6B6">Set 13 Aug. The vision file asked to hold it, move it, or change the number.</p><div class="unlock" style="border-color:#6B6258;color:#EDE6D8"><b>open</b><span class="need">[NEEDS: hold, move or change]</span></div></div>
-  </div>
-  <div class="rail">
-    <div class="math">
-<span class="d"># why stage 3 exists (agency-booked-calls.md, 20 Aug)</span><br>
-<span class="c">1:1</span>   $200/wk x 4 = $800/mo per client<br>
-      $5,000 / $800 = 6 clients = 6 weekly calls<br>
-      = the whole 5-7 hour week, nothing left for content<br>
-<span class="c">group</span> 6 x ~$150/wk on 1 call = ~$3,900/mo<br>
-<span class="d"># sequence: land the 1:1, get the result, then open the group</span>
-    </div>
-    <div class="card">
-      <div class="k" style="margin-bottom:2px">side rail · the $500 Lead Magnet System</div>
-      <p style="margin:0">A duplicable Notion workspace, sold by manual invoice. 2 of 6 pages exist. Steps 6, 8 and 9 of the build order are unblocked and take under an hour combined.</p>
-      <div class="pages">
-        <div class="no">1 Start Here</div><div class="y">2 The Rules</div><div class="no">3 The Prompts</div><div class="no">4 Worked Example</div><div class="no">5 Scoring Sheet</div><div class="y">6 Delivery Kit</div>
-      </div>
-      <p class="src" style="margin-top:8px">cashie-studio/offer/lead-magnet-system-500.md</p>
-    </div>
-  </div>
-</section>
-
-<!-- 8. JK -->
+<!-- 9. JK -->
 <section>
   <div class="jk">
     <div class="k">what jk molina would say</div>
-    <h2>Read against his own docs, the plan breaks five of his rules</h2>
+    <h2>Read against his own docs, the plan sells files to an audience that is not there yet</h2>
     <div class="disclaim">our reading of his frameworks · only the quoted lines are his</div>
-    <p>Each card quotes one line from the JK library in <span class="mono">research/jk-molina/</span>, then states where this plan breaks it. Full version with every citation: <span class="mono">content/plan/jk-molina-review.md</span>.</p>
+    <p>Each card quotes one line from <span class="mono">research/jk-molina/</span> with its page, then states where the new plan breaks it or matches it. Full version: <span class="mono">content/plan/jk-molina-review.md</span>.</p>
     <div class="jkgrid">
-      <div class="jkc"><div class="q">The KPI is offers made.</div><div class="f">the-customer-funnel.pdf</div><div class="br"><b>where the plan breaks it</b>The scoreboard is session minutes in a repo. Offers made since July: 0. He would put "offers made this week" at the top of the Monday dump, above the minutes.</div></div>
-      <div class="jkc"><div class="q">0-$10k/month: Dumb action. Following the Cash Script and 1000 New Whales until you get there.</div><div class="f">servant.pdf</div><div class="br"><b>where the plan breaks it</b>17 YouTube boards, the Gate, the ASCII format and a playbook were built with 0 offers sent. He would read that as building in place of selling.</div></div>
-      <div class="jkc"><div class="q">Don't sell a product for more than 2 weeks.</div><div class="f">minimalist-plan-to-1-million-part-2.pdf</div><div class="br"><b>where the plan breaks it</b>The close date was dropped on 17 Aug and the offer is "standing". He would put a close date back. The 1 Dec start gives one.</div></div>
-      <div class="jkc"><div class="q">Most people don't have a lead problem. They have a lead conversion problem because they lack that middle step</div><div class="f">the-customer-funnel.pdf</div><div class="br"><b>where the plan breaks it</b>The plan jumps from a free intake sheet to an $800 retainer. The customer step, the $500 system, is 2 of 6 pages.</div></div>
-      <div class="jkc"><div class="q">There is no best platform except for the one you own.</div><div class="f">1000-new-whales.pdf</div><div class="br"><b>where the plan breaks it</b>No list and no capture page. The playbook's own order of work says the same: capture before more content.</div></div>
-      <div class="jkc ok"><div class="q">$100-$250/week is a safe bet if you're starting out with this model.</div><div class="f">minimalist-plan-to-1-million-part-1.pdf</div><div class="br"><b>where the plan matches him</b>$200/week sits inside his band. The 1-spot founding intake is scarcity from real capacity. The validation scripts already use his "Shall I send you the details?" line.</div></div>
+      <div class="jkc"><div class="q">No access to you (maybe 1 team member). Monetizes fish. Reduces churn. But rarely serves as an upsell.</div><div class="f">servant.pdf p3, the Tool-Only row</div><div class="br"><b>where the plan breaks it</b>A one-time download of skills is his Tool-Only tier. If the group exists to find clients, the payment must buy some access: a group thread, a live install session.</div></div>
+      <div class="jkc"><div class="q">Unless you have a big audience, the Customer Funnel probably won't make you more money than your clients.</div><div class="f">the-customer-funnel.pdf p3</div><div class="br"><b>where the plan breaks it</b>19 follows in four months is no audience. The Whop product will not reach $5k/mo alone. Its job is to find the buyers for Agency Booked Calls.</div></div>
+      <div class="jkc"><div class="q">Volume ain't value. An effective Customer Offer is often much, much less than we think.</div><div class="f">the-customer-funnel.pdf p14</div><div class="br"><b>where the plan breaks it</b>"Skills and systems once we improve it" is the whole library, and it waits on a cleanup. He would sell one system now, the outlier-to-template intake, and add the rest later.</div></div>
+      <div class="jkc"><div class="q">Don't sell a product for more than 2 weeks.</div><div class="f">minimalist-plan-to-1-million-part-2.pdf p3</div><div class="br"><b>where the plan breaks it</b>A Whop page left open is the "standing" offer again. Open it for a window and close it. His calendar puts customer offers at Black Friday (p1).</div></div>
+      <div class="jkc"><div class="q">Don't scale what's not working.</div><div class="f">likes-and-cash-workshop.pdf p14</div><div class="br"><b>where the plan breaks it</b>Article drops earned 0 of 19 follows. Scale replies and bullet stacks. Keep the articles for reach, with a plug under each one.</div></div>
+      <div class="jkc ok"><div class="q">There is no best platform except for the one you own.</div><div class="f">1000-new-whales.pdf p1</div><div class="br"><b>where the plan matches him</b>A Whop page in bio is his "put your Big Idea in a landing page" (p4), and every buyer and waitlist email is the first list Mauro owns.</div></div>
     </div>
     <div class="verdict">
       <div class="first">
         <div class="k">his first move, in our reading</div>
-        <h3>Name the warm list and send it today</h3>
-        <p>His DM list starts with people already in your world: "Previous Customers ... Previous Clients ... People who ask you" (the-customer-funnel.pdf). The 5-6 ghostwriting contacts and 2-3 churned contacts are warmer than 15 names from a scraper, and they are blocked only on Mauro writing them down. Then post the hand-raiser that is already written.</p>
+        <h3>Sell one system this month, with a close date</h3>
+        <p>"What thing worth $100 can I sell this week that I know will sell?" (the-customer-funnel.pdf p8). The outlier-to-template intake already has a skill, a script and a sheet. Clear its ownership, fix it, put it on Whop with a close date, and offer Agency Booked Calls to every buyer, because the doc says "Include A Higher Access Option" (p9).</p>
       </div>
       <div class="cut">
-        <div class="k" style="color:#E07A5F">what he would cut until the first invoice</div>
+        <div class="k" style="color:#E07A5F">what he would cut until the first sale</div>
         <ul>
-          <li>YouTube boards v2 and every new format</li>
-          <li>The Gate proof, the ASCII format, the anti-slop merge</li>
-          <li>The playbook's 29-originals-a-week target</li>
-          <li>Minutes as the headline number</li>
-          <li>The open-ended "standing" offer</li>
+          <li>Packaging all five systems before the first sale</li>
+          <li>An open-ended Whop page with no close date</li>
+          <li>More article volume as the follow engine</li>
+          <li>The full system for free in a lead magnet</li>
+          <li>YouTube boards and every new format</li>
         </ul>
       </div>
     </div>
-    <p style="margin-top:14px;font-size:14px">Where our rules overrule him: the declared Freedom Number and the protagonist post stay rejected as guru theater (<span class="mono">candidate-insight-model.md</span>, <span class="mono">brand/positioning.md</span>). The value-model lead magnet stays for this buyer, which he would push back on.</p>
+    <p style="margin-top:14px;font-size:14px">Where our rules overrule him: daily email offers need a list that does not exist, and the declared-number game stays rejected as guru theater (<span class="mono">candidate-insight-model.md</span>, <span class="mono">brand/positioning.md</span>).</p>
   </div>
 </section>
 
-<footer><span>Ghosted Calls · the plan · internal</span><span>@maurojpelle · mauro@ghostedcalls.com</span></footer>
+<footer><span>Ghosted Calls · the plan v2 · internal</span><span>@maurojpelle · mauro@ghostedcalls.com</span></footer>
 <div id="end"></div>
 </div>
+
 </body>
 </html>

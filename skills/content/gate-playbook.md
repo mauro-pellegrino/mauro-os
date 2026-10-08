@@ -134,6 +134,29 @@ EVIDENCE the profile-study QT pair shipped with the handle under the lede on bot
      Same family as G-012, which stripped chrome off in-article blocks: this narrows what counts as
      necessary chrome on the standalone asset too
 
+[G-015] 2026-10-08  confidence: high  hits: 0  misses: 0
+WHEN a Mauro post or article is about his own productivity (planner, google tasks, ticks, hours or
+     minutes worked, "two businesses / two backlogs", his calendar)
+THEN fail it, and replace the topic with a system the reader (an agency owner) can copy, and never
+     state his private work hours or session minutes anywhere public
+EVIDENCE review 2026-10-08 #41 #44 #52 #54 #55, all killed or changed. Mauro: "who will care about
+     this? I am not Dan Koe, I can barely scratch 10 likes per post", and #44 "way too honest on my
+     private work day in terms of time worked"
+
+[G-016] 2026-10-08  confidence: medium  hits: 0  misses: 0
+WHEN a post carries a number
+THEN the same line, or the line before, says what the number measures (views, minutes of a process,
+     share of drafts approved), so a stranger reads it once and knows
+EVIDENCE review 2026-10-08 #50, the claims-file post: "number about what? no context here"
+
+[G-017] 2026-10-08  confidence: medium  hits: 0  misses: 0
+WHEN writing the last line of a post
+THEN state the concrete reason or consequence in plain words a stranger gets on one read (e.g. 4
+     articles in one style is all eggs in one basket, the same as creative testing). G-001 still
+     holds: no summary, no moral, no question
+EVIDENCE review 2026-10-08 #42 "I would love a more clear, simpler last line" and #49 "as always,
+     you are struggling a lot with last lines, just explain why"
+
 
 The Gate proposes deltas after a run. Mauro's overrides are the highest-signal source: every time
 he passes something the Gate flagged, or kills something the Gate passed, that disagreement is his

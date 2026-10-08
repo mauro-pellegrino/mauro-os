@@ -59,6 +59,13 @@ and was never sent. Mauro has the message. Decided 2026-10-04: **remove the $300
 
 ---
 
+- [ ] **Make the planner usable before any content about it** (review 2026-10-08 #55). Mauro: "do
+  you think my calendar, planner is actually helping? I don't think I'm even using it, so help me
+  use it first". Next step: ask him which one view he would open each morning, then cut the rest.
+  No posts or articles about the planner, his hours or his minutes (gate-playbook G-015).
+- [ ] **Fix `tools/outlier-score.py` number parsing** ("12.4K" crashes it, "1.2" reads as 12). Same
+  bug was fixed in the intake lead magnet on 2026-10-08.
+
 ## TIER 1 — the YouTube video flow (the "own vidIQ")
 
 The end-to-end path is: research picks the topic, titles get drafted, Mauro answers in a voice
