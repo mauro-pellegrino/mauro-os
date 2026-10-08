@@ -40,12 +40,12 @@
   "seed": {
    "claude insane": [
     9,
-    10.09,
+    10.08,
     true
    ],
    "prompts": [
     13,
-    8.98,
+    9.02,
     false
    ],
    "prompt": [
@@ -55,17 +55,17 @@
    ],
    "brief": [
     6,
-    5.45,
+    5.46,
     false
    ],
    "claude": [
     22,
-    5.31,
+    5.3,
     false
    ],
    "system": [
     14,
-    3.43,
+    3.42,
     false
    ],
    "vsls": [
@@ -80,17 +80,17 @@
    ],
    "creative strategy": [
     19,
-    2.46,
+    2.48,
     false
    ],
    "strategy": [
     21,
-    2.46,
+    2.48,
     false
    ],
    "process": [
     12,
-    2.44,
+    2.43,
     false
    ],
    "examples": [
@@ -100,17 +100,17 @@
    ],
    "native": [
     9,
-    2.35,
+    2.37,
     false
    ],
    "curiosity": [
     6,
-    2.31,
+    2.38,
     false
    ],
    "meta spend": [
     11,
-    2.27,
+    2.26,
     false
    ],
    "managed meta": [
@@ -125,7 +125,7 @@
    ],
    "workflow": [
     8,
-    2.15,
+    2.14,
     false
    ],
    "structures": [
@@ -140,7 +140,7 @@
    ],
    "look ads": [
     9,
-    2.55,
+    2.54,
     false
    ],
    "mini-guide": [
@@ -160,7 +160,7 @@
    ],
    "built": [
     18,
-    2.48,
+    2.47,
     false
    ],
    "portfolio": [
@@ -170,7 +170,7 @@
    ],
    "portfolio check": [
     10,
-    0.17,
+    0.18,
     false
    ],
    "link bio": [

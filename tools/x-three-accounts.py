@@ -7,13 +7,13 @@ replies), weekly reply volume and the best/worst replies for Mauro.
 
     python3 tools/x-three-accounts.py
 """
-import collections, csv, datetime as dt, glob, os, statistics
+import collections, csv, datetime as dt, glob, os, re, statistics
 
 FILES = glob.glob(os.path.expanduser("~/Downloads/account_analytics_content_*.csv")) + \
         glob.glob(os.path.join(os.path.dirname(__file__), "..", "research", "x-analytics", "*.csv")) + \
         glob.glob(os.path.expanduser("~/growthub-os/research/x-analytics-exports/*-x-*.csv")) + \
         glob.glob(os.path.expanduser("~/growthub-os/research/x-analytics-exports/bogzabs96-*.csv"))
-FILES.sort(key=os.path.getmtime)  # oldest first, so newer exports overwrite older counts
+FILES.sort(key=lambda p: (re.findall(r"\d{4}-\d{2}-\d{2}", os.path.basename(p)) or [""])[-1])  # by export end date: newer counts win
 ACC = {"maurojpelle": "Mauro", "lorenzo_pravata": "Lorenzo", "bogzabs96": "Bogdan"}
 rows = {}
 for f in FILES:
