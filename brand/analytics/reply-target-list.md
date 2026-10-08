@@ -96,8 +96,6 @@ Follower counts are from web search snippets seen on 2026-10-08 (x.com blocks fe
 | 19 | @amandanat (Amanda Natividad) | 131.2K (snippet) | Audience research, zero-click content, SparkToro. | not replied |
 | 20 | @TheCoolestCool (Ross Simmonds) | 73.4K (snippet) | Founder of Foundation, a B2B content agency. Content distribution. | not replied |
 
-Checked and left out: @gregisenberg (666.6K) and @sweatystartup (525.1K) are above the band. @heyblake (91.3K) got 4 replies (Aug 3, Sep 1) and 0 profile visits, so it is DROP. @rubenhassid stays RED from Aug.
-
 ## BUYER ACCOUNTS (new, 2026-10-08)
 
 Agency owners and operators with 5K to 100K followers. Smaller rooms, but the poster is the buyer, and the people in the replies are their peers. Every one starts as TEST.
@@ -123,8 +121,6 @@ Agency owners and operators with 5K to 100K followers. Smaller rooms, but the po
 
 Also buyers already in KEEP or TEST: @paolo_scales, @AlexHartsuff, @LoganTGott, @scaling_shields, @retentiongoat, @lukethorburg.
 
-Checked and left out: @CharlieImperium (Imperium Academy, "first client" altitude) and @liamottley_ (AI automation agency beginners). Both fail the altitude test.
-
 ---
 
 ## RED: do not reply
@@ -143,6 +139,13 @@ Checked and left out: @CharlieImperium (Imperium Academy, "first client" altitud
 | @aymanalabdul, @polydao, @dan__rosenthal, @wilczyn, @NickpxJ, @omkarships, @MediaKing, @YashHustle_22 | Aug: 17 / 268 / 0 | The Claude/tool-talk cluster. |
 
 **2. Wrong altitude.** The post is pitched at $1k MRR, first client, first $10k, quitting the job. Skip on sight. @CharlieImperium and @liamottley_ sit here.
+
+## Checked and left out (2026-10-08)
+
+- gregisenberg (666.6K) and sweatystartup (525.1K): above the big-room band.
+- heyblake (91.3K): 4 replies (Aug 3, Sep 1), 0 profile visits. DROP.
+- rubenhassid: stays RED from Aug.
+- CharlieImperium (Imperium Academy) and liamottley_ (AI automation agency beginners): fail the altitude test, RED.
 
 ## TEAM: never a reply target
 

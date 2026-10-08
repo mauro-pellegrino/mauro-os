@@ -8,8 +8,8 @@ Since 1 Sep: 151 replies, 1 follow. In September the account sent 50 replies at 
 
 ## The rule
 
-1. **15 replies a day, as a maximum.** The week with 20 a day had the lowest reach per reply.
-2. **Within 15 minutes of the post.** An early reply sits near the top of the thread. A late reply sits under 200 others.
+1. **15 replies a day, as a maximum.** The 5 days of October with 20 a day had the lowest reach per reply.
+2. **Within 15 minutes of the post.** An early reply sits near the top of the thread. A late reply sits under the replies that came first.
 3. **On the list only.** KEEP, TEST, BIG ROOMS and BUYER ACCOUNTS in `reply-target-list.md`. A handle that is not on the list gets no reply. If an account looks right, add it to a note for Mauro. Do not reply first.
 4. **One specific point from Mauro's real work in every reply.** A question about their system, or one fact from his. Take the facts from `brand/claims.md` (rows marked "yes") and from his own posts in the export. Never invent a number.
 5. **No replies to the team.** @lorenzo_pravata and @Bogzabs96 got 14 replies, 694 impressions and 0 follows. A like or a repost is fine.
