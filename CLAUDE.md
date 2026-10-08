@@ -173,4 +173,10 @@ Full guide in `brand/voice.md`. The non-negotiables:
 
 ---
 
+## 8. REVIEW QUEUE
+
+Every batch of generated content ends in the review queue: load the global `review-queue` skill (`~/.claude/skills/review-queue/SKILL.md`) when Mauro says "review queue", "visualize everything" or "what did you generate", or when a batch is done. It renders one card per post in `~/review-queue/index.html` (outside this repo, because it mixes Ghosted Calls and Growthub), and Mauro pastes his decisions back.
+
+---
+
 *Last updated: 1 October 2026 | Version 2.1 (added the default markdown handoff)*
