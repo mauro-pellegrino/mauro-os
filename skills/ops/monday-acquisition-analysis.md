@@ -61,6 +61,10 @@ Two tables, W[N-3] → W[N]:
 
 Then actuals vs the standing target across all 4 weeks. State plainly how many of the last 4 weeks hit target. [TARGET, define the weekly qualified-conversation target once the offer is live.]
 
+### Step 2b: Keyword tracker (@maurojpelle)
+
+Run `python3 tools/x-keyword-tracker.py Mauro --out /tmp/kw-mauro.md` and paste the block under §2. It scores last week's original posts per tracked keyword (reach lift, profile visits per post, follows per post) against the 8 weeks before, and flags winners, losers, new winners and keywords to drop. The list is `tools/x-keyword-list.json` (about 25 keywords, Wiz's advice on the 28 Aug call). Place next week's winners on purpose in the post plan. Change the list only after Mauro approves the add/drop lines. If the block prints a WARNING, the X export is stale: ask for a fresh one.
+
 ## Step 3: Top signals worth acting on
 
 Build these every week:

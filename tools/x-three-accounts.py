@@ -10,14 +10,17 @@ replies), weekly reply volume and the best/worst replies for Mauro.
 import collections, csv, datetime as dt, glob, os, statistics
 
 FILES = glob.glob(os.path.expanduser("~/Downloads/account_analytics_content_*.csv")) + \
-        glob.glob(os.path.join(os.path.dirname(__file__), "..", "research", "x-analytics", "*.csv"))
+        glob.glob(os.path.join(os.path.dirname(__file__), "..", "research", "x-analytics", "*.csv")) + \
+        glob.glob(os.path.expanduser("~/growthub-os/research/x-analytics-exports/*-x-*.csv")) + \
+        glob.glob(os.path.expanduser("~/growthub-os/research/x-analytics-exports/bogzabs96-*.csv"))
+FILES.sort(key=os.path.getmtime)  # oldest first, so newer exports overwrite older counts
 ACC = {"maurojpelle": "Mauro", "lorenzo_pravata": "Lorenzo", "bogzabs96": "Bogdan"}
 rows = {}
 for f in FILES:
     for r in csv.DictReader(open(f, encoding="utf-8")):
         link = (r.get("Post Link") or "").lower()
         acc = next((v for k, v in ACC.items() if f"x.com/{k}/" in link), None)
-        if not acc:
+        if not acc or not (r.get("Post id") or "").strip():
             continue
         r["acc"] = acc
         rows[r["Post id"]] = r  # later files overwrite: newer counts

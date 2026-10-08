@@ -26,24 +26,25 @@ def words(t):
     return set(w) | {a + " " + b for a, b in zip(w, w[1:])}
 
 
-accs = sys.argv[1:] or ["Lorenzo", "Bogdan", "Mauro"]
-for acc in accs:
-    posts = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and r["day"] >= dt.date(2026, 6, 1)]
-    base = statistics.median(n(r, "Impressions") for r in posts)
-    idx = collections.defaultdict(list)
-    for r in posts:
-        for k in words(r["Post text"]):
-            idx[k].append(r)
-    stats = []
-    for k, rs in idx.items():
-        if len(rs) < MIN:
-            continue
-        med = statistics.median(n(r, "Impressions") for r in rs)
-        stats.append((k, len(rs), med / base, sum(n(r, "New follows") for r in rs) / len(rs),
-                      sum(n(r, "Profile visits") for r in rs) / len(rs), sum(bool(M.search(r["Post text"] or "")) for r in rs)))
-    print(f"\n=== {acc}: {len(posts)} original posts since 1 Jun, median {int(base):,} impressions ===")
-    for title, sel in (("WORK (highest reach lift)", sorted(stats, key=lambda s: -s[2])[:25]),
-                       ("DON'T WORK (lowest reach lift)", sorted(stats, key=lambda s: s[2])[:15])):
-        print(f"\n{title}\n  keyword                       posts  lift  fol/post vis/post  resource-posts")
-        for k, c, lift, fpp, vpp, res in sel:
-            print(f"  {k:30} {c:4} {lift:5.2f} {fpp:8.1f} {vpp:8.1f} {res:6}")
+if __name__ == "__main__":
+    accs = sys.argv[1:] or ["Lorenzo", "Bogdan", "Mauro"]
+    for acc in accs:
+        posts = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and r["day"] >= dt.date(2026, 6, 1)]
+        base = statistics.median(n(r, "Impressions") for r in posts)
+        idx = collections.defaultdict(list)
+        for r in posts:
+            for k in words(r["Post text"]):
+                idx[k].append(r)
+        stats = []
+        for k, rs in idx.items():
+            if len(rs) < MIN:
+                continue
+            med = statistics.median(n(r, "Impressions") for r in rs)
+            stats.append((k, len(rs), med / base, sum(n(r, "New follows") for r in rs) / len(rs),
+                          sum(n(r, "Profile visits") for r in rs) / len(rs), sum(bool(M.search(r["Post text"] or "")) for r in rs)))
+        print(f"\n=== {acc}: {len(posts)} original posts since 1 Jun, median {int(base):,} impressions ===")
+        for title, sel in (("WORK (highest reach lift)", sorted(stats, key=lambda s: -s[2])[:25]),
+                           ("DON'T WORK (lowest reach lift)", sorted(stats, key=lambda s: s[2])[:15])):
+            print(f"\n{title}\n  keyword                       posts  lift  fol/post vis/post  resource-posts")
+            for k, c, lift, fpp, vpp, res in sel:
+                print(f"  {k:30} {c:4} {lift:5.2f} {fpp:8.1f} {vpp:8.1f} {res:6}")
