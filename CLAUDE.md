@@ -177,6 +177,9 @@ Full guide in `brand/voice.md`. The non-negotiables:
 
 Every batch of generated content ends in the review queue: load the global `review-queue` skill (`~/.claude/skills/review-queue/SKILL.md`) when Mauro says "review queue", "visualize everything" or "what did you generate", or when a batch is done. It renders one card per post in `~/review-queue/index.html` (outside this repo, because it mixes Ghosted Calls and Growthub), and Mauro pastes his decisions back.
 
+**Morning page.** When Mauro says "morning page", "start my day" or "what's today", load the global `morning-page` skill (`~/.claude/skills/morning-page/SKILL.md`).
+It builds `~/morning/index.html` (calendar, posting grid, waiting items, replies, numbers) and reads Notion and Calendar only, never writes them.
+
 ---
 
 *Last updated: 1 October 2026 | Version 2.1 (added the default markdown handoff)*
