@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Ladder</title>
+<meta name="description" content="Whop community research (17 AI, content and writing products) and a product ladder for Ghosted Calls built only from the systems Mauro owns: free magnet, one-time kits, a 9-module community and a weekly drop.">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EFE4;--card:#FFFDF8;--ink:#171310;--body:#3B342D;--muted:#6B6258;--line:#E2D8C6;--accent:#E0A854;--accent-ink:#8A5A12;--accent-soft:#F7E6C8;--red:#B4442F;--red-soft:#F6DED6;--green:#3F7D4E;--green-soft:#DDEBDD}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.55;
+ background-image:radial-gradient(#17131012 1.2px,transparent 1.2px);background-size:18px 18px}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 16px 72px}
+.mono{font-family:'JetBrains Mono',monospace}
+.top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+.top b{color:var(--accent-ink)}
+.badge{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.badge span{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;background:var(--card)}
+.badge span.hot{background:var(--ink);color:var(--bg)}
+h1{font-size:60px;line-height:1.02;letter-spacing:-.03em;font-weight:800;margin-top:18px}
+h1 span{background:linear-gradient(transparent 62%,var(--accent) 62%)}
+.lede{font-size:21px;line-height:1.45;color:var(--body);margin-top:16px;max-width:860px}
+section{margin-top:60px}
+.k{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+h2{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
+h3{font-size:18px;line-height:1.25}
+p{color:var(--body);margin-bottom:10px}
+.sub{max-width:860px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.need{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;color:var(--red);background:var(--red-soft);border:1px dashed var(--red);border-radius:6px;padding:1px 7px;white-space:normal}
+.src{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+/* starting line */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat .v{font-size:36px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.stat .l{font-size:14px;color:var(--body);margin-top:4px}
+.stat.dark{background:var(--ink);border-color:var(--ink)}
+.stat.dark .v{color:var(--accent)}
+.stat.dark .l{color:#EDE6D8}
+.stat.dark .src{color:#9A9184}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.alloc h3{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.alloc .tot{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:6px 0 2px}
+.alloc .tot small{font-size:16px;color:var(--muted);font-weight:600}
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:2px solid var(--ink);margin:12px 0 10px}
+.bar div{display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--ink);border-right:2px solid var(--ink);white-space:nowrap;overflow:hidden}
+.bar div:last-child{border-right:0}
+.c1{background:var(--accent)}.c2{background:var(--accent-soft)}.c3{background:#D8CDB8}.c4{background:#C9B48F}.c5{background:#EFE3CC}.c6{background:#fff}
+.legend{list-style:none;font-size:14px}
+.legend li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);color:var(--body)}
+.legend li:last-child{border-bottom:0}
+.legend b{font-family:'JetBrains Mono',monospace;color:var(--ink);white-space:nowrap}
+.sw{display:inline-block;width:11px;height:11px;border:1.5px solid var(--ink);border-radius:3px;margin-right:7px;vertical-align:-1px}
+.clash{margin-top:14px;border-left:5px solid var(--red);background:var(--red-soft);padding:14px 18px;border-radius:0 10px 10px 0;font-weight:600;color:var(--ink)}
+/* weekly grid */
+.grid{display:grid;grid-template-columns:150px repeat(5,1fr);gap:6px;margin-top:8px}
+.grid .h{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 6px}
+.grid .rl{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;padding:10px 8px;background:var(--ink);color:var(--bg);border-radius:8px;display:flex;align-items:center}
+.cell{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:13.5px;line-height:1.35;color:var(--body)}
+.cell b{display:block;color:var(--ink);font-size:14px}
+.cell .m{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent-ink);margin-top:3px;display:block}
+.cell.hot{background:var(--accent-soft);border-color:var(--accent)}
+.cell.frz{background:repeating-linear-gradient(135deg,#EDE6D8,#EDE6D8 6px,#E4DACA 6px,#E4DACA 12px);color:var(--muted)}
+.span5{grid-column:span 5}
+/* io table */
+.io{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}
+.io th{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;text-align:left;color:var(--muted);padding:12px 14px;border-bottom:2px solid var(--ink);background:#FBF6EC}
+.io td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--body)}
+.io tr:last-child td{border-bottom:0}
+.io td:first-child{font-weight:700;color:var(--ink)}
+.io .arrow{font-family:'JetBrains Mono',monospace;color:var(--accent-ink);font-weight:700}
+/* funnel */
+.funnel{display:flex;flex-direction:column;align-items:center;gap:6px}
+.fs{border:2px solid var(--ink);border-radius:10px;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--card)}
+.fs .t{font-weight:700;white-space:nowrap}
+.fs .n{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;text-align:right;white-space:nowrap}
+.fs.a{background:var(--accent)}.fs.b{background:var(--accent-soft)}
+.farrow{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:13px;line-height:1}
+.two-funnels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two-funnels .card h3{margin-bottom:12px}
+/* indicators */
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.ind .stat .v{font-size:30px}
+.meter{height:12px;border:1.5px solid var(--ink);border-radius:99px;background:#fff;margin-top:10px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent)}
+.days{display:flex;gap:6px;align-items:flex-end;height:126px;margin-top:0}
+.days div{flex:1;line-height:16px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.days i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.days .line{position:relative}
+.dayswrap{position:relative;margin-top:22px}
+.dayswrap .tgt{position:absolute;left:0;right:0;border-top:2px dashed var(--red);font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--red);text-align:right;height:0;z-index:1}
+.dayswrap .tgt span{position:relative;top:-15px;background:var(--card);padding-left:4px}
+/* ladder */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end}
+.rung{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:16px;position:relative}
+.rung .when{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rung h3{margin:4px 0 8px;font-size:19px}
+.rung p{font-size:14px;margin-bottom:8px}
+.rung .unlock{border-top:1px dashed var(--ink);padding-top:8px;font-size:13.5px;color:var(--ink)}
+.rung .unlock b{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);display:block}
+.rung.now{background:var(--accent)}
+.r1{min-height:250px}.r2{min-height:300px}.r3{min-height:350px}.r4{min-height:400px}
+.rail{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.math{font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.8;background:#171310;color:#EDE6D8;border-radius:14px;padding:18px 22px}
+.math .c{color:#E0A854}.math .d{color:#9A9184}
+.pages{display:flex;gap:6px;margin-top:10px}
+.pages div{flex:1;border:1.5px solid var(--ink);border-radius:6px;padding:8px 6px;font-size:11.5px;text-align:center;font-family:'JetBrains Mono',monospace;line-height:1.3}
+.pages .y{background:var(--green-soft)}.pages .no{background:#fff;border-style:dashed;color:var(--muted)}
+/* JK */
+.jk{background:#171310;color:#EDE6D8;border-radius:18px;padding:30px 28px}
+.jk .k{color:var(--accent)}
+.jk h2{color:#FFFDF8}
+.jk p{color:#CFC6B6}
+.disclaim{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:4px 12px;margin-bottom:16px}
+.jkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.jkc{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:16px 18px}
+.jkc .q{font-size:16px;font-weight:700;color:#FFFDF8;line-height:1.35}
+.jkc .q::before{content:"\201C";color:var(--accent)}
+.jkc .q::after{content:"\201D";color:var(--accent)}
+.jkc .f{font-family:'JetBrains Mono',monospace;font-size:11px;color:#9A9184;margin:4px 0 10px}
+.jkc .br{font-size:14px;color:#E2D8C6;border-top:1px dashed #4A4036;padding-top:9px}
+.jkc .br b{color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+.jkc.ok .br b{color:#8FC79B}
+.verdict{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:14px}
+.first{background:var(--accent);color:var(--ink);border-radius:12px;padding:18px 20px}
+.first .k{color:var(--ink)}
+.first h3{font-size:22px;margin-bottom:6px}
+.first p{color:var(--ink)}
+.cut{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:18px 20px}
+.cut ul{list-style:none}
+.cut li{padding:5px 0 5px 22px;position:relative;color:#E2D8C6;font-size:14.5px;border-bottom:1px solid #3A322A}
+.cut li:last-child{border-bottom:0}
+.cut li::before{content:"x";position:absolute;left:4px;font-family:'JetBrains Mono',monospace;color:#E07A5F;font-weight:700}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+#end{height:1px}
+@media (max-width:900px){h1{font-size:42px}.lede{font-size:18px}h2{font-size:26px}
+ .stats,.ind{grid-template-columns:1fr 1fr}.split,.two-funnels,.jkgrid,.verdict,.rail{grid-template-columns:1fr}
+ .ladder{grid-template-columns:1fr 1fr}.r1,.r2,.r3,.r4{min-height:0}
+ .grid{grid-template-columns:1fr}.grid .h{display:none}.span5{grid-column:auto}
+ .io{display:block;overflow-x:auto}}
+
+.months{display:flex;gap:14px;align-items:flex-end;height:230px;margin-top:14px}
+.months div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.months i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.months .mv{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;margin-bottom:4px}
+.months .ml{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);text-align:center;margin-top:6px;line-height:1.3}
+.months em{font-style:normal;font-size:10.5px}
+.io.mini{font-size:14px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.tag.ok{background:var(--green-soft);color:var(--green);border:1px solid var(--green)}
+.tag.warn{background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent)}
+
+.aar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.aar ul{list-style:none;margin-top:8px}
+.aar li{font-size:14px;color:var(--body);padding:7px 0;border-bottom:1px solid var(--line)}
+.aar li:last-child{border-bottom:0}
+.aar li b{color:var(--ink)}
+.aar h3{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;font-size:14px;display:inline-block;padding:4px 10px;border-radius:6px}
+.aar h3.g{background:var(--green-soft);color:var(--green)}.aar h3.a{background:var(--accent-soft);color:var(--accent-ink)}.aar h3.r{background:var(--red-soft);color:var(--red)}
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mod{background:var(--card);border:2px solid var(--green);border-radius:12px;padding:14px 16px}
+.mod.w{border-color:var(--accent);border-style:dashed}
+.mod .n{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.mod h3{margin:4px 0 6px}
+.mod p{font-size:14px;margin-bottom:6px}
+.mod .f{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent-ink);margin-bottom:8px}
+.tag.gh{background:var(--red-soft);color:var(--red);border:1px solid var(--red)}
+.drop{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.stat .v{font-size:30px}
+@media (max-width:900px){.aar,.mods,.drop{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>internal · built 2026-10-08 · decision #29 · research only, every price is the seller's own</span></div>
+
+<div class="badge"><span class="hot">product ladder</span><span>whop research</span><span>free → kits → community</span><span>owned systems only</span></div>
+<h1>What to sell on Whop, <span>built from what you own</span></h1>
+<p class="lede">17 AI, content and writing products read on 8 Oct. The market charges monthly for a room and one-time for a kit. Below: what they do, what fits your 5 to 7 hours a week, and a ladder made only from the 4 clean systems, with the agency-dependent ones marked.</p>
+
+<!-- 1. MARKET -->
+<section>
+  <div class="k">the market today</div>
+  <h2>Rooms are monthly. Kits are one-time.</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">$19 to $129</div><div class="l">a month for an AI or content community. Yearly: $199 to $2,999.</div><div class="src">Build with Luke · AAS Plus · Vibe Marketers · Startup Empire</div></div>
+    <div class="stat"><div class="v">$27 to $99</div><div class="l">one-time for a kit or course. Justin Welsh's OS: $99 one-time on Whop.</div><div class="src">dickiebush.substack.com · whop.com/discover</div></div>
+    <div class="stat dark"><div class="v">452,600 / 3,700</div><div class="l">free vs paid members at AI Automation Society. The free room feeds the $129/mo tier.</div><div class="src">aifunnelinsider.com, checked 8 Sep 2026</div></div>
+    <div class="stat"><div class="v">Free</div><div class="l">weeklyaiops (Machina) today: "It's free. Drop your email". The repo's "~$97/mo" note is stale.</div><div class="src">weeklyaiops.com, fetched 8 Oct</div></div>
+  </div>
+
+  <table class="io" style="margin-top:16px">
+    <tr><th>Product</th><th>Price + billing</th><th>Inside</th><th>Reason to stay</th></tr>
+    <tr><td>AI Automation Society Plus</td><td>$129/mo (was $99), about $999/yr</td><td>6 courses, 100+ n8n templates, weekly Q&amp;A</td><td>One course unlocks every 30 days on monthly. 9 levels, but 48% stay at Level 1</td></tr>
+    <tr><td>The AI Operator <span class="tag warn">whop</span></td><td>$39.99/mo, $39 for the first 100, 7-day trial</td><td>4 modules: Foundations, First System, Packaging, Getting Clients</td><td>Weekly 60 to 90 min live build</td></tr>
+    <tr><td>Ruben Hassid, How to AI</td><td>$200/yr</td><td>Circle room 4,500+, live AI 101 / 201 / 301 each week</td><td>Three live sessions a week, $17,000 in tool discounts</td></tr>
+    <tr><td>Content Academy <span class="tag warn">whop</span></td><td>$97/mo or $997/yr (two sources)</td><td>Hook and editing lessons, AI hook tool</td><td>Weekly group coaching</td></tr>
+    <tr><td>Social Growth <span class="tag warn">whop</span></td><td>$49.99/mo or $297 lifetime</td><td>9+ hour course, 1:1 support</td><td>Weekly group calls</td></tr>
+    <tr><td>Cashie Studio (JK Molina)</td><td>$499 every 3 months</td><td>"4 Cashies": AI assistants</td><td>Price rise after 30 Sep. His next: "Turn Your Prompts Into A Membership"</td></tr>
+    <tr><td>Ad Creators Lab (Camilo)</td><td>$47 founding, $99/mo after 500 members</td><td>Static ad templates, live ad reviews</td><td>Weekly live reviews</td></tr>
+    <tr><td>Dickie Bush, one month</td><td>15 products: $27 ebook to $6,800 program</td><td>Ebooks, webinars, $99/mo room, cohorts</td><td>"Only 4 existed at the beginning of this year"</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">Full table with 17 rows and every link: content/plan/whop-community-research.md, section 1. No public Whop leaderboard for AI was found: whoptrends.com puts it behind a paid plan.</p>
+</section>
+
+<!-- 2. LADDER -->
+<section>
+  <div class="k">the ladder</div>
+  <h2>Free tool, then kits, then the room</h2>
+  <p class="sub">Green = clean today. Amber = needs a written yes from the agency first. The higher option at the top is the offer that exists: Agency Booked Calls, $200 a week.</p>
+  <div class="ladder">
+    <div class="rung r1"><div class="when">rung 0 · free</div><h3>One clean skill</h3><p>The Gate starter: the agent, a blank rejections log, 5 example rules.</p><p><span class="tag ok">clean</span></p><div class="unlock"><b>or</b>the intake sheet <span class="tag warn">agency yes</span></div></div>
+    <div class="rung now r2"><div class="when">rung 1 · one-time</div><h3>Kits</h3><p>v1 Outlier Intake <span class="tag warn">agency yes</span></p><p>Gate Kit <span class="tag ok">clean</span><br>ASCII Visuals Kit <span class="tag ok">clean</span><br>Voice + Profile Pack <span class="tag ok">clean</span></p><div class="unlock"><b>price</b>market band $27 to $99. v1 leans $100 founding <span class="need">[NEEDS: pick]</span></div></div>
+    <div class="rung r3"><div class="when">rung 2 · the room</div><h3>Community</h3><p>9 modules, one released a month. A weekly drop from work you already do. One call a month.</p><div class="unlock"><b>billing</b><span class="need">[NEEDS: one-time window, monthly or quarterly]</span></div></div>
+    <div class="rung r4" style="background:var(--ink);color:var(--bg)"><div class="when" style="color:#9A9184">rung 3 · higher option</div><h3 style="color:var(--accent)">Agency Booked Calls</h3><p style="color:#CFC6B6">$200 a week, offered to every buyer with a cap and a close date. One client is about $867 a month ($200 x 52 / 12).</p><div class="unlock" style="border-color:#6B6258;color:#EDE6D8"><b>the goal</b>$10K/mo across Growthub + GC in the brief, $5k/mo GC in vision-2026.md <span class="need">[NEEDS: which is current]</span></div></div>
+  </div>
+</section>
+
+<!-- 3. ADOPT -->
+<section>
+  <div class="k">adopt / adapt / reject</div>
+  <h2>What fits 5 to 7 hours a week</h2>
+  <div class="aar">
+    <div class="card"><h3 class="g">Adopt</h3><ul>
+      <li><b>Free Claude Code skill as the magnet.</b> AI Marketing Insiders gives 5. Your "skills" and "code" posts go up</li>
+      <li><b>Founding price that rises at a count.</b> AI Operator: first 100. Camilo: 500</li>
+      <li><b>Close date.</b> Cashie Studio, JK's 1 to 2 week cycles</li>
+      <li><b>Whop's 30% affiliate default</b>, plus a higher rate for members</li>
+      <li><b>Personal welcome + "What's your focus?"</b></li>
+    </ul></div>
+    <div class="card"><h3 class="a">Adapt</h3><ul>
+      <li><b>Weekly drop</b> from sawdust, never new writing</li>
+      <li><b>Live call:</b> one a month, never weekly</li>
+      <li><b>Drip unlock:</b> one module a month, like AAS</li>
+      <li><b>Free tier:</b> a free tool, never an empty free room. The big rooms run on 995K YouTube subs or 947K emails</li>
+      <li><b>Promise:</b> one scored account and one Gate pass in the first session</li>
+    </ul></div>
+    <div class="card"><h3 class="r">Reject</h3><ul>
+      <li><b>Comment-to-DM automation.</b> X bans, Wiz call 28 Aug</li>
+      <li><b>Levels and badges.</b> AAS: 48% stuck at Level 1</li>
+      <li><b>Daily calls, 24h support</b></li>
+      <li><b>Tool discount bundles.</b> No partner deals</li>
+      <li><b>Skool.</b> Whop picked 22 Aug</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- 4. MODULES -->
+<section>
+  <div class="k">the room · 9 modules</div>
+  <h2>Clean modules first, so the room can open before the agency answers</h2>
+  <div class="mods">
+    <div class="mod"><div class="n">01 · M</div><h3>Start here: the content repo</h3><p>A starter repo, a CLAUDE.md shape, the first command.</p><div class="f">from the mauro-os layout · written new</div><span class="tag ok">clean if new</span></div>
+    <div class="mod"><div class="n">02 · M</div><h3>The Gate</h3><p>Review agent and voice hook on your own drafts.</p><div class="f">inventory row 2 · gate.md, voice-gate.py</div><span class="tag ok">clean</span></div>
+    <div class="mod"><div class="n">03 · S</div><h3>Your voice in one file</h3><p>A voice file built from your own best posts.</p><div class="f">row 3 · voice-extraction.md</div><span class="tag ok">clean</span></div>
+    <div class="mod"><div class="n">04 · S</div><h3>Study one account end to end</h3><p>A profile study of one creator in your niche.</p><div class="f">row 4 · real work: shannholmberg study, 15 Sep</div><span class="tag ok">clean</span></div>
+    <div class="mod"><div class="n">05 · M</div><h3>Visuals with no designer</h3><p>ASCII diagrams and a 5:2 cover from a text file.</p><div class="f">row 1 · real work: outlier + ninety ASCII sets</div><span class="tag ok">clean</span></div>
+    <div class="mod w"><div class="n">06 · L</div><h3>Outliers to templates</h3><p>Score accounts against their own median. Save winners as templates.</p><div class="f">row 5 · your Loom of 28 Aug</div><span class="tag warn">agency yes</span></div>
+    <div class="mod w"><div class="n">07 · M</div><h3>The Monday read</h3><p>What in your own X export earned follows.</p><div class="f">row 9 · maurojpelle-baseline.py, -traffic.py</div><span class="tag warn">agency yes</span> <span class="tag gh">growthub data: x-*.py</span></div>
+    <div class="mod w"><div class="n">08 · L</div><h3>Approve before you post</h3><p>Every draft as a card. Approval rate per week.</p><div class="f">row 7 · review-queue skill</div><span class="tag warn">agency yes</span></div>
+    <div class="mod w"><div class="n">09 · S</div><h3>Where your hours go</h3><p>Weekly calendar of AI sessions, hours per project.</p><div class="f">row 8 · week-calendar skill</div><span class="tag warn">agency yes (light)</span></div>
+  </div>
+  <p class="src" style="margin-top:8px">S / M / L = effort. S: the method file exists, only a scrub and one example. M: the parts run, the examples or paths need rebuilding. L: a rewrite. Inventory rows 10 to 21 stay out.</p>
+</section>
+
+<!-- 5. WEEKLY DROP -->
+<section>
+  <div class="k">the weekly drop</div>
+  <h2>Collect, do not create</h2>
+  <p class="sub">JK: "Don't create content, collect it". Each drop is work you already do that week.</p>
+  <div class="drop">
+    <div class="cell hot"><b>Mon · the Monday read</b>Your own X numbers for the week, as the script prints them.<span class="m">maurojpelle-baseline.py · your account only</span></div>
+    <div class="cell"><b>Wed · one template</b>One public outlier post, its shape, its numbers against its own median.<span class="m">public posts only · never an agency export</span></div>
+    <div class="cell"><b>Fri · one Gate catch</b>A draft line the Gate rejected and the fix.<span class="m">your rejections log · names scrubbed</span></div>
+    <div class="cell"><b>Monthly · one module</b>From the 9 above, or one kit file updated.<span class="m">versioned · one changelog line</span></div>
+    <div class="cell"><b>Monthly · one call</b>Live and recorded, or an async thread.<span class="m"><span class="need">[NEEDS: pick]</span></span></div>
+  </div>
+</section>
+
+<!-- 6. MORE KITS -->
+<section>
+  <div class="k">3 more one-time products</div>
+  <h2>After v1, from the clean rows</h2>
+  <table class="io">
+    <tr><th>Kit</th><th>The buyer gets</th><th>Must be built</th><th>Effort</th></tr>
+    <tr><td>Gate Kit <span class="tag ok">clean</span></td><td>Review agent, pre-commit voice hook, rejections log, claims file, a scrubbed example log</td><td>Blank playbook, scrubbed example, path-free hook, install README. Ronin's anti-slop protocol and brand/voice.md stay out</td><td>M</td></tr>
+    <tr><td>ASCII Visuals Kit <span class="tag ok">clean</span></td><td>Diagram renderer, 5:2 terminal cover builder, animation tool, two skills</td><td>Swap every Lorenzo example for your own outlier and ninety sets. Change the founder handle in ascii-anim/README.md line 17. Stranger test</td><td>M</td></tr>
+    <tr><td>Voice + Profile Pack <span class="tag ok">clean</span></td><td>Voice extraction from your own posts, a study of one creator end to end</td><td>Remove a collaborator name (3 times) and 1 private path. One worked example on a public account. Risk: "voice" posts sit at 0.3x</td><td>S</td></tr>
+  </table>
+</section>
+
+<!-- 7. FORKS -->
+<section>
+  <div class="jk">
+    <div class="k">what only you can decide</div>
+    <h2>Four forks</h2>
+    <div class="jkgrid">
+      <div class="jkc"><div class="br" style="border:0;padding:0"><b>1 · the agency</b>Ask about inventory rows 5 to 9. Modules 6 to 9 and kit v1 wait on the answer.</div></div>
+      <div class="jkc"><div class="br" style="border:0;padding:0"><b>2 · the free magnet</b>Gate starter (clean today), the intake sheet (agency yes) or one ASCII template (clean).</div></div>
+      <div class="jkc"><div class="br" style="border:0;padding:0"><b>3 · room billing</b>One-time window (the 22 Aug rule), monthly founding price (the market), or quarterly like Cashie Studio.</div></div>
+      <div class="jkc"><div class="br" style="border:0;padding:0"><b>4 · the goal</b>$10K/mo across Growthub + GC, or $5k/mo GC by 31 Dec. Also: what Growthub pays you a month.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer><span>Ghosted Calls · product ladder · internal</span><span>source: content/plan/whop-community-research.md</span></footer>
+<div id="end"></div>
+</div>
+
+</body>
+</html>
