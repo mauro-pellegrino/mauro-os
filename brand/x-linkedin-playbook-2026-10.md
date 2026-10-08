@@ -137,6 +137,8 @@ post they engaged on, add one case study, end with "open to seeing how I'd appro
 | Opt-ins per lead-magnet post | Once the capture funnel exists |
 | **Booked calls by source** | A separate Calendly link per source: X bio, LinkedIn bio, VSL page, each email |
 
+Any Ghosted Calls plan names the @maurojpelle export it used (file path and date range) on its first screen. Direction set by Mauro: a paid group with a one-time Whop payment for his skills and systems, after they improve, then traffic (review 2026-10-08 GC #57) [metric: first-pass approval rate]
+
 ---
 
 ## A week, in the 5–7 hour budget

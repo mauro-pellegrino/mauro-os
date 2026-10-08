@@ -455,6 +455,10 @@ Rules specific to this type, on top of the finishing rules below:
 8. **One idea per line,** blank line between most lines.
 9. **Loose grammar stays.** "I might try it yes." Don't tidy his phrasing into a correct sentence.
 10. **Casual approximations,** "about 4 months", not a precise figure he didn't say.
+11. **The last line is clear and simple.** It states the mechanism in plain words, for example "four articles in one style is all eggs in one basket, like one concept in creative testing". One sentence, no riddle. Gate: G-017 (review 2026-10-08 GC #42, #49) [metric: first-pass approval rate]
+12. **Every number says what it counts.** "0 of 185" alone fails; name the thing and why it matters to the reader. Gate: G-016 (review 2026-10-08 GC #50) [metric: first-pass approval rate]
+13. **Never reveal his private work time.** No minutes or hours worked, no week calendar figures, no planner he does not use. Gate: G-015 (review 2026-10-08 GC #44, #54, #55) [metric: first-pass approval rate]
+14. **No claim about his life he has not confirmed.** "Two businesses" was a guess. Check `brand/claims.md` or ask (review 2026-10-08 GC #42) [metric: first-pass approval rate]
 
 ## The 60-Second Pre-Publish Checklist
 

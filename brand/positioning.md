@@ -44,6 +44,8 @@ He's *in it daily*, building and measuring, not theorizing. And he's honest abou
 
 **Deprecated (Mauro, 2026-07-15):** *Cobbler's children* ("build your own inbound engine, the one you build for clients") was cut as a pillar. Mauro's call: "makes no sense for service based businesses that are qualified." The ICP is established, qualified operators; the "the cobbler has no shoes" framing reads as beginner/self-deprecating for that audience. Do not generate content off this pillar. The underlying idea (your real client work is the raw material for content) survives inside the **low-time system** pillar, framed as system input, not as a "you neglect your own brand" callout.
 
+**Reader value first.** Every post answers "what does an agency owner get from this?" in its first two lines. His own productivity, hours, planner, backlog or task stats are not a topic: they fail that test. He is not Dan Koe, so a diary post about himself does not earn reach (review 2026-10-08 GC #41, #52, #54, #55) [metric: first-pass approval rate]
+
 ## Voice
 
 Per [[voice.md]] (draft): honest builder thinking out loud for a smart peer. Conviction in the claim, humility in the tone, no hedges that undersell, no guru theater. AI-for-content is the mechanism, the documentary honesty is the brand.
