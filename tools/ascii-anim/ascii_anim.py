@@ -3,14 +3,21 @@
 
 Lines type in, box borders sweep in row by row, arrowheads land in the accent colour,
 then small packets flow along every connector that ends in an arrow, and one target pulses.
+--loop makes the video loop seamlessly in X autoplay or an HTML <video loop>: every motion runs on one
+shared period, and the last frame leads straight back into the first.
 House look: the same terminal window as content/ascii/render.py (dark or cream).
 
 Usage:
   python3 tools/ascii-anim/ascii_anim.py content/ascii/<name>.txt
       [--theme dark|cream] [--size 1080x1080|1600x900|both] [--highlight "TEXT"]
       [--handle @maurojpelle] [--reveal 9] [--hold 5] [--fps 30] [--out DIR] [--gif]
+      [--loop [draw|steady]]
 
 Writes <out>/<name>-<theme>-<W>x<H>.mp4 (H.264, yuv420p, faststart; X-ready).
+--loop draw   (default for --loop) draw in, flow + pulse for whole periods, fade back to the empty
+              window, so the end meets frame 0. Writes ...-loop.mp4
+--loop steady the diagram is already drawn, only the flow + pulse run, exactly whole periods.
+              For <video autoplay loop muted> inside HTML boards and articles. Writes ...-steady.mp4
 Needs: Google Chrome, python3 playwright (no browser download needed), ffmpeg.
 """
 import argparse, html, json, pathlib, subprocess, sys, tempfile
@@ -224,6 +231,9 @@ function mix(a, b, f){ // hex colours
 }
 window.seek = function(t){
   if(!cw) measure();
+  t += D.offset;
+  const fade = D.fadeStart === null ? 1 : Math.max(0, Math.min(1, 1 - (t - D.fadeStart) / D.fadeDur));
+  P.style.opacity = fade; HL.style.opacity = fade;
   let last = null, lastT = -1;
   for(let i=0;i<spans.length;i++){
     const c = D.cells[i], s = spans[i];
@@ -235,8 +245,8 @@ window.seek = function(t){
     if(c.k === 't' && c.t > lastT){ lastT = c.t; last = c; }
     // flow packets along connectors after the reveal
     if(c.f && t > D.flowStart){
-      const len = D.comp[c.f[0]] + D.gap;
-      const pos = ((t - D.flowStart) * D.speed) %% len;
+      const len = D.mod[c.f[0]];
+      const pos = ((t - D.flowStart) * D.speed + 1e-6) %% len;  // epsilon: whole periods land on 0, not len-0.0001
       const behind = pos - c.f[1];
       if(behind >= 0 && behind < D.tail){
         const f = 1 - behind / D.tail;
@@ -249,7 +259,7 @@ window.seek = function(t){
     s.style.opacity = op; s.style.color = col;
   }
   // typing cursor: one cell right of the newest typed char, only during the reveal
-  if(last && t < D.revealEnd + 0.4){
+  if(last && t < D.revealEnd + 0.4 && fade === 1){
     CUR.style.opacity = 1; CUR.style.left = ((last.c+1)*cw)+'px'; CUR.style.top = (last.r*lh + lh*0.12)+'px';
     CUR.style.width = (cw*0.9)+'px'; CUR.style.height = (lh*0.76)+'px';
   } else CUR.style.opacity = 0;
@@ -266,7 +276,7 @@ window.seek = function(t){
 </script></body></html>"""
 
 
-def build_page(src, theme, W, H, handle, needle, reveal, hold):
+def build_page(src, theme, W, H, handle, needle, reveal, hold, loop=None, fps=30):
     Cth = THEMES[theme]
     text = src.read_text(encoding="utf-8")
     g, R, C = parse(text)
@@ -296,22 +306,49 @@ def build_page(src, theme, W, H, handle, needle, reveal, hold):
             cells.append(dict(r=r, c=c, k=k[r][c], t=round(t0[r][c], 4), f=fl.get((r, c)), h=hit))
             row.append(f"<span>{html.escape(ch)}</span>")
         pre.append("".join(row).rstrip())
-    pulseStart = revealEnd + 0.5
+    gap, speed, pulsePeriod = 14, 26.0, 1.6
+    mod = [n + gap for n in comp_len]  # each connector wraps on its own length: fine once, not loopable
+    flowStart, pulseStart = revealEnd + 0.2, revealEnd + 0.5
+    offset, fadeStart, fadeDur, cycles, period = 0.0, None, 0.8, 0, None
+    if loop:
+        # One shared period P for every motion. P*fps is a whole number of frames, so P repeats exactly.
+        M = (max(comp_len) if comp_len else 0) + gap
+        period = max(round(M / speed * fps), round(pulsePeriod * fps)) / fps
+        speed = M / period
+        # short connectors carry k packets per period, so they don't sit dark; M/k keeps the period whole
+        mod = [M / max(1, (M // (n + gap))) for n in comp_len]
+        pulsePeriod = period / max(1, round(period / 1.6))
+        cycles = max(1, int(-(-hold // period)))  # whole periods covering at least --hold seconds
+        loopStart = round((revealEnd + 0.5) * fps) / fps  # after the cursor and the arrow glow are gone
+        flowStart = pulseStart = loopStart
+        if loop == "draw":
+            fadeStart = loopStart + cycles * period  # flow and pulse are back at phase 0 here
+        else:  # steady: frame 0 is the first frame of the loop, the reveal is never shown
+            offset = loopStart
+            flowStart = pulseStart = loopStart - period  # already running at frame 0, same phase
     data = dict(cells=cells, ink=Cth["ink"], accent=Cth["accent"], glow=Cth["glow"], lh=lh,
-                comp=comp_len, gap=14, speed=26, tail=5, flowStart=revealEnd + 0.2,
-                pulseStart=pulseStart, pulsePeriod=1.6, revealEnd=revealEnd, hla=0.05 if theme == 'cream' else 0.08, hl=list(hl) if hl else None)
+                comp=comp_len, mod=mod, gap=gap, speed=speed, tail=5, flowStart=flowStart,
+                pulseStart=pulseStart, pulsePeriod=pulsePeriod, revealEnd=revealEnd, offset=offset,
+                fadeStart=fadeStart, fadeDur=fadeDur,
+                hla=0.05 if theme == 'cream' else 0.08, hl=list(hl) if hl else None)
     page = PAGE % dict(W=W, H=H, page=Cth["page"], ww=ww, wh=wh, win=Cth["win"], edge=Cth["edge"], rad=round(14 * s),
                        shadow=Cth["shadow"], bar=bar, barc=Cth["bar"], bp=round(18 * s), dg=round(9 * s), dot=round(13 * s),
                        title=Cth["title"], tf=round(14 * s), dm=round(60 * s), ink=Cth["ink"], fs=fs, lh=lh,
                        glow=Cth["glow"], hr=round(8 * s), accent=Cth["accent"], fp=round(30 * s), fb=round(22 * s),
                        ff=round(15 * s), foot=Cth["foot"], stem=html.escape(src.stem), pre="\n".join(pre),
                        label=html.escape(src.stem.replace("-", " ")), handle=html.escape(handle), data=json.dumps(data))
-    total = pulseStart + hold
+    if loop == "draw":
+        total = fadeStart + fadeDur + 0.15  # ends on the empty window, which is what frame 0 shows
+    elif loop == "steady":
+        total = cycles * period
+    else:
+        total = pulseStart + hold
     return page, total, dict(rows=R, cols=C, boxes=len(boxes), flows=len(comp_len), font=round(fs, 1),
-                             reveal=round(revealEnd, 2), total=round(total, 2), highlight=hl)
+                             reveal=round(revealEnd, 2), total=round(total, 2), highlight=hl,
+                             loop=loop, period=period and round(period, 3), cycles=cycles)
 
 
-def render(page, total, W, H, fps, out, gif):
+def render(page, total, W, H, fps, out, gif, loop=None):
     from playwright.sync_api import sync_playwright
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="ascii-anim-"))
     hp = tmp / "page.html"; hp.write_text(page, encoding="utf-8")
@@ -329,6 +366,10 @@ def render(page, total, W, H, fps, out, gif):
             ff.stdin.write(pg.screenshot(type="png"))
             if i % (fps * 2) == 0:
                 print(f"  frame {i}/{n}", end="\r", flush=True)
+        if loop:  # the frame after the last one must look like frame 0, or the loop jumps
+            pg.evaluate(f"seek({n / fps:.4f})"); after = pg.screenshot(type="png")
+            pg.evaluate("seek(0)"); first = pg.screenshot(type="png")
+            print(f"  seam {seam_diff(first, after)}")
         b.close()
     ff.stdin.close(); ff.wait()
     if ff.returncode:
@@ -340,6 +381,18 @@ def render(page, total, W, H, fps, out, gif):
                         f"fps=15,scale={w}:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=64[p];[b][p]paletteuse=dither=none",
                         str(g)], check=True)
         print(f"  gif  {g}")
+
+
+def seam_diff(a, b):
+    """Max and mean per-channel pixel difference between two PNG screenshots (0 = identical)."""
+    try:
+        from PIL import Image, ImageChops, ImageStat
+    except ImportError:
+        return "not checked (pip install pillow)"
+    import io
+    d = ImageChops.difference(Image.open(io.BytesIO(a)).convert("RGB"), Image.open(io.BytesIO(b)).convert("RGB"))
+    mx = max(hi for _, hi in d.getextrema())
+    return f"max pixel diff {mx}/255, mean {sum(ImageStat.Stat(d).mean) / 3:.3f}"
 
 
 def main():
@@ -354,6 +407,8 @@ def main():
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--out", default=None, help="output dir (default: examples/ next to this script)")
     ap.add_argument("--gif", action="store_true", help="also write a GIF (X turns GIFs into soft MP4s; prefer the MP4)")
+    ap.add_argument("--loop", nargs="?", const="draw", choices=["draw", "steady"], default=None,
+                    help="seamless loop: draw (draw in, flow, fade back to empty) or steady (flow only)")
     a = ap.parse_args()
     src = pathlib.Path(a.src)
     out_dir = pathlib.Path(a.out) if a.out else pathlib.Path(__file__).resolve().parent / "examples"
@@ -361,10 +416,11 @@ def main():
     sizes = ["1080x1080", "1600x900"] if a.size == "both" else [a.size]
     for sz in sizes:
         W, H = (int(x) for x in sz.lower().split("x"))
-        page, total, info = build_page(src, a.theme, W, H, a.handle, a.highlight, a.reveal, a.hold)
-        out = out_dir / f"{src.stem}-{a.theme}-{W}x{H}.mp4"
+        page, total, info = build_page(src, a.theme, W, H, a.handle, a.highlight, a.reveal, a.hold, a.loop, a.fps)
+        tag = {"draw": "-loop", "steady": "-steady"}.get(a.loop, "")
+        out = out_dir / f"{src.stem}-{a.theme}-{W}x{H}{tag}.mp4"
         print(f"{out.name}: {info}")
-        render(page, total, W, H, a.fps, out, a.gif)
+        render(page, total, W, H, a.fps, out, a.gif, a.loop)
         print(f"  mp4  {out}  ({out.stat().st_size / 1e6:.1f} MB)")
 
 

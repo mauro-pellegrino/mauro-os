@@ -20,10 +20,35 @@ python3 tools/ascii-anim/ascii_anim.py content/ascii/founder-content-engine.txt 
 | `--fps` | `30` | Frame rate |
 | `--out` | `examples/` | Output folder |
 | `--gif` | off | Also write a GIF. X converts GIFs to soft MP4s, so post the MP4 |
+| `--loop` | off | Seamless loop. `--loop` or `--loop draw`: draws in, flows, fades back to the empty window. `--loop steady`: flow and pulse only. See below |
 
 Output: `<name>-<theme>-<W>x<H>.mp4`, H.264, yuv420p, faststart. A 14 second video is about 0.3 to 0.5 MB and renders in about 30 seconds.
 
 Needs Google Chrome, python3 `playwright` (it drives the installed Chrome, no browser download) and `ffmpeg`.
+
+## Loop mode
+
+X autoplays a video in the feed and restarts it at the end. Without `--loop` the restart jumps from a full diagram to an empty window. `--loop` removes the jump.
+
+| Mode | What plays | Use it for | File |
+| --- | --- | --- | --- |
+| `--loop draw` (default for `--loop`) | Draw-in, then the flow and pulse for whole periods, then a 0.8 s fade back to the empty window that frame 0 shows | X posts: the draw-in replays on every loop | `<name>-<theme>-<W>x<H>-loop.mp4` |
+| `--loop steady` | The diagram is already drawn. Only the flow and the pulse run, exactly whole periods | `<video autoplay loop muted playsinline>` inside YouTube HTML boards and article diagrams | `<name>-<theme>-<W>x<H>-steady.mp4` |
+
+How the seam stays invisible:
+
+1. Every motion runs on one shared period. The period is a whole number of frames, so it repeats exactly.
+2. Every connector wraps on that period. A short connector carries 2 or more packets per period, so it does not sit dark.
+3. The pulse runs a whole number of beats per period.
+4. `--hold` sets the minimum loop time. The script rounds it up to whole periods.
+5. After the render, the script compares frame 0 with the frame after the last one and prints `seam max pixel diff N/255`. 0 or 1 is invisible.
+
+```
+python3 tools/ascii-anim/ascii_anim.py content/ascii/process-size-rule.txt \
+  --theme cream --size 1080x1080 --loop --highlight "A PROCESS HAS ALL FIVE"
+```
+
+Loops work best on a less crowded diagram with at least one connector that ends in an arrow. A diagram with no arrows only pulses.
 
 ## How it works
 
@@ -44,6 +69,13 @@ Needs Google Chrome, python3 `playwright` (it drives the installed Chrome, no br
 
 - `founder-content-engine-dark-*`: Unicode boxes, three branches, the GATE line pulses.
 - `process-map-one-process-cream-*`: ASCII `+==+` boxes, `v` arrows, the CLAUDE block pulses.
+
+And the loop example (8 Oct), 1080x1080, cream:
+
+- `process-size-rule-cream-1080x1080-loop.mp4`: 16.3 s, draws in, 4 periods of 1.6 s, fades out. Seam diff 0/255.
+- `process-size-rule-cream-1080x1080-steady.mp4`: 6.4 s, 4 periods, flow and pulse only. Seam diff 1/255.
+
+The rule text in `process-size-rule.txt` is unconfirmed in `brand/claims.md`. The example shows the format only.
 
 ## Options checked (8 Oct 2026)
 

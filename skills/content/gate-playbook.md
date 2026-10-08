@@ -158,6 +158,27 @@ EVIDENCE review 2026-10-08 #42 "I would love a more clear, simpler last line" an
      you are struggling a lot with last lines, just explain why"
 
 
+[G-018] 2026-10-08  confidence: low  hits: 0  misses: 0
+WHEN drafting a Mauro LinkedIn personal or regular post (Personal Long-Form, listicle, take)
+THEN make the topic the whole content system and what it does for an agency owner, broad over narrow;
+     one feature or component (the review page's cards, one button, one file) never carries a post on
+     its own and appears at most as one bullet inside the system
+EVIDENCE review 2026-10-08 v3 #24, LI2 "the review page": "who cares about cards, make it about the whole
+     system or eveyrthing, more broad, like we said on what works in the past". His best X posts in the
+     8 Jul to 5 Oct export are system-level lists (5 Sep monday analysis 2,316 impressions, 26 Sep
+     "Every monday the same thing runs" 1,160), and the LinkedIn playbook sets 70% broad for reach.
+     Same round, #25 killed LI4, a second narrow topic
+
+[G-019] 2026-10-08  confidence: low  hits: 0  misses: 0
+WHEN titling a Mauro X article
+THEN the title promises the system-level outcome (the whole claude setup, skills, agents, every content
+     type), and the narrow mechanism (a review page, one loop, one file) stays in the body; use his reach
+     words (claude, skills, agents, system, content) and leave out "ai", "voice" and "write", which run
+     at about 0.3x on his account (`tools/x-keywords.py`, 8 Oct)
+EVIDENCE review 2026-10-08 v3 #26, Article 1 "How to make claude stop repeating the same mistakes in
+     your content": approved for clarity, "but would love more broad for reach"
+
+
 The Gate proposes deltas after a run. Mauro's overrides are the highest-signal source: every time
 he passes something the Gate flagged, or kills something the Gate passed, that disagreement is his
 taste being made explicit and it becomes an entry.

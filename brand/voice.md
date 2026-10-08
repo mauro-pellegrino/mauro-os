@@ -315,12 +315,14 @@ These sentence patterns appear repeatedly and should be replicated.
 
 **X / Twitter Articles:**
 Full long-form. Headers, bullets, embedded media. Hook hard in the first paragraph. Soft CTA at the end. Sign off with "Talk soon, Mauro."
+The title makes the system-level promise (claude, skills, agents, system, content) and keeps the narrow mechanism for the body. Leave "ai", "voice" and "write" out of titles, they run at about 0.3x for Mauro. Gate: G-019 (review 2026-10-08 v3 #26) [metric: first-pass approval rate]
 
 **X / Twitter Threads:**
 1/ style. Each tweet = one punchy idea. Build tension across tweets. Last tweet = CTA or key takeaway summary.
 
 **LinkedIn:**
 Same voice, slightly more professional framing. Can go deeper on agency/B2B angles. Storytelling hooks work well here. Less casual language.
+Personal and regular posts are about the whole content system and what it does for an agency owner, broad over narrow. One feature (the review page's cards, one button, one file) never carries a post alone, it is at most one bullet inside the system. Gate: G-018 (review 2026-10-08 v3 #24, #25) [metric: first-pass approval rate]
 
 **YouTube Scripts:**
 Conversational version of the same voice. Written to be spoken. Short sentences. No jargon that doesn't translate to audio. Hook in first 15 seconds.
