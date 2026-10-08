@@ -33,7 +33,7 @@ X, where the conversion happens.
 - [?] Sign-off: can the 26% / 46% approval rates appear in public posts?
 - [?] YT boards v2: pick one format (`boards/yt/v2/index.html`), then convert the other 11 videos.
 - [?] Lead magnet INTAKE live: GitHub Pages or private claude.ai link? Viability test: without the repo it
-  is a calculator plus a prompt; number-parse bug fixed in index.html, still open in `tools/outlier-score.py`.
+  is a calculator plus a prompt; number-parse bug fixed in index.html and in `tools/outlier-score.py`.
 - [ ] Animated ASCII tool shipped (`tools/ascii-anim/`), 4 test videos in ~/Downloads; waits on the look verdict.
 - [ ] Monday 12 Oct: first `/gc-monday` run; `/life-interview` once.
 
@@ -76,8 +76,9 @@ and was never sent. Mauro has the message. Decided 2026-10-04: **remove the $300
   you think my calendar, planner is actually helping? I don't think I'm even using it, so help me
   use it first". Next step: ask him which one view he would open each morning, then cut the rest.
   No posts or articles about the planner, his hours or his minutes (gate-playbook G-015).
-- [ ] **Fix `tools/outlier-score.py` number parsing** ("12.4K" crashes it, "1.2" reads as 12). Same
-  bug was fixed in the intake lead magnet on 2026-10-08.
+- [x] **Fix `tools/outlier-score.py` number parsing** ("12.4K" crashes it, "1.2" reads as 12). Same
+  bug was fixed in the intake lead magnet on 2026-10-08. Done 2026-10-08: same rule as the HTML,
+  self-test with `python3 tools/outlier-score.py --test`.
 
 ## TIER 1 — the YouTube video flow (the "own vidIQ")
 
