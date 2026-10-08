@@ -2,16 +2,19 @@
 """Render ghosted-calls-plan.html to a 1600px-wide full-page PNG with headless Chrome.
 
 A temporary copy marks the page end with a magenta line; the PNG is cropped at that line.
-    python3 content/plan/render.py
+    python3 content/plan/render.py [name] [width]   (default: ghosted-calls-plan 1600)
 """
 import os, subprocess, tempfile
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, "ghosted-calls-plan.html")
-OUT = os.path.join(HERE, "ghosted-calls-plan.png")
+import sys
+NAME = sys.argv[1] if len(sys.argv) > 1 else "ghosted-calls-plan"  # e.g. whop-product-v1
+WIDTH = int(sys.argv[2]) if len(sys.argv) > 2 else 1600
+SRC = os.path.join(HERE, NAME + ".html")
+OUT = os.path.join(HERE, NAME + ".png")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-W, H = 1600, 12000
+W, H = WIDTH, 12000
 
 html = open(SRC).read().replace("#end{height:1px}", "#end{height:2px;background:#FF00FF}")
 tmp = os.path.join(HERE, ".render-tmp.html")
