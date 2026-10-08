@@ -1,0 +1,1852 @@
+{
+ "label": "before",
+ "b_truth": [
+  47,
+  463,
+  2316,
+  137,
+  245,
+  137,
+  217,
+  44,
+  610,
+  155,
+  113,
+  124,
+  287,
+  1125,
+  158
+ ],
+ "console_errors": [],
+ "log": [
+  {
+   "persona": "A",
+   "step": "01-landing",
+   "note": "first screen",
+   "shot": "A-01-landing.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "50000",
+    "rows": [
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "",
+      "first": "",
+      "link": "",
+      "number": "",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from [@handle] on x as templates for my own content.\nTheir median over the last 0 posts is - impressions. The floor is 50,000 impressions.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "02-feed-paste",
+   "note": "VA pastes 12 peer posts from a sheet, numbers as LinkedIn shows them",
+   "shot": "A-02-feed-paste.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "300",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 300 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "03-capture",
+   "note": "step 2 after the feed paste",
+   "shot": "A-03-capture.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "300",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 300 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "04-prompt",
+   "note": "step 3 prompt",
+   "shot": "A-04-prompt.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "300",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 300 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "05-own-export",
+   "note": "owner pastes his own LinkedIn export TOP POSTS rows with the header",
+   "shot": "A-05-own-export.png",
+   "state": {
+    "verdict": "1 post to capture. Everything else on this account is a normal day for it, so leave it.",
+    "count": "7",
+    "median": "2,950",
+    "line": "8,850",
+    "cap": "1",
+    "floor": "300",
+    "rows": [
+     {
+      "date": "Post URL",
+      "first": "Post Publish Date",
+      "link": "Engagements",
+      "number": "Impressions",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-a",
+      "first": "9/30/2026",
+      "link": "96",
+      "number": "12400",
+      "ratio": "4.2x",
+      "verdict": "OUTLIER"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-b",
+      "first": "10/1/2026",
+      "link": "71",
+      "number": "8120",
+      "ratio": "2.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-c",
+      "first": "9/23/2026",
+      "link": "40",
+      "number": "3310",
+      "ratio": "1.1x",
+      "verdict": "normal"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-d",
+      "first": "9/16/2026",
+      "link": "35",
+      "number": "2950",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-e",
+      "first": "9/9/2026",
+      "link": "22",
+      "number": "2140",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-f",
+      "first": "9/2/2026",
+      "link": "18",
+      "number": "1980",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "https://www.linkedin.com/posts/own-agency_fixture-g",
+      "first": "8/26/2026",
+      "link": "15",
+      "number": "1710",
+      "ratio": "0.6x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 1,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 7 posts is 2,950 comments. The floor is 300 comments.\n\nThe outliers, with screenshots attached:\n- https://www.linkedin.com/posts/own-agency_fixture-a | 9/30/2026 | 96 | 12,400 comments | 4.2x\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "06-floor-50",
+   "note": "back to the peer feed, floor lowered to 50 comments",
+   "shot": "A-06-floor-50.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "50",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 50 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "07-capture-floor-50",
+   "note": "step 2 with floor 50",
+   "shot": "A-07-capture-floor-50.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "50",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 50 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "08-prompt-floor-50",
+   "note": "step 3 with floor 50",
+   "shot": "A-08-prompt-floor-50.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "50",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 50 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "A",
+   "step": "09-steps-4-5",
+   "note": "steps 4 and 5 as a stranger sees them",
+   "shot": "A-09-steps-4-5.png",
+   "state": {
+    "verdict": "Fill in at least 5 posts to get a median. With fewer there is nothing to compare against.",
+    "count": "0",
+    "median": "-",
+    "line": "-",
+    "cap": "0",
+    "floor": "50",
+    "rows": [
+     {
+      "date": "2d",
+      "first": "We fired our biggest client last month",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-01",
+      "number": "27 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "4d",
+      "first": "Three hires that changed our margins",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-02",
+      "number": "15 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "The proposal template we stopped using",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-03",
+      "number": "19 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1w",
+      "first": "What a $40k retainer looks like inside",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-04",
+      "number": "140 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Our Monday meeting has one slide",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-05",
+      "number": "12 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2w",
+      "first": "Hiring is the wrong fix for churn",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-06",
+      "number": "22 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Comment PLAYBOOK and I'll send it",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-07",
+      "number": "1,204 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "3w",
+      "first": "Why we stopped doing free audits",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-08",
+      "number": "—",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "The client call that saved Q3",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-09",
+      "number": "18 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "Five numbers I check every Friday",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-10",
+      "number": "64 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "A rejected pitch, line by line",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-11",
+      "number": "11 comments",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "1mo",
+      "first": "We raised prices 30% and lost one client",
+      "link": "https://www.linkedin.com/posts/peer-agency_fixture-12",
+      "number": "31 comments",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @peer-agency-owner on linkedin as templates for my own content.\nTheir median over the last 0 posts is - comments. The floor is 50 comments.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "01-feed-paste",
+   "note": "15 real @maurojpelle posts, views as X shows them, one '2,316 Views', one blank",
+   "shot": "B-01-feed-paste.png",
+   "state": {
+    "verdict": "No template here. 2 posts beat this account's median by 3x or more, but under the floor of 50,000 impressions. The ratio is real, the reach is too small to copy the shape from.",
+    "count": "13",
+    "median": "155",
+    "line": "465",
+    "cap": "0",
+    "floor": "50000",
+    "rows": [
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "If you want to move your content from AI-assi",
+      "link": "https://x.com/MauroJPelle/status/2094130799612142023",
+      "number": "47",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Oct 5, 2026",
+      "first": "https://t.co/XSdUyVb299",
+      "link": "https://x.com/MauroJPelle/status/2107033435285991885",
+      "number": "463",
+      "ratio": "3.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sat, Sep 5, 2026",
+      "first": "Any serious personal brand who wants $$$ need",
+      "link": "https://x.com/MauroJPelle/status/2096254391334436891",
+      "number": "2,316 Views",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Oct 4, 2026",
+      "first": "Same gated offer, run three times across two",
+      "link": "https://x.com/MauroJPelle/status/2106814256104542631",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Tue, Sep 8, 2026",
+      "first": "Someone asked if they should learn n8n or cla",
+      "link": "https://x.com/MauroJPelle/status/2097392136584880503",
+      "number": "245",
+      "ratio": "1.6x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "The four lowest-reach articles on the account",
+      "link": "https://x.com/MauroJPelle/status/2099491355063967933",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Wed, Sep 9, 2026",
+      "first": "An analysis that names its own blind spot let",
+      "link": "",
+      "number": "https://x.com/MauroJPelle/status/2097676003531280676",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "A post with a link in it gets less distributi",
+      "link": "https://x.com/MauroJPelle/status/2093994404339953852",
+      "number": "44",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "https://t.co/JXsu0aK4Um",
+      "link": "https://x.com/MauroJPelle/status/2095483750779875642",
+      "number": "610",
+      "ratio": "3.9x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "Six things every high-view X article did, aft",
+      "link": "https://x.com/MauroJPelle/status/2095529772428165462",
+      "number": "155",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "One repo runs our whole inbound. Eleven top-l",
+      "link": "https://x.com/MauroJPelle/status/2099553765779202295",
+      "number": "113",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 17, 2026",
+      "first": "Lead magnet test I run before anything ships.",
+      "link": "https://x.com/MauroJPelle/status/2100471311613170058",
+      "number": "124",
+      "ratio": "0.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sun, Sep 20, 2026",
+      "first": "You said it better on a client call than you'",
+      "link": "https://x.com/MauroJPelle/status/2101740709346726039",
+      "number": "287",
+      "ratio": "1.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 10, 2026",
+      "first": "https://t.co/EWFDh7I18g",
+      "link": "https://x.com/MauroJPelle/status/2097988930494771478",
+      "number": "1.1K",
+      "ratio": "7.1x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Wed, Sep 16, 2026",
+      "first": "Building a killer product with AI means: - le",
+      "link": "https://x.com/MauroJPelle/status/2100286835599532172",
+      "number": "158",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @MauroJPelle on x as templates for my own content.\nTheir median over the last 13 posts is 155 impressions. The floor is 50,000 impressions.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "02-export-paste",
+   "note": "same 15 posts pasted as raw rows of the X analytics CSV, header included",
+   "shot": "B-02-export-paste.png",
+   "state": {
+    "verdict": "No outliers. Every post sits inside this account's normal range. Move to the next account.",
+    "count": "15",
+    "median": "0",
+    "line": "-",
+    "cap": "0",
+    "floor": "50000",
+    "rows": [
+     {
+      "date": "Post id",
+      "first": "Date",
+      "link": "Post text",
+      "number": "Permalink Clicks",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2094130799612142023",
+      "first": "Sun, Aug 30, 2026",
+      "link": "If you want to move your content from AI-assisted to AI-run, start here: - Automate the mechanical stuff first. Triggers, connections, the \"\"check these four tools before proposing anything\"\" jobs. - Leave your writing alone until it stops needing your corrections. - Do it in that",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2107033435285991885",
+      "first": "Mon, Oct 5, 2026",
+      "link": "https://t.co/XSdUyVb299",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2096254391334436891",
+      "first": "Sat, Sep 5, 2026",
+      "link": "Any serious personal brand who wants $$$ needs to run this analysis: - what worked last week - what didnt Then, map out potential new weekly tests by categorizing: - topic - format - tof/mof/bof",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2106814256104542631",
+      "first": "Sun, Oct 4, 2026",
+      "link": "Same gated offer, run three times across two months. 263 comments, then 81, then 34. Reach dropped every time and nobody complained, because tuesday's audience is a different slice than the one from three weeks ago.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2097392136584880503",
+      "first": "Tue, Sep 8, 2026",
+      "link": "Someone asked if they should learn n8n or claude code first. Honestly whichever one you'd actually open on a tuesday when you're behind on client work. I picked claude code because every file I have is already in there, and I was never going to open a canvas UI at 7pm.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2099491355063967933",
+      "first": "Mon, Sep 14, 2026",
+      "link": "The four lowest-reach articles on the account booked 78% of the calls. I only found that because I went back and logged the ones that flopped. For months my capture file was 40 winners out of 41, which tells you what good looks like and nothing about a near miss. One article https://t.co/yNDpfvOGsu",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2097676003531280676",
+      "first": "Wed, Sep 9, 2026",
+      "link": "An analysis that names its own blind spot lets you go get the missing data. One that hides the blind spot gets you doubling down, with total confidence, on reach that was never going to convert. https://t.co/1mMtrP7w93",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2093994404339953852",
+      "first": "Sun, Aug 30, 2026",
+      "link": "A post with a link in it gets less distribution than a post without one. So the post earns its reach clean, and the ask hangs underneath once it's already moving. Anyone reading that far down already put their hand up.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2095483750779875642",
+      "first": "Thu, Sep 3, 2026",
+      "link": "https://t.co/JXsu0aK4Um",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2095529772428165462",
+      "first": "Thu, Sep 3, 2026",
+      "link": "Six things every high-view X article did, after I read the top 50 side by side: illustration covers, concrete titles, long word counts, covers that argue or make you feel, credentials placed late, and the whole method given away for free. Full breakdown below. https://t.co/bNJ5gNspOC",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2099553765779202295",
+      "first": "Mon, Sep 14, 2026",
+      "link": "One repo runs our whole inbound. Eleven top-level areas, each with an owner and an entry point, all indexed in one map file. If it's not in the map, the next agent rebuilds it.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2100471311613170058",
+      "first": "Thu, Sep 17, 2026",
+      "link": "Lead magnet test I run before anything ships. If someone reads the whole thing and does nothing differently tomorrow, it failed. Doesn't matter how good the writing was. Almost everything being given away right now fails that.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2101740709346726039",
+      "first": "Sun, Sep 20, 2026",
+      "link": "You said it better on a client call than you'll ever write it at a keyboard. You weren't performing, you were just explaining it to someone who needed to get it. That's the article.",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2097988930494771478",
+      "first": "Thu, Sep 10, 2026",
+      "link": "https://t.co/EWFDh7I18g",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "2100286835599532172",
+      "first": "Wed, Sep 16, 2026",
+      "link": "Building a killer product with AI means: - learning to spot loops - applying skills &amp; agents to them - make sure there is a possibility to continuously improve your system Banger article",
+      "number": "0",
+      "ratio": "",
+      "verdict": ""
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from @MauroJPelle on x as templates for my own content.\nTheir median over the last 15 posts is 0 impressions. The floor is 50,000 impressions.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "03-floor-1000",
+   "note": "feed paste again, floor lowered to 1,000",
+   "shot": "B-03-floor-1000.png",
+   "state": {
+    "verdict": "1 post to capture. Everything else on this account is a normal day for it, so leave it.",
+    "count": "13",
+    "median": "155",
+    "line": "465",
+    "cap": "1",
+    "floor": "1000",
+    "rows": [
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "If you want to move your content from AI-assi",
+      "link": "https://x.com/MauroJPelle/status/2094130799612142023",
+      "number": "47",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Oct 5, 2026",
+      "first": "https://t.co/XSdUyVb299",
+      "link": "https://x.com/MauroJPelle/status/2107033435285991885",
+      "number": "463",
+      "ratio": "3.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sat, Sep 5, 2026",
+      "first": "Any serious personal brand who wants $$$ need",
+      "link": "https://x.com/MauroJPelle/status/2096254391334436891",
+      "number": "2,316 Views",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Oct 4, 2026",
+      "first": "Same gated offer, run three times across two",
+      "link": "https://x.com/MauroJPelle/status/2106814256104542631",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Tue, Sep 8, 2026",
+      "first": "Someone asked if they should learn n8n or cla",
+      "link": "https://x.com/MauroJPelle/status/2097392136584880503",
+      "number": "245",
+      "ratio": "1.6x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "The four lowest-reach articles on the account",
+      "link": "https://x.com/MauroJPelle/status/2099491355063967933",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Wed, Sep 9, 2026",
+      "first": "An analysis that names its own blind spot let",
+      "link": "",
+      "number": "https://x.com/MauroJPelle/status/2097676003531280676",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "A post with a link in it gets less distributi",
+      "link": "https://x.com/MauroJPelle/status/2093994404339953852",
+      "number": "44",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "https://t.co/JXsu0aK4Um",
+      "link": "https://x.com/MauroJPelle/status/2095483750779875642",
+      "number": "610",
+      "ratio": "3.9x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "Six things every high-view X article did, aft",
+      "link": "https://x.com/MauroJPelle/status/2095529772428165462",
+      "number": "155",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "One repo runs our whole inbound. Eleven top-l",
+      "link": "https://x.com/MauroJPelle/status/2099553765779202295",
+      "number": "113",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 17, 2026",
+      "first": "Lead magnet test I run before anything ships.",
+      "link": "https://x.com/MauroJPelle/status/2100471311613170058",
+      "number": "124",
+      "ratio": "0.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sun, Sep 20, 2026",
+      "first": "You said it better on a client call than you'",
+      "link": "https://x.com/MauroJPelle/status/2101740709346726039",
+      "number": "287",
+      "ratio": "1.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 10, 2026",
+      "first": "https://t.co/EWFDh7I18g",
+      "link": "https://x.com/MauroJPelle/status/2097988930494771478",
+      "number": "1.1K",
+      "ratio": "7.1x",
+      "verdict": "OUTLIER"
+     },
+     {
+      "date": "Wed, Sep 16, 2026",
+      "first": "Building a killer product with AI means: - le",
+      "link": "https://x.com/MauroJPelle/status/2100286835599532172",
+      "number": "158",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 1,
+    "prompt": "I am saving outlier posts from @MauroJPelle on x as templates for my own content.\nTheir median over the last 13 posts is 155 impressions. The floor is 1,000 impressions.\n\nThe outliers, with screenshots attached:\n- Thu, Sep 10, 2026 | https://t.co/EWFDh7I18g | https://x.com/MauroJPelle/status/2097988930494771478 | 1,100 impressions | 7.1x\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "04-capture",
+   "note": "step 2 with floor 1,000",
+   "shot": "B-04-capture.png",
+   "state": {
+    "verdict": "1 post to capture. Everything else on this account is a normal day for it, so leave it.",
+    "count": "13",
+    "median": "155",
+    "line": "465",
+    "cap": "1",
+    "floor": "1000",
+    "rows": [
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "If you want to move your content from AI-assi",
+      "link": "https://x.com/MauroJPelle/status/2094130799612142023",
+      "number": "47",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Oct 5, 2026",
+      "first": "https://t.co/XSdUyVb299",
+      "link": "https://x.com/MauroJPelle/status/2107033435285991885",
+      "number": "463",
+      "ratio": "3.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sat, Sep 5, 2026",
+      "first": "Any serious personal brand who wants $$$ need",
+      "link": "https://x.com/MauroJPelle/status/2096254391334436891",
+      "number": "2,316 Views",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Oct 4, 2026",
+      "first": "Same gated offer, run three times across two",
+      "link": "https://x.com/MauroJPelle/status/2106814256104542631",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Tue, Sep 8, 2026",
+      "first": "Someone asked if they should learn n8n or cla",
+      "link": "https://x.com/MauroJPelle/status/2097392136584880503",
+      "number": "245",
+      "ratio": "1.6x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "The four lowest-reach articles on the account",
+      "link": "https://x.com/MauroJPelle/status/2099491355063967933",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Wed, Sep 9, 2026",
+      "first": "An analysis that names its own blind spot let",
+      "link": "",
+      "number": "https://x.com/MauroJPelle/status/2097676003531280676",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "A post with a link in it gets less distributi",
+      "link": "https://x.com/MauroJPelle/status/2093994404339953852",
+      "number": "44",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "https://t.co/JXsu0aK4Um",
+      "link": "https://x.com/MauroJPelle/status/2095483750779875642",
+      "number": "610",
+      "ratio": "3.9x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "Six things every high-view X article did, aft",
+      "link": "https://x.com/MauroJPelle/status/2095529772428165462",
+      "number": "155",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "One repo runs our whole inbound. Eleven top-l",
+      "link": "https://x.com/MauroJPelle/status/2099553765779202295",
+      "number": "113",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 17, 2026",
+      "first": "Lead magnet test I run before anything ships.",
+      "link": "https://x.com/MauroJPelle/status/2100471311613170058",
+      "number": "124",
+      "ratio": "0.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sun, Sep 20, 2026",
+      "first": "You said it better on a client call than you'",
+      "link": "https://x.com/MauroJPelle/status/2101740709346726039",
+      "number": "287",
+      "ratio": "1.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 10, 2026",
+      "first": "https://t.co/EWFDh7I18g",
+      "link": "https://x.com/MauroJPelle/status/2097988930494771478",
+      "number": "1.1K",
+      "ratio": "7.1x",
+      "verdict": "OUTLIER"
+     },
+     {
+      "date": "Wed, Sep 16, 2026",
+      "first": "Building a killer product with AI means: - le",
+      "link": "https://x.com/MauroJPelle/status/2100286835599532172",
+      "number": "158",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 1,
+    "prompt": "I am saving outlier posts from @MauroJPelle on x as templates for my own content.\nTheir median over the last 13 posts is 155 impressions. The floor is 1,000 impressions.\n\nThe outliers, with screenshots attached:\n- Thu, Sep 10, 2026 | https://t.co/EWFDh7I18g | https://x.com/MauroJPelle/status/2097988930494771478 | 1,100 impressions | 7.1x\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "05-prompt",
+   "note": "step 3 prompt for ChatGPT",
+   "shot": "B-05-prompt.png",
+   "state": {
+    "verdict": "1 post to capture. Everything else on this account is a normal day for it, so leave it.",
+    "count": "13",
+    "median": "155",
+    "line": "465",
+    "cap": "1",
+    "floor": "1000",
+    "rows": [
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "If you want to move your content from AI-assi",
+      "link": "https://x.com/MauroJPelle/status/2094130799612142023",
+      "number": "47",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Oct 5, 2026",
+      "first": "https://t.co/XSdUyVb299",
+      "link": "https://x.com/MauroJPelle/status/2107033435285991885",
+      "number": "463",
+      "ratio": "3.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sat, Sep 5, 2026",
+      "first": "Any serious personal brand who wants $$$ need",
+      "link": "https://x.com/MauroJPelle/status/2096254391334436891",
+      "number": "2,316 Views",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Oct 4, 2026",
+      "first": "Same gated offer, run three times across two",
+      "link": "https://x.com/MauroJPelle/status/2106814256104542631",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Tue, Sep 8, 2026",
+      "first": "Someone asked if they should learn n8n or cla",
+      "link": "https://x.com/MauroJPelle/status/2097392136584880503",
+      "number": "245",
+      "ratio": "1.6x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "The four lowest-reach articles on the account",
+      "link": "https://x.com/MauroJPelle/status/2099491355063967933",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Wed, Sep 9, 2026",
+      "first": "An analysis that names its own blind spot let",
+      "link": "",
+      "number": "https://x.com/MauroJPelle/status/2097676003531280676",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "A post with a link in it gets less distributi",
+      "link": "https://x.com/MauroJPelle/status/2093994404339953852",
+      "number": "44",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "https://t.co/JXsu0aK4Um",
+      "link": "https://x.com/MauroJPelle/status/2095483750779875642",
+      "number": "610",
+      "ratio": "3.9x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "Six things every high-view X article did, aft",
+      "link": "https://x.com/MauroJPelle/status/2095529772428165462",
+      "number": "155",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "One repo runs our whole inbound. Eleven top-l",
+      "link": "https://x.com/MauroJPelle/status/2099553765779202295",
+      "number": "113",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 17, 2026",
+      "first": "Lead magnet test I run before anything ships.",
+      "link": "https://x.com/MauroJPelle/status/2100471311613170058",
+      "number": "124",
+      "ratio": "0.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sun, Sep 20, 2026",
+      "first": "You said it better on a client call than you'",
+      "link": "https://x.com/MauroJPelle/status/2101740709346726039",
+      "number": "287",
+      "ratio": "1.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 10, 2026",
+      "first": "https://t.co/EWFDh7I18g",
+      "link": "https://x.com/MauroJPelle/status/2097988930494771478",
+      "number": "1.1K",
+      "ratio": "7.1x",
+      "verdict": "OUTLIER"
+     },
+     {
+      "date": "Wed, Sep 16, 2026",
+      "first": "Building a killer product with AI means: - le",
+      "link": "https://x.com/MauroJPelle/status/2100286835599532172",
+      "number": "158",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 1,
+    "prompt": "I am saving outlier posts from @MauroJPelle on x as templates for my own content.\nTheir median over the last 13 posts is 155 impressions. The floor is 1,000 impressions.\n\nThe outliers, with screenshots attached:\n- Thu, Sep 10, 2026 | https://t.co/EWFDh7I18g | https://x.com/MauroJPelle/status/2097988930494771478 | 1,100 impressions | 7.1x\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  },
+  {
+   "persona": "B",
+   "step": "06-phone",
+   "note": "390px phone, after the feed paste",
+   "shot": "B-06-phone.png",
+   "state": {
+    "verdict": "No template here. 2 posts beat this account's median by 3x or more, but under the floor of 50,000 impressions. The ratio is real, the reach is too small to copy the shape from.",
+    "count": "13",
+    "median": "155",
+    "line": "465",
+    "cap": "0",
+    "floor": "50000",
+    "rows": [
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "If you want to move your content from AI-assi",
+      "link": "https://x.com/MauroJPelle/status/2094130799612142023",
+      "number": "47",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Oct 5, 2026",
+      "first": "https://t.co/XSdUyVb299",
+      "link": "https://x.com/MauroJPelle/status/2107033435285991885",
+      "number": "463",
+      "ratio": "3.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sat, Sep 5, 2026",
+      "first": "Any serious personal brand who wants $$$ need",
+      "link": "https://x.com/MauroJPelle/status/2096254391334436891",
+      "number": "2,316 Views",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Oct 4, 2026",
+      "first": "Same gated offer, run three times across two",
+      "link": "https://x.com/MauroJPelle/status/2106814256104542631",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Tue, Sep 8, 2026",
+      "first": "Someone asked if they should learn n8n or cla",
+      "link": "https://x.com/MauroJPelle/status/2097392136584880503",
+      "number": "245",
+      "ratio": "1.6x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "The four lowest-reach articles on the account",
+      "link": "https://x.com/MauroJPelle/status/2099491355063967933",
+      "number": "137",
+      "ratio": "0.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Wed, Sep 9, 2026",
+      "first": "An analysis that names its own blind spot let",
+      "link": "",
+      "number": "https://x.com/MauroJPelle/status/2097676003531280676",
+      "ratio": "",
+      "verdict": ""
+     },
+     {
+      "date": "Sun, Aug 30, 2026",
+      "first": "A post with a link in it gets less distributi",
+      "link": "https://x.com/MauroJPelle/status/2093994404339953852",
+      "number": "44",
+      "ratio": "0.3x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "https://t.co/JXsu0aK4Um",
+      "link": "https://x.com/MauroJPelle/status/2095483750779875642",
+      "number": "610",
+      "ratio": "3.9x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Thu, Sep 3, 2026",
+      "first": "Six things every high-view X article did, aft",
+      "link": "https://x.com/MauroJPelle/status/2095529772428165462",
+      "number": "155",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Mon, Sep 14, 2026",
+      "first": "One repo runs our whole inbound. Eleven top-l",
+      "link": "https://x.com/MauroJPelle/status/2099553765779202295",
+      "number": "113",
+      "ratio": "0.7x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 17, 2026",
+      "first": "Lead magnet test I run before anything ships.",
+      "link": "https://x.com/MauroJPelle/status/2100471311613170058",
+      "number": "124",
+      "ratio": "0.8x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Sun, Sep 20, 2026",
+      "first": "You said it better on a client call than you'",
+      "link": "https://x.com/MauroJPelle/status/2101740709346726039",
+      "number": "287",
+      "ratio": "1.9x",
+      "verdict": "normal"
+     },
+     {
+      "date": "Thu, Sep 10, 2026",
+      "first": "https://t.co/EWFDh7I18g",
+      "link": "https://x.com/MauroJPelle/status/2097988930494771478",
+      "number": "1.1K",
+      "ratio": "7.1x",
+      "verdict": "under floor"
+     },
+     {
+      "date": "Wed, Sep 16, 2026",
+      "first": "Building a killer product with AI means: - le",
+      "link": "https://x.com/MauroJPelle/status/2100286835599532172",
+      "number": "158",
+      "ratio": "1.0x",
+      "verdict": "normal"
+     }
+    ],
+    "caps": 0,
+    "prompt": "I am saving outlier posts from [@handle] on x as templates for my own content.\nTheir median over the last 13 posts is 155 impressions. The floor is 50,000 impressions.\n\nThe outliers, with screenshots attached:\n- (no outliers above the floor yet)\n\nFor each post:\n1. Name the post type: short post, long form, x article, lead magnet, quote tweet or video.\n2. Write the shape line by line: the hook line, the body moves, the close, the media.\n3. Write 3 rules that explain why it worked, and quote the exact line of the original that shows each rule.\n4. Check my template list below. If the shape already exists, tell me to add it as an example and do not make a new template.\n\nHard limits:\n- Do not add a rule the original does not show. If you cannot quote the line, drop the rule.\n- If a post is under the floor, say so in one line and do not turn it into a template.\n- Do not rewrite the post for me yet. This step only saves the shape.\n\nMy existing templates:\n[paste your template names here, one per line]",
+    "warn": ""
+   }
+  }
+ ]
+}
