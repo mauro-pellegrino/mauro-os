@@ -8,7 +8,7 @@ Gate as fallback, ASCII as v2) and `ghosted-calls-plan.html` (paid group first, 
 Visual version: `product-ladder.html` / `product-ladder.png`.
 
 **Research only** (`CLAUDE.md` section 7). Every number below is the seller's own claim or a review
-site's reading, never Mauro's. Nothing here is adopted until Mauro signs a row.
+site's reading. None of them are Mauro's. Nothing here is adopted until Mauro signs a row.
 
 ---
 
@@ -58,9 +58,9 @@ membership.
 | Claim | Source |
 |---|---|
 | Every whop has an affiliate program, default 30% for global affiliates. A separate, higher rate can be set for members who refer | [docs.whop.com](https://docs.whop.com/affiliates/setup-global), [whop.com/blog/consumer-affiliates](https://whop.com/blog/consumer-affiliates/) |
-| Whop's network has "over 30,000 active affiliates" | [sacra.com](https://sacra.com/c/whop/) via search result |
+| Whop's network has "over 30,000 active affiliates" | [sacra.com](https://sacra.com/c/whop/): "default 30% recurring commissions" |
 | Fees: 2.7% + $0.30 per card sale, no platform fee (repo, 20 Aug 2026) | [ruzuku.com](https://www.ruzuku.com/learn/articles/whop-pricing) |
-| "Adding annual pricing options with discounts lowers churn rates" | [whop.com/blog/optimizing-your-dashboard](https://whop.com/blog/optimizing-your-dashboard/) via search result |
+| "Adding annual pricing options on your products lowers your churn rate" | [whop.com/blog/optimizing-your-dashboard](https://whop.com/blog/optimizing-your-dashboard/) |
 | Targets: "at least 30-40% weekly active member rate" and "50-70% retention of new members after the first month" | [whop.com/blog/engage-online-community](https://whop.com/blog/engage-online-community/) |
 | Tactics: a predictable content schedule, member spotlights and wins, personal outreach to quiet members, higher affiliate rate for loyal members, exit surveys | [engage-online-community](https://whop.com/blog/engage-online-community/), [churn-retention](https://whop.com/blog/churn-retention-discord-communities/) |
 | A 6,000-member community: personal welcome messages "dramatically increased retention" | [whop.com/blog/online-community-advice](https://whop.com/blog/online-community-advice/) |
@@ -80,12 +80,12 @@ and the 22 Aug rule that recurring needs "modules arriving, weekly corrections a
 
 | Mechanic | Seen at | Verdict | Reason |
 |---|---|---|---|
-| Free tier as the funnel into paid | AAS, Ruben, AI Marketing Insiders | **Adapt** | A free Whop tier or a free tool. The big free rooms run on 995K YouTube subscribers or 947K emails. Mauro has 19 follows credited in four months (`ghosted-calls-plan.html`). A free tool earns its place; an empty free room does not |
+| Free tier as the funnel into paid | AAS, Ruben, AI Marketing Insiders | **Adapt** | A free Whop tier or a free tool. The big free rooms run on 995K YouTube subscribers or 947K emails. Mauro has 19 follows credited in four months (`ghosted-calls-plan.html`). A free tool fits that base |
 | Free Claude Code skills as the magnet | AI Marketing Insiders ("Five Claude Code skills"), Machina ("7 free skills") | **Adopt** | Matches his top keywords (skills, prompts, code up; "ai", "voice", "write" at 0.3x, `tools/x-keywords.py`). Give one clean skill away |
 | One-time kit at $79 to $99 | Justin Welsh, Dickie's $27 to $99 products | **Adopt** | Fits the v1 lean of $100 founding (`whop-product-v1.md`). Several kits from one audience is Dickie's model |
 | Founding price that rises at a count | AI Operator (first 100), Camilo (500), Build with Luke | **Adopt** | A stated count is a real reason to buy now. Works for kits and the community |
 | Price deadline | Cashie Studio ("after September 30"), JK's closing dates | **Adopt** | JK: cycles of 1 to 2 weeks with a close date |
-| Weekly drop as the reason to stay | weeklyaiops, AI Operator, Ruben | **Adapt** | Make the drop from sawdust he already makes (section 4). New writing each week breaks the time budget |
+| Weekly drop as the reason to stay | weeklyaiops, AI Operator, Ruben | **Adapt** | Make the drop from sawdust he already makes (section 4). The drop reuses what he already writes, so it fits the time budget |
 | Weekly live call | AI Operator, Camilo, Content Academy, Ruben (3/week) | **Adapt** | One live call a month, or an async thread. Weekly live breaks 5 to 7 hours |
 | Monthly billing | almost every community | **Fork** | `[NEEDS: Mauro picks: one-time with a window, or monthly once the drop runs 4 weeks]`. The 22 Aug rule says monthly only when modules arrive, corrections run and a live element exists |
 | Annual plan with a discount | Vibe Marketers, AAS, Whop's own advice | **Adopt, later** | Only once monthly exists. Whop says annual lowers churn |
@@ -161,7 +161,7 @@ community can open before the agency answers.
 
 Rows 10 to 21 of the inventory stay out: agency twins, agency proof, a co-author, or a third party.
 
-### The weekly drop: collect, do not create
+### The weekly drop comes from work already done
 
 JK: "Don't create content, collect it" (`synthesis.md`, mechanism 6). Each drop comes from work Mauro
 does anyway. Target budget: inside the 5 to 7 hours a week (`brand/vision-2026.md`).
@@ -174,7 +174,7 @@ does anyway. Target budget: inside the 5 to 7 hours a week (`brand/vision-2026.m
 | Monthly | **One module** (table above) or an update to one kit file | The repo | Versioned, one changelog line |
 | Monthly | **One live call** or an async thread `[NEEDS: Mauro picks]` | | Recorded |
 
-### Community price: a fork, not a decision
+### Community price: three open options
 
 | Option | Shape | Reason | Source |
 |---|---|---|---|
@@ -189,7 +189,7 @@ does anyway. Target budget: inside the 5 to 7 hours a week (`brand/vision-2026.m
 The brief sets **$10K/month across Growthub and Ghosted Calls**. `brand/vision-2026.md` sets **$5k/mo
 for Ghosted Calls by 31 Dec 2026**. `[NEEDS: which goal is current, and what Growthub pays Mauro per month, so the Ghosted Calls share is known]`
 
-Arithmetic only, not a forecast. At $100 a sale, $5,000 needs 50 sales in a month. One Agency Booked
+This is arithmetic. At $100 a sale, $5,000 needs 50 sales in a month. One Agency Booked
 Calls client at $200 a week is about $867 a month ($200 x 52 / 12). The current base is 19 follows
 credited to posts from 26 May to 5 Oct (`ghosted-calls-plan.html`). The kits find buyers for the higher
 offer; they do not reach either goal alone (`the-customer-funnel.pdf` p3).
