@@ -10,7 +10,11 @@ import collections, contextlib, io, re, runpy
 with contextlib.redirect_stdout(io.StringIO()):
     ns = runpy.run_path(__file__.replace("x-follow-drivers.py", "x-three-accounts.py"), run_name="lib")
 rows, n = ns["rows"], ns["n"]
-M = re.compile(r"built a file|put every prompt|put all my learnings|comment ['\"“]?[A-Z]{3,}|I'll send|I will send|send it to you|DM you", re.I)
+M = re.compile(r"built a file|put every prompt|put all my learnings|comment ['\"“]?[A-Z]{3,}|I'll send|I will send|send it to you|DM you"
+               r"|here'?s (a |the |my |our )?(full |complete |\d+-page |\d+-step )?(breakdown|playbook|claude system|system|doc|file|guide|resource|framework|template|prompts?)"
+               r"|\d+-page (playbook|doc|guide)|(inside|in this) (the )?(doc|file|guide|playbook)"
+               r"|built (a|an) (skill|system|file|doc|guide)|packaged|mini-guide|quick guide|broken the system down"
+               r"|put together (a|an)|turned the system|here.s a breakdown|for the next \d+ hours", re.I)
 for acc in ("Lorenzo", "Bogdan", "Mauro"):
     by = collections.defaultdict(lambda: [[0, 0], [0, 0]])
     for r in rows.values():
