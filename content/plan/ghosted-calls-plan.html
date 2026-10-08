@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghosted Calls Plan</title>
+<meta name="description" content="The general plan for Ghosted Calls and @maurojpelle: weekly inputs, what each one produces, the indicators read every Monday, and the stages that unlock the next one.">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EFE4;--card:#FFFDF8;--ink:#171310;--body:#3B342D;--muted:#6B6258;--line:#E2D8C6;--accent:#E0A854;--accent-ink:#8A5A12;--accent-soft:#F7E6C8;--red:#B4442F;--red-soft:#F6DED6;--green:#3F7D4E;--green-soft:#DDEBDD}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.55;
+ background-image:radial-gradient(#17131012 1.2px,transparent 1.2px);background-size:18px 18px}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 16px 72px}
+.mono{font-family:'JetBrains Mono',monospace}
+.top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+.top b{color:var(--accent-ink)}
+.badge{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.badge span{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;background:var(--card)}
+.badge span.hot{background:var(--ink);color:var(--bg)}
+h1{font-size:60px;line-height:1.02;letter-spacing:-.03em;font-weight:800;margin-top:18px}
+h1 span{background:linear-gradient(transparent 62%,var(--accent) 62%)}
+.lede{font-size:21px;line-height:1.45;color:var(--body);margin-top:16px;max-width:860px}
+section{margin-top:60px}
+.k{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+h2{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
+h3{font-size:18px;line-height:1.25}
+p{color:var(--body);margin-bottom:10px}
+.sub{max-width:860px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.need{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;color:var(--red);background:var(--red-soft);border:1px dashed var(--red);border-radius:6px;padding:1px 7px;white-space:normal}
+.src{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+/* starting line */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat .v{font-size:36px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.stat .l{font-size:14px;color:var(--body);margin-top:4px}
+.stat.dark{background:var(--ink);border-color:var(--ink)}
+.stat.dark .v{color:var(--accent)}
+.stat.dark .l{color:#EDE6D8}
+.stat.dark .src{color:#9A9184}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.alloc h3{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.alloc .tot{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:6px 0 2px}
+.alloc .tot small{font-size:16px;color:var(--muted);font-weight:600}
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:2px solid var(--ink);margin:12px 0 10px}
+.bar div{display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--ink);border-right:2px solid var(--ink);white-space:nowrap;overflow:hidden}
+.bar div:last-child{border-right:0}
+.c1{background:var(--accent)}.c2{background:var(--accent-soft)}.c3{background:#D8CDB8}.c4{background:#C9B48F}.c5{background:#EFE3CC}.c6{background:#fff}
+.legend{list-style:none;font-size:14px}
+.legend li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);color:var(--body)}
+.legend li:last-child{border-bottom:0}
+.legend b{font-family:'JetBrains Mono',monospace;color:var(--ink);white-space:nowrap}
+.sw{display:inline-block;width:11px;height:11px;border:1.5px solid var(--ink);border-radius:3px;margin-right:7px;vertical-align:-1px}
+.clash{margin-top:14px;border-left:5px solid var(--red);background:var(--red-soft);padding:14px 18px;border-radius:0 10px 10px 0;font-weight:600;color:var(--ink)}
+/* weekly grid */
+.grid{display:grid;grid-template-columns:150px repeat(5,1fr);gap:6px;margin-top:8px}
+.grid .h{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 6px}
+.grid .rl{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;padding:10px 8px;background:var(--ink);color:var(--bg);border-radius:8px;display:flex;align-items:center}
+.cell{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:13.5px;line-height:1.35;color:var(--body)}
+.cell b{display:block;color:var(--ink);font-size:14px}
+.cell .m{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent-ink);margin-top:3px;display:block}
+.cell.hot{background:var(--accent-soft);border-color:var(--accent)}
+.cell.frz{background:repeating-linear-gradient(135deg,#EDE6D8,#EDE6D8 6px,#E4DACA 6px,#E4DACA 12px);color:var(--muted)}
+.span5{grid-column:span 5}
+/* io table */
+.io{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}
+.io th{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;text-align:left;color:var(--muted);padding:12px 14px;border-bottom:2px solid var(--ink);background:#FBF6EC}
+.io td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--body)}
+.io tr:last-child td{border-bottom:0}
+.io td:first-child{font-weight:700;color:var(--ink)}
+.io .arrow{font-family:'JetBrains Mono',monospace;color:var(--accent-ink);font-weight:700}
+/* funnel */
+.funnel{display:flex;flex-direction:column;align-items:center;gap:6px}
+.fs{border:2px solid var(--ink);border-radius:10px;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--card)}
+.fs .t{font-weight:700;white-space:nowrap}
+.fs .n{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;text-align:right;white-space:nowrap}
+.fs.a{background:var(--accent)}.fs.b{background:var(--accent-soft)}
+.farrow{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:13px;line-height:1}
+.two-funnels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two-funnels .card h3{margin-bottom:12px}
+/* indicators */
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.ind .stat .v{font-size:30px}
+.meter{height:12px;border:1.5px solid var(--ink);border-radius:99px;background:#fff;margin-top:10px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent)}
+.days{display:flex;gap:6px;align-items:flex-end;height:126px;margin-top:0}
+.days div{flex:1;line-height:16px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.days i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.days .line{position:relative}
+.dayswrap{position:relative;margin-top:22px}
+.dayswrap .tgt{position:absolute;left:0;right:0;border-top:2px dashed var(--red);font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--red);text-align:right;height:0;z-index:1}
+.dayswrap .tgt span{position:relative;top:-15px;background:var(--card);padding-left:4px}
+/* ladder */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end}
+.rung{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:16px;position:relative}
+.rung .when{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rung h3{margin:4px 0 8px;font-size:19px}
+.rung p{font-size:14px;margin-bottom:8px}
+.rung .unlock{border-top:1px dashed var(--ink);padding-top:8px;font-size:13.5px;color:var(--ink)}
+.rung .unlock b{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);display:block}
+.rung.now{background:var(--accent)}
+.r1{min-height:250px}.r2{min-height:300px}.r3{min-height:350px}.r4{min-height:400px}
+.rail{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.math{font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.8;background:#171310;color:#EDE6D8;border-radius:14px;padding:18px 22px}
+.math .c{color:#E0A854}.math .d{color:#9A9184}
+.pages{display:flex;gap:6px;margin-top:10px}
+.pages div{flex:1;border:1.5px solid var(--ink);border-radius:6px;padding:8px 6px;font-size:11.5px;text-align:center;font-family:'JetBrains Mono',monospace;line-height:1.3}
+.pages .y{background:var(--green-soft)}.pages .no{background:#fff;border-style:dashed;color:var(--muted)}
+/* JK */
+.jk{background:#171310;color:#EDE6D8;border-radius:18px;padding:30px 28px}
+.jk .k{color:var(--accent)}
+.jk h2{color:#FFFDF8}
+.jk p{color:#CFC6B6}
+.disclaim{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:4px 12px;margin-bottom:16px}
+.jkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.jkc{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:16px 18px}
+.jkc .q{font-size:16px;font-weight:700;color:#FFFDF8;line-height:1.35}
+.jkc .q::before{content:"\201C";color:var(--accent)}
+.jkc .q::after{content:"\201D";color:var(--accent)}
+.jkc .f{font-family:'JetBrains Mono',monospace;font-size:11px;color:#9A9184;margin:4px 0 10px}
+.jkc .br{font-size:14px;color:#E2D8C6;border-top:1px dashed #4A4036;padding-top:9px}
+.jkc .br b{color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+.jkc.ok .br b{color:#8FC79B}
+.verdict{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:14px}
+.first{background:var(--accent);color:var(--ink);border-radius:12px;padding:18px 20px}
+.first .k{color:var(--ink)}
+.first h3{font-size:22px;margin-bottom:6px}
+.first p{color:var(--ink)}
+.cut{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:18px 20px}
+.cut ul{list-style:none}
+.cut li{padding:5px 0 5px 22px;position:relative;color:#E2D8C6;font-size:14.5px;border-bottom:1px solid #3A322A}
+.cut li:last-child{border-bottom:0}
+.cut li::before{content:"x";position:absolute;left:4px;font-family:'JetBrains Mono',monospace;color:#E07A5F;font-weight:700}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+#end{height:1px}
+@media (max-width:900px){h1{font-size:42px}.lede{font-size:18px}h2{font-size:26px}
+ .stats,.ind{grid-template-columns:1fr 1fr}.split,.two-funnels,.jkgrid,.verdict,.rail{grid-template-columns:1fr}
+ .ladder{grid-template-columns:1fr 1fr}.r1,.r2,.r3,.r4{min-height:0}
+ .grid{grid-template-columns:1fr}.grid .h{display:none}.span5{grid-column:auto}
+ .io{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>internal plan · built 2026-10-08 · every number has a source file</span></div>
+
+<div class="badge"><span class="hot">the plan</span><span>10:00 to 11:30 block</span><span>450 min a week</span><span>read every monday</span></div>
+<h1>Ghosted Calls: <span>weekly inputs</span> to scale</h1>
+<p class="lede">What goes in each week, what each input is supposed to produce, the numbers the Monday dump reads back, and the stage that unlocks the next one. The direction, in Mauro's words: "Run the agency and my own brand at the same time, sharing what actually works and getting paid from both."</p>
+<p class="src" style="margin-top:8px">direction: private/system/ROADMAP.md (Mauro, 1 July 2026) · goal: brand/vision-2026.md</p>
+
+<!-- 1. STARTING LINE -->
+<section>
+  <div class="k">the starting line</div>
+  <h2>Where the account stands today</h2>
+  <div class="stats">
+    <div class="stat dark"><div class="v">0</div><div class="l">times the Agency Booked Calls offer was sent. Written before 30 July.</div><div class="src">cashie-studio/offer/agency-booked-calls.md</div></div>
+    <div class="stat"><div class="v">$0</div><div class="l">brand revenue. About 200 followers, one YouTube video.</div><div class="src">brand/claims.md, 21 Sep brief</div></div>
+    <div class="stat"><div class="v">63,443</div><div class="l">X impressions, 1 to 28 Sep. 285 new follows, 366 profile visits.</div><div class="src">brand/x-linkedin-playbook-2026-10.md</div></div>
+    <div class="stat"><div class="v">29 → 17</div><div class="l">X originals a week, the September drop.</div><div class="src">brand/x-linkedin-playbook-2026-10.md</div></div>
+  </div>
+  <div class="stats" style="margin-top:12px">
+    <div class="stat"><div class="v">57</div><div class="l">mauro-os minutes, week of 28 Sep, against a 450 target.</div><div class="src">ROADMAP.md · claude code session minutes only</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">email list, capture page, payment link or booking link.</div><div class="src">playbook "starting line" + validation-plan.md</div></div>
+    <div class="stat"><div class="v">2 of 6</div><div class="l">pages of the $500 Lead Magnet System that exist.</div><div class="src">cashie-studio/offer/lead-magnet-system-500.md</div></div>
+    <div class="stat"><div class="v">$5k/mo</div><div class="l">the stated goal by 31 Dec 2026.</div><div class="src">brand/vision-2026.md</div></div>
+  </div>
+</section>
+
+<!-- 2. THE CLASH -->
+<section>
+  <div class="k">the block</div>
+  <h2>Two plans claim the same 450 minutes</h2>
+  <p class="sub">The roadmap (7 Oct) gives the daily 90-minute block to the Build lane. The X and LinkedIn playbook (1 Oct) fills a week with content. Each one costs almost the whole block on its own.</p>
+  <div class="split">
+    <div class="card alloc">
+      <h3>A · roadmap: build lane owns the block</h3>
+      <div class="tot">450 <small>min a week</small></div>
+      <div class="bar"><div class="c1" style="flex:360">outreach 360</div><div class="c2" style="flex:90">1 post 90</div></div>
+      <ul class="legend">
+        <li><span><i class="sw c1"></i>Prospect finder, top 15, send the offer</span><b>4 blocks</b></li>
+        <li><span><i class="sw c2"></i>Reading lane: 1 post from a system that ran that week</span><b>1 block</b></li>
+        <li><span><i class="sw c6"></i>YouTube boards v2 (side-quest)</span><b>frozen</b></li>
+        <li><span><i class="sw c6"></i>Gate proof, ASCII format, anti-slop merge</span><b>parked</b></li>
+      </ul>
+      <p class="src" style="margin-top:8px">private/system/ROADMAP.md, lanes table. The 4 + 1 split is read from "inside the block, 1 day a week".</p>
+    </div>
+    <div class="card alloc">
+      <h3>B · playbook: the content week</h3>
+      <div class="tot">435 <small>min a week</small></div>
+      <div class="bar"><div class="c3" style="flex:60">60</div><div class="c1" style="flex:90">X 90</div><div class="c2" style="flex:90">LI 90</div><div class="c4" style="flex:90">article 90</div><div class="c5" style="flex:30">30</div><div class="c6" style="flex:75">replies 75</div></div>
+      <ul class="legend">
+        <li><span><i class="sw c3"></i>Mon: analysis, pick the week's ideas</span><b>60</b></li>
+        <li><span><i class="sw c1"></i>Tue: 5 X listicles and how-tos, 1 ASCII diagram</span><b>90</b></li>
+        <li><span><i class="sw c2"></i>Wed: 1 LinkedIn lead magnet</span><b>90</b></li>
+        <li><span><i class="sw c4"></i>Thu: 1 article (company breakdown)</span><b>90</b></li>
+        <li><span><i class="sw c5"></i>Fri: warm outbound to the top 5</span><b>30</b></li>
+        <li><span><i class="sw c6"></i>Daily: replies to large in-niche accounts</span><b>5 x 15</b></li>
+      </ul>
+      <p class="src" style="margin-top:8px">brand/x-linkedin-playbook-2026-10.md, "A week, in the 5-7 hour budget"</p>
+    </div>
+  </div>
+  <div class="clash">A + B = 885 minutes against a 450-minute block. One of them owns the block until the first invoice is paid. <span class="need">[NEEDS: Mauro picks A or B]</span></div>
+</section>
+
+<!-- 3. WEEKLY GRID -->
+<section>
+  <div class="k">the weekly input grid</div>
+  <h2>One week, 10:00 to 11:30, Slack off</h2>
+  <p class="sub">Drawn as allocation A, the roadmap's version, because it is the newer file. The second row shows what the playbook week would put in the same slots. Drafts for weeks 42 and 43 already exist: 10 X posts, 4 LinkedIn posts, 2 X articles (<span class="mono">content/drafts/2026-10-w42-w43-posts.md</span>), so the posting row costs scheduling time this fortnight.</p>
+  <div class="grid">
+    <div></div><div class="h">Mon</div><div class="h">Tue</div><div class="h">Wed</div><div class="h">Thu</div><div class="h">Fri</div>
+
+    <div class="rl">A · block</div>
+    <div class="cell hot"><b>Monday dump + outreach</b>Claude's week.py dump, then send<span class="m">90 min</span></div>
+    <div class="cell hot"><b>Outreach</b>message, follow up, log in BACKLOG<span class="m">90 min</span></div>
+    <div class="cell hot"><b>Outreach</b>message, follow up, log<span class="m">90 min</span></div>
+    <div class="cell hot"><b>Outreach</b>message, follow up, log<span class="m">90 min</span></div>
+    <div class="cell"><b>Reading post</b>1 post from a system that ran this week<span class="m">90 min</span></div>
+
+    <div class="rl">B · same slot</div>
+    <div class="cell"><b>Analysis</b>pick ideas from the swipe file<span class="m">60 min</span></div>
+    <div class="cell"><b>5 X posts + 1 ASCII</b><span class="m">90 min</span></div>
+    <div class="cell"><b>1 LinkedIn magnet</b>resource, image, copy, Lead Shark<span class="m">90 min</span></div>
+    <div class="cell"><b>1 article</b>company breakdown<span class="m">90 min</span></div>
+    <div class="cell"><b>Warm outbound</b>top 5 from the Lead Shark export<span class="m">30 min</span></div>
+
+    <div class="rl">Every day</div>
+    <div class="cell span5">Replies to large in-niche accounts, and every reply in a post's first 2 hours <span class="m" style="display:inline">15 min, inside B · outside the block in A <span class="need">[NEEDS: where replies sit in A]</span></span></div>
+
+    <div class="rl">Frozen</div>
+    <div class="cell frz span5"><b>YouTube</b>17 boards in 6 formats built (boards/yt/v2), 0 recorded. Unfreezes when the first 15 messages are sent. The playbook's own pace for it is one video a month.</div>
+  </div>
+</section>
+
+<!-- 4. INPUT → OUTPUT -->
+<section>
+  <div class="k">input → output</div>
+  <h2>What each input is supposed to produce</h2>
+  <table class="io">
+    <tr><th>Input</th><th>Per week</th><th></th><th>Supposed to produce</th><th>Read on Monday as</th></tr>
+    <tr><td>Offer messages</td><td>first 15 cold, plus the warm list <span class="need">[NEEDS: weekly target after the first 15]</span></td><td class="arrow">→</td><td>replies, then an email with "Booked", then an invoice</td><td>messages sent, replies, "Booked" emails <span class="need">[NEEDS: a log, none exists yet]</span></td></tr>
+    <tr><td>X posts</td><td>5 (B) · playbook asks to restore about 29 originals</td><td class="arrow">→</td><td>profile visits and follows</td><td>profile visits, follows per 1K impressions</td></tr>
+    <tr><td>Article drop</td><td>1, as a bare link post plus a standalone single-idea post</td><td class="arrow">→</td><td>reach and saves; bare-link drops did a 532 median against 156</td><td>bookmarks and reach, never profile visits</td></tr>
+    <tr><td>LinkedIn lead magnet</td><td>1</td><td class="arrow">→</td><td>opt-ins, then warm outbound names</td><td>opt-ins per magnet post <span class="need">[NEEDS: capture page]</span></td></tr>
+    <tr><td>Replies</td><td>15 min a day</td><td class="arrow">→</td><td>profile visits: 22.5 per 1K on replies against 2.2 on bare links (2 to 15 Sep)</td><td>profile visits</td></tr>
+    <tr><td>Reading post</td><td>1</td><td class="arrow">→</td><td>proof that the system runs, for the offer page and the case study</td><td>shipped, yes or no</td></tr>
+    <tr><td>YouTube</td><td>0 until unfrozen</td><td class="arrow">→</td><td>the raw material for every other format</td><td>recorded, yes or no</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">brand/x-linkedin-playbook-2026-10.md ("what our own data says", "what we measure") · brand/claims.md, @maurojpelle analytics 2 to 15 Sep</p>
+</section>
+
+<!-- 5. FUNNELS -->
+<section>
+  <div class="k">the funnel</div>
+  <h2>Two roads into one founding spot</h2>
+  <div class="two-funnels">
+    <div class="card">
+      <h3>Road 1 · outreach (the build lane)</h3>
+      <div class="funnel">
+        <div class="fs a" style="width:100%"><span class="t">Prospect finder CSV</span><span class="n">not run · needs Mauro + YouTube key</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs a" style="width:94%"><span class="t">Top 15 + warm list</span><span class="n">15 is a target · warm: 5-6 + 2-3</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs b" style="width:88%"><span class="t">Message sent</span><span class="n">0</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs b" style="width:82%"><span class="t">Reply → offer page sent</span><span class="n"><span class="need">[NEEDS: log]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:76%"><span class="t">Email "Booked"</span><span class="n"><span class="need">[NEEDS: log]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:70%"><span class="t">Invoice, $200/wk x 4</span><span class="n">manual invoice</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:64%;background:var(--ink);color:var(--bg)"><span class="t">Start 1 Dec</span><span class="n">1 spot</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Road 2 · content (the playbook)</h3>
+      <div class="funnel">
+        <div class="fs a" style="width:100%"><span class="t">Impressions</span><span class="n">63,443 in Sep</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs a" style="width:93%"><span class="t">Profile visits</span><span class="n">366 in Sep</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs b" style="width:86%"><span class="t">Follows</span><span class="n">285 in Sep</span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:79%"><span class="t">Opt-in / capture</span><span class="n"><span class="need">[NEEDS: capture page]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:72%"><span class="t">Conversation in DMs</span><span class="n"><span class="need">[NEEDS: count]</span></span></div>
+        <div class="farrow">▼</div>
+        <div class="fs" style="width:64%;background:var(--ink);color:var(--bg)"><span class="t">Offer</span><span class="n">no offer post yet</span></div>
+      </div>
+      <p class="src" style="margin-top:12px">The hand-raiser post ("DM me Booked") is written in validation-plan.md and was never posted.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. INDICATORS -->
+<section>
+  <div class="k">leading indicators</div>
+  <h2>What the Monday dump reads back</h2>
+  <p class="sub">The first row comes from <span class="mono">private/system/week.py</span>. Week of 5 Oct, read on Wed 7 Oct, so the week was still open.</p>
+  <div class="ind">
+    <div class="stat"><div class="v">153<small style="font-size:15px;color:var(--muted)"> / 450</small></div><div class="l">mauro-os minutes</div><div class="meter"><i style="width:34%"></i></div><div class="src">34% of target</div></div>
+    <div class="stat"><div class="v">0 of 5</div><div class="l">weekdays with a full 90-minute block</div></div>
+    <div class="stat"><div class="v">12</div><div class="l">commits in mauro-os</div></div>
+    <div class="stat"><div class="v">9</div><div class="l">open items in the NOW block</div></div>
+    <div class="stat"><div class="v">1</div><div class="l">block with no output</div></div>
+  </div>
+  <div class="split" style="margin-top:12px">
+    <div class="card">
+      <div class="k" style="margin-bottom:2px">mauro-os minutes per day, week of 5 Oct</div>
+      <div class="dayswrap">
+        <div class="tgt" style="bottom:106px"><span>target 90 a day</span></div>
+        <div class="days">
+          <div><i style="height:66px"></i>Mon 66</div>
+          <div><i style="height:26px"></i>Tue 26</div>
+          <div><i style="height:66px"></i>Wed 66</div>
+          <div><i style="height:0;border-width:0 0 1.5px 0"></i>Thu 0</div>
+          <div><i style="height:0;border-width:0 0 1.5px 0"></i>Fri 0</div>
+        </div>
+      </div>
+      <p class="src" style="margin-top:8px">private/system/weeks/2026-10-05.md · claude code session minutes, never all work hours</p>
+    </div>
+    <div class="card">
+      <div class="k" style="margin-bottom:6px">second row: the playbook's Monday table</div>
+      <ul class="legend">
+        <li><span>Profile visits, X and LinkedIn</span><b>366 X in Sep</b></li>
+        <li><span>Follows per 1K impressions</span><b>4.5 in Sep</b></li>
+        <li><span>Bookmarks on article drops</span><b><span class="need">[NEEDS: export]</span></b></li>
+        <li><span>Opt-ins per lead-magnet post</span><b><span class="need">[NEEDS: capture]</span></b></li>
+        <li><span>Booked calls by source</span><b><span class="need">[NEEDS: Calendly per source]</span></b></li>
+        <li><span>Offers made this week</span><b><span class="need">[NEEDS: added to week.py]</span></b></li>
+      </ul>
+      <p class="src" style="margin-top:8px">4.5 = 285 / 63,443 x 1,000, derived from the playbook's September row</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. LADDER -->
+<section>
+  <div class="k">the stages</div>
+  <h2>What unlocks the next stage</h2>
+  <div class="ladder">
+    <div class="rung now r1"><div class="when">stage 1 · now</div><h3>Send the offer</h3><p>The 15 messages, the warm list, the founding intake page.</p><div class="unlock"><b>unlocks stage 2</b>the first paid invoice</div></div>
+    <div class="rung r2"><div class="when">stage 2 · 1 to 31 Dec</div><h3>Deliver the founding spot</h3><p>Weekly 1-on-1, Slack, the templates. YouTube unfreezes once the 15 are sent.</p><div class="unlock"><b>unlocks stage 3</b>2 booked calls for the client by day 30, written up as a case study</div></div>
+    <div class="rung r3"><div class="when">stage 3 · <span class="need">[NEEDS: date]</span></div><h3>Open the group tier</h3><p>6 people at about $150/week on one weekly call, about $3,900/mo. The $500 Lead Magnet System runs next to it as the cheaper yes.</p><div class="unlock"><b>unlocks the Skool container</b>the group opens, or 3 paying 1:1 clients, whichever is first</div></div>
+    <div class="rung r4" style="background:var(--ink);color:var(--bg)"><div class="when" style="color:#9A9184">the goal · 31 Dec 2026</div><h3 style="color:var(--accent)">$5k/mo from this brand</h3><p style="color:#CFC6B6">Set 13 Aug. The vision file asked to hold it, move it, or change the number.</p><div class="unlock" style="border-color:#6B6258;color:#EDE6D8"><b>open</b><span class="need">[NEEDS: hold, move or change]</span></div></div>
+  </div>
+  <div class="rail">
+    <div class="math">
+<span class="d"># why stage 3 exists (agency-booked-calls.md, 20 Aug)</span><br>
+<span class="c">1:1</span>   $200/wk x 4 = $800/mo per client<br>
+      $5,000 / $800 = 6 clients = 6 weekly calls<br>
+      = the whole 5-7 hour week, nothing left for content<br>
+<span class="c">group</span> 6 x ~$150/wk on 1 call = ~$3,900/mo<br>
+<span class="d"># sequence: land the 1:1, get the result, then open the group</span>
+    </div>
+    <div class="card">
+      <div class="k" style="margin-bottom:2px">side rail · the $500 Lead Magnet System</div>
+      <p style="margin:0">A duplicable Notion workspace, sold by manual invoice. 2 of 6 pages exist. Steps 6, 8 and 9 of the build order are unblocked and take under an hour combined.</p>
+      <div class="pages">
+        <div class="no">1 Start Here</div><div class="y">2 The Rules</div><div class="no">3 The Prompts</div><div class="no">4 Worked Example</div><div class="no">5 Scoring Sheet</div><div class="y">6 Delivery Kit</div>
+      </div>
+      <p class="src" style="margin-top:8px">cashie-studio/offer/lead-magnet-system-500.md</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. JK -->
+<section>
+  <div class="jk">
+    <div class="k">what jk molina would say</div>
+    <h2>Read against his own docs, the plan breaks five of his rules</h2>
+    <div class="disclaim">our reading of his frameworks · only the quoted lines are his</div>
+    <p>Each card quotes one line from the JK library in <span class="mono">research/jk-molina/</span>, then states where this plan breaks it. Full version with every citation: <span class="mono">content/plan/jk-molina-review.md</span>.</p>
+    <div class="jkgrid">
+      <div class="jkc"><div class="q">The KPI is offers made.</div><div class="f">the-customer-funnel.pdf</div><div class="br"><b>where the plan breaks it</b>The scoreboard is session minutes in a repo. Offers made since July: 0. He would put "offers made this week" at the top of the Monday dump, above the minutes.</div></div>
+      <div class="jkc"><div class="q">0-$10k/month: Dumb action. Following the Cash Script and 1000 New Whales until you get there.</div><div class="f">servant.pdf</div><div class="br"><b>where the plan breaks it</b>17 YouTube boards, the Gate, the ASCII format and a playbook were built with 0 offers sent. He would read that as building in place of selling.</div></div>
+      <div class="jkc"><div class="q">Don't sell a product for more than 2 weeks.</div><div class="f">minimalist-plan-to-1-million-part-2.pdf</div><div class="br"><b>where the plan breaks it</b>The close date was dropped on 17 Aug and the offer is "standing". He would put a close date back. The 1 Dec start gives one.</div></div>
+      <div class="jkc"><div class="q">Most people don't have a lead problem. They have a lead conversion problem because they lack that middle step</div><div class="f">the-customer-funnel.pdf</div><div class="br"><b>where the plan breaks it</b>The plan jumps from a free intake sheet to an $800 retainer. The customer step, the $500 system, is 2 of 6 pages.</div></div>
+      <div class="jkc"><div class="q">There is no best platform except for the one you own.</div><div class="f">1000-new-whales.pdf</div><div class="br"><b>where the plan breaks it</b>No list and no capture page. The playbook's own order of work says the same: capture before more content.</div></div>
+      <div class="jkc ok"><div class="q">$100-$250/week is a safe bet if you're starting out with this model.</div><div class="f">minimalist-plan-to-1-million-part-1.pdf</div><div class="br"><b>where the plan matches him</b>$200/week sits inside his band. The 1-spot founding intake is scarcity from real capacity. The validation scripts already use his "Shall I send you the details?" line.</div></div>
+    </div>
+    <div class="verdict">
+      <div class="first">
+        <div class="k">his first move, in our reading</div>
+        <h3>Name the warm list and send it today</h3>
+        <p>His DM list starts with people already in your world: "Previous Customers ... Previous Clients ... People who ask you" (the-customer-funnel.pdf). The 5-6 ghostwriting contacts and 2-3 churned contacts are warmer than 15 names from a scraper, and they are blocked only on Mauro writing them down. Then post the hand-raiser that is already written.</p>
+      </div>
+      <div class="cut">
+        <div class="k" style="color:#E07A5F">what he would cut until the first invoice</div>
+        <ul>
+          <li>YouTube boards v2 and every new format</li>
+          <li>The Gate proof, the ASCII format, the anti-slop merge</li>
+          <li>The playbook's 29-originals-a-week target</li>
+          <li>Minutes as the headline number</li>
+          <li>The open-ended "standing" offer</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:14px;font-size:14px">Where our rules overrule him: the declared Freedom Number and the protagonist post stay rejected as guru theater (<span class="mono">candidate-insight-model.md</span>, <span class="mono">brand/positioning.md</span>). The value-model lead magnet stays for this buyer, which he would push back on.</p>
+  </div>
+</section>
+
+<footer><span>Ghosted Calls · the plan · internal</span><span>@maurojpelle · mauro@ghostedcalls.com</span></footer>
+<div id="end"></div>
+</div>
+</body>
+</html>
