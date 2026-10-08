@@ -124,7 +124,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
   </div>
   <details>
     <summary class="hint" style="cursor:pointer">Paste from a spreadsheet instead</summary>
-    <textarea id="paste" placeholder="One post per line: date, first words, link, number (tabs or commas). A line with only a number works too."></textarea>
+    <textarea id="paste" placeholder="One post per line: date, first words, link, number (tabs or commas). A line with only a number works too. Pasting rows from an X or LinkedIn export? Copy the header row with them."></textarea>
     <div class="btns"><button id="doPaste">Fill the sheet from this</button></div>
   </details>
   <div class="summary">
@@ -134,6 +134,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     <div class="stat"><div class="k">To capture</div><div class="v" id="sCap">0</div></div>
   </div>
   <div class="verdict" id="verdict">Fill in at least 5 posts to get a median.</div>
+  <p class="hint" id="pasteNote" style="margin:8px 0 0"></p>
 </section>
 
 <!-- STEP 2 -->
@@ -233,7 +234,8 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
   function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
   function load(){try{var s=JSON.parse(localStorage.getItem(KEY)||'null');if(s&&s.rows)state=Object.assign(state,s)}catch(e){}}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  function num(v){var t=String(v==null?'':v).replace(/[, ]/g,'');var m=t.match(/^(\d+(?:\.\d+)?)([kKmM]?)$/);if(!m)return null;var n=parseFloat(m[1]);if(/k/i.test(m[2]))n*=1e3;if(/m/i.test(m[2]))n*=1e6;return n}
+  function num(v){var t=String(v==null?'':v).trim().replace(/\s+[a-zA-Z][a-zA-Z ]*$/,'').replace(/[, ]/g,'');var m=t.match(/^(\d+(?:\.\d+)?)([kKmM]?)$/);if(!m)return null;var n=parseFloat(m[1]);if(/k/i.test(m[2]))n*=1e3;if(/m/i.test(m[2]))n*=1e6;return n}
+  function rx(r){return (Math.floor(r*10+1e-9)/10).toFixed(1)}
   function fmt(n){return n==null?'-':Math.round(n).toLocaleString('en-US')}
   function median(a){if(!a.length)return null;var s=a.slice().sort(function(x,y){return x-y});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2}
 
@@ -276,7 +278,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     var s=scored(),med=s.length?s[0].med:null,count=s.length?s[0].count:0,floor=num(state.floor)||0;
     s.forEach(function(x){
       var ra=$('ra'+x.i),ve=$('ve'+x.i);if(!ra)return;
-      ra.textContent=x.ratio==null?'':x.ratio.toFixed(1)+'x';
+      ra.textContent=x.ratio==null?'':rx(x.ratio)+'x';
       ve.innerHTML=x.v?'<span class="chip c-'+x.v+'">'+LABEL[x.v]+'</span>':'';
     });
     var caps=s.filter(function(x){return x.v==='strong'||x.v==='out'});
@@ -289,6 +291,9 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     else if(under.length)v='No template here. '+under.length+' post'+(under.length>1?'s beat':' beats')+' this account\'s median by 3x or more, but under the floor of '+fmt(floor)+' '+metric+'. The ratio is real, the reach is too small to copy the shape from.';
     else v='No outliers. Every post sits inside this account\'s normal range. Move to the next account.';
     $('verdict').textContent=v;
+    var bad=[],blank=[];state.rows.forEach(function(r,i){var any=r[0]||r[1]||r[2];if(String(r[3]||'').trim()===''){if(any)blank.push(i+1)}else if(num(r[3])==null)bad.push(i+1)});
+    var note=(state.note?state.note+' ':'')+(bad.length?(bad.length>1?'Rows ':'Row ')+bad.join(', ')+': the number is not readable, so '+(bad.length>1?'they are':'it is')+' left out of the median. ':'')+(blank.length?(blank.length>1?'Rows '+blank.join(', ')+' have':'Row '+blank[0]+' has')+' no number and '+(blank.length>1?'are':'is')+' left out.':'');
+    $('pasteNote').textContent=note.trim();
     renderCaps(caps);renderPrompt(caps,under,med);save();
   }
 
@@ -300,7 +305,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     if(li)items.push('A lead magnet post: a screenshot of one comment and the reply it got');
     box.innerHTML=caps.map(function(x){
       var key=(x.r[2]||'row'+x.i),c=state.caps[key]||{};
-      return '<div class="cap"><h3>#'+(x.i+1)+' · '+esc(x.r[1]||'(no first words)')+' <span class="chip c-'+x.v+'">'+LABEL[x.v]+' '+x.ratio.toFixed(1)+'x</span></h3>'+
+      return '<div class="cap"><h3>#'+(x.i+1)+' · '+esc(x.r[1]||'(no first words)')+' <span class="chip c-'+x.v+'">'+LABEL[x.v]+' '+rx(x.ratio)+'x</span></h3>'+
         items.map(function(t,k){return '<label class="check"><input type="checkbox" data-k="'+esc(key)+'" data-j="'+k+'"'+(c[k]?' checked':'')+'> '+esc(t)+'</label>'}).join('')+
         '<div class="btns"><button data-ex="'+x.i+'">Use as the example in step 4</button></div></div>';
     }).join('');
@@ -310,7 +315,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     box.querySelectorAll('button[data-ex]').forEach(function(b){
       b.addEventListener('click',function(){
         var x=scored()[+b.dataset.ex];
-        $('tEx').value=(state.handle||'@handle')+' · '+(x.r[0]||'date')+' · '+fmt(x.n)+' '+(state.platform==='x'?'impressions':'comments')+' ('+x.ratio.toFixed(1)+'x their median) · '+(x.r[2]||'link');
+        $('tEx').value=(state.handle||'@handle')+' · '+(x.r[0]||'date')+' · '+fmt(x.n)+' '+(state.platform==='x'?'impressions':'comments')+' ('+rx(x.ratio)+'x their median) · '+(x.r[2]||'link');
         state.tpl.ex=$('tEx').value;renderRecord();save();location.hash='s4';
       });
     });
@@ -318,7 +323,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
 
   function renderPrompt(caps,under,med){
     var metric=state.platform==='x'?'impressions':'comments';
-    var lines=caps.map(function(x){return '- '+(x.r[0]||'')+' | '+(x.r[1]||'')+' | '+(x.r[2]||'')+' | '+fmt(x.n)+' '+metric+' | '+x.ratio.toFixed(1)+'x'}).join('\n')||'- (no outliers above the floor yet)';
+    var lines=caps.map(function(x){return '- '+(x.r[0]||'')+' | '+(x.r[1]||'')+' | '+(x.r[2]||'')+' | '+fmt(x.n)+' '+metric+' | '+rx(x.ratio)+'x'}).join('\n')||'- (no outliers above the floor yet)';
     var p='I am saving outlier posts from '+(state.handle||'[@handle]')+' on '+state.platform+' as templates for my own content.\n'+
       'Their median over the last '+(scored().length?scored()[0].count:0)+' posts is '+fmt(med)+' '+metric+'. The floor is '+fmt(num(state.floor))+' '+metric+'.\n\n'+
       'The outliers, with screenshots attached:\n'+lines+'\n\n'+
@@ -391,14 +396,31 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     $('platform').addEventListener('change',function(){state.platform=this.value;state.floor=FLOORS[this.value];$('floor').value=state.floor;renderRows()});
     $('floor').addEventListener('input',function(){state.floor=this.value;update()});
     $('addRow').addEventListener('click',function(){state.rows.push(['','','',''] );renderRows()});
-    $('clearAll').addEventListener('click',function(){state.rows=[];for(var i=0;i<10;i++)state.rows.push(['','','','']);state.caps={};state.handle='';$('handle').value='';renderRows()});
+    $('clearAll').addEventListener('click',function(){state.rows=[];for(var i=0;i<10;i++)state.rows.push(['','','','']);state.caps={};state.handle='';state.note='';$('handle').value='';renderRows()});
     $('loadEx').addEventListener('click',function(){
       state.handle=EXAMPLE.handle;state.platform=EXAMPLE.platform;state.floor=FLOORS.x;
       state.rows=EXAMPLE.rows.map(function(r){return r.slice()});
       $('handle').value=state.handle;$('platform').value='x';$('floor').value=state.floor;renderRows();
     });
     $('doPaste').addEventListener('click',function(){
-      var lines=$('paste').value.split(/\n/).map(function(l){return l.trim()}).filter(Boolean);
+      var lines=$('paste').value.split(/\n/).map(function(l){return l.replace(/\r$/,'')}).filter(function(l){return l.trim()});
+      state.note='';
+      // A header row from an X or LinkedIn export: read the columns by name.
+      var split=function(l){return l.indexOf('\t')>-1?l.split('\t'):l.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/)};
+      var head=lines.length?split(lines[0]).map(function(x){return x.replace(/^"|"$/g,'').trim().toLowerCase()}):[];
+      var want=state.platform==='x'?['impressions','views']:['comments'];
+      var ni=-1;want.forEach(function(w){if(ni<0)ni=head.indexOf(w)});
+      if(ni<0&&head.some(function(h){return /^(impressions|views|comments|engagements)$/.test(h)})){
+        ['impressions','views','engagements'].forEach(function(w){if(ni<0)ni=head.lastIndexOf(w)});
+        state.note='This export has no '+(state.platform==='x'?'impressions':'comments')+' column, so the sheet reads "'+head[ni]+'". Set the floor in the same unit.';
+      }
+      if(ni>-1){
+        var near=function(re){for(var j=ni-1;j>=0;j--){if(re.test(head[j]))return j}return -1};
+        var di=near(/date/),li=near(/url|link/),ti=near(/text|title|content/);
+        state.rows=lines.slice(1).map(function(l){var p=split(l).map(function(x){return x.replace(/^"|"$/g,'').trim()});
+          return [di>-1?p[di]||'':'',ti>-1?p[ti]||'':'',li>-1?p[li]||'':'',p[ni]||'']});
+        renderRows();return;
+      }
       state.rows=lines.map(function(l){
         var p;
         if(l.indexOf('\t')>-1){p=l.split('\t')}
@@ -407,7 +429,9 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
           p=m?(m[1]?m[1].split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/):[]).concat([m[2]]):l.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/)}
         p=p.map(function(x){return x.replace(/^"|"$/g,'').trim()});
         if(p.length===1)return ['','','',p[0]];
-        var n=p.pop();return [p[0]||'',p[1]||'',p[2]||'',n];
+        var n=p.pop(),link='';
+        var li=-1;p.forEach(function(x,j){if(/^https?:\/\//.test(x))li=j});if(li>-1){link=p[li];p.splice(li,1)}
+        return [p[0]||'',p[1]||'',link||p[2]||'',n];
       });
       renderRows();
     });
