@@ -45,6 +45,8 @@ So the first question is never "is this post good." It's **whose audience is in 
 **Check the handle against `brand/analytics/reply-target-list.md` before anything else.**
 - On **RED** → skip, and say which room it is. No exceptions, no matter the reach.
 - On **DROP** → skip.
+- On **TEAM** (@lorenzo_pravata, @Bogzabs96) → skip. 14 replies since 1 Sep gave 0 follows. A like or repost only.
+- On **BIG ROOMS** or **BUYER ACCOUNTS** → treat as TEST. Juan's daily rules are in `docs/juan-reply-brief.md`.
 - On **KEEP** → the room is settled, so it can never be a SKIP. Carry on to Step 1 to decide between REPLY and OPTIONAL.
 - On **TEST** → same as KEEP, and note it's a test account with a specific thing being measured.
 - **Not on the list** → judge it with the green/red room definitions below, then say whether it should be added to the roster and to which tier.
