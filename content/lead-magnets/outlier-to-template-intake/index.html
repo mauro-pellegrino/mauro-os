@@ -398,7 +398,7 @@ footer{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;col
     $('addRow').addEventListener('click',function(){state.rows.push(['','','',''] );renderRows()});
     $('clearAll').addEventListener('click',function(){state.rows=[];for(var i=0;i<10;i++)state.rows.push(['','','','']);state.caps={};state.handle='';state.note='';$('handle').value='';renderRows()});
     $('loadEx').addEventListener('click',function(){
-      state.handle=EXAMPLE.handle;state.platform=EXAMPLE.platform;state.floor=FLOORS.x;
+      state.note='';state.handle=EXAMPLE.handle;state.platform=EXAMPLE.platform;state.floor=FLOORS.x;
       state.rows=EXAMPLE.rows.map(function(r){return r.slice()});
       $('handle').value=state.handle;$('platform').value='x';$('floor').value=state.floor;renderRows();
     });
