@@ -24,6 +24,19 @@ X, where the conversion happens.
 
 ---
 
+## IN PROGRESS 2026-10-08 (paused by Mauro)
+
+- [?] Review queue round 3 is open (`~/review-queue/index.html`): GC posts v3, plan v2, animated ASCII.
+- [?] Plan pivot: Whop one-time paid group for Mauro's skills and systems, then traffic
+  (`content/plan/ghosted-calls-plan.html`, `jk-molina-review.md`). Phase 0 = decide ownership of the
+  40+ files that also exist in growthub-os. JK: sell one system with a close date.
+- [?] Sign-off: can the 26% / 46% approval rates appear in public posts?
+- [?] YT boards v2: pick one format (`boards/yt/v2/index.html`), then convert the other 11 videos.
+- [?] Lead magnet INTAKE live: GitHub Pages or private claude.ai link? Viability test: without the repo it
+  is a calculator plus a prompt; number-parse bug fixed in index.html, still open in `tools/outlier-score.py`.
+- [ ] Animated ASCII tool shipped (`tools/ascii-anim/`), 4 test videos in ~/Downloads; waits on the look verdict.
+- [ ] Monday 12 Oct: first `/gc-monday` run; `/life-interview` once.
+
 ## NOW — Ghosted Calls phase one: send the Agency Booked Calls offer (set 2026-10-04)
 
 The offer is ready since July (`research/jk-molina/cashie-studio/offer/agency-booked-calls.md`)
