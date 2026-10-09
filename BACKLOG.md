@@ -12,6 +12,44 @@
 4. Marks: `[ ]` open, `[~]` in progress, `[?]` blocked on Mauro (write `Owner: Lorenzo` when it is his). Close = tick + "closed DD Mon: why".
 5. Archive monthly with `~/growthub-os/ops/tools/backlog-archive.py`: closed, stale (3+ weeks, no movement) and merged lines go verbatim to `BACKLOG-archive.md`. Never delete.
 
+## OFFER BUILD (set 2026-10-09, re-dated 2026-10-09 to start Sat 10 Oct)
+
+Decision: `content/plan/offer-decision-2026-10-09.md`, visual `content/plan/product-ladder.html`, what is
+ready and what is not: `content/plan/offer-readiness.html`. The whole system (YouTube video to content,
+voice, company brain) is free on Whop. Paid = Install Sprint, one-time, $197 founding for 10 seats, then
+$297. No monthly room until the weekly drop runs 4 weeks. Owners: M = Mauro, C = Claude, J = Juan.
+Nothing posts or sends without Mauro. Re-dated 9 Oct (review v6 #18): steps 1 to 3 were set for Fri 9 Oct
+and did not run, so the plan restarts Sat 10 Oct. Owners and estimates are unchanged.
+
+Done before the restart:
+- [x] 8 Oct, C: ownership inventory and twin scan, `content/plan/ownership-inventory.md` (ad7d225).
+- [x] 8 Oct, C: Whop community research and the product ladder, `whop-community-research.md`, `product-ladder.html` (e7b74b6, 17838b4).
+- [x] 8 Oct, C: intake sheet stranger test, 2 personas with a price table, `intake-viability-v2.md` (7b1f34e).
+- [x] 9 Oct, M + C: the offer decision, whole system free, paid Install Sprint, `offer-decision-2026-10-09.md` (f80782b). Inventory rows updated in the same commit.
+- [x] 9 Oct, C: readiness board, `content/plan/offer-readiness.html` (review v6 #17).
+
+- [ ] 1. Sat 10 Oct, M, 10 min: send the agency ask (text in section 0 of the decision file). Log the answer and the date in `content/plan/ownership-inventory.md`.
+- [ ] 2. Sat 10 Oct, M, 5 min: confirm $197 / $297 and 10 seats. Pick the name (working name "The Engine").
+- [ ] 3. Sat 10 Oct, C, 45 min: package skeleton + scrub test. `mkdir -p ~/mauro-os/products/engine/claude-code/{brain,skills,tools}`
+- [ ] 4. Sat 10 Oct, M, 30 min: Whop store, one free product, one hidden paid product. Check that free-tier gating and file delivery work.
+- [ ] 5. Sun 11 Oct, C, 2 h: write `02-video-to-content/run.md` and run it on `research/transcripts/maurojpelle/how-to-create-lead-magnets-with-claude.md`.
+- [ ] 6. Mon 12 Oct, C, 2 h: brain templates, the 3-failures prompt, Gate without paths. From `growthub-os/skills/ops/company-brain-install.md`.
+- [ ] 7. Tue 13 Oct, C, 1.5 h: module 01 lead magnets, cut LeadShark and comment-to-DM. `grep -rn -i "leadshark\|autodm\|comment" brand/engine/module-01-lead-magnets/`
+- [ ] 8. Mon 12 Oct, M, 30 min: first `/gc-monday`. Its output is the first Monday drop.
+- [ ] 9. Wed 14 Oct, J, 2 h: stranger test 1 from the README only. Log every stop in `content/qa/engine-stranger-test-1.md`.
+- [ ] 10. Tue 13 Oct, C, 1 h: claude.ai Project version, `products/engine/claude-ai-project/instructions.md`.
+- [ ] 11. Thu 15 Oct, M, 45 min, evening after the Growthub day: record Looms 1, 2 and 6 (list in section 2 of the decision file).
+- [ ] 12. Thu 15 Oct, C, 1.5 h: fix every stop from Juan's test. Scrub grep returns 0: `grep -rniE "growthub|lorenzo|bogdan|/Users/mauro|leadshark" products/engine/`
+- [ ] 13. Fri 16 Oct, M + C, 1 h: giveaway article + free Whop page in `content/drafts/`. Gate both. Stage only.
+- [ ] 14. Fri 16 Oct, M, 15 min: name the warm list (ghostwritten owners, churned contacts).
+- [ ] 15 to 23. Weeks 2 to 4: stranger test 2 (J, Project version), the other Looms (M), `tools/monday-read.py` (C), publish after the agency yes (M), one direct message a day (M + J), weekly drop (C), cohort 1 cart with a close date (M), day-14 Agency Booked Calls offer (M), room decision after 4 drops (M + C). Detail in section 4 of the decision file.
+- [?] Blocked on Mauro: cohort 1 open date. One option: Mon 26 Oct, after X6, X7, X8 and LI3 run 19 to 21 Oct.
+
+## TOP 25`, max 25 lines, ranked against first revenue. Each line: owner, effort, the one next action, the source.
+3. Then `## TIER 2`, the other live items, one line each. A new item goes in TIER 2 unless it beats a TOP 25 line.
+4. Marks: `[ ]` open, `[~]` in progress, `[?]` blocked on Mauro (write `Owner: Lorenzo` when it is his). Close = tick + "closed DD Mon: why".
+5. Archive monthly with `~/growthub-os/ops/tools/backlog-archive.py`: closed, stale (3+ weeks, no movement) and merged lines go verbatim to `BACKLOG-archive.md`. Never delete.
+
 ## OFFER BUILD (set 2026-10-09)
 
 Decision: `content/plan/offer-decision-2026-10-09.md`, visual `content/plan/product-ladder.html`. The whole

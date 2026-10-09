@@ -5,13 +5,15 @@ Set 9 Oct 2026. Sources: `boards/yt/v2/BRIEF.md`, the boards' `*.notes.md`, `ski
 
 ## When
 
-- **Slot: Thursday 14:00 to 16:00 (Madrid), every week.** In the week of 12 to 16 Oct this is the
-  longest open block on the calendar: lunch ends 14:00, nothing until the EOD recap at 17:15.
-- **Back-up slot: Wednesday 14:00 to 16:00.** Open until the weekly YouTube review call at 16:30,
-  so a recording made then can go straight into that review.
-- Calendar checked: the work calendar only (read only, 9 Oct). The ghostedcalls calendar was not
-  readable. `[NEEDS: check the slot against the ghostedcalls calendar]`.
-- The 10:00 to 11:30 Build block stays for building. Record in the afternoon slot.
+- **Slot: Tuesday 19:00 to 21:00 (Madrid), every week.** The recording is Ghosted Calls work, so it
+  goes after the Growthub day (9:00 to 17:00 or 10:00 to 18:00). 19:00 leaves one hour after the
+  latest finish for food and a reset. Changed 9 Oct (review v6 #16): the old slot was Thursday 14:00.
+- **Back-up slot: Thursday 19:00 to 21:00.** Use it when Tuesday is lost. It still leaves Friday to
+  check the cut before the weekend.
+- Calendar: not checked for these evenings. `[NEEDS: check Tue and Thu 19:00 to 21:00 against the
+  work and ghostedcalls calendars]`.
+- Daytime Growthub hours are not for recording. Prep (the 10 minutes below) also goes in the evening,
+  the day before.
 - One video per slot. A v2 board runs 20 to 25 minutes on screen (BRIEF rule 4).
 
 ## Before the slot (the day before, 10 minutes)

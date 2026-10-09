@@ -167,6 +167,8 @@ Owners: **M** = Mauro, **C** = Claude, **J** = Juan. Nothing here posts or sends
 
 ### First 7 days
 
+Re-dated 9 Oct (review v6 #18): the live dates start Sat 10 Oct and sit in `BACKLOG.md`, section OFFER BUILD. The table below keeps the first draft.
+
 | # | Day | Owner | Step | Time | First command or file |
 |---|---|---|---|---|---|
 | 1 | Fri 9 Oct | M | Send the agency ask (section 0). Log the answer and the date | 10 min | `content/plan/ownership-inventory.md` rows 5, 11 to 13 |

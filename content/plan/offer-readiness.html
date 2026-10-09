@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offer Readiness</title>
+<meta name="description" content="Every component of the Ghosted Calls offer (free Whop system and paid Install Sprint) with its status, the file that proves it, what is missing, effort and owner. 9 Oct 2026.">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EFE4;--card:#FFFDF8;--ink:#171310;--body:#3B342D;--muted:#6B6258;--line:#E2D8C6;--accent:#E0A854;--accent-ink:#8A5A12;
+--g:#3F7D4E;--g-soft:#DDEBDD;--a:#B7791F;--a-soft:#F7E6C8;--n:#6B6258;--n-soft:#EFE9DE;--r:#B4442F;--r-soft:#F6DED6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.5;
+background-image:radial-gradient(#17131012 1.2px,transparent 1.2px);background-size:18px 18px}
+.wrap{max-width:1400px;margin:0 auto;padding:32px 16px 72px}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+h1{font-size:52px;line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-top:24px}
+h1 span{background:linear-gradient(transparent 62%,var(--accent) 62%)}
+.lede{font-size:19px;color:var(--body);margin-top:12px;max-width:900px}
+.counts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.cnt{border:2px solid var(--ink);border-radius:14px;padding:14px 18px;background:var(--card)}
+.cnt .v{font-size:40px;font-weight:800;line-height:1}
+.cnt .l{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;margin-top:6px}
+.cnt .d{font-size:13px;color:var(--body);margin-top:4px}
+.cnt.ready{background:var(--g-soft)} .cnt.partly{background:var(--a-soft)} .cnt.notbuilt{background:var(--n-soft)} .cnt.blocked{background:var(--r-soft)}
+.path{margin-top:22px;background:var(--ink);color:var(--bg);border-radius:14px;padding:16px 18px}
+.path .k{color:var(--accent)}
+.psteps{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px}
+.pstep{font-family:'JetBrains Mono',monospace;font-size:12.5px;border:1px solid #6B6258;border-radius:8px;padding:5px 9px}
+.pstep:first-child{background:var(--r);border-color:var(--r)}
+.arr{color:var(--accent);font-weight:700}
+section{margin-top:44px}
+.k{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px}
+h2{font-size:28px;letter-spacing:-.02em}
+.sub{color:var(--body);margin:4px 0 14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-left:8px solid var(--n);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:7px}
+.tile .st{align-self:flex-start;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;letter-spacing:.08em;border-radius:999px;padding:3px 10px;color:#fff}
+.tile h3{font-size:17px;line-height:1.25}
+.row{display:grid;grid-template-columns:62px 1fr;gap:6px;font-size:13.5px;color:var(--body)}
+.lab{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:2px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:'JetBrains Mono',monospace;font-size:12px;border-top:1px dashed var(--line);padding-top:7px;margin-top:auto}
+.meta b{color:var(--muted);font-weight:400;text-transform:uppercase;font-size:10.5px;letter-spacing:.06em}
+.tile.ready{border-left-color:var(--g)} .tile.ready .st{background:var(--g)}
+.tile.partly{border-left-color:var(--a)} .tile.partly .st{background:var(--a)}
+.tile.notbuilt{border-left-color:var(--n);background:repeating-linear-gradient(135deg,var(--card),var(--card) 10px,#F8F3EA 10px,#F8F3EA 20px)} .tile.notbuilt .st{background:var(--n)}
+.tile.blocked{border-left-color:var(--r);background:#FFF8F5} .tile.blocked .st{background:var(--r)}
+.foot{margin-top:40px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+#end{height:1px}
+@media (max-width:700px){h1{font-size:36px} .counts{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+<div class="top"><span>Ghosted Calls · offer readiness</span><span>9 Oct 2026 · review v6 #17</span></div>
+<h1>What is <span>ready</span>, what is not</h1>
+<p class="lede">The offer: the whole system free on Whop (YouTube video to content, voice, company brain, the Gate) and a paid one-time Install Sprint. One tile per component. Each tile names the file that proves its status.</p>
+<div class="counts">
+<div class="cnt ready"><div class="v">5</div><div class="l">READY</div><div class="d">works today, the file exists</div></div>
+<div class="cnt partly"><div class="v">6</div><div class="l">PARTLY</div><div class="d">exists, needs named work</div></div>
+<div class="cnt notbuilt"><div class="v">12</div><div class="l">NOT BUILT</div><div class="d">no file yet</div></div>
+<div class="cnt blocked"><div class="v">7</div><div class="l">BLOCKED</div><div class="d">waits on a yes or a decision</div></div>
+</div>
+<div class="path"><div class="k">The critical path, in order</div><div class="psteps"><span class="pstep">Agency yes (M, 10 min)</span><span class="arr">&rarr;</span><span class="pstep">Package skeleton (C, 45 min)</span><span class="arr">&rarr;</span><span class="pstep">Orchestrator + example (C, 2 h)</span><span class="arr">&rarr;</span><span class="pstep">Brain port (C, 2 h)</span><span class="arr">&rarr;</span><span class="pstep">Module 01 rewire (C, 1.5 h)</span><span class="arr">&rarr;</span><span class="pstep">Stranger test 1 (J, 2 h)</span><span class="arr">&rarr;</span><span class="pstep">Fix the stops (C, 1.5 h)</span><span class="arr">&rarr;</span><span class="pstep">Publish free product (M)</span><span class="arr">&rarr;</span><span class="pstep">Open cohort 1 (M)</span></div></div>
+<section><div class="k">2 ready · 2 blocked</div><h2>Before anything ships</h2><p class="sub">The yes and the decisions the rest depends on.</p><div class="tiles"><div class="tile blocked"><div class="st">BLOCKED</div><h3>Agency yes on the files</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/plan/offer-decision-2026-10-09.md, section 0 (the ask text)</span></div>
+<div class="row"><span class="lab">missing</span><span>The ask is not sent. No answer, no date in ownership-inventory.md. Every component built on growthub-os files waits on it</span></div>
+<div class="meta"><span><b>effort</b> 10 min</span><span><b>owner</b> M</span><span><b>step</b> 1 · Sat 10</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Price, seats and the name</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">offer-decision-2026-10-09.md, section 1</span></div>
+<div class="row"><span class="lab">missing</span><span>$197 founding, 10 seats, then $297 is a proposal. The name is a working name only (&quot;The Engine&quot;)</span></div>
+<div class="meta"><span><b>effort</b> 5 min</span><span><b>owner</b> M</span><span><b>step</b> 2 · Sat 10</span></div></div><div class="tile ready"><div class="st">READY</div><h3>Offer decision</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/plan/offer-decision-2026-10-09.md, product-ladder.html (f80782b, 9 Oct)</span></div>
+<div class="row"><span class="lab">missing</span><span>Nothing. The two items above are its open [NEEDS]</span></div>
+<div class="meta"><span><b>effort</b> done</span><span><b>owner</b> M + C</span><span><b>step</b> done 9 Oct</span></div></div><div class="tile ready"><div class="st">READY</div><h3>Price evidence: intake stranger test</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/plan/intake-viability-v2.md (7b1f34e, 8 Oct)</span></div>
+<div class="row"><span class="lab">missing</span><span>Nothing for the price band. Gaps 1, 2, 4 of the sheet are in the outlier tile</span></div>
+<div class="meta"><span><b>effort</b> done</span><span><b>owner</b> C</span><span><b>step</b> done 8 Oct</span></div></div></div></section>
+<section><div class="k">2 ready · 4 partly · 2 not built · 2 blocked</div><h2>Free Whop system: the content</h2><p class="sub">YouTube video to content, voice, company brain, the Gate, the Monday read.</p><div class="tiles"><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Video to content orchestrator</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None. products/ does not exist. Today the flow is a rule in CLAUDE.md section 7 plus 4 skill files</span></div>
+<div class="row"><span class="lab">missing</span><span>Write 02-video-to-content/run.md: transcript in, article + 10 posts + LinkedIn post + cover prompt out, Gate last</span></div>
+<div class="meta"><span><b>effort</b> 2 h</span><span><b>owner</b> C</span><span><b>step</b> 5 · Sun 11</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Article, posts, LinkedIn skill files</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">growthub-os skills/content/x-articles/ 01 to 07, short-form/, long-form/</span></div>
+<div class="row"><span class="lab">missing</span><span>Agency yes, then a clean rewrite: drop account names from the corpus. The mauro-os copies are rewrites of agency files (inventory row 12)</span></div>
+<div class="meta"><span><b>effort</b> inside step 5</span><span><b>owner</b> C</span><span><b>step</b> after 1</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Worked example on Mauro&#x27;s video</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">Source exists: research/transcripts/maurojpelle/how-to-create-lead-magnets-with-claude.md</span></div>
+<div class="row"><span class="lab">missing</span><span>The run itself: one article, 10 posts, LinkedIn post from that transcript, saved as example/</span></div>
+<div class="meta"><span><b>effort</b> inside step 5</span><span><b>owner</b> C</span><span><b>step</b> 5 · Sun 11</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Company brain</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">growthub-os skills/ops/company-brain-install.md (17 agency mentions), ops/SOURCE-ORDER.md, ops/tools/staleness-check.py</span></div>
+<div class="row"><span class="lab">missing</span><span>Agency yes. Then 5 blank templates, the &quot;find your 3 failures&quot; prompt, a worked example on Ghosted Calls failures</span></div>
+<div class="meta"><span><b>effort</b> 2 h</span><span><b>owner</b> C</span><span><b>step</b> 6 · Mon 12</span></div></div><div class="tile ready"><div class="st">READY</div><h3>The Gate</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">.claude/agents/gate.md, .claude/hooks/voice-gate.py, skills/content/gate-playbook.md (clean, inventory row 2)</span></div>
+<div class="row"><span class="lab">missing</span><span>Packaging only: a path-free hook and a blank playbook (in step 6)</span></div>
+<div class="meta"><span><b>effort</b> inside step 6</span><span><b>owner</b> C</span><span><b>step</b> 6 · Mon 12</span></div></div><div class="tile partly"><div class="st">PARTLY</div><h3>Voice</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">skills/research/voice-extraction.md (clean, 7 steps). Script: growthub-os ops/tools/voice-extract.py</span></div>
+<div class="row"><span class="lab">missing</span><span>A worked example on a public account. A browser version of step 3. The script needs the agency yes or a rewrite</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> C</span><span><b>step</b> not scheduled</span></div></div><div class="tile partly"><div class="st">PARTLY</div><h3>Lead magnet module 01</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">brand/engine/module-01-lead-magnets/ (9 pages), skills/lead-gen/lead-magnet/ (7 files), build log content/qa/lead-magnet-build-log.md</span></div>
+<div class="row"><span class="lab">missing</span><span>Cut LeadShark and comment-to-DM (26 lines, 5 pages). Page 03 evidence is from an agency account. Agency yes still open (twins)</span></div>
+<div class="meta"><span><b>effort</b> 1.5 h</span><span><b>owner</b> C</span><span><b>step</b> 7 · Tue 13</span></div></div><div class="tile partly"><div class="st">PARTLY</div><h3>Monday read (measurement)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">tools/maurojpelle-baseline.py, tools/x-keywords.py, x-follow-drivers.py, /gc-monday</span></div>
+<div class="row"><span class="lab">missing</span><span>tools/monday-read.py that reads any X export by column name. The x-* scripts read agency exports today</span></div>
+<div class="meta"><span><b>effort</b> 1.5 h</span><span><b>owner</b> C</span><span><b>step</b> 17 · wk 2-4</span></div></div><div class="tile partly"><div class="st">PARTLY</div><h3>Outlier sheet (free tool)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/lead-magnets/outlier-to-template-intake/index.html</span></div>
+<div class="row"><span class="lab">missing</span><span>Gaps 1, 2, 4 of intake-viability-v2.md: floor line, gated-post flag, 390px layout</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> C</span><span><b>step</b> not scheduled</span></div></div><div class="tile ready"><div class="st">READY</div><h3>ASCII visuals kit (cohort bonus)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/ascii/render.py, build_cover.py, tools/ascii-anim/ (inventory row 1: sellable)</span></div>
+<div class="row"><span class="lab">missing</span><span>Drop the founder examples from ascii-article.md and the ascii-anim README</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> C</span><span><b>step</b> not scheduled</span></div></div></div></section>
+<section><div class="k">8 not built · 1 blocked</div><h2>Free Whop system: package and delivery</h2><p class="sub">What turns the files into something a stranger can install.</p><div class="tiles"><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Package skeleton + scrub test</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None. products/engine/ does not exist (step 3 was set for Fri 9 Oct and did not run)</span></div>
+<div class="row"><span class="lab">missing</span><span>The folder tree, README.md, START-HERE.md, CLAUDE.md template, the scrub grep at 0</span></div>
+<div class="meta"><span><b>effort</b> 45 min</span><span><b>owner</b> C</span><span><b>step</b> 3 · Sat 10</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>claude.ai Project version</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None</span></div>
+<div class="row"><span class="lab">missing</span><span>instructions.md, the knowledge file list, prompts.md for the Gate and the pasted-CSV Monday read</span></div>
+<div class="meta"><span><b>effort</b> 1 h</span><span><b>owner</b> C</span><span><b>step</b> 10 · Tue 13</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Notion version</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">brand/engine/README.md: &quot;Notion is out, permanently&quot; (22 Aug)</span></div>
+<div class="row"><span class="lab">missing</span><span>Mauro reverses the 22 Aug rule, or it stays out. Not designed</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: Mauro]</span><span><b>owner</b> M</span><span><b>step</b> open</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Whop store: free + paid product</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None. Free-tier gating and file delivery unverified since 22 Aug</span></div>
+<div class="row"><span class="lab">missing</span><span>One free product with the ZIP and Looms, one hidden paid product. Check the free tier</span></div>
+<div class="meta"><span><b>effort</b> 30 min</span><span><b>owner</b> M</span><span><b>step</b> 4 · Sat 10</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Looms (0 of 10)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">List: offer-decision-2026-10-09.md, section 2</span></div>
+<div class="row"><span class="lab">missing</span><span>Record 1, 2, 6 first (45 min), then 3, 4, 5, 7 to 10 (1.5 h). Evening slot, after the Growthub day</span></div>
+<div class="meta"><span><b>effort</b> 45 min + 1.5 h</span><span><b>owner</b> M</span><span><b>step</b> 11 · Thu 15</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Stranger test 1 (Claude Code)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None. content/qa/engine-stranger-test-1.md does not exist</span></div>
+<div class="row"><span class="lab">missing</span><span>Juan installs from the README only on a public YouTube video, logs every stop. Needs the package first</span></div>
+<div class="meta"><span><b>effort</b> 2 h</span><span><b>owner</b> J</span><span><b>step</b> 9 · Wed 14</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Stranger test 2 (claude.ai Project)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None</span></div>
+<div class="row"><span class="lab">missing</span><span>Same test, no terminal. Needs the Project version</span></div>
+<div class="meta"><span><b>effort</b> 2 h</span><span><b>owner</b> J</span><span><b>step</b> 15 · wk 2-4</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Giveaway article + free Whop page</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">Closest draft: LI2 &quot;the whole content system&quot; in content/drafts/2026-10-w42-w43-posts.md</span></div>
+<div class="row"><span class="lab">missing</span><span>The article (&quot;the whole system, free&quot;, link in bio, no comment-to-DM) and the page copy. Gate both. Publish only after the agency yes</span></div>
+<div class="meta"><span><b>effort</b> 1 h</span><span><b>owner</b> M + C</span><span><b>step</b> 13 · Fri 16</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Weekly drop (Mon read, Wed template, Fri Gate catch)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">offer-decision-2026-10-09.md, section 3 rows 1, 6, 7</span></div>
+<div class="row"><span class="lab">missing</span><span>Not running. The room ($49/mo) waits on 4 weeks of drops</span></div>
+<div class="meta"><span><b>effort</b> 1 h / week</span><span><b>owner</b> C</span><span><b>step</b> 20 · wk 2-4</span></div></div></div></section>
+<section><div class="k">1 ready · 2 partly · 2 not built · 2 blocked</div><h2>Paid: Install Sprint</h2><p class="sub">The one-time paid rung and the higher option.</p><div class="tiles"><div class="tile partly"><div class="st">PARTLY</div><h3>Install Sprint: the offer</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">offer-decision-2026-10-09.md, section 1 point 2; product-ladder.html rung 1</span></div>
+<div class="row"><span class="lab">missing</span><span>Defined on paper. Price and name not confirmed (gate tile)</span></div>
+<div class="meta"><span><b>effort</b> see gate</span><span><b>owner</b> M</span><span><b>step</b> 2 · Sat 10</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>Live group install call</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None</span></div>
+<div class="row"><span class="lab">missing</span><span>No agenda, no date, no call link. [NEEDS: not in the plan yet]</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> M</span><span><b>step</b> not scheduled</span></div></div><div class="tile notbuilt"><div class="st">NOT BUILT</div><h3>14-day first-run review</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">None</span></div>
+<div class="row"><span class="lab">missing</span><span>The review flow for each buyer&#x27;s first article, 10 posts and filled brain. [NEEDS: not in the plan yet]</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> M + C</span><span><b>step</b> not scheduled</span></div></div><div class="tile partly"><div class="st">PARTLY</div><h3>Sales page</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/plan/whop-product-v1.html (drafted 8 Oct for the old intake offer)</span></div>
+<div class="row"><span class="lab">missing</span><span>Rewrite for the Install Sprint: the 2 rungs, the close date, Agency Booked Calls at checkout</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: estimate]</span><span><b>owner</b> M + C</span><span><b>step</b> not scheduled</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Warm list for cohort 1</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">BACKLOG.md (blocked since August)</span></div>
+<div class="row"><span class="lab">missing</span><span>Mauro names the ghostwritten owners and the churned contacts</span></div>
+<div class="meta"><span><b>effort</b> 15 min</span><span><b>owner</b> M</span><span><b>step</b> 14 · Fri 16</span></div></div><div class="tile blocked"><div class="st">BLOCKED</div><h3>Cohort 1 open date</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">BACKLOG.md OFFER BUILD, last line</span></div>
+<div class="row"><span class="lab">missing</span><span>Mauro picks. One option: Mon 26 Oct</span></div>
+<div class="meta"><span><b>effort</b> [NEEDS: Mauro]</span><span><b>owner</b> M</span><span><b>step</b> open</span></div></div><div class="tile ready"><div class="st">READY</div><h3>Agency Booked Calls (higher option)</h3>
+<div class="row"><span class="lab">proof</span><span class="mono">content/offer/agency-booked-calls.html</span></div>
+<div class="row"><span class="lab">missing</span><span>0 sends so far. Offered on day 14 of each Install Sprint buyer</span></div>
+<div class="meta"><span><b>effort</b> 10 min each</span><span><b>owner</b> M</span><span><b>step</b> 22 · wk 2-4</span></div></div></div></section>
+
+<p class="foot">Sources: content/plan/offer-decision-2026-10-09.md, ownership-inventory.md, whop-product-v1.md, product-ladder.html, BACKLOG.md "OFFER BUILD". Step numbers and dates match BACKLOG.md (re-dated to start Sat 10 Oct). Builder: content/plan/build_readiness.py.</p>
+<div id="end"></div>
+</div></body></html>
