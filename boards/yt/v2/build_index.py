@@ -82,6 +82,7 @@ page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:var(--ground);color:#1B1B1B;font-family:Inter,system-ui,sans-serif;padding:48px 32px 96px}}
 h1{{font-size:56px;font-weight:900;color:var(--ink);letter-spacing:-.03em}}
+.how{{margin:14px 0 0;padding:10px 14px;background:#fff;border:2px solid var(--ink);font-size:16px;display:inline-block}}
 .sub{{color:var(--muted);margin:10px 0 40px;font-size:18px}}
 section{{margin-top:56px}}
 h2{{font-size:30px;font-weight:800;color:var(--ink);display:flex;gap:14px;align-items:center}}
@@ -102,7 +103,8 @@ ol span{{display:block;font-weight:400;font-size:12px;color:var(--muted);margin-
 @media (max-width:600px){{.grid{{grid-template-columns:1fr}}h1{{font-size:38px}}}}
 </style></head><body>
 <h1>YT boards v2</h1>
-<p class="sub">{len(boards)} boards · {len(set(b['fmt'] for b in boards))} formats · {len(by_doc)} videos. Open a board, then use the arrow keys. N shows the notes, F goes fullscreen.</p>
+<p class="how"><b>How to use:</b> arrows or Space move, the bar at the bottom has Prev / Next and the frame list. <b>H</b> hides the bar before you record, <b>N</b> shows the notes, <b>F</b> goes fullscreen.</p>
+<p class="sub">{len(boards)} boards · {len(set(b['fmt'] for b in boards))} formats · {len(by_doc)} videos. Doc 11 is built in every format.</p>
 {''.join(sections)}
 </body></html>"""
 

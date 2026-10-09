@@ -13,6 +13,12 @@ import os
 import re
 import subprocess
 import sys
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>frames.length,index:()=>fi,go:n=>{fi=Math.max(0,Math.min(frames.length-1,n));st=0;nofx=false;show();},next:next,prev:prev,label:k=>NOTES[k].t+' · '+frames[k].textContent.slice(0,90)}"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -79,7 +85,7 @@ function show(){
  const n=NOTES[fi];document.getElementById('notes').innerHTML='<b>FRAME '+(fi+1)+' / '+frames.length+' · '+n.t+'</b>'+n.h;
 }
 function next(){nofx=false;if(st<maxs(frames[fi])){st++;show()}else if(fi<frames.length-1){fi++;st=0;show()}}
-function prev(){if(fi>0){fi--;st=maxs(frames[fi]);nofx=true;show()}}
+function prev(){if(st>0){st--;nofx=true;show()}else if(fi>0){fi--;st=maxs(frames[fi]);nofx=true;show()}}
 addEventListener('keydown',e=>{
  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next()}
  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev()}
@@ -169,6 +175,7 @@ def build(slug, title, frames, titles):
             '<script id="nd" type="application/json">%s</script><script>%s</script></body></html>'
             % (lib.esc(title), FONTS, CSS, "".join(frame_svg(f) for f in frames),
                json.dumps(notes_js).replace("</", "<\\/"), JS))
+    page = controls.inject(page, NAV_ADAPTER)
     assert "—" not in page
     with open(os.path.join(HERE, slug + ".html"), "w") as fh:
         fh.write(page)

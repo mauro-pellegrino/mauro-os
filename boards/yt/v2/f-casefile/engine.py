@@ -10,6 +10,12 @@ import html
 import json
 import random
 import re
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>FR.length,index:()=>cur,go:n=>go(n),next:()=>go(cur+1),prev:()=>go(cur-1),label:k=>FR[k].t+' · '+(FR[k].cap||'')}"
 
 COL_W, GAP, MARGIN, NCOLS = 560, 54, 90, 9
 BOARD_W = MARGIN * 2 + NCOLS * COL_W + (NCOLS - 1) * GAP
@@ -250,6 +256,7 @@ def build(title, comment, exhibits, strings, frames, seed=7):
     page = PAGE.format(title=html.escape(title), fonts=FONTS, comment=comment, css=CSS, exhibits="\n".join(ex_html),
                        ex=json.dumps(ex_meta), strs=json.dumps(strings), frames=json.dumps(frames, ensure_ascii=False), js=js)
     assert "—" not in page, "em dash in page"
+    page = controls.inject(page, NAV_ADAPTER)
     return page, t
 
 

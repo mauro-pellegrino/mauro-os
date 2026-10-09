@@ -61,7 +61,8 @@ compare formats on the same content. The other 11 docs are built in one format e
 
 - Self-contained HTML: inline CSS, inline SVG, inline JS. External requests allowed only for Google
   Fonts. A double-click must work.
-- Keyboard: right/left arrow or space to move between frames, `N` toggles notes, `F` fullscreen.
+- Keyboard: right/left arrow or space to move between frames, `N` toggles notes, `F` fullscreen,
+  `H` hides the recording control bar (shared `controls.py`, injected by every generator; test: `test_controls.py`).
   Frames are 16:9 and fill the viewport.
 - Render PNG previews with headless Chrome
   (`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --headless --screenshot`):

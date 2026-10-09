@@ -18,6 +18,12 @@ import os
 import re
 import subprocess
 import sys
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>frames.length,index:()=>i,go:show,next:()=>show(i+1),prev:()=>show(i-1),label:k=>(frames[k].dataset.time||'')+' · '+frames[k].textContent.slice(0,90)}"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "../../../.."))
@@ -727,6 +733,7 @@ def render_board(b):
 <div id="notes"></div>
 </div>
 <script>{JS}</script></body></html>"""
+    doc = controls.inject(doc, NAV_ADAPTER)
     with open(os.path.join(HERE, b["slug"] + ".html"), "w") as fh:
         fh.write(doc)
 

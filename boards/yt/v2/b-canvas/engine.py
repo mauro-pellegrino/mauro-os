@@ -14,6 +14,12 @@ trees) are diagram labels and are not counted, per BRIEF.md rule 1.
 import html
 import json
 import re
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>F.length,index:()=>i,go:cam,next:()=>cam(i+1),prev:()=>cam(i-1),label:k=>F[k].t+' · '+F[k].k}"
 from html.parser import HTMLParser
 
 W, H = 12800, 7200          # canvas units, 16:9
@@ -460,6 +466,7 @@ def build(video):
 <div id="notes"></div>
 <script>{JS.replace('__FRAMES__', json.dumps(js_frames))}</script>
 </body></html>"""
+    page = controls.inject(page, NAV_ADAPTER)
     return page, frames, total
 
 

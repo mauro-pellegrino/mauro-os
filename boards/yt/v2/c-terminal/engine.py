@@ -8,6 +8,12 @@ notes, F goes fullscreen. Add ?static=1 to the URL to skip the typing animation 
 import html
 import json
 import re
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>F.length,index:()=>i,go:show,next:()=>show(i+1),prev:()=>show(i-1),label:k=>F[k].t+' · '+F[k].caption}"
 
 BG = "#0B1A12"
 PANE = "#0F2219"
@@ -277,7 +283,7 @@ function pane(el, p){
 }
 function show(n){
   clear(); i = Math.max(0, Math.min(F.length-1, n)); const f = F[i];
-  location.hash = i+1;
+  history.replaceState(null, '', '#'+(i+1));
   tree(f);
   $('#tabs').innerHTML = (f.tabs||[]).map((t,k)=>`<div class="tab${k===(f.tabOn||0)?' on':''}">${t}</div>`).join('');
   const c = $('#content');
@@ -330,8 +336,8 @@ const META_OBJ = {meta};
 
 def page(title, comment, window, frames, meta):
     css = CSS % dict(BG=BG, PANE=PANE, SIDE=SIDE, LINE=LINE, TXT=TXT, MUTED=MUTED, ACC=ACC, GREEN=GREEN, RED=RED)
-    return PAGE.format(title=esc(title), comment=comment.replace("--", "-"), css=css, window=esc(window),
-                       frames=json.dumps(frames, ensure_ascii=False), meta=json.dumps(meta, ensure_ascii=False), js=JS)
+    return controls.inject(PAGE.format(title=esc(title), comment=comment.replace("--", "-"), css=css, window=esc(window),
+                       frames=json.dumps(frames, ensure_ascii=False), meta=json.dumps(meta, ensure_ascii=False), js=JS), NAV_ADAPTER)
 
 
 # ------------------------------------------------------------------ frame constructors

@@ -12,6 +12,12 @@ Palette from boards/yt/build.py: cream ground, Deep Forest #1B4332, Honey #E9B94
 import html as _html
 import json
 import re
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+import controls  # noqa: E402  (shared recording control bar, boards/yt/v2/controls.py)
+
+NAV_ADAPTER = "{count:()=>S.length,index:()=>i,go:n=>{i=Math.max(0,Math.min(S.length-1,n));st=0;show();},next:nx,prev:pv,label:k=>NOTES[k].t+' · '+S[k].textContent.slice(0,90)}"
 
 INK, ACC, GROUND, MUTED, SOFT, LINE, RED = "#1B4332", "#E9B949", "#F7F3EA", "#5F6B62", "#B9C7BE", "#D8CFBB", "#C0392B"
 
@@ -281,5 +287,6 @@ def build(title, slides, notes_title, sources):
     html_out = HEAD.format(title=esc(title), css=CSS) + "\n".join(body) + "</div>\n" + \
         '<div id="notes"></div>\n<script type="application/json" id="nd">' + \
         json.dumps(nd).replace("</", "<\\/") + "</script>\n<script>" + JS + "</script>\n</body></html>\n"
+    html_out = controls.inject(html_out, NAV_ADAPTER)
     md.insert(4, f"**Runtime:** {fmt(t)} across {len(slides)} frames.")
     return html_out, "\n".join(md), t, len(slides), problems
