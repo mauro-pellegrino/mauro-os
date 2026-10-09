@@ -21,3 +21,17 @@ for m in sorted(by):
           f"{c:10} {c/len(x):11.1f} {sum(n(r,'Profile visits') for r in x):7} {sum(n(r,'New follows') for r in x):8}")
 for t, c in collections.Counter(re.sub(r"https?://\S+", "<url>", r["Post text"]).strip()[:100] for v in by.values() for r in v).most_common(5):
     print(c, "|", t.replace("\n", " / "))
+
+# by plug type, whole period (added 2026-10-09 for review v6 #8)
+def ptype(t):
+    t = t.lower()
+    return ("portfolio" if "portfolio" in t else "audit" if "audit" in t else "work with us" if "work with us" in t
+            else "link in bio" if "bio" in t else "other")
+tot = collections.defaultdict(lambda: [0, 0, 0, 0])
+for v in by.values():
+    for r in v:
+        a = tot[ptype(r["Post text"] or "")]
+        a[0] += 1; a[1] += n(r, "URL Clicks"); a[2] += n(r, "Profile visits"); a[3] += n(r, "Impressions")
+print("\ntype           plugs  clicks  clicks/plug  visits/plug  clicks/1k imp")
+for t, (p, c, v, i) in sorted(tot.items(), key=lambda x: -x[1][1] / max(1, x[1][0])):
+    print(f"{t:13} {p:6} {c:7} {c/p:11.1f} {v/p:12.1f} {1000*c/max(1,i):13.1f}")
