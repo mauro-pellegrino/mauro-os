@@ -164,6 +164,8 @@ Until a generated title beats a borrowed one in front of him, every title set fo
 5. **When Mauro picks a borrowed shape over a generated one, log it** as a correction-log entry in
    `x-article-creator.md`. That is the evidence the title system is still behind, and it is what
    eventually fixes it.
+6. **Mauro picks the shape, so keep the set varied.** On 2026-10-08 he approved `The principles of running content out of claude code` and called the other two in the set terrible (review 2026-10-08 GC #56) [metric: first-pass approval rate]
+7. **No article about a system he does not use yet.** Help him use it first, then write it (review 2026-10-08 GC #55) [metric: first-pass approval rate]
 
 The shape bank to pull from: `research/outlier-x-articles/`, the six patterns in
 `x-article-creator.md` §Title Engineering, and Mauro's standing habit of reading Lorenzo's article

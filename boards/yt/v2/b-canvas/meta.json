@@ -1,0 +1,61 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [],
+    "frames": 29,
+    "minutes": 24,
+    "needs": [
+      "45 minutes lost to the rebuilt SOP (doc 11 and MAP.md say it, claims.md does not)",
+      "the revenue figure in doc 11 ($100k/mo, $150k MRR, ~$500k total) is unresolved and kept off the board"
+    ]
+  },
+  {
+    "doc": "02",
+    "file": "02-skills-structure.html",
+    "titles": [
+      {
+        "title": "How I structure 73 Claude skills (clearly explained)",
+        "modelled_on": "01-outliers.csv: Greg Isenberg, \"How AI agents & Claude skills work (Clearly Explained)\", 647K"
+      },
+      {
+        "title": "What I'd build instead of another Claude prompt",
+        "modelled_on": "01-outliers.csv: Nick Saraev, \"What I'd Learn Instead of Automation in 2026\", 492K"
+      },
+      {
+        "title": "The boring Claude Code system behind 73 skills",
+        "modelled_on": "01-outliers.csv: Jordan Platten, \"3 Boring AI Systems That Sell For $4000+ Right Now (With PROOF)\", 67K"
+      }
+    ],
+    "frames": 26,
+    "minutes": 21,
+    "needs": [
+      "45 minutes lost to the rebuilt SOP (doc 02 and MAP.md say it, claims.md does not)"
+    ]
+  },
+  {
+    "doc": "09",
+    "file": "09-transcript-to-article.html",
+    "titles": [
+      {
+        "title": "Watch me turn one call into a full X article",
+        "modelled_on": "01-outliers.csv: Nick Saraev, \"Watch me start & sell an AI service in 10 hours\", 366K"
+      },
+      {
+        "title": "Build X articles from your calls: here's how",
+        "modelled_on": "01-outliers.csv: David Ondrej, \"Build Everything with AI Agents: Here's How\", 1.7M"
+      },
+      {
+        "title": "I let Claude turn my calls into X articles",
+        "modelled_on": "01-outliers.csv: Jordan Platten, \"I Let Claude AI Get Me Clients for 30 Days (240 Meetings Booked)\", 39K"
+      }
+    ],
+    "frames": 24,
+    "minutes": 22,
+    "needs": [
+      "a cleared transcript and finished article pair for the worked example (doc 09 gap)",
+      "the top converter lift, 2.27x in doc 09, not in claims.md",
+      "the converter word range, 738 to 1,012 in doc 09, not in claims.md"
+    ]
+  }
+]

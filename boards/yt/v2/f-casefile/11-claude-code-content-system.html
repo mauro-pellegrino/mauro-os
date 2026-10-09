@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My whole Claude Code content system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&family=Special+Elite&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<!-- format F case file · doc 11 · numbers from brand/claims.md -->
+<style>
+:root{--ink:#1B4332;--honey:#E9B949;--paper:#F7F3EA;--red:#C62828;--measured:#1F6B45;--observed:#A8650F;--assumed:#3E4F86}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b0f0d;overflow:hidden}
+body{font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;color:#1B1B1B}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+#stage{position:absolute;overflow:hidden;
+ background:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1.6px) 0 0/9px 9px,
+ radial-gradient(rgba(0,0,0,.28) 1px,transparent 1.6px) 4px 5px/13px 13px,
+ radial-gradient(ellipse at 50% 40%,#2c3832 0%,#1a221e 60%,#111613 100%)}
+#board{position:absolute;left:0;top:0;transform-origin:0 0;transition:transform 1.15s cubic-bezier(.65,.02,.25,1)}
+#board.instant,#board.instant *{transition:none!important}
+.ex.hs{padding-bottom:96px}.ex{position:absolute;transform:rotate(var(--r));box-shadow:0 16px 34px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.4)}
+.pin{position:absolute;top:-16px;left:calc(50% - 15px);width:30px;height:30px;border-radius:50%;z-index:5;
+ background:radial-gradient(circle at 35% 32%,#fff6d6 0 12%,#E9B949 30%,#9a7418 100%);box-shadow:0 5px 7px rgba(0,0,0,.55)}
+/* exhibit kinds */
+.paper{background:var(--paper);padding:34px 38px 30px}
+.card{background:repeating-linear-gradient(#fffef9 0 45px,#cfdfe8 45px 47px);border-top:10px solid #d9534f;padding:26px 36px 30px}
+.folder{background:#E2C88E;padding:44px 44px 40px;border-radius:0 10px 6px 6px}
+.folder:before{content:attr(data-tab);position:absolute;top:-46px;left:0;background:#E2C88E;padding:10px 26px 8px;border-radius:10px 10px 0 0;
+ font:700 22px 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--ink)}
+.term{background:#0f2219;color:#E6F0E9;padding:0 0 26px;font-family:'JetBrains Mono',monospace}
+.term .bar{height:40px;background:#1d3a2b;display:flex;align-items:center;gap:9px;padding:0 16px;margin-bottom:22px}
+.term .bar i{width:13px;height:13px;border-radius:50%;background:#4f6e5d;display:block}
+.term .bar span{margin-left:12px;font-size:16px;color:#a9c4b3}
+.term pre{font:500 21px/1.5 'JetBrains Mono',monospace;padding:0 28px;white-space:pre}
+.term pre b{color:var(--honey);font-weight:700}.term pre em{font-style:normal;color:#8fae9b}
+.term pre u{text-decoration:none;color:#ff8a80;font-weight:700}
+/* type inside exhibits */
+.id{font:700 16px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6b6250;margin-bottom:14px}
+.term .id{color:#8fae9b;padding:0 28px}
+.h{font:900 44px/1.05 'Inter';letter-spacing:-.02em;color:var(--ink)}
+.h.xl{font-size:150px;letter-spacing:-.04em;line-height:.95}
+.h.l{font-size:60px}
+.hand{font:700 46px/1.0 'Caveat',cursive;color:#1d2a52}
+.hand.l{font-size:60px}
+.big{font:900 150px/.9 'Inter';letter-spacing:-.05em;color:var(--ink)}
+.big.m{font-size:104px}
+.lab{font:600 25px/1.3 'Inter';color:#2f3a33;margin-top:10px}
+.src{margin-top:22px;padding-top:12px;border-top:2px dashed #bcae8f;font:700 15px 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#7a6e55}
+.card .src{border-color:#9fb6c4;color:#5d7383}
+.term .src{margin:22px 28px 0;border-color:#355a45;color:#8fae9b}
+.row{display:flex;gap:20px;align-items:baseline}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:baseline;margin-top:8px}
+.stat b{font:900 64px/1 'Inter';color:var(--ink);letter-spacing:-.03em;text-align:right}
+.stat span{font:600 25px 'Inter';color:#2f3a33}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.chip{border:3px solid var(--ink);padding:6px 14px;font:700 21px 'JetBrains Mono',monospace;color:var(--ink);background:#fff}
+.chip.on{background:var(--honey)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:14px;border:3px solid var(--ink)}
+.ba>div{padding:20px 22px;min-height:150px}
+.ba>div:first-child{background:#e9e2d3;border-right:3px solid var(--ink)}
+.ba>div:last-child{background:#fff}
+.ba .k{font:800 16px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#6b6250;margin-bottom:10px}
+.ba>div:last-child .k{color:var(--measured)}
+.ba .v{font:800 30px/1.2 'Inter';color:var(--ink)}
+.ba>div:first-child .v{text-decoration:line-through;text-decoration-color:rgba(198,40,40,.7);text-decoration-thickness:4px}
+table.t{width:100%;border-collapse:collapse;margin-top:10px}
+table.t td{padding:11px 10px;border-bottom:2px solid #d8cfbb;font:600 24px 'Inter';vertical-align:top}
+table.t td:first-child{font:800 22px 'JetBrains Mono',monospace;color:var(--ink);white-space:nowrap}
+table.t tr.hot td{background:#fbeec6}
+.list{margin-top:8px}.list div{font:700 30px/1.25 'Inter';color:var(--ink);padding:9px 0;border-bottom:2px solid #d8cfbb;display:flex;gap:18px}
+.list div span{font:800 24px 'JetBrains Mono',monospace;background:var(--honey);padding:2px 10px;height:fit-content}
+.needs{display:inline-block;background:var(--red);color:#fff;font:800 19px/1.3 'JetBrains Mono',monospace;padding:4px 10px;border-radius:3px;letter-spacing:.02em}
+.needs.blk{display:block;margin-top:14px}
+svg text{font-family:'Inter',sans-serif}
+/* stamps */
+.stamp{position:absolute;bottom:14px;right:20px;z-index:6;transform:rotate(-9deg) scale(2.6);opacity:0;
+ transition:transform .38s cubic-bezier(.3,1.6,.5,1),opacity .2s;border:5px double currentColor;padding:6px 14px 4px;text-align:center;
+ font:400 34px/1 'Special Elite',monospace;letter-spacing:.06em;background:rgba(247,243,234,.88);border-radius:4px}
+.stamp small{display:block;font:700 13px 'JetBrains Mono',monospace;letter-spacing:.1em;margin-top:5px}
+.stamp.measured{color:var(--measured)}.stamp.observed{color:var(--observed)}.stamp.assumed{color:var(--assumed)}.stamp.none{color:var(--red)}
+.ex.stamped .stamp{opacity:.95;transform:rotate(-9deg) scale(1)}
+/* strings */
+#strings{position:absolute;left:0;top:0;pointer-events:none;z-index:50;overflow:visible}
+#strings path{fill:none;stroke:#d8a531;stroke-width:4;filter:drop-shadow(0 3px 2px rgba(0,0,0,.5));transition:stroke-dashoffset 1.2s ease .35s}
+/* caption tape, outside the exhibits (max 8 words) */
+#cap{position:absolute;left:50%;bottom:4.2%;transform:translateX(-50%) rotate(-.6deg);background:#f2efe6;color:#111;
+ font-weight:900;letter-spacing:-.01em;padding:.35em .8em;box-shadow:0 8px 20px rgba(0,0,0,.5);white-space:nowrap;z-index:60}
+#cap:empty{opacity:0}
+/* presenter notes (N) */
+#notes{position:absolute;top:0;right:0;bottom:0;width:36%;background:rgba(8,12,10,.94);color:#e8eee9;padding:28px 30px;overflow:auto;
+ font:500 19px/1.5 'Inter';display:none;z-index:90;border-left:4px solid var(--honey)}
+#notes.on{display:block}
+#notes .t{font:800 15px 'JetBrains Mono',monospace;color:var(--honey);letter-spacing:.12em;margin-bottom:14px}
+#notes p{margin-bottom:12px}
+#notes .needs{font-size:14px}
+</style></head>
+<body>
+<div id="stage"><div id="board"><div class="ex paper hs" id="counts" style="--r:-0.56deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published counts</small></div><div class="id">Exhibit 0.2 · the inventory</div><div class="stat"><b>1</b><span>repo, 11 top-level areas</span><b>73</b><span>skill files, 8 activity folders</span><b>25</b><span>scripts, each states its limit</span><b>4</b><span>agents, all defensive</span></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex folder" id="title" style="--r:-1.12deg" data-tab="CASE FILE 11"><div class="pin"></div><div class="h xl">My whole Claude Code content system</div></div>
+<div class="ex paper hs" id="result" style="--r:0.48deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>Calendly export, 2026</small></div><div class="id">Exhibit 0.1 · the result</div><div class="big">150+</div><div class="lab">qualified booked calls for the agency in 2026</div><div class="src">the agency I run · total, no channel split</div></div>
+<div class="ex folder" id="s1" style="--r:-1.37deg" data-tab="EXHIBIT A"><div class="pin"></div><div class="h l">The skeleton</div></div>
+<div class="ex term hs" id="tree" style="--r:0.11deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>counted 2026-09-07</small></div><div class="bar"><i></i><i></i><i></i><span>repo tree, screen safe</span></div><div class="id">Exhibit A1</div><pre><b>agency-repo/</b>
+├── <b>skills/</b>            <em>73 files, split by activity</em>
+│   ├── content/  research/  ops/  miro/
+│   └── lead-gen/  youtube/  creative-strategy/  dm-setting/
+├── <b>.claude/agents/</b>    <em>4 installed agents</em>
+├── <b>ops/</b>
+│   ├── MAP.md          <em>the index</em>
+│   ├── CONVENTIONS.md  <em>nine rules</em>
+│   └── tools/          <em>25 scripts</em>
+├── research/  acquisition-calls/  outbound-calls/
+├── accounts/          <u>[REDACTED]</u>
+└── BACKLOG.md</pre><div class="src">the agency I run · account folders redacted</div></div>
+<div class="ex card hs" id="map" style="--r:-0.43deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>MAP.md</small></div><div class="id">Exhibit A2 · ops/MAP.md</div><div class="hand l">Route it, or it gets rebuilt.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="sop" style="--r:-1.41deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>MAP.md</small></div><div class="id">Exhibit A3 · incident</div><div class="h">An agent rebuilt an outbound SOP from scratch</div><div class="lab">time lost</div><span class="needs blk">[NEEDS: the 45 minutes, add to claims.md]</span><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="skills" style="--r:0.02deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published counts</small></div><div class="id">Exhibit A4 · skills/</div><div class="row"><div class="big m">73</div><div class="lab">files in 8 activity folders</div></div><div class="chips"><span class="chip">content</span><span class="chip">research</span><span class="chip">ops</span><span class="chip">miro</span><span class="chip">lead-gen</span><span class="chip">youtube</span><span class="chip">creative-strategy</span><span class="chip">dm-setting</span></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="client" style="--r:-1.48deg"><div class="pin"></div><div class="stamp assumed">ASSUMED<small>design rule, untested</small></div><div class="id">Exhibit A5 · before / after</div><div class="ba"><div><div class="k">BEFORE</div><div class="v">A folder per client</div><div class="lab">rots when the client leaves</div></div><div><div class="k">AFTER</div><div class="v">A folder per activity</div><div class="lab">survives every client</div></div></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex card hs" id="corpus" style="--r:-0.21deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>corpus file</small></div><div class="id">Exhibit A6 · x-articles/</div><div class="big m">41</div><div class="hand">real captures behind one evidence file</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex term hs" id="miro" style="--r:-1.38deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>2026-08-03/04</small></div><div class="bar"><i></i><i></i><i></i><span>miro/api-gotchas.md</span></div><div class="id">Exhibit A7</div><pre><b>200</b> items: edit and delete stop
+
+<b>20 of 37</b> items failed
+<u>one bad attribute</u>
+<em>no useful error</em></pre><div class="src">the agency I run · published</div></div>
+<div class="ex folder" id="s2" style="--r:-1.31deg" data-tab="EXHIBIT B"><div class="pin"></div><div class="h l">Every agent is a scar</div></div>
+<div class="ex card hs" id="perf" style="--r:-0.24deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="id">B1 · performance-loop</div><div class="hand">Monthly impressions fell 64%, June to August. Nobody saw it for two months.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex card hs" id="sweep" style="--r:1.05deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>incident log</small></div><div class="id">B2 · signal-sweep</div><div class="hand">A catch-up missed one group DM. It held the number that mattered.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex card hs" id="qa" style="--r:-1.2deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="id">B3 · board-qa</div><div class="hand">Boards went out too full to record. Now: 15 checks, the first 4 block.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex card hs" id="ylm" style="--r:-0.89deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>agent file</small></div><div class="id">B4 · youtube-lead-magnet</div><div class="hand">Packaging drift. Rule one: run the existing skill.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="drop" style="--r:0.41deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="id">Exhibit B5 · worked example: the drop</div><div class="row" style="align-items:center;gap:34px"><svg width="520" height="250" viewBox="0 0 520 250"><line x1="20" y1="226" x2="500" y2="226" stroke="#1B4332" stroke-width="3"/><rect x="70" y="20" width="150" height="206" fill="#9fb3a7" stroke="#1B4332" stroke-width="3"/><rect x="300" y="152" width="150" height="74" fill="#C62828" stroke="#1B4332" stroke-width="3"/><text x="145" y="248" font-size="20" font-weight="700" text-anchor="middle" fill="#2f3a33">June</text><text x="375" y="248" font-size="20" font-weight="700" text-anchor="middle" fill="#2f3a33">August</text><text x="375" y="134" font-size="44" font-weight="900" text-anchor="middle" fill="#C62828">-64%</text></svg><div class="h">Two months before anyone looked.</div></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="ba2" style="--r:1.43deg"><div class="pin"></div><div class="stamp assumed">ASSUMED<small>no catch logged yet</small></div><div class="id">Exhibit B6 · before / after</div><div class="ba"><div><div class="k">BEFORE</div><div class="v">A human checks when he remembers</div></div><div><div class="k">AFTER</div><div class="v">An agent reads the numbers every run</div></div></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="defensive" style="--r:0.25deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="id">Exhibit B7 · the pattern</div><div class="stat"><b>4</b><span>agents installed</span><b>4</b><span>are defensive</span><b>0</b><span>reach out to a human</span></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex folder" id="s3" style="--r:-0.33deg" data-tab="EXHIBIT C"><div class="pin"></div><div class="h l">Every number has a receipt</div></div>
+<div class="ex term hs" id="tools" style="--r:1.52deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published count</small></div><div class="bar"><i></i><i></i><i></i><span>ls ops/tools</span></div><div class="id">Exhibit C1</div><pre><b>ops/tools/</b>   <em>25 scripts</em>
+  impressions-vs-calls.py
+  consolidate-exports.py
+  post-to-call.py
+  trace-bookings.py
+  call-structure.py
+  article-title-features.py
+  lane-tables.py
+  backlog-sync.py
+  build-dashboard.py
+  <em>...</em></pre><div class="src">the agency I run</div></div>
+<div class="ex term hs" id="doc" style="--r:-1.45deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="bar"><i></i><i></i><i></i><span>trace-bookings.py, line 1</span></div><div class="id">Exhibit C2</div><pre><em>"""</em>
+<b>Limit, read this first.</b>
+It measures ALL inbound,
+every account at once.
+
+  649 of 678 rows: one owner
+  673 of 678 rows: UTM empty
+<em>"""</em></pre><div class="src">the agency I run · Calendly export</div></div>
+<div class="ex paper hs" id="conv" style="--r:1.15deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>CONVENTIONS.md</small></div><div class="id">Exhibit C3 · 9 conventions, 4 carry the weight</div><div class="list"><div><span>1</span>Every claim carries an evidence tag</div><div><span>2</span>Every number traces to a script</div><div><span>3</span>Every script states its own limit</div><div><span>4</span>Decisions are dated, in the file they govern</div></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="backwards" style="--r:-0.67deg"><div class="pin"></div><div class="stamp measured">MEASURED<small>published</small></div><div class="id">Exhibit C4 · worked example: the claim that ran backwards</div><div class="hand" style="margin-bottom:16px">"The worked example is the section that converts."</div><svg width="1100" height="154" viewBox="0 0 1100 154"><text x="0" y="22" font-size="21" font-weight="700" fill="#2f3a33">the worked example section</text><rect x="0" y="32" width="241" height="34" fill="#9fb3a7" stroke="#1B4332" stroke-width="3"/><text x="0" y="96" font-size="21" font-weight="700" fill="#2f3a33">the winning section</text><rect x="0" y="106" width="1060" height="34" fill="#E9B949" stroke="#1B4332" stroke-width="3"/></svg><div class="row" style="justify-content:space-between"><span class="lab">60,000</span><span class="lab">264,000</span></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex paper hs" id="ba3" style="--r:-1.14deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>CONVENTIONS.md</small></div><div class="id">Exhibit C5 · before / after</div><div class="ba"><div><div class="k">BEFORE</div><div class="v">A number worked out in chat</div><div class="lab">gone at the next context clear</div></div><div><div class="k">AFTER</div><div class="v">A saved script that prints it</div><div class="lab">same number every rerun</div></div></div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex card hs" id="open" style="--r:-1.22deg"><div class="pin"></div><div class="stamp observed">OBSERVED<small>case still open</small></div><div class="id">Open case · next video</div><div class="hand l">Nothing in this repo books a call on its own.</div><div class="src">the agency I run · published 2026-09-10</div></div>
+<div class="ex folder" id="cta" style="--r:-0.61deg" data-tab="CLOSE THE FILE"><div class="pin"></div><div class="h l">Agency Booked Calls</div><div class="lab" style="font-size:34px;font-weight:800">Link in the description</div></div><svg id="strings"></svg></div><div id="cap"></div><div id="notes"></div></div>
+<script>
+const EX=[{"id": "counts", "col": 0, "span": 3, "clear": false, "dy": 60}, {"id": "title", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "result", "col": 6, "span": 3, "clear": false, "dy": 60}, {"id": "s1", "col": 0, "span": 3, "clear": false, "dy": 0}, {"id": "tree", "col": 0, "span": 2, "clear": false, "dy": 0}, {"id": "map", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "sop", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "skills", "col": 0, "span": 2, "clear": false, "dy": 0}, {"id": "client", "col": 0, "span": 2, "clear": false, "dy": 0}, {"id": "corpus", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "miro", "col": 2, "span": 1, "clear": false, "dy": 0}, {"id": "s2", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "perf", "col": 3, "span": 1, "clear": false, "dy": 0}, {"id": "sweep", "col": 4, "span": 1, "clear": false, "dy": 0}, {"id": "qa", "col": 5, "span": 1, "clear": false, "dy": 0}, {"id": "ylm", "col": 3, "span": 1, "clear": false, "dy": 0}, {"id": "drop", "col": 4, "span": 2, "clear": false, "dy": 0}, {"id": "ba2", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "defensive", "col": 3, "span": 3, "clear": false, "dy": 0}, {"id": "s3", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "tools", "col": 6, "span": 1, "clear": false, "dy": 0}, {"id": "doc", "col": 7, "span": 1, "clear": false, "dy": 0}, {"id": "conv", "col": 8, "span": 1, "clear": false, "dy": 0}, {"id": "backwards", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "ba3", "col": 6, "span": 3, "clear": false, "dy": 0}, {"id": "open", "col": 1, "span": 3, "clear": true, "dy": 0}, {"id": "cta", "col": 5, "span": 2, "clear": "same", "dy": 0}];
+const STR=[["a1", "tree", "map"], ["a2", "map", "sop"], ["a3", "tree", "skills"], ["a4", "skills", "client"], ["a5", "skills", "corpus"], ["a6", "skills", "miro"], ["b1", "perf", "drop"], ["b2", "drop", "ba2"], ["b3", "sweep", "defensive"], ["b4", "qa", "defensive"], ["b5", "ylm", "defensive"], ["b6", "perf", "defensive"], ["c1", "tools", "doc"], ["c2", "conv", "backwards"], ["c3", "backwards", "ba3"], ["c4", "doc", "conv"], ["x1", "defensive", "open"], ["x2", "result", "counts"]];
+const FR=[{"focus": "all", "d": 8, "say": ["(Flythrough of the whole board, slow.) This is my whole Claude Code content system, pinned up like a case file.", "Every card on this board is a real file, and every stamp tells you how sure I am about it."], "cap": "", "stamp": [], "string": [], "t": "0:00"}, {"focus": ["result"], "d": 8, "say": ["Start with the result. Over 150 qualified booked calls for the agency I run, in 2026.", "That is the Calendly total. I am not splitting it by channel, because the data cannot carry that split. I'll show you why later."], "cap": "The result first", "stamp": ["result"], "string": [], "t": "0:08"}, {"focus": ["counts"], "d": 7, "say": ["What sits behind it is one repo. 73 skill files, 25 scripts, 4 agents.", "By the end you'll know how to build the same skeleton and keep it honest."], "cap": "One repo behind it", "stamp": ["counts"], "string": ["x2"], "t": "0:16"}, {"focus": ["s1", "s2", "s3"], "d": 7, "say": ["Today we go over three exhibits. The skeleton. The agents, and the incident behind each one. And the receipts: how every number traces back to a script."], "cap": "Three exhibits today", "stamp": [], "string": [], "t": "0:23"}, {"focus": ["s1", "tree"], "d": 60, "say": ["Exhibit A, the skeleton. One repo, eleven top-level areas, and all of it indexed in one file.", "Skills, agents, ops, research, and the account folders, which I redacted. You'll never see a client name on this board.", "Read the comments on the right. Every area has an owner and a reason to exist."], "cap": "Exhibit A: the skeleton", "stamp": ["tree"], "string": [], "t": "0:30"}, {"focus": ["map"], "d": 55, "say": ["The rule that holds it together lives in MAP.md. Route it, or it gets rebuilt.", "If a file exists and the map does not point at it, the next agent cannot find it, so it builds the thing again."], "cap": "One rule holds it together", "stamp": ["map"], "string": ["a1"], "t": "1:30"}, {"focus": ["map", "sop"], "d": 85, "say": ["Worked example. An agent rebuilt an outbound SOP from scratch, because the original was not in the map.", "The time lost on that is <span class=\"needs\">[NEEDS: the 45 minutes from MAP.md, add to claims.md]</span>. Say the figure only after it is in claims.md.", "That day the rule went into the map. One line, and the rebuild has a place to stop."], "cap": "Worked example: the rebuilt SOP", "stamp": ["sop"], "string": ["a2"], "t": "2:25"}, {"focus": ["skills"], "d": 65, "say": ["Now the skills folder. 73 files across eight folders: content, research, ops, miro, lead-gen, youtube, creative-strategy, dm-setting.", "Each name is an activity. Read it again. None of them is a client."], "cap": "Split by activity", "stamp": ["skills"], "string": ["a3"], "t": "3:50"}, {"focus": ["client"], "d": 70, "say": ["Before and after. Before, a folder per client. When the client leaves, the folder rots, and the same skill gets rebuilt inside the next client.", "After, a folder per activity. A content skill survives every client.", "I stamped this one assumed. It is a design rule. I have not measured the rot."], "cap": "Before and after", "stamp": ["client"], "string": ["a4"], "t": "4:55"}, {"focus": ["corpus", "miro"], "d": 70, "say": ["Two folders worth opening. The article skills read from one evidence file, built from 41 real captures.", "And the miro folder has a gotchas file that exists only because things broke. Past 200 items you cannot edit or delete through the API. One bad attribute failed 20 of 37 items and the error named none of them."], "cap": "The folders built from breakage", "stamp": ["corpus", "miro"], "string": ["a5", "a6"], "t": "6:05"}, {"focus": ["s2", "perf", "sweep", "qa", "ylm"], "d": 55, "say": ["Exhibit B. The four agents. An agent runs without being asked, and every one of these exists because something got missed."], "cap": "Exhibit B: every agent is a scar", "stamp": [], "string": [], "t": "7:15"}, {"focus": ["perf"], "d": 60, "say": ["performance-loop. Monthly impressions fell 64% between June and August 2026, and nobody noticed for two months."], "cap": "Scar one", "stamp": ["perf"], "string": [], "t": "8:10"}, {"focus": ["drop"], "d": 85, "say": ["Worked example. Here is the drop. June on the left, August on the right, minus 64%.", "Nobody noticed for two months. A drop like that becomes a quarter if nothing is watching."], "cap": "Worked example: the drop", "stamp": ["drop"], "string": ["b1"], "t": "9:10"}, {"focus": ["ba2"], "d": 65, "say": ["Before: a human checks the numbers when he remembers. After: an agent reads them on every run.", "I stamped the after as assumed. The agent is installed. I have no logged catch yet to show you."], "cap": "Before and after", "stamp": ["ba2"], "string": ["b2"], "t": "10:35"}, {"focus": ["sweep"], "d": 60, "say": ["signal-sweep. A catch-up missed one group DM, and that DM held the number that mattered. It also served an auto-generated queue as if it were the priorities.", "Now an agent reads every channel before anybody tells me what was asked."], "cap": "Scar two", "stamp": ["sweep"], "string": [], "t": "11:40"}, {"focus": ["qa"], "d": 55, "say": ["board-qa. Boards went out too full to record. The gate answers one question with fifteen checks, and the first four stop the run."], "cap": "Scar three", "stamp": ["qa"], "string": [], "t": "12:40"}, {"focus": ["ylm"], "d": 50, "say": ["youtube-lead-magnet. Packaging drifted from video to video. Its first instruction is to run the existing skill and invent no rules."], "cap": "Scar four", "stamp": ["ylm"], "string": [], "t": "13:35"}, {"focus": ["defensive"], "d": 55, "say": ["Pull the strings together and you see the pattern. Four agents, four defensive. Zero of them reach out to a human."], "cap": "All four play defence", "stamp": ["defensive"], "string": ["b3", "b4", "b5", "b6"], "t": "14:25"}, {"focus": ["s3", "tools"], "d": 60, "say": ["Exhibit C, the receipts. 25 scripts in ops/tools.", "The rule: the analysis that produced a number gets saved as a script. A calculation in a chat dies at the next context clear."], "cap": "Exhibit C: the receipts", "stamp": ["tools"], "string": [], "t": "15:20"}, {"focus": ["doc"], "d": 70, "say": ["And every script states its own limit in its first lines. This one looked like it measured one account's bookings.", "It measures all inbound, every account at once. 649 of 678 Calendly rows sit under one owner, and the UTM field is empty on 673. So the docstring says it in capitals."], "cap": "Each script states its limit", "stamp": ["doc"], "string": ["c1"], "t": "16:20"}, {"focus": ["conv"], "d": 65, "say": ["Nine conventions. Four carry the weight: an evidence tag on every claim, a script behind every number, a limit in every script, and dated decisions in the file they govern."], "cap": "Four rules carry the weight", "stamp": ["conv"], "string": ["c4"], "t": "17:30"}, {"focus": ["backwards"], "d": 85, "say": ["Worked example. A skill said the worked example was the section that converts. It felt obviously true.", "We measured it. The worked example section did 60,000. The winning section did 264,000. The claim ran backwards.", "That is why every claim on this board carries a stamp."], "cap": "Worked example: it ran backwards", "stamp": ["backwards"], "string": ["c2"], "t": "18:35"}, {"focus": ["ba3"], "d": 60, "say": ["Before: a number worked out in chat, gone at the next context clear, then re-derived a bit differently, and two numbers disagree in a meeting.", "After: a saved script that prints the same number every rerun."], "cap": "Before and after", "stamp": ["ba3"], "string": ["c3"], "t": "20:00"}, {"focus": ["open"], "d": 55, "say": ["The open case. Nothing in this repo books a call on its own. Every agent catches, gates or packages.", "The agent that causes a call is the next video."], "cap": "What it still cannot do", "stamp": ["open"], "string": ["x1"], "t": "21:00"}, {"focus": "all", "d": 25, "say": ["Pull back. The skeleton, the scars, the receipts. Every string ends on a file you can open."], "cap": "Three exhibits, one repo", "stamp": [], "string": [], "t": "21:55"}, {"focus": ["cta"], "d": 20, "say": ["If you run an established agency and want this installed for your own inbound, the link is in the description. The offer is called Agency Booked Calls."], "cap": "Link in the description", "stamp": [], "string": [], "t": "22:20"}];
+
+const W0=5652;
+const board=document.getElementById('board'),stage=document.getElementById('stage');
+const cap=document.getElementById('cap'),notes=document.getElementById('notes');
+const svg=document.getElementById('strings');
+let cur=0,SW=0,SH=0;
+function layout(){
+  const cols=new Array(9).fill(90+40);
+  EX.forEach(e=>{
+    const el=document.getElementById(e.id);
+    el.style.width=(e.span*560+(e.span-1)*54)+'px';
+    let y;
+    if(e.clear==='same'){y=window.LASTY;}else if(e.clear){y=Math.max(...cols);window.LASTY=y;}else{y=Math.max(...cols.slice(e.col,e.col+e.span));}
+    y+=(e.dy||0);
+    const x=90+e.col*(560+54);
+    el.style.left=x+'px';el.style.top=y+'px';
+    const h=el.offsetHeight;
+    if(e.clear){for(let i=0;i<cols.length;i++)cols[i]=y+h+54+30;}
+    else for(let i=e.col;i<e.col+e.span;i++)cols[i]=y+h+54+30;
+  });
+  const H=Math.max(...cols)+40;
+  board.style.width=W0+'px';board.style.height=H+'px';
+  svg.setAttribute('width',W0);svg.setAttribute('height',H);
+  window.BH=H;
+  // strings, pin to pin
+  STR.forEach(s=>{
+    const a=document.getElementById(s[1]),b=document.getElementById(s[2]);
+    const ax=a.offsetLeft+a.offsetWidth/2,ay=a.offsetTop,bx=b.offsetLeft+b.offsetWidth/2,by=b.offsetTop;
+    const mx=(ax+bx)/2,my=(ay+by)/2+Math.min(160,Math.hypot(bx-ax,by-ay)*.12);
+    let p=document.getElementById('s_'+s[0]);
+    if(!p){p=document.createElementNS('http://www.w3.org/2000/svg','path');p.id='s_'+s[0];svg.appendChild(p);}
+    p.setAttribute('d',`M${ax} ${ay} Q${mx} ${my} ${bx} ${by}`);
+    const L=p.getTotalLength();p.style.strokeDasharray=L;p.dataset.len=L;
+  });
+}
+function fit(){
+  const vw=innerWidth,vh=innerHeight;
+  SW=Math.min(vw,vh*16/9);SH=SW*9/16;
+  stage.style.width=SW+'px';stage.style.height=SH+'px';
+  stage.style.left=(vw-SW)/2+'px';stage.style.top=(vh-SH)/2+'px';
+  cap.style.fontSize=(SW*0.026)+'px';
+}
+function rectOf(ids){
+  if(ids==='all')return{x:0,y:0,w:W0,h:window.BH,pad:0};
+  let x1=1e9,y1=1e9,x2=-1e9,y2=-1e9;
+  ids.forEach(id=>{const el=document.getElementById(id);x1=Math.min(x1,el.offsetLeft);y1=Math.min(y1,el.offsetTop-20);
+    x2=Math.max(x2,el.offsetLeft+el.offsetWidth);y2=Math.max(y2,el.offsetTop+el.offsetHeight);});
+  return{x:x1,y:y1,w:x2-x1,h:y2-y1,pad:70};
+}
+function go(i,instant){
+  cur=Math.max(0,Math.min(FR.length-1,i));
+  const f=FR[cur];
+  const r=rectOf(f.focus);
+  const capH=f.cap?SH*0.12:0;
+  const availH=SH-capH*(r.pad?1:0);
+  let s=Math.min(SW/(r.w+2*r.pad*(SW/1600)),availH/(r.h+2*r.pad*(SH/900)));
+  if(f.focus!=='all')s=Math.min(s,SW/1600*1.55);
+  const tx=SW/2-s*(r.x+r.w/2),ty=availH/2-s*(r.y+r.h/2);
+  if(instant)board.classList.add('instant');
+  board.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
+  const st=new Set(),sg=new Set();
+  for(let k=0;k<=cur;k++){(FR[k].stamp||[]).forEach(x=>st.add(x));(FR[k].string||[]).forEach(x=>sg.add(x));}
+  EX.forEach(e=>document.getElementById(e.id).classList.toggle('stamped',st.has(e.id)));
+  STR.forEach(s=>{const p=document.getElementById('s_'+s[0]);p.style.strokeDashoffset=sg.has(s[0])?0:p.dataset.len;});
+  cap.textContent=f.cap||'';
+  notes.innerHTML=`<div class="t">FRAME ${cur+1} / ${FR.length} · ${f.t} · ${f.d}s</div>`+f.say.map(p=>`<p>${p}</p>`).join('');
+  history.replaceState(null,'','#'+(cur+1));
+  if(instant){board.offsetHeight;requestAnimationFrame(()=>board.classList.remove('instant'));}
+}
+addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(cur+1);}
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1);}
+  else if(e.key==='n'||e.key==='N'){notes.classList.toggle('on');}
+  else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  else if(e.key==='Home'){go(0);}
+});
+addEventListener('resize',()=>{fit();go(cur,true);});
+function start(){fit();layout();const h=parseInt(location.hash.slice(1));go(isNaN(h)?0:h-1,true);}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(start);
+
+</script>
+<style>
+#ytbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:6px;
+ background:rgba(17,17,17,.82);color:#fff;border-radius:999px;padding:6px 8px;font:600 13px/1 -apple-system,'Helvetica Neue',Arial,sans-serif;
+ box-shadow:0 6px 24px rgba(0,0,0,.25);user-select:none;-webkit-user-select:none}
+#ytbar.off{display:none}
+#ytbar button{all:unset;cursor:pointer;padding:7px 11px;border-radius:999px;color:#fff;font:inherit}
+#ytbar button:hover{background:rgba(255,255,255,.16)}
+#ytbar .ct{min-width:64px;text-align:center;font-variant-numeric:tabular-nums}
+#ytbar .hk{opacity:.55;font-weight:500;padding:0 6px;font-size:12px}
+#ytlist{position:fixed;left:50%;bottom:62px;transform:translateX(-50%);z-index:2147483000;width:min(560px,92vw);max-height:60vh;overflow:auto;
+ background:rgba(17,17,17,.94);color:#fff;border-radius:14px;padding:6px;font:500 13px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;
+ box-shadow:0 10px 30px rgba(0,0,0,.35);display:none}
+#ytlist.on{display:block}
+#ytlist div{padding:7px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ytlist div:hover{background:rgba(255,255,255,.14)}
+#ytlist div.cur{background:#F3E3A3;color:#111}
+#ytlist b{display:inline-block;min-width:34px;font-variant-numeric:tabular-nums}
+</style>
+<script>
+(function(){
+const NAV={count:()=>FR.length,index:()=>cur,go:n=>go(n),next:()=>go(cur+1),prev:()=>go(cur-1),label:k=>FR[k].t+' · '+(FR[k].cap||'')};
+const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;/gi,' ').replace(/\s+/g,' ').trim();
+const bar=document.createElement('div');bar.id='ytbar';
+bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
+ '<button data-a="next" title="Next (Right arrow or Space)">&#9654;</button><button data-a="list" title="Frame list">Frames</button>'+
+ '<span class="hk">H hide · N notes · F full</span>';
+const list=document.createElement('div');list.id='ytlist';
+document.body.appendChild(list);document.body.appendChild(bar);
+const ct=bar.querySelector('.ct');
+let hidden=/HeadlessChrome/.test(navigator.userAgent)||/[?&]static/.test(location.search);
+try{const v=localStorage.getItem('ytbar');if(v!==null&&!hidden)hidden=v==='off';}catch(e){}
+function paint(){bar.classList.toggle('off',hidden);if(hidden)list.classList.remove('on');}
+function fill(){const n=NAV.count(),c=NAV.index();let h='';
+ for(let k=0;k<n;k++){h+='<div data-k="'+k+'"'+(k===c?' class="cur"':'')+'><b>'+(k+1)+'</b> '+strip(NAV.label(k))+'</div>';}
+ list.innerHTML=h;}
+let last=-1;
+function sync(){const c=NAV.index(),n=NAV.count();if(c===last)return;last=c;ct.textContent=(c+1)+' / '+n;
+ if(list.classList.contains('on'))fill();}
+setInterval(sync,120);
+// Keep focus on the document: a click on the bar never focuses a control.
+[bar,list].forEach(el=>{el.addEventListener('mousedown',e=>e.preventDefault());
+ el.addEventListener('click',e=>{e.stopPropagation();});});
+bar.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const a=b.dataset.a;
+ if(a==='prev')NAV.prev();else if(a==='next')NAV.next();
+ else if(a==='list'){list.classList.toggle('on');if(list.classList.contains('on')){fill();const cur=list.querySelector('.cur');if(cur)cur.scrollIntoView({block:'center'});}}
+ if(document.activeElement&&document.activeElement!==document.body)document.activeElement.blur();sync();});
+list.addEventListener('click',e=>{const d=e.target.closest('[data-k]');if(!d)return;NAV.go(+d.dataset.k);list.classList.remove('on');
+ if(document.activeElement&&document.activeElement!==document.body)document.activeElement.blur();sync();});
+// If anything else took focus (a link, the list), give it back before the format's key handler runs.
+addEventListener('keydown',e=>{const a=document.activeElement;
+ if(a&&a!==document.body&&a!==document.documentElement&&!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)&&!a.isContentEditable)a.blur();
+ if(e.key==='h'||e.key==='H'){hidden=!hidden;try{localStorage.setItem('ytbar',hidden?'off':'on');}catch(_){}paint();}
+ else if(e.key==='Escape'){list.classList.remove('on');}},true);
+// #N in the address bar jumps to frame N.
+addEventListener('hashchange',()=>{const m=location.hash.match(/\d+/);if(!m)return;const k=parseInt(m[0],10)-1;
+ if(k>=0&&k<NAV.count()&&k!==NAV.index())NAV.go(k);});
+paint();sync();
+})();
+</script>
+</body></html>

@@ -1,6 +1,8 @@
 # CLAUDE.md: mauro-os
 
 > This is the brain of Mauro's brand operating system. Read it at the start of every session. It defines who Mauro is, who he serves, what he believes, how to route requests, and what good output looks like.
+>
+> **Session start:** read `BACKLOG.md`, then `private/system/ROADMAP.md` if it exists (local only, gitignored). The roadmap holds the direction and the lanes; only the Build lane gets the daily 10:00 to 11:30 block. Monday loop: `/gc-monday`. Life interview: `/life-interview`.
 
 ---
 
@@ -170,6 +172,15 @@ Full guide in `brand/voice.md`. The non-negotiables:
 - **Ask Mauro for audio, not typed answers.** When a brief, a script or a skill needs input only he has, send one consolidated question list and ask for a single long voice note. Set 2026-09-21: in audio he covers what he thinks matters instead of answering the question as asked. Transcribe it and save it to `research/transcripts/maurojpelle/` before using it. Draft an answer to every question yourself first, sourced and flagged, so he corrects instead of writing.
 - **Every markdown file Mauro sends gets the full three-part package.** Default deliverable, no asking first: (1) an X article built from it, (2) at least 10 X posts off the same source, each one a hook line plus bullet points, (3) a cover image prompt. Route the article through `skills/content/x-articles-POINTER.md` when `growthub-os` is on the machine, otherwise `skills/content/x-article-creator.md`. Posts follow `skills/content/short-form/short-form-from-long-content.md`, ignoring its 3-5 cap. Cover prompt uses the doodle style in `x-article-creator.md` (black ink line art, `#F7F3EA` cream ground, `#52B788` sage accents, 5:2). All three go to the `gate` agent before Mauro sees them. If the file is clearly not article material (an analytics export, a config, a half-written skill), say so in one line and ask before spending the work. Set 2026-10-01.
 - **Learning protocol.** When Mauro corrects something, log the correction and the new rule, and apply it automatically next time.
+
+---
+
+## 8. REVIEW QUEUE
+
+Every batch of generated content ends in the review queue: load the global `review-queue` skill (`~/.claude/skills/review-queue/SKILL.md`) when Mauro says "review queue", "visualize everything" or "what did you generate", or when a batch is done. It renders one card per post in `~/review-queue/index.html` (outside this repo, because it mixes Ghosted Calls and Growthub), and Mauro pastes his decisions back.
+
+**Morning page.** When Mauro says "morning page", "start my day" or "what's today", load the global `morning-page` skill (`~/.claude/skills/morning-page/SKILL.md`).
+It builds `~/morning/index.html` (calendar, posting grid, waiting items, replies, numbers) and reads Notion and Calendar only, never writes them.
 
 ---
 

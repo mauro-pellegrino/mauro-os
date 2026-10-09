@@ -140,6 +140,8 @@ The four things that clear the bar, in order of value:
 
 **The test before shipping any magnet:** if someone read the whole thing and did nothing differently tomorrow, it failed, regardless of how good the writing was.
 
+**The viability test, before a Claude tool becomes a magnet.** Run it once from a clean account with no access to our repos or sheets. If it only works inside our system, it is an internal tool, not a magnet. Say what the reader gets that a tool we run for them would not (review 2026-10-08 GC #51) [metric: first-pass approval rate]
+
 ### The fill-in page is mandatory and its position is fixed
 
 Added 20 Aug 2026 after a solo build test found the canonical structure could not produce one.

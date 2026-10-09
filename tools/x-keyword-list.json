@@ -1,0 +1,511 @@
+{
+ "_about": "Keyword list per X account for tools/x-keyword-tracker.py. Seeded 2026-10-08: track = top reach lifts from tools/x-keywords.py (original posts since 1 Jun 2026; CTA-only tokens such as 'file', 'built file' and one hiring post left out); Mauro also gets ICP terms from brand/audience.md (listed in 'icp'). seed = [posts, lift, resource_only] since 1 Jun at seed time; null = no post since 1 Jun. Edit the lists by hand; the tracker flags what to add or drop each Monday.",
+ "_seeded": "2026-10-08",
+ "Lorenzo": {
+  "track": [
+   "claude insane",
+   "prompts",
+   "prompt",
+   "brief",
+   "claude",
+   "system",
+   "vsls",
+   "story",
+   "creative strategy",
+   "strategy",
+   "process",
+   "examples",
+   "native",
+   "curiosity",
+   "meta spend",
+   "managed meta",
+   "creative diversity",
+   "workflow",
+   "structures",
+   "authority figure",
+   "look ads",
+   "mini-guide",
+   "crushing",
+   "build",
+   "built"
+  ],
+  "avoid": [],
+  "seed": {
+   "claude insane": [
+    9,
+    10.08,
+    true
+   ],
+   "prompts": [
+    13,
+    9.02,
+    false
+   ],
+   "prompt": [
+    8,
+    2.41,
+    true
+   ],
+   "brief": [
+    6,
+    5.46,
+    false
+   ],
+   "claude": [
+    22,
+    5.3,
+    false
+   ],
+   "system": [
+    14,
+    3.42,
+    false
+   ],
+   "vsls": [
+    6,
+    3.32,
+    false
+   ],
+   "story": [
+    7,
+    3.25,
+    false
+   ],
+   "creative strategy": [
+    19,
+    2.48,
+    false
+   ],
+   "strategy": [
+    21,
+    2.48,
+    false
+   ],
+   "process": [
+    12,
+    2.43,
+    false
+   ],
+   "examples": [
+    11,
+    2.42,
+    false
+   ],
+   "native": [
+    9,
+    2.37,
+    false
+   ],
+   "curiosity": [
+    6,
+    2.38,
+    false
+   ],
+   "meta spend": [
+    11,
+    2.26,
+    false
+   ],
+   "managed meta": [
+    6,
+    2.14,
+    false
+   ],
+   "creative diversity": [
+    6,
+    2.15,
+    false
+   ],
+   "workflow": [
+    8,
+    2.14,
+    false
+   ],
+   "structures": [
+    7,
+    2.52,
+    false
+   ],
+   "authority figure": [
+    6,
+    2.43,
+    false
+   ],
+   "look ads": [
+    9,
+    2.54,
+    false
+   ],
+   "mini-guide": [
+    9,
+    2.42,
+    true
+   ],
+   "crushing": [
+    9,
+    2.19,
+    false
+   ],
+   "build": [
+    12,
+    2.49,
+    false
+   ],
+   "built": [
+    18,
+    2.47,
+    false
+   ]
+  }
+ },
+ "Bogdan": {
+  "track": [
+   "insane ad",
+   "claude insane",
+   "prompts",
+   "prompt",
+   "examples",
+   "mini-guide",
+   "workflow",
+   "exact",
+   "system",
+   "brief",
+   "analysis",
+   "claude",
+   "ads crushing",
+   "andromeda",
+   "authority",
+   "creative diversity",
+   "creative strategy",
+   "scripts",
+   "meta",
+   "supplement",
+   "pain",
+   "editing",
+   "top spenders",
+   "built",
+   "footage"
+  ],
+  "avoid": [
+   "transcripts"
+  ],
+  "seed": {
+   "insane ad": [
+    6,
+    11.68,
+    false
+   ],
+   "claude insane": [
+    11,
+    10.08,
+    true
+   ],
+   "prompts": [
+    14,
+    9.92,
+    false
+   ],
+   "prompt": [
+    9,
+    2.01,
+    false
+   ],
+   "examples": [
+    6,
+    9.3,
+    true
+   ],
+   "mini-guide": [
+    6,
+    7.66,
+    true
+   ],
+   "workflow": [
+    6,
+    6.21,
+    false
+   ],
+   "exact": [
+    7,
+    4.9,
+    false
+   ],
+   "system": [
+    12,
+    4.06,
+    false
+   ],
+   "brief": [
+    6,
+    3.66,
+    false
+   ],
+   "analysis": [
+    6,
+    3.56,
+    false
+   ],
+   "claude": [
+    36,
+    2.68,
+    false
+   ],
+   "ads crushing": [
+    6,
+    2.54,
+    false
+   ],
+   "andromeda": [
+    11,
+    2.42,
+    false
+   ],
+   "authority": [
+    10,
+    2.38,
+    false
+   ],
+   "creative diversity": [
+    6,
+    2.34,
+    false
+   ],
+   "creative strategy": [
+    11,
+    2.21,
+    false
+   ],
+   "scripts": [
+    10,
+    2.17,
+    false
+   ],
+   "meta": [
+    28,
+    2.15,
+    false
+   ],
+   "supplement": [
+    9,
+    2.15,
+    false
+   ],
+   "pain": [
+    7,
+    2.15,
+    false
+   ],
+   "editing": [
+    13,
+    2.06,
+    false
+   ],
+   "top spenders": [
+    7,
+    1.77,
+    false
+   ],
+   "built": [
+    15,
+    5.67,
+    false
+   ],
+   "footage": [
+    8,
+    2.06,
+    false
+   ],
+   "transcripts": [
+    6,
+    0.57,
+    false
+   ]
+  }
+ },
+ "Mauro": {
+  "track": [
+   "skills",
+   "prompts",
+   "article",
+   "articles",
+   "code",
+   "agents",
+   "claude code",
+   "claude",
+   "title",
+   "offer",
+   "transcript",
+   "minutes",
+   "pipeline",
+   "inbound",
+   "referrals",
+   "agency",
+   "personal brand",
+   "cringe",
+   "outreach",
+   "cold email",
+   "booked calls",
+   "authority",
+   "positioning",
+   "clients",
+   "system"
+  ],
+  "icp": [
+   "pipeline",
+   "inbound",
+   "referrals",
+   "agency",
+   "personal brand",
+   "cringe",
+   "outreach",
+   "cold email",
+   "booked calls",
+   "authority",
+   "positioning",
+   "clients",
+   "system"
+  ],
+  "avoid": [
+   "ai",
+   "voice",
+   "write",
+   "start"
+  ],
+  "seed": {
+   "skills": [
+    6,
+    2.44,
+    false
+   ],
+   "prompts": [
+    7,
+    2.04,
+    false
+   ],
+   "article": [
+    23,
+    1.83,
+    false
+   ],
+   "articles": [
+    16,
+    1.8,
+    false
+   ],
+   "code": [
+    13,
+    1.8,
+    false
+   ],
+   "agents": [
+    11,
+    1.64,
+    false
+   ],
+   "claude code": [
+    9,
+    1.43,
+    false
+   ],
+   "claude": [
+    18,
+    1.34,
+    false
+   ],
+   "title": [
+    8,
+    2.22,
+    false
+   ],
+   "offer": [
+    7,
+    1.62,
+    false
+   ],
+   "transcript": [
+    7,
+    1.31,
+    false
+   ],
+   "minutes": [
+    7,
+    1.64,
+    false
+   ],
+   "pipeline": [
+    6,
+    1.08,
+    false
+   ],
+   "inbound": [
+    4,
+    1.33,
+    false
+   ],
+   "referrals": null,
+   "agency": [
+    11,
+    0.91,
+    false
+   ],
+   "personal brand": [
+    1,
+    27.41,
+    false
+   ],
+   "cringe": null,
+   "outreach": null,
+   "cold email": [
+    1,
+    0.33,
+    false
+   ],
+   "booked calls": [
+    7,
+    0.73,
+    false
+   ],
+   "authority": [
+    1,
+    0.46,
+    false
+   ],
+   "positioning": [
+    2,
+    1.5,
+    false
+   ],
+   "clients": [
+    5,
+    0.19,
+    false
+   ],
+   "system": [
+    14,
+    0.5,
+    false
+   ],
+   "ai": [
+    38,
+    0.3,
+    false
+   ],
+   "voice": [
+    20,
+    0.3,
+    false
+   ],
+   "write": [
+    16,
+    0.31,
+    false
+   ],
+   "start": [
+    11,
+    0.2,
+    false
+   ]
+  }
+ },
+ "_plugs": "2026-10-09: plug words (portfolio, audit, link, bio, click, 'updated portfolio', 'creating clients', 'banger ads', 'check') removed from track and avoid. They came from the auto-plug self-replies, which sit below the main post and always get less reach. The tracker now leaves plugs out of the keyword medians and scores them apart by URL clicks and profile visits. Candidate new avoid words wait for Mauro's approval (review card keyword-plugs)."
+}

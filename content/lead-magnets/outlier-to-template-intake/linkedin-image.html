@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Intake Sheet Image</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;overflow:hidden;background:#F5EFE4;color:#171310;font-family:Inter,sans-serif;
+ background-image:radial-gradient(#17131018 1.4px,transparent 1.4px);background-size:20px 20px;padding:64px 64px 0}
+.top{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:22px;color:#6B6258}
+.top b{color:#8A5A12}
+h1{margin-top:34px;font-size:76px;line-height:1.02;font-weight:800;letter-spacing:-.025em}
+h1 span{background:linear-gradient(transparent 60%,#E0A854 60%)}
+.sub{margin-top:20px;font-size:28px;line-height:1.35;color:#3B342D;max-width:900px}
+.sheet{margin-top:34px;background:#FFFDF8;border:2px solid #171310;border-radius:18px;padding:22px 26px;box-shadow:10px 10px 0 #171310}
+.sheet .h{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:19px;color:#6B6258;border-bottom:2px solid #171310;padding-bottom:10px}
+.row{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:21px;padding:11px 0;border-bottom:1px solid #E2D8C6}
+.row .w{flex:1;color:#3B342D;font-family:Inter,sans-serif}
+.row .n{width:130px;text-align:right}.row .r{width:110px;text-align:right;font-weight:700}
+.row .v{width:200px;text-align:right}
+.chip{display:inline-block;border-radius:999px;padding:4px 12px;font-size:16px;font-weight:700}
+.s{background:#DDEFE3;color:#2F7D4F}.o{background:#FBEBD0;color:#B7791F}.m{background:#EEE7DA;color:#6B6258}.f{background:#F6DDD7;color:#A23B2A}
+.steps{margin-top:34px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.st{background:#FFFDF8;border:1.5px solid #171310;border-radius:12px;padding:14px 12px;font-size:20px;font-weight:600;line-height:1.2}
+.st i{display:block;font-style:normal;font-family:'JetBrains Mono',monospace;font-size:16px;color:#8A5A12;margin-bottom:6px}
+.ex{margin-top:30px;border-left:8px solid #E0A854;background:#FFFDF8;border-radius:0 14px 14px 0;padding:22px 26px;font-size:27px;line-height:1.35;color:#3B342D}.ex b{color:#171310}.eh{font-family:"JetBrains Mono",monospace;font-size:18px;color:#8A5A12;margin-bottom:8px;letter-spacing:.04em}
+.cta{position:absolute;left:0;right:0;bottom:0;height:200px;background:#171310;color:#F5EFE4;display:flex;align-items:center;justify-content:space-between;padding:0 64px}
+.cta .l{font-size:40px;font-weight:800;line-height:1.1}
+.cta .l span{color:#E0A854}
+.cta .k{font-family:'JetBrains Mono',monospace;font-size:52px;font-weight:700;background:#E0A854;color:#171310;padding:14px 26px;border-radius:12px}
+.cta .h{font-family:'JetBrains Mono',monospace;font-size:20px;color:#B9AF9F;margin-top:10px}
+</style></head><body>
+<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>free tool</span></div>
+<h1>The <span>Outlier-to-Template</span> Intake Sheet</h1>
+<div class="sub">Paste any account's last 10 to 20 posts. It scores each one against that account's own median and tells you which ones are worth turning into a template.</div>
+<div class="sheet">
+ <div class="h"><span>THE POST, AGAINST ITS OWN ACCOUNT</span><span>VERDICT</span></div>
+ <div class="row"><span class="w">10x their median or more</span><span class="v"><span class="chip s">STRONG</span></span></div>
+ <div class="row"><span class="w">3x their median or more</span><span class="v"><span class="chip o">OUTLIER</span></span></div>
+ <div class="row"><span class="w">under 3x</span><span class="v"><span class="chip m">normal</span></span></div>
+ <div class="row" style="border-bottom:0"><span class="w">3x or more, but under the floor</span><span class="v"><span class="chip f">under floor</span></span></div>
+</div>
+<div class="steps">
+ <div class="st"><i>01</i>Score vs their median</div>
+ <div class="st"><i>02</i>Capture checklist</div>
+ <div class="st"><i>03</i>Claude prompt, auto-written</div>
+ <div class="st"><i>04</i>Template record</div>
+ <div class="st"><i>05</i>Route + weekly pick</div>
+</div>
+<div class="ex"><div class="eh">WORKED EXAMPLE INSIDE · MY OWN ACCOUNT</div>15 posts, median 116 impressions. My best post of the month scored <b>20x</b> and still came out <b>under the floor</b>, so it doesn't become a template.</div>
+<div class="cta">
+ <div><div class="l">Comment <span>INTAKE</span><br>and I'll send it over</div><div class="h">free · fill-in tool · works for x and linkedin</div></div>
+ <div class="k">INTAKE</div>
+</div>
+</body></html>

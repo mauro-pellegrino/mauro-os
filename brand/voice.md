@@ -315,12 +315,14 @@ These sentence patterns appear repeatedly and should be replicated.
 
 **X / Twitter Articles:**
 Full long-form. Headers, bullets, embedded media. Hook hard in the first paragraph. Soft CTA at the end. Sign off with "Talk soon, Mauro."
+The title makes the system-level promise (claude, skills, agents, system, content) and keeps the narrow mechanism for the body. Leave "ai", "voice" and "write" out of titles, they run at about 0.3x for Mauro. Gate: G-019 (review 2026-10-08 v3 #26) [metric: first-pass approval rate]
 
 **X / Twitter Threads:**
 1/ style. Each tweet = one punchy idea. Build tension across tweets. Last tweet = CTA or key takeaway summary.
 
 **LinkedIn:**
 Same voice, slightly more professional framing. Can go deeper on agency/B2B angles. Storytelling hooks work well here. Less casual language.
+Personal and regular posts are about the whole content system and what it does for an agency owner, broad over narrow. One feature (the review page's cards, one button, one file) never carries a post alone, it is at most one bullet inside the system. Gate: G-018 (review 2026-10-08 v3 #24, #25) [metric: first-pass approval rate]
 
 **YouTube Scripts:**
 Conversational version of the same voice. Written to be spoken. Short sentences. No jargon that doesn't translate to audio. Hook in first 15 seconds.
@@ -455,6 +457,10 @@ Rules specific to this type, on top of the finishing rules below:
 8. **One idea per line,** blank line between most lines.
 9. **Loose grammar stays.** "I might try it yes." Don't tidy his phrasing into a correct sentence.
 10. **Casual approximations,** "about 4 months", not a precise figure he didn't say.
+11. **The last line is clear and simple.** It states the mechanism in plain words, for example "four articles in one style is all eggs in one basket, like one concept in creative testing". One sentence, no riddle. Gate: G-017 (review 2026-10-08 GC #42, #49) [metric: first-pass approval rate]
+12. **Every number says what it counts.** "0 of 185" alone fails; name the thing and why it matters to the reader. Gate: G-016 (review 2026-10-08 GC #50) [metric: first-pass approval rate]
+13. **Never reveal his private work time.** No minutes or hours worked, no week calendar figures, no planner he does not use. Gate: G-015 (review 2026-10-08 GC #44, #54, #55) [metric: first-pass approval rate]
+14. **No claim about his life he has not confirmed.** "Two businesses" was a guess. Check `brand/claims.md` or ask (review 2026-10-08 GC #42) [metric: first-pass approval rate]
 
 ## The 60-Second Pre-Publish Checklist
 

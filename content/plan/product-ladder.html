@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Ladder</title>
+<meta name="description" content="Offer decision of 9 Oct: the whole system (YouTube video to content, voice, company brain) free on Whop, a paid one-time Install Sprint, the room later, Agency Booked Calls on top. Inventory of both repos ranked by evidence and the 7-day action list.">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EFE4;--card:#FFFDF8;--ink:#171310;--body:#3B342D;--muted:#6B6258;--line:#E2D8C6;--accent:#E0A854;--accent-ink:#8A5A12;--accent-soft:#F7E6C8;--red:#B4442F;--red-soft:#F6DED6;--green:#3F7D4E;--green-soft:#DDEBDD}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.55;
+ background-image:radial-gradient(#17131012 1.2px,transparent 1.2px);background-size:18px 18px}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 16px 72px}
+.mono{font-family:'JetBrains Mono',monospace}
+.top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+.top b{color:var(--accent-ink)}
+.badge{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.badge span{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;background:var(--card)}
+.badge span.hot{background:var(--ink);color:var(--bg)}
+h1{font-size:60px;line-height:1.02;letter-spacing:-.03em;font-weight:800;margin-top:18px}
+h1 span{background:linear-gradient(transparent 62%,var(--accent) 62%)}
+.lede{font-size:21px;line-height:1.45;color:var(--body);margin-top:16px;max-width:860px}
+section{margin-top:60px}
+.k{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+h2{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
+h3{font-size:18px;line-height:1.25}
+p{color:var(--body);margin-bottom:10px}
+.sub{max-width:860px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.need{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;color:var(--red);background:var(--red-soft);border:1px dashed var(--red);border-radius:6px;padding:1px 7px;white-space:normal}
+.src{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+/* starting line */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat .v{font-size:36px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.stat .l{font-size:14px;color:var(--body);margin-top:4px}
+.stat.dark{background:var(--ink);border-color:var(--ink)}
+.stat.dark .v{color:var(--accent)}
+.stat.dark .l{color:#EDE6D8}
+.stat.dark .src{color:#9A9184}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.alloc h3{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.alloc .tot{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:6px 0 2px}
+.alloc .tot small{font-size:16px;color:var(--muted);font-weight:600}
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:2px solid var(--ink);margin:12px 0 10px}
+.bar div{display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--ink);border-right:2px solid var(--ink);white-space:nowrap;overflow:hidden}
+.bar div:last-child{border-right:0}
+.c1{background:var(--accent)}.c2{background:var(--accent-soft)}.c3{background:#D8CDB8}.c4{background:#C9B48F}.c5{background:#EFE3CC}.c6{background:#fff}
+.legend{list-style:none;font-size:14px}
+.legend li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);color:var(--body)}
+.legend li:last-child{border-bottom:0}
+.legend b{font-family:'JetBrains Mono',monospace;color:var(--ink);white-space:nowrap}
+.sw{display:inline-block;width:11px;height:11px;border:1.5px solid var(--ink);border-radius:3px;margin-right:7px;vertical-align:-1px}
+.clash{margin-top:14px;border-left:5px solid var(--red);background:var(--red-soft);padding:14px 18px;border-radius:0 10px 10px 0;font-weight:600;color:var(--ink)}
+/* weekly grid */
+.grid{display:grid;grid-template-columns:150px repeat(5,1fr);gap:6px;margin-top:8px}
+.grid .h{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 6px}
+.grid .rl{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;padding:10px 8px;background:var(--ink);color:var(--bg);border-radius:8px;display:flex;align-items:center}
+.cell{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:13.5px;line-height:1.35;color:var(--body)}
+.cell b{display:block;color:var(--ink);font-size:14px}
+.cell .m{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent-ink);margin-top:3px;display:block}
+.cell.hot{background:var(--accent-soft);border-color:var(--accent)}
+.cell.frz{background:repeating-linear-gradient(135deg,#EDE6D8,#EDE6D8 6px,#E4DACA 6px,#E4DACA 12px);color:var(--muted)}
+.span5{grid-column:span 5}
+/* io table */
+.io{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}
+.io th{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;text-align:left;color:var(--muted);padding:12px 14px;border-bottom:2px solid var(--ink);background:#FBF6EC}
+.io td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--body)}
+.io tr:last-child td{border-bottom:0}
+.io td:first-child{font-weight:700;color:var(--ink)}
+.io .arrow{font-family:'JetBrains Mono',monospace;color:var(--accent-ink);font-weight:700}
+/* funnel */
+.funnel{display:flex;flex-direction:column;align-items:center;gap:6px}
+.fs{border:2px solid var(--ink);border-radius:10px;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--card)}
+.fs .t{font-weight:700;white-space:nowrap}
+.fs .n{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;text-align:right;white-space:nowrap}
+.fs.a{background:var(--accent)}.fs.b{background:var(--accent-soft)}
+.farrow{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:13px;line-height:1}
+.two-funnels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two-funnels .card h3{margin-bottom:12px}
+/* indicators */
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.ind .stat .v{font-size:30px}
+.meter{height:12px;border:1.5px solid var(--ink);border-radius:99px;background:#fff;margin-top:10px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent)}
+.days{display:flex;gap:6px;align-items:flex-end;height:126px;margin-top:0}
+.days div{flex:1;line-height:16px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.days i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.days .line{position:relative}
+.dayswrap{position:relative;margin-top:22px}
+.dayswrap .tgt{position:absolute;left:0;right:0;border-top:2px dashed var(--red);font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--red);text-align:right;height:0;z-index:1}
+.dayswrap .tgt span{position:relative;top:-15px;background:var(--card);padding-left:4px}
+/* ladder */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end}
+.rung{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:16px;position:relative}
+.rung .when{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rung h3{margin:4px 0 8px;font-size:19px}
+.rung p{font-size:14px;margin-bottom:8px}
+.rung .unlock{border-top:1px dashed var(--ink);padding-top:8px;font-size:13.5px;color:var(--ink)}
+.rung .unlock b{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);display:block}
+.rung.now{background:var(--accent)}
+.r1{min-height:250px}.r2{min-height:300px}.r3{min-height:350px}.r4{min-height:400px}
+.rail{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.math{font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.8;background:#171310;color:#EDE6D8;border-radius:14px;padding:18px 22px}
+.math .c{color:#E0A854}.math .d{color:#9A9184}
+.pages{display:flex;gap:6px;margin-top:10px}
+.pages div{flex:1;border:1.5px solid var(--ink);border-radius:6px;padding:8px 6px;font-size:11.5px;text-align:center;font-family:'JetBrains Mono',monospace;line-height:1.3}
+.pages .y{background:var(--green-soft)}.pages .no{background:#fff;border-style:dashed;color:var(--muted)}
+/* JK */
+.jk{background:#171310;color:#EDE6D8;border-radius:18px;padding:30px 28px}
+.jk .k{color:var(--accent)}
+.jk h2{color:#FFFDF8}
+.jk p{color:#CFC6B6}
+.disclaim{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:4px 12px;margin-bottom:16px}
+.jkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.jkc{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:16px 18px}
+.jkc .q{font-size:16px;font-weight:700;color:#FFFDF8;line-height:1.35}
+.jkc .q::before{content:"\201C";color:var(--accent)}
+.jkc .q::after{content:"\201D";color:var(--accent)}
+.jkc .f{font-family:'JetBrains Mono',monospace;font-size:11px;color:#9A9184;margin:4px 0 10px}
+.jkc .br{font-size:14px;color:#E2D8C6;border-top:1px dashed #4A4036;padding-top:9px}
+.jkc .br b{color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+.jkc.ok .br b{color:#8FC79B}
+.verdict{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:14px}
+.first{background:var(--accent);color:var(--ink);border-radius:12px;padding:18px 20px}
+.first .k{color:var(--ink)}
+.first h3{font-size:22px;margin-bottom:6px}
+.first p{color:var(--ink)}
+.cut{background:#231E19;border:1px solid #3A322A;border-radius:12px;padding:18px 20px}
+.cut ul{list-style:none}
+.cut li{padding:5px 0 5px 22px;position:relative;color:#E2D8C6;font-size:14.5px;border-bottom:1px solid #3A322A}
+.cut li:last-child{border-bottom:0}
+.cut li::before{content:"x";position:absolute;left:4px;font-family:'JetBrains Mono',monospace;color:#E07A5F;font-weight:700}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+#end{height:1px}
+@media (max-width:900px){h1{font-size:42px}.lede{font-size:18px}h2{font-size:26px}
+ .stats,.ind{grid-template-columns:1fr 1fr}.split,.two-funnels,.jkgrid,.verdict,.rail{grid-template-columns:1fr}
+ .ladder{grid-template-columns:1fr 1fr}.r1,.r2,.r3,.r4{min-height:0}
+ .grid{grid-template-columns:1fr}.grid .h{display:none}.span5{grid-column:auto}
+ .io{display:block;overflow-x:auto}}
+
+.months{display:flex;gap:14px;align-items:flex-end;height:230px;margin-top:14px}
+.months div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.months i{display:block;width:100%;background:var(--accent);border:1.5px solid var(--ink);border-radius:4px 4px 0 0}
+.months .mv{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;margin-bottom:4px}
+.months .ml{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);text-align:center;margin-top:6px;line-height:1.3}
+.months em{font-style:normal;font-size:10.5px}
+.io.mini{font-size:14px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.tag.ok{background:var(--green-soft);color:var(--green);border:1px solid var(--green)}
+.tag.warn{background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent)}
+
+.aar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.aar ul{list-style:none;margin-top:8px}
+.aar li{font-size:14px;color:var(--body);padding:7px 0;border-bottom:1px solid var(--line)}
+.aar li:last-child{border-bottom:0}
+.aar li b{color:var(--ink)}
+.aar h3{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;font-size:14px;display:inline-block;padding:4px 10px;border-radius:6px}
+.aar h3.g{background:var(--green-soft);color:var(--green)}.aar h3.a{background:var(--accent-soft);color:var(--accent-ink)}.aar h3.r{background:var(--red-soft);color:var(--red)}
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mod{background:var(--card);border:2px solid var(--green);border-radius:12px;padding:14px 16px}
+.mod.w{border-color:var(--accent);border-style:dashed}
+.mod .n{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.mod h3{margin:4px 0 6px}
+.mod p{font-size:14px;margin-bottom:6px}
+.mod .f{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent-ink);margin-bottom:8px}
+.tag.gh{background:var(--red-soft);color:var(--red);border:1px solid var(--red)}
+.drop{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.stat .v{font-size:30px}
+@media (max-width:900px){.aar,.mods,.drop{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top"><span><b>@maurojpelle</b> · ghosted calls</span><span>internal · v2 built 2026-10-09 · round 4 #12, #13, #16, #17 · source: content/plan/offer-decision-2026-10-09.md</span></div>
+
+<div class="badge"><span class="hot">offer decision</span><span>free system</span><span>paid install</span><span>7-day action list</span></div>
+<h1>Give the whole system away. <span>Sell the install.</span></h1>
+<p class="lede">YouTube video to content, plus a voice file, plus a company brain, as free files on Whop. The paid part is access: one live install call and 14 days of review on the buyer's first run. Agency Booked Calls sits above it.</p>
+
+<section>
+  <div class="k">the decision, 5 lines</div>
+  <h2>What I picked, and why</h2>
+  <table class="io">
+    <tr><th>#</th><th>Pick</th><th>Why</th></tr>
+    <tr><td>1</td><td><b>Free:</b> the whole system as files (ZIP, setup guide, 10 Looms) on a free Whop product</td><td>Your call in #13. JK: files alone "rarely serve as an upsell" (servant.pdf p3). AAS: 452,600 free feed 3,700 paid</td></tr>
+    <tr><td>2</td><td><b>Paid, one-time: Install Sprint.</b> $197 founding, 10 seats, 5-day cart, then $297</td><td>Stranger test: the agency-owner persona pays $150 to $300 for the system plus a review of his first batch (intake-viability-v2.md)</td></tr>
+    <tr><td>3</td><td><b>No monthly room yet.</b> $49/mo only after the weekly drop runs 4 weeks</td><td>22 Aug rule: recurring needs modules arriving, corrections and a live element. None runs today</td></tr>
+    <tr><td>4</td><td><b>Launch size: single digits in cohort 1.</b> The free list is the audience</td><td>19 follows Jun to 5 Oct, median 84 impressions per post. Judgement from these numbers, not a forecast</td></tr>
+    <tr><td>5</td><td><b>The giveaway is the reach play.</b> The article IS the resource. Link in bio, no comment-to-DM</td><td>May resource posts: 878 follows (Lorenzo), 699 (Bogdan). Zero after the X bans</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">Open: <span class="need">[NEEDS: confirm $197 / $297 and 10 seats]</span> <span class="need">[NEEDS: name; working name "The Engine"]</span> <span class="need">[NEEDS: agency yes, action 1]</span></p>
+</section>
+
+<section>
+  <div class="k">the starting line</div>
+  <h2>Small audience, proven resource format</h2>
+  <div class="stats">
+    <div class="stat dark"><div class="v">19</div><div class="l">follows on @maurojpelle, Jun to 5 Oct (0, 1, 10, 5, 3 by month)</div><div class="src">tools/x-three-accounts.py</div></div>
+    <div class="stat"><div class="v">84</div><div class="l">median impressions per original post since 1 Jun. Best: 2,316 (the Monday analysis post, 5 Sep)</div><div class="src">tools/x-keywords.py, x-three-accounts.py</div></div>
+    <div class="stat"><div class="v">878 / 699</div><div class="l">follows from resource posts in May, Lorenzo (14 posts) and Bogdan (11). Growthub accounts, signal only</div><div class="src">tools/x-follow-drivers.py</div></div>
+    <div class="stat"><div class="v">2.4x / 2.0x</div><div class="l">your reach lift on "skills" and "prompts". "voice" sits at 0.3x</div><div class="src">tools/x-keywords.py</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="k">the ladder, v2</div>
+  <h2>Free system, paid install, room later, done-for-you on top</h2>
+  <p class="sub">Red tag = built on growthub-os files. You wrote all of them (only git author), and the agency yes is still open.</p>
+  <div class="ladder">
+    <div class="rung now r1"><div class="when">rung 0 · free on whop</div><h3>The whole system</h3><p>00 brain + Gate · 01 voice · 02 video to content · 03 lead magnets · 04 Monday read · outlier sheet</p><p><span class="tag gh">growthub files</span></p><div class="unlock"><b>job</b>build the list. Each free member is a cohort 1 prospect</div></div>
+    <div class="rung r2"><div class="when">rung 1 · one-time</div><h3>Install Sprint</h3><p>1 live group install call. 14 days: review of the first article + 10 posts and the filled brain.</p><div class="unlock"><b>price</b>$197 founding, 10 seats, 5-day cart, then $297</div></div>
+    <div class="rung r3"><div class="when">rung 2 · locked until 4 drops</div><h3>The room</h3><p>Weekly drop: Mon read, Wed template, Fri Gate catch. 1 call a month.</p><div class="unlock"><b>price</b>$49/mo, opens only after 4 weeks of drops in the free tier</div></div>
+    <div class="rung r4" style="background:var(--ink);color:var(--bg)"><div class="when" style="color:#9A9184">rung 3 · higher option</div><h3 style="color:var(--accent)">Agency Booked Calls</h3><p style="color:#CFC6B6">$200 a week x 4. Offered on day 14 of every Install Sprint buyer, with a cap and a date.</p><div class="unlock" style="border-color:#6B6258;color:#EDE6D8"><b>status</b>0 sends so far (BACKLOG)</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="k">what gets sent</div>
+  <h2>One ZIP, two install paths</h2>
+  <div class="split">
+    <div class="math">the-engine/<br>
+&nbsp;&nbsp;README.md <span class="d">setup guide, first run in 20 min</span><br>
+&nbsp;&nbsp;START-HERE.md <span class="d">the 5 stages</span><br>
+&nbsp;&nbsp;<span class="c">claude-code/</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;CLAUDE.md <span class="d">template</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;brain/ <span class="d">SOURCE-ORDER, claims-ledger, decisions-ledger, voice, bans, rejected/, approved/</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;skills/ <span class="d">00-source 01-voice 02-video-to-content 03-lead-magnet 04-measure</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;.claude/ <span class="d">agents/gate.md, hooks/voice-gate.py</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;tools/ <span class="d">staleness-check, monday-read, outlier sheet</span><br>
+&nbsp;&nbsp;<span class="c">claude-ai-project/</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;instructions.md, knowledge/, prompts.md<br>
+&nbsp;&nbsp;<span class="c">example/</span> <span class="d">one full run on your own recording</span></div>
+    <div>
+      <table class="io mini">
+        <tr><th>Version</th><th>Runs</th><th>Missing</th></tr>
+        <tr><td>Claude Code</td><td>Everything: hook, Gate, scripts</td><td></td></tr>
+        <tr><td>claude.ai Project</td><td>Brain, voice, skills as knowledge; Gate and Monday read as prompts. For the no-terminal owner (both test personas)</td><td>Hook, scripts, staleness check</td></tr>
+        <tr><td>Notion</td><td>Not designed</td><td><span class="need">[NEEDS: Mauro reverses 22 Aug "Notion is out"]</span></td></tr>
+      </table>
+      <p class="src" style="margin-top:8px">10 Looms: what you get, 2 installs, fill the brain, voice file, video to article, to 10 posts + LinkedIn, to a lead magnet, the Gate catch, the Monday read.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="k">per system</div>
+  <h2>What is missing before a stranger can run it</h2>
+  <table class="io">
+    <tr><th>System</th><th>Source today</th><th>Missing</th><th>Depends on</th></tr>
+    <tr><td>Company brain + Gate</td><td>growthub-os company-brain-install.md (247 lines), SOURCE-ORDER.md, staleness and decisions checks. mauro-os gate.md, voice-gate.py</td><td>5 blank templates, a "your 3 failures" prompt, a worked example on Ghosted Calls failures, hook without paths</td><td><span class="tag gh">growthub</span> method + tools · <span class="tag ok">clean</span> Gate</td></tr>
+    <tr><td>Voice</td><td>mauro-os voice-extraction.md (7 steps). growthub-os voice-extract.py</td><td>Worked example on a public account; browser version of the mining step</td><td><span class="tag gh">growthub</span> script · <span class="tag ok">clean</span> method</td></tr>
+    <tr><td>Video to content</td><td>growthub-os x-articles/ 01 to 07, short-form-from-long-content, video-long-form, linkedin-docs. mauro-os CLAUDE.md section 7 handoff</td><td><b>The orchestrator skill does not exist.</b> Write run.md: transcript in, article + 10 posts + LinkedIn + cover out, Gate last. Example on your Aug 20 lead magnet recording</td><td><span class="tag gh">growthub</span></td></tr>
+    <tr><td>Lead magnets</td><td>mauro-os module 01 (9 pages, 1,901 lines, Juan build-tested), lead-magnet/ (7 files)</td><td>Cut LeadShark and comment-to-DM (26 lines on 5 pages). Post or article is the resource. Label or rebuild the July evidence page. Add screenshots</td><td><span class="tag gh">growthub</span></td></tr>
+    <tr><td>Monday read</td><td>mauro-os baseline, x-keywords, x-follow-drivers, /gc-monday</td><td>One monday-read.py that reads any X export by column name</td><td><span class="tag gh">growthub</span> inputs today</td></tr>
+    <tr><td>Outlier sheet</td><td>content/lead-magnets/outlier-to-template-intake/</td><td>Floor line, gated-post flag, 390px layout</td><td><span class="tag warn">mixed</span></td></tr>
+  </table>
+</section>
+
+<section>
+  <div class="k">everything you can offer, ranked by evidence</div>
+  <h2>Much more than 4 kits</h2>
+  <p class="sub">M = your own numbers. L/B = Lorenzo or Bogdan, a signal of what the ICP clicks, never your proof.</p>
+  <table class="io mini">
+    <tr><th>#</th><th>System</th><th>Evidence</th><th>Where it goes</th></tr>
+    <tr><td>1</td><td>Measurement loop (Monday read, keyword lift)</td><td>M: top post 2,316 (5 Sep, "run this analysis"), #3 at 1,160 ("Every monday the same thing runs")</td><td>Free module 04, Mon drop</td></tr>
+    <tr><td>2</td><td>Claude prompts and skill files as the resource</td><td>L/B: "claude insane" 10.08x, prompts 9.02x / 9.92x, mini-guide 7.66x. M: skills 2.44x, prompts 2.04x</td><td>The giveaway article's words</td></tr>
+    <tr><td>3</td><td>X article system</td><td>L: articles over 10K precede most X-sourced bookings; 14-day pipeline did 25,000. M: article 1.83x</td><td>Free module 02</td></tr>
+    <tr><td>4</td><td>Lead magnet system</td><td>L/B: 878 and 699 follows in May from resource posts</td><td>Free module 03, rewired</td></tr>
+    <tr><td>5</td><td>YouTube system (ideas, titles, hooks)</td><td>ICP fit, vision-2026.md. <span class="need">[NEEDS: YouTube numbers]</span></td><td>Source stage</td></tr>
+    <tr><td>6</td><td>Outlier intake + post templates</td><td>M: 15 Sep post, 1,067 impressions. X7, X8 approved</td><td>Free tool</td></tr>
+    <tr><td>7</td><td>Company brain + Gate + approval rate</td><td>No reach data yet</td><td>Free module 00, Fri drop</td></tr>
+    <tr><td>8</td><td>ASCII visuals kit</td><td>No reach data yet</td><td>Cohort bonus</td></tr>
+    <tr><td>9</td><td>Process maps</td><td>M: 5 Oct post, 49 impressions</td><td>Later</td></tr>
+    <tr><td>10</td><td>X reply assistant (Juan's)</td><td>M: 151 replies since 1 Sep, 1 follow</td><td>Internal</td></tr>
+    <tr><td>11</td><td>Voice extraction</td><td>M: "voice" 0.30x</td><td>Inside the brain only</td></tr>
+    <tr><td>12</td><td>Profile study, review queue, week calendar</td><td>Own-productivity topics fail the reader-value rule</td><td>Internal / later</td></tr>
+    <tr><td>out</td><td>Creative strategy, ad skills, DM setting, outbound</td><td>Agency lane, client data</td><td>Never</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">Follows and calls barely move together on the Growthub accounts: Spearman +0.09 same week, +0.27 next week (tools/x-follows-vs-calls.py). Count calls on their own.</p>
+</section>
+
+<section>
+  <div class="k">action points · first 7 days</div>
+  <h2>What we do, Fri 9 to Thu 15 Oct</h2>
+  <table class="io mini">
+    <tr><th>#</th><th>Day</th><th>Who</th><th>Step</th><th>Time</th><th>First command or file</th></tr>
+    <tr><td>1</td><td>Fri 9</td><td>Mauro</td><td>Send the agency ask. Log the answer and the date</td><td>10 min</td><td class="mono">ownership-inventory.md</td></tr>
+    <tr><td>2</td><td>Fri 9</td><td>Mauro</td><td>Confirm $197 / $297, 10 seats. Pick the name</td><td>5 min</td><td class="mono">offer-decision, section 1</td></tr>
+    <tr><td>3</td><td>Fri 9</td><td>Claude</td><td>Package skeleton + scrub test</td><td>45 min</td><td class="mono">mkdir -p products/engine/...</td></tr>
+    <tr><td>4</td><td>Sat 10</td><td>Mauro</td><td>Whop store: free product + hidden paid product. Check free-tier gating</td><td>30 min</td><td class="mono">whop.com</td></tr>
+    <tr><td>5</td><td>Sat 10</td><td>Claude</td><td>Orchestrator run.md, run on your Aug 20 recording</td><td>2 h</td><td class="mono">research/transcripts/maurojpelle/</td></tr>
+    <tr><td>6</td><td>Sun 11</td><td>Claude</td><td>Brain templates, 3-failures prompt, Gate without paths</td><td>2 h</td><td class="mono">company-brain-install.md</td></tr>
+    <tr><td>7</td><td>Mon 12</td><td>Claude</td><td>Module 01: cut LeadShark and comment-to-DM</td><td>1.5 h</td><td class="mono">brand/engine/module-01-lead-magnets/</td></tr>
+    <tr><td>8</td><td>Mon 12</td><td>Mauro</td><td>First /gc-monday: the first Monday drop</td><td>30 min</td><td class="mono">/gc-monday</td></tr>
+    <tr><td>9</td><td>Tue 13</td><td>Juan</td><td>Stranger test 1 from the README only</td><td>2 h</td><td class="mono">content/qa/engine-stranger-test-1.md</td></tr>
+    <tr><td>10</td><td>Tue 13</td><td>Claude</td><td>claude.ai Project version</td><td>1 h</td><td class="mono">claude-ai-project/instructions.md</td></tr>
+    <tr><td>11</td><td>Wed 14</td><td>Mauro</td><td>Record Looms 1, 2, 6</td><td>45 min</td><td class="mono">Loom list</td></tr>
+    <tr><td>12</td><td>Wed 14</td><td>Claude</td><td>Fix Juan's stops. Scrub grep to 0</td><td>1.5 h</td><td class="mono">grep -rniE "growthub|lorenzo|..."</td></tr>
+    <tr><td>13</td><td>Thu 15</td><td>Mauro + Claude</td><td>Giveaway article + free Whop page. Gate both. Stage only</td><td>1 h</td><td class="mono">content/drafts/</td></tr>
+    <tr><td>14</td><td>Thu 15</td><td>Mauro</td><td>Name the warm list (ghostwritten owners, churned contacts)</td><td>15 min</td><td class="mono">BACKLOG.md</td></tr>
+  </table>
+  <p class="src" style="margin-top:8px">About 7 h of yours, inside the 5 to 7 h week. Weeks 2 to 4 (actions 15 to 23): stranger test 2, the other Looms, monday-read.py, publish after the agency yes, one direct message a day, weekly drop, cohort 1 cart, day-14 Agency Booked Calls offer, room decision after 4 drops.</p>
+</section>
+
+<footer><span>content/plan/offer-decision-2026-10-09.md</span><span>replaces the v1 ladder of 2026-10-08 · every number traces to a file in mauro-os/tools or content/plan</span></footer>
+<div id="end"></div>
+</div>
+</body>
+</html>

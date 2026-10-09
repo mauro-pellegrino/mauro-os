@@ -1,0 +1,59 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [],
+    "frames": 27,
+    "minutes": 21,
+    "needs": [
+      "45 min lost, no claims row",
+      "185 pushed, 0 ticked: Mauro's call"
+    ]
+  },
+  {
+    "doc": "10",
+    "file": "10-record-off-a-board.html",
+    "titles": [
+      {
+        "title": "This One Board Stops You Sounding Like You're Reading",
+        "modelled_on": "Chris Goor - Brand Video Pro, \"This One Trick Stops You Sounding Like You're Reading a Script\" (334,757 views, YouTube search 2026-10-07)"
+      },
+      {
+        "title": "How to Talk to Camera Without a Script (Use a Board)",
+        "modelled_on": "Think Media, \"How to Talk to a Camera (Even if You've Never Done it Before!)\" (564,318 views, YouTube search 2026-10-07)"
+      },
+      {
+        "title": "You'll Never Read a Script on Camera Again",
+        "modelled_on": "Charlie Morgan, \"You'll NEVER Doomscroll Again After Watching This\" (638K, charlie-morgan-dig.md #1)"
+      }
+    ],
+    "frames": 28,
+    "minutes": 22,
+    "needs": []
+  },
+  {
+    "doc": "03",
+    "file": "03-lead-magnets-workflow.html",
+    "titles": [
+      {
+        "title": "Watch Me Ship a Lead Magnet Post in 24 Minutes",
+        "modelled_on": "Marcos Ruiz, \"Watch Me Use AI to Create 100+ Viral Twitter/X Posts in 1 Hour\" (01-outliers.csv)"
+      },
+      {
+        "title": "Lead Magnets You Can Actually Measure (Full Workflow)",
+        "modelled_on": "Greg Isenberg, \"Building AI Agents that actually work (Full Course)\" (01-outliers.csv, 566,000 views)"
+      },
+      {
+        "title": "Build Lead Magnets With Claude: Here's How",
+        "modelled_on": "David Ondrej, \"Build Everything with AI Agents: Here's How\" (01-outliers.csv, 1,700,000 views)"
+      }
+    ],
+    "frames": 26,
+    "minutes": 21,
+    "needs": [
+      "~15 min, no claims row",
+      "2-3 h, no claims row",
+      "one real keyword with its calls"
+    ]
+  }
+]

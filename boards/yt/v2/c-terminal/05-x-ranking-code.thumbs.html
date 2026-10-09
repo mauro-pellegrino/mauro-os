@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>05 thumbnails</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#333;display:flex;flex-direction:column;gap:20px;font-family:'Inter',sans-serif;width:1280px}
+.thumb{width:1280px;height:720px;position:relative;overflow:hidden;background:#0B1A12}
+.mono{font-family:'JetBrains Mono',monospace}
+.face{position:absolute;right:0;bottom:0;width:420px;height:650px;border:5px dashed rgba(233,185,73,.75);border-radius:20px 20px 0 0;
+ display:flex;align-items:flex-end;justify-content:center;padding-bottom:26px;font:700 20px 'JetBrains Mono',monospace;color:rgba(233,185,73,.85);letter-spacing:2px}
+/* T1: split weights */
+.t1 .half{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-left:70px}
+.t1 .a{left:0;width:560px;background:#E9B949}.t1 .b{left:560px;width:300px;background:#12301F}
+.t1 .n{font:800 210px 'JetBrains Mono',monospace;letter-spacing:-12px;line-height:.9}
+.t1 .a .n{color:#0B1A12}.t1 .b .n{color:#5E8C73;font-size:120px;letter-spacing:-6px}
+.t1 .l{font:800 44px 'Inter';letter-spacing:-1px;margin-top:18px}.t1 .a .l{color:#0B1A12}.t1 .b .l{color:#B9CCBF}
+.t1 .b{padding-left:40px}
+/* T2: editor line */
+.t2 .ed{position:absolute;left:50px;top:200px;width:780px;background:#0F2219;border:2px solid #1F3A2C;border-radius:10px;padding:26px 28px;
+ font:600 30px/1.75 'JetBrains Mono',monospace;color:#5F7C6B}
+.t2 .ed .on{background:#2A2410;color:#fff;margin:0 -28px;padding:0 28px;border-left:6px solid #E9B949}
+.t2 .ed .on b{color:#E9B949}
+.t2 .h{position:absolute;left:56px;top:56px;font:900 104px 'Inter';color:#fff;letter-spacing:-4px;line-height:1}
+.t2 .h em{font-style:normal;color:#E9B949}
+.t2 .tab{position:absolute;left:50px;top:166px;font:700 20px 'JetBrains Mono',monospace;color:#86A293}
+/* T3: struck folklore */
+.t3 .q{position:absolute;left:60px;top:110px;font:800 92px 'JetBrains Mono',monospace;color:#86A293;letter-spacing:-3px;line-height:1.25}
+.t3 .q s{text-decoration-color:#F2555A;text-decoration-thickness:12px}
+.t3 .big{position:absolute;left:60px;bottom:70px;font:900 150px 'Inter';color:#fff;letter-spacing:-6px;line-height:.9}
+.t3 .big em{font-style:normal;color:#E9B949}
+.t3 .stamp{position:absolute;left:470px;top:250px;transform:rotate(-8deg);border:8px solid #F2555A;color:#F2555A;font:900 64px 'Inter';padding:4px 22px;border-radius:10px}
+</style></head><body>
+
+<div class="thumb t1">
+  <div class="half a"><div class="n">20.0</div><div class="l">COPY LINK</div></div>
+  <div class="half b"><div class="n">0.5</div><div class="l">LIKE</div></div>
+  <div class="face">MAURO CUTOUT HERE</div>
+</div>
+
+<div class="thumb t2">
+  <div class="h">X <em>WEIGHTS</em></div>
+  <div class="ed" style="top:250px;font-size:40px">
+    <div class="on">ShareViaCopyLink <b>20.0</b></div>
+    <div>Like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.5</div>
+  </div>
+  <div class="face">MAURO CUTOUT HERE</div>
+</div>
+
+<div class="thumb t3">
+  <div class="q"><s>reply = 13.5</s></div>
+  <div class="stamp">2023</div>
+  <div class="big">IT'S <em>OLD</em></div>
+  <div class="face">MAURO CUTOUT HERE</div>
+</div>
+
+</body></html>

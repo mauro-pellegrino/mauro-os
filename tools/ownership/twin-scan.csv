@@ -1,0 +1,421 @@
+file,lines,agency_mentions,twin_in_growthub_os,lines_differ,gh_twin_first_commit,mauro_os_first_commit
+~/.claude/skills/PRODUCTIVITY-README.md,20,0,,,,
+~/.claude/skills/grill-me/SKILL.md,7,0,,,,
+~/.claude/skills/grill-me/agents/openai.yaml,5,0,,,,
+~/.claude/skills/grilling/SKILL.md,28,0,,,,
+~/.claude/skills/grilling/agents/openai.yaml,3,0,,,,
+~/.claude/skills/handoff/SKILL.md,16,0,,,,
+~/.claude/skills/handoff/agents/openai.yaml,5,0,,,,
+~/.claude/skills/review-queue/SKILL.md,73,6,,,,
+~/.claude/skills/review-queue/build.py,458,2,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/SKILL.md,105,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/assets/broll_list.example.csv,6,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/assets/project.example.json,40,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/assets/titles.example.csv,4,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/references/config.md,45,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/references/editing.md,55,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/references/models.md,94,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/references/qa.md,21,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/references/voice.md,22,0,~/growthub-os/accounts/bogdan-x/voice/voice.md,91,2026-09-30|Mauro Pellegrino,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/actor-swap/scripts/actorswap.py,1227,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/SKILL.md,327,2,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/references/headlines.md,167,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/references/hooks.md,504,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/references/qa.md,244,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/references/script-craft.md,156,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/references/structures.md,268,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/ad-writing/scripts/brief2docx.js,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/angle-mining/SKILL.md,597,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/CHANGELOG.md,90,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/SKILL.md,381,3,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/creative-directions.md,279,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/editing-playbook.md,97,3,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/fal.md,261,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/runbook-short.md,66,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/runbook.md,91,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/styles.md,167,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/references/suno.md,38,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/contact_sheet.sh,23,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/edit.py,320,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/fal_run.sh,110,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/gen.py,323,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/report.py,154,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/animated-ad/scripts/timing.py,106,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/brand-learnings/SKILL.md,206,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/built-in-browser/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/built-in-browser/SKILL.md,48,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/buyer-persona-building/SKILL.md,397,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/chrome-browser/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/chrome-browser/SKILL.md,64,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/competitor-analysis/SKILL.md,524,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/computer-use/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/computer-use/SKILL.md,67,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/concept-lookup/SKILL.md,64,2,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/deep-research/SKILL.md,146,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/deep-research/references/report-writer.md,111,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/deep-research/references/researcher.md,76,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docs/SKILL.md,6,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/SKILL.md,93,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/__init__.py,1,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/accept_changes.py,135,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/comment.py,368,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/merge_runs.py,310,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/helpers/__init__.py,112,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/helpers/pptx_chart.py,170,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/helpers/pptx_slide.py,60,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/helpers/pptx_theme.py,114,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/mce/mc.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-2010.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-2012.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-cex-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-cid-2016.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/schemas/microsoft/wml-symex-2015.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/soffice.py,192,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validate.py,173,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validators/__init__.py,15,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validators/base.py,874,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validators/docx.py,466,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validators/pptx.py,441,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/office/validators/redlining.py,461,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/templates/comments.xml,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/templates/commentsExtended.xml,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/templates/commentsExtensible.xml,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/templates/commentsIds.xml,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/docx/scripts/templates/people.xml,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-educational/SKILL.md,74,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-expert-meeting/SKILL.md,79,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-playbook/SKILL.md,168,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-podcast-clip/SKILL.md,77,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-raw-ad/SKILL.md,128,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-skit/SKILL.md,75,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-spokesperson/SKILL.md,77,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-street-interview/SKILL.md,84,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-vsl/SKILL.md,74,2,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/format-wall-text/SKILL.md,103,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/SKILL.md,97,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/references/charts.md,87,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/references/docs.md,293,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/references/sheets.md,304,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/references/slides.md,370,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/scripts/docs_index.py,400,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/scripts/render_export.py,136,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/scripts/sheets_helper.py,394,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/google-workspace/scripts/slides_helper.py,461,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/import-memory/SKILL.md,89,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/manifest.json,264,5,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/SKILL.md,69,4,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/assets/bucket-maps-template.py,128,1,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/assets/strategy-tree-template.html,222,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/references/bucket-maps.md,43,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/references/other-frames.md,49,2,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/references/strategy-tree.md,71,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/references/visual-language.md,79,1,~/growthub-os/skills/miro/visual-language.md,324,2026-07-29|Mauro Pellegrino,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/miro-strategy-map/scripts/render_png.py,82,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/morning/SKILL.md,152,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/morning/assets/fonts/Fraunces-OFL.txt,93,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/morning/assets/fonts/fraunces-latin-600-normal.woff2,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/FORMS.md,294,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/REFERENCE.md,612,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/SKILL.md,314,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/check_bounding_boxes.py,65,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/check_fillable_fields.py,11,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/convert_pdf_to_images.py,33,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/create_validation_image.py,37,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/extract_form_field_info.py,122,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/extract_form_structure.py,115,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/fill_fillable_fields.py,98,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pdf/scripts/fill_pdf_form_with_annotations.py,107,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/SKILL.md,270,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/__init__.py,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/add_slide.py,367,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/apply_theme.js,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/clean.py,309,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/helpers/__init__.py,112,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/helpers/pptx_chart.py,170,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/helpers/pptx_slide.py,60,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/helpers/pptx_theme.py,114,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/mce/mc.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-2010.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-2012.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/soffice.py,192,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validate.py,173,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validators/__init__.py,15,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validators/base.py,874,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validators/docx.py,466,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validators/pptx.py,441,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/office/validators/redlining.py,461,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/pptx/scripts/thumbnail.py,311,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/review-mining/SKILL.md,291,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/root-cause-problem-analysis/SKILL.md,452,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/LICENSE.txt,202,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/SKILL.md,485,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/agents/analyzer.md,274,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/agents/comparator.md,202,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/agents/grader.md,223,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/assets/eval_review.html,146,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/eval-viewer/generate_review.py,471,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/eval-viewer/viewer.html,1325,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/references/schemas.md,430,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/__init__.py,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/aggregate_benchmark.py,401,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/generate_report.py,326,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/improve_description.py,247,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/package_skill.py,136,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/quick_validate.py,146,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/run_eval.py,310,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/run_loop.py,328,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/skill-creator/scripts/utils.py,47,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/LICENSE.txt,30,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/SKILL.md,99,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/helpers/__init__.py,112,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/helpers/pptx_chart.py,170,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/helpers/pptx_slide.py,60,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/helpers/pptx_theme.py,114,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/mce/mc.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-2010.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-2012.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-cex-2018.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-cid-2016.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/schemas/microsoft/wml-symex-2015.xsd,0,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/soffice.py,192,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validate.py,173,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validators/__init__.py,15,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validators/base.py,874,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validators/docx.py,466,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validators/pptx.py,441,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/office/validators/redlining.py,461,0,,,,
+~/.claude/skills/synced/f387a8c0-4731-463d-b03f-52efdfba6381_f539f06c-6358-46cc-b9a8-1053ee85fb8e/xlsx/scripts/recalc.py,330,0,,,,
+~/.claude/skills/teach/GLOSSARY-FORMAT.md,35,0,,,,
+~/.claude/skills/teach/LEARNING-RECORD-FORMAT.md,46,0,,,,
+~/.claude/skills/teach/MISSION-FORMAT.md,31,0,,,,
+~/.claude/skills/teach/RESOURCES-FORMAT.md,32,0,,,,
+~/.claude/skills/teach/SKILL.md,140,0,,,,
+~/.claude/skills/teach/agents/openai.yaml,5,0,,,,
+~/.claude/skills/to-questionnaire/SKILL.md,54,0,,,,
+~/.claude/skills/to-questionnaire/agents/openai.yaml,5,0,,,,
+~/.claude/skills/wait-what/SKILL.md,7,0,,,,
+~/.claude/skills/wait-what/agents/openai.yaml,5,0,,,,
+~/.claude/skills/week-calendar/SKILL.md,74,1,,,,
+~/.claude/skills/week-calendar/build.py,410,0,,,,
+~/.claude/skills/writing-for-agents/SKILL-MECHANICS.md,22,0,,,,
+~/.claude/skills/writing-for-agents/SKILL.md,81,0,,,,
+~/.claude/skills/writing-for-agents/agents/openai.yaml,3,0,,,,
+~/mauro-os/.claude/agents/gate.md,73,0,~/growthub-os/.claude/agents/gate.md,132,2026-09-30|Mauro Pellegrino,"2026-09-11|maurojpelle|Add the Gate: four-pass review agent, claims file, rejection playbook"
+~/mauro-os/.claude/agents/youtube-lead-magnet.md,50,0,~/growthub-os/.claude/agents/youtube-lead-magnet.md,15,2026-06-05|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/.claude/commands/gc-monday.md,14,0,,,,"2026-10-07|maurojpelle|Weekly system: /gc-monday and /life-interview commands, session-start roadmap read"
+~/mauro-os/.claude/commands/life-interview.md,16,1,,,,"2026-10-07|maurojpelle|Weekly system: /gc-monday and /life-interview commands, session-start roadmap read"
+~/mauro-os/.claude/commands/reply.md,17,0,,,,2026-08-24|jlago-del|Add the reply target roster and a /reply command
+~/mauro-os/.claude/hooks/voice-gate.py,69,0,,,,2026-09-11|maurojpelle|Gate content prompts on voice.md instead of relying on session start
+~/mauro-os/.claude/settings.json,60,0,,,,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/anti-slop-protocol.md,187,0,,,,2026-09-10|maurojpelle|Add anti-slop protocol skill and route it in CLAUDE.md
+~/mauro-os/skills/content/article-origination.md,219,1,,,,2026-09-21|jlago-del|Log Mauro's 21 Sep corrections and add the article origination skill
+~/mauro-os/skills/content/ascii-article.md,116,0,,,,"2026-10-04|maurojpelle|Port template intake, content sweep, post tags and ASCII article skills as generic versions"
+~/mauro-os/skills/content/ascii-diagrams.md,65,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/skills/content/gate-playbook.md,175,0,,,,"2026-09-11|maurojpelle|Add the Gate: four-pass review agent, claims file, rejection playbook"
+~/mauro-os/skills/content/linkedin-docs/README.md,281,0,,,,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/linkedin-docs/industry-decks/linkedin-doc-template.html,338,0,,,,2026-07-14|maurojpelle|Scrub all Growthub material: retarget every skill and doc to Mauro's brand
+~/mauro-os/skills/content/linkedin-docs/personalization-guide.md,63,0,~/growthub-os/skills/content/linkedin-docs/personalization-guide.md,56,2026-05-11|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/long-form/_master.md,301,0,,,,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/long-form/case-study-long-form.md,253,0,~/growthub-os/skills/content/long-form/case-study-long-form.md,168,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/long-form/doc-screenshot-long-form.md,183,0,~/growthub-os/skills/content/long-form/doc-screenshot-long-form.md,46,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/long-form/infographic-html-long-form.md,272,0,~/growthub-os/skills/content/long-form/infographic-html-long-form.md,131,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/long-form/video-long-form.md,304,0,~/growthub-os/skills/content/long-form/video-long-form.md,280,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/miro-to-article.md,101,0,~/growthub-os/skills/content/miro-to-article.md,69,2026-04-06|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/short-form/bulk-short-form-generator.md,182,0,~/growthub-os/skills/content/short-form/bulk-short-form-generator.md,141,2026-07-06|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/short-form/short-form-from-long-content.md,217,0,~/growthub-os/skills/content/short-form/short-form-from-long-content.md,119,2026-05-27|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/system-extraction.md,164,4,,,,2026-09-14|maurojpelle|Add system-extraction skill: monospace card plus sparse notes
+~/mauro-os/skills/content/vehicle-library.md,123,0,,,,2026-08-20|maurojpelle|Pull the 39-vehicle library out of Notion into the repo
+~/mauro-os/skills/content/visual-docs/juan-tutorial.md,116,0,,,,2026-07-16|maurojpelle|Rename visual doc skill to mauro-visual-doc-system; add YouTube board format + Juan bundle
+~/mauro-os/skills/content/visual-docs/mauro-visual-doc-system.md,499,1,,,,2026-07-16|maurojpelle|Rename visual doc skill to mauro-visual-doc-system; add YouTube board format + Juan bundle
+~/mauro-os/skills/content/visual-docs/page-craft.md,233,7,,,,2026-08-25|jlago-del|auto-save: fin de sesion 2026-08-25 13:56
+~/mauro-os/skills/content/visual-docs/reference/client-brand-2page-p1.png,0,0,,,,2026-08-25|jlago-del|auto-save: fin de sesion 2026-08-25 13:56
+~/mauro-os/skills/content/visual-docs/reference/client-brand-2page-p2.png,0,0,,,,2026-08-25|jlago-del|auto-save: fin de sesion 2026-08-25 13:56
+~/mauro-os/skills/content/visual-docs/reference/client-brand-2page.html,179,5,,,,2026-08-25|jlago-del|auto-save: fin de sesion 2026-08-25 13:56
+~/mauro-os/skills/content/visual-docs/reference/client-brand-2page.pdf,0,0,,,,2026-08-25|jlago-del|auto-save: fin de sesion 2026-08-25 13:56
+~/mauro-os/skills/content/visual-docs/render_one.py,130,0,~/growthub-os/scripts/render_one.py,98,2026-05-27|Mauro Pellegrino,2026-07-16|maurojpelle|Rename visual doc skill to mauro-visual-doc-system; add YouTube board format + Juan bundle
+~/mauro-os/skills/content/visual-docs/setup-guide.md,135,0,,,,2026-07-16|maurojpelle|Rename visual doc skill to mauro-visual-doc-system; add YouTube board format + Juan bundle
+~/mauro-os/skills/content/visual-docs/video-board-corrections.md,235,0,,,,2026-07-17|jlago-del|Add video-board corrections: one section = one screen for recordings
+~/mauro-os/skills/content/visual-docs/video-board-demo.html,103,0,,,,2026-07-17|jlago-del|Add video-board corrections: one section = one screen for recordings
+~/mauro-os/skills/content/visual-docs/video-board-demo.pdf,0,0,,,,2026-08-06|jlago-del|Add work log (Apr-Aug 2026) + video-board visual-doc demo assets
+~/mauro-os/skills/content/visual-docs/video-board-demo.png,0,0,,,,2026-08-06|jlago-del|Add work log (Apr-Aug 2026) + video-board visual-doc demo assets
+~/mauro-os/skills/content/visual-docs/video-board-shortcheck.html,49,0,,,,2026-08-06|jlago-del|Add work log (Apr-Aug 2026) + video-board visual-doc demo assets
+~/mauro-os/skills/content/visual-docs/video-board-shortcheck.pdf,0,0,,,,2026-08-06|jlago-del|Add work log (Apr-Aug 2026) + video-board visual-doc demo assets
+~/mauro-os/skills/content/visual-docs/video-board-shortcheck.png,0,0,,,,2026-08-06|jlago-del|Add work log (Apr-Aug 2026) + video-board visual-doc demo assets
+~/mauro-os/skills/content/x-article-creator.md,621,2,~/growthub-os/skills/content/x-article-creator.md,825,2026-03-05|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/content/x-articles-POINTER.md,75,8,,,,2026-09-01|maurojpelle|Point the article skills at the canonical evidence-backed set
+~/mauro-os/skills/content/x-replies-prompt.md,81,0,,,,2026-08-25|jlago-del|Add portable mobile prompt for the X reply assistant
+~/mauro-os/skills/content/x-reply-assistant.md,309,0,,,,2026-08-14|jlago-del|Add X reply assistant skill (judge + draft replies in Mauro's reply voice)
+~/mauro-os/skills/content/x-reply-mobile-prompt.md,80,0,,,,2026-08-25|jlago-del|Add portable mobile prompt for the X reply assistant
+~/mauro-os/skills/creative-strategy/creative-strategy-map/main.md,326,0,,,,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/creative-strategy/static-ads.md,38,0,~/growthub-os/skills/creative-strategy/static-ads.md,2,2026-04-27|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/dm-setting/industries/agency-owners/first-messages.md,121,0,~/growthub-os/skills/dm-setting/industries/supplement/first-messages.md,64,2026-05-11|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/dm-setting/industries/agency-owners/setter-playbook.md,226,0,,,,2026-07-14|maurojpelle|Scrub all Growthub material: retarget every skill and doc to Mauro's brand
+~/mauro-os/skills/lead-gen/email-to-call.md,233,0,~/growthub-os/skills/lead-gen/email-to-call.md,115,2026-03-27|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/_master.md,493,0,,,,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/case-study.md,229,0,~/growthub-os/skills/lead-gen/lead-magnet/case-study.md,190,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/framework.md,207,0,~/growthub-os/skills/lead-gen/lead-magnet/framework.md,128,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/industry-specific.md,234,0,~/growthub-os/skills/lead-gen/lead-magnet/industry-specific.md,300,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/notion-delivery-build.md,99,0,~/growthub-os/skills/lead-gen/lead-magnet/notion-delivery-build.md,59,2026-06-25|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/prompt-swipe-file.md,200,0,~/growthub-os/skills/lead-gen/lead-magnet/prompt-swipe-file.md,106,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/lead-gen/lead-magnet/youtube-video.md,227,0,~/growthub-os/skills/lead-gen/lead-magnet/youtube-video.md,80,2026-05-26|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/ops/case-study-production.md,133,0,~/growthub-os/skills/ops/case-study-production.md,113,2026-06-03|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/ops/content-analytics-review.md,154,0,,,,2026-08-14|jlago-del|Add monthly content analytics review skill (reach + distribution)
+~/mauro-os/skills/ops/content-analytics-review.py,133,0,,,,2026-08-14|jlago-del|Add monthly content analytics review skill (reach + distribution)
+~/mauro-os/skills/ops/content-loop.md,50,0,~/growthub-os/skills/ops/content-loop.md,63,2026-07-08|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/ops/daily-ops.md,230,0,~/growthub-os/skills/ops/daily-ops.md,284,2026-07-06|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/ops/monday-acquisition-analysis.md,175,0,~/growthub-os/skills/ops/monday-acquisition-analysis.md,298,2026-06-02|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/ops/process-maps.md,84,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/skills/ops/save-recap.md,165,0,~/growthub-os/skills/ops/save-recap.md,6,2026-05-27|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/research/ad-teardown.md,127,0,~/growthub-os/skills/research/ad-teardown.md,51,2026-06-29|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/research/article-corpus.md,130,1,,,,"2026-09-17|maurojpelle|Add article-corpus skill: the outlier saving process, written up"
+~/mauro-os/skills/research/brand-breakdown.md,174,0,~/growthub-os/skills/research/brand-breakdown.md,149,2026-04-01|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/research/content-sweep.md,152,0,~/growthub-os/skills/content/content-sweep.md,150,2026-10-02|Mauro Pellegrino,"2026-10-04|maurojpelle|Port template intake, content sweep, post tags and ASCII article skills as generic versions"
+~/mauro-os/skills/research/profile-extraction.md,105,0,,,,2026-09-15|maurojpelle|Add profile-extraction skill: step 1 of the four-step profile study
+~/mauro-os/skills/research/profile-study.md,194,0,,,,2026-09-16|maurojpelle|Write up the profile-study process from Mauro's loom to Juan
+~/mauro-os/skills/research/template-intake.md,157,0,,,,"2026-10-04|maurojpelle|Port template intake, content sweep, post tags and ASCII article skills as generic versions"
+~/mauro-os/skills/research/voice-extraction.md,150,0,,,,2026-08-06|maurojpelle|Voice extraction skill: derive a real voice doc from Mauro's own corpus
+~/mauro-os/skills/research/weekly-research.md,217,0,~/growthub-os/skills/research/weekly-research.md,246,2026-03-04|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/01-outliers.csv,44,0,,,,2026-07-23|jlago-del|Add YouTube competitor mining research (9 channels)
+~/mauro-os/skills/youtube/02-research.md,135,0,,,,2026-07-23|jlago-del|Add YouTube competitor mining research (9 channels)
+~/mauro-os/skills/youtube/ideal-youtube-video.md,136,0,,,,2026-08-04|maurojpelle|auto-save skill update: ideal-youtube-video.md
+~/mauro-os/skills/youtube/miro-design-system.md,379,0,~/growthub-os/skills/youtube/miro-design-system.md,101,2026-03-12|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-brand-breakdown.md,229,0,~/growthub-os/skills/youtube/youtube-brand-breakdown.md,404,2026-04-10|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-canva-slides.md,378,0,~/growthub-os/skills/youtube/youtube-canva-slides.md,490,2026-03-04|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-hook-script.md,268,0,~/growthub-os/skills/youtube/youtube-hook-script.md,490,2026-03-04|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-idea-generator.md,254,0,~/growthub-os/skills/youtube/youtube-idea-generator.md,242,2026-03-05|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-miro-board.md,364,0,~/growthub-os/skills/youtube/youtube-miro-board.md,237,2026-03-10|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-slide-visuals.md,352,0,~/growthub-os/skills/youtube/youtube-slide-visuals.md,325,2026-03-05|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/skills/youtube/youtube-title-generator.md,321,0,~/growthub-os/skills/youtube/youtube-title-generator.md,326,2026-03-05|Mauro Pellegrino,"2026-07-13|maurojpelle|Initial extraction from growthub-os: brand context, skills, Claude setup"
+~/mauro-os/tools/ascii-anim/README.md,62,1,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/ascii-anim/ascii_anim.py,372,0,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/ascii-anim/examples/founder-content-engine-dark-1080x1080.mp4,0,0,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/ascii-anim/examples/founder-content-engine-dark-1600x900.mp4,0,0,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/ascii-anim/examples/process-map-one-process-cream-1080x1080.mp4,0,0,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/ascii-anim/examples/process-map-one-process-cream-1600x900.mp4,0,0,,,,2026-10-08|maurojpelle|tools/ascii-anim: animate static ASCII diagrams into X-ready MP4s
+~/mauro-os/tools/maurojpelle-baseline.py,60,0,,,,2026-10-05|maurojpelle|auto-save: fin de sesion 2026-10-05 21:28
+~/mauro-os/tools/maurojpelle-traffic.py,88,0,,,,2026-10-08|maurojpelle|GC W42-W43 v2: apply review 2026-10-08 #41-57
+~/mauro-os/tools/outlier-score.py,39,0,~/growthub-os/ops/tools/outlier-score.py,20,2026-10-02|Mauro Pellegrino,"2026-10-04|maurojpelle|Port template intake, content sweep, post tags and ASCII article skills as generic versions"
+~/mauro-os/tools/ownership/twin-scan.csv,0,0,,,,
+~/mauro-os/tools/ownership/twin-scan.py,66,5,,,,
+~/mauro-os/tools/process-maps/build_grouped.py,117,0,~/growthub-os/ops/process-maps/visual/build_grouped.py,230,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/build_overview.py,54,0,~/growthub-os/ops/process-maps/visual/build_overview.py,52,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/overview.css,36,0,~/growthub-os/ops/process-maps/visual/overview.css,2,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/overview.html,56,0,~/growthub-os/ops/process-maps/visual/overview.html,29,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/overview.json,45,0,~/growthub-os/ops/process-maps/visual/overview.json,201,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/overview.png,0,0,~/growthub-os/ops/process-maps/visual/overview.png,,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/queue.csv,6,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/ranked_queue.py,26,0,~/growthub-os/ops/process-maps/visual/ranked_queue.py,43,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/specs/_example.json.txt,18,0,~/growthub-os/ops/process-maps/visual/specs-d/_example.json.txt,16,2026-10-01|Mauro Pellegrino,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/specs/linkedin-lead-magnet-autodm.html,28,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/specs/linkedin-lead-magnet-autodm.json,24,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/process-maps/specs/linkedin-lead-magnet-autodm.png,0,0,,,,"2026-10-04|maurojpelle|Add ASCII diagram skill, 5:2 terminal cover builder, process-map tools"
+~/mauro-os/tools/x-autoplugs.py,24,3,,,,"2026-10-08|maurojpelle|tools: x-autoplugs.py, auto-plug clicks per month"
+~/mauro-os/tools/x-follow-drivers.py,28,1,,,,"2026-10-08|maurojpelle|tools: x-follow-drivers.py, autodm vs other follows per month"
+~/mauro-os/tools/x-keywords.py,49,2,,,,2026-10-08|maurojpelle|tools: x-keywords.py (keyword reach lift per account) + wider resource-post filter
+~/mauro-os/tools/x-three-accounts.py,77,3,,,,"2026-10-08|maurojpelle|tools: x-three-accounts.py, month and reply stats for Mauro, Lorenzo, Bogdan from all X exports"
+~/mauro-os/tools/yt-prospects.py,133,0,,,,2026-10-05|maurojpelle|Ghosted Calls phase one: YouTube prospect finder + outreach block on the backlog

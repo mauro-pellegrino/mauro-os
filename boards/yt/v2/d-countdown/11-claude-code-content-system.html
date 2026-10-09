@@ -1,0 +1,221 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>My whole Claude Code content system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#F7F3EA;--card:#FFFFFF;--ink:#1B4332;--deep:#0E2418;--body:#1B1B1B;--muted:#5F6B62;
+--accent:#E9B949;--sage:#52B788;--mint:#B7E4C7;--line:#D8CFBB;--red:#C0392B}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0B1A12;overflow:hidden}
+body{font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;color:var(--body)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+#stage{position:absolute;left:50%;top:50%;width:1600px;height:900px;transform-origin:center center;background:var(--ground);overflow:hidden;display:flex}
+/* rail */
+#rail{width:330px;flex:none;background:var(--deep);color:#fff;padding:34px 22px 26px;display:flex;flex-direction:column;gap:10px;position:relative}
+#rail .rh{font:800 14px 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;margin-bottom:6px}
+#rail .crit{font:600 17px 'Inter';color:#CFE0D5;line-height:1.3;margin-bottom:12px}
+.row{flex:1;max-height:120px;display:flex;align-items:center;gap:14px;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,.04);border:2px solid transparent;transition:all .35s}
+.row .rk{font:900 48px 'Inter';width:84px;color:#5F7D6C;letter-spacing:-.03em;flex:none}
+.row .lb{font:800 22px 'Inter';line-height:1.2;color:#fff;filter:blur(9px);opacity:.55;transition:all .45s}
+.row .st{font:700 16px 'JetBrains Mono',monospace;color:var(--accent);margin-top:4px;display:block}
+.row.on .lb{filter:none;opacity:1}
+.row.on .rk{color:var(--accent)}
+.row.focus{background:rgba(233,185,73,.14);border-color:var(--accent)}
+.row.focus .rk{color:var(--accent)}
+#rail .foot{margin-top:14px;font:600 13px 'JetBrains Mono',monospace;color:#7FA08D;letter-spacing:.08em}
+/* frame area */
+#frames{flex:1;position:relative}
+.frame{position:absolute;inset:0;padding:64px 80px 56px;display:none;flex-direction:column;justify-content:center}
+.frame.cur{display:flex}
+.frame.dark{background:var(--deep);color:#fff}
+.k{font:800 16px 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.dark .k{color:var(--sage)}
+.h{font-size:64px;font-weight:900;line-height:1.04;letter-spacing:-.03em;color:var(--ink)}
+.h.md{font-size:52px}.h.sm{font-size:42px}
+.dark .h{color:#fff}
+.hl{background:var(--accent);color:var(--deep);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.vis{margin-top:40px}
+.src{position:absolute;left:80px;bottom:24px;font:500 13px 'JetBrains Mono',monospace;color:var(--muted)}
+.dark .src{color:#7FA08D}
+.needs{display:inline-block;background:var(--red);color:#fff;font:800 15px 'JetBrains Mono',monospace;padding:5px 10px;border-radius:4px;letter-spacing:.02em;vertical-align:middle}
+#rail .needs{font-size:11px;padding:4px 7px;margin-top:6px}
+/* reveal */
+.reveal{display:flex;align-items:center;gap:56px}
+.reveal .num{font:900 330px 'Inter';line-height:.8;letter-spacing:-.06em;color:var(--accent)}
+.reveal .num small{font-size:120px;vertical-align:top;color:var(--sage)}
+.reveal .nm{font-size:66px;font-weight:900;line-height:1.02;letter-spacing:-.03em;color:#fff;max-width:640px}
+.reveal .stat{margin-top:26px;font:800 24px 'JetBrains Mono',monospace;color:var(--sage)}
+/* cards */
+.grid{display:grid;gap:18px}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:10px;padding:22px 24px}
+.card .t{font-size:28px;font-weight:800;color:var(--ink);line-height:1.15}
+.card .s{margin-top:8px;font:600 15px 'JetBrains Mono',monospace;color:var(--muted)}
+.card.on{border-top:12px solid var(--accent)}
+.card.off{opacity:.35}
+.card.redx{border-color:var(--red)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.ba .side{border-radius:12px;padding:26px;min-height:380px;display:flex;flex-direction:column}
+.ba .before{background:#EDE6D6;border:3px solid #CBBFA6}
+.ba .after{background:var(--card);border:3px solid var(--ink);border-top:12px solid var(--accent)}
+.ba .tag{font:800 15px 'JetBrains Mono',monospace;letter-spacing:.2em;margin-bottom:18px;color:var(--muted)}
+.ba .after .tag{color:var(--ink)}
+/* code / mock screens */
+.win{background:#13241B;border-radius:12px;overflow:hidden;border:2px solid #24503A;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.win .bar{height:36px;background:#1E3A2A;display:flex;align-items:center;gap:8px;padding:0 14px}
+.win .bar i{width:12px;height:12px;border-radius:50%;background:#5F7D6C;display:block}
+.win .bar span{margin-left:12px;font:600 14px 'JetBrains Mono',monospace;color:#9DB8A8}
+.win pre{font:500 19px/1.5 'JetBrains Mono',monospace;color:#DDEBE2;padding:20px 24px;white-space:pre}
+.win pre b{color:var(--accent);font-weight:700}
+.win pre em{color:var(--sage);font-style:normal}
+.win pre u{color:#FF8A7A;text-decoration:none}
+.win pre s{color:#7FA08D;text-decoration:none}
+.thumbs{display:grid;gap:12px}
+.thumbs .th{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:16/9;background:#222}
+.thumbs .th .img{width:100%;height:100%;background-size:cover;background-position:center}
+.thumbs .th.dim .img{filter:grayscale(1) brightness(.45)}
+.thumbs .th .lab{position:absolute;left:8px;bottom:8px;background:var(--deep);color:var(--accent);font:800 14px 'JetBrains Mono',monospace;padding:4px 8px;border-radius:4px}
+.thumbs .th .no{position:absolute;left:8px;top:8px;background:rgba(0,0,0,.7);color:#fff;font:800 14px 'JetBrains Mono',monospace;padding:3px 7px;border-radius:4px}
+.thumbs .th.ring{outline:5px solid var(--accent);outline-offset:-5px}
+.tt{font-size:25px;font-weight:700;color:var(--body);line-height:1.3;padding:14px 18px;background:var(--card);border-left:8px solid var(--line);border-radius:6px}
+.tt mark{background:var(--accent);color:var(--deep);padding:0 4px;border-radius:3px}
+.tt.dim{opacity:.35}
+.tt .v{float:right;font:700 15px 'JetBrains Mono',monospace;color:var(--muted);margin-top:6px}
+.agenda{display:flex;flex-direction:column;gap:16px;margin-top:36px}
+.agenda div{display:flex;align-items:center;gap:20px;font-size:38px;font-weight:800;color:#fff}
+.agenda span{font:800 20px 'JetBrains Mono',monospace;background:var(--accent);color:var(--deep);padding:6px 12px;border-radius:4px}
+.cta .h{font-size:76px}
+.pill{display:inline-block;margin-top:34px;background:var(--accent);color:var(--deep);font-weight:900;font-size:40px;padding:16px 30px;border-radius:10px}
+/* notes overlay */
+#notes{position:absolute;left:330px;right:0;bottom:0;max-height:62%;overflow:auto;background:rgba(14,36,24,.96);color:#EAF3EE;padding:22px 30px 26px;font:500 21px/1.5 'Inter';display:none;border-top:4px solid var(--accent);z-index:9}
+#notes.on{display:block}
+#notes .meta{font:700 14px 'JetBrains Mono',monospace;color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
+#notes p{margin-bottom:8px}
+</style></head><body>
+<div id="stage">
+<aside id="rail"><div class="rh">The countdown</div><div class="crit">Counted down by size. Biggest first, smallest is #1.</div><div class="row" data-rank="5"><div class="rk">#5</div><div class="lb">Skills<span class="st">73 files</span></div></div><div class="row" data-rank="4"><div class="rk">#4</div><div class="lb">Scripts<span class="st">25</span></div></div><div class="row" data-rank="3"><div class="rk">#3</div><div class="lb">Areas, one map<span class="st">11</span></div></div><div class="row" data-rank="2"><div class="rk">#2</div><div class="lb">Conventions<span class="st">9</span></div></div><div class="row" data-rank="1"><div class="rk">#1</div><div class="lb">Agents<span class="st">4</span></div></div><div class="foot">→ next · N notes · F full</div></aside>
+<main id="frames"><section class="frame " data-upto="99" data-focus="0" data-time="0:00-0:12"><div class="k">A Claude Code tour, counted down</div><div class="h  cp">My whole Claude Code <span class='hl'>content system</span></div><template class="say"><p>Open on this frame. The rail on the left is blurred on purpose. Five layers, and I reveal them one at a time.</p><p>Say the working title out loud, then go straight to the result.</p></template></section><section class="frame " data-upto="99" data-focus="0" data-time="0:12-0:22"><div class="k">The result first</div><div class="h  cp">150+ qualified booked calls in 2026.</div><div class="vis mono" style="font-size:22px;color:#5F6B62">for the agency I run · Calendly export</div><div class="src">claims.md: 150 qualified booked calls in 2026, total only, no channel split</div><template class="say"><p>Over 150 qualified booked calls for the agency I run this year. That is the Calendly export.</p><p>Do not say which channel they came from. The export cannot split them cleanly, and I show why in layer 4.</p><p>Then: the thing that produced them is one repo, and I&#x27;m going to open the whole thing.</p></template></section><section class="frame dark" data-upto="99" data-focus="0" data-time="0:22-0:30"><div class="k">Today we go over</div><div class="agenda cp"><div><span>1</span>The bulk</div><div><span>2</span>The rules</div><div><span>3</span>The agents</div></div><template class="say"><p>Five layers, counted down by how many of each there are. Biggest first.</p><p>Today we go over three things. The bulk, which is the skills and the scripts. The rules, which is the map and the conventions. And the agents, which is the smallest layer and the reason the rest works.</p><p>Promise: by the end you know which part is worth copying, and it is the part with the fewest files.</p></template></section><section class="frame " data-upto="99" data-focus="0" data-time="0:30-1:30"><div class="k" style="margin-bottom:12px">One repo</div><div class="win"><div class="bar"><i></i><i></i><i></i><span>agency-repo/  (account folders redacted)</span></div><pre style="font:500 15.5px/1.32 JetBrains Mono,monospace;padding:14px 22px">agency-repo/                  the whole operation, one repo
+<s>├── </s>skills/                      73 markdown files, split by activity
+<s>│   </s><s>├── </s>content/                 long-form, short-form, linkedin-docs, x-articles/ (7 files)
+<s>│   </s><s>├── </s>research/                weekly research, brand breakdowns, ad teardowns
+<s>│   </s><s>├── </s>ops/                     daily ops, content loop, monday analysis, case studies
+<s>│   </s><s>├── </s>miro/                    board builds, the DSL gotchas, the house diagram style
+<s>│   </s><s>├── </s>lead-gen/                five lead magnet subtypes, email to call
+<s>│   </s><s>├── </s>youtube/                 ideas, titles, hooks, boards, slides
+<s>│   </s><s>├── </s>creative-strategy/       static ads, the ad script QA
+<s>│   </s><s>└── </s>dm-setting/              outbound and inbound DM templates
+<s>├── </s>.claude/agents/              4 installed agents
+<s>│   </s><s>├── </s>performance-loop.md      catches a reach drop before it becomes a quarter
+<s>│   </s><s>├── </s>signal-sweep.md          catches an ask buried in a chat thread
+<s>│   </s><s>├── </s>board-qa.md              15 gates: is this lane recordable
+<s>│   </s><s>└── </s>youtube-lead-magnet.md   packages a video into a lead magnet
+<s>├── </s>ops/
+<s>│   </s><s>├── </s>MAP.md                   the index. route it or it gets rebuilt
+<s>│   </s><s>├── </s>CONVENTIONS.md           nine rules: evidence tags, provenance, limits
+<s>│   </s><s>├── </s>tools/                   25 python scripts, one per number anyone cites
+<s>│   </s><s>└── </s>daily/                   the worklog, the weekly spine, today.json
+<s>├── </s>research/                    article studies, creative examples, competitor digs
+<s>├── </s>accounts/                    <u>[REDACTED]</u> one folder per account
+<s>├── </s>acquisition-calls/           one dated analysis per week
+<s>├── </s>outbound-calls/              the cold email motion end to end
+<s>└── </s>BACKLOG.md                   the standing list, and what is blocked on me
+</pre></div><div class="src">assets/repo-tree-screen-safe.txt · claims.md: one repo, eleven areas</div><template class="say"><p>Fly through the tree slowly. This is the whole operation in one repo. Eleven top-level areas.</p><p>Point at accounts: redacted on purpose, I never show those on camera.</p><p>Every number on the rail comes off this tree. 73, 25, 11, 9, 4. That is the ranking: count, nothing else.</p></template></section><section class="frame dark" data-upto="5" data-focus="5" data-time="1:30-2:00"><div class="reveal"><div class="num"><small>#</small>5</div><div><div class="nm cp">Skills, split by activity</div><div class="stat">73 markdown files · 8 folders</div></div></div><div class="src">claims.md: 73 markdown skill files across eight activity folders</div><template class="say"><p>Number five, the biggest pile: 73 skill files across eight folders.</p><p>This is what people think the system is. The prompts. It is the least interesting layer, and it ranks last for that reason too.</p></template></section><section class="frame " data-upto="5" data-focus="5" data-time="2:00-3:30"><div class="k">Section 1 · the bulk</div><div class="h md cp">Eight folders. Zero client folders.</div><div class="vis grid" style="grid-template-columns:repeat(4,1fr)"><div class="card"><div class="t mono" style="font-size:24px">content/</div></div><div class="card"><div class="t mono" style="font-size:24px">research/</div></div><div class="card"><div class="t mono" style="font-size:24px">ops/</div></div><div class="card"><div class="t mono" style="font-size:24px">miro/</div></div><div class="card"><div class="t mono" style="font-size:24px">lead-gen/</div></div><div class="card"><div class="t mono" style="font-size:24px">youtube/</div></div><div class="card"><div class="t mono" style="font-size:24px">creative-strategy/</div></div><div class="card"><div class="t mono" style="font-size:24px">dm-setting/</div></div></div><div class="src">claims.md: eight activity folders</div><template class="say"><p>Read the eight names. content, research, ops, miro, lead-gen, youtube, creative-strategy, dm-setting.</p><p>Every one is an activity. None of them is a client.</p><p>Open skills/content/x-articles on the real repo here if you can: six files in a fixed order turn a transcript into an article, a seventh keeps the other six honest. [NEEDS: the seven-file count is only in the tree asset, claims.md lacks it. Say &#x27;a set of files&#x27; if not cleared.]</p></template></section><section class="frame " data-upto="5" data-focus="5" data-time="3:30-5:00"><div class="k">Before / after</div><div class="h md cp">Activity outlives every client.</div><div class="vis"><div class="ba"><div class="side before"><div class="tag">BEFORE</div><div class="card" style="margin-bottom:12px"><div class="t mono" style="font-size:22px">clients/brand-a/hooks.md</div></div><div class="card" style="margin-bottom:12px"><div class="t mono" style="font-size:22px">clients/brand-b/hooks.md</div></div><div class="card redx"><div class="t mono" style="font-size:22px;color:#C0392B">client leaves → folder rots</div></div></div><div class="side after"><div class="tag">AFTER</div><div class="card on" style="margin-bottom:12px"><div class="t mono" style="font-size:22px">skills/content/hooks.md</div></div><div class="card"><div class="t mono" style="font-size:22px">one skill · every client reads it</div></div></div></div></div><template class="say"><p>Worked example, the folder rule. Left: split by client. The same hooks skill gets written inside brand A, then again inside brand B. Brand A leaves and its folder rots.</p><p>Right: split by activity. One hooks skill. Every client reads it. It survives every client.</p><p>The file names on screen illustrate the split. They are made-up folders. Say that if asked.</p></template></section><section class="frame dark" data-upto="4" data-focus="4" data-time="5:00-5:30"><div class="reveal"><div class="num"><small>#</small>4</div><div><div class="nm cp">One script per number</div><div class="stat">25 Python scripts</div></div></div><div class="src">claims.md: 25 Python scripts, each declaring its own limit</div><template class="say"><p>Number four: 25 scripts.</p><p>The rule that produced them: the analysis that produced a number gets saved as a script.</p></template></section><section class="frame " data-upto="4" data-focus="4" data-time="5:30-7:30"><div class="k">Worked example</div><div class="h md cp">The script states its own limit.</div><div class="vis"><div class="win"><div class="bar"><i></i><i></i><i></i><span>ops/tools/  one tool, its opening lines (paraphrased)</span></div><pre><s>"""</s>
+<b>WHAT THIS MEASURES: ALL INBOUND.</b>
+<b>NOT ONE ACCOUNT.</b>
+
+<em>649 of 678</em> Calendly rows sit under one owner.
+UTM field empty on <em>673</em>.
+
+A channel split is not possible from this file.
+<s>"""</s></pre></div></div><div class="src">claims.md: 649 of 678 rows one owner, UTM empty on 673</div><template class="say"><p>Worked example. One tool was named as if it measured a single account&#x27;s bookings.</p><p>It measures all inbound. 649 of 678 Calendly rows sit under one owner. The UTM field is empty on 673.</p><p>So the opening docstring now says it in capitals. Every script in that folder opens with its own limit.</p><p>This is also why I said 150 booked calls and no channel: this file is the reason. The window paraphrases the docstring. Open the real tool on screen if you can. [NEEDS: which tool carries the capitals docstring, doc 11 does not name it]</p></template></section><section class="frame " data-upto="4" data-focus="4" data-time="7:30-8:45"><div class="k">Before / after</div><div class="h md cp">Two numbers in a meeting. Then one.</div><div class="vis"><div class="ba"><div class="side before"><div class="tag">BEFORE</div><div class="h sm" style="color:#5F6B62">inline calc</div><div class="mono" style="margin-top:14px;font-size:20px;color:#5F6B62">context clears → re-derived → two answers</div><div style="margin-top:28px;display:flex;gap:16px"><div class="card redx"><div class="t mono">number A</div></div><div class="card redx"><div class="t mono">number B</div></div></div></div><div class="side after"><div class="tag">AFTER</div><div class="h sm">saved script</div><div class="mono" style="margin-top:14px;font-size:20px;color:#5F6B62">same input → same number, every time</div><div style="margin-top:28px"><div class="card on"><div class="t mono">one number + its limit</div></div></div></div></div></div><template class="say"><p>Before: an inline calculation. It is lost at the next context clear. Somebody re-derives it slightly differently and two numbers disagree in a meeting.</p><p>After: the script is saved. Same input, same number, and the limit travels with it.</p></template></section><section class="frame dark" data-upto="3" data-focus="3" data-time="8:45-9:15"><div class="reveal"><div class="num"><small>#</small>3</div><div><div class="nm cp">Route it or it gets rebuilt</div><div class="stat">11 areas · one MAP.md</div></div></div><div class="src">claims.md: one repo, eleven top-level areas, indexed in ops/MAP.md</div><template class="say"><p>Section two, the rules. Number three: eleven areas and one map.</p><p>The rule that holds it together: work is not finished until it is routed.</p></template></section><section class="frame " data-upto="3" data-focus="3" data-time="9:15-11:00"><div class="k">ops/MAP.md</div><div class="h md cp">Unrouted work gets rebuilt.</div><div class="vis" style="display:flex;gap:30px;align-items:flex-start"><div class="win"><div class="bar"><i></i><i></i><i></i><span>ops/MAP.md</span></div><pre><em>skills/                   </em><s>→ entry point listed</s>
+<em>.claude/agents/           </em><s>→ entry point listed</s>
+<em>ops/                      </em><s>→ entry point listed</s>
+<em>research/                 </em><s>→ entry point listed</s>
+<em>accounts/ [REDACTED]      </em><s>→ entry point listed</s>
+<em>acquisition-calls/        </em><s>→ entry point listed</s>
+<em>outbound-calls/           </em><s>→ entry point listed</s>
+<em>emails/                   </em><s>→ entry point listed</s>
+<em>brands/                   </em><s>→ entry point listed</s>
+<em>recaps/                   </em><s>→ entry point listed</s>
+<em>future-projects/          </em><s>→ entry point listed</s></pre></div><div style="width:330px"><div class="card redx"><div class="t">An agent rebuilt an SOP from scratch.</div><div class="s">time lost</div><div style="margin-top:10px"><span class="needs">[NEEDS: 45 min, MAP.md, missing from claims.md]</span></div></div></div></div><div class="src">the eleven areas: doc 11 section 1</div><template class="say"><p>Worked example. One day an agent rebuilt the outbound SOP from scratch, because the SOP existed and was not in the map.</p><p>The time lost is in MAP.md. It is not cleared yet, so the frame carries a red tag. Leave the time out until it is cleared.</p><p>Before: a file exists, and nobody can find it. After: everything that exists has a line in the map, so the next agent reads it instead of rebuilding it.</p></template></section><section class="frame dark" data-upto="2" data-focus="2" data-time="11:00-11:30"><div class="reveal"><div class="num"><small>#</small>2</div><div><div class="nm cp">Four rules carry the weight</div><div class="stat">9 conventions</div></div></div><div class="src">claims.md: nine conventions, four of which carry the weight</div><template class="say"><p>Number two: nine conventions. Four of them carry the weight.</p></template></section><section class="frame " data-upto="2" data-focus="2" data-time="11:30-12:45"><div class="k">The load-bearing four</div><div class="h md cp">Four rules. Nine on file.</div><div class="vis grid" style="grid-template-columns:repeat(2,1fr)"><div class="card on"><div class="t">Evidence tag</div><div class="s">every claim</div></div><div class="card on"><div class="t">Number → script</div><div class="s">every number</div></div><div class="card on"><div class="t">Limit stated</div><div class="s">every script</div></div><div class="card on"><div class="t">Dated decision</div><div class="s">in the file it governs</div></div></div><template class="say"><p>Read the four. Every claim carries an evidence tag. Every number traces to a script and a dataset. Every script declares its own limit. Decisions are dated lines in the file whose behaviour they govern.</p><p>The other five exist. These four are the ones I would install first.</p></template></section><section class="frame " data-upto="2" data-focus="2" data-time="12:45-14:30"><div class="k">Worked example</div><div class="h md cp">It felt obviously true. Then measured.</div><div class="vis"><svg width="1000" height="144" viewBox="0 0 1000 144" font-family="Inter"><text x="244" y="35.0" text-anchor="end" font-size="22" font-weight="700" fill="#1B1B1B">worked example</text><rect x="260" y="0" width="134" height="54" rx="6" fill="#1B4332"/><text x="408" y="36.0" font-size="26" font-weight="900" fill="#1B4332" font-family="JetBrains Mono">60,000</text><text x="244" y="107.0" text-anchor="end" font-size="22" font-weight="700" fill="#1B1B1B">winning section</text><rect x="260" y="72" width="590" height="54" rx="6" fill="#E9B949"/><text x="864" y="108.0" font-size="26" font-weight="900" fill="#1B4332" font-family="JetBrains Mono">264,000</text></svg></div><div class="src">claims.md: worked example 60,000 against the winning section&#x27;s 264,000</div><template class="say"><p>Worked example, the reason for the tags. A skill asserted that the worked example was the section that converts.</p><p>Measuring it returned 60,000 against 264,000. The opposite direction.</p><p>Before: the rule felt obviously true, so it went in untagged. After: it carries a tag, and the measurement overruled the feeling.</p></template></section><section class="frame " data-upto="2" data-focus="2" data-time="14:30-15:30"><div class="k">The three tags</div><div class="h md cp">An untagged claim is an assertion.</div><div class="vis"><div class="win"><div class="bar"><i></i><i></i><i></i><span>any skill file</span></div><pre>73 skill files, 8 folders.          <b>[measured]</b>
+Boards went out unrecordable.       <em>[observed]</em>
+Broad topics drive subscribers.      <u>[assumed]</u></pre></div></div><template class="say"><p>Three tags. Measured: a script produced it. Observed: someone saw it and dated it. Assumed: an inference, flagged as one.</p><p>The three lines on screen are tag examples. Read the tags out loud. The lines are only examples.</p></template></section><section class="frame dark" data-upto="1" data-focus="1" data-time="15:30-16:00"><div class="reveal"><div class="num"><small>#</small>1</div><div><div class="nm cp">Every agent is a scar</div><div class="stat">4 agents</div></div></div><div class="src">claims.md: four agents, all defensive</div><template class="say"><p>Section three. Number one, the smallest layer: four agents.</p><p>And this is the part worth copying. Every one of the four exists because something was missed.</p></template></section><section class="frame " data-upto="1" data-focus="1" data-time="16:00-17:00"><div class="k">Skill vs agent</div><div class="h md cp">An agent runs without being asked.</div><div class="vis"><div class="ba"><div class="side before"><div class="tag">SKILL</div><div class="h sm" style="color:#5F6B62">skill</div><div class="mono" style="margin-top:16px;font-size:22px;color:#5F6B62">you → call it → it runs</div></div><div class="side after"><div class="tag">AGENT</div><div class="h sm">agent</div><div class="mono" style="margin-top:16px;font-size:22px">something happens → it runs</div></div></div></div><template class="say"><p>A skill runs when I call it. An agent runs without being asked.</p><p>Four of them. I go through each with the incident behind it.</p></template></section><section class="frame " data-upto="1" data-focus="1" data-time="17:00-18:30"><div class="k">performance-loop</div><div class="h sm cp">Down 64%. Nobody noticed for two months.</div><div class="vis"><svg width="1000" height="144" viewBox="0 0 1000 144" font-family="Inter"><text x="244" y="35.0" text-anchor="end" font-size="22" font-weight="700" fill="#1B1B1B">June</text><rect x="260" y="0" width="590" height="54" rx="6" fill="#1B4332"/><text x="864" y="36.0" font-size="26" font-weight="900" fill="#1B4332" font-family="JetBrains Mono">100</text><text x="244" y="107.0" text-anchor="end" font-size="22" font-weight="700" fill="#1B1B1B">August</text><rect x="260" y="72" width="212" height="54" rx="6" fill="#E9B949"/><text x="486" y="108.0" font-size="26" font-weight="900" fill="#1B4332" font-family="JetBrains Mono">36</text></svg><div class="mono" style="margin-top:8px;font-size:16px;color:#5F6B62">monthly impressions, indexed June = 100</div></div><div class="src">claims.md: monthly impressions fell 64% June to August 2026, unnoticed for two months</div><template class="say"><p>Agent one, performance-loop. Monthly impressions fell 64% between June and August 2026, and nobody noticed for two months.</p><p>The chart is indexed: June at 100, August at 36. That is the 64% and nothing else.</p><p>Before: a drop is found two months late. After: the agent reads it without being asked. [NEEDS: the agent&#x27;s run cadence, if Mauro wants to say it]</p></template></section><section class="frame " data-upto="1" data-focus="1" data-time="18:30-19:30"><div class="k">signal-sweep</div><div class="h md cp">The one ask sat in a group DM.</div><div class="vis" style="display:flex;gap:40px;align-items:center"><div><div style="background:#fff;border:2px solid #D8CFBB;border-radius:14px;padding:16px 20px;margin-bottom:12px;width:520px"><div style="height:16px;background:#CFC6B2;border-radius:6px;filter:blur(3px);width:440px"></div></div><div style="background:#fff;border:2px solid #D8CFBB;border-radius:14px;padding:16px 20px;margin-bottom:12px;width:420px"><div style="height:16px;background:#CFC6B2;border-radius:6px;filter:blur(3px);width:340px"></div></div></div><div class="card on" style="width:360px"><div class="t">two messages</div><div class="s">missed in a catch-up</div></div></div><template class="say"><p>Agent two, signal-sweep. A catch-up missed a two-message group DM that held the one number that mattered, and showed an auto-generated queue as if it were the priority list.</p><p>The bubbles are blurred on purpose. Do not name who sent it, and do not say the number in it.</p><p>After: signal-sweep reads every channel and pulls the asks out.</p></template></section><section class="frame " data-upto="1" data-focus="1" data-time="19:30-20:30"><div class="k">board-qa</div><div class="h md cp">Can this be read to camera?</div><div class="vis" style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:820px"><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#C0392B;color:#fff">1</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#C0392B;color:#fff">2</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#C0392B;color:#fff">3</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#C0392B;color:#fff">4</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">5</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">6</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">7</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">8</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">9</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">10</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">11</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">12</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">13</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">14</div><div style="height:74px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 22px JetBrains Mono;background:#fff;border:3px solid #1B4332;color:#1B4332">15</div></div><div class="mono" style="margin-top:14px;font-size:16px;color:#5F6B62">15 checks · first 4 are blockers, the run stops there</div><div class="src">claims.md: the board gate is fifteen checks; the first four are blockers</div><template class="say"><p>Agent three, board-qa. Boards were going out full and unrecordable. It answers one question through fifteen checks: can this be read to camera without stopping.</p><p>The first four are blockers. If one fails, the run stops there.</p></template></section><section class="frame " data-upto="1" data-focus="1" data-time="20:30-21:15"><div class="k">youtube-lead-magnet</div><div class="h md cp">Run the existing skill. Invent nothing.</div><div class="vis" style="display:flex;gap:16px;align-items:center;font:800 26px Inter;color:#1B4332"><div class="card">video</div>→<div class="card on">existing skill</div>→<div class="card">post · DM · config</div></div><template class="say"><p>Agent four, youtube-lead-magnet. It exists because of packaging drift. Its first instruction is to run the existing skill and never invent rules.</p><p>Four agents. Four incidents.</p></template></section><section class="frame " data-upto="1" data-focus="0" data-time="21:15-22:00"><div class="k">The gap</div><div class="h md cp">None of the four books a call.</div><div class="vis" style="display:flex;gap:14px"><div class="card"><div class="t mono" style="font-size:20px">performance-loop</div><div class="s">defensive</div></div><div class="card"><div class="t mono" style="font-size:20px">signal-sweep</div><div class="s">defensive</div></div><div class="card"><div class="t mono" style="font-size:20px">board-qa</div><div class="s">defensive</div></div><div class="card"><div class="t mono" style="font-size:20px">youtube-lead-magnet</div><div class="s">defensive</div></div></div><div class="src">claims.md: four agents, all defensive, none reaches out to a human</div><template class="say"><p>Full rail now. Read it bottom to top: four agents is the smallest number and the most important layer. The 73 prompts are the least interesting part.</p><p>What it does not do: every agent is defensive. Nothing in the repo reaches out to a human. That gap is the next video.</p></template></section><section class="frame dark" data-upto="1" data-focus="0" data-time="22:00-22:40"><div class="cta"><div class="k">If you run an agency</div><div class="h cp">Link in the description.</div><div class="pill cp">Agency Booked Calls</div></div><template class="say"><p>If you run an established agency and you want this installed for your own inbound, the link is in the description. It is called Agency Booked Calls.</p><p>Everyone else: comment which layer you would build first.</p></template></section></main>
+<div id="notes"></div>
+</div>
+<script>
+const frames=[...document.querySelectorAll('.frame')];
+const rows=[...document.querySelectorAll('#rail .row')];
+const notes=document.getElementById('notes');
+let i=0;
+function fit(){const s=Math.min(innerWidth/1600,innerHeight/900);document.getElementById('stage').style.transform='translate(-50%,-50%) scale('+s+')';}
+function show(n){i=Math.max(0,Math.min(frames.length-1,n));frames.forEach((f,j)=>f.classList.toggle('cur',j===i));
+ const f=frames[i];const upto=parseInt(f.dataset.upto||'99');const focus=parseInt(f.dataset.focus||'0');
+ rows.forEach(r=>{const rk=parseInt(r.dataset.rank);r.classList.toggle('on',rk>=upto);r.classList.toggle('focus',rk===focus);});
+ notes.innerHTML='<div class="meta">FRAME '+(i+1)+' / '+frames.length+' · '+(f.dataset.time||'')+'</div>'+(f.querySelector('template.say')?f.querySelector('template.say').innerHTML:'');
+ history.replaceState(null,'','#'+(i+1));}
+addEventListener('keydown',e=>{
+ if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1);}
+ else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(i-1);}
+ else if(e.key==='n'||e.key==='N'){notes.classList.toggle('on');}
+ else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+ else if(e.key==='Home'){show(0);} else if(e.key==='End'){show(frames.length-1);}
+});
+addEventListener('resize',fit);fit();
+show((parseInt(location.hash.slice(1))||1)-1);
+</script><style>
+#ytbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:6px;
+ background:rgba(17,17,17,.82);color:#fff;border-radius:999px;padding:6px 8px;font:600 13px/1 -apple-system,'Helvetica Neue',Arial,sans-serif;
+ box-shadow:0 6px 24px rgba(0,0,0,.25);user-select:none;-webkit-user-select:none}
+#ytbar.off{display:none}
+#ytbar button{all:unset;cursor:pointer;padding:7px 11px;border-radius:999px;color:#fff;font:inherit}
+#ytbar button:hover{background:rgba(255,255,255,.16)}
+#ytbar .ct{min-width:64px;text-align:center;font-variant-numeric:tabular-nums}
+#ytbar .hk{opacity:.55;font-weight:500;padding:0 6px;font-size:12px}
+#ytlist{position:fixed;left:50%;bottom:62px;transform:translateX(-50%);z-index:2147483000;width:min(560px,92vw);max-height:60vh;overflow:auto;
+ background:rgba(17,17,17,.94);color:#fff;border-radius:14px;padding:6px;font:500 13px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;
+ box-shadow:0 10px 30px rgba(0,0,0,.35);display:none}
+#ytlist.on{display:block}
+#ytlist div{padding:7px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ytlist div:hover{background:rgba(255,255,255,.14)}
+#ytlist div.cur{background:#F3E3A3;color:#111}
+#ytlist b{display:inline-block;min-width:34px;font-variant-numeric:tabular-nums}
+</style>
+<script>
+(function(){
+const NAV={count:()=>frames.length,index:()=>i,go:show,next:()=>show(i+1),prev:()=>show(i-1),label:k=>(frames[k].dataset.time||'')+' · '+frames[k].textContent.slice(0,90)};
+const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;/gi,' ').replace(/\s+/g,' ').trim();
+const bar=document.createElement('div');bar.id='ytbar';
+bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
+ '<button data-a="next" title="Next (Right arrow or Space)">&#9654;</button><button data-a="list" title="Frame list">Frames</button>'+
+ '<span class="hk">H hide · N notes · F full</span>';
+const list=document.createElement('div');list.id='ytlist';
+document.body.appendChild(list);document.body.appendChild(bar);
+const ct=bar.querySelector('.ct');
+let hidden=/HeadlessChrome/.test(navigator.userAgent)||/[?&]static/.test(location.search);
+try{const v=localStorage.getItem('ytbar');if(v!==null&&!hidden)hidden=v==='off';}catch(e){}
+function paint(){bar.classList.toggle('off',hidden);if(hidden)list.classList.remove('on');}
+function fill(){const n=NAV.count(),c=NAV.index();let h='';
+ for(let k=0;k<n;k++){h+='<div data-k="'+k+'"'+(k===c?' class="cur"':'')+'><b>'+(k+1)+'</b> '+strip(NAV.label(k))+'</div>';}
+ list.innerHTML=h;}
+let last=-1;
+function sync(){const c=NAV.index(),n=NAV.count();if(c===last)return;last=c;ct.textContent=(c+1)+' / '+n;
+ if(list.classList.contains('on'))fill();}
+setInterval(sync,120);
+// Keep focus on the document: a click on the bar never focuses a control.
+[bar,list].forEach(el=>{el.addEventListener('mousedown',e=>e.preventDefault());
+ el.addEventListener('click',e=>{e.stopPropagation();});});
+bar.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const a=b.dataset.a;
+ if(a==='prev')NAV.prev();else if(a==='next')NAV.next();
+ else if(a==='list'){list.classList.toggle('on');if(list.classList.contains('on')){fill();const cur=list.querySelector('.cur');if(cur)cur.scrollIntoView({block:'center'});}}
+ if(document.activeElement&&document.activeElement!==document.body)document.activeElement.blur();sync();});
+list.addEventListener('click',e=>{const d=e.target.closest('[data-k]');if(!d)return;NAV.go(+d.dataset.k);list.classList.remove('on');
+ if(document.activeElement&&document.activeElement!==document.body)document.activeElement.blur();sync();});
+// If anything else took focus (a link, the list), give it back before the format's key handler runs.
+addEventListener('keydown',e=>{const a=document.activeElement;
+ if(a&&a!==document.body&&a!==document.documentElement&&!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)&&!a.isContentEditable)a.blur();
+ if(e.key==='h'||e.key==='H'){hidden=!hidden;try{localStorage.setItem('ytbar',hidden?'off':'on');}catch(_){}paint();}
+ else if(e.key==='Escape'){list.classList.remove('on');}},true);
+// #N in the address bar jumps to frame N.
+addEventListener('hashchange',()=>{const m=location.hash.match(/\d+/);if(!m)return;const k=parseInt(m[0],10)-1;
+ if(k>=0&&k<NAV.count()&&k!==NAV.index())NAV.go(k);});
+paint();sync();
+})();
+</script>
+</body></html>

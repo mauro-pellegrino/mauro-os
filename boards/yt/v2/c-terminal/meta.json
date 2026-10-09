@@ -1,0 +1,40 @@
+[
+  {
+    "doc": "11",
+    "file": "11-claude-code-content-system.html",
+    "titles": [],
+    "frames": 26,
+    "minutes": 23,
+    "needs": [
+      "45 minutes lost to the rebuilt SOP (ops/MAP.md) is not in claims.md, shown as [NEEDS] on frame 5",
+      "185 tasks pushed / 0 ticked is marked 'Mauro decides' in claims.md, frame 24 carries a [NEEDS] until he clears it",
+      "revenue figure for the title ($100k/mo, $150k MRR, ~$500k) unresolved in doc 11 and absent from claims.md; board uses 150+ booked calls instead",
+      "re-count skills, agents and tools on the recording day (published counts 73 / 4 / 25)"
+    ]
+  },
+  {
+    "doc": "05",
+    "file": "05-x-ranking-code.html",
+    "titles": [
+      {
+        "title": "I Read X's Ranking Code So You Don't Have To",
+        "modelled_on": "research/charlie-morgan/charlie-morgan-dig.md #9, Charlie Morgan, 'I Ranked Every Online Business Model So You Don't Have To' (24K)"
+      },
+      {
+        "title": "I Cracked the New X Algorithm (Real Weights)",
+        "modelled_on": "skills/youtube/01-outliers.csv, Marcos Ruiz, 'I Cracked The NEW Twitter/X Algorithm' (7,400)"
+      },
+      {
+        "title": "X Published Its Algorithm Weights (2026)",
+        "modelled_on": "skills/youtube/01-outliers.csv, David Ondrej, 'Google just destroyed all vibe-coding apps (Firebase Studio)' (416,000), the newsjack shape"
+      }
+    ],
+    "frames": 22,
+    "minutes": 21,
+    "needs": [
+      "live capture of param.rs on the day (frames 1, 9): the pane is a defaults view built from claims.md, not the file's syntax",
+      "live capture of the Claude lookup on frame 21",
+      "web search found no X-algorithm YouTube outliers with readable view counts; titles anchor on CSV and Charlie Morgan rows"
+    ]
+  }
+]
