@@ -176,7 +176,8 @@ if(q.get('notes'))document.getElementById('notes').classList.add('open');fit();s
  *
  * Draft layer: D toggles it. ON = review (elements with class "draft" show, the correction tools show,
  * a DRAFT BOARD badge shows). OFF = recording (all of that is gone). Default ON; headless Chrome and
- * ?static default OFF so renders stay clean; ?draft=on / ?draft=off always win. H hides the tools only.
+ * ?static default OFF so renders stay clean; ?draft=on / ?draft=off win where the board keeps its URL
+ * (a-keynote rewrites it to ?s=N, so use D there). H hides the tools only.
  * State in localStorage (every access in try/catch), key per board file.
  * Download: board-corrections-<board-slug>-<date>.txt, one line per note: "Frame N · <heading>: <note>".
  * ~/inbox/run.py files those under ~/review-queue/decisions/boards/.
