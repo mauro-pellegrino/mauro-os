@@ -6,7 +6,7 @@ not posted. Every "i don't" line must be true for Mauro: confirm before it runs.
 
 ---
 
-## A: the review loop
+## A: the review loop ✅ APPROVED (review 9 Oct v4)
 
 i don't write a single first draft anymore...
 
@@ -34,7 +34,7 @@ you should do the same
 
 ---
 
-## B: the youtube boards
+## B: the youtube boards ❌ KILLED (review 9 Oct v4)
 
 i don't build a single youtube board by hand anymore...
 
