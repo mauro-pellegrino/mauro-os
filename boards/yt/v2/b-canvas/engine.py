@@ -286,6 +286,9 @@ body{font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;color:v
 #notes .h{font:700 14px 'JetBrains Mono',monospace;letter-spacing:.16em;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
 #notes p{margin:6px 0;max-width:1200px}
 #notes .os{color:#B7E4C7}
+.zone{cursor:zoom-in}
+#cvhint{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:2147482000;background:#1B4332;color:#F7F3EA;font:600 13px Inter,sans-serif;padding:6px 12px;border-radius:6px;opacity:.92}
+
 """
 
 JS = r"""
@@ -303,7 +306,15 @@ function start(){const m=(location.hash||'').match(/\d+/);return m?parseInt(m[0]
 fit();cam(start());
 requestAnimationFrame(()=>requestAnimationFrame(()=>map.classList.add('anim')));
 addEventListener('resize',fit);
+map.addEventListener('click',e=>{const z=e.target.closest('.zone');if(!z||e.target.closest('a,button,video'))return;
+ const cx=z.offsetLeft+z.offsetWidth/2,cy=z.offsetTop+z.offsetHeight/2;let best=-1,ba=Infinity;
+ F.forEach((f,k)=>{const [x,y,w,h]=f.r;if(cx>=x&&cx<=x+w&&cy>=y&&cy<=y+h&&w*h<ba){ba=w*h;best=k;}});
+ if(best>=0)cam(best===i?0:best);});
+const hint=document.createElement('div');hint.id='cvhint';hint.textContent='Click any card to zoom in · click it again or press Esc to zoom out · → next';document.body.appendChild(hint);
+if(navigator.webdriver)hint.style.display='none';
+addEventListener('keydown',e=>{if(e.key==='h'||e.key==='H')hint.style.display=hint.style.display==='none'?'':'none';});
 addEventListener('keydown',e=>{
+ if(e.key==='Escape'){cam(0);return;}
  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();cam(i+1);}
  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();cam(i-1);}
  else if(e.key==='Home'){cam(0);} else if(e.key==='End'){cam(F.length-1);}
