@@ -42,6 +42,19 @@ compare formats on the same content. The other 11 docs are built in one format e
    face slot is allowed as the only placeholder (Mauro's face goes there). Max 4 words on a thumbnail.
 8. **CTA**: the frame says "Link in the description" plus the offer name "Agency Booked Calls". No
    price, no URL.
+9. **MUST: the videos are on the board (Mauro 2026-10-09).** Every ad, clip or example the video
+   talks about is embedded as a playable video on the board, at the beat where it is discussed. A
+   board without the videos is not recordable. Best: an inline player
+   (`<video controls playsinline preload="metadata" poster=...>`) AND under it an "Open video ↗"
+   link to the same MP4 (`target="_blank" rel="noopener"`) plus the source link. Minimum: the MP4
+   link that opens in a new tab (Brando's style). Files go in `video/` next to the board, H.264 + AAC,
+   8 MB or less each; a bigger one stays local, goes in `.gitignore`, and gets a line in the notes.
+   A video that cannot be found gets a red "VIDEO MISSING: <which clip, where to get it>" block in
+   its slot, never a silent gap.
+10. **Spacing (Mauro 2026-10-09).** Consistent rhythm: 96-120px between sections, 32-56px inside a
+   section. Body text max ~70ch per line. Nothing touches: clear space between a video or image and
+   its caption, between grid cells, and around the frame edge. Videos and images sit on one column
+   grid. Headings get clear space above. Check the headless Chrome render plus 3 crops with Read.
 
 ## Content rules (non-negotiable)
 
