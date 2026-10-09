@@ -323,8 +323,8 @@ these exact framings only.
 personal revenue (`brand/positioning.md`).
 
 **Explicitly not cleared, brief says ask Mauro directly:** the channel split on qualified calls over
-the last 90 days (roughly 55% X, 10% LinkedIn, 10% YouTube), and the auto-DM cadence of one to two a
-day with the performance drop starting 1 August.
+the last 90 days, and the auto-DM cadence with the date the performance dropped. The figures stay out
+of this public file (repo audit 9 Oct, batch 1).
 
 **Never, per the same brief:** the "$300k/mo closed from X and LinkedIn" phrasing Mauro used in the
 session (looser than the repo version, and the repo version is the one that survives checking); the

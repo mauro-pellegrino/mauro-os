@@ -17,6 +17,8 @@ Source material from **JK Molina** ([@jkmolina_](https://x.com/jkmolina_)) and t
 
 ## The 16 source PDFs
 
+The PDFs live locally in `private/jk-molina/` (gitignored, moved 9 Oct by the repo audit). The list stays here.
+
 **Offer and pricing**
 - `the-offer-shell.pdf` — one offer, tiered by access. The 6 tiers and their price bands
 - `pricing.pdf` — 18 pricing plays. "Objective numbers, subjective feel"
