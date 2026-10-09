@@ -1,6 +1,6 @@
 # Long form for the process-map animation (@maurojpelle, X + LinkedIn)
 
-Status: draft, not posted, no day yet. Written 2026-10-08 for review v3 #2: Mauro approved the cream
+Status: X and LinkedIn versions approved (review 9 Oct v4 #6, #7). Slot set 9 Oct in `docs/juan-handoff-2026-10-09.md`: X version replaces X5 on Fri 16 Oct with the 1080x1080 MP4 (the loop option died with v4 #11); LinkedIn version Wed 14 Oct with the 1600x900 MP4. Originally: no day yet. Written 2026-10-08 for review v3 #2: Mauro approved the cream
 process-map animation "but missing a long form to accompany it (ideally bullet point heavy)".
 This file has no dated heading on purpose. The morning page shows it as an unscheduled pool until Mauro
 gives it a day.
