@@ -24,6 +24,30 @@ X, where the conversion happens.
 
 ---
 
+## OFFER BUILD (set 2026-10-09)
+
+Decision: `content/plan/offer-decision-2026-10-09.md`, visual `content/plan/product-ladder.html`. The whole
+system (YouTube video to content, voice, company brain) is free on Whop. Paid = Install Sprint, one-time,
+$197 founding for 10 seats, then $297. No monthly room until the weekly drop runs 4 weeks. Owners: M = Mauro,
+C = Claude, J = Juan. Nothing posts or sends without Mauro.
+
+- [ ] 1. Fri 9 Oct, M, 10 min: send the agency ask (text in section 0 of the decision file). Log the answer and the date in `content/plan/ownership-inventory.md`.
+- [ ] 2. Fri 9 Oct, M, 5 min: confirm $197 / $297 and 10 seats. Pick the name (working name "The Engine").
+- [ ] 3. Fri 9 Oct, C, 45 min: package skeleton + scrub test. `mkdir -p ~/mauro-os/products/engine/claude-code/{brain,skills,tools}`
+- [ ] 4. Sat 10 Oct, M, 30 min: Whop store, one free product, one hidden paid product. Check that free-tier gating and file delivery work.
+- [ ] 5. Sat 10 Oct, C, 2 h: write `02-video-to-content/run.md` and run it on `research/transcripts/maurojpelle/how-to-create-lead-magnets-with-claude.md`.
+- [ ] 6. Sun 11 Oct, C, 2 h: brain templates, the 3-failures prompt, Gate without paths. From `growthub-os/skills/ops/company-brain-install.md`.
+- [ ] 7. Mon 12 Oct, C, 1.5 h: module 01 lead magnets, cut LeadShark and comment-to-DM. `grep -rn -i "leadshark\|autodm\|comment" brand/engine/module-01-lead-magnets/`
+- [ ] 8. Mon 12 Oct, M, 30 min: first `/gc-monday`. Its output is the first Monday drop.
+- [ ] 9. Tue 13 Oct, J, 2 h: stranger test 1 from the README only. Log every stop in `content/qa/engine-stranger-test-1.md`.
+- [ ] 10. Tue 13 Oct, C, 1 h: claude.ai Project version, `products/engine/claude-ai-project/instructions.md`.
+- [ ] 11. Wed 14 Oct, M, 45 min: record Looms 1, 2 and 6 (list in section 2 of the decision file).
+- [ ] 12. Wed 14 Oct, C, 1.5 h: fix every stop from Juan's test. Scrub grep returns 0: `grep -rniE "growthub|lorenzo|bogdan|/Users/mauro|leadshark" products/engine/`
+- [ ] 13. Thu 15 Oct, M + C, 1 h: giveaway article + free Whop page in `content/drafts/`. Gate both. Stage only.
+- [ ] 14. Thu 15 Oct, M, 15 min: name the warm list (ghostwritten owners, churned contacts).
+- [ ] 15 to 23. Weeks 2 to 4: stranger test 2 (J, Project version), the other Looms (M), `tools/monday-read.py` (C), publish after the agency yes (M), one direct message a day (M + J), weekly drop (C), cohort 1 cart with a close date (M), day-14 Agency Booked Calls offer (M), room decision after 4 drops (M + C). Detail in section 4 of the decision file.
+- [?] Blocked on Mauro: cohort 1 open date. One option: Mon 26 Oct, after X6, X7, X8 and LI3 run 19 to 21 Oct.
+
 ## IN PROGRESS 2026-10-08 (paused by Mauro)
 
 - [?] Review queue round 3 is open (`~/review-queue/index.html`): GC posts v3, plan v2, animated ASCII.
