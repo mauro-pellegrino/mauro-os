@@ -29,14 +29,7 @@
    "build",
    "built"
   ],
-  "avoid": [
-   "portfolio",
-   "portfolio check",
-   "link bio",
-   "click link",
-   "banger ads",
-   "updated"
-  ],
+  "avoid": [],
   "seed": {
    "claude insane": [
     9,
@@ -162,36 +155,6 @@
     18,
     2.47,
     false
-   ],
-   "portfolio": [
-    115,
-    0.4,
-    false
-   ],
-   "portfolio check": [
-    10,
-    0.18,
-    false
-   ],
-   "link bio": [
-    42,
-    0.26,
-    false
-   ],
-   "click link": [
-    24,
-    0.26,
-    false
-   ],
-   "banger ads": [
-    9,
-    0.14,
-    false
-   ],
-   "updated": [
-    105,
-    0.4,
-    false
    ]
   }
  },
@@ -224,11 +187,6 @@
    "footage"
   ],
   "avoid": [
-   "updated portfolio",
-   "portfolio",
-   "creating clients",
-   "check",
-   "click",
    "transcripts"
   ],
   "seed": {
@@ -355,31 +313,6 @@
    "footage": [
     8,
     2.06,
-    false
-   ],
-   "updated portfolio": [
-    22,
-    0.17,
-    false
-   ],
-   "portfolio": [
-    38,
-    0.29,
-    false
-   ],
-   "creating clients": [
-    14,
-    0.18,
-    false
-   ],
-   "check": [
-    37,
-    0.26,
-    false
-   ],
-   "click": [
-    16,
-    0.53,
     false
    ],
    "transcripts": [
@@ -573,5 +506,6 @@
     false
    ]
   }
- }
+ },
+ "_plugs": "2026-10-09: plug words (portfolio, audit, link, bio, click, 'updated portfolio', 'creating clients', 'banger ads', 'check') removed from track and avoid. They came from the auto-plug self-replies, which sit below the main post and always get less reach. The tracker now leaves plugs out of the keyword medians and scores them apart by URL clicks and profile visits. Candidate new avoid words wait for Mauro's approval (review card keyword-plugs)."
 }

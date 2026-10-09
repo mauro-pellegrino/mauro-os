@@ -3,7 +3,9 @@
 
 For each account, original posts (no replies) from 1 Jun 2026. A keyword's lift = the median
 impressions of posts that contain it / the account's median. Resource (autodm-style) posts are
-counted apart, because they carry most follows whatever the words.
+counted apart, because they carry most follows whatever the words. Auto-plugs (the self-reply under a
+post that links the portfolio, the bio or an audit) are left out: they sit below the main post, so they
+always get less reach. tools/x-keyword-tracker.py scores them apart by URL clicks and profile visits.
 
     python3 tools/x-keywords.py            # all accounts
     python3 tools/x-keywords.py Lorenzo    # one account
@@ -17,6 +19,22 @@ those i you we he she they my your our their me us them not no do does did done 
 should could about into out up down over than too also only all any each every some what which who how why when where there here
 one two get got make made like amp https co t im ive dont youre its thats rt s re ll ve d m new now right still way""".split())
 MIN = 6
+# Auto-plug = short self-reply that sends the reader to a link: portfolio, link in bio, audit, book a call.
+PLUG_WORDS = re.compile(r"portfolio|link in (my )?bio|link in my|click (the )?link|clicking the link|audit|book a call|"
+                        r"check (it|them)? ?out|work with us|take a look", re.I)
+PLUG_LINK = re.compile(r"https?://|link in (my )?bio|link in my|click (the )?link|clicking the link|dm me", re.I)
+
+
+def is_plug(t):
+    """True for an auto-plug row: under 160 characters without the URL, a link (or bio / DM), a plug word."""
+    t = t or ""
+    return len(re.sub(r"https?://\S+", "", t).strip()) <= 160 and bool(PLUG_LINK.search(t)) and bool(PLUG_WORDS.search(t))
+
+
+def plug_type(t):
+    t = (t or "").lower()
+    return "portfolio" if "portfolio" in t else "audit" if "audit" in t else \
+        "link in bio" if re.search(r"bio|click", t) else "website / other link"
 
 
 def words(t):
@@ -29,7 +47,8 @@ def words(t):
 if __name__ == "__main__":
     accs = sys.argv[1:] or ["Lorenzo", "Bogdan", "Mauro"]
     for acc in accs:
-        posts = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and r["day"] >= dt.date(2026, 6, 1)]
+        posts = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and not is_plug(r["Post text"])
+                 and r["day"] >= dt.date(2026, 6, 1)]
         base = statistics.median(n(r, "Impressions") for r in posts)
         idx = collections.defaultdict(list)
         for r in posts:

@@ -1,6 +1,6 @@
 # Juan: the reply brief for @maurojpelle
 
-**Date:** 2026-10-08. **Data:** `research/x-analytics/maurojpelle-2026-07-08-to-2026-10-05.csv`, read with `tools/x-reply-targets.py`. **The list:** `brand/analytics/reply-target-list.md`.
+**Date:** 2026-10-08, updated 2026-10-09 (X List "Reply rooms", 30 more big rooms). **Data:** `research/x-analytics/maurojpelle-2026-07-08-to-2026-10-05.csv`, read with `tools/x-reply-targets.py`. **The list:** `brand/analytics/reply-target-list.md`. **The X List handles:** `docs/juan-x-list-handles.txt` (one per line, without the @).
 
 ## Why this changes
 
@@ -10,7 +10,7 @@ Since 1 Sep: 151 replies, 1 follow. In September the account sent 50 replies at 
 
 1. **15 replies a day, as a maximum.** The 5 days of October with 20 a day had the lowest reach per reply.
 2. **Within 15 minutes of the post.** An early reply sits near the top of the thread. A late reply sits under the replies that came first.
-3. **On the list only.** KEEP, TEST, BIG ROOMS and BUYER ACCOUNTS in `reply-target-list.md`. A handle that is not on the list gets no reply. If an account looks right, add it to a note for Mauro. Do not reply first.
+3. **On the List only.** Reply only to posts in the private X List "Reply rooms". It holds KEEP, TEST, BIG ROOMS and BUYER ACCOUNTS from `reply-target-list.md`. A handle that is not on the List gets no reply. If an account looks right, add it to a note for Mauro. Do not reply first.
 4. **One specific point from Mauro's real work in every reply.** A question about their system, or one fact from his. Take the facts from `brand/claims.md` (rows marked "yes") and from his own posts in the export. Never invent a number.
 5. **No replies to the team.** @lorenzo_pravata and @Bogzabs96 got 14 replies, 694 impressions and 0 follows. A like or a repost is fine.
 6. **No one-word replies.** "Fireee", "so true", "nice list", "appreciate it bro!" are banned.
@@ -41,13 +41,21 @@ What they share: each one asks about the poster's own system, or gives one concr
 
 **Where to find Mauro's facts (his own posts):** the four lowest-reach articles booked 78% of the calls. The same gated offer ran three times: 263 comments, then 81, then 34. Boards for his YouTube videos took 4 hours each and now take close to 2. Objections from calls go into one doc and feed the posts.
 
+## Set up the X List (once, 20 minutes)
+
+X has no API access here, so Juan builds the List by hand.
+
+1. On x.com, open Lists > New List. Name it "Reply rooms". Turn on "Make private". Save.
+2. Add every handle in `docs/juan-x-list-handles.txt` with the search box in "Add to your List". For the lines under "UNVERIFIED", open the profile first. Add it only if the handle exists and the follower count is 100K to 1M. Write the count and the date in `reply-target-list.md`.
+3. Pin the List. It appears as a tab next to "For you" and "Following". Sort it by Latest.
+
 ## The daily routine (20 minutes in total)
 
-1. **Once:** turn on post notifications (the bell) for every account in KEEP, TEST, BIG ROOMS and BUYER ACCOUNTS.
-2. **When a notification lands:** open it. If the post is on-lane and under 15 minutes old, reply. If the post is about AI models or tools, or about a first client or $1k MRR, skip it.
+1. **Open the pinned "Reply rooms" tab.** This is the only feed for replies. Do not reply from "For you".
+2. **Read from the top.** If a post is on-lane and under 15 minutes old, reply. If the post is about AI models or tools, or about a first client or $1k MRR, skip it.
 3. **Write the reply in under 1 minute.** One sentence or one question. Lowercase is fine. No em dashes. Use `/reply` in Claude Code when you are not sure.
 4. **Keep a tally.** Stop at 15 for the day. Spread them over at least 8 different accounts.
-5. **End of day (2 minutes):** write down any new account that looked right. Mauro decides on Monday.
+5. **End of day (2 minutes):** write down any new account that looked right. Mauro decides on Monday. Do not add it to the List before that.
 
 ## What gets measured every week
 
@@ -60,3 +68,4 @@ Every Monday:
    - **Follows from replies.** Baseline since 1 Sep: **1** in 5 weeks.
    - **Replies to roster handles.** The target is every reply.
 4. Move accounts between tiers with the rules at the end of `reply-target-list.md`.
+5. Update `docs/juan-x-list-handles.txt`. Juan then adds or removes the same accounts on the X List "Reply rooms" by hand.

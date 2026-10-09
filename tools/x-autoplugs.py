@@ -6,13 +6,12 @@ URL clicks, profile visits and follows per month, plus the most-used plug texts.
 """
 import collections, contextlib, io, re, runpy, statistics, sys
 with contextlib.redirect_stdout(io.StringIO()):
-    ns = runpy.run_path(__file__.replace("x-autoplugs.py", "x-three-accounts.py"), run_name="lib")
-rows, n = ns["rows"], ns["n"]
+    ns = runpy.run_path(__file__.replace("x-autoplugs.py", "x-keywords.py"), run_name="lib")
+rows, n, is_plug = ns["rows"], ns["n"], ns["is_plug"]  # one plug rule, shared with x-keyword-tracker.py
 acc = (sys.argv[1:] or ["Lorenzo"])[0]
-P = re.compile(r"portfolio|link in (my )?bio|click (the )?link|calendly|book a call|check out", re.I)
 by = collections.defaultdict(list)
 for r in rows.values():
-    if r["acc"] == acc and P.search(r["Post text"] or "") and r["day"].strftime("%Y-%m") >= "2026-05":
+    if r["acc"] == acc and r["kind"] != "reply" and is_plug(r["Post text"]) and r["day"].strftime("%Y-%m") >= "2026-05":
         by[r["day"].strftime("%Y-%m")].append(r)
 print("month   plugs  impressions  median  url_clicks  clicks/plug  visits  follows")
 for m in sorted(by):

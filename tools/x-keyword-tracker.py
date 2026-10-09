@@ -6,7 +6,13 @@ The list lives in tools/x-keyword-list.json: per account a "track" list (the key
 purpose) and an "avoid" list (keywords that sink reach). Seeded 8 Oct 2026 from x-keywords.py
 (top reach lifts since 1 Jun) and, for Mauro, ICP terms from brand/audience.md.
 
-Scoring: original posts only (no replies). Last week (Mon-Sun) against the 8 weeks before it.
+Auto-plugs (the self-reply under a post that links the portfolio, the bio, an audit or the site; see
+is_plug() in x-keywords.py) sit below the main post, so they always get less reach. They are left out of
+the keyword scoring and the medians, and get their own section: URL clicks and profile visits per plug
+and per 1,000 impressions, by plug type. Never judge a plug by reach. Plug words (portfolio, audit,
+link, bio, click) stay off the track and avoid lists.
+
+Scoring: original posts only (no replies, no plugs). Last week (Mon-Sun) against the 8 weeks before it.
   lift      = median impressions of the posts that contain the keyword / the account's 8-week median
   vis/post  = profile visits per post, fol/post = new follows per post
   WINNER    = 2+ posts last week and lift >= 2      LOSER = 2+ posts last week and lift < 0.7
@@ -29,8 +35,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 with contextlib.redirect_stdout(io.StringIO()):
     kw = runpy.run_path(os.path.join(HERE, "x-keywords.py"), run_name="lib")
 rows, n, M, words = kw["rows"], kw["n"], kw["M"], kw["words"]
+is_plug, plug_type = kw["is_plug"], kw["plug_type"]
 for r in rows.values():
     r["_w"] = words(r["Post text"])
+    r["_plug"] = r["kind"] != "reply" and is_plug(r["Post text"])
 
 ap = argparse.ArgumentParser()
 ap.add_argument("accounts", nargs="*", default=["Lorenzo", "Bogdan", "Mauro"])
@@ -61,6 +69,15 @@ def stat(ps, k, base):
                 res=all(M.search(r["Post text"] or "") for r in hit))
 
 
+def plugline(ps):
+    """Plugs scored by what they are for: clicks and profile visits, per plug and per 1,000 impressions."""
+    imp = sum(n(r, "Impressions") for r in ps)
+    c, v, fo = (sum(n(r, k) for r in ps) for k in ("URL Clicks", "Profile visits", "New follows"))
+    k = imp / 1000 if imp else 0
+    return (f"{len(ps)} | {c / len(ps):.1f} | {v / len(ps):.1f} | {f(c / k if k else None, 1)} | "
+            f"{f(v / k if k else None, 1)} | {fo / len(ps):.2f}") if ps else "0 | - | - | - | - | -"
+
+
 def f(x, d=1):
     return "-" if x is None else f"{x:.{d}f}"
 
@@ -72,7 +89,7 @@ sun, start = mon + dt.timedelta(days=6), mon - dt.timedelta(weeks=8)
 
 if a.seed:
     for acc in a.accounts:
-        ps = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and r["day"] >= dt.date(2026, 6, 1)]
+        ps = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply" and not r["_plug"] and r["day"] >= dt.date(2026, 6, 1)]
         base = med([n(r, "Impressions") for r in ps])
         allk = {k for r in ps for k in r["_w"]}
         st = [(k, stat(ps, k, base)) for k in allk]
@@ -91,7 +108,8 @@ if newest < sun:
 for acc in a.accounts:
     lst = cfg.get(acc) or {}
     track, avoid = [norm(k) for k in lst.get("track", [])], [norm(k) for k in lst.get("avoid", [])]
-    orig = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply"]
+    allo = [r for r in rows.values() if r["acc"] == acc and r["kind"] != "reply"]
+    orig = [r for r in allo if not r["_plug"]]
     lw = [r for r in orig if mon <= r["day"] <= sun]
     tr = [r for r in orig if start <= r["day"] < mon]
     base = med([n(r, "Impressions") for r in tr])
@@ -101,6 +119,19 @@ for acc in a.accounts:
                f"(8w {f(sum(n(r, 'Profile visits') for r in tr) / len(tr) if tr else None)}), "
                f"follows/post {f(sum(n(r, 'New follows') for r in lw) / len(lw) if lw else None, 2)} "
                f"(8w {f(sum(n(r, 'New follows') for r in tr) / len(tr) if tr else None, 2)}).")
+    plw = [r for r in allo if r["_plug"] and mon <= r["day"] <= sun]
+    ptr = [r for r in allo if r["_plug"] and start <= r["day"] < mon]
+    if plw or ptr:
+        out.append(f"\nAuto-plugs (scored by clicks and visits, never by reach): {len(plw)} last week, {len(ptr)} in the 8 weeks.\n")
+        out.append("| plug type | window | plugs | URL clicks/plug | visits/plug | clicks/1k imp | visits/1k imp | follows/plug |")
+        out.append("|---|---|---|---|---|---|---|---|")
+        for t in ["all"] + sorted({plug_type(r["Post text"]) for r in plw + ptr}):
+            for w, ps in (("last week", plw), ("8 weeks", ptr)):
+                sel = [r for r in ps if t == "all" or plug_type(r["Post text"]) == t]
+                out.append(f"| {t} | {w} | {plugline(sel)} |")
+        out.append("\nA link-in-bio plug has no URL in the post, so judge it by visits. A URL plug: by clicks.")
+    else:
+        out.append("\nNo auto-plugs in the 9 weeks.")
     if not track:
         out.append(f"No keyword list for {acc} in the JSON.")
         continue

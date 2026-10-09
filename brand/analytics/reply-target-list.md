@@ -2,8 +2,9 @@
 
 **Refreshed:** 2026-10-08 from `research/x-analytics/maurojpelle-2026-07-08-to-2026-10-05.csv` (same file as `~/Downloads/account_analytics_content_2026-07-08_2026-10-05.csv`), replies from 1 Sep to 5 Oct. Script: `python3 tools/x-reply-targets.py --rows`.
 **New on 2026-10-08:** 34 accounts (20 BIG ROOMS, 14 BUYER ACCOUNTS). 4 of them got one reply since 1 Sep, all with 0 visits except @morganjingram (1).
+**Updated 2026-10-09:** 30 more BIG ROOMS (rows 21-50), band now 100K to 1M followers. The whole roster is also an X List: `docs/juan-x-list-handles.txt`.
 **Previous build:** 2026-08-24 from the 18-24 Aug export (246 replies, 166 accounts). Aug numbers below are from that build.
-**Used by:** `skills/content/x-reply-assistant.md` Step 0 (the room test), `.claude/commands/reply.md`, `docs/juan-reply-brief.md`.
+**Used by:** `skills/content/x-reply-assistant.md` Step 0 (the room test), `.claude/commands/reply.md`, `docs/juan-reply-brief.md`, `docs/juan-x-list-handles.txt` (the private X List "Reply rooms").
 **Refresh:** every Monday. Move accounts between tiers on the numbers, not on feel.
 
 **Attribution limit.** The export has no "replied to" field. The script credits the first @handle in the reply text. In a thread with several handles, that is usually the original poster, but not always.
@@ -67,9 +68,9 @@ Watch only, 2 visits off tiny reach (under 30 impressions each): @atharvatwts, @
 
 ---
 
-## BIG ROOMS (new, 2026-10-08)
+## BIG ROOMS (2026-10-08, 30 added 2026-10-09)
 
-Accounts with 50K to 500K followers, where agency owners, operators and B2B founders read the replies. They talk about content systems, AI for operators, client acquisition and agency growth. Every one starts as TEST: 5 replies, then judge on profile visits per reply.
+Accounts with 100K to 1M followers (rows 1-20 used 50K to 500K; the smaller ones stay until they fail the 5-reply test), where agency owners, operators and B2B founders read the replies. They talk about content systems, AI for operators, client acquisition and agency growth. Every one starts as TEST: 5 replies, then judge on profile visits per reply.
 
 Follower counts are from web search snippets seen on 2026-10-08 (x.com blocks fetches). **Juan: verify each count on x.com before the first reply and correct this table.**
 
@@ -95,6 +96,43 @@ Follower counts are from web search snippets seen on 2026-10-08 (x.com blocks fe
 | 18 | @KateBour (Katelyn Bourgoin) | 149.9K (snippet) | Buyer psychology. Marketers and agency owners. | not replied |
 | 19 | @amandanat (Amanda Natividad) | 131.2K (snippet) | Audience research, zero-click content, SparkToro. | not replied |
 | 20 | @TheCoolestCool (Ross Simmonds) | 73.4K (snippet) | Founder of Foundation, a B2B content agency. Content distribution. | not replied |
+
+**Rows 21-50, added 2026-10-09: UNVERIFIED.** The web search budget for the session ran out before the counts were checked, and x.com blocks fetches. Handles and the room notes come from memory, except rows 21-22 (search snippets of 2026-10-08). **Juan: open each profile on x.com before the first reply. Fix the handle, write the follower count and the date. Delete the row if the count is under 100K or over 1M, or if the posts fail the RED tests (models and tools, or first-client altitude).**
+
+| # | Account | Followers (source, date) | Why the room fits | Sep-Oct |
+|---|---|---|---|---|
+| 21 | @gregisenberg | 666.6K (snippet 2026-10-08, verify on x.com) | Startup ideas and AI for small businesses. Founders and operators in the replies. Skip his AI-tool posts. | not replied |
+| 22 | @sweatystartup (Nick Huber) | 525.1K (snippet 2026-10-08, verify on x.com) | Service businesses, hiring, operators. | not replied |
+| 23 | @noahkagan | [NEEDS: followers] | AppSumo founder. Marketing and selling for small businesses. | not replied |
+| 24 | @randfish | [NEEDS: followers] | SparkToro co-founder. Audience research and marketing. | not replied |
+| 25 | @neilpatel | [NEEDS: followers] | Runs a marketing agency (NP Digital). SEO and marketing. | not replied |
+| 26 | @heyeaslo (Eric Siu) | [NEEDS: followers] | Runs a marketing agency (Single Grain). Agency growth and AI for marketing. | not replied |
+| 27 | @chris_do | [NEEDS: followers] | The Futur. Pricing and selling for agency and creative-business owners. | not replied |
+| 28 | @leilahormozi | [NEEDS: followers] | Acquisition.com. Operations, hiring and scaling a business. | not replied |
+| 29 | @Codie_Sanchez | [NEEDS: followers] | Buys and runs small businesses. Operator audience. | not replied |
+| 30 | @hnshah (Hiten Shah) | [NEEDS: followers] | SaaS founder. Customer research and B2B growth. | not replied |
+| 31 | @jasonfried | [NEEDS: followers] | 37signals. Small teams and how a company runs. | not replied |
+| 32 | @AndrewWilkinson | [NEEDS: followers] | Tiny. Buys and runs internet businesses, started as an agency owner. | not replied |
+| 33 | @lennysan | [NEEDS: followers] | Lenny's Newsletter. Product and growth for B2B teams. | not replied |
+| 34 | @patio11 | [NEEDS: followers] | The business of software and selling services. | not replied |
+| 35 | @danshipper | [NEEDS: followers] | Every. How a company works with AI day to day. Skip his model reviews. | not replied |
+| 36 | @emollick | [NEEDS: followers] | AI at work, research on teams and output. Skip his model and benchmark posts. | not replied |
+| 37 | @jayclouse | [NEEDS: followers] | Creator Science. Creator businesses and audience growth. | not replied |
+| 38 | @jackbutcher | [NEEDS: followers] | Visualize Value. One-person business and selling expertise. | not replied |
+| 39 | @thedankoe | [NEEDS: followers] | One-person business and writing. Apply the altitude test to each post. | not replied |
+| 40 | @aliabdaal | [NEEDS: followers] | Creator business and productivity. Apply the altitude test to each post. | not replied |
+| 41 | @david_perell | [NEEDS: followers] | Writing online. Writers and content operators in the replies. | not replied |
+| 42 | @ShaanVP (Shaan Puri) | [NEEDS: followers] | My First Million. Business ideas and founders. | not replied |
+| 43 | @thesamparr (Sam Parr) | [NEEDS: followers] | My First Million, sold The Hustle. Content businesses and selling. | not replied |
+| 44 | @george__mack | [NEEDS: followers] | Writing and ideas. Founders and writers in the replies. | not replied |
+| 45 | @nathanbarry | [NEEDS: followers] | Kit (ConvertKit) founder. Creator economy and email. | not replied |
+| 46 | @levelsio | [NEEDS: followers] | Solo founder. Skip his AI-tool and code posts. | not replied |
+| 47 | @arvidkahl | [NEEDS: followers] | Bootstrapped founder. Audience-first business building. | not replied |
+| 48 | @marc_louvion | [NEEDS: followers] | Solo founder. Skip his code and tool posts. | not replied |
+| 49 | @dannypostmaa | [NEEDS: followers] | Solo founder. Marketing a small product. | not replied |
+| 50 | @wes_kao | [NEEDS: followers] | Managers and communication. Consultants and team leads in the replies. | not replied |
+
+Gap: no big sales accounts in rows 21-50. [NEEDS: 3-5 sales rooms with 100K-1M followers, found with a web search.]
 
 ## BUYER ACCOUNTS (new, 2026-10-08)
 
@@ -142,7 +180,8 @@ Also buyers already in KEEP or TEST: @paolo_scales, @AlexHartsuff, @LoganTGott, 
 
 ## Checked and left out (2026-10-08)
 
-- gregisenberg (666.6K) and sweatystartup (525.1K): above the big-room band.
+- gregisenberg (666.6K) and sweatystartup (525.1K): above the old band. In BIG ROOMS since 2026-10-09 (band now 100K to 1M).
+- harrydry (Marketing Examples): 46.7K followers (search snippet 2026-10-09, verify on x.com). Under the 100K band.
 - heyblake (91.3K): 4 replies (Aug 3, Sep 1), 0 profile visits. DROP.
 - rubenhassid: stays RED from Aug.
 - CharlieImperium (Imperium Academy) and liamottley_ (AI automation agency beginners): fail the altitude test, RED.
@@ -183,3 +222,4 @@ The impressions are real, but the room is the agency's audience (ecom brand oper
 7. Any account that posts at beginner altitude ($1k MRR, first client, first $10k) moves to RED, no matter the reach.
 8. The team (@lorenzo_pravata, @Bogzabs96) is never on the list.
 9. The script prints "replies to roster handles". The target is 15 of 15 a day on the list.
+10. When an account moves tier, update `docs/juan-x-list-handles.txt` the same day. Juan adds or removes the account on the X List "Reply rooms" by hand (no API access).
