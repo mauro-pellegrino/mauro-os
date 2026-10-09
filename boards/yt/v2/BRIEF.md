@@ -56,6 +56,25 @@ compare formats on the same content. The other 11 docs are built in one format e
    its caption, between grid cells, and around the frame edge. Videos and images sit on one column
    grid. Headings get clear space above. Check the headless Chrome render plus 3 crops with Read.
 
+11. **Case studies never show the client (Mauro 2026-10-09).** No client brand or product name in
+   any text, caption, alt text or visible file name. Every clip or still of a client's ad is cut
+   before the brand or product is shown or said (find the point with whisper-cli and 1 fps frames,
+   re-encode with ffmpeg, keep the cut in the build so a rebuild applies it). Numbers only when
+   cleared, and never a number next to the client.
+12. **Draft vs final (Mauro 2026-10-09).** Title options, presenter notes and any "options" live in a
+   draft layer (`class="draft"`) with a visible DRAFT BOARD marker. D toggles it: ON for review, OFF
+   for recording. With D off the board is clean to record.
+13. **Correction boxes on every board (Mauro 2026-10-09).** `boards/board-corrections.js` rides in
+   every board through `controls.py`: a comment box per frame, Copy and Download corrections. Hidden
+   with D off and with H. `test_controls.py` checks it.
+14. **Voice (Mauro 2026-10-09).** Every on-board line sounds like the presenter talking (`brand/voice.md`):
+   plain, no AI phrasing, no em dashes, no "not X, Y".
+15. **Brand names spelled exactly (Mauro 2026-10-09).** Use the brand's own written name and check
+   it before it goes on a board. A verbatim quote keeps its own spelling.
+16. **No dated tool facts (Mauro 2026-10-09).** Never "on <date>, <tool> showed N ads / X reach" on a
+   frame. Say it like a person ("a lot of brands are testing this, you've probably seen it").
+   Numbers on camera only when they are ours and cleared.
+
 ## Content rules (non-negotiable)
 
 - **`$300k/mo` is OUT of every title, frame and thumbnail.** The video-knowledge README says it is

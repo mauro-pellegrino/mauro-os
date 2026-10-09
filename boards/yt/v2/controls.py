@@ -13,8 +13,11 @@ What the bar adds:
 - H hides the bar (display:none, so it is not on the recording); the choice is kept per browser;
 - the bar is hidden by default in headless Chrome and with ?static, so PNG renders stay clean;
 - typing #N in the address bar jumps to frame N (hashchange);
-- clicks never move keyboard focus to a control, so arrows and space keep working after a click.
+- clicks never move keyboard focus to a control, so arrows and space keep working after a click;
+- boards/board-corrections.js (per-frame correction boxes, Copy/Download, D draft layer) rides along,
+  reading frames from window.YTNAV.
 """
+import os
 CSS = r"""
 #ytbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:6px;
  background:rgba(17,17,17,.82);color:#fff;border-radius:999px;padding:6px 8px;font:600 13px/1 -apple-system,'Helvetica Neue',Arial,sans-serif;
@@ -37,6 +40,7 @@ CSS = r"""
 JS = r"""
 (function(){
 const NAV=__ADAPTER__;
+window.YTNAV=NAV;  // board-corrections.js reads the frame count, index and labels from here
 const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;/gi,' ').replace(/\s+/g,' ').trim();
 const bar=document.createElement('div');bar.id='ytbar';
 bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
@@ -66,6 +70,7 @@ list.addEventListener('click',e=>{const d=e.target.closest('[data-k]');if(!d)ret
  if(document.activeElement&&document.activeElement!==document.body)document.activeElement.blur();sync();});
 // If anything else took focus (a link, the list), give it back before the format's key handler runs.
 addEventListener('keydown',e=>{const a=document.activeElement;
+ if(a&&(/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)||a.isContentEditable))return;
  if(a&&a!==document.body&&a!==document.documentElement&&!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)&&!a.isContentEditable)a.blur();
  if(e.key==='h'||e.key==='H'){hidden=!hidden;try{localStorage.setItem('ytbar',hidden?'off':'on');}catch(_){}paint();}
  else if(e.key==='Escape'){list.classList.remove('on');}},true);
@@ -77,9 +82,19 @@ paint();sync();
 """
 
 
+CORRECTIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "board-corrections.js")
+
+
+def corrections():
+    """boards/board-corrections.js inline, between markers (Mauro 2026-10-09: a correction box per frame).
+    It goes BEFORE the bar so its capture keydown runs first: typing in a box never moves the board."""
+    js = open(CORRECTIONS, encoding="utf-8").read()
+    return "<!-- board-corrections:start -->\n<script>\n" + js + "</script>\n<!-- board-corrections:end -->\n"
+
+
 def snippet(adapter_js):
-    """Return the <style> + <script> block to put just before </body>."""
-    return "<style>" + CSS + "</style>\n<script>" + JS.replace("__ADAPTER__", adapter_js) + "</script>\n"
+    """Return the corrections block + the bar's <style> + <script>, to put just before </body>."""
+    return corrections() + "<style>" + CSS + "</style>\n<script>" + JS.replace("__ADAPTER__", adapter_js) + "</script>\n"
 
 
 def inject(page, adapter_js):
