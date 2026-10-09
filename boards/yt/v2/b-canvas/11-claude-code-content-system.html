@@ -163,8 +163,8 @@ client-b/
 const F=[{"r": [0, 0, 12800, 7200], "p": 0.985, "t": "0:00 to 0:10", "k": "overview", "n": "<p class=\"os\"><b>On screen:</b> The whole map, zoomed out: three regions (the repo, the agents, the loop), the arrows between them, the title top right.</p><p>This is my whole Claude Code content system, on one map.</p><p>Everything you see here is a real file in a real repo. I run it every week for the agency I run.</p>"}, {"r": [400, 350, 1600, 900], "p": 0.95, "t": "0:10 to 0:20", "k": "result", "n": "<p class=\"os\"><b>On screen:</b> One number, 150+, with its label and source.</p><p>The result first. This system sits behind more than 150 qualified booked calls this year for the agency I run.</p><p>That is the total from the Calendly export. I am not going to tell you which channel each one came from, because the data cannot say that. You will see why later.</p><p>By the end of this video you will know how the whole thing is built, file by file.</p>"}, {"r": [2300, 350, 1600, 900], "p": 0.95, "t": "0:20 to 0:30", "k": "roadmap", "n": "<p class=\"os\"><b>On screen:</b> Three cards: 01 The repo, 02 The agents, 03 The loop.</p><p>Today we go over three things.</p><p>First, the repo: how one folder holds the whole operation and why nothing in it gets built twice.</p><p>Second, the agents: four of them, and the incident behind each one.</p><p>Third, the loop: the rules that keep every number honest, and the day and the week that run it.</p>"}, {"r": [290, 1500, 3720, 5280], "p": 0.97, "t": "0:30 to 0:55", "k": "region 01", "n": "<p class=\"os\"><b>On screen:</b> Region 01 framed: seven zones, from the repo tree to the article skill.</p><p>Section one. The repo.</p><p>One folder, and the one rule that stops it collapsing.</p>"}, {"r": [400, 2000, 1600, 900], "p": 0.95, "t": "0:55 to 1:59", "k": "tree", "n": "<p class=\"os\"><b>On screen:</b> The screen-safe repo tree. skills/, .claude/agents/ and ops/ highlighted. accounts/ is redacted.</p><p>Here is the repo. One folder, eleven top-level areas.</p><p>skills holds the how. .claude/agents holds the four agents. ops holds the conventions, the map, the daily system and the tools.</p><p>The accounts folder is redacted on purpose. Client names never go on camera.</p><p>Walk the tree top to bottom, slowly. This is the frame people pause on.</p>"}, {"r": [400, 3250, 1600, 900], "p": 0.95, "t": "1:59 to 2:51", "k": "map", "n": "<p class=\"os\"><b>On screen:</b> A window on ops/MAP.md: eleven rows, area and what it owns.</p><p>Every area has an owner and an entry point, and all of it is indexed in one file, ops/MAP.md.</p><p>When an agent starts work, this is the first file it reads. If a thing is not in here, the agent cannot know it exists.</p><p>Keep that in mind, because it is the cause of the incident in two frames.</p>"}, {"r": [400, 4500, 1600, 900], "p": 0.95, "t": "2:51 to 3:51", "k": "folders", "n": "<p class=\"os\"><b>On screen:</b> Eight folder tiles: content, research, ops, miro, lead-gen, youtube, creative-strategy, dm-setting. Label: 73 files.</p><p>The skills folder. 73 markdown files across eight folders.</p><p>Each folder is an activity: content, research, ops, miro, lead-gen, youtube, creative-strategy, dm-setting.</p><p>73 is a count on one date. It is a snapshot, and the number is bigger today.</p>"}, {"r": [400, 5750, 1600, 900], "p": 0.95, "t": "3:51 to 4:51", "k": "client-vs-activity", "n": "<p class=\"os\"><b>On screen:</b> Before: three client folders, each with its own copy of the same skill, one crossed out. After: one activity folder, one skill, three accounts pointing at it.</p><p>Before: you split by client. Each client folder gets its own copy of the article skill.</p><p>The client leaves, the folder rots, and the same skill gets rebuilt inside the next client folder.</p><p>After: you split by activity. One article skill. Every account reads the same file.</p><p>An activity survives every client. A client folder does not.</p>"}, {"r": [2300, 5750, 1600, 900], "p": 0.95, "t": "4:51 to 6:05", "k": "incident", "n": "<p class=\"os\"><b>On screen:</b> A four-step timeline dated 2026-09-01: agent writes an outbound-reply SOP, pushes it, finds outbound-calls/ held a better one, deletes its own. Red tag on the time lost.</p><p>Here is the worked example. On the first of September an agent wrote a full outbound-reply SOP from scratch and pushed it.</p><p>Then it found that the outbound-calls folder already held a better one. The new one got deleted.</p><p>[NEEDS: say the time lost only after Mauro signs off the 45-minute figure.]</p><p>The agent was not careless. That folder was not in the routing table, so it had no way to know.</p>"}, {"r": [2300, 4500, 1600, 900], "p": 0.95, "t": "6:05 to 7:05", "k": "route-rule", "n": "<p class=\"os\"><b>On screen:</b> A routing table window: four rows lead to a skill, the outbound reply row is red, its folder not listed.</p><p>So this is the rule the whole repo runs on. Work is not finished until it is routed.</p><p>A skill that is not in the map and not in the routing table is invisible. Invisible is worse than missing, because the next agent builds a second one.</p><p>Every time I finish a skill, the last step is a row in this table.</p>"}, {"r": [2300, 3250, 1600, 900], "p": 0.95, "t": "7:05 to 8:09", "k": "x-articles", "n": "<p class=\"os\"><b>On screen:</b> skills/content/x-articles/ opened: seven numbered blocks in a chain, the seventh one dark. One corpus file under it.</p><p>Let me open one skill set so you see what is inside. This is the X article set.</p><p>Six files in a fixed order turn any transcript into a published article. The seventh one keeps the other six honest as new evidence lands.</p><p>Every number they cite lives in one corpus file, built from 41 real captures.</p><p>I made a whole video on this one. It is linked at the end.</p>"}, {"r": [4490, 1500, 3720, 5280], "p": 0.97, "t": "8:09 to 8:34", "k": "region 02", "n": "<p class=\"os\"><b>On screen:</b> Region 02 framed: the four agents, the chart, the tools.</p><p>Section two. The agents.</p><p>An agent runs without me asking. All four of mine exist because something got missed.</p>"}, {"r": [4600, 2000, 1600, 900], "p": 0.95, "t": "8:34 to 9:42", "k": "scars", "n": "<p class=\"os\"><b>On screen:</b> Four agent cards, each with the incident that created it.</p><p>Four agents. Every one of them is a scar.</p><p>performance-loop exists because reach fell and nobody saw it. signal-sweep exists because an ask got buried in a chat.</p><p>board-qa exists because boards went out that could not be read to camera. youtube-lead-magnet exists because the packaging drifted.</p><p>Its first instruction is to run the existing skill and never invent rules.</p>"}, {"r": [4600, 3250, 1600, 900], "p": 0.95, "t": "9:42 to 10:42", "k": "drop", "n": "<p class=\"os\"><b>On screen:</b> Two bars: monthly impressions in June indexed to 100, August at 36. Label: unnoticed for two months.</p><p>The worked example for this section. Monthly impressions fell 64 percent between June and August.</p><p>Nobody noticed for two months. Me included.</p><p>The bars are indexed to June so you see the size of the drop. I am not showing the raw count here.</p>"}, {"r": [4600, 4500, 1600, 900], "p": 0.95, "t": "10:42 to 11:34", "k": "drop-ba", "n": "<p class=\"os\"><b>On screen:</b> Before: a June to August strip with the drop found at the end. After: performance-loop.md reads the numbers and flags the drop.</p><p>Before: a person was supposed to notice. Two months went by.</p><p>After: the performance-loop agent reads the numbers and flags the drop. Its job is to catch a reach drop before it becomes a quarter.</p>"}, {"r": [4600, 5750, 1600, 900], "p": 0.95, "t": "11:34 to 12:30", "k": "sweep", "n": "<p class=\"os\"><b>On screen:</b> A chat app mock: channel list, one two-message group DM highlighted, an arrow to signal-sweep.md and a ranked list of asks.</p><p>signal-sweep. On the fourteenth of August, a catch-up missed a two-message group DM. That DM held the one number that mattered that week.</p><p>Worse, the catch-up showed an auto-generated queue as if it were the client&#x27;s priorities.</p><p>Now an agent reads every channel and pulls out what people actually asked for, ranked.</p>"}, {"r": [6500, 5750, 1600, 900], "p": 0.95, "t": "12:30 to 13:26", "k": "gates", "n": "<p class=\"os\"><b>On screen:</b> Fifteen check boxes in a 5 by 3 grid. The first four are red blockers. The question on top: can this be read to camera without stopping.</p><p>board-qa answers one question through fifteen checks. Can this board be read to camera without stopping?</p><p>The first four are blockers. If one fails, the run stops there.</p><p>You are looking at a board that went through it.</p>"}, {"r": [6500, 4500, 1600, 900], "p": 0.95, "t": "13:26 to 14:26", "k": "tools", "n": "<p class=\"os\"><b>On screen:</b> A grid of script file chips from ops/tools/, nine named, one chip for the other sixteen.</p><p>ops/tools holds 25 scripts. They exist because of one convention: the analysis that produced a number gets saved as a script.</p><p>An inline calculation is lost at the next context clear. Then somebody re-derives it a bit differently, and two numbers disagree in a meeting.</p>"}, {"r": [6500, 3250, 1600, 900], "p": 0.95, "t": "14:26 to 15:30", "k": "limits", "n": "<p class=\"os\"><b>On screen:</b> A docstring window, paraphrased, in capitals: measures all inbound. Two bars: 649 of 678 rows under one owner, UTM empty on 673 of 678.</p><p>Every script states its own limit in its opening docstring.</p><p>One tool was named as if it measured one account&#x27;s bookings. It measures all inbound, because 649 of 678 Calendly rows sit under one owner, and the UTM field is empty on 673 of them.</p><p>The name claimed something the data cannot support. So now the docstring says so, in capitals.</p><p>This is also why I gave you a total at the start and no channel split.</p>"}, {"r": [8690, 1500, 3720, 5280], "p": 0.97, "t": "15:30 to 15:55", "k": "region 03", "n": "<p class=\"os\"><b>On screen:</b> Region 03 framed: the conventions, the claim that measured backwards, the day, the week, the gap.</p><p>Section three. The loop.</p><p>What keeps it honest, and what runs it every day and every week.</p>"}, {"r": [8800, 2000, 1600, 900], "p": 0.95, "t": "15:55 to 16:47", "k": "nine", "n": "<p class=\"os\"><b>On screen:</b> Nine rule tiles, four lit: evidence tag, number to script, script states limit, dated decisions.</p><p>Nine conventions in one file. Four of them carry the weight.</p><p>Every claim carries an evidence tag. Every number traces to a script and a dataset. Every script declares its limit. Decisions are dated lines in the file they govern.</p>"}, {"r": [8800, 3250, 1600, 900], "p": 0.95, "t": "16:47 to 17:51", "k": "backwards", "n": "<p class=\"os\"><b>On screen:</b> Two bars: the worked example section at 60,000, the winning section at 264,000.</p><p>Here is why the tags exist. A skill said the worked example was the section that converts.</p><p>We measured it. 60,000 against the winning section&#x27;s 264,000. The opposite direction.</p><p>It felt obviously true. That is exactly the kind of claim that needs a tag.</p>"}, {"r": [8800, 4500, 1600, 900], "p": 0.95, "t": "17:51 to 18:47", "k": "tags-ba", "n": "<p class=\"os\"><b>On screen:</b> Before: an untagged claim, struck through. After: the three tags, measured, observed, assumed, each with what it needs.</p><p>Before: a claim with no tag. It reads like a fact.</p><p>After: three tags. Measured names a script and a dataset. Observed was seen but not counted. Assumed is a judgement, stated as one.</p><p>An untagged claim gets deleted on sight.</p>"}, {"r": [8800, 5750, 1600, 900], "p": 0.95, "t": "18:47 to 19:35", "k": "dated", "n": "<p class=\"os\"><b>On screen:</b> skills/ops/daily-ops.md with one dated line highlighted: 2026-08-31, v3, plan from BACKLOG.md, tick from Google Tasks.</p><p>Decisions are dated lines in the file whose behaviour they change. Not in chat, not in a separate log.</p><p>This is the line that created version three of my daily system. Which is the next frame.</p>"}, {"r": [10700, 5750, 1600, 900], "p": 0.95, "t": "19:35 to 20:39", "k": "day", "n": "<p class=\"os\"><b>On screen:</b> A flow: BACKLOG.md, the weekly spine, Google Tasks, done, written back. Above it, v2 struck: calendar blocks with no done state.</p><p>The day. Version two put work on calendar blocks, and a block has no done state.</p><p>So the end of day guessed completion from Notion, Slack and call transcripts, and it guessed wrong for two months.</p><p>Version three: the plan comes out of the backlog, the tasks go to Google Tasks, and the tick comes back from there.</p>"}, {"r": [10700, 4500, 1600, 900], "p": 0.95, "t": "20:39 to 21:39", "k": "week", "n": "<p class=\"os\"><b>On screen:</b> A cycle of four: Monday acquisition analysis, content loop, Miro control panel lane, performance, back to the analysis.</p><p>The week. Monday runs the acquisition analysis, then the content loop, then a lane on the Miro control panel.</p><p>The lane carries last week&#x27;s performance, this week&#x27;s hypothesis and the implementation. Then performance feeds next Monday.</p><p>The whole engine is this loop. Every other file is something the loop reads or writes.</p>"}, {"r": [10700, 3250, 1600, 900], "p": 0.95, "t": "21:39 to 22:31", "k": "gap", "n": "<p class=\"os\"><b>On screen:</b> Four agent tiles labelled defensive, and a fifth red tile: reaches a human, none yet.</p><p>What this system does not do. Every agent here is defensive. It catches a drop, catches a missed ask, gates a board, packages an asset.</p><p>Nothing in the repo reaches out to a human. That gap is the next video.</p>"}, {"r": [10700, 350, 1600, 900], "p": 0.95, "t": "22:31 to 23:16", "k": "cta", "n": "<p class=\"os\"><b>On screen:</b> Dark card: Agency Booked Calls, and Link in the description.</p><p>If you run an established agency and you want this installed for your own inbound, that is what Agency Booked Calls is.</p><p>The link is in the description. Everyone else, steal the structure and tell me in the comments what you would add.</p>"}, {"r": [0, 0, 12800, 7200], "p": 0.985, "t": "23:16 to 23:31", "k": "overview, end", "n": "<p class=\"os\"><b>On screen:</b> The whole map again, zoomed out.</p><p>So that is the whole map. The repo, the agents, the loop.</p><p>Pause here if you want to screenshot it.</p>"}];
 const stage=document.getElementById('stage'),map=document.getElementById('map'),nb=document.getElementById('notes');
 let i=0;
-function fit(){const k=Math.min(innerWidth/1600,innerHeight/900);
- stage.style.transform=`translate(${(innerWidth-1600*k)/2}px,${(innerHeight-900*k)/2}px) scale(${k})`;}
+function fit(){const k=Math.min(innerWidth/1600,innerHeight*0.72/900);
+ stage.style.transform=`translate(${(innerWidth-1600*k)/2}px,0px) scale(${k})`;}
 function cam(n){i=Math.max(0,Math.min(F.length-1,n));const f=F[i],[x,y,w,h]=f.r,p=f.p;
  const s=Math.min(1600/w,900/h)*p,tx=(1600-w*s)/2-x*s,ty=(900-h*s)/2-y*s;
  map.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
@@ -204,10 +204,16 @@ addEventListener('keydown',e=>{
  * <section> gets its own small comment button. Heading = data-frame value, else the first h1-h3/.head.
  *
  * Draft layer: D toggles it. ON = review (elements with class "draft" show, the correction tools show,
- * a DRAFT BOARD badge shows). OFF = recording (all of that is gone). Default ON; headless Chrome and
- * ?static default OFF so renders stay clean; ?draft=on / ?draft=off win where the board keeps its URL
- * (a-keynote rewrites it to ?s=N, so use D there). H hides the tools only.
- * State in localStorage (every access in try/catch), key per board file.
+ * a top note "Draft: comment on any frame, then Download corrections" shows). OFF = recording (all of
+ * that is gone). Every board OPENS in draft (Mauro 2026-10-09 v6): D is not kept across reloads.
+ * Headless Chrome and ?static open OFF so renders stay clean; ?draft=on / ?draft=off win where the
+ * board keeps its URL (a-keynote rewrites it to ?s=N, so use D there). H hides the tools only.
+ * Draft UI is fixed-position overlay only: it never changes the board layout, so the content stays
+ * centered with D on and with D off.
+ * Facecam check (Mauro 2026-10-09 v6): C or F2 cycles a translucent facecam box off, bottom-left,
+ * bottom-right. The box is 22% of the width x 28% of the height: the safe zone kept empty in BOTH
+ * bottom corners of every frame. ?facecam=left|right shows it on load (also in headless, for checks).
+ * Notes in localStorage (every access in try/catch), key per board file.
  * Download: board-corrections-<board-slug>-<date>.txt, one line per note: "Frame N · <heading>: <note>".
  * ~/inbox/run.py files those under ~/review-queue/decisions/boards/.
  */
@@ -221,18 +227,18 @@ addEventListener('keydown',e=>{
   var slug = (parts.pop() || 'board').replace(/\.html?$/i, '');
   if (/^(board|index)$/i.test(slug) && parts.length) slug = parts[parts.length - 1];
   slug = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'board';
-  var KEY = 'board-corrections:' + path, DKEY = 'board-draft:' + path, HKEY = 'board-corrections-hidden';
+  var KEY = 'board-corrections:' + path, HKEY = 'board-corrections-hidden';
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
   var forced = Q.get('draft');
-  var draft = true;
-  var saved = get(DKEY);
-  if (saved !== null) draft = saved === 'on';
+  var draft = true;   // always open in draft; the D choice lives only until the page reloads
   if (headless || Q.has('static')) draft = false;
   if (forced === 'on' || forced === '1') draft = true;
   if (forced === 'off' || forced === '0') draft = false;
   var hidden = get(HKEY) === 'on';
+  var FACES = ['off', 'left', 'right'];
+  var face = FACES.indexOf(Q.get('facecam') || 'off'); if (face < 0) face = 0;
 
   var notes = {};
   try { notes = JSON.parse(get(KEY) || '{}') || {}; } catch (e) { notes = {}; }
@@ -251,11 +257,14 @@ addEventListener('keydown',e=>{
     '.bc-box.on{display:block}.bc-box b{display:block;margin-bottom:6px;font-size:13px}' +
     '.bc-box textarea,#bc-panel textarea{width:100%;min-height:90px;font:500 15px/1.4 -apple-system,"Helvetica Neue",Arial,sans-serif;border:1px solid #999;border-radius:6px;padding:8px;resize:vertical;background:#fff;color:#111}' +
     '#bc-panel{position:fixed;right:14px;bottom:14px;z-index:2147483001;background:#fff;border:2px solid #111;border-radius:14px;padding:10px;width:300px;box-shadow:0 8px 28px rgba(0,0,0,.25)}' +
-    '#bc-panel .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}' +
+    '#bc-panel .bc-row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}' +
     '#bc-panel .ttl{font-weight:800;margin-right:auto}#bc-panel .cur{margin-top:8px;display:none}#bc-panel .cur.on{display:block}' +
     '#bc-panel .cur b{display:block;margin-bottom:6px}#bc-panel .msg{font-weight:500;color:#555;margin-top:6px;min-height:1em}' +
-    '#bc-draft{position:fixed;left:14px;top:14px;z-index:2147483001;background:#bd0a0a;color:#fff;border-radius:8px;padding:8px 12px;font:800 14px/1.2 -apple-system,"Helvetica Neue",Arial,sans-serif;letter-spacing:1px}' +
-    '#bc-draft span{display:block;font-weight:500;letter-spacing:0;font-size:12px;opacity:.9}';
+    '#bc-draft{position:fixed;left:50%;top:10px;transform:translateX(-50%);z-index:2147483001;background:#bd0a0a;color:#fff;border-radius:999px;padding:8px 16px;font:700 14px/1.2 -apple-system,"Helvetica Neue",Arial,sans-serif;white-space:nowrap;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.2)}' +
+    '#bc-draft span{font-weight:500;opacity:.85;margin-left:8px}' +
+    '#bc-face{position:fixed;bottom:0;width:22vw;height:28vh;z-index:2147482999;pointer-events:none;display:none;background:rgba(255,40,140,.22);border:3px dashed rgba(255,40,140,.95);box-sizing:border-box;' +
+    'font:800 16px/1 -apple-system,"Helvetica Neue",Arial,sans-serif;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6);align-items:center;justify-content:center;letter-spacing:2px}' +
+    '#bc-face.left{display:flex;left:0}#bc-face.right{display:flex;right:0}';
   document.head.appendChild(css);
 
   function clean(s) { return String(s == null ? '' : s).replace(/<[^>]*>/g, '').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim(); }
@@ -329,12 +338,12 @@ addEventListener('keydown',e=>{
 
   function buildPanel() {
     panel = document.createElement('div'); panel.id = 'bc-panel'; panel.className = 'bc-ui';
-    panel.innerHTML = '<div class="row"><span class="ttl"></span>' +
+    panel.innerHTML = '<div class="bc-row"><span class="ttl"></span>' +
       (NAV ? '<button class="bc-btn" data-a="frame" type="button"></button>' : '') +
       '<button class="bc-btn" data-a="copy" type="button">Copy corrections</button>' +
       '<button class="bc-btn" data-a="dl" type="button">Download corrections</button></div>' +
       (NAV ? '<div class="cur"><b></b><textarea placeholder="What to change in this frame"></textarea></div>' : '') +
-      '<div class="msg">D draft layer · H hide tools</div>';
+      '<div class="msg">D recording view · C facecam · H hide tools</div>';
     countEl = panel.querySelector('.ttl'); msgEl = panel.querySelector('.msg');
     keepFocus(panel);
     ['click', 'mousedown', 'wheel'].forEach(function (ev) { panel.addEventListener(ev, function (e) { e.stopPropagation(); }); });
@@ -375,7 +384,12 @@ addEventListener('keydown',e=>{
     document.body.appendChild(x); x.select(); try { document.execCommand('copy'); } catch (e) {} x.remove();
   }
 
-  var badge;
+  var badge, faceEl;
+  function paintFace() {
+    if (!faceEl) return;
+    faceEl.className = FACES[face] === 'off' ? '' : FACES[face];
+    faceEl.textContent = 'FACECAM SAFE ZONE';
+  }
   function paint() {
     var r = document.documentElement;   // on <html>: some boards rewrite body.className per slide
     r.classList.toggle('draft-off', !draft);
@@ -392,9 +406,11 @@ addEventListener('keydown',e=>{
     }
     if (isField(e.target) || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === 'd' || e.key === 'D') {
-      draft = !draft; set(DKEY, draft ? 'on' : 'off'); paint();
+      draft = !draft; paint();
     } else if (e.key === 'h' || e.key === 'H') {
       hidden = !hidden; set(HKEY, hidden ? 'on' : 'off'); paint();
+    } else if (e.key === 'c' || e.key === 'C' || e.key === 'F2') {
+      e.preventDefault(); face = (face + 1) % FACES.length; paintFace();
     }
   }, true);
 
@@ -403,8 +419,10 @@ addEventListener('keydown',e=>{
     if (!NAV) buildDom();
     buildPanel();
     badge = document.createElement('div'); badge.id = 'bc-draft'; badge.className = 'draft';
-    badge.innerHTML = 'DRAFT BOARD<span>D = recording view</span>';
+    badge.innerHTML = 'Draft: comment on any frame, then Download corrections<span>D = recording view · C = facecam</span>';
     document.body.appendChild(badge);
+    faceEl = document.createElement('div'); faceEl.id = 'bc-face';
+    document.body.appendChild(faceEl); paintFace();
     paint();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { setTimeout(init, 0); });
@@ -439,7 +457,7 @@ const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;
 const bar=document.createElement('div');bar.id='ytbar';
 bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
  '<button data-a="next" title="Next (Right arrow or Space)">&#9654;</button><button data-a="list" title="Frame list">Frames</button>'+
- '<span class="hk">H hide · N notes · F full</span>';
+ '<span class="hk">H hide · N notes · F full · C facecam</span>';
 const list=document.createElement('div');list.id='ytlist';
 document.body.appendChild(list);document.body.appendChild(bar);
 const ct=bar.querySelector('.ct');

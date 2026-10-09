@@ -124,7 +124,7 @@ function show(){S.forEach((s,k)=>s.classList.toggle('active',k===i));const sl=S[
  history.replaceState(null,'','?s='+(i+1)+(q.get('all')?'&all=1':''));}
 function nx(){if(st<mx(S[i]))st++;else if(i<S.length-1){i++;st=0}show()}
 function pv(){if(st>0)st--;else if(i>0){i--;st=mx(S[i])}show()}
-function fit(){const k=Math.min(innerWidth/1600,innerHeight/900);document.getElementById('stage').style.transform='translate(-50%,-50%) scale('+k+')'}
+function fit(){const k=Math.min(innerWidth/1600,innerHeight*__SAFE_H__/900),g=document.getElementById('stage');g.style.top=(450*k)+'px';g.style.transform='translate(-50%,-50%) scale('+k+')'}  // facecam safe zones: stage in the top band
 addEventListener('resize',fit);
 addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();nx()}
  else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();pv()}

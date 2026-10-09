@@ -32,8 +32,8 @@ FONTS = ("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Ka
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:#E9E4D8;overflow:hidden}
-#stage{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);aspect-ratio:16/9;
- width:min(100vw,calc(100vh*16/9));background:#FBF8F1}
+#stage{position:absolute;left:50%;top:0;transform:translateX(-50%);aspect-ratio:16/9;
+ width:min(100vw,calc(100vh*__SAFE_H__*16/9));background:#FBF8F1}
 .f{position:absolute;inset:0;visibility:hidden}
 .f.cur{visibility:visible}
 .f svg{width:100%;height:100%;display:block}

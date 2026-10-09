@@ -7,6 +7,11 @@
 Per board: ArrowRight and Space move forward, ArrowLeft moves back, the Next and Prev buttons move,
 a click on a frame-list row jumps there, Space after a button click moves exactly one step
 (focus stays on the document), #N in the URL jumps, and H hides the bar (display:none).
+Then the recording-view checks (Mauro 2026-10-09 v6), at 1920x1080: on every frame and every build step
+both bottom corners (22% x 28%, the facecam safe zones) hold no text, image, video, chart mark or
+button (safezone.SCAN_JS, element bounding boxes, clipped by overflow); D on and D off leave #stage
+in the same place (draft UI is overlay only), and the stage is centered left to right; C shows the
+facecam box and C again moves it to the right.
 A and E step through builds inside a frame, so "one step" there is read as the step counter.
 Needs Playwright for Python and Google Chrome (channel="chrome").
 """
@@ -15,6 +20,9 @@ import os
 import sys
 
 from playwright.sync_api import sync_playwright
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from safezone import SCAN_JS  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ONLY = sys.argv[1] if len(sys.argv) > 1 else None
@@ -98,7 +106,40 @@ def run():
             check("D turns the draft layer off again (tools gone)", not pg.evaluate(vis + "('#bc-panel')"))
             pg.keyboard.press("d"); pg.wait_for_timeout(150)
             check("D turns it back on", pg.evaluate(vis + "('#bc-panel')"))
+            # Facecam box (C / F2) and draft layer that never moves the content.
+            pg.keyboard.press("c"); pg.wait_for_timeout(100)
+            check("C shows the facecam box bottom-left", pg.evaluate(
+                "(b=>getComputedStyle(b).display!=='none'&&b.getBoundingClientRect().left<2)(document.getElementById('bc-face'))"))
+            pg.keyboard.press("c"); pg.wait_for_timeout(100)
+            check("C again moves it bottom-right", pg.evaluate(
+                "(b=>Math.abs(b.getBoundingClientRect().right-innerWidth)<2)(document.getElementById('bc-face'))"))
+            pg.keyboard.press("F2"); pg.wait_for_timeout(100)
+            check("F2 cycles it off", pg.evaluate("getComputedStyle(document.getElementById('bc-face')).display==='none'"))
             check("no page errors", not errs)
+            pg.close()
+            pg = br.new_page(viewport={"width": 1920, "height": 1080})
+            pg.on("pageerror", lambda e: errs.append(str(e)))
+            pg.goto("file://" + path); pg.wait_for_timeout(1200)
+            stage = "(r=>[r.left,r.top,r.width,r.height].map(v=>Math.round(v)))(document.getElementById('stage').getBoundingClientRect())"
+            pg.evaluate("YTNAV.go(3)"); pg.wait_for_timeout(700)
+            off = pg.evaluate(stage)
+            pg.keyboard.press("d"); pg.wait_for_timeout(200)
+            on = pg.evaluate(stage)
+            check("D on/off does not move the stage", on == off)
+            check("stage centered left to right", abs(off[0] * 2 + off[2] - 1920) <= 2)
+            pg.keyboard.press("d"); pg.wait_for_timeout(200)
+            pg.evaluate("YTNAV.go(0)"); pg.wait_for_timeout(800)
+            corner = []
+            for _ in range(500):
+                for x in pg.evaluate(SCAN_JS):
+                    corner.append(f"frame {pg.evaluate('YTNAV.index()') + 1}: {x}")
+                before = pos()
+                pg.evaluate("YTNAV.next()"); pg.wait_for_timeout(350)
+                if pos() == before:
+                    break
+            check("facecam corners empty on every frame and build step", not corner)
+            if corner:
+                errs.extend(corner[:3])
             bad = [nm for nm, ok in checks if not ok]
             fails += len(bad)
             print(f"{'FAIL' if bad else 'ok  '} {fmt}/{os.path.basename(path)}  {len(checks) - len(bad)}/{len(checks)}"

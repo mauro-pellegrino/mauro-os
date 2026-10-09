@@ -144,7 +144,7 @@ const frames=[...document.querySelectorAll('.frame')];
 const rows=[...document.querySelectorAll('#rail .row')];
 const notes=document.getElementById('notes');
 let i=0;
-function fit(){const s=Math.min(innerWidth/1600,innerHeight/900);document.getElementById('stage').style.transform='translate(-50%,-50%) scale('+s+')';}
+function fit(){const s=Math.min(innerWidth/1600,innerHeight*__SAFE_H__/900),g=document.getElementById('stage');g.style.top=(450*s)+'px';g.style.transform='translate(-50%,-50%) scale('+s+')';}
 function show(n){i=Math.max(0,Math.min(frames.length-1,n));frames.forEach((f,j)=>f.classList.toggle('cur',j===i));
  const f=frames[i];const upto=parseInt(f.dataset.upto||'99');const focus=parseInt(f.dataset.focus||'0');
  rows.forEach(r=>{const rk=parseInt(r.dataset.rank);r.classList.toggle('on',rk>=upto);r.classList.toggle('focus',rk===focus);});

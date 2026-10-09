@@ -61,9 +61,11 @@ compare formats on the same content. The other 11 docs are built in one format e
    before the brand or product is shown or said (find the point with whisper-cli and 1 fps frames,
    re-encode with ffmpeg, keep the cut in the build so a rebuild applies it). Numbers only when
    cleared, and never a number next to the client.
-12. **Draft vs final (Mauro 2026-10-09).** Title options, presenter notes and any "options" live in a
-   draft layer (`class="draft"`) with a visible DRAFT BOARD marker. D toggles it: ON for review, OFF
-   for recording. With D off the board is clean to record.
+12. **Draft vs final (Mauro 2026-10-09, updated v6).** Title options, presenter notes and any "options"
+   live in a draft layer (`class="draft"`). Every board OPENS in draft, with the top note "Draft:
+   comment on any frame, then Download corrections" (board-corrections.js; D is not kept across
+   reloads). D toggles it: ON for review, OFF for recording. With D off the board is clean to record.
+   Draft first, then Mauro's ticks and comments inside the board, then the recording.
 13. **Correction boxes on every board (Mauro 2026-10-09).** `boards/board-corrections.js` rides in
    every board through `controls.py`: a comment box per frame, Copy and Download corrections. Hidden
    with D off and with H. `test_controls.py` checks it.
@@ -74,6 +76,23 @@ compare formats on the same content. The other 11 docs are built in one format e
 16. **No dated tool facts (Mauro 2026-10-09).** Never "on <date>, <tool> showed N ads / X reach" on a
    frame. Say it like a person ("a lot of brands are testing this, you've probably seen it").
    Numbers on camera only when they are ours and cleared.
+
+17. **Draft UI never moves the content (Mauro 2026-10-09 v6).** Draft notes, the top note, the
+   correction panel and the facecam box are fixed or absolute overlays. D on and D off leave `#stage`
+   at the same place, centered left to right. `test_controls.py` checks it.
+18. **Facecam safe zones (Mauro 2026-10-09 v6).** The presenter records with the board on screen and
+   the face in a bottom corner, left or right. Both bottom corners stay empty on every frame and every
+   build step: 22% of the width x 28% of the height of the 16:9 window. No text, chart, image or video
+   controls there. Every format fits its 16:9 `#stage` into the top 72% of the window (`controls.SAFE_H`,
+   token `__SAFE_H__` in the generator's fit). C or F2 shows a translucent facecam box (off, left,
+   right). `test_controls.py` scans every frame with `safezone.SCAN_JS` (element bounding boxes, clipped
+   by overflow) and fails on anything in a corner.
+19. **No third-person dated recaps (Mauro 2026-10-09 v6).** Never "On 6 Oct we pulled six..." or
+   "On 1 Oct my partner flagged..." on a frame or in the notes. Say it the way the presenter talks:
+   "we saw a lot of brands testing these formats, so we...". Banned shape too: "No product, no offer,
+   no face selling you something. You're watching a short film."
+20. **NDA (Mauro 2026-10-09 v6).** A client with no numbers, or numbers with no client. Every client
+   clip ends before the product. Check it again on every rebuild.
 
 ## Content rules (non-negotiable)
 
@@ -94,7 +113,7 @@ compare formats on the same content. The other 11 docs are built in one format e
 - Self-contained HTML: inline CSS, inline SVG, inline JS. External requests allowed only for Google
   Fonts. A double-click must work.
 - Keyboard: right/left arrow or space to move between frames, `N` toggles notes, `F` fullscreen,
-  `H` hides the recording control bar (shared `controls.py`, injected by every generator; test: `test_controls.py`).
+  `C` or `F2` shows the facecam box, `H` hides the recording control bar (shared `controls.py`, injected by every generator; test: `test_controls.py`).
   Frames are 16:9 and fill the viewport.
 - Render PNG previews with headless Chrome
   (`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --headless --screenshot`):

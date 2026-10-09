@@ -149,9 +149,9 @@ function layout(){
 }
 function fit(){
   const vw=innerWidth,vh=innerHeight;
-  SW=Math.min(vw,vh*16/9);SH=SW*9/16;
+  SW=Math.min(vw,vh*__SAFE_H__*16/9);SH=SW*9/16;
   stage.style.width=SW+'px';stage.style.height=SH+'px';
-  stage.style.left=(vw-SW)/2+'px';stage.style.top=(vh-SH)/2+'px';
+  stage.style.left=(vw-SW)/2+'px';stage.style.top='0px';
   cap.style.fontSize=(SW*0.026)+'px';
 }
 function rectOf(ids){

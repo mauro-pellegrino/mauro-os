@@ -101,7 +101,7 @@ const frames=[...document.querySelectorAll('.frame')];
 const rows=[...document.querySelectorAll('#rail .row')];
 const notes=document.getElementById('notes');
 let i=0;
-function fit(){const s=Math.min(innerWidth/1600,innerHeight/900);document.getElementById('stage').style.transform='translate(-50%,-50%) scale('+s+')';}
+function fit(){const s=Math.min(innerWidth/1600,innerHeight*0.72/900),g=document.getElementById('stage');g.style.top=(450*s)+'px';g.style.transform='translate(-50%,-50%) scale('+s+')';}
 function show(n){i=Math.max(0,Math.min(frames.length-1,n));frames.forEach((f,j)=>f.classList.toggle('cur',j===i));
  const f=frames[i];const upto=parseInt(f.dataset.upto||'99');const focus=parseInt(f.dataset.focus||'0');
  rows.forEach(r=>{const rk=parseInt(r.dataset.rank);r.classList.toggle('on',rk>=upto);r.classList.toggle('focus',rk===focus);});
@@ -130,10 +130,16 @@ show((parseInt(location.hash.slice(1))||1)-1);
  * <section> gets its own small comment button. Heading = data-frame value, else the first h1-h3/.head.
  *
  * Draft layer: D toggles it. ON = review (elements with class "draft" show, the correction tools show,
- * a DRAFT BOARD badge shows). OFF = recording (all of that is gone). Default ON; headless Chrome and
- * ?static default OFF so renders stay clean; ?draft=on / ?draft=off win where the board keeps its URL
- * (a-keynote rewrites it to ?s=N, so use D there). H hides the tools only.
- * State in localStorage (every access in try/catch), key per board file.
+ * a top note "Draft: comment on any frame, then Download corrections" shows). OFF = recording (all of
+ * that is gone). Every board OPENS in draft (Mauro 2026-10-09 v6): D is not kept across reloads.
+ * Headless Chrome and ?static open OFF so renders stay clean; ?draft=on / ?draft=off win where the
+ * board keeps its URL (a-keynote rewrites it to ?s=N, so use D there). H hides the tools only.
+ * Draft UI is fixed-position overlay only: it never changes the board layout, so the content stays
+ * centered with D on and with D off.
+ * Facecam check (Mauro 2026-10-09 v6): C or F2 cycles a translucent facecam box off, bottom-left,
+ * bottom-right. The box is 22% of the width x 28% of the height: the safe zone kept empty in BOTH
+ * bottom corners of every frame. ?facecam=left|right shows it on load (also in headless, for checks).
+ * Notes in localStorage (every access in try/catch), key per board file.
  * Download: board-corrections-<board-slug>-<date>.txt, one line per note: "Frame N · <heading>: <note>".
  * ~/inbox/run.py files those under ~/review-queue/decisions/boards/.
  */
@@ -147,18 +153,18 @@ show((parseInt(location.hash.slice(1))||1)-1);
   var slug = (parts.pop() || 'board').replace(/\.html?$/i, '');
   if (/^(board|index)$/i.test(slug) && parts.length) slug = parts[parts.length - 1];
   slug = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'board';
-  var KEY = 'board-corrections:' + path, DKEY = 'board-draft:' + path, HKEY = 'board-corrections-hidden';
+  var KEY = 'board-corrections:' + path, HKEY = 'board-corrections-hidden';
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
   var forced = Q.get('draft');
-  var draft = true;
-  var saved = get(DKEY);
-  if (saved !== null) draft = saved === 'on';
+  var draft = true;   // always open in draft; the D choice lives only until the page reloads
   if (headless || Q.has('static')) draft = false;
   if (forced === 'on' || forced === '1') draft = true;
   if (forced === 'off' || forced === '0') draft = false;
   var hidden = get(HKEY) === 'on';
+  var FACES = ['off', 'left', 'right'];
+  var face = FACES.indexOf(Q.get('facecam') || 'off'); if (face < 0) face = 0;
 
   var notes = {};
   try { notes = JSON.parse(get(KEY) || '{}') || {}; } catch (e) { notes = {}; }
@@ -177,11 +183,14 @@ show((parseInt(location.hash.slice(1))||1)-1);
     '.bc-box.on{display:block}.bc-box b{display:block;margin-bottom:6px;font-size:13px}' +
     '.bc-box textarea,#bc-panel textarea{width:100%;min-height:90px;font:500 15px/1.4 -apple-system,"Helvetica Neue",Arial,sans-serif;border:1px solid #999;border-radius:6px;padding:8px;resize:vertical;background:#fff;color:#111}' +
     '#bc-panel{position:fixed;right:14px;bottom:14px;z-index:2147483001;background:#fff;border:2px solid #111;border-radius:14px;padding:10px;width:300px;box-shadow:0 8px 28px rgba(0,0,0,.25)}' +
-    '#bc-panel .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}' +
+    '#bc-panel .bc-row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}' +
     '#bc-panel .ttl{font-weight:800;margin-right:auto}#bc-panel .cur{margin-top:8px;display:none}#bc-panel .cur.on{display:block}' +
     '#bc-panel .cur b{display:block;margin-bottom:6px}#bc-panel .msg{font-weight:500;color:#555;margin-top:6px;min-height:1em}' +
-    '#bc-draft{position:fixed;left:14px;top:14px;z-index:2147483001;background:#bd0a0a;color:#fff;border-radius:8px;padding:8px 12px;font:800 14px/1.2 -apple-system,"Helvetica Neue",Arial,sans-serif;letter-spacing:1px}' +
-    '#bc-draft span{display:block;font-weight:500;letter-spacing:0;font-size:12px;opacity:.9}';
+    '#bc-draft{position:fixed;left:50%;top:10px;transform:translateX(-50%);z-index:2147483001;background:#bd0a0a;color:#fff;border-radius:999px;padding:8px 16px;font:700 14px/1.2 -apple-system,"Helvetica Neue",Arial,sans-serif;white-space:nowrap;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.2)}' +
+    '#bc-draft span{font-weight:500;opacity:.85;margin-left:8px}' +
+    '#bc-face{position:fixed;bottom:0;width:22vw;height:28vh;z-index:2147482999;pointer-events:none;display:none;background:rgba(255,40,140,.22);border:3px dashed rgba(255,40,140,.95);box-sizing:border-box;' +
+    'font:800 16px/1 -apple-system,"Helvetica Neue",Arial,sans-serif;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6);align-items:center;justify-content:center;letter-spacing:2px}' +
+    '#bc-face.left{display:flex;left:0}#bc-face.right{display:flex;right:0}';
   document.head.appendChild(css);
 
   function clean(s) { return String(s == null ? '' : s).replace(/<[^>]*>/g, '').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim(); }
@@ -255,12 +264,12 @@ show((parseInt(location.hash.slice(1))||1)-1);
 
   function buildPanel() {
     panel = document.createElement('div'); panel.id = 'bc-panel'; panel.className = 'bc-ui';
-    panel.innerHTML = '<div class="row"><span class="ttl"></span>' +
+    panel.innerHTML = '<div class="bc-row"><span class="ttl"></span>' +
       (NAV ? '<button class="bc-btn" data-a="frame" type="button"></button>' : '') +
       '<button class="bc-btn" data-a="copy" type="button">Copy corrections</button>' +
       '<button class="bc-btn" data-a="dl" type="button">Download corrections</button></div>' +
       (NAV ? '<div class="cur"><b></b><textarea placeholder="What to change in this frame"></textarea></div>' : '') +
-      '<div class="msg">D draft layer · H hide tools</div>';
+      '<div class="msg">D recording view · C facecam · H hide tools</div>';
     countEl = panel.querySelector('.ttl'); msgEl = panel.querySelector('.msg');
     keepFocus(panel);
     ['click', 'mousedown', 'wheel'].forEach(function (ev) { panel.addEventListener(ev, function (e) { e.stopPropagation(); }); });
@@ -301,7 +310,12 @@ show((parseInt(location.hash.slice(1))||1)-1);
     document.body.appendChild(x); x.select(); try { document.execCommand('copy'); } catch (e) {} x.remove();
   }
 
-  var badge;
+  var badge, faceEl;
+  function paintFace() {
+    if (!faceEl) return;
+    faceEl.className = FACES[face] === 'off' ? '' : FACES[face];
+    faceEl.textContent = 'FACECAM SAFE ZONE';
+  }
   function paint() {
     var r = document.documentElement;   // on <html>: some boards rewrite body.className per slide
     r.classList.toggle('draft-off', !draft);
@@ -318,9 +332,11 @@ show((parseInt(location.hash.slice(1))||1)-1);
     }
     if (isField(e.target) || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === 'd' || e.key === 'D') {
-      draft = !draft; set(DKEY, draft ? 'on' : 'off'); paint();
+      draft = !draft; paint();
     } else if (e.key === 'h' || e.key === 'H') {
       hidden = !hidden; set(HKEY, hidden ? 'on' : 'off'); paint();
+    } else if (e.key === 'c' || e.key === 'C' || e.key === 'F2') {
+      e.preventDefault(); face = (face + 1) % FACES.length; paintFace();
     }
   }, true);
 
@@ -329,8 +345,10 @@ show((parseInt(location.hash.slice(1))||1)-1);
     if (!NAV) buildDom();
     buildPanel();
     badge = document.createElement('div'); badge.id = 'bc-draft'; badge.className = 'draft';
-    badge.innerHTML = 'DRAFT BOARD<span>D = recording view</span>';
+    badge.innerHTML = 'Draft: comment on any frame, then Download corrections<span>D = recording view · C = facecam</span>';
     document.body.appendChild(badge);
+    faceEl = document.createElement('div'); faceEl.id = 'bc-face';
+    document.body.appendChild(faceEl); paintFace();
     paint();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { setTimeout(init, 0); });
@@ -365,7 +383,7 @@ const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;
 const bar=document.createElement('div');bar.id='ytbar';
 bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
  '<button data-a="next" title="Next (Right arrow or Space)">&#9654;</button><button data-a="list" title="Frame list">Frames</button>'+
- '<span class="hk">H hide · N notes · F full</span>';
+ '<span class="hk">H hide · N notes · F full · C facecam</span>';
 const list=document.createElement('div');list.id='ytlist';
 document.body.appendChild(list);document.body.appendChild(bar);
 const ct=bar.querySelector('.ct');

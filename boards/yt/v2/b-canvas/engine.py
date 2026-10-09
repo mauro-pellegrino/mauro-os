@@ -295,8 +295,8 @@ JS = r"""
 const F=__FRAMES__;
 const stage=document.getElementById('stage'),map=document.getElementById('map'),nb=document.getElementById('notes');
 let i=0;
-function fit(){const k=Math.min(innerWidth/1600,innerHeight/900);
- stage.style.transform=`translate(${(innerWidth-1600*k)/2}px,${(innerHeight-900*k)/2}px) scale(${k})`;}
+function fit(){const k=Math.min(innerWidth/1600,innerHeight*__SAFE_H__/900);
+ stage.style.transform=`translate(${(innerWidth-1600*k)/2}px,0px) scale(${k})`;}
 function cam(n){i=Math.max(0,Math.min(F.length-1,n));const f=F[i],[x,y,w,h]=f.r,p=f.p;
  const s=Math.min(1600/w,900/h)*p,tx=(1600-w*s)/2-x*s,ty=(900-h*s)/2-y*s;
  map.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;

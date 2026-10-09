@@ -231,7 +231,7 @@ const F = FRAMES, META = META_OBJ;
 const STATIC = /static=1/.test(location.search);
 let i = 0, timers = [];
 const $ = s => document.querySelector(s);
-function fit(){const s=Math.min(innerWidth/1600, innerHeight/900);$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
+function fit(){const s=Math.min(innerWidth/1600, innerHeight*__SAFE_H__/900);$('#stage').style.top=(450*s)+'px';$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
 addEventListener('resize', fit);
 function clear(){timers.forEach(clearTimeout); timers=[];}
 function later(fn, ms){ if(STATIC){fn();return;} timers.push(setTimeout(fn, ms)); }

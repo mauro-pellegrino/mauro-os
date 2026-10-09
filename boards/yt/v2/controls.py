@@ -16,8 +16,17 @@ What the bar adds:
 - clicks never move keyboard focus to a control, so arrows and space keep working after a click;
 - boards/board-corrections.js (per-frame correction boxes, Copy/Download, D draft layer) rides along,
   reading frames from window.YTNAV.
+
+Facecam safe zones (Mauro 2026-10-09 v6): both bottom corners of every frame stay empty, 22% of the
+width x 28% of the height, because the presenter's face goes in one of them. Every format fits its
+16:9 #stage into the top SAFE_H band of the window, centered left to right, with the format's own
+fit(). The generators write the token __SAFE_H__ and inject() replaces it with SAFE_H. A wider window
+keeps the same band. C or F2 shows the facecam box (board-corrections.js); test_controls.py checks
+every frame and every build step with safezone.SCAN_JS.
 """
 import os
+
+SAFE_H = 0.72  # the stage never goes below 72% of the window height: the bottom 28% band stays free
 CSS = r"""
 #ytbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:6px;
  background:rgba(17,17,17,.82);color:#fff;border-radius:999px;padding:6px 8px;font:600 13px/1 -apple-system,'Helvetica Neue',Arial,sans-serif;
@@ -45,7 +54,7 @@ const strip=s=>String(s==null?'':s).replace(/<[^>]*>/g,'').replace(/&[a-z#0-9]+;
 const bar=document.createElement('div');bar.id='ytbar';
 bar.innerHTML='<button data-a="prev" title="Previous (Left arrow)">&#9664;</button><span class="ct"></span>'+
  '<button data-a="next" title="Next (Right arrow or Space)">&#9654;</button><button data-a="list" title="Frame list">Frames</button>'+
- '<span class="hk">H hide · N notes · F full</span>';
+ '<span class="hk">H hide · N notes · F full · C facecam</span>';
 const list=document.createElement('div');list.id='ytlist';
 document.body.appendChild(list);document.body.appendChild(bar);
 const ct=bar.querySelector('.ct');
@@ -99,6 +108,7 @@ def snippet(adapter_js):
 
 def inject(page, adapter_js):
     """Insert the control bar into a finished page, just before the last </body>."""
+    page = page.replace("__SAFE_H__", repr(SAFE_H))  # before rfind: the token is longer than its value
     k = page.rfind("</body>")
     if k < 0:
         raise SystemExit("controls.inject: no </body> in page")
